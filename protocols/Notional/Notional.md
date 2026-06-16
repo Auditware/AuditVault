@@ -1,0 +1,22 @@
+---
+tags:
+  - blockchain/evm
+  - blockchain/evm/arbitrum
+  - lang/solidity
+  - lang/vyper
+  - sector/dex
+  - sector/farm
+  - sector/governance
+  - sector/lending
+  - sector/liquid-staking
+  - sector/options
+  - sector/oracle
+  - sector/restaking
+  - sector/stable
+  - sector/staking
+  - sector/staking-pool
+  - sector/token
+  - sector/vault
+  - sector/yield-aggregator
+---
+Notional is a DeFi protocol - description pending.

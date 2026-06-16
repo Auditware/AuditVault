@@ -1,0 +1,37 @@
+---
+tags:
+  - lang/solidity
+  - has/github
+  - severity/high
+  - sector/dex
+protocol: "[[Hanji]]"
+auditors:
+  - MixBytes
+report: "https://github.com/mixbytes/audits_public/blob/master/Hanji/OnchainCLOB/README.md#3-potential-data-corruption-in-trie-structure"
+genome:
+  - "[[cross-contract-state-consistency]]"
+  - "[[direct-drain]]"
+---
+# Potential Data Corruption in Trie Structure
+
+- id: 55169
+- impact: HIGH
+- protocol: Hanji
+- reporter: MixBytes
+- source: https://github.com/mixbytes/audits_public/blob/master/Hanji/OnchainCLOB/README.md#3-potential-data-corruption-in-trie-structure
+
+## Summary
+
+
+The report describes a bug in the `removeOrderFromNonRightmostNodeDescendants` function of the `Trie` contract. The bug can potentially cause data corruption and financial loss because it does not properly check if the `order_id` exists before updating the subtree. The severity of the bug is classified as critical. The recommendation is to check the `found` boolean value before updating the subtree to prevent data inconsistencies and maintain the integrity of the trie.
+
+## Details
+
+##### Description
+The issue is identified within the[`removeOrderFromNonRightmostNodeDescendants`](https://github.com/longgammalabs/hanji-contracts/blob/09b6188e028650b9c1758010846080c5f8c80f8e/src/TrieLib.sol#L780-L795) function of the `Trie` contract.
+
+There is a critical vulnerability where the `matchesNode` function checks if the `order_id` potentially exists in the matching node, but it doesn't verify the `found` boolean value before updating the subtree. If the `order_id` does not actually exist in the matching node, it can lead to a violation of the validity and consistency of the trie, resulting in data corruption and potential loss of funds.
+
+The issue is classified as **critical** severity because it can cause severe data corruption and financial loss.
+##### Recommendation
+We recommend checking the `found` boolean value before updating the subtree to ensure that the `order_id` actually exists in the matching node. This will prevent inconsistencies and maintain the integrity of the trie.

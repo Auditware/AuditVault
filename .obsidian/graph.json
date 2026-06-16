@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": " tag:#sector/zk",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:findings  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:hacks  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:auditors  ",
+      "color": {
+        "a": 1,
+        "rgb": 6758946
+      }
+    },
+    {
+      "query": "path:protocols  ",
+      "color": {
+        "a": 1,
+        "rgb": 7023241
+      }
+    },
+    {
+      "query": "path:classifications/bug/check  ",
+      "color": {
+        "a": 1,
+        "rgb": 16722363
+      }
+    },
+    {
+      "query": "",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.8038614966283757,
+  "close": true
+}

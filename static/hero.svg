@@ -1,0 +1,367 @@
+<svg width="1200" height="380" viewBox="0 0 1200 380" xmlns="http://www.w3.org/2000/svg">
+<defs>
+
+  <!-- Background -->
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0d1117"/>
+    <stop offset="100%" stop-color="#0d1520"/>
+  </linearGradient>
+
+  <!-- Subtle card glow -->
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur stdDeviation="2.5" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+
+  <!-- Dot grid pattern -->
+  <pattern id="dots" x="0" y="0" width="28" height="28" patternUnits="userSpaceOnUse">
+    <circle cx="14" cy="14" r="0.7" fill="#ffffff" opacity="0.07"/>
+  </pattern>
+
+  <!-- Typing clip path -->
+  <clipPath id="tc" clipPathUnits="userSpaceOnUse">
+    <rect x="951" y="158" height="18" width="0">
+      <animate attributeName="width" from="0" to="200" dur="2s" begin="1s" fill="freeze"/>
+    </rect>
+  </clipPath>
+
+  <!-- Particle flow paths: sources → vault -->
+  <path id="p1" d="M258,174 L360,174" fill="none"/>
+  <path id="p2" d="M258,249 L360,249" fill="none"/>
+  <path id="p3" d="M258,321 L360,321" fill="none"/>
+
+  <!-- Particle flow paths: vault → research (branching) -->
+  <path id="p4" d="M838,252 C876,252 898,221 930,221" fill="none"/>
+  <path id="p5" d="M838,252 C876,252 898,302 930,302" fill="none"/>
+
+</defs>
+
+<!-- ─── BACKGROUND ─── -->
+<rect width="1200" height="380" fill="url(#bg)"/>
+<rect width="1200" height="380" fill="url(#dots)"/>
+
+<!-- ─── HEADER ─── -->
+<text x="600" y="44" text-anchor="middle"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="27" font-weight="700" fill="#e6edf3" letter-spacing="-0.5">AuditVault</text>
+<text x="600" y="64" text-anchor="middle"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="12" fill="#8b949e">Smart contract security knowledge base · sourced · classified · linked</text>
+
+<!-- ─── STATS BADGES ─── -->
+<!-- findings -->
+<rect x="247" y="77" width="148" height="26" rx="4" fill="#f8514909" stroke="#f85149" stroke-width="0.8"/>
+<circle cx="267" cy="90" r="4" fill="#f85149"/>
+<text x="278" y="95"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="11" fill="#e6edf3">2,383 <tspan fill="#8b949e">findings</tspan></text>
+
+<!-- hacks -->
+<rect x="405" y="77" width="108" height="26" rx="4" fill="#d2992209" stroke="#d29922" stroke-width="0.8"/>
+<circle cx="424" cy="90" r="4" fill="#d29922"/>
+<text x="435" y="95"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="11" fill="#e6edf3">293 <tspan fill="#8b949e">hacks</tspan></text>
+
+<!-- auditors -->
+<rect x="523" y="77" width="144" height="26" rx="4" fill="#388bfd09" stroke="#388bfd" stroke-width="0.8"/>
+<circle cx="542" cy="90" r="4" fill="#388bfd"/>
+<text x="553" y="95"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="11" fill="#e6edf3">1,136 <tspan fill="#8b949e">auditors</tspan></text>
+
+<!-- protocols -->
+<rect x="677" y="77" width="126" height="26" rx="4" fill="#bc8cff09" stroke="#bc8cff" stroke-width="0.8"/>
+<circle cx="696" cy="90" r="4" fill="#bc8cff"/>
+<text x="707" y="95"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="11" fill="#e6edf3">826 <tspan fill="#8b949e">protocols</tspan></text>
+
+<!-- ─── SEPARATOR ─── -->
+<line x1="30" y1="114" x2="1170" y2="114" stroke="#21262d" stroke-width="1"/>
+
+<!-- ─── SECTION LABELS ─── -->
+<text x="30" y="133"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="9" fill="#6e7681" letter-spacing="1.8" font-weight="600">SOURCES</text>
+<text x="372" y="133"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="9" fill="#6e7681" letter-spacing="1.8" font-weight="600">VAULT</text>
+<text x="935" y="133"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="9" fill="#6e7681" letter-spacing="1.8" font-weight="600">RESEARCH</text>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     LEFT COLUMN: SOURCES
+     ══════════════════════════════════════════════════════════════════════ -->
+
+<!-- Solodit card -->
+<rect x="25" y="140" width="230" height="68" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<circle cx="44" cy="160" r="5" fill="#f85149" opacity="0.9"/>
+<text x="55" y="165"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="11" font-weight="600" fill="#e6edf3">solodit.cyfrin.io</text>
+<text x="44" y="183"
+  font-family="ui-monospace,'SFMono-Regular',Menlo,monospace"
+  font-size="10" fill="#f85149">2,383</text>
+<text x="84" y="183"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="10" fill="#8b949e"> findings · HIGH severity</text>
+<text x="44" y="199"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="9" fill="#6e7681">contest + firm audit findings</text>
+
+<!-- rekt.news card -->
+<rect x="25" y="220" width="230" height="58" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<circle cx="44" cy="238" r="5" fill="#d29922" opacity="0.9"/>
+<text x="55" y="243"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="11" font-weight="600" fill="#e6edf3">rekt.news</text>
+<text x="44" y="261"
+  font-family="ui-monospace,'SFMono-Regular',Menlo,monospace"
+  font-size="10" fill="#d29922">293</text>
+<text x="64" y="261"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="10" fill="#8b949e"> hacks · confirmed losses</text>
+<text x="44" y="271"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="9" fill="#6e7681">post-mortems + leaderboard</text>
+
+<!-- GitHub card -->
+<rect x="25" y="290" width="230" height="65" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<circle cx="44" cy="309" r="5" fill="#3fb950" opacity="0.9"/>
+<text x="55" y="314"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="11" font-weight="600" fill="#e6edf3">github.com</text>
+<text x="44" y="332"
+  font-family="ui-monospace,'SFMono-Regular',Menlo,monospace"
+  font-size="10" fill="#3fb950">public audit repos</text>
+<text x="44" y="346"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="9" fill="#6e7681">MD + PDF reports · deduped</text>
+
+<!-- ──────────────────────────────────────────────────────
+     CONNECTOR 1: SOURCES → VAULT (dashed lines + particles)
+     ────────────────────────────────────────────────────── -->
+
+<line x1="256" y1="174" x2="362" y2="174" stroke="#21262d" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="256" y1="249" x2="362" y2="249" stroke="#21262d" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="256" y1="321" x2="362" y2="321" stroke="#21262d" stroke-width="1" stroke-dasharray="4 3"/>
+
+<!-- Path 1 particles (red, Solodit) -->
+<circle r="3" fill="#f85149" filter="url(#glow)">
+  <animateMotion dur="0.9s" begin="0s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion>
+</circle>
+<circle r="2" fill="#f85149" opacity="0.55">
+  <animateMotion dur="0.9s" begin="0.3s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion>
+</circle>
+<circle r="1.5" fill="#f85149" opacity="0.3">
+  <animateMotion dur="0.9s" begin="0.6s" repeatCount="indefinite"><mpath href="#p1"/></animateMotion>
+</circle>
+
+<!-- Path 2 particles (orange, rekt.news) -->
+<circle r="3" fill="#d29922" filter="url(#glow)">
+  <animateMotion dur="1.1s" begin="0.15s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion>
+</circle>
+<circle r="2" fill="#d29922" opacity="0.55">
+  <animateMotion dur="1.1s" begin="0.52s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion>
+</circle>
+<circle r="1.5" fill="#d29922" opacity="0.3">
+  <animateMotion dur="1.1s" begin="0.89s" repeatCount="indefinite"><mpath href="#p2"/></animateMotion>
+</circle>
+
+<!-- Path 3 particles (green, GitHub) -->
+<circle r="3" fill="#3fb950" filter="url(#glow)">
+  <animateMotion dur="1.3s" begin="0.3s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion>
+</circle>
+<circle r="2" fill="#3fb950" opacity="0.55">
+  <animateMotion dur="1.3s" begin="0.73s" repeatCount="indefinite"><mpath href="#p3"/></animateMotion>
+</circle>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     CENTER: VAULT CARD with cycling tag enrichment
+     ══════════════════════════════════════════════════════════════════════ -->
+
+<rect x="372" y="140" width="462" height="215" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+
+<!-- Frontmatter opening -->
+<text x="390" y="163" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#30363d">---</text>
+<text x="390" y="180" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#8b949e">tags:</text>
+<text x="402" y="197" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#8b949e">- </text>
+<text x="418" y="197" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#3fb950">severity/high</text>
+<text x="402" y="214" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#8b949e">- </text>
+<text x="418" y="214" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#bc8cff">lang/solidity</text>
+
+<!-- ── CYCLING TAG ROW 1 (12s loop, 6 tags × 2s each) ── -->
+<text x="402" y="231" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#8b949e">- </text>
+
+<!-- Slot 0: 0–2s -->
+<text x="418" y="231" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#f85149">vuln/reentrancy/read-only
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
+    keyTimes="0;0.017;0.150;0.167;1" values="1;1;1;0;0"/>
+</text>
+<!-- Slot 1: 2–4s -->
+<text x="418" y="231" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#388bfd" opacity="0">sector/lending
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
+    keyTimes="0;0.167;0.183;0.317;0.333;1" values="0;0;1;1;0;0"/>
+</text>
+<!-- Slot 2: 4–6s -->
+<text x="418" y="231" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#39d353" opacity="0">trigger/flash-loan
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
+    keyTimes="0;0.333;0.350;0.483;0.500;1" values="0;0;1;1;0;0"/>
+</text>
+<!-- Slot 3: 6–8s -->
+<text x="418" y="231" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#d29922" opacity="0">impact/loss-of-funds/direct-drain
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
+    keyTimes="0;0.500;0.517;0.650;0.667;1" values="0;0;1;1;0;0"/>
+</text>
+<!-- Slot 4: 8–10s -->
+<text x="418" y="231" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#3fb950" opacity="0">fix/use-reentrancy-guard
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
+    keyTimes="0;0.667;0.683;0.817;0.833;1" values="0;0;1;1;0;0"/>
+</text>
+<!-- Slot 5: 10–12s -->
+<text x="418" y="231" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#bc8cff" opacity="0">blockchain/evm
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite"
+    keyTimes="0;0.833;0.850;0.983;0.999;1" values="0;0;1;1;0;0"/>
+</text>
+
+<!-- ── CYCLING TAG ROW 2 (same 12s loop, different tags, offset by 6s) ── -->
+<text x="402" y="248" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#8b949e">- </text>
+
+<!-- Row 2, Slot 0: 0–2s (shows vuln/oracle since row2 starts at cycle offset) -->
+<text x="418" y="248" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#f85149">vuln/oracle/stale-price
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="-6s"
+    keyTimes="0;0.017;0.150;0.167;1" values="1;1;1;0;0"/>
+</text>
+<!-- Row 2, Slot 1 -->
+<text x="418" y="248" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#bc8cff" opacity="0">precondition/flash-loan-available
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="-6s"
+    keyTimes="0;0.167;0.183;0.317;0.333;1" values="0;0;1;1;0;0"/>
+</text>
+<!-- Row 2, Slot 2 -->
+<text x="418" y="248" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#d29922" opacity="0">blast-radius/protocol-wide
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="-6s"
+    keyTimes="0;0.333;0.350;0.483;0.500;1" values="0;0;1;1;0;0"/>
+</text>
+<!-- Row 2, Slot 3 -->
+<text x="418" y="248" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#388bfd" opacity="0">sector/dex
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="-6s"
+    keyTimes="0;0.500;0.517;0.650;0.667;1" values="0;0;1;1;0;0"/>
+</text>
+<!-- Row 2, Slot 4 -->
+<text x="418" y="248" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#39d353" opacity="0">novelty/known-pattern
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="-6s"
+    keyTimes="0;0.667;0.683;0.817;0.833;1" values="0;0;1;1;0;0"/>
+</text>
+<!-- Row 2, Slot 5 -->
+<text x="418" y="248" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#8b949e" opacity="0">misassumption/oracle-is-reliable
+  <animate attributeName="opacity" dur="12s" repeatCount="indefinite" begin="-6s"
+    keyTimes="0;0.833;0.850;0.983;0.999;1" values="0;0;1;1;0;0"/>
+</text>
+
+<!-- Static frontmatter fields -->
+<text x="390" y="265" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#8b949e">protocol: <tspan fill="#58a6ff">"[[Aave]]"</tspan></text>
+<text x="390" y="282" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#8b949e">auditors:</text>
+<text x="402" y="299" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#8b949e">- <tspan fill="#58a6ff">"[[trust]]"</tspan></text>
+<text x="390" y="316" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#30363d">---</text>
+<text x="390" y="338" font-family="ui-monospace,'SFMono-Regular',Menlo,monospace" font-size="11" fill="#e6edf3"># Flash loan reentrancy exploit</text>
+
+<!-- Crawler pipeline label -->
+<text x="372" y="368"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="9.5" fill="#6e7681">scrape_all.js · tag_bugs.js · tag_report_sector.js · normalize_protocols.js</text>
+
+<!-- ──────────────────────────────────────────────────────
+     CONNECTOR 2: VAULT → RESEARCH (branching curves + particles)
+     ────────────────────────────────────────────────────── -->
+
+<!-- Branch origin dot -->
+<circle cx="838" cy="252" r="3" fill="#30363d"/>
+
+<path d="M838,252 C876,252 898,221 930,221" fill="none" stroke="#21262d" stroke-width="1" stroke-dasharray="4 3"/>
+<path d="M838,252 C876,252 898,302 930,302" fill="none" stroke="#21262d" stroke-width="1" stroke-dasharray="4 3"/>
+
+<!-- Particles on branch to result 1 (blue) -->
+<circle r="3" fill="#388bfd" filter="url(#glow)">
+  <animateMotion dur="0.85s" begin="0.1s" repeatCount="indefinite"><mpath href="#p4"/></animateMotion>
+</circle>
+<circle r="2" fill="#388bfd" opacity="0.55">
+  <animateMotion dur="0.85s" begin="0.38s" repeatCount="indefinite"><mpath href="#p4"/></animateMotion>
+</circle>
+<circle r="1.5" fill="#388bfd" opacity="0.3">
+  <animateMotion dur="0.85s" begin="0.66s" repeatCount="indefinite"><mpath href="#p4"/></animateMotion>
+</circle>
+
+<!-- Particles on branch to result 2 (purple) -->
+<circle r="3" fill="#bc8cff" filter="url(#glow)">
+  <animateMotion dur="1.0s" begin="0.25s" repeatCount="indefinite"><mpath href="#p5"/></animateMotion>
+</circle>
+<circle r="2" fill="#bc8cff" opacity="0.55">
+  <animateMotion dur="1.0s" begin="0.58s" repeatCount="indefinite"><mpath href="#p5"/></animateMotion>
+</circle>
+<circle r="1.5" fill="#bc8cff" opacity="0.3">
+  <animateMotion dur="1.0s" begin="0.91s" repeatCount="indefinite"><mpath href="#p5"/></animateMotion>
+</circle>
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     RIGHT COLUMN: RESEARCH
+     ══════════════════════════════════════════════════════════════════════ -->
+
+<!-- Search bar -->
+<rect x="935" y="140" width="250" height="46" rx="6" fill="#0d1117" stroke="#388bfd" stroke-width="1"/>
+<text x="951" y="154"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="8" fill="#6e7681" letter-spacing="1.2">QUERY</text>
+<!-- Typed query text (clip animation) -->
+<text x="951" y="172"
+  font-family="ui-monospace,'SFMono-Regular',Menlo,monospace"
+  font-size="11" fill="#e6edf3" clip-path="url(#tc)">vuln/oracle/stale-price</text>
+<!-- Blinking cursor -->
+<rect y="160" width="1.5" height="13" fill="#388bfd" opacity="0">
+  <animate attributeName="x" from="951" to="1139" dur="2s" begin="1s" fill="freeze"/>
+  <animate attributeName="opacity" values="0;1" dur="0.01s" begin="1s" fill="freeze"/>
+  <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.45;0.55;1" dur="0.9s" begin="3.1s" repeatCount="indefinite"/>
+</rect>
+
+<!-- Result card 1 -->
+<rect x="935" y="188" width="250" height="68" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<text x="950" y="208"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="11" font-weight="600" fill="#e6edf3">Stale Chainlink price oracle</text>
+<!-- Tag badges -->
+<rect x="950" y="214" width="60" height="14" rx="3" fill="#f8514908" stroke="#f85149" stroke-width="0.7"/>
+<text x="955" y="224"
+  font-family="ui-monospace,'SFMono-Regular',Menlo,monospace"
+  font-size="8.5" fill="#f85149">vuln/oracle</text>
+<rect x="1016" y="214" width="64" height="14" rx="3" fill="#388bfd08" stroke="#388bfd" stroke-width="0.7"/>
+<text x="1022" y="224"
+  font-family="ui-monospace,'SFMono-Regular',Menlo,monospace"
+  font-size="8.5" fill="#388bfd">sector/lending</text>
+<text x="950" y="245"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="10" fill="#8b949e">[[Compound]] · blockchain/evm</text>
+
+<!-- Result card 2 -->
+<rect x="935" y="267" width="250" height="68" rx="6" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<text x="950" y="287"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="11" font-weight="600" fill="#e6edf3">Missing freshness check</text>
+<rect x="950" y="294" width="60" height="14" rx="3" fill="#f8514908" stroke="#f85149" stroke-width="0.7"/>
+<text x="955" y="304"
+  font-family="ui-monospace,'SFMono-Regular',Menlo,monospace"
+  font-size="8.5" fill="#f85149">vuln/oracle</text>
+<rect x="1016" y="294" width="64" height="14" rx="3" fill="#bc8cff08" stroke="#bc8cff" stroke-width="0.7"/>
+<text x="1022" y="304"
+  font-family="ui-monospace,'SFMono-Regular',Menlo,monospace"
+  font-size="8.5" fill="#bc8cff">blockchain/evm</text>
+<text x="950" y="324"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="10" fill="#8b949e">[[Aave]] · sector/lending</text>
+
+<!-- Bottom stat line -->
+<text x="935" y="352"
+  font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
+  font-size="10" fill="#6e7681">1,136 auditors · 826 protocols · all wikilinked</text>
+
+</svg>

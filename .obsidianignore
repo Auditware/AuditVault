@@ -1,0 +1,7 @@
+crawler/node_modules
+crawler/data
+crawler/*.log
+crawler/*.har
+crawler/*.zip
+crawler/*.png
+crawler/*.json.bak

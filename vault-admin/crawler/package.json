@@ -1,0 +1,17 @@
+{
+  "name": "crawlee-run",
+  "version": "1.0.0",
+  "main": "get_first_finding.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "crawlee": "^3.16.0",
+    "pdf-parse": "^2.4.5",
+    "playwright": "^1.59.1"
+  }
+}

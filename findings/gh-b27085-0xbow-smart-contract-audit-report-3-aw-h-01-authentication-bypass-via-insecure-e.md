@@ -1,0 +1,77 @@
+---
+tags:
+  - blockchain/evm
+  - lang/solidity
+  - sector/privacy
+  - platform/auditware
+  - severity/high
+  - novelty/variant
+protocol: "[[0xbow]]"
+auditors:
+  - "[[Auditware]]"
+genome:
+  - "[[signature-replay]]"
+  - "[[direct]]"
+  - "[[offchain]]"
+  - "[[user-interaction]]"
+  - "[[offchain-is-trusted]]"
+  - "[[redesign-logic]]"
+  - "[[variant]]"
+  - "[[permit-fork-replay]]"
+---
+# AW-H-01: Authentication Bypass via Insecure EIP-712 Implementation in Seed Derivation
+
+**Severity:** *High*									**Status:** *Acknowledged*
+
+**Code:**
+
+* [dev/src/utils/walletSeed.ts\#L97-L115](https://github.com/0xbow-io/privacy-pools-website/blob/dev/src/utils/walletSeed.ts#L97-L115) 
+
+**Note:**  
+Following discussions with the protocol team regarding the identified security concerns and user experience considerations, the team has decided to accept the acknowledged risks as part of their operational model. Users will be required to assume these risks, with the protocol committing to implement comprehensive warning systems and educational materials to ensure full user awareness. The team noted that a safer passphrase-based alternative is already available to provide users with more secure interaction options.
+
+**Description:**  
+The Privacy Pools seed derivation system uses EIP-712 signatures as the primary authentication mechanism for generating BIP39 mnemonic phrases.
+
+The current implementation creates EIP-712 typed data with a minimal domain containing only **name** and **version**, lacking **chainId** and **verifyingContract**.
+
+// Build the EIP-712 typed data for seed derivation, committing to keccak256(address).  
+export function buildSeedDerivationTypedData(address: string) {  
+ const addrBytes \= toBytes(address as \`0x${string}\`);  
+ const addressHash \= keccak256(addrBytes);  
+ const domain \= { name: 'Privacy Pools', version: '1' } as const;  
+ const types \= {  
+   DeriveSeed: \[  
+     { name: 'action', type: 'string' },  
+     { name: 'context', type: 'string' },  
+     { name: 'addressHash', type: 'bytes32' },  
+   \],  
+ } as const;  
+ const message \= {  
+   action: 'Derive Account Seed',  
+   context: 'privacy-pools/wallet-seed:v1',  
+   addressHash: addressHash as \`0x${string}\`,  
+ } as const;  
+ return { domain, types, message, primaryType: 'DeriveSeed' as const };  
+}
+
+Signatures are verified entirely in the frontend using JavaScript cryptography, with no server-side validation or replay protection.
+
+The system is vulnerable to domain impersonation attacks where attackers can create fake applications with identical EIP-712 domains (name, version, chainId and verifyingContract), collect user signatures, and derive the same seed phrases.
+
+The HKDF salt (user address) provides user separation but no security against this kind of signature theft. Without expiration or server-side validation, stolen signatures remain valid indefinitely.
+
+Successful exploitation may result in complete compromise of user privacy accounts, fund theft, and permanent transaction linkability.
+
+Although users are expected to remain vigilant and not fall for phishing sites requesting for their wallet, it’s on the protocol side to ensure their users authentication is secured and not replayable in those cases.
+
+This issue’s severity is **High**, and not Critical due to the fact that a user must first fall for a phishing site before becoming vulnerable. However, it must still be thought of thoroughly.
+
+**Recommendations:**
+
+* During the audit we have not managed to find a way to secure EIP-712 against mentioned replay attacks, and on the [EIP-712 page itself](https://eips.ethereum.org/EIPS/eip-712#replay-attacks) no explicit protection is natively suggested by the protocol, even though the risks are mentioned. Instead, we recommend using a solution like [EIP-4361 (SIWE)](https://docs.login.xyz/general-information/siwe-overview/eip-4361) that provides built-in protection against domain impersonation, replay attacks, and requires server-side validation.  
+* If the protocol can’t transition to an EIP-4361 or similar approach, due to business requirements towards deterministic mnemonic generation, they must be aware of the risks associated with this decision and attempt to implement as much as possible from the following:  
+  * Origin domain check (e.g. if the attacker will create a fake domain, the signature containing it won’t match expected one)  
+  * Clear expiration & timing controls  
+  * If possible \- nonce-based replay protection \- nonce must be freshly generated for each sign-in, server tracks used nonces and rejects duplicates, attacker can't reuse a stolen signature with the same nonce  
+  * Even within EIP-712 (which is not recommended at this case) there are fields to slightly make an attacker harder (although still possible) like **chainId**, **verifyingContract** and **salt** that can be added to the domain fields.

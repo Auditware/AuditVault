@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Obsidian workspace state (machine-specific, not shared)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Crawler
+vault-admin/crawler/node_modules/
+vault-admin/crawler/__pycache__/
+vault-admin/crawler/data/
+vault-admin/crawler/scrape_progress.json
+vault-admin/crawler/*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Secrets / env
+.env
+.env.*
+*.secret
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log

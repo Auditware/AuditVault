@@ -1,0 +1,5 @@
+# Cauê Obici
+
+6 findings across 1 protocol. Mainly Ottersec. Specializes in Infra, Gaming, Lending.
+
+**Protocols:** [[Sui]]
