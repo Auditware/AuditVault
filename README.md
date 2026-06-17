@@ -15,8 +15,7 @@
   <img alt="hacks" src="https://img.shields.io/badge/hacks-293-orange?style=flat-square">
   <img alt="auditors" src="https://img.shields.io/badge/auditors-1136-blue?style=flat-square">
   <img alt="protocols" src="https://img.shields.io/badge/protocols-826-purple?style=flat-square">
-  <img alt="last commit" src="https://img.shields.io/github/last-commit/forefy/AuditVault?style=flat-square">
-  <a href="https://twitter.com/forefy"><img alt="twitter" src="https://img.shields.io/twitter/follow/forefy?style=flat-square&logo=twitter"></a>
+  <a href="https://twitter.com/auditwizard"><img alt="twitter" src="https://img.shields.io/twitter/follow/auditwizard?style=flat-square&logo=twitter"></a>
 </p>
 
 <p align="center">
