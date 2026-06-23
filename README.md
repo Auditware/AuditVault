@@ -40,6 +40,7 @@ Think of it as <em>searchable institutional memory</em> for security researchers
 | `auditors/`        | Generated                                                                                                                                                                | Per-auditor profiles with stats |
 | `protocols/`       | Generated                                                                                                                                                                | Per-protocol pages with tags    |
 | `classifications/` | Hand-curated                                                                                                                                                             | Full vulnerability taxonomy     |
+| `checklists/`      | Generated                                                                                                                                                                | Per-sector audit checklists     |
 
 <br/>
 
@@ -108,6 +109,7 @@ node tag_bugs.js                # vuln/ impact/ trigger/ full taxonomy
 node normalize_protocols.js     # protocol: raw strings → [[WikiLink]]
 node tag_protocols.js           # tag protocol pages from proto_data.json
 node gen_auditor_profiles.js    # rebuild auditors/ profiles
+node gen_sector_checklists.js   # build checklists/ from tagged findings
 ```
 
 <br/>

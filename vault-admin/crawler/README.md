@@ -17,6 +17,7 @@ crawler/
   tag_bugs.js             Rule-based vuln/ impact/ trigger/ taxonomy tagger
   tag_protocols.js        Tag protocols/ notes from proto_data.json
   normalize_protocols.js  Normalize protocol: fields to [[WikiLink]] format
+  gen_sector_checklists.js Build per-sector audit checklists from tagged findings
   data/                   Runtime data (proto_data.json, etc.) - not committed
 ```
 
@@ -49,6 +50,9 @@ node tag_protocols.js
 
 # 4. Generate auditor profiles
 node gen_auditor_profiles.js
+
+# 5. Generate per-sector audit checklists (writes to checklists/)
+node gen_sector_checklists.js
 ```
 
 ## Notes
