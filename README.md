@@ -125,9 +125,9 @@ node gen_sector_checklists.js   # build checklists/ from tagged findings
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/brain">
-            <img src="https://avatars.githubusercontent.com/u/26472101?v=4" width="80" alt="brain"/>
-            <br/><sub><b>brain</b></sub>
+        <a href="https://github.com/BLTC-520">
+            <img src="https://avatars.githubusercontent.com/u/125104831?v=4" width="80" alt="BLTC-520"/>
+            <br/><sub><b>BLTC-520</b></sub>
         </a>
     </td>
 </tr>
