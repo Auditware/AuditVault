@@ -124,7 +124,14 @@ node gen_sector_checklists.js   # build checklists/ from tagged findings
             <br/><sub><b>forefy</b></sub>
         </a>
     </td>
+    <td align="center">
+        <a href="https://github.com/brain">
+            <img src="https://avatars.githubusercontent.com/u/26472101?v=4" width="80" alt="brain"/>
+            <br/><sub><b>brain</b></sub>
+        </a>
+    </td>
 </tr>
 </table>
 
 <p align="center">PRs welcome - new classification rules, manual overrides, scraper improvements, or additional sources.</p>
+
