@@ -76,7 +76,7 @@ report: "https://github.com/..."
 <p align="center">Requires <a href="https://obsidian.md/">Obsidian</a> (free). Clone and open as vault.</p>
 
 ```bash
-git clone https://github.com/forefy/AuditVault
+git clone https://github.com/Auditware/AuditVault
 ```
 
 <br/>
