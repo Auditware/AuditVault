@@ -2,7 +2,7 @@
 tags:
   - lang/move
   - lang/rust
-  - sector/governance
+  - web3-sector/governance
   - platform/ottersec
   - has/poc
   - severity/high

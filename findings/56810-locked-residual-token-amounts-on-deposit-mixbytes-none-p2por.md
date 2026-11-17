@@ -1,12 +1,15 @@
 ---
 tags:
-  - sector/governance
-  - sector/lending
-  - sector/staking
-  - sector/token
+  - lang/solidity
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/staking
+  - web3-sector/token
   - has/github
   - severity/high
-  - lang/solidity
+  - vuln/dos/frozen-funds
+  - impact/loss-of-funds/locked-funds
+  - novelty/variant
 protocol: "[[P2P.org]]"
 auditors:
   - MixBytes
@@ -15,8 +18,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[frozen-funds]]"
   - "[[locked-funds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # Locked Residual Token Amounts on Deposit
 
 - id: 56810

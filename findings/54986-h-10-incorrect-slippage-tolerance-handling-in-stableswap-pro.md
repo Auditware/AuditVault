@@ -4,9 +4,9 @@ tags:
   - has/github
   - has/poc
   - lang/rust
-  - sector/bridge
-  - sector/dex
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
   - platform/code4rena
 protocol: "[[MANTRA]]"
 auditors:

@@ -4,7 +4,7 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Coded Estate]]"
 auditors:
   - "[[Ch_301]]"

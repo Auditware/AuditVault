@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
-  - sector/token
+  - web3-sector/account
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - severity/high

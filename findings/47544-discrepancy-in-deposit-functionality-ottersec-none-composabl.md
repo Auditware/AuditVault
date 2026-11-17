@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/rust
-  - sector/options
-  - sector/restaking
+  - web3-sector/options
+  - web3-sector/restaking
   - platform/ottersec
   - severity/high
   - novelty/variant

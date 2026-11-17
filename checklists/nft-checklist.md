@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/nft
+  - web3-sector/nft
 generated: true
 ---
 # Nft — Audit Checklist
 
-> Auto-generated from **204** findings in this sector (**49** with bug-class tags), ranked by frequency.
+> Auto-generated from **194** findings in this sector (**49** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
@@ -46,7 +46,7 @@ Where it hurts when these bugs land.
 - `impact/loss-of-funds/locked-funds` — 11
 - `impact/mev/frontrun` — 9
 - `impact/privilege-escalation/ownership-transfer` — 5
-- `impact/loss-of-funds/reward-theft` — 2
+- `impact/loss-of-funds/reward-theft` — 3
 - `impact/dos/permanent` — 2
 - `impact/loss-of-funds/fee-theft` — 2
 - `impact/data-corruption/price-manipulation` — 1

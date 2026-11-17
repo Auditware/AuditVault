@@ -4,8 +4,8 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/staking
-  - sector/options
+  - web3-sector/staking
+  - web3-sector/options
   - platform/sherlock
   - lang/rust
 protocol: "[[SEDA Protocol]]"

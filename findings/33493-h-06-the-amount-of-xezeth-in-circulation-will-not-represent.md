@@ -5,11 +5,11 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/lending
-  - sector/oracle
-  - sector/restaking
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/restaking
+  - web3-sector/staking
 protocol: "[[Renzo]]"
 auditors:
   - "[[GalloDaSballo]]"

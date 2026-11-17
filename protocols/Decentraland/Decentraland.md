@@ -2,7 +2,8 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/gaming
-  - sector/nft
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/token
 ---
 Decentraland MANA Token Audit is a DeFi protocol - description pending.

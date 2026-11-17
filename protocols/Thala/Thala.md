@@ -4,12 +4,12 @@ tags:
   - lang/move
   - lang/rust
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/stable
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/staking-pool
 ---
 Thala is a DeFi protocol - description pending.

@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/nft
-  - sector/nft-lending
-  - sector/oracle
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/nft-lending
+  - web3-sector/oracle
 protocol: "[[ParaSpace]]"
 auditors:
   - "[[Jeiwan]]"

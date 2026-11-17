@@ -6,7 +6,7 @@ tags:
   - severity/high
   - impact/loss-of-funds/direct-drain
   - impact/mev/frontrun
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[NUTS Finance]]"
 auditors:
   - "[[MixBytes]]"

@@ -2,9 +2,11 @@
 tags:
   - lang/anchor
   - lang/rust
-  - sector/bridge
+  - web3-sector/bridge
   - platform/cantina
   - severity/high
+  - vuln/dependency/unchecked-return-value
+  - novelty/variant
 protocol: "[[Layer N]]"
 auditors:
   - Mario Poneder
@@ -14,8 +16,7 @@ genome:
   - "[[unchecked-return-value]]"
   - "[[variant]]"
   - "[[external-call-is-safe]]"
-  - "[[add-check]]"
----
+  - "[[add-check]]"---
 # Withdrawal roots can be speciﬁcally crafted such that multiple withdrawals are possible 
 
 - id: 52883

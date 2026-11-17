@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/logic/reward-calculation
+  - trigger/time-based/epoch-boundary
+  - novelty/variant
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +16,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[epoch-boundary]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # [H-01] Incorrect next epoch supply usage affects reward calculation
 
 - id: 58012

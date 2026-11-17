@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/multisig
+  - web3-sector/governance
+  - web3-sector/multisig
   - platform/pashov-audit-group
   - has/github
   - severity/high

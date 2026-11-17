@@ -4,7 +4,7 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Notional]]"
 auditors:
   - "[[0xc0ffEE]]"

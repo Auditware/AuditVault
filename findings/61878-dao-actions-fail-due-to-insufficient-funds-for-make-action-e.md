@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/perpetuals
+  - web3-sector/governance
+  - web3-sector/perpetuals
   - platform/quantstamp
   - severity/high
   - vuln/arithmetic/underflow

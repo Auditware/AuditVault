@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Beanstalk]]"
 auditors:
   - "[[Dacian]]"

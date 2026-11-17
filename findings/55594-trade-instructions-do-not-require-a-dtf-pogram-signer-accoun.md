@@ -2,11 +2,13 @@
 tags:
   - lang/anchor
   - lang/rust
+  - web3-sector/rwa
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
-  - sector/rwa
+  - vuln/pda/missing-seeds-check
+  - novelty/variant
 protocol: "[[Reserve Protocol Solana DTFs]]"
 auditors:
   - Samuel Moelius
@@ -15,8 +17,7 @@ genome:
   - "[[cpi-program-id-validation]]"
   - "[[missing-seeds-check]]"
   - "[[variant]]"
-  - "[[add-check]]"
----
+  - "[[add-check]]"---
 # Trade instructions do not require a dtf_pogram_signer account
 
 - id: 55594

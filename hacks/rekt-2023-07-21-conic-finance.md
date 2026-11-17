@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/oracle
-  - sector/stable
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/vault
   - vuln/reentrancy/read-only
   - vuln/reentrancy/single-function
   - impact/data-corruption/price-manipulation

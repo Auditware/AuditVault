@@ -1,9 +1,14 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/access-control/missing-modifier
+  - impact/loss-of-funds/direct-drain
+  - fix/add-access-control
+  - novelty/variant
+  - blast-radius/cross-protocol
 protocol: "[[Across]]"
 auditors:
   - OpenZeppelin
@@ -15,8 +20,7 @@ genome:
   - "[[add-access-control]]"
   - "[[variant]]"
   - "[[cross-protocol]]"
-  - "[[admin-is-honest]]"
----
+  - "[[admin-is-honest]]"---
 # Missing Access Control for setDestinationSettler
 
 - id: 56758

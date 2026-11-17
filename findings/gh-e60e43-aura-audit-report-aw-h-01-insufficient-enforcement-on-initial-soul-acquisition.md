@@ -10,7 +10,7 @@ tags:
   - novelty/known-pattern
   - misassumption/external-call-is-safe
   - trigger/reentrancy-callback
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Aura]]"
 auditors:
   - "[[Auditware]]"

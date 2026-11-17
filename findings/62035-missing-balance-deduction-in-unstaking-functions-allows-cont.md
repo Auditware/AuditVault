@@ -2,8 +2,8 @@
 tags:
   - severity/high
   - lang/solidity
-  - sector/staking
-  - sector/gaming
+  - web3-sector/staking
+  - web3-sector/gaming
   - platform/quantstamp
 protocol: "[[Sapien]]"
 auditors:

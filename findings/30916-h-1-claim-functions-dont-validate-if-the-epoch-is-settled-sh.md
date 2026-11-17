@@ -6,7 +6,7 @@ tags:
   - has/poc
   - severity/high
   - impact/loss-of-funds/direct-drain
-  - sector/zk
+  - web3-sector/zk
 protocol: "[[Amphor]]"
 auditors:
   - "[[jennifer37]]"

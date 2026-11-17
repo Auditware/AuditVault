@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/token
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/dos/unbounded-loop
+  - novelty/known-pattern
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -13,8 +15,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/202
 genome:
   - "[[dos-resistance]]"
   - "[[unbounded-loop]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # `poolRewards` arrays can grow without bounds, resulting in DoS of core functionality
 
 - id: 61554

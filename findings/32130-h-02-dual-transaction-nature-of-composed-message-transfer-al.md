@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/stable
 protocol: "[[Canto]]"
 auditors:
   - "[[d3e4]]"

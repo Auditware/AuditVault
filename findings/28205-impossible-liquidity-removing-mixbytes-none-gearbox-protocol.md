@@ -4,7 +4,7 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Gearbox]]"
 auditors:
   - "[[MixBytes]]"

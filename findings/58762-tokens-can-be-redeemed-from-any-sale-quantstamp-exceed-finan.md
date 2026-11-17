@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/rust
-  - sector/liquid-staking
-  - sector/staking
+  - web3-sector/liquid-staking
+  - web3-sector/staking
   - platform/quantstamp
   - severity/high
+  - vuln/pda/missing-seeds-check
+  - novelty/variant
 protocol: "[[Exceed Finance Liquid Staking & Early Purchase]]"
 auditors:
   - István Böhm
@@ -13,8 +15,7 @@ genome:
   - "[[pda-derivation]]"
   - "[[missing-seeds-check]]"
   - "[[variant]]"
-  - "[[add-check]]"
----
+  - "[[add-check]]"---
 # Tokens Can Be Redeemed From Any Sale
 
 - id: 58762

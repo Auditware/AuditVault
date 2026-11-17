@@ -1,11 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/reentrancy/single-function
+  - impact/data-corruption/price-manipulation
+  - impact/mev/frontrun
+  - impact/mev/sandwich
+  - trigger/price-manipulation
+  - trigger/sandwich-attack
+  - novelty/known-pattern
 protocol: "[[Burve]]"
 auditors:
   - Aamirusmani1552
@@ -21,8 +28,7 @@ genome:
   - "[[known-pattern]]"
   - "[[external-call-is-safe]]"
   - "[[use-reentrancy-guard]]"
-  - "[[reentrancy-callback]]"
----
+  - "[[reentrancy-callback]]"---
 # H-5: Attacker captures unclaimed fees by timing deposit with range re-entry and price manipulation
 
 - id: 56954

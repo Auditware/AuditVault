@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/oracle
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/oracle
+  - vuln/logic/reward-calculation
+  - impact/loss-of-funds/direct-drain
+  - novelty/variant
 protocol: "[[Suzaku Core]]"
 auditors:
   - 0kage
@@ -14,8 +17,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[direct-drain]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # Incorrect reward claim logic causes loss of access to intermediate epoch rewards
 
 - id: 61234

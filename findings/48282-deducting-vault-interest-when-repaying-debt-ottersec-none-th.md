@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/move
-  - sector/lending
+  - web3-sector/lending
   - platform/ottersec
   - severity/high
   - vuln/logic/fee-calculation

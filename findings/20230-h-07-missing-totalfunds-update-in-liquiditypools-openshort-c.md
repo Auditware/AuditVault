@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/perpetuals
+  - web3-sector/perpetuals
   - platform/code4rena
   - has/github
   - has/poc

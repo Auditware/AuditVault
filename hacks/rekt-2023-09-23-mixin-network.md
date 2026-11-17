@@ -1,10 +1,10 @@
 ---
 tags:
   - blockchain/bitcoin
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
   - precondition/insider
 title: "Mixin Network - REKT"

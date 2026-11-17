@@ -1,9 +1,13 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/oracle
   - has/github
   - severity/high
-  - sector/oracle
+  - vuln/dos/frozen-funds
+  - impact/loss-of-funds/locked-funds
+  - trigger/first-deposit
+  - novelty/variant
 protocol: "[[Hyperhyper]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +17,7 @@ genome:
   - "[[frozen-funds]]"
   - "[[locked-funds]]"
   - "[[first-deposit]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [C-03] Incorrect index reset in `Fenwick tree` after full withdrawal
 
 - id: 57737

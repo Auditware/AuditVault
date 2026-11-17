@@ -2,9 +2,9 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/dex
-  - sector/liquid-staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/liquid-staking
+  - web3-sector/token
   - platform/mixbytes
   - has/github
   - severity/high

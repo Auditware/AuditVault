@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/options
+  - web3-sector/lending
+  - web3-sector/options
   - platform/sigmaprime
   - has/github
   - severity/high

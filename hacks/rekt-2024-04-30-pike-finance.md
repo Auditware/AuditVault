@@ -3,9 +3,9 @@ tags:
   - blockchain/arbitrum
   - blockchain/ethereum
   - blockchain/optimism
-  - sector/bridge
-  - sector/lending
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/stable
   - vuln/access-control/uninitialized-owner
   - novelty/variant
 title: "Pike Finance - Rekt"

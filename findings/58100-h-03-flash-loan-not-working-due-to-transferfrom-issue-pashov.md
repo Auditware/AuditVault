@@ -1,11 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/stable
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/token
   - has/github
   - severity/high
+  - trigger/flash-loan
+  - precondition/flash-loan-available
+  - fix/use-reentrancy-guard
 protocol: "[[Astrolab]]"
 auditors:
   - Pashov Audit Group
@@ -14,8 +17,7 @@ genome:
   - "[[flashloan-callback-auth]]"
   - "[[flash-loan]]"
   - "[[flash-loan-available]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [H-03] Flash loan not working due to transferFrom Issue
 
 - id: 58100

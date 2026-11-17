@@ -2,9 +2,9 @@
 tags:
   - blockchain/bsc
   - has/audit
-  - sector/dex
-  - sector/gaming
-  - sector/multisig
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/multisig
 title: "Dego Finance - REKT"
 protocol: "[[Dego Finance]]"
 date: 2022-02-10

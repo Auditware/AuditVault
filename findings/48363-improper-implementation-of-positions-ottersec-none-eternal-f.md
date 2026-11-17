@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/move
-  - sector/lending
-  - sector/options
+  - web3-sector/lending
+  - web3-sector/options
   - platform/ottersec
   - severity/high
   - impact/loss-of-funds/direct-drain

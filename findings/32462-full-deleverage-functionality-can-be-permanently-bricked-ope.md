@@ -4,8 +4,8 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/lending
-  - sector/nft-marketplace
+  - web3-sector/lending
+  - web3-sector/nft-marketplace
 protocol: "[[Ion Protocol]]"
 auditors:
   - "[[OpenZeppelin]]"

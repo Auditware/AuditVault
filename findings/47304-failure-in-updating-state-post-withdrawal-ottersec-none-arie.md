@@ -3,7 +3,7 @@ tags:
   - lang/move
   - platform/ottersec
   - severity/high
-  - sector/options
+  - web3-sector/options
 protocol: "[[Aries Markets]]"
 auditors:
   - "[[Robert Chen]]"

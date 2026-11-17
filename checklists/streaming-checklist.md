@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/streaming
+  - web3-sector/streaming
 generated: true
 ---
 # Streaming — Audit Checklist
 
-> Auto-generated from **39** findings in this sector (**8** with bug-class tags), ranked by frequency.
+> Auto-generated from **37** findings in this sector (**8** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

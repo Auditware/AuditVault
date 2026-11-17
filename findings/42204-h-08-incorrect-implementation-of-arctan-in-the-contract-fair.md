@@ -4,7 +4,7 @@ tags:
   - lang/solidity
   - has/github
   - severity/high
-  - sector/insurance
+  - web3-sector/insurance
 protocol: "[[FairSide]]"
 auditors:
   - "[[Code4rena]]"

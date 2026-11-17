@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/infra
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/infra
+  - web3-sector/staking
   - platform/quantstamp
   - severity/high
+  - novelty/variant
 protocol: "[[Powerloom L2]]"
 auditors:
   - Paul Clemson
 report: "https://certificate.quantstamp.com/full/powerloom-l-2/695c4ca5-2bab-42f2-b41d-bff9eec03f32/index.html"
 genome:
   - "[[bridge-validator-threshold]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # Validators Can Submit Multiple Attestations to Maliciously Force Wrong Consensus
 
 - id: 58812

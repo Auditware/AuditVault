@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/sigmaprime
   - has/github
   - severity/high

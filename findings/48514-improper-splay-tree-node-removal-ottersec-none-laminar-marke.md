@@ -6,7 +6,7 @@ tags:
   - severity/high
   - impact/loss-of-funds/direct-drain
   - impact/loss-of-funds/locked-funds
-  - sector/perpetuals
+  - web3-sector/perpetuals
 protocol: "[[Laminar Markets]]"
 auditors:
   - "[[Robert Chen]]"

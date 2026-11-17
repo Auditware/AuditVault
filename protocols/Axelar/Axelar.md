@@ -5,7 +5,7 @@ tags:
   - lang/move
   - lang/rust
   - lang/solidity
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
 ---
 Axelar is a protocol - description pending.

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
+  - web3-sector/farm
   - platform/quantstamp
   - severity/high
   - impact/loss-of-funds/direct-drain

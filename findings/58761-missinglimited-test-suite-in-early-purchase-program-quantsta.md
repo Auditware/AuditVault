@@ -1,9 +1,9 @@
 ---
 tags:
   - severity/high
-  - sector/staking
-  - sector/liquid-staking
-  - sector/farm
+  - web3-sector/staking
+  - web3-sector/liquid-staking
+  - web3-sector/farm
   - platform/quantstamp
 protocol: "[[Exceed Finance Liquid Staking & Early Purchase]]"
 auditors:

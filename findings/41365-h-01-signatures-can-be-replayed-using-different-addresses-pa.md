@@ -5,7 +5,7 @@ tags:
   - has/github
   - severity/high
   - impact/loss-of-funds/direct-drain
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Sofamon August]]"
 auditors:
   - "[[Pashov Audit Group]]"

@@ -5,9 +5,9 @@ tags:
   - blockchain/ethereum
   - blockchain/solana
   - blockchain/tron
-  - sector/bridge
-  - sector/lending
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/stable
   - trigger/flash-loan
   - precondition/flash-loan-available
   - precondition/insider

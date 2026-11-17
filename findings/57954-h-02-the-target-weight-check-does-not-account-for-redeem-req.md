@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - has/github
   - severity/high
-  - sector/dex
+  - vuln/arithmetic/rounding-direction
+  - novelty/variant
 protocol: "[[Cove]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +14,7 @@ genome:
   - "[[integer-bounds]]"
   - "[[rounding-direction]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # [H-02] The target weight check does not account for redeem request assets
 
 - id: 57954

@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group

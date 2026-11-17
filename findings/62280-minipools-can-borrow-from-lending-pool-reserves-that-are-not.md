@@ -4,7 +4,7 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Astera]]"
 auditors:
   - "[[Saw-mon and Natalie]]"

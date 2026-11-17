@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
+  - vuln/access-control/missing-modifier
+  - novelty/variant
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -13,8 +15,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[missing-modifier]]"
   - "[[variant]]"
-  - "[[admin-is-honest]]"
----
+  - "[[admin-is-honest]]"---
 # Swaps are not possible on pools registered with Bunni due to incorrect access control in `ValkyrieHooklet::afterSwap`
 
 - id: 61559

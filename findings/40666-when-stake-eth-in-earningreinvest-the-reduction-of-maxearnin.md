@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Goat Tech]]"
 auditors:
   - "[[cccz]]"

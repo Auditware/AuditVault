@@ -7,7 +7,7 @@ tags:
   - impact/loss-of-funds/direct-drain
   - trigger/first-deposit
   - precondition/specific-token-type
-  - sector/token
+  - web3-sector/token
 protocol: "[[Resolv]]"
 auditors:
   - "[[MixBytes]]"

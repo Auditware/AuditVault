@@ -4,7 +4,7 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Polymer]]"
 auditors:
   - "[[FrankCastle]]"

@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/logic/fee-calculation
+  - fix/use-reentrancy-guard
+  - novelty/variant
 protocol: "[[Terplayer Berabtc]]"
 auditors:
   - Shieldify Security
@@ -14,8 +17,7 @@ genome:
   - "[[fee-calculation]]"
   - "[[use-reentrancy-guard]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # [C-01] Protocol Loses `mint()`/`redeem()` Fees Due to Missing Treasury Collection Mechanism
 
 - id: 55099

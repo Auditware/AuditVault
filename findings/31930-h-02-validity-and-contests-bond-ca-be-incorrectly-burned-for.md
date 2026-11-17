@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/staking
-  - sector/zk
+  - web3-sector/staking
+  - web3-sector/zk
 protocol: "[[Taiko]]"
 auditors:
   - "[[monrel]]"

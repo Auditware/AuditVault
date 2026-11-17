@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/liquid-staking
+  - web3-sector/dex
+  - web3-sector/liquid-staking
 ---
 Pino is a DeFi protocol - description pending.

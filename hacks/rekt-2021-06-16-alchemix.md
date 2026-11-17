@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/lending
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/stable
 title: "Alchemix - REKT"
 protocol: "[[Alchemix]]"
 date: 2021-06-16

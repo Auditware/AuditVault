@@ -3,7 +3,7 @@ tags:
   - lang/rust
   - platform/auditware
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Conduct]]"
 auditors:
   - "[[Auditware]]"

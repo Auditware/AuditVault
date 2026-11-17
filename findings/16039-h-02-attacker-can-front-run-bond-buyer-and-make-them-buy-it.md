@@ -7,7 +7,7 @@ tags:
   - severity/high
   - impact/mev/frontrun
   - trigger/time-based/epoch-boundary
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Mute.Io]]"
 auditors:
   - "[[0xA5DF]]"

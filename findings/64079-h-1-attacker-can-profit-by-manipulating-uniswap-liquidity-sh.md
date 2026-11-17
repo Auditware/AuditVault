@@ -1,13 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/lending
-  - sector/liquid-staking
-  - sector/oracle
-  - sector/staking
-  - sector/staking-pool
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/oracle
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/vault
   - platform/sherlock
   - has/github
   - has/poc

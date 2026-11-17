@@ -4,9 +4,9 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/bridge
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/stable
+  - web3-sector/token
 protocol: "[[Meson]]"
 auditors:
   - "[[Damilola Edwards]]"

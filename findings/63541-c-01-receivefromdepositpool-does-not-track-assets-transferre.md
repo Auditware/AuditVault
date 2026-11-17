@@ -4,8 +4,8 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/staking
-  - sector/token
+  - web3-sector/staking
+  - web3-sector/token
 protocol: "[[Elytra]]"
 auditors:
   - "[[Pashov Audit Group]]"

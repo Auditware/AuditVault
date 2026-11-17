@@ -4,7 +4,7 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Overprotocol]]"
 auditors:
   - "[[DTheo]]"

@@ -3,7 +3,7 @@ tags:
   - blockchain/evm
   - blockchain/evm/zksync
   - lang/yul
-  - sector/bridge
+  - web3-sector/bridge
   - platform/openzeppelin
   - has/github
   - severity/high

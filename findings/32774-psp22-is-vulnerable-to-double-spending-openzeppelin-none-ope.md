@@ -5,7 +5,7 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[OpenBrush]]"
 auditors:
   - "[[OpenZeppelin]]"

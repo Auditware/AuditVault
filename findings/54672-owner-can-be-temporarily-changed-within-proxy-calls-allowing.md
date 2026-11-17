@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
-  - sector/streaming
+  - web3-sector/staking
+  - web3-sector/streaming
   - platform/cantina
   - has/poc
   - severity/high

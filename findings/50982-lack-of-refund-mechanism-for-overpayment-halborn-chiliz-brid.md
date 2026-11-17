@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/token
   - platform/halborn
   - severity/high
   - impact/loss-of-funds/direct-drain

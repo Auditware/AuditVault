@@ -2,10 +2,10 @@
 tags:
   - lang/rust
   - sdk/anchor
-  - sector/lending
-  - sector/oracle
-  - sector/staking
-  - sector/staking-pool
-  - sector/uncollat-lending
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/uncollat-lending
 ---
 Hedge Vault is a DeFi protocol - description pending.

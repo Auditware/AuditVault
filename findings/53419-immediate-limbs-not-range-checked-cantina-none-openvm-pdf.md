@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/poc
   - lang/rust
-  - sector/zk
+  - web3-sector/zk
   - platform/cantina
 protocol: "[[OpenVM]]"
 auditors:

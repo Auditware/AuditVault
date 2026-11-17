@@ -5,7 +5,7 @@ tags:
   - platform/cantina
   - severity/high
   - impact/loss-of-funds/direct-drain
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Cantina Oro February2025]]"
 auditors:
   - "[[FrankCastle]]"

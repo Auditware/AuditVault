@@ -4,7 +4,7 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/zk
+  - web3-sector/zk
 protocol: "[[Brevis]]"
 auditors:
   - "[[0xpetern]]"

@@ -4,7 +4,7 @@ tags:
   - platform/auditone
   - has/github
   - severity/high
-  - sector/gaming
+  - web3-sector/gaming
 protocol: "[[Lotaheros]]"
 auditors:
   - "[[AuditOne]]"

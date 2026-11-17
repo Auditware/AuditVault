@@ -4,6 +4,6 @@ tags:
   - blockchain/evm
   - lang/move
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
 ---
 LayerZero Aptos is a DeFi protocol - description pending.

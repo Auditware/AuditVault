@@ -4,8 +4,8 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
   - platform/sherlock
 protocol: "[[Burve]]"
 auditors:

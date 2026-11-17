@@ -2,9 +2,9 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/dex
-  - sector/privacy
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/staking
   - platform/trailofbits
   - has/github
   - has/poc

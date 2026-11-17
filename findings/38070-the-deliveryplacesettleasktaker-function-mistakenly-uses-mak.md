@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Tadle]]"
 auditors:
   - "[[pontifex]]"

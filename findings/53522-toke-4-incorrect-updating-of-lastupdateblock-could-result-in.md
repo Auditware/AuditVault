@@ -4,7 +4,7 @@ tags:
   - platform/hexens
   - has/github
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Tokemak]]"
 auditors:
   - "[[Hexens]]"

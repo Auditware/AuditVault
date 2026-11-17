@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/move
-  - sector/dex
-  - sector/infra
-  - sector/lending
-  - sector/oracle
+  - web3-sector/dex
+  - web3-sector/infra
+  - web3-sector/lending
+  - web3-sector/oracle
   - platform/code4rena
   - has/github
   - has/poc

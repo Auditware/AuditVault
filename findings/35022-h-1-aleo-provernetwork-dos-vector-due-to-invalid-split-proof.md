@@ -4,9 +4,9 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/lending
-  - sector/privacy
-  - sector/zk
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/zk
 protocol: "[[ALEO]]"
 auditors:
   - "[[DTheo]]"

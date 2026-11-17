@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[Goat Tech]]"
 auditors:
   - "[[Said]]"

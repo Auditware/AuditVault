@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/stable
-  - sector/staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/token
   - platform/quantstamp
   - severity/high
   - vuln/reentrancy/single-function

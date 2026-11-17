@@ -3,10 +3,10 @@ tags:
   - lang/solidity
   - platform/code4rena
   - severity/high
-  - sector/algo-stable
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/algo-stable
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
 protocol: "[[Canto]]"
 auditors:
   - "[[Zokyo]]"

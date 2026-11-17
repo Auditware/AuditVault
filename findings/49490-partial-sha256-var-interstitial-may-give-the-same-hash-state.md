@@ -3,7 +3,7 @@ tags:
   - blockchain/evm
   - lang/noir
   - lang/rust
-  - sector/privacy
+  - web3-sector/privacy
   - platform/consensys
   - severity/high
   - vuln/dependency/unchecked-return-value

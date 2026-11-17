@@ -2,9 +2,9 @@
 tags:
   - blockchain/ethereum
   - blockchain/polygon
-  - sector/bridge
-  - sector/dex
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/stable
   - novelty/variant
 title: "Socket - REKT"
 protocol: "[[Socket]]"

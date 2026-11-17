@@ -2,8 +2,8 @@
 tags:
   - lang/move
   - lang/solidity
-  - sector/lending
-  - sector/oracle
+  - web3-sector/lending
+  - web3-sector/oracle
   - platform/pashov
   - has/github
   - severity/high

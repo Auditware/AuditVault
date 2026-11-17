@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/streaming
-  - sector/token
+  - web3-sector/streaming
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - has/poc

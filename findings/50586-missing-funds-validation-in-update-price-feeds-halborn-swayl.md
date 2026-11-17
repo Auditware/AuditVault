@@ -2,8 +2,8 @@
 tags:
   - lang/rust
   - lang/sway
-  - sector/bridge
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/oracle
   - platform/halborn
   - has/github
   - has/poc

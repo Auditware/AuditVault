@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/staking
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
+  - trigger/time-based/epoch-boundary
 protocol: "[[CAP Labs Covered Agent Protocol]]"
 auditors:
   - Benjamin Samuels
 report: "https://github.com/trailofbits/publications/blob/master/reviews/2025-05-caplabs-coveredagentprotocol-securityreview.pdf"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[epoch-boundary]]"
----
+  - "[[epoch-boundary]]"---
 # Discrepancy between health calculation and slashable collateral computation
 
 - id: 61537

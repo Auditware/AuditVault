@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - has/poc

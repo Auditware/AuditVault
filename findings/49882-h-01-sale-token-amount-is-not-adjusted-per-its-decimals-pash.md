@@ -3,9 +3,9 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/stable
-  - sector/token
-  - sector/streaming
+  - web3-sector/stable
+  - web3-sector/token
+  - web3-sector/streaming
 protocol: "[[DefiApp]]"
 auditors:
   - Pashov Audit Group

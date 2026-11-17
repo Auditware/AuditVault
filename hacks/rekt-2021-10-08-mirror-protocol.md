@@ -1,10 +1,10 @@
 ---
 tags:
-  - sector/bridge
-  - sector/lending
-  - sector/oracle
-  - sector/stable
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/staking
   - impact/loss-of-funds/direct-drain
   - impact/loss-of-funds/locked-funds
 title: "Mirror Protocol - REKT"

@@ -1,13 +1,16 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/uncollat-lending
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/uncollat-lending
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/bridge/missing-validation
+  - vuln/logic/liquidation-logic
+  - novelty/variant
 protocol: "[[LEND]]"
 auditors:
   - future
@@ -21,8 +24,7 @@ genome:
   - "[[math-is-safe]]"
   - "[[add-check]]"
   - "[[redesign-logic]]"
-  - "[[cross-chain-message]]"
----
+  - "[[cross-chain-message]]"---
 # H-8: Cross-chain liquidations will be blocked due to incorrect maxLiquidatable amount calculation.
 
 - id: 58377

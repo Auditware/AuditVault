@@ -3,10 +3,10 @@ tags:
   - blockchain/bitcoin
   - blockchain/ethereum
   - blockchain/optimism
-  - sector/dex
-  - sector/lending
-  - sector/multisig
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/token
   - vuln/dependency/upgradeable-contract
   - novelty/variant
 title: "Kokomo Finance - REKT"

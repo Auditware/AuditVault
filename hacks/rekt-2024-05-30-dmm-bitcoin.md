@@ -1,7 +1,7 @@
 ---
 tags:
   - blockchain/bitcoin
-  - sector/multisig
+  - web3-sector/multisig
   - precondition/insider
 title: "DMM Bitcoin - Rekt"
 protocol: "[[Dmm Bitcoin]]"

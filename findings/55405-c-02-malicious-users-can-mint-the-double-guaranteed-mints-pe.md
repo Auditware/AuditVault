@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/nft
-  - sector/governance
+  - web3-sector/nft
+  - web3-sector/governance
 protocol: "[[OnchainHeroes]]"
 auditors:
   - Pashov Audit Group

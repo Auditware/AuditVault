@@ -2,13 +2,13 @@
 tags:
   - blockchain/ethereum
   - blockchain/solana
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/nft
-  - sector/oracle
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/oracle
+  - web3-sector/stable
   - vuln/oracle/stale-price
   - impact/data-corruption/price-manipulation
   - trigger/first-deposit

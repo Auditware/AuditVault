@@ -1,6 +1,6 @@
 ---
 tags:
-  - sector/launchpad
+  - web3-sector/launchpad
 title: "Skyward Finance - REKT"
 protocol: "[[Skyward Finance]]"
 date: 2022-11-02

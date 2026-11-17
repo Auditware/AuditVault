@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Decent]]"
 auditors:
   - "[[ZdravkoHr]]"

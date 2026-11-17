@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/bitcoin
-  - sector/dex
-  - sector/lending
-  - sector/multisig
-  - sector/privacy
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
   - blast-radius/cross-protocol
 title: "Drained By Design"
 protocol: "[[Drained By Design]]"

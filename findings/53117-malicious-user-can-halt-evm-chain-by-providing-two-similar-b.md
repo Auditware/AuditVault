@@ -4,10 +4,10 @@ tags:
   - platform/cantina
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/infra
-  - sector/liquid-staking
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/infra
+  - web3-sector/liquid-staking
+  - web3-sector/staking
 report: "https://cdn.cantina.xyz/reports/cantina_competition_berachain_january2025.pdf"
 genome:
   - "[[wrong-condition]]"

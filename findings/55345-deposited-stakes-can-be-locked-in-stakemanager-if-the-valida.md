@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - has/github
   - severity/high
+  - novelty/variant
 protocol: "[[FCHAIN Validator And Staking]]"
 auditors:
   - OpenZeppelin
 report: "https://blog.openzeppelin.com/fchain-validator-and-staking-contracts-audit"
 genome:
   - "[[dos-resistance]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # Deposited Stakes Can Be Locked in StakeManager if the Validator Is Inactive
 
 - id: 55345

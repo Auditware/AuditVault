@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
+  - web3-sector/nft
   - platform/pashov
   - has/github
   - severity/high

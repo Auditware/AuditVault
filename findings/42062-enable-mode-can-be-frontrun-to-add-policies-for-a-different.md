@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
+  - web3-sector/account
   - platform/cantina
   - has/poc
   - severity/high

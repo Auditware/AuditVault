@@ -5,7 +5,7 @@ tags:
   - has/poc
   - lang/solidity
   - platform/code4rena
-  - sector/gaming
+  - web3-sector/gaming
 protocol: "[[Forte]]"
 auditors:
   - patitonar

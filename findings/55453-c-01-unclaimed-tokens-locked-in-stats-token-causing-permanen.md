@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/rust
+  - web3-sector/dex
   - has/github
   - severity/high
-  - sector/dex
+  - impact/loss-of-funds/direct-drain
 protocol: "[[DesciLaunchpad]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/DesciLaunchpad-security-review_2025-02-07.md"
 genome:
   - "[[reward-accounting]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # [C-01] Unclaimed tokens locked in `stats_token` causing permanent fund loss
 
 - id: 55453

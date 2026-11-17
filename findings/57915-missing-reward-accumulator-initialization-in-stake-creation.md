@@ -1,9 +1,13 @@
 ---
 tags:
-  - sector/staking
+  - lang/solidity
+  - web3-sector/staking
   - has/github
   - severity/high
-  - lang/solidity
+  - vuln/logic/reward-calculation
+  - impact/loss-of-funds/direct-drain
+  - precondition/uninitialized
+  - novelty/variant
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
@@ -14,8 +18,7 @@ genome:
   - "[[direct-drain]]"
   - "[[precondition/uninitialized]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # Missing Reward Accumulator Initialization in Stake Creation
 
 - id: 57915

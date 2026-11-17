@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/token
+  - web3-sector/token
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - impact/mev/frontrun
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
@@ -11,8 +13,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/Omo-security-revie
 genome:
   - "[[token-approval-flow]]"
   - "[[direct-drain]]"
-  - "[[mev/frontrun]]"
----
+  - "[[mev/frontrun]]"---
 # [H-02] The `transferFrom()` in `OmoRouter.sol` has approval vulnerabilities
 
 - id: 53320

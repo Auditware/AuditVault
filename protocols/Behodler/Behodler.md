@@ -1,6 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
+  - web3-sector/dex
+  - web3-sector/governance
 ---
 Behodler is a DeFi protocol - description pending.

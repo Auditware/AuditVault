@@ -7,7 +7,7 @@ tags:
   - severity/high
   - trigger/low-liquidity
   - fix/use-reentrancy-guard
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Lucidly]]"
 auditors:
   - "[[Pashov Audit Group]]"

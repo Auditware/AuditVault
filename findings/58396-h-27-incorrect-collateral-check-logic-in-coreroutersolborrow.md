@@ -1,21 +1,21 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/uncollat-lending
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/uncollat-lending
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/mev/frontrun
 protocol: "[[LEND]]"
 auditors:
   - newspacexyz
 report: "https://github.com/sherlock-audit/2025-05-lend-audit-contest-judging"
 genome:
   - "[[frontrun-exposure]]"
-  - "[[mev/frontrun]]"
----
+  - "[[mev/frontrun]]"---
 # H-27: Incorrect Collateral Check Logic in CoreRouter.sol#borrow()
 
 - id: 58396

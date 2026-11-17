@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/zk
+  - web3-sector/zk
 generated: true
 ---
 # Zk — Audit Checklist
 
-> Auto-generated from **73** findings in this sector (**8** with bug-class tags), ranked by frequency.
+> Auto-generated from **72** findings in this sector (**8** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

@@ -3,10 +3,10 @@ tags:
   - blockchain/evm
   - blockchain/evm/base
   - lang/solidity
-  - sector/gaming
-  - sector/governance
-  - sector/oracle
-  - sector/stable
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/oracle
+  - web3-sector/stable
   - platform/code4rena
   - has/github
   - has/poc

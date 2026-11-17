@@ -2,9 +2,9 @@
 tags:
   - blockchain/bitcoin
   - blockchain/ethereum
-  - sector/dex
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/stable
+  - web3-sector/token
 title: "Kucoin - REKT"
 protocol: "[[Kucoin]]"
 date: 2020-09-29

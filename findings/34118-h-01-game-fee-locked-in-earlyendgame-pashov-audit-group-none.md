@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/gaming
-  - sector/staking-pool
+  - web3-sector/bridge
+  - web3-sector/gaming
+  - web3-sector/staking-pool
   - platform/pashov
   - has/github
   - severity/high

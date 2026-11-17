@@ -2,13 +2,13 @@
 tags:
   - blockchain/ethereum
   - blockchain/solana
-  - sector/dex
-  - sector/gaming
-  - sector/governance
-  - sector/multisig
-  - sector/perpetuals
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/multisig
+  - web3-sector/perpetuals
+  - web3-sector/privacy
+  - web3-sector/stable
   - trigger/governance-vote
   - precondition/insider
 title: Wasabi Protocol - Rekt

@@ -4,8 +4,8 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/nft
-  - sector/oracle
+  - web3-sector/nft
+  - web3-sector/oracle
 protocol: "[[RipIt]]"
 auditors:
   - "[[Pashov Audit Group]]"

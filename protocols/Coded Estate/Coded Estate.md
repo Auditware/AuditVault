@@ -2,8 +2,8 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/nft
-  - sector/options
-  - sector/stable
+  - web3-sector/nft
+  - web3-sector/options
+  - web3-sector/stable
 ---
 Coded Estate is a DeFi protocol - description pending.

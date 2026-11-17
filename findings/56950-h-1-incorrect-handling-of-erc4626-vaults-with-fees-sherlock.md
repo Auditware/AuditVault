@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/token
-  - sector/vault
+  - web3-sector/token
+  - web3-sector/vault
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - fix/use-reentrancy-guard
 protocol: "[[Burve]]"
 auditors:
   - newspacexyz
@@ -14,8 +16,7 @@ report: "https://github.com/sherlock-audit/2025-04-burve-judging"
 genome:
   - "[[fee-accounting]]"
   - "[[direct-drain]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # H-1: Incorrect handling of ERC4626 vaults with fees
 
 - id: 56950

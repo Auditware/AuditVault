@@ -2,11 +2,11 @@
 tags:
   - blockchain/bitcoin
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/privacy
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/token
 title: "BetterBank - Rekt"
 protocol: "[[Betterbank]]"
 date: 2025-08-26

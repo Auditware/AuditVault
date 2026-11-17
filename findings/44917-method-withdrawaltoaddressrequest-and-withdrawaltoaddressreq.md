@@ -6,7 +6,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Tradable]]"
 auditors:
   - "[[Zokyo]]"

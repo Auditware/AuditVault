@@ -5,7 +5,7 @@ tags:
   - has/poc
   - lang/solidity
   - platform/spearbit
-  - sector/token
+  - web3-sector/token
 protocol: "[[InfiniFi Contracts]]"
 auditors:
   - R0bert

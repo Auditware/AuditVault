@@ -1,8 +1,9 @@
 ---
 tags:
+  - lang/anchor
   - lang/rust
   - lang/solidity
   - sdk/anchor
-  - sector/lending
+  - web3-sector/lending
 ---
 Enclave is a DeFi protocol - description pending.

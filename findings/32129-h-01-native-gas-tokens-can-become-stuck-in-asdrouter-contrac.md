@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/insurance
+  - web3-sector/insurance
 protocol: "[[Canto]]"
 auditors:
   - "[[SpicyMeatball]]"

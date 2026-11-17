@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/lending
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/token
 protocol: "[[Licredity]]"
 auditors:
   - "[[immeas]]"

@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group

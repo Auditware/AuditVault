@@ -4,9 +4,9 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/dex
-  - sector/lending
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/stable
 protocol: "[[Ostium]]"
 auditors:
   - "[[Pashov Audit Group]]"

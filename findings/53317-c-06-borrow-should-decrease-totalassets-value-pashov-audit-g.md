@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - has/github
   - severity/high
+  - fix/use-reentrancy-guard
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/Omo-security-review_2025-01-25.md"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [C-06] `borrow()` should decrease `totalAssets` value
 
 - id: 53317

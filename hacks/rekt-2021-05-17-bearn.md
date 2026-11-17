@@ -1,8 +1,8 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/lending
-  - sector/privacy
+  - web3-sector/lending
+  - web3-sector/privacy
   - impact/loss-of-funds/direct-drain
   - trigger/flash-loan
   - precondition/flash-loan-available

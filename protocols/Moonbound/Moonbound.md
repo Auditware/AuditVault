@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/launchpad
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/launchpad
+  - web3-sector/token
 ---
 Moonbound is a DeFi protocol - description pending.

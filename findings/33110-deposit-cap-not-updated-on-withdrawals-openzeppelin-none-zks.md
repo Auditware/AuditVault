@@ -3,7 +3,7 @@ tags:
   - blockchain/evm
   - blockchain/evm/zksync
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/openzeppelin
   - has/github
   - severity/high

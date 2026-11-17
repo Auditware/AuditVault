@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/infra
-  - sector/lending
+  - web3-sector/governance
+  - web3-sector/infra
+  - web3-sector/lending
   - platform/code4rena
   - has/github
   - has/poc

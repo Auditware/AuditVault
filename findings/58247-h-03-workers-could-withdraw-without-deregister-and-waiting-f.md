@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/dos/unbounded-loop
+  - novelty/known-pattern
 protocol: "[[Subsquid]]"
 auditors:
   - Pashov Audit Group
@@ -11,8 +13,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/Subsquid-security-
 genome:
   - "[[dos-resistance]]"
   - "[[unbounded-loop]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # [H-03] Workers could withdraw without deregister and waiting for the lock period
 
 - id: 58247

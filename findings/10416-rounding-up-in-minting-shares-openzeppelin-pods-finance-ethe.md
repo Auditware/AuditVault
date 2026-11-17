@@ -8,7 +8,7 @@ tags:
   - novelty/variant
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Pods Finance]]"
 auditors:
   - "[[OpenZeppelin]]"

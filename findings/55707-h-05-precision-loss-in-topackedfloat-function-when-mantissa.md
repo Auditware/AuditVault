@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/gaming
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
-  - sector/gaming
+  - vuln/arithmetic/precision-loss
+  - novelty/variant
 protocol: "[[Forte]]"
 auditors:
   - hecker\_trieu\_tien
@@ -15,8 +17,7 @@ genome:
   - "[[precision-loss]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-05] Precision loss in `toPackedFloat` function when mantissa is in range (`MAX_M_DIGIT_NUMBER`, `MIN_L_DIGIT_NUMBER`)
 
 - id: 55707

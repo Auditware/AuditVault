@@ -5,7 +5,7 @@ tags:
   - has/github
   - severity/high
   - impact/loss-of-funds/direct-drain
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Aurorafastbridge]]"
 auditors:
   - "[[AuditOne]]"

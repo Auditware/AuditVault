@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/perpetuals
+  - web3-sector/perpetuals
 generated: true
 ---
 # Perpetuals — Audit Checklist
 
-> Auto-generated from **106** findings in this sector (**25** with bug-class tags), ranked by frequency.
+> Auto-generated from **105** findings in this sector (**25** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

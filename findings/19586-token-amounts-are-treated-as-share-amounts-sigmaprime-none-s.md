@@ -4,9 +4,9 @@ tags:
   - platform/sigmaprime
   - has/github
   - severity/high
-  - sector/dex
-  - sector/streaming
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/streaming
+  - web3-sector/token
 protocol: "[[Sushi]]"
 auditors:
   - "[[Sigma Prime]]"

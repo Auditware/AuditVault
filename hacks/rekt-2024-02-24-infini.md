@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/dex
-  - sector/lending
-  - sector/multisig
-  - sector/oracle
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/oracle
+  - web3-sector/privacy
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
 title: "Infini - Rekt"
 protocol: "[[Infini]]"

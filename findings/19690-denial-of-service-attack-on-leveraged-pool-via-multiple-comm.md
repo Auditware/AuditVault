@@ -4,7 +4,7 @@ tags:
   - platform/sigmaprime
   - has/github
   - severity/high
-  - sector/options
+  - web3-sector/options
 protocol: "[[Tracer]]"
 auditors:
   - "[[Sigma Prime]]"

@@ -4,9 +4,9 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/governance
-  - sector/staking
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/staking
+  - web3-sector/token
 protocol: "[[Tapioca DAO]]"
 auditors:
   - "[[Pashov Audit Group]]"

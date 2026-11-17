@@ -3,9 +3,9 @@ tags:
   - severity/high
   - has/poc
   - lang/rust
-  - sector/bridge
-  - sector/zk
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/zk
+  - web3-sector/lending
   - platform/cantina
 protocol: "[[OpenVM]]"
 auditors:

@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/lending
-  - sector/oracle
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
   - platform/spearbit
   - has/github
   - severity/high

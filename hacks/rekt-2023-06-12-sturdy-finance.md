@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/privacy
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/privacy
+  - web3-sector/staking
   - vuln/reentrancy/read-only
   - vuln/reentrancy/single-function
   - impact/data-corruption/price-manipulation

@@ -3,7 +3,7 @@ tags:
   - platform/ottersec
   - has/poc
   - severity/high
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Tailwind]]"
 auditors:
   - "[[Caue Obici]]"

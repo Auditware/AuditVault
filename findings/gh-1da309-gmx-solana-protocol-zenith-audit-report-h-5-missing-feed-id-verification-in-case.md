@@ -8,7 +8,7 @@ tags:
   - novelty/variant
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[GMX Solana]]"
 auditors:
   - "[[Zenith]]"

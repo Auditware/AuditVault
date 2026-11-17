@@ -3,7 +3,7 @@ tags:
   - lang/move
   - platform/ottersec
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Axelar]]"
 auditors:
   - "[[Robert Chen]]"

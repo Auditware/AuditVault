@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - platform/halborn
   - has/github
   - severity/high

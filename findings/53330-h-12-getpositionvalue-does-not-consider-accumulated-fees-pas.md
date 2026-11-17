@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - has/github
   - severity/high
+  - vuln/logic/fee-calculation
+  - novelty/variant
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +15,7 @@ genome:
   - "[[fee-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-12] `getPositionValue()` does not consider accumulated fees
 
 - id: 53330

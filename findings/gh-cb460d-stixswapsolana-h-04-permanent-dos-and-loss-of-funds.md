@@ -11,7 +11,7 @@ tags:
   - novelty/variant
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/dex
+  - web3-sector/dex
   - check/same-token-swap-protection
   - check/token-dust-handling
 protocol: "[[Stixswapsolana]]"

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/vyper
-  - sector/governance
+  - web3-sector/governance
   - platform/0x52
   - has/github
   - severity/high

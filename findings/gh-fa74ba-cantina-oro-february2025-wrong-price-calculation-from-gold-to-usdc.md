@@ -9,7 +9,7 @@ tags:
   - novelty/variant
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Cantina Oro February2025]]"
 auditors:
   - "[[FrankCastle]]"

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/wallet
+  - web3-sector/wallet
   - platform/consensys
   - severity/high
   - precondition/insider

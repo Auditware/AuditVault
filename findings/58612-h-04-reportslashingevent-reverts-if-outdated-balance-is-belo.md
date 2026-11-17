@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/oracle
-  - sector/staking
+  - web3-sector/oracle
+  - web3-sector/staking
 protocol: "[[Kinetiq]]"
 auditors:
   - Pashov Audit Group

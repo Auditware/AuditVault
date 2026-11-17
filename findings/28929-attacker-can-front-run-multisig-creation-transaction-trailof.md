@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/multisig
+  - web3-sector/multisig
   - platform/trailofbits
   - has/github
   - severity/high

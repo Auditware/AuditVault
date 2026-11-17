@@ -1,8 +1,8 @@
 ---
 tags:
   - blockchain/fantom
-  - sector/token
-  - sector/vault
+  - web3-sector/token
+  - web3-sector/vault
   - has/audit
   - vuln/reentrancy/single-function
   - trigger/flash-loan

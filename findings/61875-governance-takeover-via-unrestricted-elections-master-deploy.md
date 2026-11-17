@@ -3,8 +3,8 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/governance
-  - sector/options
+  - web3-sector/governance
+  - web3-sector/options
 protocol: "[[XDAO]]"
 auditors:
   - "[[István Böhm]]"

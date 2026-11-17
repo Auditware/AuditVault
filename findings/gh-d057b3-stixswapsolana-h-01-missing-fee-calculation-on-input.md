@@ -8,7 +8,7 @@ tags:
   - novelty/variant
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Stixswapsolana]]"
 auditors:
   - "[[FrankCastle]]"

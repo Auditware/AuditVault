@@ -1,17 +1,17 @@
 ---
 tags:
+  - lang/solidity
+  - web3-sector/oracle
   - has/github
   - severity/high
-  - lang/solidity
-  - sector/oracle
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Hanji]]"
 auditors:
   - MixBytes
 report: "https://github.com/mixbytes/audits_public/blob/master/Hanji/Liquidity%20Vault/README.md#1-zero-address-rfqordersigner-allows-unrestricted-order-execution"
 genome:
   - "[[access-roles]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # Zero-Address `rfqOrderSigner` Allows Unrestricted Order Execution
 
 - id: 55153

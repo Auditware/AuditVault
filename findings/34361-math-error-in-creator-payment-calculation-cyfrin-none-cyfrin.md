@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
-  - sector/stable
+  - web3-sector/oracle
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - severity/high

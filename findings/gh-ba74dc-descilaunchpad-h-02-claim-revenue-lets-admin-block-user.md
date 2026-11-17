@@ -6,7 +6,7 @@ tags:
   - severity/high
   - impact/loss-of-funds/direct-drain
   - novelty/variant
-  - sector/launchpad
+  - web3-sector/launchpad
 protocol: "[[Descilaunchpad]]"
 auditors:
   - "[[FrankCastle]]"

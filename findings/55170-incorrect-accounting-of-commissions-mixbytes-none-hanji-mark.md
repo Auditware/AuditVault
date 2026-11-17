@@ -4,7 +4,7 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Hanji]]"
 auditors:
   - "[[MixBytes]]"

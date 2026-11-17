@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/stable
+  - web3-sector/governance
+  - web3-sector/stable
   - has/github
   - severity/high
+  - impact/loss-of-funds/reward-theft
+  - fix/use-reentrancy-guard
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +14,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/KittenSwap-securit
 genome:
   - "[[reward-accounting]]"
   - "[[reward-theft]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [C-03] Incentive rewards may be stolen
 
 - id: 58067

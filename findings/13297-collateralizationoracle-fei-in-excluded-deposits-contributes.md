@@ -3,11 +3,11 @@ tags:
   - lang/solidity
   - platform/consensys
   - severity/high
-  - sector/algo-stable
-  - sector/governance
-  - sector/lending
-  - sector/options
-  - sector/oracle
+  - web3-sector/algo-stable
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/options
+  - web3-sector/oracle
 protocol: "[[Fei Protocol V2 Phase 1]]"
 auditors:
   - "[[Sergii Kravchenko]]"

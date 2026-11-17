@@ -7,7 +7,7 @@ tags:
   - severity/high
   - fix/use-reentrancy-guard
   - novelty/variant
-  - sector/token
+  - web3-sector/token
 protocol: "[[Gorples EVM Contracts Revision]]"
 auditors:
   - "[[Halborn]]"

@@ -4,8 +4,8 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/lending
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/token
 protocol: "[[HoldeFi]]"
 auditors:
   - "[[OpenZeppelin]]"

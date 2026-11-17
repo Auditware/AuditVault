@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Reserve Protocol Solana DTFs]]"
 auditors:
   - Samuel Moelius

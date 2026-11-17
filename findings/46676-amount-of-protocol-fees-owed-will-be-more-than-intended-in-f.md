@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Royco]]"
 auditors:
   - "[[Kurt Barry]]"

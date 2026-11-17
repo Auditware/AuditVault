@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/vault
+  - web3-sector/vault
 generated: true
 ---
 # Vault — Audit Checklist
 
-> Auto-generated from **117** findings in this sector (**14** with bug-class tags), ranked by frequency.
+> Auto-generated from **105** findings in this sector (**15** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
@@ -15,12 +15,12 @@ What actually goes wrong in this sector, most common first. Tick each as you rul
 - [ ] **Logic: Reward Calculation** — 3 findings `vuln/logic/reward-calculation`
 - [ ] **Dos: Frozen Funds** — 3 findings `vuln/dos/frozen-funds`
 - [ ] **Logic: Fee Calculation** — 2 findings `vuln/logic/fee-calculation`
+- [ ] **Oracle: Spot Price** — 2 findings `vuln/oracle/spot-price`
 - [ ] **Arithmetic: Rounding Direction** — 1 finding `vuln/arithmetic/rounding-direction`
 - [ ] **Dependency: Upgradeable Contract** — 1 finding `vuln/dependency/upgradeable-contract`
 - [ ] **Arithmetic: Underflow** — 1 finding `vuln/arithmetic/underflow`
 - [ ] **Reentrancy: Single Function** — 1 finding `vuln/reentrancy/single-function`
 - [ ] **Dependency: Unchecked Return Value** — 1 finding `vuln/dependency/unchecked-return-value`
-- [ ] **Oracle: Spot Price** — 1 finding `vuln/oracle/spot-price`
 
 ## 🎯 Common triggers
 The conditions attackers use to set these bugs off — check each path is constrained.

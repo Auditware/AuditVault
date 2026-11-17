@@ -2,21 +2,21 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/options
-  - sector/zk
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/options
+  - web3-sector/zk
   - platform/cantina
   - has/poc
   - severity/high
+  - novelty/known-pattern
 protocol: "[[OpenVM]]"
 auditors:
   - georg
 report: "https://cdn.cantina.xyz/reports/cantina_competition_openvm_january2025.pdf"
 genome:
   - "[[timestamp-dependence]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Inserted register reads at arbitrary timestamps 
 
 - id: 53417

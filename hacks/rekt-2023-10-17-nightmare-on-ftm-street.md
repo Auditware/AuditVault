@@ -4,8 +4,8 @@ tags:
   - blockchain/bitcoin
   - blockchain/bsc
   - blockchain/fantom
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
 title: "Nightmare on FTM Street"
 protocol: "[[Nightmare On Ftm Street]]"
 date: 2023-10-17

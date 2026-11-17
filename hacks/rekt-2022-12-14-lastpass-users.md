@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/dex
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/staking
   - impact/loss-of-funds/direct-drain
 title: "LastPass Users - REKT"
 protocol: "[[Lastpass Users]]"

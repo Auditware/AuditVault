@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/lending
-  - sector/perpetuals
-  - sector/stable
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/stable
+  - web3-sector/token
   - has/audit
   - vuln/reentrancy/single-function
   - trigger/flash-loan

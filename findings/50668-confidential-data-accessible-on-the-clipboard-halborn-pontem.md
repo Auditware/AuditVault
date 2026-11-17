@@ -4,7 +4,7 @@ tags:
   - platform/halborn
   - has/poc
   - severity/high
-  - sector/privacy
+  - web3-sector/privacy
 protocol: "[[Aptos Wallet]]"
 auditors:
   - "[[Halborn]]"

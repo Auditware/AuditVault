@@ -4,7 +4,7 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[API3]]"
 auditors:
   - "[[Simone Monica]]"

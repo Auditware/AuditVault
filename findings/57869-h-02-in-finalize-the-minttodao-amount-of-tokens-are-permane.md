@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
+  - web3-sector/governance
   - platform/shieldify
   - has/github
   - severity/high
+  - vuln/dos/frozen-funds
+  - novelty/variant
 protocol: "[[Daoslive]]"
 auditors:
   - Shieldify Security
@@ -12,8 +14,7 @@ report: "https://github.com/shieldify-security/audits-portfolio-md/blob/main/Dao
 genome:
   - "[[fee-accounting]]"
   - "[[frozen-funds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-02] In `finalize()`, the `_mintToDao` Amount of Tokens Are Permanently Stuck in `DaosLive`
 
 - id: 57869

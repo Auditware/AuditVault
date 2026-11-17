@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/token
   - platform/trailofbits
   - has/github
   - has/poc

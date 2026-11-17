@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
-  - sector/token
+  - web3-sector/oracle
+  - web3-sector/token
   - platform/sigmaprime
   - has/github
   - severity/high

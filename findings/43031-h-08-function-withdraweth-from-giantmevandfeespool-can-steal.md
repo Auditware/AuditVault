@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/liquid-staking
-  - sector/options
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/farm
+  - web3-sector/liquid-staking
+  - web3-sector/options
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/code4rena
   - has/github
   - has/poc

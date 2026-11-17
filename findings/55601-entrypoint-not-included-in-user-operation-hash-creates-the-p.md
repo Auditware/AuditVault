@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
-  - sector/bridge
-  - sector/staking
-  - sector/wallet
+  - web3-sector/account
+  - web3-sector/bridge
+  - web3-sector/staking
+  - web3-sector/wallet
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/bridge/replay
+  - novelty/variant
 protocol: "[[Metamask Delegationframework]]"
 auditors:
   - 0kage
@@ -19,8 +21,7 @@ genome:
   - "[[bridge-is-secure]]"
   - "[[signature-is-unique]]"
   - "[[add-nonce]]"
-  - "[[cross-chain-message]]"
----
+  - "[[cross-chain-message]]"---
 # EntryPoint not included in user operation hash creates the possibility of Replay Attacks
 
 - id: 55601

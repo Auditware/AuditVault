@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - has/github
   - severity/high
+  - blast-radius/cross-protocol
 protocol: "[[Across]]"
 auditors:
   - OpenZeppelin
 report: "https://blog.openzeppelin.com/across-audit"
 genome:
   - "[[extcall-return-validation]]"
-  - "[[cross-protocol]]"
----
+  - "[[cross-protocol]]"---
 # SpokePool's fill Function Performs Malformed Call
 
 - id: 56759

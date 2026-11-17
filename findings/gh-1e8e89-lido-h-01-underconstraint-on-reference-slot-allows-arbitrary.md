@@ -4,9 +4,9 @@ tags:
   - lang/solidity
   - platform/pashov
   - severity/high
-  - sector/infra
-  - sector/liquid-staking
-  - sector/oracle
+  - web3-sector/infra
+  - web3-sector/liquid-staking
+  - web3-sector/oracle
 protocol: "[[Lido]]"
 auditors:
   - "[[FrankCastle]]"

@@ -4,8 +4,8 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/staking
-  - sector/token
+  - web3-sector/staking
+  - web3-sector/token
 protocol: "[[Remora]]"
 auditors:
   - "[[0xStalin]]"

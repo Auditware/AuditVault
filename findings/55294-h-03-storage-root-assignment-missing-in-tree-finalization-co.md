@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - has/poc
-  - sector/bridge
+  - web3-sector/bridge
   - platform/code4rena
 protocol: "[[Initia]]"
 auditors:

@@ -3,9 +3,9 @@ tags:
   - blockchain/starknet
   - lang/cairo
   - lang/rust
-  - sector/cdp
-  - sector/lending
-  - sector/options
+  - web3-sector/cdp
+  - web3-sector/lending
+  - web3-sector/options
   - platform/code4rena
   - has/github
   - has/poc

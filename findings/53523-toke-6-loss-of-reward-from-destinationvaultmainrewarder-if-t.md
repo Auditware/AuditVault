@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/oracle
+  - web3-sector/lending
+  - web3-sector/oracle
   - platform/hexens
   - has/github
   - severity/high

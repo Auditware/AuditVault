@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/perpetuals
+  - web3-sector/perpetuals
   - platform/ottersec
   - severity/high
   - fix/add-access-control

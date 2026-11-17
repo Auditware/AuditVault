@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/arithmetic/decimal-mismatch
+  - novelty/variant
 protocol: "[[Remora Pledge]]"
 auditors:
   - Dacian
@@ -14,8 +16,7 @@ genome:
   - "[[decimal-mismatch]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Accounting on `PaymentSettler` will be corrupted when changing `stablecoin` that is used to process payments
 
 - id: 61176

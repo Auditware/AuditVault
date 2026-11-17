@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/stable
+  - web3-sector/stable
 protocol: "[[Hyperhyper]]"
 auditors:
   - Pashov Audit Group

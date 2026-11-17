@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/oracle
   - has/github
   - severity/high
-  - sector/oracle
+  - fix/use-reentrancy-guard
 protocol: "[[Ufarm]]"
 auditors:
   - Hexens
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Hexens/2025-06-10-Ufarm.md"
 genome:
   - "[[dos-resistance]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [UFARM1-9] Investor withdrawals may not function with a nonzero withdrawalLockupPeriod
 
 - id: 62440

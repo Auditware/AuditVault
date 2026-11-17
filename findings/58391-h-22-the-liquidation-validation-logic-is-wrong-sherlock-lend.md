@@ -1,13 +1,16 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/uncollat-lending
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/uncollat-lending
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/logic/liquidation-logic
+  - impact/loss-of-funds/direct-drain
+  - novelty/variant
 protocol: "[[LEND]]"
 auditors:
   - newspacexyz
@@ -18,8 +21,7 @@ genome:
   - "[[direct-drain]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[redesign-logic]]"
----
+  - "[[redesign-logic]]"---
 # H-22: The liquidation validation logic is wrong
 
 - id: 58391

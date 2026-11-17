@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/nft
-  - sector/options
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/options
 ---
 Phimaterial is a DeFi protocol - description pending.

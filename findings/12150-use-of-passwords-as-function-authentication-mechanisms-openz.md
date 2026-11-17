@@ -4,7 +4,7 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[SuperDAO]]"
 auditors:
   - "[[OpenZeppelin]]"

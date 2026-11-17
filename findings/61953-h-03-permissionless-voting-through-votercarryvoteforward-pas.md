@@ -4,9 +4,9 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/dex
-  - sector/governance
-  - sector/nft
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/nft
 protocol: "[[KittenSwap]]"
 auditors:
   - "[[Pashov Audit Group]]"

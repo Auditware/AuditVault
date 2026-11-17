@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
+  - web3-sector/oracle
 ---
 Level is a DeFi protocol - description pending.

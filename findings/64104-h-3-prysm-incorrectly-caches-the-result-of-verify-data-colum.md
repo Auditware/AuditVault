@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/infra
-  - sector/staking
+  - web3-sector/infra
+  - web3-sector/staking
 protocol: "[[Fusaka]]"
 auditors:
   - "[[alexfilippov314]]"

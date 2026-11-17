@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/vault
+  - web3-sector/lending
+  - web3-sector/vault
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
+  - novelty/variant
 protocol: "[[CAP Labs Covered Agent Protocol]]"
 auditors:
   - Benjamin Samuels
 report: "https://github.com/trailofbits/publications/blob/master/reviews/2025-05-caplabs-coveredagentprotocol-securityreview.pdf"
 genome:
   - "[[dos-resistance]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # Inconsistent balance tracking in vault creates DoS for asset borrowing
 
 - id: 61528

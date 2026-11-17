@@ -3,8 +3,8 @@ tags:
   - lang/tact
   - platform/ton
   - severity/high
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
 protocol: "[[PixelSwap DEX]]"
 auditors:
   - "[[Guillermo Larregay]]"

@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - severity/high
   - platform/halborn
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Consortium]]"
 auditors:
   - "[[Halborn]]"

@@ -2,6 +2,6 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/dex
+  - web3-sector/dex
 ---
 Plasma Accretion is a DeFi protocol - description pending.

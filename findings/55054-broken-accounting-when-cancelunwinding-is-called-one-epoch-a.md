@@ -4,7 +4,7 @@ tags:
   - has/github
   - lang/solidity
   - platform/spearbit
-  - sector/stable
+  - web3-sector/stable
 protocol: "[[InfiniFi Contracts]]"
 auditors:
   - R0bert

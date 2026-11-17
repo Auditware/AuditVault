@@ -4,9 +4,9 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/options
-  - sector/privacy
-  - sector/zk
+  - web3-sector/options
+  - web3-sector/privacy
+  - web3-sector/zk
 protocol: "[[Linea]]"
 auditors:
   - "[[OpenZeppelin]]"

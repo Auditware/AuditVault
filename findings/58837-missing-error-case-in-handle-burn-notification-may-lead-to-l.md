@@ -1,16 +1,16 @@
 ---
 tags:
+  - web3-sector/dex
   - platform/quantstamp
   - severity/high
-  - sector/dex
+  - impact/loss-of-funds/locked-funds
 protocol: "[[Crouton Finance   StableSwap]]"
 auditors:
   - Julio Aguilar
 report: "https://certificate.quantstamp.com/full/crouton-finance-stable-swap/14a85512-535f-4145-bbe9-1069ef8ce9a9/index.html"
 genome:
   - "[[dos-resistance]]"
-  - "[[locked-funds]]"
----
+  - "[[locked-funds]]"---
 # Missing Error Case in `handle_burn_notification()` May Lead to Locked Funds for Caller and Incorrect Accounting
 
 - id: 58837

@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/lending
-  - sector/stable
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/stable
 protocol: "[[Alchemix]]"
 auditors:
   - "[[jasonxiale]]"

@@ -4,7 +4,7 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Index]]"
 auditors:
   - "[[0x52]]"

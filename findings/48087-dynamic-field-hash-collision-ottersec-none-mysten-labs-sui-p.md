@@ -4,7 +4,7 @@ tags:
   - lang/rust
   - platform/ottersec
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Sui]]"
 auditors:
   - "[[Cauê Obici]]"

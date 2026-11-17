@@ -1,9 +1,10 @@
 ---
 tags:
+  - lang/solidity
+  - web3-sector/lending
   - has/github
   - severity/high
-  - lang/solidity
-  - sector/lending
+  - impact/privilege-escalation/ownership-transfer
 protocol: "[[HypurrFi]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +14,7 @@ genome:
   - "[[upgradeable-contract]]"
   - "[[ownership-transfer]]"
   - "[[variant]]"
-  - "[[external-call-is-safe]]"
----
+  - "[[external-call-is-safe]]"---
 # [H-01] `DeployUsdxlUtils` does not transfer ownership of usdxlToken to `admin`
 
 - id: 55465

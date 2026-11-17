@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/rust
-  - sector/nft
+  - web3-sector/nft
 ---
 Rarible Audit Report is a DeFi protocol - description pending.

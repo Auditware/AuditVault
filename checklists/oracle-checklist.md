@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/oracle
+  - web3-sector/oracle
 generated: true
 ---
 # Oracle — Audit Checklist
 
-> Auto-generated from **278** findings in this sector (**70** with bug-class tags), ranked by frequency.
+> Auto-generated from **252** findings in this sector (**71** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
@@ -17,10 +17,10 @@ What actually goes wrong in this sector, most common first. Tick each as you rul
 - [ ] **Oracle: Spot Price** — 10 findings `vuln/oracle/spot-price`
 - [ ] **Logic: Liquidation Logic** — 9 findings `vuln/logic/liquidation-logic`
 - [ ] **Logic: Fee Calculation** — 7 findings `vuln/logic/fee-calculation`
+- [ ] **Logic: Reward Calculation** — 5 findings `vuln/logic/reward-calculation`
 - [ ] **Arithmetic: Underflow** — 5 findings `vuln/arithmetic/underflow`
 - [ ] **Access Control: Missing Modifier** — 4 findings `vuln/access-control/missing-modifier`
 - [ ] **Pda: Missing Seeds Check** — 4 findings `vuln/pda/missing-seeds-check`
-- [ ] **Logic: Reward Calculation** — 4 findings `vuln/logic/reward-calculation`
 - [ ] **Reentrancy: Single Function** — 3 findings `vuln/reentrancy/single-function`
 - [ ] **Access Control: Missing Signer** — 3 findings `vuln/access-control/missing-signer`
 - [ ] **Arithmetic: Precision Loss** — 3 findings `vuln/arithmetic/precision-loss`

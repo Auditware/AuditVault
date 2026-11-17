@@ -3,7 +3,7 @@ tags:
   - blockchain/evm
   - blockchain/evm/zksync
   - lang/solidity
-  - sector/governance
+  - web3-sector/governance
   - platform/code4rena
   - has/github
   - has/poc

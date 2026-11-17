@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/nft
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/staking
   - platform/code4rena
   - has/github
   - has/poc

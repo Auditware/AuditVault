@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/options
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/options
+  - web3-sector/staking
   - platform/quantstamp
   - severity/high
   - novelty/variant

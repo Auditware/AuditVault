@@ -7,7 +7,7 @@ tags:
   - novelty/known-pattern
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/insurance
+  - web3-sector/insurance
 protocol: "[[Onre]]"
 auditors:
   - "[[Paul Clemson]]"

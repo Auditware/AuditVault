@@ -1,12 +1,12 @@
 ---
 tags:
-  - sector/dex
-  - sector/lending
-  - sector/perpetuals
-  - sector/privacy
-  - sector/stable
-  - sector/token
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
+  - web3-sector/vault
 title: "Yearn - REKT 2"
 protocol: "[[Yearn]]"
 date: 2023-04-13

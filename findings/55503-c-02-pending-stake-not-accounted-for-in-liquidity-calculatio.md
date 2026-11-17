@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/staking
-  - sector/staking-pool
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/token
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - fix/use-reentrancy-guard
 protocol: "[[Coinflip]]"
 auditors:
   - Pashov Audit Group
@@ -14,8 +16,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/Coinflip-security-
 genome:
   - "[[cross-contract-state-consistency]]"
   - "[[direct-drain]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [C-02] Pending stake not accounted for in liquidity calculations
 
 - id: 55503

@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
-  - sector/staking-pool
-  - sector/token
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/token
   - platform/pashov
   - has/github
   - severity/high

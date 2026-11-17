@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/dex
+  - web3-sector/bridge
+  - web3-sector/dex
 protocol: "[[Decent]]"
 auditors:
   - "[[3]]"

@@ -1,9 +1,9 @@
 ---
 tags:
   - blockchain/bitcoin
-  - sector/bridge
-  - sector/governance
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/lending
   - vuln/access-control/uninitialized-owner
   - vuln/pda/reinitialization
   - trigger/flash-loan

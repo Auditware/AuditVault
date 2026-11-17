@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
+  - web3-sector/nft
   - platform/cantina
   - severity/high
   - impact/loss-of-funds/direct-drain

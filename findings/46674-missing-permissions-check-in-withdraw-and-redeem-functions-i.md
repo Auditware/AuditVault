@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/token
-  - sector/vault
+  - web3-sector/token
+  - web3-sector/vault
 protocol: "[[Royco]]"
 auditors:
   - "[[Kurt Barry]]"

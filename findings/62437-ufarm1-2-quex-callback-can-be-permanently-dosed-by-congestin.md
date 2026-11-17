@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
+  - web3-sector/oracle
   - has/github
   - severity/high
+  - vuln/dos/unbounded-loop
+  - impact/dos/permanent
+  - novelty/known-pattern
 protocol: "[[Ufarm]]"
 auditors:
   - Hexens
@@ -12,8 +15,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[unbounded-loop]]"
   - "[[permanent]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # [UFARM1-2] Quex callback can be permanently DoSed by congesting queues
 
 - id: 62437

@@ -5,7 +5,7 @@ tags:
   - platform/cantina
   - severity/high
   - novelty/variant
-  - sector/dex
+  - web3-sector/dex
   - check/swap-account-validation
 protocol: "[[Perena]]"
 auditors:

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/move
-  - sector/dex
+  - web3-sector/dex
   - platform/ottersec
   - severity/high
   - impact/data-corruption/price-manipulation

@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[Streaming Protocol]]"
 auditors:
   - "[[Code4rena]]"

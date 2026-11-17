@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/move
-  - sector/lending
-  - sector/oracle
-  - sector/uncollat-lending
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/uncollat-lending
   - platform/ottersec
   - severity/high
   - novelty/variant

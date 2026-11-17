@@ -2,8 +2,8 @@
 tags:
   - blockchain/bitcoin
   - blockchain/ethereum
-  - sector/bridge
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/stable
   - precondition/insider
 title: "Deribit - REKT"
 protocol: "[[Deribit]]"

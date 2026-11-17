@@ -3,9 +3,9 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/token
-  - sector/governance
-  - sector/streaming
+  - web3-sector/token
+  - web3-sector/governance
+  - web3-sector/streaming
   - platform/shieldify
 protocol: "[[Daoslive]]"
 auditors:

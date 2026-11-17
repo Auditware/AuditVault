@@ -1,11 +1,15 @@
 ---
 tags:
   - lang/anchor
-  - sector/multisig
-  - sector/staking
+  - lang/rust
+  - web3-sector/multisig
+  - web3-sector/staking
   - has/github
   - severity/high
-  - lang/rust
+  - vuln/pda/missing-seeds-check
+  - impact/mev/sandwich
+  - trigger/sandwich-attack
+  - novelty/variant
 protocol: "[[Gatekeeper]]"
 auditors:
   - Pashov Audit Group
@@ -16,8 +20,7 @@ genome:
   - "[[sandwich]]"
   - "[[trigger/sandwich-attack]]"
   - "[[variant]]"
-  - "[[add-check]]"
----
+  - "[[add-check]]"---
 # [C-01] Critical PDA validation flaw in `append_data_sandwich_validators_bitmap`
 
 - id: 58694

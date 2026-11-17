@@ -4,11 +4,11 @@ tags:
   - blockchain/bsc
   - blockchain/ethereum
   - blockchain/fantom
-  - sector/governance
-  - sector/multisig
-  - sector/privacy
-  - sector/stable
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
   - impact/loss-of-funds/direct-drain
   - impact/mev/frontrun
   - novelty/variant

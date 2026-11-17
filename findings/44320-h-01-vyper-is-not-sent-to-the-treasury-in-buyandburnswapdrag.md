@@ -5,7 +5,7 @@ tags:
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Vyper]]"
 auditors:
   - "[[Shieldify Security]]"

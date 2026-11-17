@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/rust
-  - sector/bridge
-  - sector/dex
-  - sector/options
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/options
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - vuln/arithmetic/decimal-mismatch
+  - novelty/variant
 protocol: "[[MANTRA]]"
 auditors:
   - carrotsmuggler
@@ -17,8 +19,7 @@ genome:
   - "[[decimal-mismatch]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-06] Stable swap pools don’t properly handle assets with different decimals, forcing LPs to receive wrong shares
 
 - id: 54982

@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/stable
+  - web3-sector/stable
 generated: true
 ---
 # Stable — Audit Checklist
 
-> Auto-generated from **227** findings in this sector (**47** with bug-class tags), ranked by frequency.
+> Auto-generated from **202** findings in this sector (**48** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
@@ -22,11 +22,11 @@ What actually goes wrong in this sector, most common first. Tick each as you rul
 - [ ] **Reentrancy: Single Function** — 2 findings `vuln/reentrancy/single-function`
 - [ ] **Arithmetic: Underflow** — 2 findings `vuln/arithmetic/underflow`
 - [ ] **Arithmetic: Precision Loss** — 2 findings `vuln/arithmetic/precision-loss`
+- [ ] **Bridge: Replay** — 2 findings `vuln/bridge/replay`
 - [ ] **Oracle: Manipulable Twap** — 1 finding `vuln/oracle/manipulable-twap`
 - [ ] **Oracle: Stale Price** — 1 finding `vuln/oracle/stale-price`
 - [ ] **Logic: Reward Calculation** — 1 finding `vuln/logic/reward-calculation`
 - [ ] **Arithmetic: Rounding Direction** — 1 finding `vuln/arithmetic/rounding-direction`
-- [ ] **Pda: Reinitialization** — 1 finding `vuln/pda/reinitialization`
 
 ## 🎯 Common triggers
 The conditions attackers use to set these bugs off — check each path is constrained.
@@ -49,7 +49,7 @@ Where it hurts when these bugs land.
 - `impact/data-corruption/price-manipulation` — 7
 - `impact/loss-of-funds/locked-funds` — 7
 - `impact/mev/sandwich` — 4
-- `impact/loss-of-funds/reward-theft` — 3
+- `impact/loss-of-funds/reward-theft` — 4
 - `impact/loss-of-funds/fee-theft` — 2
 - `impact/privilege-escalation/ownership-transfer` — 1
 - `impact/mev/backrun` — 1

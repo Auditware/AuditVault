@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
+  - web3-sector/oracle
   - platform/pashov
   - has/github
   - severity/high

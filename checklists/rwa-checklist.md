@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/rwa
+  - web3-sector/rwa
 generated: true
 ---
 # Rwa — Audit Checklist
 
-> Auto-generated from **12** findings in this sector (**3** with bug-class tags), ranked by frequency.
+> Auto-generated from **11** findings in this sector (**3** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

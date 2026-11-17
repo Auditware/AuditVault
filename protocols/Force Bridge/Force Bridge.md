@@ -2,6 +2,6 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
 ---
 One day the protocol announces its retirement plans.

@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/farm
-  - sector/lending
-  - sector/staking-pool
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/lending
+  - web3-sector/staking-pool
   - platform/halborn
   - has/poc
   - severity/high

@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
 ---
 Open Dollar is a DeFi protocol - description pending.

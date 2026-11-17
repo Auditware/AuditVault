@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
-  - sector/staking
-  - sector/token
-  - sector/wallet
+  - web3-sector/account
+  - web3-sector/staking
+  - web3-sector/token
+  - web3-sector/wallet
   - platform/cyfrin
   - has/github
   - has/poc

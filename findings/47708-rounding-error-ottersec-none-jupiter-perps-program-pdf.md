@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/perpetuals
+  - web3-sector/perpetuals
   - platform/ottersec
   - has/poc
   - severity/high

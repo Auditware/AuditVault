@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/nft
-  - sector/token
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - has/poc

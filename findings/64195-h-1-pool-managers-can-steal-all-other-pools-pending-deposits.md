@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/governance
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/token
 protocol: "[[Centrifuge]]"
 auditors:
   - "[[0x52]]"

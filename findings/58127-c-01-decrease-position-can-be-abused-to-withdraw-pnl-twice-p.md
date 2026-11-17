@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Gains Network]]"
 auditors:
   - Pashov Audit Group

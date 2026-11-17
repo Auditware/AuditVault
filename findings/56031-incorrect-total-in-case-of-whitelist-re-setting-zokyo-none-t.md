@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[Triall]]"
 auditors:
   - "[[Zokyo]]"

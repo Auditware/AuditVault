@@ -4,8 +4,8 @@ tags:
   - platform/zachobront
   - has/github
   - severity/high
-  - sector/dex
-  - sector/launchpad
+  - web3-sector/dex
+  - web3-sector/launchpad
 protocol: "[[Sound.Xyz]]"
 auditors:
   - "[[Zach Obront]]"

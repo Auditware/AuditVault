@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/infra
-  - sector/oracle
-  - sector/staking
+  - web3-sector/infra
+  - web3-sector/oracle
+  - web3-sector/staking
   - platform/spearbit
   - has/github
   - has/poc

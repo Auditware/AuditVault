@@ -1,19 +1,19 @@
 ---
 tags:
   - checklist
-  - sector/account
+  - web3-sector/account
 generated: true
 ---
 # Account — Audit Checklist
 
-> Auto-generated from **50** findings in this sector (**15** with bug-class tags), ranked by frequency.
+> Auto-generated from **51** findings in this sector (**16** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
 What actually goes wrong in this sector, most common first. Tick each as you rule it out.
 
+- [ ] **Bridge: Replay** — 4 findings `vuln/bridge/replay`
 - [ ] **Reentrancy: Single Function** — 3 findings `vuln/reentrancy/single-function`
-- [ ] **Bridge: Replay** — 3 findings `vuln/bridge/replay`
 - [ ] **Dos: Frozen Funds** — 2 findings `vuln/dos/frozen-funds`
 - [ ] **Access Control: Missing Signer** — 2 findings `vuln/access-control/missing-signer`
 - [ ] **Dos: Griefing** — 2 findings `vuln/dos/griefing`

@@ -2,7 +2,7 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/launchpad
+  - web3-sector/launchpad
   - platform/pashov
   - severity/high
   - impact/loss-of-funds/direct-drain

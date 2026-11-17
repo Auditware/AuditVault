@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/staking
   - platform/quantstamp
   - severity/high
   - vuln/pda/missing-seeds-check

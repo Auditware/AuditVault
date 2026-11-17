@@ -4,8 +4,8 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/staking
-  - sector/vault
+  - web3-sector/staking
+  - web3-sector/vault
   - platform/code4rena
 protocol: "[[Liquid Ron]]"
 auditors:

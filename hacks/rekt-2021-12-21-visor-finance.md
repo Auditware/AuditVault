@@ -1,10 +1,10 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/privacy
-  - sector/staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/privacy
+  - web3-sector/staking
+  - web3-sector/token
   - vuln/oracle/spot-price
   - impact/privilege-escalation/ownership-transfer
   - novelty/known-pattern

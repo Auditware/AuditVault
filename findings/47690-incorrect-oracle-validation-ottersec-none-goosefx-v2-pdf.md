@@ -3,7 +3,7 @@ tags:
   - lang/rust
   - platform/ottersec
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[GooseFX V2]]"
 auditors:
   - "[[OtterSec]]"

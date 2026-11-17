@@ -4,9 +4,9 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
 protocol: "[[Notional]]"
 auditors:
   - "[[blackhole]]"

@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/infra
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/infra
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
   - impact/data-corruption/price-manipulation
   - trigger/price-manipulation
 title: "Rho Market - Rekt"

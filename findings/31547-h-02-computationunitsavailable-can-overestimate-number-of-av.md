@@ -4,7 +4,7 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Subsquid]]"
 auditors:
   - "[[Pashov Audit Group]]"

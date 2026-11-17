@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/restaking
-  - sector/staking
-  - sector/token
+  - web3-sector/restaking
+  - web3-sector/staking
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - severity/high

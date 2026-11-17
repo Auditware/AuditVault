@@ -4,9 +4,9 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/governance
-  - sector/nft
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/staking
 protocol: "[[Virtuals]]"
 auditors:
   - "[[testnate]]"

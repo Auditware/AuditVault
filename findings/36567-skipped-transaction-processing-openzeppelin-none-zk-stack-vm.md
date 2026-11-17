@@ -6,7 +6,7 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[ZK Stack]]"
 auditors:
   - "[[OpenZeppelin]]"

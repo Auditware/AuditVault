@@ -4,7 +4,7 @@ tags:
   - platform/quantstamp
   - has/github
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Sperax Farms]]"
 auditors:
   - "[[Gereon Mendler]]"

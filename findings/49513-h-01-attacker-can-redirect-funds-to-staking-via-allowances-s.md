@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/shieldify
   - has/github
   - severity/high
+  - impact/mev/frontrun
 protocol: "[[Beraji Ko]]"
 auditors:
   - Shieldify Security
 report: "https://github.com/shieldify-security/audits-portfolio-md/blob/main/Beraji-KO-Security-Review.md"
 genome:
   - "[[token-approval-flow]]"
-  - "[[mev/frontrun]]"
----
+  - "[[mev/frontrun]]"---
 # [H-01] Attacker Can Redirect Funds To Staking Via Allowances
 
 - id: 49513

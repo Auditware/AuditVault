@@ -5,8 +5,8 @@ tags:
   - platform/hexens
   - has/github
   - severity/high
-  - sector/staking
-  - sector/streaming
+  - web3-sector/staking
+  - web3-sector/streaming
 protocol: "[[Persistence]]"
 auditors:
   - "[[Hexens]]"

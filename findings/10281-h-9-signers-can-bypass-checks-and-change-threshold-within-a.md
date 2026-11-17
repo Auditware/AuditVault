@@ -7,7 +7,7 @@ tags:
   - vuln/access-control/missing-signer
   - novelty/variant
   - misassumption/admin-is-honest
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Hats Protocol]]"
 auditors:
   - "[[obront]]"

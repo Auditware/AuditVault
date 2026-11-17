@@ -2,9 +2,9 @@
 tags:
   - blockchain/bsc
   - blockchain/polygon
-  - sector/dex
-  - sector/lending
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/stable
   - trigger/flash-loan
   - precondition/flash-loan-available
 title: "PancakeBunny - REKT 2"

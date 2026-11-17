@@ -4,8 +4,8 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/options
-  - sector/stable
+  - web3-sector/options
+  - web3-sector/stable
 protocol: "[[Coded Estate]]"
 auditors:
   - "[[nnez]]"

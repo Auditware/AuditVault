@@ -2,6 +2,6 @@
 tags:
   - blockchain/sui
   - lang/move
-  - sector/dex
+  - web3-sector/dex
 ---
 Mysten Deepbook is a DeFi protocol - description pending.

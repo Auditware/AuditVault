@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/oracle
   - has/github
   - severity/high
-  - sector/oracle
+  - novelty/variant
 protocol: "[[Ufarm]]"
 auditors:
   - Hexens
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Hexens/2025-06-10-Ufarm.md"
 genome:
   - "[[signature-malleability]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [UFARM1-1] The approve top-up role can replay the same deposit/withdrawal request
 
 - id: 62438

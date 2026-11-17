@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/gaming
-  - sector/governance
-  - sector/nft
-  - sector/staking
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/staking
 protocol: "[[Virtuals]]"
 auditors:
   - "[[YouCrossTheLineAlfie]]"

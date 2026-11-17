@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - has/github
   - severity/high
+  - vuln/dos/frozen-funds
+  - impact/loss-of-funds/locked-funds
+  - novelty/variant
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +15,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[frozen-funds]]"
   - "[[locked-funds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [C-04] Funds get locked in the vault
 
 - id: 53315

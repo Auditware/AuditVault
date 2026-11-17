@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - has/github
   - severity/high
+  - impact/mev/frontrun
+  - trigger/first-deposit
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
@@ -12,8 +14,7 @@ report: "https://github.com/mixbytes/audits_public/blob/master/DIA/Lumina%20Stak
 genome:
   - "[[frontrun-exposure]]"
   - "[[mev/frontrun]]"
-  - "[[first-deposit]]"
----
+  - "[[first-deposit]]"---
 # Inflation Attack in `DIAExternalStaking` Allows Stealing First Depositor's Stake
 
 - id: 57914

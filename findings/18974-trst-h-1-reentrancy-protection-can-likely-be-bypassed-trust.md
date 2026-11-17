@@ -8,7 +8,7 @@ tags:
   - fix/use-reentrancy-guard
   - novelty/known-pattern
   - misassumption/external-call-is-safe
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Lukso]]"
 auditors:
   - "[[Trust Security]]"

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
   - platform/pashov-audit-group
   - has/github
   - severity/high

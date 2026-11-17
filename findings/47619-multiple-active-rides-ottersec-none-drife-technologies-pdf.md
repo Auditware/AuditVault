@@ -4,7 +4,7 @@ tags:
   - has/github
   - lang/move
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Drife]]"
 auditors:
   - "[[Michał Bochnak]]"

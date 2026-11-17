@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/multisig
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
 title: "SBF - MASK OFF"
 protocol: "[[SBF - MASK OFF]]"
 date: 22-11-12

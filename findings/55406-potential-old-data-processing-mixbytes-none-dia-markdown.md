@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/oracle
+  - web3-sector/lending
+  - web3-sector/oracle
   - has/github
   - severity/high
+  - vuln/dos/unbounded-loop
+  - novelty/known-pattern
+  - blast-radius/cross-protocol
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
@@ -13,8 +16,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[unbounded-loop]]"
   - "[[known-pattern]]"
-  - "[[cross-protocol]]"
----
+  - "[[cross-protocol]]"---
 # Potential Old Data Processing
 
 - id: 55406

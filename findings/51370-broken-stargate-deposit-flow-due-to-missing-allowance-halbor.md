@@ -5,12 +5,12 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/farm
-  - sector/liquid-staking
-  - sector/staking
-  - sector/staking-pool
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/farm
+  - web3-sector/liquid-staking
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/token
 protocol: "[[Entangle Trillion]]"
 auditors:
   - "[[Halborn]]"

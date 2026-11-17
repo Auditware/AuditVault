@@ -4,8 +4,8 @@ tags:
   - platform/sigmaprime
   - has/github
   - severity/high
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
 protocol: "[[Satori]]"
 auditors:
   - "[[Sigma Prime]]"

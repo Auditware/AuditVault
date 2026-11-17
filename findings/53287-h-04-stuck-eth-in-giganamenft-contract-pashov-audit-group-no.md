@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/perpetuals
   - has/github
   - severity/high
-  - sector/perpetuals
+  - vuln/dos/frozen-funds
+  - novelty/variant
 protocol: "[[Gigaverse]]"
 auditors:
   - Pashov Audit Group
@@ -11,8 +13,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/Gigaverse-security
 genome:
   - "[[dos-resistance]]"
   - "[[frozen-funds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-04] Stuck ETH in `GigaNameNFT` contract
 
 - id: 53287

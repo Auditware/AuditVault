@@ -4,7 +4,7 @@ tags:
   - platform/sigmaprime
   - has/github
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Term Finance]]"
 auditors:
   - "[[Sigma Prime]]"

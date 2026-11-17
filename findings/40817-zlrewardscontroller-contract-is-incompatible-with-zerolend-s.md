@@ -5,9 +5,9 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/farm
-  - sector/lending
-  - sector/staking-pool
+  - web3-sector/farm
+  - web3-sector/lending
+  - web3-sector/staking-pool
 protocol: "[[ZeroLend]]"
 auditors:
   - "[[shaka]]"

@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/options
+  - web3-sector/options
 protocol: "[[Pontem (Liquidswap)]]"
 auditors:
   - "[[Maher Azzouzi]]"

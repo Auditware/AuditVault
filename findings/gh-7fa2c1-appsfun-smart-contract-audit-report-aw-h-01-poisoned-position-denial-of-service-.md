@@ -2,10 +2,10 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/multisig
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/multisig
+  - web3-sector/token
   - platform/auditware
   - severity/high
   - vuln/pda/reinitialization

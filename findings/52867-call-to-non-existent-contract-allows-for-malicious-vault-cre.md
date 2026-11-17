@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/staking
+  - web3-sector/token
   - platform/spearbit
   - has/github
   - severity/high

@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/stable
   - has/github
   - severity/high
+  - vuln/arithmetic/decimal-mismatch
+  - novelty/variant
+  - blast-radius/cross-protocol
 protocol: "[[Across Protocol Diff Audit  Arbitrum CustomGasToken & ExclusivityPeriod]]"
 auditors:
   - OpenZeppelin
@@ -15,8 +18,7 @@ genome:
   - "[[variant]]"
   - "[[cross-protocol]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Wrong Scaling for Amount of Gas Tokens
 
 - id: 56752

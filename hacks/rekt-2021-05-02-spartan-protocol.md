@@ -2,9 +2,9 @@
 tags:
   - blockchain/bitcoin
   - blockchain/bsc
-  - sector/dex
-  - sector/lending
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/token
   - impact/loss-of-funds/direct-drain
   - trigger/flash-loan
   - precondition/flash-loan-available

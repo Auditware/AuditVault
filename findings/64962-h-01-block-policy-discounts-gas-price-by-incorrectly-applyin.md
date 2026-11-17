@@ -7,7 +7,7 @@ tags:
   - has/poc
   - severity/high
   - novelty/known-pattern
-  - sector/insurance
+  - web3-sector/insurance
 protocol: "[[Monad]]"
 auditors:
   - "[[RadiantLabs]]"

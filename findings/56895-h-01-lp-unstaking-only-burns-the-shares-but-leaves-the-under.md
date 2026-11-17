@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/staking
 protocol: "[[Cabal]]"
 auditors:
   - "[[ret2basic]]"

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
+  - web3-sector/governance
   - platform/quantstamp
   - severity/high
   - vuln/bridge/message-spoofing

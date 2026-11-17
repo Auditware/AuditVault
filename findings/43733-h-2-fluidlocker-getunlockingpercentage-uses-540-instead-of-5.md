@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/streaming
+  - web3-sector/streaming
   - platform/sherlock
   - has/github
   - has/poc

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
   - platform/quantstamp
   - severity/high
   - impact/loss-of-funds/locked-funds

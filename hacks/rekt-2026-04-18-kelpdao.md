@@ -6,17 +6,17 @@ tags:
   - blockchain/ethereum
   - blockchain/fantom
   - blockchain/tron
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/multisig
-  - sector/oracle
-  - sector/privacy
-  - sector/restaking
-  - sector/stable
-  - sector/staking
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/oracle
+  - web3-sector/privacy
+  - web3-sector/restaking
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/vault
   - vuln/pda/missing-seeds-check
   - novelty/variant
 title: "KelpDao - Rekt"

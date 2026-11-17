@@ -6,7 +6,7 @@ tags:
   - severity/high
   - impact/mev/frontrun
   - precondition/uninitialized
-  - sector/insurance
+  - web3-sector/insurance
 protocol: "[[Bearcave]]"
 auditors:
   - "[[Pashov]]"

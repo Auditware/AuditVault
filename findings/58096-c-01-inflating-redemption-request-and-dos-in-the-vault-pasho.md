@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - has/github
   - severity/high
+  - fix/use-reentrancy-guard
+  - novelty/variant
 protocol: "[[Astrolab]]"
 auditors:
   - Pashov Audit Group
@@ -11,8 +13,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/Astrolab-security-
 genome:
   - "[[dos-resistance]]"
   - "[[use-reentrancy-guard]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [C-01] Inflating redemption request and DoS in the vault
 
 - id: 58096

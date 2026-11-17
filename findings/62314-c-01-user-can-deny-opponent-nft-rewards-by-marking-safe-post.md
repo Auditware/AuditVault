@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/nft
-  - sector/staking
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/staking
   - platform/shieldify
   - has/github
   - severity/high

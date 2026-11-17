@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/dex
-  - sector/lending
-  - sector/perpetuals
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/privacy
+  - web3-sector/stable
   - impact/mev/backrun
   - trigger/flash-loan
   - precondition/flash-loan-available

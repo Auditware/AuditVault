@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
-  - sector/stable
+  - web3-sector/options
+  - web3-sector/stable
   - platform/sherlock
   - has/github
   - has/poc

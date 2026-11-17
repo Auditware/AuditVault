@@ -1,10 +1,10 @@
 ---
 tags:
   - check/reward-accounting
-  - sector/farm
-  - sector/staking
-  - sector/staking-pool
-  - sector/liquid-staking
-  - sector/yield-aggregator
+  - web3-sector/farm
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/liquid-staking
+  - web3-sector/yield-aggregator
 ---
 Are rewards correctly computed including edge cases (empty pool, first depositor)?

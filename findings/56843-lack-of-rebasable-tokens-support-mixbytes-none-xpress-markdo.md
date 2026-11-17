@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/algo-stable
-  - sector/staking
-  - sector/token
+  - web3-sector/algo-stable
+  - web3-sector/staking
+  - web3-sector/token
   - has/github
   - severity/high
+  - precondition/specific-token-type
 protocol: "[[XPress]]"
 auditors:
   - MixBytes
 report: "https://github.com/mixbytes/audits_public/blob/master/XPress/OnchainCLOB/README.md#4-lack-of-rebasable-tokens-support"
 genome:
   - "[[fot-slippage]]"
-  - "[[specific-token-type]]"
----
+  - "[[specific-token-type]]"---
 # Lack of rebasable tokens support
 
 - id: 56843

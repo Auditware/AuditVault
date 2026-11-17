@@ -4,7 +4,7 @@ tags:
   - has/github
   - lang/solidity
   - platform/shieldify
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Harmonixfinance Hyperliquid]]"
 auditors:
   - Shieldify Security

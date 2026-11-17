@@ -4,7 +4,7 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[P2P.Org]]"
 auditors:
   - "[[MixBytes]]"

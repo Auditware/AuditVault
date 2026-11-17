@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/stable
+  - web3-sector/token
   - vuln/pda/reinitialization
   - impact/privilege-escalation/ownership-transfer
   - novelty/variant

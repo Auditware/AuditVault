@@ -1,9 +1,9 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/lending
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/privacy
 title: "THORChain - REKT"
 protocol: "[[Thorchain]]"
 date: 2021-07-15

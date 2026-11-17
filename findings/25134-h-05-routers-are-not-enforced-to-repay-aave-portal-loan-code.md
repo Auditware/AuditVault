@@ -5,12 +5,12 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/infra
-  - sector/lending
-  - sector/multisig
-  - sector/stable
-  - sector/uncollat-lending
+  - web3-sector/bridge
+  - web3-sector/infra
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/stable
+  - web3-sector/uncollat-lending
 protocol: "[[Connext]]"
 auditors:
   - "[[Code4rena]]"

@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/governance
+  - web3-sector/bridge
+  - web3-sector/governance
 protocol: "[[Maia DAO Ecosystem]]"
 auditors:
   - "[[xuwinnie]]"

@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/restaking
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/restaking
+  - web3-sector/staking
 protocol: "[[Renzo]]"
 auditors:
   - "[[josephdara]]"

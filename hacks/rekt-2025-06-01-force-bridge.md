@@ -2,10 +2,10 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/lending
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "Force Bridge - Rekt"
 protocol: "[[Force Bridge]]"
 date: 2025-06-01

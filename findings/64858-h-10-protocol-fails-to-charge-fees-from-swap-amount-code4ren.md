@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/farm
-  - sector/launchpad
-  - sector/perpetuals
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/launchpad
+  - web3-sector/perpetuals
 protocol: "[[GTE]]"
 auditors:
   - "[[anchabadze]]"

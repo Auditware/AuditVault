@@ -1,7 +1,7 @@
 ---
 tags:
   - checklist
-  - sector/prediction
+  - web3-sector/prediction
 generated: true
 ---
 # Prediction — Audit Checklist

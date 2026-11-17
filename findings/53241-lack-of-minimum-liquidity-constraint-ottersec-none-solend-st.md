@@ -3,7 +3,7 @@ tags:
   - lang/move
   - platform/ottersec
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[Solend Steamm]]"
 auditors:
   - "[[Michał Bochnak]]"

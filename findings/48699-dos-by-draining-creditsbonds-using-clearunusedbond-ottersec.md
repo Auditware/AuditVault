@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/vault
+  - web3-sector/lending
+  - web3-sector/vault
   - platform/ottersec
   - has/poc
   - severity/high

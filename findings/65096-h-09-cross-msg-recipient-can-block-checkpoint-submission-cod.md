@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
-  - sector/staking
-  - sector/token
+  - web3-sector/account
+  - web3-sector/staking
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - has/poc

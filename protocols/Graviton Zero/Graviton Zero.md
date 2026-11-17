@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
 ---
 Graviton Zero is a DeFi protocol - description pending.

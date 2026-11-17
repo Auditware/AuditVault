@@ -2,10 +2,10 @@
 tags:
   - blockchain/ethereum
   - blockchain/optimism
-  - sector/bridge
-  - sector/dex
-  - sector/gaming
-  - sector/governance
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/governance
 title: "Hypr Network - REKT"
 protocol: "[[Hypr Network]]"
 date: 2023-12-13

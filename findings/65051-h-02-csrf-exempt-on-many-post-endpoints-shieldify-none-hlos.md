@@ -4,7 +4,7 @@ tags:
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/perpetuals
+  - web3-sector/perpetuals
 protocol: "[[Hlos]]"
 auditors:
   - "[[Shieldify Security]]"

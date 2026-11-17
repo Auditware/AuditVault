@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Shardeum]]"
 auditors:
   - "[[riproprip]]"

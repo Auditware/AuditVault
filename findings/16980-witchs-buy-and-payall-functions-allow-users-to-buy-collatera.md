@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - platform/trailofbits
   - has/github
   - has/poc

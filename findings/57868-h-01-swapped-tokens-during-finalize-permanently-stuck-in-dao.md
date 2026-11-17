@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/token
   - platform/shieldify
   - has/github
   - severity/high
+  - impact/loss-of-funds/locked-funds
 protocol: "[[Daoslive]]"
 auditors:
   - Shieldify Security
 report: "https://github.com/shieldify-security/audits-portfolio-md/blob/main/DaosLive-Security-Review.md"
 genome:
   - "[[dos-resistance]]"
-  - "[[locked-funds]]"
----
+  - "[[locked-funds]]"---
 # [H-01] Swapped Tokens During `finalize()` Permanently Stuck in `DaosLive` Due to Missing Withdrawal Mechanism
 
 - id: 57868

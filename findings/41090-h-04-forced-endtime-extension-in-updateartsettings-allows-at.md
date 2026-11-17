@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
   - platform/code4rena
   - has/github
   - has/poc

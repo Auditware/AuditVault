@@ -1,14 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/stable
+  - web3-sector/token
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/bridge/message-spoofing
+  - impact/loss-of-funds/direct-drain
+  - novelty/variant
 protocol: "[[DODO Cross Chain DEX]]"
 auditors:
   - X0sauce
@@ -20,8 +23,7 @@ genome:
   - "[[variant]]"
   - "[[bridge-is-secure]]"
   - "[[add-check]]"
-  - "[[cross-chain-message]]"
----
+  - "[[cross-chain-message]]"---
 # H-2: Any attacker will steal accumulated ZRC20 tokens from `GatewayTransferNative` contract
 
 - id: 58579

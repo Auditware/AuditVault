@@ -7,7 +7,7 @@ tags:
   - vuln/dependency/unchecked-return-value
   - novelty/variant
   - misassumption/external-call-is-safe
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Onemind]]"
 auditors:
   - "[[Zokyo]]"

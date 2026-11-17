@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[ParaSpace]]"
 auditors:
   - "[[csanuragjain]]"

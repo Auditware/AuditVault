@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - has/github
   - severity/high
+  - vuln/dos/frozen-funds
+  - impact/loss-of-funds/locked-funds
+  - novelty/variant
 protocol: "[[Roots]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +15,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[frozen-funds]]"
   - "[[locked-funds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [C-01] Incorrect interface used for gauge contract in `Staker`
 
 - id: 55110

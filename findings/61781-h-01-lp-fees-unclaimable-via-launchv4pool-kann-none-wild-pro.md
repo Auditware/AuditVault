@@ -2,7 +2,7 @@
 tags:
   - severity/high
   - has/github
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Wild Protocol]]"
 auditors:
   - Kann

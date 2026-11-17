@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
+  - web3-sector/governance
   - platform/code4rena
   - has/github
   - severity/high

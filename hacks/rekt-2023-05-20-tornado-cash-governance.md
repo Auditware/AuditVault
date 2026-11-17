@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/governance
-  - sector/privacy
+  - web3-sector/governance
+  - web3-sector/privacy
 title: "Tornado Cash Governance - REKT"
 protocol: "[[Tornado Cash Governance]]"
 date: 2023-05-20

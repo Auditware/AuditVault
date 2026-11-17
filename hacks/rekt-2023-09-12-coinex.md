@@ -4,8 +4,8 @@ tags:
   - blockchain/bsc
   - blockchain/polygon
   - blockchain/tron
-  - sector/dex
-  - sector/multisig
+  - web3-sector/dex
+  - web3-sector/multisig
 title: "CoinEx - REKT"
 protocol: "[[Coinex]]"
 date: 2023-09-12

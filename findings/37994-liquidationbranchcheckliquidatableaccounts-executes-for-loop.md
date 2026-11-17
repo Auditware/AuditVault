@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/oracle
-  - sector/perpetuals
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/perpetuals
 protocol: "[[Zaros]]"
 auditors:
   - "[[cryptedOji]]"

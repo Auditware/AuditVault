@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/dex
-  - sector/lending
-  - sector/multisig
-  - sector/privacy
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
 title: "MobiusDAO - Rekt"
 protocol: "[[Mobiusdao]]"
 date: 2025-05-11

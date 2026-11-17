@@ -4,7 +4,7 @@ tags:
 protocol: "[[Bullpen]]"
 auditors:
   - "[[Auditware]]"
-  - sector/dex
+  - web3-sector/dex
 genome:
   - "[[extcall-return-validation]]"
   - "[[access-control/secret-exposure]]"

@@ -3,10 +3,10 @@ tags:
   - blockchain/evm
   - blockchain/evm/arbitrum
   - lang/solidity
-  - sector/farm
-  - sector/stable
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/farm
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/sherlock
   - has/github
   - severity/high

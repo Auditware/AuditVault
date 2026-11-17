@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/lending
-  - sector/stable
-  - sector/streaming
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/streaming
   - platform/cantina
   - has/poc
   - severity/high

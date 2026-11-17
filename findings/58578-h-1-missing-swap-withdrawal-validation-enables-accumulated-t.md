@@ -1,21 +1,21 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/stable
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - novelty/variant
 protocol: "[[DODO Cross Chain DEX]]"
 auditors:
   - patitonar
 report: "https://github.com/sherlock-audit/2025-05-dodo-cross-chain-dex-judging"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # H-1: Missing swap-withdrawal validation enables accumulated token drainage
 
 - id: 58578

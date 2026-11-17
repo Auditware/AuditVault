@@ -2,12 +2,12 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/staking
+  - web3-sector/token
   - platform/mixbytes
   - has/github
   - has/poc

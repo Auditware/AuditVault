@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/nft
+  - web3-sector/governance
+  - web3-sector/nft
 protocol: "[[Alchemix]]"
 auditors:
   - "[[yttriumzz]]"

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/move
-  - sector/governance
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/staking
 ---
 Merkle Token is a DeFi protocol - description pending.

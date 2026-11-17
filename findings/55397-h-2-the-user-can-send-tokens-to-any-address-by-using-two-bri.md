@@ -4,8 +4,8 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/bridge
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/staking
   - platform/code4rena
 protocol: "[[THORWallet]]"
 auditors:

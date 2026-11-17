@@ -3,7 +3,7 @@ tags:
   - severity/high
   - lang/solidity
   - platform/quantstamp
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Sapien   2]]"
 auditors:
   - Paul Clemson

@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/bridge
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
   - platform/cantina
   - has/poc
   - severity/high

@@ -1,16 +1,16 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
-  - sector/farm
-  - sector/lending
-  - sector/liquid-staking
-  - sector/stable
-  - sector/staking
-  - sector/staking-pool
-  - sector/token
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/token
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
 ---
 Entangle Trillion is a DeFi protocol - description pending.

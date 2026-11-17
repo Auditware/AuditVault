@@ -2,11 +2,11 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/infra
-  - sector/multisig
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/infra
+  - web3-sector/multisig
+  - web3-sector/token
   - has/audit
   - impact/loss-of-funds/direct-drain
 title: "Merlin DEX - REKT"

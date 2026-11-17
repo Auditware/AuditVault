@@ -4,9 +4,9 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/multisig
-  - sector/prediction
-  - sector/staking
+  - web3-sector/multisig
+  - web3-sector/prediction
+  - web3-sector/staking
 protocol: "[[Augur]]"
 auditors:
   - "[[OpenZeppelin]]"

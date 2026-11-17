@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/staking-pool
+  - web3-sector/dex
+  - web3-sector/staking-pool
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - novelty/variant
 protocol: "[[Gacha]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +14,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/Gacha-security-rev
 genome:
   - "[[cross-contract-state-consistency]]"
   - "[[direct-drain]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [C-01] Incorrect reserve order in `_swap()`
 
 - id: 53301

@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/vyper
-  - sector/dex
-  - sector/farm
-  - sector/oracle
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/oracle
   - platform/mixbytes
   - has/github
   - severity/high

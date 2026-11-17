@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/perpetuals
-  - sector/staking
+  - web3-sector/perpetuals
+  - web3-sector/staking
   - platform/0x52
   - has/github
   - severity/high

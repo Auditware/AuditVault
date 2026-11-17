@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
   - platform/cantina
   - has/poc
   - severity/high

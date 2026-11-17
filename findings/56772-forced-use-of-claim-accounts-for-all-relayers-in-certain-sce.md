@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/rust
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
   - has/github
   - severity/high
+  - blast-radius/cross-protocol
 protocol: "[[SVM Spoke]]"
 auditors:
   - OpenZeppelin
 report: "https://blog.openzeppelin.com/svm-spoke-audit"
 genome:
   - "[[dos-resistance]]"
-  - "[[cross-protocol]]"
----
+  - "[[cross-protocol]]"---
 # Forced Use of Claim Accounts for All Relayers in Certain Scenarios
 
 - id: 56772

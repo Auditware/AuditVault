@@ -6,7 +6,7 @@ tags:
   - vuln/dos/frozen-funds
   - impact/loss-of-funds/locked-funds
   - novelty/variant
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Arkham Intel Exchange]]"
 auditors:
   - "[[Shih-Hung Wang]]"

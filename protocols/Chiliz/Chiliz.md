@@ -3,7 +3,7 @@ tags:
   - blockchain/chiliz
   - blockchain/evm
   - lang/solidity
-  - sector/bridge
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/token
 ---
 Chiliz is a protocol - description pending.

@@ -4,8 +4,8 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/oracle
-  - sector/lending
+  - web3-sector/oracle
+  - web3-sector/lending
   - platform/trailofbits
 protocol: "[[CAP Labs Covered Agent Protocol]]"
 auditors:

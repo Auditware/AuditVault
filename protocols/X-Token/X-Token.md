@@ -1,6 +1,7 @@
 ---
 tags:
   - blockchain/evm
-  - sector/token
+  - lang/solidity
+  - web3-sector/token
 ---
 X-Token is a protocol - description pending.

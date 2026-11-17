@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/tact
-  - sector/account
-  - sector/dex
-  - sector/stable
+  - web3-sector/account
+  - web3-sector/dex
+  - web3-sector/stable
   - platform/ton
   - severity/high
   - impact/loss-of-funds/direct-drain

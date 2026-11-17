@@ -4,7 +4,7 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Statusl]]"
 auditors:
   - "[[Samuraii77]]"

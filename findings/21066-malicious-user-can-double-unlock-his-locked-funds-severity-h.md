@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/bridge
+  - web3-sector/bridge
   - platform/auditone
   - has/github
   - severity/high

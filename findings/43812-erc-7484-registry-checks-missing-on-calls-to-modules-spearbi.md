@@ -4,10 +4,10 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/account
-  - sector/insurance
-  - sector/options
-  - sector/staking
+  - web3-sector/account
+  - web3-sector/insurance
+  - web3-sector/options
+  - web3-sector/staking
 protocol: "[[Biconomy]]"
 auditors:
   - "[[blockdev]]"

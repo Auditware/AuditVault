@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/dex
-  - sector/gaming
-  - sector/governance
-  - sector/lending
-  - sector/nft
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/token
   - has/audit
   - vuln/access-control/proxy-storage-collision
   - novelty/variant

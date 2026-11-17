@@ -9,7 +9,7 @@ tags:
   - misassumption/price-cannot-be-manipulated
   - fix/use-twap
   - trigger/price-manipulation
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Aftermath]]"
 auditors:
   - "[[OtterSec]]"

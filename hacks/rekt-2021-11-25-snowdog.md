@@ -1,9 +1,9 @@
 ---
 tags:
   - blockchain/avalanche
-  - sector/dex
-  - sector/gaming
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/staking
   - impact/mev/frontrun
 title: "Snowdog - REKT"
 protocol: "[[Snowdog]]"

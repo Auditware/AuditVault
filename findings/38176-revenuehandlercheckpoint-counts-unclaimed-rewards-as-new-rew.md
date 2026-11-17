@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/lending
+  - web3-sector/governance
+  - web3-sector/lending
   - platform/immunefi
   - has/github
   - has/poc

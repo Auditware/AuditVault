@@ -3,10 +3,10 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/lending
-  - sector/oracle
-  - sector/stable
-  - sector/uncollat-lending
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/uncollat-lending
 protocol: "[[VUSD]]"
 auditors:
   - "[[Paul Clemson]]"

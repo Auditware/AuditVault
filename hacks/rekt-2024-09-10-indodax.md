@@ -5,11 +5,11 @@ tags:
   - blockchain/optimism
   - blockchain/polygon
   - blockchain/tron
-  - sector/dex
-  - sector/gaming
-  - sector/lending
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/token
 title: "Indodax - Rekt"
 protocol: "[[Indodax]]"
 date: 2024-09-10

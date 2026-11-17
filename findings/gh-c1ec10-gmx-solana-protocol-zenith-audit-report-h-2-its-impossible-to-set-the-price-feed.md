@@ -2,8 +2,8 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/oracle
-  - sector/staking
+  - web3-sector/oracle
+  - web3-sector/staking
   - platform/zenith
   - severity/high
   - vuln/arithmetic/decimal-mismatch

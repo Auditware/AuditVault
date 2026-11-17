@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
+  - web3-sector/bridge
+  - web3-sector/dex
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[DODO Cross Chain DEX]]"
 auditors:
   - X0sauce
 report: "https://github.com/sherlock-audit/2025-05-dodo-cross-chain-dex-judging"
 genome:
   - "[[access-roles]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # H-3: Attacker can steal an  high-value token due to lack of swap execution
 
 - id: 58580

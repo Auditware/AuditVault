@@ -4,9 +4,9 @@ tags:
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/gaming
-  - sector/nft
-  - sector/options
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/options
 protocol: "[[Phimaterial]]"
 auditors:
   - "[[Shieldify Security]]"

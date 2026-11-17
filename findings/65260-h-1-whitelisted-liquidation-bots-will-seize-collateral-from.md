@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
   - platform/sherlock
   - has/github
   - has/poc

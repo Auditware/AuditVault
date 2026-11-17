@@ -4,9 +4,9 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/stable
   - platform/sherlock
 protocol: "[[LEND]]"
 auditors:

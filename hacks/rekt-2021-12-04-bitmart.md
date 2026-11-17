@@ -2,8 +2,8 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/dex
-  - sector/privacy
+  - web3-sector/dex
+  - web3-sector/privacy
 title: "BitMart - REKT"
 protocol: "[[Bitmart]]"
 date: 2021-12-04

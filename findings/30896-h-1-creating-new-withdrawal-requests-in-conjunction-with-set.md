@@ -4,8 +4,8 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/restaking
-  - sector/staking
+  - web3-sector/restaking
+  - web3-sector/staking
 protocol: "[[Rio Network]]"
 auditors:
   - "[[0xkaden]]"

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/stable
+  - web3-sector/token
 ---
 Chainport is a DeFi protocol - description pending.

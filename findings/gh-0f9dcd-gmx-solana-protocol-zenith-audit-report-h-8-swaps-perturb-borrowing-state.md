@@ -4,7 +4,7 @@ tags:
   - lang/rust
   - platform/zenith
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[GMX]]"
 auditors:
   - "[[FrankCastle]]"

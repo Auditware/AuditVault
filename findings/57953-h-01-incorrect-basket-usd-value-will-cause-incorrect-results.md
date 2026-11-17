@@ -4,7 +4,7 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[Cove]]"
 auditors:
   - "[[Pashov Audit Group]]"

@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/vault
+  - web3-sector/vault
   - platform/cyfrin
 protocol: "[[Strata]]"
 auditors:

@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[SaucerSwap]]"
 auditors:
   - "[[Albert Heinle]]"

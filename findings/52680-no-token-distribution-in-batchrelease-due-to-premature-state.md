@@ -8,7 +8,7 @@ tags:
   - fix/use-reentrancy-guard
   - misassumption/external-call-is-safe
   - trigger/reentrancy-callback
-  - sector/token
+  - web3-sector/token
 protocol: "[[Treasury Vesting]]"
 auditors:
   - "[[Halborn]]"

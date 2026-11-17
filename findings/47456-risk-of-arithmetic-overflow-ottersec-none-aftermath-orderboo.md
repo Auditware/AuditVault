@@ -4,7 +4,7 @@ tags:
   - platform/ottersec
   - severity/high
   - novelty/known-pattern
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Aftermath Orderbook]]"
 auditors:
   - "[[Robert Chen]]"

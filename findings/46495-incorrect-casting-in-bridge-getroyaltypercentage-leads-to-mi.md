@@ -3,9 +3,9 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/bridge
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/bridge
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
 protocol: "[[Sweep n Flip]]"
 auditors:
   - "[[slowfi]]"

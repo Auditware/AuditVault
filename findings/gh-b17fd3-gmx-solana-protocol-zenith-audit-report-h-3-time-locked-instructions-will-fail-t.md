@@ -4,8 +4,8 @@ tags:
   - lang/rust
   - platform/zenith
   - severity/high
-  - sector/governance
-  - sector/perpetuals
+  - web3-sector/governance
+  - web3-sector/perpetuals
 protocol: "[[GMX]]"
 auditors:
   - "[[FrankCastle]]"

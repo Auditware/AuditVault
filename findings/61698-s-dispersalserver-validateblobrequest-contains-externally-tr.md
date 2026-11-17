@@ -4,9 +4,9 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/governance
-  - sector/infra
-  - sector/restaking
+  - web3-sector/governance
+  - web3-sector/infra
+  - web3-sector/restaking
 protocol: "[[EigenDA]]"
 auditors:
   - "[[DTheo]]"

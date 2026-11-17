@@ -2,8 +2,8 @@
 tags:
   - blockchain/ethereum
   - blockchain/polygon
-  - sector/gaming
-  - sector/nft
+  - web3-sector/gaming
+  - web3-sector/nft
   - precondition/insider
 title: "Vulcan Forged - REKT"
 protocol: "[[Vulcan Forged]]"

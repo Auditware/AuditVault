@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/algo-stable
-  - sector/dex
-  - sector/staking
-  - sector/token
+  - web3-sector/algo-stable
+  - web3-sector/dex
+  - web3-sector/staking
+  - web3-sector/token
   - platform/mixbytes
   - has/github
   - severity/high

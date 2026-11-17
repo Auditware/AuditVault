@@ -12,7 +12,7 @@ tags:
   - trigger/sandwich-attack
   - novelty/variant
   - fix/add-check
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[YuzuUSD]]"
 auditors:
   - "[[Pashov Audit Group]]"

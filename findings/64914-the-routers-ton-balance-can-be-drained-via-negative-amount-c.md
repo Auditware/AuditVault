@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/func
-  - sector/dex
+  - web3-sector/dex
   - platform/trailofbits
   - has/github
   - severity/high

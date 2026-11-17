@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/gaming
+  - web3-sector/gaming
   - platform/shieldify
 protocol: "[[Penguingotchi]]"
 auditors:

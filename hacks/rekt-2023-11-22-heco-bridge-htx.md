@@ -3,8 +3,8 @@ tags:
   - blockchain/bitcoin
   - blockchain/ethereum
   - blockchain/tron
-  - sector/bridge
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
 title: "HECO Bridge, HTX - REKT"
 protocol: "[[Heco Bridge Htx]]"

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/mixbytes
   - has/github
   - severity/high

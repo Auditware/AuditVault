@@ -4,9 +4,9 @@ tags:
   - platform/hexens
   - has/github
   - severity/high
-  - sector/lending
-  - sector/nft
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/stable
 protocol: "[[Fungify]]"
 auditors:
   - "[[Hexens]]"

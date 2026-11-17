@@ -2,10 +2,10 @@
 tags:
   - blockchain/ethereum
   - blockchain/solana
-  - sector/bridge
-  - sector/nft
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/nft
+  - web3-sector/privacy
+  - web3-sector/stable
   - precondition/insider
 title: An Un-SOL-ved Mystery
 protocol: "[[Slope Finance]]"

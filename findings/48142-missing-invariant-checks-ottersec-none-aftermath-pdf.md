@@ -4,7 +4,7 @@ tags:
   - has/poc
   - platform/ottersec
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Aftermath]]"
 auditors:
   - "[[OtterSec]]"

@@ -4,9 +4,9 @@ tags:
   - platform/codehawks
   - has/github
   - severity/high
-  - sector/lending
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/stable
 protocol: "[[Zaros]]"
 auditors:
   - "[[0xStalin]]"

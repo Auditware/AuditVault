@@ -8,7 +8,7 @@ tags:
   - impact/mev/frontrun
   - precondition/specific-token-type
   - novelty/variant
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[INIT Capital]]"
 auditors:
   - "[[Said]]"

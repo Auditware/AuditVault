@@ -6,7 +6,7 @@ tags:
   - has/poc
   - severity/high
   - novelty/known-pattern
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Vyper]]"
 auditors:
   - "[[obront]]"

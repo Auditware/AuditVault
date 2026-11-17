@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/liquid-staking
-  - sector/token
+  - web3-sector/liquid-staking
+  - web3-sector/token
   - has/github
   - severity/high
+  - vuln/dos/frozen-funds
+  - precondition/specific-token-type
+  - novelty/variant
 protocol: "[[Enjoyoors]]"
 auditors:
   - MixBytes
@@ -13,8 +16,7 @@ genome:
   - "[[reward-accounting]]"
   - "[[frozen-funds]]"
   - "[[specific-token-type]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # Stuck Rebase Rewards Due to Internal Balance Tracking
 
 - id: 49876

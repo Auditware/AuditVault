@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/nft
-  - sector/stable
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/nft
+  - web3-sector/stable
+  - web3-sector/staking
   - platform/cantina
   - has/poc
   - severity/high

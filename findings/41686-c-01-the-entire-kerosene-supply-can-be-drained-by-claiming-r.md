@@ -2,7 +2,7 @@
 tags:
   - lang/move
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/pashov
   - has/github
   - severity/high

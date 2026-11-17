@@ -6,9 +6,9 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/bridge
-  - sector/staking
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/staking
+  - web3-sector/token
 protocol: "[[zkSync]]"
 auditors:
   - "[[OpenZeppelin]]"

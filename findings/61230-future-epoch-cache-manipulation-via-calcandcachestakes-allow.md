@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[Suzaku Core]]"
 auditors:
   - 0kage
@@ -14,8 +16,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Future epoch cache manipulation via `calcAndCacheStakes` allows reward manipulation
 
 - id: 61230

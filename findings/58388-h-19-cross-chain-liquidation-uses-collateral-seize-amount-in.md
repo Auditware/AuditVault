@@ -1,12 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/logic/liquidation-logic
+  - trigger/cross-chain-message
+  - novelty/variant
 protocol: "[[LEND]]"
 auditors:
   - oxelmiguel
@@ -17,8 +20,7 @@ genome:
   - "[[cross-chain-message]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[redesign-logic]]"
----
+  - "[[redesign-logic]]"---
 # H-19: Cross-Chain liquidation uses collateral seize amount instead of repayment amount for debt reduction
 
 - id: 58388

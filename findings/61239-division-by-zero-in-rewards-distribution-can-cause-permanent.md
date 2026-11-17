@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/oracle
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/oracle
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[Suzaku Core]]"
 auditors:
   - 0kage
@@ -13,8 +15,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[reward-calculation]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # Division by zero in rewards distribution can cause permanent lock of epoch rewards
 
 - id: 61239

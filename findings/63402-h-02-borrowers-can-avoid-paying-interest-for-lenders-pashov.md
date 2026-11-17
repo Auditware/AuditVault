@@ -4,8 +4,8 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/algo-stable
-  - sector/lending
+  - web3-sector/algo-stable
+  - web3-sector/lending
 protocol: "[[RegnumAurum]]"
 auditors:
   - "[[Pashov Audit Group]]"

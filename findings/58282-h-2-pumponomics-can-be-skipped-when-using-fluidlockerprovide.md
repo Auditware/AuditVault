@@ -4,9 +4,9 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/dex
-  - sector/streaming
-  - sector/staking-pool
+  - web3-sector/dex
+  - web3-sector/streaming
+  - web3-sector/staking-pool
   - platform/sherlock
 protocol: "[[Superfluid Locker System]]"
 auditors:

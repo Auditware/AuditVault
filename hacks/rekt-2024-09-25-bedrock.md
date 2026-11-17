@@ -4,8 +4,8 @@ tags:
   - blockchain/bitcoin
   - blockchain/ethereum
   - blockchain/optimism
-  - sector/gaming
-  - sector/token
+  - web3-sector/gaming
+  - web3-sector/token
 title: "Bedrock - Rekt"
 protocol: "[[Bedrock]]"
 date: 2024-09-25

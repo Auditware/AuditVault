@@ -4,10 +4,10 @@ tags:
   - has/github
   - lang/rust
   - lang/anchor
-  - sector/bridge
-  - sector/stable
-  - sector/options
-  - sector/algo-stable
+  - web3-sector/bridge
+  - web3-sector/stable
+  - web3-sector/options
+  - web3-sector/algo-stable
   - platform/sherlock
 protocol: "[[ZetaChain Cross Chain]]"
 auditors:

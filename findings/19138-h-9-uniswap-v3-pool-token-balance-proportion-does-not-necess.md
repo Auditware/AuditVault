@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/lending
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/stable
   - platform/sherlock
   - has/github
   - severity/high

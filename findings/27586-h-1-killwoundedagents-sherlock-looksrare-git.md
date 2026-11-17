@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/gaming
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
 protocol: "[[LooksRare]]"
 auditors:
   - "[[ast3ros]]"

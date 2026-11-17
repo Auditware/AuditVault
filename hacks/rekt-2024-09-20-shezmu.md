@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/gaming
-  - sector/lending
-  - sector/privacy
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/privacy
 title: "Shezmu - Rekt"
 protocol: "[[Shezmu]]"
 date: 2024-09-20

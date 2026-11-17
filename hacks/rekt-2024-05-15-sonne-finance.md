@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/optimism
-  - sector/governance
-  - sector/lending
-  - sector/multisig
-  - sector/stable
-  - sector/vault
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/stable
+  - web3-sector/vault
   - has/audit
   - trigger/flash-loan
   - trigger/time-based/timelock-expiry

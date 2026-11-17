@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/staking
 ---
 Basin is a DeFi protocol - description pending.

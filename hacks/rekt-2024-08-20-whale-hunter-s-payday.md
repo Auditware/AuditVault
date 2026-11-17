@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
   - impact/privilege-escalation/ownership-transfer
 title: "Whale Hunter's Payday"

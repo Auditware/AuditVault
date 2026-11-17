@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/lending
-  - sector/liquid-staking
-  - sector/oracle
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/oracle
+  - web3-sector/stable
   - platform/openzeppelin
   - has/github
   - severity/high

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/algo-stable
-  - sector/lending
+  - web3-sector/algo-stable
+  - web3-sector/lending
   - platform/quantstamp
   - severity/high
   - trigger/flash-loan

@@ -3,8 +3,8 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/options
-  - sector/oracle
+  - web3-sector/options
+  - web3-sector/oracle
 protocol: "[[Aries Markets]]"
 auditors:
   - "[[Akash Gurugunti]]"

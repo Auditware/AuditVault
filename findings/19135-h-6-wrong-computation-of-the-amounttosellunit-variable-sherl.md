@@ -4,8 +4,8 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/lending
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/stable
 protocol: "[[USSD]]"
 auditors:
   - "[[0xRobocop]]"

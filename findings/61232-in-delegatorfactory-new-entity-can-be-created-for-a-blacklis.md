@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/staking
-  - sector/governance
+  - web3-sector/staking
+  - web3-sector/governance
   - platform/cyfrin
 protocol: "[[Suzaku Core]]"
 auditors:

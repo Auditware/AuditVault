@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/lending
   - has/github
   - severity/high
-  - sector/lending
+  - impact/privilege-escalation/ownership-transfer
+  - precondition/insider
 protocol: "[[HypurrFi]]"
 auditors:
   - Pashov Audit Group
@@ -11,8 +13,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/HypurrFi-security-
 genome:
   - "[[initializer-auth]]"
   - "[[ownership-transfer]]"
-  - "[[insider]]"
----
+  - "[[insider]]"---
 # [H-02] Deployer does not transfer ownership of `CapAutomator` to admin
 
 - id: 55466

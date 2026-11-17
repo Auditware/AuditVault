@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - has/poc
-  - sector/options
+  - web3-sector/options
   - platform/code4rena
 protocol: "[[Initia]]"
 auditors:

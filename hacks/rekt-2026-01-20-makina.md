@@ -1,10 +1,10 @@
 ---
 tags:
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/stable
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/staking
   - vuln/oracle/spot-price
   - impact/data-corruption/price-manipulation
   - trigger/flash-loan

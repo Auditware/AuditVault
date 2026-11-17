@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/staking
 protocol: "[[Accountable]]"
 auditors:
   - "[[immeas]]"

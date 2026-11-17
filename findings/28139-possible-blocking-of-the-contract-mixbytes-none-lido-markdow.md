@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/liquid-staking
+  - web3-sector/governance
+  - web3-sector/liquid-staking
   - platform/mixbytes
   - has/github
   - severity/high

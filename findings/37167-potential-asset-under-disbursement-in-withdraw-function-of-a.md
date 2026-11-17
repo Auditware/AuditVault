@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Aarna]]"
 auditors:
   - "[[Zokyo]]"

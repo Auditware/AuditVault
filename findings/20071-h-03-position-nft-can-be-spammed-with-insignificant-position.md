@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/nft
+  - web3-sector/dex
+  - web3-sector/nft
   - platform/code4rena
   - has/github
   - has/poc

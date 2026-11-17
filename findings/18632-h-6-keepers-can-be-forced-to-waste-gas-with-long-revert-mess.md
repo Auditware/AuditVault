@@ -4,8 +4,8 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/gaming
-  - sector/perpetuals
+  - web3-sector/gaming
+  - web3-sector/perpetuals
 protocol: "[[GMX]]"
 auditors:
   - "[[0xAmanda]]"

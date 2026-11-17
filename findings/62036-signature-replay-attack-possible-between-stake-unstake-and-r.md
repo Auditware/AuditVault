@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/quantstamp
   - severity/high
+  - vuln/bridge/replay
+  - novelty/variant
 protocol: "[[Sapien]]"
 auditors:
   - Paul Clemson
@@ -15,8 +17,7 @@ genome:
   - "[[bridge-is-secure]]"
   - "[[signature-is-unique]]"
   - "[[add-nonce]]"
-  - "[[cross-chain-message]]"
----
+  - "[[cross-chain-message]]"---
 # Signature Replay Attack Possible Between Stake, Unstake and Reward Functions Enabling Unauthorized Token Claims
 
 - id: 62036

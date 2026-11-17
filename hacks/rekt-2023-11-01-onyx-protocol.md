@@ -1,11 +1,11 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/privacy
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/privacy
+  - web3-sector/token
   - vuln/reentrancy/read-only
   - vuln/reentrancy/single-function
   - trigger/flash-loan

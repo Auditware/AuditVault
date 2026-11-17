@@ -1,25 +1,26 @@
 ---
 tags:
   - checklist
-  - sector/staking-pool
+  - web3-sector/staking-pool
 generated: true
 ---
 # Staking Pool — Audit Checklist
 
-> Auto-generated from **66** findings in this sector (**18** with bug-class tags), ranked by frequency.
+> Auto-generated from **59** findings in this sector (**21** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
 What actually goes wrong in this sector, most common first. Tick each as you rule it out.
 
-- [ ] **Logic: Reward Calculation** — 8 findings `vuln/logic/reward-calculation`
-- [ ] **Arithmetic: Underflow** — 3 findings `vuln/arithmetic/underflow`
+- [ ] **Logic: Reward Calculation** — 10 findings `vuln/logic/reward-calculation`
+- [ ] **Arithmetic: Underflow** — 4 findings `vuln/arithmetic/underflow`
 - [ ] **Dos: Frozen Funds** — 2 findings `vuln/dos/frozen-funds`
 - [ ] **Logic: Fee Calculation** — 2 findings `vuln/logic/fee-calculation`
 - [ ] **Oracle: Spot Price** — 2 findings `vuln/oracle/spot-price`
 - [ ] **Dos: Griefing** — 1 finding `vuln/dos/griefing`
 - [ ] **Governance: Proposal Manipulation** — 1 finding `vuln/governance/proposal-manipulation`
 - [ ] **Arithmetic: Decimal Mismatch** — 1 finding `vuln/arithmetic/decimal-mismatch`
+- [ ] **Dos: Unbounded Loop** — 1 finding `vuln/dos/unbounded-loop`
 
 ## 🎯 Common triggers
 The conditions attackers use to set these bugs off — check each path is constrained.
@@ -34,17 +35,17 @@ The conditions attackers use to set these bugs off — check each path is constr
 Where it hurts when these bugs land.
 
 - `impact/loss-of-funds/locked-funds` — 6
-- `impact/loss-of-funds/direct-drain` — 4
+- `impact/loss-of-funds/direct-drain` — 5
+- `impact/loss-of-funds/reward-theft` — 3
 - `impact/mev/sandwich` — 2
 - `impact/mev/frontrun` — 2
-- `impact/loss-of-funds/reward-theft` — 2
 - `impact/data-corruption/price-manipulation` — 1
 
 ## 🛠️ Recommended mitigations
 The fixes auditors most often recommended in this sector.
 
 - `fix/fix-arithmetic` — 13
-- `fix/use-reentrancy-guard` — 2
+- `fix/use-reentrancy-guard` — 3
 - `fix/use-twap` — 2
 - `fix/add-check` — 1
 

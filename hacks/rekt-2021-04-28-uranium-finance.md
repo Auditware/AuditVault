@@ -2,10 +2,10 @@
 tags:
   - blockchain/bitcoin
   - blockchain/bsc
-  - sector/bridge
-  - sector/dex
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "Uranium Finance - REKT"
 protocol: "[[Uranium Finance]]"
 date: 2021-04-28

@@ -4,8 +4,8 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/oracle
-  - sector/perpetuals
+  - web3-sector/oracle
+  - web3-sector/perpetuals
 protocol: "[[GMX]]"
 auditors:
   - "[[IllIllI]]"

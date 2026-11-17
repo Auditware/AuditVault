@@ -2,10 +2,10 @@
 tags:
   - blockchain/bitcoin
   - blockchain/ethereum
-  - sector/dex
-  - sector/gaming
-  - sector/privacy
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/privacy
+  - web3-sector/staking
 title: "SBI Crypto - Rekt"
 protocol: "[[Sbi Crypto]]"
 date: 2025-09-24

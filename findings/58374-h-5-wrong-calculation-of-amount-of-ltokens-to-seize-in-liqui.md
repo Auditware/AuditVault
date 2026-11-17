@@ -1,14 +1,16 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/oracle
-  - sector/uncollat-lending
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/uncollat-lending
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/logic/liquidation-logic
+  - novelty/variant
 protocol: "[[LEND]]"
 auditors:
   - rudhra1749
@@ -18,8 +20,7 @@ genome:
   - "[[liquidation-logic]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[redesign-logic]]"
----
+  - "[[redesign-logic]]"---
 # H-5: wrong calculation of amount of Ltokens to seize in liquidateCrossChain function
 
 - id: 58374

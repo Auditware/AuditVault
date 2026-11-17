@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/privacy
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
   - vuln/dependency/upgradeable-contract
   - impact/loss-of-funds/direct-drain
   - trigger/governance-vote

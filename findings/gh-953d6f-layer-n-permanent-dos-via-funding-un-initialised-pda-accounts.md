@@ -9,7 +9,7 @@ tags:
   - novelty/variant
   - misassumption/proxy-is-initialized
   - fix/add-check
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Layer N]]"
 auditors:
   - "[[FrankCastle]]"

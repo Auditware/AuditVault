@@ -4,7 +4,7 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Solady]]"
 auditors:
   - "[[Kaden]]"

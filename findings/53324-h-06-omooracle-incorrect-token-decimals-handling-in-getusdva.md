@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/oracle
   - has/github
   - severity/high
-  - sector/oracle
+  - vuln/arithmetic/decimal-mismatch
+  - novelty/variant
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +14,7 @@ genome:
   - "[[token-decimal-normalization]]"
   - "[[decimal-mismatch]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # [H-06] OmoOracle incorrect token decimals handling in `getUSDValue` and `convertUSDToToken`
 
 - id: 53324

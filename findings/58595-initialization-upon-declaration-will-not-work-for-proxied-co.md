@@ -1,12 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/liquid-staking
-  - sector/oracle
-  - sector/staking
+  - web3-sector/liquid-staking
+  - web3-sector/oracle
+  - web3-sector/staking
   - platform/spearbit
   - has/github
   - severity/high
+  - vuln/access-control/proxy-storage-collision
+  - precondition/uninitialized
+  - novelty/variant
 protocol: "[[Kinetiq LST]]"
 auditors:
   - Rvierdiiev
@@ -17,8 +20,7 @@ genome:
   - "[[precondition/uninitialized]]"
   - "[[variant]]"
   - "[[proxy-is-initialized]]"
-  - "[[upgrade-dependency]]"
----
+  - "[[upgrade-dependency]]"---
 # Initialization upon declaration will not work for " proxied" contracts
 
 - id: 58595

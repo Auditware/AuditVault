@@ -4,8 +4,8 @@ tags:
   - platform/sigmaprime
   - has/github
   - severity/high
-  - sector/lending
-  - sector/options
+  - web3-sector/lending
+  - web3-sector/options
 protocol: "[[Lyra Finance]]"
 auditors:
   - "[[Sigma Prime]]"

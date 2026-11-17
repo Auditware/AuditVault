@@ -4,9 +4,9 @@ tags:
   - platform/cantina
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/restaking
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/restaking
+  - web3-sector/staking
 protocol: "[[MilkyWay]]"
 auditors:
   - "[[alpo]]"

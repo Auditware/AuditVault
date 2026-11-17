@@ -6,7 +6,7 @@ tags:
   - has/poc
   - severity/high
   - impact/loss-of-funds/direct-drain
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Proximity Labs]]"
 auditors:
   - "[[Robert Chen]]"

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
-  - sector/staking
+  - web3-sector/account
+  - web3-sector/staking
   - platform/shieldify
   - has/github
   - severity/high

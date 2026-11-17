@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/dex
-  - sector/privacy
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/staking
 title: "Bent Finance - REKT"
 protocol: "[[Bent Finance]]"
 date: 2021-12-21

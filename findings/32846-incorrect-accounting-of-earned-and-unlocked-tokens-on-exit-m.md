@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/staking
-  - sector/streaming
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/staking
+  - web3-sector/streaming
+  - web3-sector/token
   - platform/openzeppelin
   - has/github
   - severity/high

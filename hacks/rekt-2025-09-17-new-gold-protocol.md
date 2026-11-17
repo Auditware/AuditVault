@@ -2,12 +2,12 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/privacy
+  - web3-sector/stable
   - trigger/flash-loan
   - precondition/flash-loan-available
 title: "New Gold Protocol - Rekt"

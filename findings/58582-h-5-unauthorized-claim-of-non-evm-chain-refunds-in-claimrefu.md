@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
+  - web3-sector/bridge
+  - web3-sector/dex
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - trigger/flash-loan
+  - precondition/flash-loan-available
 protocol: "[[DODO Cross Chain DEX]]"
 auditors:
   - newspacexyz
@@ -14,8 +16,7 @@ report: "https://github.com/sherlock-audit/2025-05-dodo-cross-chain-dex-judging"
 genome:
   - "[[flashloan-callback-auth]]"
   - "[[flash-loan]]"
-  - "[[flash-loan-available]]"
----
+  - "[[flash-loan-available]]"---
 # H-5: Unauthorized Claim of Non-EVM Chain Refunds in `claimRefund` Function
 
 - id: 58582

@@ -1,11 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[FIVA Yield Tokenization Protocol]]"
 auditors:
   - Tarun Bansal
@@ -13,8 +14,7 @@ report: "https://github.com/trailofbits/publications/blob/master/reviews/2025-05
 genome:
   - "[[frontrun-exposure]]"
   - "[[direct-drain]]"
-  - "[[fee-theft]]"
----
+  - "[[fee-theft]]"---
 # Race condition in YT swap and index update can lead to loss of funds
 
 - id: 57093

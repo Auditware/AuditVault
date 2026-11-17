@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/oracle
-  - sector/perpetuals
+  - web3-sector/oracle
+  - web3-sector/perpetuals
 ---
 Jupiter Perps Program is a DeFi protocol - description pending.

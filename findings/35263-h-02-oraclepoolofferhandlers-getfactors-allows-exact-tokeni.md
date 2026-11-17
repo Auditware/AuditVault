@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/nft-lending
-  - sector/oracle
-  - sector/staking
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/nft-lending
+  - web3-sector/oracle
+  - web3-sector/staking
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - severity/high

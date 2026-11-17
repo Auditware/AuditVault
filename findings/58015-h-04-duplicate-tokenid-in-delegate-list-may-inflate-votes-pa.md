@@ -2,7 +2,7 @@
 tags:
   - severity/high
   - has/github
-  - sector/staking
+  - web3-sector/staking
   - lang/solidity
 protocol: "[[KittenSwap]]"
 auditors:

@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
-  - sector/vault
+  - web3-sector/options
+  - web3-sector/vault
   - has/github
   - severity/high
+  - vuln/oracle/spot-price
+  - novelty/known-pattern
 protocol: "[[Hyperhyper]]"
 auditors:
   - Pashov Audit Group
@@ -16,8 +18,7 @@ genome:
   - "[[oracle-is-reliable]]"
   - "[[price-cannot-be-manipulated]]"
   - "[[use-twap]]"
-  - "[[trigger/price-manipulation]]"
----
+  - "[[trigger/price-manipulation]]"---
 # [H-01] Option premium calculation underprices options
 
 - id: 57738

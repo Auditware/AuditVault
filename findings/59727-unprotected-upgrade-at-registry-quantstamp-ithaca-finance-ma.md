@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/perpetuals
+  - web3-sector/perpetuals
   - platform/quantstamp
   - severity/high
   - vuln/dependency/upgradeable-contract

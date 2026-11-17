@@ -8,7 +8,7 @@ tags:
   - vuln/logic/fee-calculation
   - novelty/variant
   - misassumption/math-is-safe
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Y2K]]"
 auditors:
   - "[[iglyx]]"

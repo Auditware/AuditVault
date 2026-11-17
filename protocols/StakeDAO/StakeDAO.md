@@ -2,9 +2,9 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/lending
-  - sector/nft
-  - sector/staking
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/staking
+  - web3-sector/token
 ---
 StakeDAO is a DeFi protocol - description pending.

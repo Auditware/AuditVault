@@ -2,9 +2,9 @@
 tags:
   - lang/move
   - lang/solidity
-  - sector/lending
-  - sector/nft
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/stable
   - platform/codehawks
   - severity/high
   - impact/loss-of-funds/direct-drain

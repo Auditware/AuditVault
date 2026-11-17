@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/privacy
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/privacy
   - impact/data-corruption/price-manipulation
   - trigger/low-liquidity
   - trigger/price-manipulation

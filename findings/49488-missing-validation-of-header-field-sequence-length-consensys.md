@@ -2,7 +2,7 @@
 tags:
   - blockchain/evm
   - lang/noir
-  - sector/privacy
+  - web3-sector/privacy
   - platform/consensys
   - severity/high
   - novelty/variant

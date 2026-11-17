@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/governance
-  - sector/lending
-  - sector/multisig
-  - sector/oracle
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/oracle
   - impact/data-corruption/price-manipulation
   - trigger/price-manipulation
 title: "Moola Market - REKT"

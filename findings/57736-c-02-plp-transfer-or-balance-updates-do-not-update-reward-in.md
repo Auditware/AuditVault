@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
+  - web3-sector/farm
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - trigger/first-deposit
+  - novelty/variant
 protocol: "[[Hyperhyper]]"
 auditors:
   - Pashov Audit Group
@@ -14,8 +17,7 @@ genome:
   - "[[first-deposit]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [C-02] PLP transfer or balance updates do not update reward index
 
 - id: 57736

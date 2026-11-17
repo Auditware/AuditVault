@@ -1,10 +1,10 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/nft
-  - sector/privacy
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/privacy
+  - web3-sector/token
   - has/audit
   - vuln/reentrancy/single-function
   - impact/loss-of-funds/direct-drain

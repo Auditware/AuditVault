@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/dex
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/stable
   - vuln/dependency/upgradeable-contract
   - impact/loss-of-funds/direct-drain
   - precondition/insider

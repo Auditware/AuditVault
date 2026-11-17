@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Ellipsis]]"
 auditors:
   - "[[Robert Chen]]"

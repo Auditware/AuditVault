@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/stable
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - novelty/variant
 protocol: "[[DODO Cross Chain DEX]]"
 auditors:
   - HeckerTrieuTien
@@ -15,8 +17,7 @@ report: "https://github.com/sherlock-audit/2025-05-dodo-cross-chain-dex-judging"
 genome:
   - "[[bridge-message-validation]]"
   - "[[direct-drain]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # H-4: `GatewayTransferNative.withdrawToNativeChain` Allows Swapping Arbitrary Contract ZRC20s by Misusing Deposited Token Amount
 
 - id: 58581

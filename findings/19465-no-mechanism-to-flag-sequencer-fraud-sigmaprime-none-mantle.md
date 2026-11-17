@@ -3,8 +3,8 @@ tags:
   - blockchain/evm
   - blockchain/evm/mantle
   - lang/solidity
-  - sector/infra
-  - sector/staking
+  - web3-sector/infra
+  - web3-sector/staking
   - platform/sigmaprime
   - has/github
   - severity/high

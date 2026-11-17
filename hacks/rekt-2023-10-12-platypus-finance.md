@@ -2,10 +2,10 @@
 tags:
   - blockchain/avalanche
   - blockchain/ethereum
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
   - impact/data-corruption/price-manipulation
   - impact/loss-of-funds/direct-drain
   - trigger/flash-loan

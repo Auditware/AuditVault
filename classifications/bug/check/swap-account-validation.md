@@ -1,7 +1,7 @@
 ---
 tags:
   - check/swap-account-validation
-  - sector/dex
-  - sector/amm
+  - web3-sector/dex
+  - web3-sector/amm
 ---
 Are swap input/output accounts validated as distinct and owned by the transaction signer?

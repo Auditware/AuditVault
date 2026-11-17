@@ -5,7 +5,7 @@ tags:
   - platform/zenith
   - severity/high
   - impact/dos/permanent
-  - sector/perpetuals
+  - web3-sector/perpetuals
 protocol: "[[GMX]]"
 auditors:
   - "[[FrankCastle]]"

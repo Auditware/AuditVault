@@ -4,10 +4,10 @@ tags:
   - blockchain/ethereum
   - blockchain/polygon
   - blockchain/solana
-  - sector/bridge
-  - sector/gaming
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/gaming
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "CoinDCX - Rekt"
 protocol: "[[Coindcx]]"
 date: 2025-07-18

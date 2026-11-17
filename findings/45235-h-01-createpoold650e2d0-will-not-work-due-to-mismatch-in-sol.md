@@ -5,7 +5,7 @@ tags:
   - sdk/stylus
   - severity/high
   - platform/code4rena
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Superposition]]"
 auditors:
   - "[[ZanyBonzy]]"

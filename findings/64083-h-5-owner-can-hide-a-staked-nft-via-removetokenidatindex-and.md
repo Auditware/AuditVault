@@ -5,14 +5,14 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/insurance
-  - sector/lending
-  - sector/liquid-staking
-  - sector/nft
-  - sector/nft-lending
-  - sector/staking
-  - sector/staking-pool
-  - sector/vault
+  - web3-sector/insurance
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/nft
+  - web3-sector/nft-lending
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/vault
 protocol: "[[stETH]]"
 auditors:
   - "[[0xKemah]]"

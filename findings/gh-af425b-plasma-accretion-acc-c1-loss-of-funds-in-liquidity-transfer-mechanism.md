@@ -5,7 +5,7 @@ tags:
   - platform/accretion-labs
   - severity/high
   - impact/loss-of-funds/direct-drain
-  - sector/dex
+  - web3-sector/dex
   - check/token-dust-handling
 protocol: "[[Plasma Accretion]]"
 auditors:

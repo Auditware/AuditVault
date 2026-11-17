@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
+  - web3-sector/governance
 ---
 Hybra Finance is a DeFi protocol - description pending.

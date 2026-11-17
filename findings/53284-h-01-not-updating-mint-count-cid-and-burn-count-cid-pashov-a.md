@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/gaming
+  - web3-sector/gaming
 protocol: "[[Gigaverse]]"
 auditors:
   - Pashov Audit Group

@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/vault
   - platform/pashov
   - has/github
   - severity/high

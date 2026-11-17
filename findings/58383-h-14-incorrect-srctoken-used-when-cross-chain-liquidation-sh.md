@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/stable
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/logic/liquidation-logic
+  - novelty/variant
 protocol: "[[LEND]]"
 auditors:
   - rudhra1749
@@ -17,8 +19,7 @@ genome:
   - "[[liquidation-logic]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[redesign-logic]]"
----
+  - "[[redesign-logic]]"---
 # H-14: Incorrect srcToken Used When Cross-Chain Liquidation
 
 - id: 58383

@@ -2,7 +2,7 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/governance
+  - web3-sector/governance
   - platform/pashov-audit-group
   - has/github
   - severity/high

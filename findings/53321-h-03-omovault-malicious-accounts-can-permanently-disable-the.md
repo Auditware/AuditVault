@@ -1,9 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
+  - web3-sector/oracle
   - has/github
   - severity/high
+  - vuln/access-control/fake-account-substitution
+  - vuln/oracle/single-source
+  - impact/dos/permanent
+  - novelty/variant
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
@@ -17,8 +21,7 @@ genome:
   - "[[admin-is-honest]]"
   - "[[oracle-is-reliable]]"
   - "[[add-access-control]]"
-  - "[[use-multi-oracle]]"
----
+  - "[[use-multi-oracle]]"---
 # [H-03] `OmoVault` malicious accounts can permanently disable the vault
 
 - id: 53321

@@ -5,8 +5,8 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/infra
-  - sector/oracle
+  - web3-sector/infra
+  - web3-sector/oracle
 protocol: "[[SEDA]]"
 auditors:
   - "[[Boy2000]]"

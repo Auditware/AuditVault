@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/privacy
   - has/audit
   - vuln/oracle/missing-circuit-breaker
   - fix/add-circuit-breaker

@@ -1,13 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/insurance
-  - sector/multisig
-  - sector/oracle
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/insurance
+  - web3-sector/multisig
+  - web3-sector/oracle
+  - web3-sector/perpetuals
+  - web3-sector/stable
   - platform/trailofbits
   - has/github
   - severity/high

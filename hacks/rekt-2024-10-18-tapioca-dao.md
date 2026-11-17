@@ -2,15 +2,15 @@
 tags:
   - blockchain/arbitrum
   - blockchain/bsc
-  - sector/bridge
-  - sector/dex
-  - sector/gaming
-  - sector/governance
-  - sector/lending
-  - sector/multisig
-  - sector/nft
-  - sector/stable
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/nft
+  - web3-sector/stable
+  - web3-sector/staking
   - precondition/insider
 title: "Tapioca DAO - Rekt"
 protocol: "[[Tapioca DAO]]"

@@ -1,15 +1,15 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/dex
-  - sector/gaming
-  - sector/governance
-  - sector/launchpad
-  - sector/lending
-  - sector/nft
-  - sector/oracle
-  - sector/stable
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/launchpad
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/vault
 title: "Eminence - Rekt in prod"
 protocol: "[[Eminence]]"
 date: 2020-09-28

@@ -4,7 +4,7 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/account
+  - web3-sector/account
 protocol: "[[Mass]]"
 auditors:
   - "[[Richie Humphrey]]"

@@ -4,7 +4,7 @@ tags:
   - platform/quantstamp
   - severity/high
   - novelty/variant
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Pheasant Network]]"
 auditors:
   - "[[Danny Aksenov]]"

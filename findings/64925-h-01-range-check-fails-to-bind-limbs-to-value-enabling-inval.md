@@ -4,7 +4,7 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/zk
+  - web3-sector/zk
 protocol: "[[Succinct]]"
 auditors:
   - "[[Cryptor]]"

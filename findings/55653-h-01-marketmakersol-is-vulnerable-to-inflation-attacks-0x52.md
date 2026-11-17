@@ -4,9 +4,9 @@ tags:
   - platform/0x52
   - has/github
   - severity/high
-  - sector/lending
-  - sector/prediction
-  - sector/vault
+  - web3-sector/lending
+  - web3-sector/prediction
+  - web3-sector/vault
 protocol: "[[Ubet]]"
 auditors:
   - "[[@IAm0x52]]"

@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
-  - sector/token
+  - web3-sector/stable
+  - web3-sector/token
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Crestal Network]]"
 auditors:
   - dreamcoder
 report: "https://github.com/sherlock-audit/2025-03-crestal-network-judging"
 genome:
   - "[[token-approval-flow]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # H-1: Anyone who is approving `BlueprintV5` contract to spend ERC20 can get drained because `Payment::payWithERC20`
 
 - id: 55092

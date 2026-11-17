@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/move
-  - sector/staking
+  - web3-sector/staking
   - platform/ottersec
   - severity/high
   - vuln/access-control/missing-signer

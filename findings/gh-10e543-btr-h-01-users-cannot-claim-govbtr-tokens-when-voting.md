@@ -4,7 +4,7 @@ tags:
   - lang/rust
   - platform/pashov
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[Btr]]"
 auditors:
   - "[[FrankCastle]]"

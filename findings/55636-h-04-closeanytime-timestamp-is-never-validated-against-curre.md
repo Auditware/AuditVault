@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
-  - sector/perpetuals
+  - web3-sector/options
+  - web3-sector/perpetuals
   - platform/0x52
   - has/github
   - severity/high

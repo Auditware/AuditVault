@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
-  - sector/token
+  - web3-sector/oracle
+  - web3-sector/token
   - platform/sherlock
   - has/github
   - has/poc

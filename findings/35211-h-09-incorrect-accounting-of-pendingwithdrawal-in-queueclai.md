@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/staking-pool
+  - web3-sector/lending
+  - web3-sector/staking-pool
 protocol: "[[Gondi]]"
 auditors:
   - "[[bin2chen]]"

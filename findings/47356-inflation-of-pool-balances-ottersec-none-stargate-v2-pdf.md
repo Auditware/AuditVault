@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/token
   - platform/ottersec
   - severity/high
   - vuln/logic/fee-calculation

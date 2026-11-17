@@ -4,9 +4,9 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/algo-stable
-  - sector/lending
-  - sector/stable
+  - web3-sector/algo-stable
+  - web3-sector/lending
+  - web3-sector/stable
 protocol: "[[Frax Finance]]"
 auditors:
   - "[[Gustavo Grieco]]"

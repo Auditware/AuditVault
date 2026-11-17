@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
-  - sector/stable
-  - sector/staking-pool
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/staking-pool
   - platform/pashov
   - has/github
   - severity/high

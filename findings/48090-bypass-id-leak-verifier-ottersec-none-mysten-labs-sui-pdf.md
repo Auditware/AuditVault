@@ -5,7 +5,7 @@ tags:
   - has/poc
   - severity/high
   - novelty/variant
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Sui]]"
 auditors:
   - "[[Cauê Obici]]"

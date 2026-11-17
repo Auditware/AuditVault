@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/oracle
-  - sector/rwa
-  - sector/stable
-  - sector/uncollat-lending
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/rwa
+  - web3-sector/stable
+  - web3-sector/uncollat-lending
   - platform/shieldify
   - has/github
   - has/poc

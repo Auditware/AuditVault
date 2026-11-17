@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
+  - web3-sector/gaming
   - platform/auditone
   - has/github
   - severity/high

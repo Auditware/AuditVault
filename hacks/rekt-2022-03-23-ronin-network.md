@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/gaming
-  - sector/governance
-  - sector/stable
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/stable
+  - web3-sector/staking
 title: "Ronin Network - REKT"
 protocol: "[[Ronin Network]]"
 date: 2022-03-23

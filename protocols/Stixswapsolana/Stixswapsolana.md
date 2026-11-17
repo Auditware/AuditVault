@@ -2,6 +2,7 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/token
 ---
 Stixswapsolana is a DeFi protocol - description pending.

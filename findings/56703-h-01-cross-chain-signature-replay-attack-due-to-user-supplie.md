@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/stable
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - vuln/bridge/replay
+  - novelty/variant
 protocol: "[[Next Generation]]"
 auditors:
   - 0xvd
@@ -18,8 +20,7 @@ genome:
   - "[[bridge-is-secure]]"
   - "[[signature-is-unique]]"
   - "[[add-nonce]]"
-  - "[[cross-chain-message]]"
----
+  - "[[cross-chain-message]]"---
 # [H-01] Cross-chain signature replay attack due to user-supplied `domainSeparator` and missing deadline check
 
 - id: 56703

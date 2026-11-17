@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/staking
-  - sector/token
+  - web3-sector/nft
+  - web3-sector/staking
+  - web3-sector/token
   - platform/codehawks
   - severity/high
   - vuln/dependency/upgradeable-contract

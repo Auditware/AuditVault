@@ -3,7 +3,7 @@ tags:
   - lang/rust
   - lang/solidity
   - sdk/anchor
-  - sector/lending
+  - web3-sector/lending
   - platform/pashov
   - has/github
   - severity/high

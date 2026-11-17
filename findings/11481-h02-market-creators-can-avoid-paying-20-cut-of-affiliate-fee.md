@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/prediction
+  - web3-sector/prediction
   - platform/openzeppelin
   - has/github
   - severity/high

@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/logic/fee-calculation
+  - novelty/variant
 protocol: "[[Astrolab]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +15,7 @@ genome:
   - "[[fee-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-06] Fee target mismatch in `deposit`, `mint`, `withdraw`, `redeem` and `preview***` methods
 
 - id: 58103

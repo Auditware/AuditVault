@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/perpetuals
+  - web3-sector/perpetuals
 protocol: "[[Dipcoin]]"
 auditors:
   - "[[Hamed Mohammadi]]"

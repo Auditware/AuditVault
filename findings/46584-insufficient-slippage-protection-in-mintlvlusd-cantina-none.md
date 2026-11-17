@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Level Money]]"
 auditors:
   - "[[Mario Poneder]]"

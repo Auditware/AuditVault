@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - severity/high
+  - novelty/known-pattern
 protocol: "[[Remora Pledge]]"
 auditors:
   - Dacian
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/2025-07-04-cyfrin-remora-pledge-v2.0.md"
 genome:
   - "[[integer-bounds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Distribution of payouts will revert due to overflow when payment is made using a stablecoin with high decimals
 
 - id: 61173

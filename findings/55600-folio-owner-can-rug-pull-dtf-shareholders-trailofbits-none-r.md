@@ -5,7 +5,7 @@ tags:
   - has/poc
   - lang/rust
   - platform/trailofbits
-  - sector/rwa
+  - web3-sector/rwa
 protocol: "[[Reserve Protocol Solana DTFs]]"
 auditors:
   - Samuel Moelius

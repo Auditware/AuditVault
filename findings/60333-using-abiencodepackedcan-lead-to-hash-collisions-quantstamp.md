@@ -3,8 +3,8 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/bridge
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/staking
 protocol: "[[Pheasant Network]]"
 auditors:
   - "[[Danny Aksenov]]"

@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/nft
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
-  - sector/nft
+  - novelty/variant
 protocol: "[[FIVA Yield Tokenization Protocol]]"
 auditors:
   - Tarun Bansal
 report: "https://github.com/trailofbits/publications/blob/master/reviews/2025-05-FIVA-yieldtokenizationprotocol-securityreview.pdf"
 genome:
   - "[[upgrade-safety]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # Lack of validation checks in the upgrade_storage operation handler
 
 - id: 57082

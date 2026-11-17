@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/options
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/options
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - has/poc

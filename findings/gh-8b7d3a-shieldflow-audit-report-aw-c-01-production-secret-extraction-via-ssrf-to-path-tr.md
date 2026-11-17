@@ -4,7 +4,7 @@ tags:
 protocol: "[[Shieldflow]]"
 auditors:
   - "[[Auditware]]"
-  - sector/bridge
+  - web3-sector/bridge
 genome:
   - "[[access-roles]]"
   - "[[access-control/secret-exposure]]"

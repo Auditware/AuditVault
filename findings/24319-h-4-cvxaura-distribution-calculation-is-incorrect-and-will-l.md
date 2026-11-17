@@ -4,8 +4,8 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/farm
-  - sector/staking
+  - web3-sector/farm
+  - web3-sector/staking
 protocol: "[[Blueberry]]"
 auditors:
   - "[[0x52]]"

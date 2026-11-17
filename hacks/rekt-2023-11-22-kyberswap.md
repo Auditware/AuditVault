@@ -6,13 +6,13 @@ tags:
   - blockchain/optimism
   - blockchain/polygon
   - has/audit
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/perpetuals
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/perpetuals
+  - web3-sector/privacy
 title: "KyberSwap - REKT"
 protocol: "[[Kyberswap]]"
 date: 2023-11-22

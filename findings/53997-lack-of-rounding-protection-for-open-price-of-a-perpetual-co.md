@@ -2,8 +2,8 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/options
-  - sector/perpetuals
+  - web3-sector/options
+  - web3-sector/perpetuals
   - platform/cantina
   - has/poc
   - severity/high

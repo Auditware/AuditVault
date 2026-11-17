@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/lending
-  - sector/stable
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/vault
 ---
 Derby is a DeFi protocol - description pending.

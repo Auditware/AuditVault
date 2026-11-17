@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/options
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/options
+  - web3-sector/token
   - has/github
   - has/poc
   - severity/high
+  - precondition/specific-token-type
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/KittenSwap-security-review_2025-06-12.md"
 genome:
   - "[[fot-slippage]]"
-  - "[[specific-token-type]]"
----
+  - "[[specific-token-type]]"---
 # [C-01] `RebaseReward` fails because of incorrect token handling
 
 - id: 58065

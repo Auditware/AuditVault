@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/token
+  - web3-sector/token
 ---
 Shido is a DeFi protocol - description pending.

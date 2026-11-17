@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/gaming
-  - sector/governance
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/privacy
 title: "ETHTrustFund - Rekt"
 protocol: "[[Ethtrustfund]]"
 date: 2024-07-20

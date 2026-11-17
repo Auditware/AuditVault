@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/stable
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[LEND]]"
 auditors:
   - jokr
@@ -17,8 +19,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # H-12: Incorrect LEND reward distribution for cross-chain borrows
 
 - id: 58381

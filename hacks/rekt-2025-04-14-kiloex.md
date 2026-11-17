@@ -2,10 +2,10 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/oracle
-  - sector/perpetuals
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/oracle
+  - web3-sector/perpetuals
+  - web3-sector/privacy
   - impact/data-corruption/price-manipulation
   - impact/loss-of-funds/direct-drain
   - trigger/price-manipulation

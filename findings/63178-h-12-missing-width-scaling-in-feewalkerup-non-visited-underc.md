@@ -4,8 +4,8 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/dex
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/lending
 protocol: "[[Ammplify]]"
 auditors:
   - "[[0xnija]]"

@@ -4,7 +4,7 @@ tags:
   - platform/0x52
   - has/github
   - severity/high
-  - sector/perpetuals
+  - web3-sector/perpetuals
 protocol: "[[Buffer]]"
 auditors:
   - "[[@IAm0x52]]"

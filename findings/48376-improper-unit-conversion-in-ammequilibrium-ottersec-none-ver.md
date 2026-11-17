@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Vertex]]"
 auditors:
   - "[[Shiva Shankar]]"

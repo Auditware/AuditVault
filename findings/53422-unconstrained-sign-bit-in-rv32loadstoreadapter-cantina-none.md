@@ -4,8 +4,8 @@ tags:
   - has/poc
   - lang/solidity
   - lang/rust
-  - sector/zk
-  - sector/options
+  - web3-sector/zk
+  - web3-sector/options
   - platform/cantina
 protocol: "[[OpenVM]]"
 auditors:

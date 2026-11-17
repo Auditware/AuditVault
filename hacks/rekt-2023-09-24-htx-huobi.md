@@ -1,6 +1,6 @@
 ---
 tags:
-  - sector/stable
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
 title: "HTX (Huobi) - REKT"
 protocol: "[[HTX]]"

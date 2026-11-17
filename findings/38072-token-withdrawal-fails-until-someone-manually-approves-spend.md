@@ -3,10 +3,10 @@ tags:
   - lang/solidity
   - platform/codehawks
   - severity/high
-  - sector/lending
-  - sector/nft
-  - sector/staking
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/staking
+  - web3-sector/token
 protocol: "[[Tadle]]"
 auditors:
   - "[[p0wd3r]]"

@@ -4,10 +4,10 @@ tags:
   - platform/cantina
   - has/poc
   - severity/high
-  - sector/cdp
-  - sector/lending
-  - sector/stable
-  - sector/uncollat-lending
+  - web3-sector/cdp
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/uncollat-lending
 protocol: "[[Threshold]]"
 auditors:
   - "[[Alex The Entreprenerd]]"

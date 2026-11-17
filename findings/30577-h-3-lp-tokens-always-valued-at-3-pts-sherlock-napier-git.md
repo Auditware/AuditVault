@@ -4,9 +4,9 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/dex
-  - sector/liquid-staking
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/liquid-staking
+  - web3-sector/stable
 protocol: "[[Napier]]"
 auditors:
   - "[[xiaoming90]]"

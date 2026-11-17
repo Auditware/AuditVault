@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/lending
+  - web3-sector/governance
+  - web3-sector/lending
 protocol: "[[DittoETH]]"
 auditors:
   - "[[Samuraii77]]"

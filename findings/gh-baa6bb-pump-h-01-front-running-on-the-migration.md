@@ -7,7 +7,7 @@ tags:
   - impact/loss-of-funds/direct-drain
   - impact/mev/frontrun
   - novelty/variant
-  - sector/launchpad
+  - web3-sector/launchpad
 protocol: "[[Pump]]"
 auditors:
   - "[[FrankCastle]]"

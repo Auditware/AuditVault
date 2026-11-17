@@ -2,7 +2,7 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/staking
-  - sector/streaming
+  - web3-sector/staking
+  - web3-sector/streaming
 ---
 Persistence is a DeFi protocol - description pending.

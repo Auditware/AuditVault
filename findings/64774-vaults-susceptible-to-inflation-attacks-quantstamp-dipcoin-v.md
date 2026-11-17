@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/perpetuals
-  - sector/stable
-  - sector/vault
+  - web3-sector/perpetuals
+  - web3-sector/stable
+  - web3-sector/vault
   - platform/quantstamp
   - severity/high
   - impact/loss-of-funds/direct-drain

@@ -6,7 +6,7 @@ tags:
   - has/poc
   - severity/high
   - impact/mev/frontrun
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Putty]]"
 auditors:
   - "[[hyh]]"

@@ -2,8 +2,8 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/lending
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/staking
   - platform/code4rena
   - severity/high
   - vuln/logic/reward-calculation

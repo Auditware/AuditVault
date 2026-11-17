@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - has/github
   - severity/high
-  - sector/bridge
+  - fix/add-access-control
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
 report: "https://github.com/mixbytes/audits_public/blob/master/DIA/Multi%20Scope/README.md#4-potential-dos-of-messages-in-the-postdispatch-function"
 genome:
   - "[[dos-resistance]]"
-  - "[[add-access-control]]"
----
+  - "[[add-access-control]]"---
 # Potential DoS of messages in the `postDispatch` function
 
 - id: 55411

@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/move
-  - sector/dex
+  - web3-sector/dex
 ---
 Emojicoin is a DeFi protocol - description pending.

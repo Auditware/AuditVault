@@ -4,8 +4,8 @@ tags:
   - platform/cantina
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/zk
+  - web3-sector/governance
+  - web3-sector/zk
 protocol: "[[OpenVM]]"
 auditors:
   - "[[Rhaydden]]"

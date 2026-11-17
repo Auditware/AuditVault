@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/streaming
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/streaming
+  - web3-sector/token
   - platform/sherlock
   - has/github
   - has/poc

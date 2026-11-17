@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/infra
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
-  - sector/infra
+  - novelty/variant
 protocol: "[[Initia]]"
 auditors:
   - berndartmueller
 report: "https://code4rena.com/reports/2025-02-initia-cosmos"
 genome:
   - "[[fee-accounting]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-05] Minievm fails to charge intrinsic gas costs for EVM transactions, allowing the abuse of the accesslist to consume computational resources without proper compensation
 
 - id: 55308

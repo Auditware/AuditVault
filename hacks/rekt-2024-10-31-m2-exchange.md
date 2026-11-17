@@ -3,7 +3,7 @@ tags:
   - blockchain/bitcoin
   - blockchain/ethereum
   - blockchain/solana
-  - sector/stable
+  - web3-sector/stable
 title: "M2 Exchange - Rekt"
 protocol: "[[M2 Exchange]]"
 date: 2024-10-31

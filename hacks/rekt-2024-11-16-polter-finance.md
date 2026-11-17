@@ -2,9 +2,9 @@
 tags:
   - blockchain/fantom
   - blockchain/optimism
-  - sector/bridge
-  - sector/lending
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/oracle
   - vuln/oracle/spot-price
   - impact/data-corruption/price-manipulation
   - trigger/flash-loan

@@ -4,7 +4,7 @@ tags:
 protocol: "[[Shieldflow]]"
 auditors:
   - "[[Auditware]]"
-  - sector/oracle
+  - web3-sector/oracle
 genome:
   - "[[access-roles]]"
   - "[[auth/signature-validation]]"

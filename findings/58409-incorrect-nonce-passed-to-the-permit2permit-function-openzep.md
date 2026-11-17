@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - has/github
   - severity/high
+  - blast-radius/cross-protocol
 protocol: "[[Periphery Changes]]"
 auditors:
   - OpenZeppelin
 report: "https://blog.openzeppelin.com/periphery-changes-audit"
 genome:
   - "[[token-approval-flow]]"
-  - "[[cross-protocol]]"
----
+  - "[[cross-protocol]]"---
 # Incorrect Nonce Passed to the Permit2.permit Function
 
 - id: 58409

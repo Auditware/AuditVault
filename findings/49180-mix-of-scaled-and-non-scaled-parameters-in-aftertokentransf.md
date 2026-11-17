@@ -4,8 +4,8 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/lending
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/token
 protocol: "[[Cod3x]]"
 auditors:
   - "[[Saw-mon and Natalie]]"

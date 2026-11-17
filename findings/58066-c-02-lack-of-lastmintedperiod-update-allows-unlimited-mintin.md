@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/token
+  - web3-sector/farm
+  - web3-sector/token
   - has/github
   - has/poc
   - severity/high
+  - precondition/specific-token-type
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/KittenSwap-security-review_2025-06-12.md"
 genome:
   - "[[access-roles]]"
-  - "[[specific-token-type]]"
----
+  - "[[specific-token-type]]"---
 # [C-02] Lack of `lastMintedPeriod` update allows unlimited minting of Kitten
 
 - id: 58066

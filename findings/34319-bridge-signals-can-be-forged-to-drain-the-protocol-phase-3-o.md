@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/nft
-  - sector/staking
-  - sector/token
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/nft
+  - web3-sector/staking
+  - web3-sector/token
+  - web3-sector/vault
   - platform/openzeppelin
   - has/github
   - severity/high

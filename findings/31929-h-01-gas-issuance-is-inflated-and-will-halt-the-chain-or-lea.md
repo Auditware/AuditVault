@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/launchpad
+  - web3-sector/dex
+  - web3-sector/launchpad
   - platform/code4rena
   - has/github
   - has/poc

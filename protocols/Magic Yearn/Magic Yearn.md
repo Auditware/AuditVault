@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/staking
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
 ---
 Magic Yearn is a DeFi protocol - description pending.

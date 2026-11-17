@@ -3,8 +3,8 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/restaking
-  - sector/staking
+  - web3-sector/restaking
+  - web3-sector/staking
 protocol: "[[MilkyWay]]"
 auditors:
   - "[[alpo]]"

@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - has/poc
-  - sector/governance
+  - web3-sector/governance
   - platform/spearbit
 protocol: "[[InfiniFi Contracts]]"
 auditors:

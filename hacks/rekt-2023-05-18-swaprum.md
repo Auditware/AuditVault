@@ -2,9 +2,9 @@
 tags:
   - blockchain/arbitrum
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/privacy
   - vuln/dependency/upgradeable-contract
   - impact/loss-of-funds/direct-drain
   - precondition/insider

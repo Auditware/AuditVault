@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/bridge
-  - sector/dex
-  - sector/multisig
-  - sector/staking
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/multisig
+  - web3-sector/staking
+  - web3-sector/token
   - precondition/insider
 title: "Harmony Bridge - REKT"
 protocol: "[[Harmony Bridge]]"

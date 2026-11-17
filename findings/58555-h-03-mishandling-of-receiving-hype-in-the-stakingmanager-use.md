@@ -4,9 +4,9 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/oracle
-  - sector/staking
-  - sector/token
+  - web3-sector/oracle
+  - web3-sector/staking
+  - web3-sector/token
   - platform/code4rena
 protocol: "[[Kinetiq]]"
 auditors:

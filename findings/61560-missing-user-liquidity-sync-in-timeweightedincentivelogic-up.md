@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
+  - impact/loss-of-funds/direct-drain
+  - impact/loss-of-funds/locked-funds
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -12,8 +14,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/202
 genome:
   - "[[reward-accounting]]"
   - "[[direct-drain]]"
-  - "[[locked-funds]]"
----
+  - "[[locked-funds]]"---
 # Missing user liquidity sync in `TimeWeightedIncentiveLogic::_updateAllUserState` can result in rewards becoming locked
 
 - id: 61560

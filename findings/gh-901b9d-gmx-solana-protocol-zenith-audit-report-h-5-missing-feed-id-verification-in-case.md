@@ -2,9 +2,9 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/cdp
-  - sector/lending
-  - sector/oracle
+  - web3-sector/cdp
+  - web3-sector/lending
+  - web3-sector/oracle
   - platform/zenith
   - severity/high
   - impact/dos/permanent

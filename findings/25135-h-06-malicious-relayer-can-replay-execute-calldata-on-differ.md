@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/infra
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/infra
+  - web3-sector/stable
   - platform/code4rena
   - has/github
   - severity/high

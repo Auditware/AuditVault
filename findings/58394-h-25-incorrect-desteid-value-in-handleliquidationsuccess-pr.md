@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/uncollat-lending
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/uncollat-lending
   - platform/sherlock
   - has/github
   - severity/high
+  - vuln/logic/liquidation-logic
+  - novelty/variant
 protocol: "[[LEND]]"
 auditors:
   - newspacexyz
@@ -16,8 +18,7 @@ genome:
   - "[[liquidation-logic]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[redesign-logic]]"
----
+  - "[[redesign-logic]]"---
 # H-25: Incorrect `destEid` Value in `_handleLiquidationSuccess` Prevents Liquidation Completion
 
 - id: 58394

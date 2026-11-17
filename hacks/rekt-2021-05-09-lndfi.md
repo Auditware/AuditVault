@@ -2,15 +2,15 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/gaming
-  - sector/governance
-  - sector/lending
-  - sector/multisig
-  - sector/oracle
-  - sector/stable
-  - sector/staking
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/token
   - impact/data-corruption/price-manipulation
   - impact/loss-of-funds/direct-drain
   - trigger/price-manipulation

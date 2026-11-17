@@ -1,13 +1,16 @@
 ---
 tags:
   - lang/rust
-  - sector/dex
-  - sector/farm
-  - sector/staking-pool
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/staking-pool
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - vuln/dos/unbounded-loop
+  - vuln/logic/reward-calculation
+  - novelty/known-pattern
 protocol: "[[MANTRA]]"
 auditors:
   - carrotsmuggler
@@ -18,8 +21,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[known-pattern]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-04] Block gas limit can be hit due to loop depth
 
 - id: 54980

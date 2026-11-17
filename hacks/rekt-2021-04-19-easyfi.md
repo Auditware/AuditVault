@@ -1,9 +1,9 @@
 ---
 tags:
   - blockchain/polygon
-  - sector/governance
-  - sector/multisig
-  - sector/stable
+  - web3-sector/governance
+  - web3-sector/multisig
+  - web3-sector/stable
   - precondition/insider
 title: "EasyFi - REKT"
 protocol: "[[Easyfi]]"

@@ -2,7 +2,7 @@
 tags:
   - severity/high
   - has/github
-  - sector/oracle
+  - web3-sector/oracle
   - lang/solidity
 protocol: "[[DIA]]"
 auditors:

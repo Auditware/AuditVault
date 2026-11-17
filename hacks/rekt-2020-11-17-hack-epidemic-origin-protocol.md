@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/gaming
-  - sector/lending
-  - sector/oracle
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/oracle
   - vuln/reentrancy/single-function
   - trigger/flash-loan
   - precondition/flash-loan-available

@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/token
+  - web3-sector/token
   - platform/cyfrin
 protocol: "[[Bunni]]"
 auditors:

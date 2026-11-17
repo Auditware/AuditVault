@@ -4,10 +4,10 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/dex
-  - sector/lending
-  - sector/staking
-  - sector/governance
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/staking
+  - web3-sector/governance
   - platform/code4rena
 protocol: "[[IQ AI]]"
 auditors:

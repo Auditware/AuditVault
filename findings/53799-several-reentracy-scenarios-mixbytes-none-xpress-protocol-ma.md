@@ -1,8 +1,13 @@
 ---
 tags:
-  - sector/token
+  - web3-sector/token
   - has/github
   - severity/high
+  - vuln/access-control/missing-modifier
+  - vuln/reentrancy/single-function
+  - impact/loss-of-funds/direct-drain
+  - fix/use-reentrancy-guard
+  - novelty/known-pattern
 protocol: "[[XPress Protocol]]"
 auditors:
   - MixBytes
@@ -17,8 +22,7 @@ genome:
   - "[[admin-is-honest]]"
   - "[[external-call-is-safe]]"
   - "[[add-access-control]]"
-  - "[[reentrancy-callback]]"
----
+  - "[[reentrancy-callback]]"---
 # Several reentracy scenarios
 
 - id: 53799

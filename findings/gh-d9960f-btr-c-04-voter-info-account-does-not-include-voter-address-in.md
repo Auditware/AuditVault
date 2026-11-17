@@ -2,8 +2,8 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/governance
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/staking
   - platform/pashov
   - severity/high
   - vuln/access-control/missing-modifier

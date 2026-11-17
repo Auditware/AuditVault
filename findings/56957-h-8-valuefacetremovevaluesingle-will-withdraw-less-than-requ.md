@@ -5,7 +5,7 @@ tags:
   - has/poc
   - lang/solidity
   - platform/sherlock
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Burve]]"
 auditors:
   - nganhg

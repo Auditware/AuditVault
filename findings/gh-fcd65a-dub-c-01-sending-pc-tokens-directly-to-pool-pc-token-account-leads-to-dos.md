@@ -4,7 +4,7 @@ tags:
   - lang/rust
   - platform/pashov
   - severity/high
-  - sector/dex
+  - web3-sector/dex
   - check/pool-direct-transfer-dos
 protocol: "[[Dub]]"
 auditors:

@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/gaming
-  - sector/staking
-  - sector/vault
+  - web3-sector/gaming
+  - web3-sector/staking
+  - web3-sector/vault
 protocol: "[[Strata]]"
 auditors:
   - "[[InAllHonesty]]"

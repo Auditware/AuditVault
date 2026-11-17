@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - has/github
   - has/poc
   - severity/high
+  - vuln/dos/frozen-funds
+  - novelty/known-pattern
 protocol: "[[Kinetiq]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +14,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/Kinetiq-security-r
 genome:
   - "[[integer-bounds]]"
   - "[[frozen-funds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # [H-05] Funds can be permanently locked due to unsafe type casting
 
 - id: 58613

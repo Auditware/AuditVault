@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/prediction
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/prediction
+  - web3-sector/stable
   - platform/code4rena
   - has/github
   - has/poc

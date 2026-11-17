@@ -4,7 +4,7 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/account
+  - web3-sector/account
 protocol: "[[Buck Labs]]"
 auditors:
   - "[[R0bert]]"

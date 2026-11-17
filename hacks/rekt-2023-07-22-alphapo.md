@@ -3,8 +3,8 @@ tags:
   - blockchain/bitcoin
   - blockchain/ethereum
   - blockchain/tron
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
 title: "AlphaPo - REKT"
 protocol: "[[Alphapo]]"
 date: 2023-07-22

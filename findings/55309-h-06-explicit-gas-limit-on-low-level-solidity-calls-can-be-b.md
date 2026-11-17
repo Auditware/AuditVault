@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/infra
-  - sector/token
+  - web3-sector/infra
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - novelty/variant
 protocol: "[[Initia]]"
 auditors:
   - berndartmueller
 report: "https://code4rena.com/reports/2025-02-initia-cosmos"
 genome:
   - "[[dos-resistance]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-06] Explicit gas limit on low-level Solidity calls can be bypassed by dispatched EVM calls via the custom Cosmos precompile
 
 - id: 55309

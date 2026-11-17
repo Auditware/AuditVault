@@ -4,7 +4,7 @@ tags:
   - platform/codehawks
   - has/github
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[DittoETH]]"
 auditors:
   - "[[0xf]]"

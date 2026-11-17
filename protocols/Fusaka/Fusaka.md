@@ -1,9 +1,10 @@
 ---
 tags:
   - lang/rust
-  - sector/governance
-  - sector/infra
-  - sector/staking
-  - sector/zk
+  - lang/solidity
+  - web3-sector/governance
+  - web3-sector/infra
+  - web3-sector/staking
+  - web3-sector/zk
 ---
 Fusaka is a DeFi protocol - description pending.

@@ -4,8 +4,8 @@ tags:
   - platform/codehawks
   - has/poc
   - severity/high
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/perpetuals
+  - web3-sector/stable
 protocol: "[[Zaros]]"
 auditors:
   - "[[cryptedOji]]"

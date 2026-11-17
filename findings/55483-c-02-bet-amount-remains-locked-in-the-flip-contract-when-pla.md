@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/staking
-  - sector/gaming
+  - web3-sector/staking
+  - web3-sector/gaming
 protocol: "[[Coinflip]]"
 auditors:
   - Pashov Audit Group

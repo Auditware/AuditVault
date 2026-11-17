@@ -1,12 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
-  - sector/token
+  - web3-sector/stable
+  - web3-sector/token
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/arithmetic/underflow
+  - vuln/logic/reward-calculation
+  - novelty/known-pattern
 protocol: "[[Burve]]"
 auditors:
   - TessKimy
@@ -17,8 +20,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[known-pattern]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # H-9: Reserve Share Overflows Due to Too Strict Reward Calculation Mechanism
 
 - id: 56958

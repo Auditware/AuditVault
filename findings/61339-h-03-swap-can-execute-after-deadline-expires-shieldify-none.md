@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - platform/shieldify
   - has/github
   - severity/high

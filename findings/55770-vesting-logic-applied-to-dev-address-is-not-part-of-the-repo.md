@@ -4,8 +4,8 @@ tags:
   - has/github
   - severity/high
   - platform/zokyo
-  - sector/streaming
-  - sector/vault
+  - web3-sector/streaming
+  - web3-sector/vault
 protocol: "[[Sheesha]]"
 auditors:
   - "[[Zokyo]]"

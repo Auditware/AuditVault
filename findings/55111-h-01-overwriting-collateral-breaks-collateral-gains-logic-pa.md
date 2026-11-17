@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/cdp
-  - sector/lending
-  - sector/token
+  - web3-sector/cdp
+  - web3-sector/lending
+  - web3-sector/token
   - has/github
   - has/poc
   - severity/high
+  - vuln/arithmetic/underflow
+  - novelty/known-pattern
 protocol: "[[Roots]]"
 auditors:
   - Pashov Audit Group
@@ -16,8 +18,7 @@ genome:
   - "[[underflow]]"
   - "[[known-pattern]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-01] Overwriting collateral breaks collateral gains logic
 
 - id: 55111

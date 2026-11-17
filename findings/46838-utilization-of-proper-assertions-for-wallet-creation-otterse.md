@@ -3,7 +3,7 @@ tags:
   - platform/ottersec
   - lang/move
   - severity/high
-  - sector/rwa
+  - web3-sector/rwa
 protocol: "[[Aptos Securitize]]"
 auditors:
   - "[[Bartłomiej Wierzbiński]]"

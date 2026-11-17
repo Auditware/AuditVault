@@ -3,10 +3,10 @@ tags:
   - blockchain/ethereum
   - blockchain/optimism
   - has/audit
-  - sector/dex
-  - sector/gaming
-  - sector/multisig
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/multisig
+  - web3-sector/token
 title: "Gala Games - Rekt"
 protocol: "[[Gala Games]]"
 date: 2024-05-20

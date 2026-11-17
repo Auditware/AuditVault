@@ -3,7 +3,7 @@ tags:
   - has/poc
   - platform/ottersec
   - severity/high
-  - sector/wallet
+  - web3-sector/wallet
 protocol: "[[Martian]]"
 auditors:
   - "[[OtterSec]]"

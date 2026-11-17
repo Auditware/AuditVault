@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/governance
-  - sector/nft
-  - sector/perpetuals
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/perpetuals
+  - web3-sector/staking
 title: "The Idols NFT - Rekt"
 protocol: "[[The Idols Nft]]"
 date: 2025-01-14

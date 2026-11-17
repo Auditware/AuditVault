@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/restaking
-  - sector/staking
+  - web3-sector/restaking
+  - web3-sector/staking
 protocol: "[[Karak]]"
 auditors:
   - "[[1]]"

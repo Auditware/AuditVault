@@ -1,12 +1,12 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/privacy
-  - sector/stable
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/vault
   - has/audit
   - trigger/governance-vote
 title: "ResupplyFi - Rekt"

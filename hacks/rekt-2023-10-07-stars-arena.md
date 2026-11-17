@@ -1,7 +1,7 @@
 ---
 tags:
   - blockchain/avalanche
-  - sector/dex
+  - web3-sector/dex
   - vuln/dependency/upgradeable-contract
   - novelty/variant
 title: "Stars Arena - REKT"

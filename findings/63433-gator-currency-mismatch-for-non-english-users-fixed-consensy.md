@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/consensys
   - severity/high
-  - sector/wallet
+  - web3-sector/wallet
 protocol: "[[MetaMask]]"
 auditors:
   - "[[Pedro Santos]]"

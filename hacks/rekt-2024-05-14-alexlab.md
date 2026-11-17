@@ -2,10 +2,10 @@
 tags:
   - blockchain/bitcoin
   - blockchain/bsc
-  - sector/bridge
-  - sector/gaming
-  - sector/multisig
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/gaming
+  - web3-sector/multisig
+  - web3-sector/oracle
   - has/audit
   - vuln/dependency/upgradeable-contract
   - precondition/insider

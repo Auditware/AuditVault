@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/stable
+  - web3-sector/farm
+  - web3-sector/stable
   - platform/pashov
   - has/github
   - severity/high

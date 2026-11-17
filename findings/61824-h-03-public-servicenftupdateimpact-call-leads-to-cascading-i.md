@@ -3,9 +3,9 @@ tags:
   - blockchain/evm
   - blockchain/evm/base
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/nft
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/nft
   - platform/code4rena
   - has/github
   - has/poc

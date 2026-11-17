@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/governance
-  - sector/token
+  - lang/vyper
+  - web3-sector/farm
+  - web3-sector/governance
+  - web3-sector/token
   - platform/0x52
   - has/github
   - severity/high
-  - lang/vyper
+  - precondition/specific-token-type
+  - fix/add-access-control
 protocol: "[[Hyperstable]]"
 auditors:
   - "[[@IAm0x52]]"
@@ -15,8 +17,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/0x52/2025-
 genome:
   - "[[access-roles]]"
   - "[[specific-token-type]]"
-  - "[[add-access-control]]"
----
+  - "[[add-access-control]]"---
 # [H-02] `EmissionScheduler#epochEmission` lacks access control and can be called by anyone to cause epoch to mint no emissions
 
 - id: 55693

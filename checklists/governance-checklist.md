@@ -1,19 +1,19 @@
 ---
 tags:
   - checklist
-  - sector/governance
+  - web3-sector/governance
 generated: true
 ---
 # Governance — Audit Checklist
 
-> Auto-generated from **339** findings in this sector (**81** with bug-class tags), ranked by frequency.
+> Auto-generated from **319** findings in this sector (**82** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
 What actually goes wrong in this sector, most common first. Tick each as you rule it out.
 
 - [ ] **Logic: Reward Calculation** — 14 findings `vuln/logic/reward-calculation`
-- [ ] **Dos: Frozen Funds** — 8 findings `vuln/dos/frozen-funds`
+- [ ] **Dos: Frozen Funds** — 9 findings `vuln/dos/frozen-funds`
 - [ ] **Arithmetic: Underflow** — 8 findings `vuln/arithmetic/underflow`
 - [ ] **Reentrancy: Single Function** — 7 findings `vuln/reentrancy/single-function`
 - [ ] **Dos: Unbounded Loop** — 6 findings `vuln/dos/unbounded-loop`
@@ -46,7 +46,7 @@ Where it hurts when these bugs land.
 
 - `impact/loss-of-funds/direct-drain` — 35
 - `impact/mev/frontrun` — 20
-- `impact/loss-of-funds/locked-funds` — 16
+- `impact/loss-of-funds/locked-funds` — 17
 - `impact/data-corruption/price-manipulation` — 8
 - `impact/mev/sandwich` — 7
 - `impact/loss-of-funds/reward-theft` — 5

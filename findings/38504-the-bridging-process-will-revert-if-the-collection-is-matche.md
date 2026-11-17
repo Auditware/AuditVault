@@ -8,9 +8,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/infra
-  - sector/nft
+  - web3-sector/bridge
+  - web3-sector/infra
+  - web3-sector/nft
 protocol: "[[ArkProject NFT Bridge]]"
 auditors:
   - "[[pwnforce]]"

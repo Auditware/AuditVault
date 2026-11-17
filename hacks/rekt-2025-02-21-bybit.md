@@ -2,12 +2,12 @@
 tags:
   - blockchain/bitcoin
   - blockchain/ethereum
-  - sector/bridge
-  - sector/gaming
-  - sector/lending
-  - sector/multisig
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "ByBit - Rekt"
 protocol: "[[Bybit]]"
 date: 2025-02-21

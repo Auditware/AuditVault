@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/stable
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/stable
+  - web3-sector/token
 ---
 Streaming Protocol is a DeFi protocol - description pending.

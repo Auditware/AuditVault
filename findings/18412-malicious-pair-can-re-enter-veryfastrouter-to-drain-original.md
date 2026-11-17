@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/launchpad
-  - sector/nft
-  - sector/nft-marketplace
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/launchpad
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
+  - web3-sector/token
   - platform/cyfrin
   - has/github
   - has/poc

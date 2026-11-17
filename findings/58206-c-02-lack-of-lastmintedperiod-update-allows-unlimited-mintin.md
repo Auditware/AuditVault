@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/farm
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/token
   - platform/pashov
   - has/github
   - has/poc

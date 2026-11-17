@@ -4,7 +4,7 @@ tags:
   - platform/consensys
   - has/github
   - severity/high
-  - sector/algo-stable
+  - web3-sector/algo-stable
 protocol: "[[Linea]]"
 auditors:
   - "[[Rai Yang]]"

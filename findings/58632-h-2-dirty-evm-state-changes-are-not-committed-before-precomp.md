@@ -1,14 +1,16 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/infra
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/bridge
+  - web3-sector/infra
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/arithmetic/underflow
+  - novelty/known-pattern
 protocol: "[[ZetaChain Cross Chain]]"
 auditors:
   - berndartmueller
@@ -18,8 +20,7 @@ genome:
   - "[[underflow]]"
   - "[[known-pattern]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # H-2: Dirty EVM state changes are not committed before precompile calls, resulting in double-spending or loss of ZETA tokens
 
 - id: 58632

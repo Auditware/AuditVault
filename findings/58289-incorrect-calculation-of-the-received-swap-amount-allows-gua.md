@@ -4,10 +4,10 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/oracle
-  - sector/dex
-  - sector/stable
-  - sector/token
+  - web3-sector/oracle
+  - web3-sector/dex
+  - web3-sector/stable
+  - web3-sector/token
   - platform/spearbit
 protocol: "[[Aera Contracts]]"
 auditors:

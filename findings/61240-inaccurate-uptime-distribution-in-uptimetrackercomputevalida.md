@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/oracle
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/staking
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[Suzaku Core]]"
 auditors:
   - 0kage
@@ -16,8 +18,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Inaccurate uptime distribution in `UptimeTracker::computeValidatorUptime` leads to reward discrepancies
 
 - id: 61240

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/nft
+  - web3-sector/bridge
+  - web3-sector/nft
   - platform/pashov-audit-group
   - has/github
   - severity/high

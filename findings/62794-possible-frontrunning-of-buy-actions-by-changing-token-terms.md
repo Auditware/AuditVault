@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/nft-marketplace
-  - sector/stable
-  - sector/token
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
+  - web3-sector/stable
+  - web3-sector/token
   - platform/quantstamp
   - severity/high
   - impact/loss-of-funds/direct-drain

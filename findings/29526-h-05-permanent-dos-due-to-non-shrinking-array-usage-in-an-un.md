@@ -8,7 +8,7 @@ tags:
   - vuln/dos/unbounded-loop
   - impact/dos/permanent
   - novelty/known-pattern
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[NextGen]]"
 auditors:
   - "[[Hound]]"

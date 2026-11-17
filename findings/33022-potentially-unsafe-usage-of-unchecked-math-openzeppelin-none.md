@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/rwa
+  - web3-sector/nft
+  - web3-sector/rwa
   - platform/openzeppelin
   - has/github
   - severity/high

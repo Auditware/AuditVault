@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
+  - web3-sector/options
   - has/github
   - severity/high
+  - vuln/dos/frozen-funds
+  - novelty/variant
 protocol: "[[Hyperhyper]]"
 auditors:
   - Pashov Audit Group
@@ -11,8 +13,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/Hyperhyper-securit
 genome:
   - "[[dos-resistance]]"
   - "[[frozen-funds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [C-01] Permanent lock due to missing unlock mechanism for options
 
 - id: 57735

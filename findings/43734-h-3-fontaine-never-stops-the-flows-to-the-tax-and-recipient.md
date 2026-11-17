@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/perpetuals
-  - sector/streaming
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/streaming
 protocol: "[[Superfluid]]"
 auditors:
   - "[[0x73696d616f]]"

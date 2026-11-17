@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/dex
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
   - platform/cyfrin
   - has/github
   - has/poc

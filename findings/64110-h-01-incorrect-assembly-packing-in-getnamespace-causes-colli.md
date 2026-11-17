@@ -4,7 +4,7 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/options
+  - web3-sector/options
 protocol: "[[Biconomy]]"
 auditors:
   - "[[Pashov Audit Group]]"

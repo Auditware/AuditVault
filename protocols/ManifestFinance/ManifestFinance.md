@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
-  - sector/vault
+  - web3-sector/staking
+  - web3-sector/vault
 ---
 ManifestFinance is a DeFi protocol - description pending.

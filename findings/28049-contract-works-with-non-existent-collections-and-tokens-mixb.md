@@ -4,8 +4,8 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
 protocol: "[[Fantium]]"
 auditors:
   - "[[MixBytes]]"

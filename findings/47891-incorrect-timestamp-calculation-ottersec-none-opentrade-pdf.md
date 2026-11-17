@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[OpenTrade]]"
 auditors:
   - "[[Nicholas R. Putra]]"

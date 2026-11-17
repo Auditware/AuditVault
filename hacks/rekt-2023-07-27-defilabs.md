@@ -2,7 +2,7 @@
 tags:
   - blockchain/bitcoin
   - blockchain/bsc
-  - sector/staking
+  - web3-sector/staking
 title: "DeFiLabs - REKT"
 protocol: "[[Defilabs]]"
 date: 2023-07-27

@@ -1,6 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/staking
 ---
 YuzuUSD is a DeFi protocol - description pending.

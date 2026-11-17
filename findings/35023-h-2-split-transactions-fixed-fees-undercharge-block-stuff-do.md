@@ -2,13 +2,13 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/dex
-  - sector/infra
-  - sector/lending
-  - sector/privacy
-  - sector/stable
-  - sector/staking
-  - sector/zk
+  - web3-sector/dex
+  - web3-sector/infra
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/zk
   - platform/sherlock
   - has/github
   - severity/high

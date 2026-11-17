@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/staking
-  - sector/wallet
+  - web3-sector/staking
+  - web3-sector/wallet
 protocol: "[[Metamask Delegation Framework]]"
 auditors:
   - George Kobakhidze

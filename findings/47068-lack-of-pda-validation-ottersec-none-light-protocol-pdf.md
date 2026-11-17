@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/options
+  - web3-sector/options
   - platform/ottersec
   - severity/high
   - impact/loss-of-funds/direct-drain

@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - has/github
   - has/poc
   - severity/high
+  - vuln/logic/fee-calculation
+  - impact/mev/frontrun
+  - novelty/variant
 protocol: "[[Burve]]"
 auditors:
   - Pashov Audit Group
@@ -16,8 +19,7 @@ genome:
   - "[[mev/frontrun]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-01] DoS on `mint()` and `burn()` due to overestimation of available liquidity
 
 - id: 57722

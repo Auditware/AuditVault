@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/stable
+  - web3-sector/nft
+  - web3-sector/stable
   - platform/cantina
   - severity/high
   - vuln/access-control/missing-modifier

@@ -2,7 +2,7 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/governance
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/staking
 ---
 Vetenet is a DeFi protocol - description pending.

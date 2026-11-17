@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/rust
-  - sector/nft
+  - web3-sector/nft
 ---
 Basilisk is a DeFi protocol - description pending.

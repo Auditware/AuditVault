@@ -6,11 +6,11 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/cdp
-  - sector/lending
-  - sector/token
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/cdp
+  - web3-sector/lending
+  - web3-sector/token
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
 protocol: "[[Yearn]]"
 auditors:
   - "[[0x15]]"

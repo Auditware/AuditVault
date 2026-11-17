@@ -4,7 +4,7 @@ tags:
   - platform/codehawks
   - has/poc
   - severity/high
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Tadle]]"
 auditors:
   - "[[p0wd3r]]"

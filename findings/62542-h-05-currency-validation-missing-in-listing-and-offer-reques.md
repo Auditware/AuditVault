@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/oracle
-  - sector/token
+  - web3-sector/nft
+  - web3-sector/oracle
+  - web3-sector/token
   - platform/pashov
   - has/github
   - severity/high

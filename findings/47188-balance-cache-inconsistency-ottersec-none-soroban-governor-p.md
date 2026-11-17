@@ -3,7 +3,7 @@ tags:
   - lang/rust
   - platform/ottersec
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[Soroban Governor]]"
 auditors:
   - "[[Robert Chen]]"

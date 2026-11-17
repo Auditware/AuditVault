@@ -4,7 +4,7 @@ tags:
   - platform/consensys
   - has/github
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[OmiseGo MoreVP]]"
 auditors:
   - "[[Daniel Luca]]"

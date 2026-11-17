@@ -3,8 +3,8 @@ tags:
   - blockchain/starknet
   - lang/cairo
   - lang/solidity
-  - sector/account
-  - sector/zk
+  - web3-sector/account
+  - web3-sector/zk
   - platform/code4rena
   - has/github
   - has/poc

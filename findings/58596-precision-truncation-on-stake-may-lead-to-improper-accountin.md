@@ -1,13 +1,16 @@
 ---
 tags:
   - lang/solidity
-  - sector/liquid-staking
-  - sector/staking
-  - sector/token
+  - web3-sector/liquid-staking
+  - web3-sector/staking
+  - web3-sector/token
   - platform/spearbit
   - has/github
   - has/poc
   - severity/high
+  - vuln/arithmetic/precision-loss
+  - impact/loss-of-funds/direct-drain
+  - novelty/variant
 protocol: "[[Kinetiq LST]]"
 auditors:
   - Rvierdiiev
@@ -18,8 +21,7 @@ genome:
   - "[[direct-drain]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Precision Truncation on Stake May Lead to Improper Accounting and Protocol Insolvency
 
 - id: 58596

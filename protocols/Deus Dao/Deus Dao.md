@@ -2,8 +2,8 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/stable
-  - sector/staking
+  - web3-sector/stable
+  - web3-sector/staking
 ---
 Loss: $3,000,000 | Date: 2021-03-15 | Audited by: Unaudited Deus rekt machina.
 

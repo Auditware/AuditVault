@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/governance
+  - web3-sector/dex
+  - web3-sector/governance
   - platform/shieldify
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/fee-theft
 protocol: "[[Daoslive]]"
 auditors:
   - Shieldify Security
 report: "https://github.com/shieldify-security/audits-portfolio-md/blob/main/DaosLive-Security-Review.md"
 genome:
   - "[[access-roles]]"
-  - "[[fee-theft]]"
----
+  - "[[fee-theft]]"---
 # [H-04] Fee Theft via Arbitrary Contract Impersonation in `collect()` Function in `DaosLocker`
 
 - id: 57871

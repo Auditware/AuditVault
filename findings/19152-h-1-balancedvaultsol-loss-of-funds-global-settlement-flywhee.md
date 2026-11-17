@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/perpetuals
+  - web3-sector/perpetuals
   - platform/sherlock
   - has/github
   - severity/high

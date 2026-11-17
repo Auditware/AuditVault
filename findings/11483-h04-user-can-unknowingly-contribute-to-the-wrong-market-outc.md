@@ -4,7 +4,7 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/prediction
+  - web3-sector/prediction
 protocol: "[[Augur]]"
 auditors:
   - "[[OpenZeppelin]]"

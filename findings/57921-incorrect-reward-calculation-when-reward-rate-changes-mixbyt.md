@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/staking
   - has/github
   - severity/high
+  - vuln/arithmetic/precision-loss
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
@@ -15,8 +18,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Incorrect Reward Calculation When Reward Rate Changes
 
 - id: 57921

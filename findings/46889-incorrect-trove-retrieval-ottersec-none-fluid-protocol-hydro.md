@@ -3,10 +3,10 @@ tags:
   - lang/rust
   - platform/ottersec
   - severity/high
-  - sector/cdp
-  - sector/lending
-  - sector/oracle
-  - sector/uncollat-lending
+  - web3-sector/cdp
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/uncollat-lending
 protocol: "[[Fluid Protocol (Hydrogen Labs)]]"
 auditors:
   - "[[James Wang]]"

@@ -2,12 +2,12 @@
 tags:
   - blockchain/arbitrum
   - blockchain/ethereum
-  - sector/bridge
-  - sector/gaming
-  - sector/governance
-  - sector/lending
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/stable
   - has/audit
   - vuln/arithmetic/precision-loss
   - impact/loss-of-funds/locked-funds

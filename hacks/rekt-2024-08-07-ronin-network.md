@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/bridge
-  - sector/gaming
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/gaming
+  - web3-sector/stable
 title: "Ronin Network - Rekt II"
 protocol: "[[Ronin Network]]"
 date: 2024-08-07

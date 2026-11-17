@@ -4,7 +4,7 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/perpetuals
+  - web3-sector/perpetuals
 protocol: "[[Ostium]]"
 auditors:
   - "[[Pashov Audit Group]]"

@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/uncollat-lending
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/uncollat-lending
   - platform/cyfrin
   - has/github
   - has/poc

@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/dex
-  - sector/privacy
+  - web3-sector/dex
+  - web3-sector/privacy
   - impact/loss-of-funds/direct-drain
 title: "Value DeFi - REKT 3"
 protocol: "[[Value Defi]]"

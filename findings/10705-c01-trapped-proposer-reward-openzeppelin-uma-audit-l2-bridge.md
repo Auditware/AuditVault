@@ -4,9 +4,9 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/bridge
-  - sector/governance
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/oracle
 protocol: "[[UMA]]"
 auditors:
   - "[[OpenZeppelin]]"

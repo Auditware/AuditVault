@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/oracle
-  - sector/token
+  - web3-sector/oracle
+  - web3-sector/token
   - impact/data-corruption/price-manipulation
   - trigger/price-manipulation
 title: "Levana Protocol - REKT"

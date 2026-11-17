@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/oracle
-  - sector/perpetuals
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/bridge
+  - web3-sector/oracle
+  - web3-sector/perpetuals
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/codehawks
   - has/github
   - has/poc

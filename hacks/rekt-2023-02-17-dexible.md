@@ -3,10 +3,10 @@ tags:
   - blockchain/arbitrum
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/privacy
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/token
 title: "Dexible - REKT"
 protocol: "[[Dexible]]"
 date: 2023-02-17

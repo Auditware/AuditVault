@@ -4,8 +4,8 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/staking
-  - sector/farm
+  - web3-sector/staking
+  - web3-sector/farm
   - platform/sherlock
 protocol: "[[Burve]]"
 auditors:

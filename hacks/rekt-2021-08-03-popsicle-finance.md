@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/lending
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
   - has/audit
   - trigger/flash-loan
   - precondition/flash-loan-available

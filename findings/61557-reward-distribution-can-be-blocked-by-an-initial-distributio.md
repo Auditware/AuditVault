@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
+  - fix/use-reentrancy-guard
+  - novelty/known-pattern
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -12,8 +14,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/202
 genome:
   - "[[reentrancy-guard]]"
   - "[[use-reentrancy-guard]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Reward distribution can be blocked by an initial distribution of long duration
 
 - id: 61557

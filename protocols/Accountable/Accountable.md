@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/stable
-  - sector/staking
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/vault
 ---
 Accountable is a DeFi protocol - description pending.

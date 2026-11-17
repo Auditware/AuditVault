@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/dex
-  - sector/options
+  - web3-sector/dex
+  - web3-sector/options
 protocol: "[[Burve]]"
 auditors:
   - Pashov Audit Group

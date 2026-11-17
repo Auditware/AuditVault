@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/liquid-staking
-  - sector/vault
+  - web3-sector/liquid-staking
+  - web3-sector/vault
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Burve]]"
 auditors:
   - newspacexyz
 report: "https://github.com/sherlock-audit/2025-04-burve-judging"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # H-2: Incorrect implementation of `ERC4626ViewAdjustor`
 
 - id: 56951

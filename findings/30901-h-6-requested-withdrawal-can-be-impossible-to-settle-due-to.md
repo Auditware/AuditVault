@@ -5,11 +5,11 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/liquid-staking
-  - sector/restaking
-  - sector/staking
-  - sector/token
-  - sector/vault
+  - web3-sector/liquid-staking
+  - web3-sector/restaking
+  - web3-sector/staking
+  - web3-sector/token
+  - web3-sector/vault
 protocol: "[[Rio Network]]"
 auditors:
   - "[[g]]"

@@ -6,8 +6,8 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/infra
-  - sector/lending
+  - web3-sector/infra
+  - web3-sector/lending
 protocol: "[[Blueberry]]"
 auditors:
   - "[[Pashov Audit Group]]"

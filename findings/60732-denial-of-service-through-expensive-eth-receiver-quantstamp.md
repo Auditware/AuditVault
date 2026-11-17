@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/farm
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
   - platform/quantstamp
   - severity/high
   - novelty/variant

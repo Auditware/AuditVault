@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/algo-stable
-  - sector/zk
+  - web3-sector/algo-stable
+  - web3-sector/zk
   - platform/consensys
   - severity/high
   - vuln/dos/frozen-funds

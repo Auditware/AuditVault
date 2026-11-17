@@ -8,7 +8,7 @@ tags:
   - novelty/variant
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/perpetuals
+  - web3-sector/perpetuals
 protocol: "[[BlueFin]]"
 auditors:
   - "[[Robert Chen]]"

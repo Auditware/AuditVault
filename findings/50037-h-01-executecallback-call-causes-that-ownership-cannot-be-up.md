@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[NFTMirror]]"
 auditors:
   - Pashov Audit Group

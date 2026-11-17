@@ -1,9 +1,11 @@
 ---
 tags:
+  - lang/solidity
+  - web3-sector/bridge
   - has/github
   - severity/high
-  - lang/solidity
-  - sector/bridge
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +14,7 @@ genome:
   - "[[reward-accounting]]"
   - "[[reward-calculation]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # [H-03] `ExternalBribe.earned` skips rewards before the last `tokenId` checkpoint
 
 - id: 58014

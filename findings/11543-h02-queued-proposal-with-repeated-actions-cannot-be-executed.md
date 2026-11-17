@@ -4,8 +4,8 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/governance
-  - sector/lending
+  - web3-sector/governance
+  - web3-sector/lending
 protocol: "[[Compound]]"
 auditors:
   - "[[OpenZeppelin]]"

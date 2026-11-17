@@ -1,9 +1,12 @@
 ---
 tags:
-  - sector/oracle
+  - lang/solidity
+  - web3-sector/oracle
   - has/github
   - severity/high
-  - lang/solidity
+  - impact/data-corruption/price-manipulation
+  - trigger/low-liquidity
+  - trigger/price-manipulation
 protocol: "[[Hanji]]"
 auditors:
   - MixBytes
@@ -12,8 +15,7 @@ genome:
   - "[[oracle-manipulation-resistance]]"
   - "[[data-corruption/price-manipulation]]"
   - "[[trigger/low-liquidity]]"
-  - "[[trigger/price-manipulation]]"
----
+  - "[[trigger/price-manipulation]]"---
 # Insecure Liquidity Valuation with Oracle Updates
 
 - id: 55148

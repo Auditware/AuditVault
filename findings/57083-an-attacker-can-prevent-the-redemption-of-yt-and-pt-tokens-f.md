@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/vault
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
-  - sector/vault
+  - novelty/variant
 protocol: "[[FIVA Yield Tokenization Protocol]]"
 auditors:
   - Tarun Bansal
 report: "https://github.com/trailofbits/publications/blob/master/reviews/2025-05-FIVA-yieldtokenizationprotocol-securityreview.pdf"
 genome:
   - "[[dos-resistance]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # An attacker can prevent the redemption of YT and PT tokens from the YTMinter contract
 
 - id: 57083

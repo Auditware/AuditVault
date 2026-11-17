@@ -2,7 +2,7 @@
 tags:
   - severity/high
   - platform/halborn
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[HbarSuite]]"
 auditors:
   - "[[Halborn]]"

@@ -1,10 +1,10 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/stable
   - has/audit
   - impact/loss-of-funds/locked-funds
 title: "Hedera - REKT"

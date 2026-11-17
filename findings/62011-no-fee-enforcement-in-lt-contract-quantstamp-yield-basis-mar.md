@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Yield Basis]]"
 auditors:
   - "[[Gereon Mendler]]"

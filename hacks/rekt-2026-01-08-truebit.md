@@ -1,13 +1,13 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/launchpad
-  - sector/multisig
-  - sector/privacy
-  - sector/token
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/launchpad
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/token
+  - web3-sector/vault
 title: "Truebit - Rekt"
 protocol: "[[Truebit]]"
 date: 2026-01-08

@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - has/github
   - has/poc
   - severity/high
+  - fix/use-reentrancy-guard
 protocol: "[[Kinetiq]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/Kinetiq-security-review_2025-02-26.md"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [H-07] Exchange rate implementation not used in token operations
 
 - id: 58615

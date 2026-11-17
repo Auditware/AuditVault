@@ -2,8 +2,8 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/options
-  - sector/stable
+  - web3-sector/options
+  - web3-sector/stable
   - platform/code4rena
   - has/github
   - severity/high

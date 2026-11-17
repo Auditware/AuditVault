@@ -4,7 +4,7 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[Tapioca DAO]]"
 auditors:
   - "[[ronnyx2017]]"

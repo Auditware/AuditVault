@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - has/github
   - severity/high
-  - sector/dex
+  - vuln/logic/wrong-condition
+  - novelty/variant
 protocol: "[[XPress]]"
 auditors:
   - MixBytes
@@ -12,8 +14,7 @@ genome:
   - "[[cross-contract-state-consistency]]"
   - "[[wrong-condition]]"
   - "[[variant]]"
-  - "[[add-check]]"
----
+  - "[[add-check]]"---
 # Incorrect Condition for `post_only` Orders
 
 - id: 56837

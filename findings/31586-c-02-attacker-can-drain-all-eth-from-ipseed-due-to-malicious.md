@@ -4,7 +4,7 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Catalyst]]"
 auditors:
   - "[[Pashov Audit Group]]"

@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/stable
+  - web3-sector/stable
 protocol: "[[RFX]]"
 genome:
   - "[[fee-calculation]]"

@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
-  - sector/staking
+  - web3-sector/oracle
+  - web3-sector/staking
   - has/github
   - severity/high
+  - impact/loss-of-funds/locked-funds
+  - fix/use-reentrancy-guard
+  - novelty/variant
 protocol: "[[Kinetiq]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +16,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[locked-funds]]"
   - "[[use-reentrancy-guard]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-02] ValidatorManager: missing fund withdrawal from validator in `deactivatevalidator` function
 
 - id: 58610

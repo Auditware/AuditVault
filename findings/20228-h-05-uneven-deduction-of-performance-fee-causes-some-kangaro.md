@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Polynomial Protocol]]"
 auditors:
   - "[[peakbolt]]"

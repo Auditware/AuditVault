@@ -2,8 +2,8 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/lending
-  - sector/oracle
+  - web3-sector/lending
+  - web3-sector/oracle
   - platform/pashov
   - severity/high
   - vuln/access-control/missing-modifier

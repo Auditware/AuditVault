@@ -3,9 +3,9 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/lending
-  - sector/governance
-  - sector/options
+  - web3-sector/lending
+  - web3-sector/governance
+  - web3-sector/options
   - platform/shieldify
 protocol: "[[Stackingsalmon]]"
 auditors:

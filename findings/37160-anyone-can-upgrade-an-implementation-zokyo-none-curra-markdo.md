@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/account
+  - web3-sector/account
 protocol: "[[Curra]]"
 auditors:
   - "[[Zokyo]]"

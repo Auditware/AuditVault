@@ -1,23 +1,23 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/farm
-  - sector/nft
-  - sector/stable
-  - sector/staking-pool
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/nft
+  - web3-sector/stable
+  - web3-sector/staking-pool
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/reward-theft
 protocol: "[[Audit 507]]"
 auditors:
   - bareli
 report: "https://code4rena.com/reports/2025-05-blackhole"
 genome:
   - "[[reward-accounting]]"
-  - "[[reward-theft]]"
----
+  - "[[reward-theft]]"---
 # [H-02] Reward token in `GaugeFactoryCL` can be drained by anyone
 
 - id: 58334

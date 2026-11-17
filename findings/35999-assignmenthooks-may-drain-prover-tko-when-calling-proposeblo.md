@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/token
-  - sector/zk
+  - web3-sector/governance
+  - web3-sector/token
+  - web3-sector/zk
   - platform/sigmaprime
   - has/github
   - severity/high

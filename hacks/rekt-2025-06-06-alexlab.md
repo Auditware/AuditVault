@@ -1,8 +1,8 @@
 ---
 tags:
   - blockchain/bitcoin
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
   - precondition/insider
 title: "AlexLab - Rekt II"

@@ -3,10 +3,10 @@ tags:
   - blockchain/ethereum
   - blockchain/fantom
   - blockchain/optimism
-  - sector/dex
-  - sector/multisig
-  - sector/oracle
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/multisig
+  - web3-sector/oracle
+  - web3-sector/token
   - vuln/arithmetic/precision-loss
   - impact/data-corruption/price-manipulation
   - impact/mev/frontrun

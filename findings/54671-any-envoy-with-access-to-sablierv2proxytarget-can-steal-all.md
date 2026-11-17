@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/streaming
+  - web3-sector/streaming
 protocol: "[[Sablier]]"
 auditors:
   - "[[Zach Obront]]"

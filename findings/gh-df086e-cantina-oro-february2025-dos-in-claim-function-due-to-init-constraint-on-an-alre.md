@@ -13,7 +13,7 @@ tags:
   - misassumption/proxy-is-initialized
   - fix/add-check
   - fix/initialize-proxy
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Cantina Oro February2025]]"
 auditors:
   - "[[FrankCastle]]"

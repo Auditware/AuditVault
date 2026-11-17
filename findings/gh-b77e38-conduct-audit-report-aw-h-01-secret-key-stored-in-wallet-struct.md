@@ -4,7 +4,7 @@ tags:
 protocol: "[[Conduct]]"
 auditors:
   - "[[Auditware]]"
-  - sector/wallet
+  - web3-sector/wallet
 genome:
   - "[[access-roles]]"
   - "[[access-control/secret-exposure]]"

@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/restaking
-  - sector/staking
+  - web3-sector/nft
+  - web3-sector/restaking
+  - web3-sector/staking
   - has/github
   - severity/high
+  - impact/privilege-escalation/ownership-transfer
 protocol: "[[FCHAIN Validator And Staking]]"
 auditors:
   - OpenZeppelin
 report: "https://blog.openzeppelin.com/fchain-validator-and-staking-contracts-audit"
 genome:
   - "[[access-roles]]"
-  - "[[ownership-transfer]]"
----
+  - "[[ownership-transfer]]"---
 # Locked-In Licenses Can Be Transferred
 
 - id: 55344

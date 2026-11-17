@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/staking
-  - sector/token
+  - web3-sector/staking
+  - web3-sector/token
 protocol: "[[DIA]]"
 auditors:
   - MixBytes

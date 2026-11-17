@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/bridge
-  - sector/dex
-  - sector/nft
-  - sector/privacy
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/nft
+  - web3-sector/privacy
+  - web3-sector/token
 title: "Lucky Star Currency, FSL - REKT"
 protocol: "[[Lucky Star Currency Fsl]]"
 date: 2023-10-09

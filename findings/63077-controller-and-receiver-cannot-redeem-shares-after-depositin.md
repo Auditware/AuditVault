@@ -4,7 +4,7 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[Superform]]"
 auditors:
   - "[[MiloTruck]]"

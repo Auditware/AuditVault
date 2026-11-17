@@ -4,7 +4,7 @@ tags:
   - platform/halborn
   - has/github
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[CoreDAO]]"
 auditors:
   - "[[Halborn]]"

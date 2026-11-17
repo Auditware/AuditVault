@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/farm
-  - sector/lending
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/lending
+  - web3-sector/token
   - platform/cyfrin
   - has/github
   - severity/high
+  - impact/loss-of-funds/reward-theft
+  - precondition/specific-token-type
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -15,8 +17,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/202
 genome:
   - "[[reentrancy-guard]]"
   - "[[reward-theft]]"
-  - "[[specific-token-type]]"
----
+  - "[[specific-token-type]]"---
 # Rewards can be stolen when `IncentivizedERC20` tokens are recursively provided as liquidity
 
 - id: 61562

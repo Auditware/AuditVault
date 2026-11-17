@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/bridge
+  - impact/mev/sandwich
+  - trigger/sandwich-attack
+  - fix/add-access-control
 protocol: "[[Surge]]"
 auditors:
   - Shieldify Security
@@ -13,8 +16,7 @@ genome:
   - "[[frontrun-exposure]]"
   - "[[sandwich]]"
   - "[[trigger/sandwich-attack]]"
-  - "[[add-access-control]]"
----
+  - "[[add-access-control]]"---
 # [H-01] Lack of Slippage and Access Control in `PositionManager.sol` Can Result in Stolen Funds
 
 - id: 55140

@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/privacy
-  - sector/stable
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/staking
   - precondition/insider
 title: "BrincFi - Rekt Cold Case"
 protocol: "[[Brincfi]]"

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/rust
-  - sector/restaking
-  - sector/staking
+  - web3-sector/restaking
+  - web3-sector/staking
   - platform/ottersec
   - severity/high
   - vuln/logic/reward-calculation

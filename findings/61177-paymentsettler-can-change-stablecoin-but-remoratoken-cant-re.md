@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/arithmetic/decimal-mismatch
+  - novelty/variant
 protocol: "[[Remora Pledge]]"
 auditors:
   - Dacian
@@ -14,8 +16,7 @@ genome:
   - "[[decimal-mismatch]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # `PaymentSettler` can change `stablecoin` but `RemoraToken` can't resulting in corrupted state with DoS for core functions
 
 - id: 61177

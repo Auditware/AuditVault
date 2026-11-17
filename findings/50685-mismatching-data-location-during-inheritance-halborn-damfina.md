@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/oracle
 protocol: "[[LMCV]]"
 auditors:
   - "[[Halborn]]"

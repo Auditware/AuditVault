@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/infra
-  - sector/lending
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/infra
+  - web3-sector/lending
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/cyfrin
   - has/github
   - severity/high

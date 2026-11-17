@@ -2,7 +2,7 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/token
+  - web3-sector/token
   - platform/0x52
   - has/github
   - severity/high

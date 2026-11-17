@@ -3,8 +3,8 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/account
-  - sector/token
+  - web3-sector/account
+  - web3-sector/token
 protocol: "[[Biconomy]]"
 auditors:
   - "[[Chinmay Farkya]]"

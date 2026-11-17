@@ -2,9 +2,9 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/bridge
-  - sector/dex
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
   - platform/sherlock
   - has/github
   - severity/high

@@ -2,9 +2,9 @@
 tags:
   - lang/rust
   - sdk/anchor
-  - sector/bridge
-  - sector/rwa
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/rwa
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - has/poc

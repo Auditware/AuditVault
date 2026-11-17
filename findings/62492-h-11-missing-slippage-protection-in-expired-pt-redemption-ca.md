@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/oracle
-  - sector/staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/oracle
+  - web3-sector/staking
+  - web3-sector/token
 protocol: "[[Notional]]"
 auditors:
   - "[[0xPhantom2]]"

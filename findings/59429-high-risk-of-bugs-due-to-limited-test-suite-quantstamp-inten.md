@@ -3,9 +3,9 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/farm
-  - sector/staking
-  - sector/streaming
+  - web3-sector/farm
+  - web3-sector/staking
+  - web3-sector/streaming
 protocol: "[[IntentX]]"
 auditors:
   - "[[Mustafa Hasan]]"

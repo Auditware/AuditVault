@@ -3,8 +3,8 @@ tags:
   - blockchain/arbitrum
   - blockchain/ethereum
   - has/audit
-  - sector/gaming
-  - sector/staking
+  - web3-sector/gaming
+  - web3-sector/staking
 title: "Penpie - Rekt"
 protocol: "[[Penpie]]"
 date: 2024-09-03

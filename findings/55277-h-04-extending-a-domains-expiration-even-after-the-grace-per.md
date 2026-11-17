@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/move
-  - sector/multisig
+  - web3-sector/multisig
   - platform/code4rena
   - has/github
   - has/poc

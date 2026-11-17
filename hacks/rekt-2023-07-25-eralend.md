@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
   - vuln/reentrancy/read-only
   - vuln/reentrancy/single-function
   - novelty/known-pattern

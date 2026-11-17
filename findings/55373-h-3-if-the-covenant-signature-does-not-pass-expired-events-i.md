@@ -3,9 +3,9 @@ tags:
   - severity/high
   - has/github
   - has/poc
-  - sector/restaking
-  - sector/staking
-  - sector/governance
+  - web3-sector/restaking
+  - web3-sector/staking
+  - web3-sector/governance
   - platform/sherlock
 protocol: "[[Babylon Chain Launch]]"
 auditors:

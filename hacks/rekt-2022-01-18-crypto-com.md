@@ -2,7 +2,7 @@
 tags:
   - blockchain/bitcoin
   - has/audit
-  - sector/privacy
+  - web3-sector/privacy
 title: "Crypto.com - REKT"
 protocol: "[[Crypto.com]]"
 date: 2022-01-18

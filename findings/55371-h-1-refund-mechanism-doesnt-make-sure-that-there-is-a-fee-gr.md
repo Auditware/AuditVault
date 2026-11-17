@@ -1,18 +1,18 @@
 ---
 tags:
-  - sector/infra
+  - web3-sector/infra
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Babylon Chain Launch]]"
 auditors:
   - 0xeix
 report: "https://github.com/sherlock-audit/2024-12-babylon-judging"
 genome:
   - "[[fee-accounting]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # H-1: Refund mechanism doesn't make sure that there is a fee granter
 
 - id: 55371

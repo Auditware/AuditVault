@@ -3,7 +3,7 @@ tags:
   - lang/rust
   - platform/ottersec
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Fluid Protocol (Hydrogen Labs)]]"
 auditors:
   - "[[James Wang]]"

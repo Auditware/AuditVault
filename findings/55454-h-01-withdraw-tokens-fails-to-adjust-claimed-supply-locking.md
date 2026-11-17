@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/rust
+  - web3-sector/dex
   - has/github
   - severity/high
-  - sector/dex
+  - vuln/dos/frozen-funds
+  - novelty/variant
 protocol: "[[DesciLaunchpad]]"
 auditors:
   - Pashov Audit Group
@@ -11,8 +13,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/DesciLaunchpad-sec
 genome:
   - "[[cross-contract-state-consistency]]"
   - "[[frozen-funds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-01] `withdraw_tokens` fails to adjust `claimed_supply` locking tokens permanently
 
 - id: 55454

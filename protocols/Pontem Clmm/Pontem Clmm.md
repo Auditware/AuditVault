@@ -2,6 +2,6 @@
 tags:
   - blockchain/aptos
   - lang/move
-  - sector/dex
+  - web3-sector/dex
 ---
 Pontem // Clmm is a DeFi protocol - description pending.

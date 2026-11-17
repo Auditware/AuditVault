@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/infra
-  - sector/zk
+  - web3-sector/infra
+  - web3-sector/zk
 protocol: "[[Brevis]]"
 auditors:
   - "[[1AutumnLeaf777]]"

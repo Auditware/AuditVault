@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/move
-  - sector/options
-  - sector/stable
+  - web3-sector/options
+  - web3-sector/stable
 ---
 Juiced is a DeFi protocol - description pending.

@@ -4,8 +4,8 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/dex
-  - sector/insurance
+  - web3-sector/dex
+  - web3-sector/insurance
 protocol: "[[NUTS Finance]]"
 auditors:
   - "[[MixBytes]]"

@@ -1,23 +1,23 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/governance
-  - sector/multisig
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/multisig
+  - web3-sector/stable
+  - web3-sector/token
   - platform/spearbit
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Optimism Interop]]"
 auditors:
   - Zach Obront
 report: "https://github.com/spearbit/portfolio/blob/master/pdfs/OptimismInterop-Spearbit-Security-Review-February-2025.pdf"
 genome:
   - "[[frontrun-exposure]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # Malicious tokens can be deployed at deterministic addresses on other chains to steal funds
 
 - id: 50077

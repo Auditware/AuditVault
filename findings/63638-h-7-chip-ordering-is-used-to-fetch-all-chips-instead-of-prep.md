@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/zk
+  - web3-sector/zk
 auditors:
   - "[[1AutumnLeaf777]]"
 report: "https://github.com/sherlock-audit/2025-08-pico-judging"

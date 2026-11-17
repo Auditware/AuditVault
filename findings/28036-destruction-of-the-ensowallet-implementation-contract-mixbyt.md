@@ -7,7 +7,7 @@ tags:
   - vuln/dos/frozen-funds
   - impact/loss-of-funds/locked-funds
   - novelty/variant
-  - sector/account
+  - web3-sector/account
 protocol: "[[Enso Finance]]"
 auditors:
   - "[[MixBytes]]"

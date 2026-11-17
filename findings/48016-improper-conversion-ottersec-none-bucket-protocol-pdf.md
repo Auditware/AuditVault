@@ -3,8 +3,8 @@ tags:
   - lang/move
   - platform/ottersec
   - severity/high
-  - sector/lending
-  - sector/oracle
+  - web3-sector/lending
+  - web3-sector/oracle
 protocol: "[[Bucket Protocol]]"
 auditors:
   - "[[Akash Gurugunti]]"

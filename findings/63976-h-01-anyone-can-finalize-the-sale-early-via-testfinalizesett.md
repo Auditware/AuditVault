@@ -5,7 +5,7 @@ tags:
   - has/github
   - severity/high
   - impact/dos/permanent
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Harmonix Finance]]"
 auditors:
   - "[[Shieldify Security]]"

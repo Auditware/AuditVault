@@ -4,10 +4,10 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/dex
-  - sector/lending
-  - sector/perpetuals
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/vault
 protocol: "[[Increment Finance]]"
 auditors:
   - "[[Vara Prasad Bandaru]]"

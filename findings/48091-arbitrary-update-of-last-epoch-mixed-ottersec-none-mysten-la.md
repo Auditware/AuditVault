@@ -3,7 +3,7 @@ tags:
   - lang/move
   - platform/ottersec
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Sui]]"
 auditors:
   - "[[Cauê Obici]]"

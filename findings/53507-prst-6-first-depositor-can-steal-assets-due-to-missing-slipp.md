@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/staking
+  - web3-sector/staking
   - platform/hexens
   - has/github
   - severity/high

@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/gaming
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
   - impact/data-corruption/price-manipulation
   - impact/loss-of-funds/direct-drain
   - trigger/flash-loan

@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/perpetuals
+  - web3-sector/perpetuals
 protocol: "[[Gigaverse]]"
 auditors:
   - Pashov Audit Group

@@ -1,11 +1,12 @@
 ---
 tags:
+  - lang/anchor
   - lang/rust
   - lang/solidity
   - sdk/anchor
-  - sector/bridge
-  - sector/rwa
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/rwa
+  - web3-sector/stable
+  - web3-sector/token
 ---
 Securitize is a DeFi protocol - description pending.

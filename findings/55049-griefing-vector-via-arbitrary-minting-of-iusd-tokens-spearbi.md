@@ -1,12 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/staking
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/staking
+  - web3-sector/token
   - platform/spearbit
   - has/github
   - severity/high
+  - vuln/dos/griefing
+  - impact/mev/frontrun
+  - novelty/variant
 protocol: "[[InfiniFi Contracts]]"
 auditors:
   - R0bert
@@ -15,8 +18,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[griefing]]"
   - "[[mev/frontrun]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # Griefing vector via arbitrary minting of iUSD tokens
 
 - id: 55049

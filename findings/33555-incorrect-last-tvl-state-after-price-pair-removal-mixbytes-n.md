@@ -5,8 +5,8 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/cdp
-  - sector/oracle
+  - web3-sector/cdp
+  - web3-sector/oracle
 protocol: "[[DeFi Money]]"
 auditors:
   - "[[MixBytes]]"

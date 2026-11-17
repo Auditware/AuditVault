@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - has/poc
-  - sector/staking
-  - sector/governance
+  - web3-sector/staking
+  - web3-sector/governance
   - platform/sherlock
   - lang/solidity
   - lang/rust

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/nft
+  - web3-sector/lending
+  - web3-sector/nft
   - platform/code4rena
   - has/github
   - severity/high

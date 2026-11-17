@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
+  - web3-sector/options
   - has/github
   - severity/high
+  - impact/loss-of-funds/locked-funds
+  - blast-radius/cross-protocol
 protocol: "[[Across Protocol SVM Solidity]]"
 auditors:
   - OpenZeppelin
@@ -11,8 +13,7 @@ report: "https://blog.openzeppelin.com/across-protocol-svm-solidity-audit"
 genome:
   - "[[dos-resistance]]"
   - "[[locked-funds]]"
-  - "[[cross-protocol]]"
----
+  - "[[cross-protocol]]"---
 # Anyone Can Lock Relayer Refunds and Contract Can Be Drained
 
 - id: 56784

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/governance
+  - web3-sector/dex
+  - web3-sector/governance
 ---
 Barter DAO is a DeFi protocol - description pending.

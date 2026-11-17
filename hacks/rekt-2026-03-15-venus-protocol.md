@@ -1,16 +1,16 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/perpetuals
-  - sector/privacy
-  - sector/stable
-  - sector/token
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/perpetuals
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
+  - web3-sector/vault
   - impact/data-corruption/price-manipulation
   - trigger/low-liquidity
   - trigger/price-manipulation

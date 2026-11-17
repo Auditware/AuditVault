@@ -4,8 +4,8 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/rwa
-  - sector/token
+  - web3-sector/rwa
+  - web3-sector/token
 protocol: "[[Centrifuge]]"
 auditors:
   - "[[Devtooligan]]"

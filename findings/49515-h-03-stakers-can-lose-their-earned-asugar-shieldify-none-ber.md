@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
-  - sector/staking-pool
-  - sector/token
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/token
   - platform/shieldify
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[Beraji Ko]]"
 auditors:
   - Shieldify Security
@@ -16,8 +18,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-03] Stakers Can Lose Their Earned `aSugar`
 
 - id: 49515

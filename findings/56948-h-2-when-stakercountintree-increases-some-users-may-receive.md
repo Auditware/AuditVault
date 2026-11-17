@@ -4,7 +4,7 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/sherlock
 protocol: "[[LayerEdge   Staking]]"
 auditors:

@@ -4,7 +4,7 @@ tags:
   - platform/cantina
   - has/poc
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Layer N]]"
 auditors:
   - "[[zigtur]]"

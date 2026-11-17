@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
-  - sector/vault
+  - web3-sector/staking
+  - web3-sector/vault
   - platform/kann
   - has/github
   - severity/high

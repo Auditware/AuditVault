@@ -4,9 +4,9 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/nft
-  - sector/stable
-  - sector/zk
+  - web3-sector/nft
+  - web3-sector/stable
+  - web3-sector/zk
 protocol: "[[Hinkal Protocol]]"
 auditors:
   - "[[Shih-Hung Wang]]"

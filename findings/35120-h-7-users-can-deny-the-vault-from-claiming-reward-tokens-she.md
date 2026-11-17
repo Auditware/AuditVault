@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/options
-  - sector/staking-pool
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/governance
+  - web3-sector/options
+  - web3-sector/staking-pool
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
   - platform/sherlock
   - has/github
   - severity/high

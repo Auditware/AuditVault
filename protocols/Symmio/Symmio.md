@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
-  - sector/staking
+  - web3-sector/stable
+  - web3-sector/staking
 ---
 Symmio is a DeFi protocol - description pending.

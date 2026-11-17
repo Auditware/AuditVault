@@ -1,9 +1,14 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/oracle
   - has/github
   - severity/high
-  - sector/oracle
+  - vuln/arithmetic/decimal-mismatch
+  - vuln/arithmetic/underflow
+  - vuln/logic/fee-calculation
+  - fix/use-reentrancy-guard
+  - novelty/known-pattern
 protocol: "[[Hyperhyper]]"
 auditors:
   - Pashov Audit Group
@@ -15,8 +20,7 @@ genome:
   - "[[fee-calculation]]"
   - "[[use-reentrancy-guard]]"
   - "[[known-pattern]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # [H-06] `payOff()` underflow in `OperationalTreasury` locks assets permanently
 
 - id: 57743

@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/governance
+  - web3-sector/dex
+  - web3-sector/governance
 protocol: "[[Burve]]"
 auditors:
   - "[[Pashov Audit Group]]"

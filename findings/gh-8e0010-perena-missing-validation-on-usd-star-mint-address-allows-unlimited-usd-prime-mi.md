@@ -8,7 +8,7 @@ tags:
   - impact/loss-of-funds/direct-drain
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Perena]]"
 auditors:
   - "[[FrankCastle]]"

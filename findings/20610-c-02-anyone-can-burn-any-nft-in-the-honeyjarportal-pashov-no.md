@@ -4,7 +4,7 @@ tags:
   - platform/pashov-audit-group
   - has/github
   - severity/high
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Bearcave]]"
 auditors:
   - "[[Pashov]]"

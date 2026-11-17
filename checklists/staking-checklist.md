@@ -1,28 +1,28 @@
 ---
 tags:
   - checklist
-  - sector/staking
+  - web3-sector/staking
 generated: true
 ---
 # Staking — Audit Checklist
 
-> Auto-generated from **573** findings in this sector (**127** with bug-class tags), ranked by frequency.
+> Auto-generated from **515** findings in this sector (**131** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
 What actually goes wrong in this sector, most common first. Tick each as you rule it out.
 
-- [ ] **Logic: Reward Calculation** — 35 findings `vuln/logic/reward-calculation`
+- [ ] **Logic: Reward Calculation** — 36 findings `vuln/logic/reward-calculation`
 - [ ] **Reentrancy: Single Function** — 21 findings `vuln/reentrancy/single-function`
-- [ ] **Arithmetic: Underflow** — 18 findings `vuln/arithmetic/underflow`
-- [ ] **Dos: Frozen Funds** — 11 findings `vuln/dos/frozen-funds`
+- [ ] **Arithmetic: Underflow** — 19 findings `vuln/arithmetic/underflow`
+- [ ] **Dos: Frozen Funds** — 12 findings `vuln/dos/frozen-funds`
 - [ ] **Dos: Griefing** — 10 findings `vuln/dos/griefing`
 - [ ] **Dependency: Upgradeable Contract** — 7 findings `vuln/dependency/upgradeable-contract`
 - [ ] **Access Control: Missing Modifier** — 6 findings `vuln/access-control/missing-modifier`
+- [ ] **Bridge: Replay** — 6 findings `vuln/bridge/replay`
 - [ ] **Pda: Missing Seeds Check** — 6 findings `vuln/pda/missing-seeds-check`
 - [ ] **Dos: Unbounded Loop** — 5 findings `vuln/dos/unbounded-loop`
 - [ ] **Arithmetic: Decimal Mismatch** — 5 findings `vuln/arithmetic/decimal-mismatch`
-- [ ] **Bridge: Replay** — 5 findings `vuln/bridge/replay`
 - [ ] **Access Control: Missing Signer** — 4 findings `vuln/access-control/missing-signer`
 - [ ] **Logic: Fee Calculation** — 4 findings `vuln/logic/fee-calculation`
 - [ ] **Oracle: Stale Price** — 3 findings `vuln/oracle/stale-price`
@@ -45,8 +45,8 @@ The conditions attackers use to set these bugs off — check each path is constr
 ## 💥 Typical impact
 Where it hurts when these bugs land.
 
-- `impact/loss-of-funds/direct-drain` — 42
-- `impact/loss-of-funds/locked-funds` — 29
+- `impact/loss-of-funds/direct-drain` — 44
+- `impact/loss-of-funds/locked-funds` — 30
 - `impact/mev/frontrun` — 26
 - `impact/dos/permanent` — 8
 - `impact/mev/sandwich` — 7
@@ -61,7 +61,7 @@ Where it hurts when these bugs land.
 The fixes auditors most often recommended in this sector.
 
 - `fix/fix-arithmetic` — 60
-- `fix/use-reentrancy-guard` — 37
+- `fix/use-reentrancy-guard` — 39
 - `fix/add-access-control` — 14
 - `fix/add-check` — 12
 - `fix/upgrade-dependency` — 7

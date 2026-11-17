@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - has/poc

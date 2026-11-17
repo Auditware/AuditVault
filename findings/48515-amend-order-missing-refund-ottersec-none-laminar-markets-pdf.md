@@ -4,7 +4,7 @@ tags:
   - platform/ottersec
   - has/poc
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Laminar Markets]]"
 auditors:
   - "[[Robert Chen]]"

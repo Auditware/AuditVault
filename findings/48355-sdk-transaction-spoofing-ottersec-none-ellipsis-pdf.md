@@ -3,7 +3,7 @@ tags:
   - platform/ottersec
   - lang/rust
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Ellipsis]]"
 auditors:
   - "[[Robert Chen]]"

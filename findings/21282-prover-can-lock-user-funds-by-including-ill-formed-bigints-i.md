@@ -2,9 +2,9 @@
 tags:
   - lang/circom
   - lang/solidity
-  - sector/bridge
-  - sector/staking
-  - sector/zk
+  - web3-sector/bridge
+  - web3-sector/staking
+  - web3-sector/zk
   - platform/trailofbits
   - has/github
   - has/poc

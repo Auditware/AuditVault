@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Mute.Io]]"
 auditors:
   - "[[0xA5DF]]"

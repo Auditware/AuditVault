@@ -2,11 +2,11 @@
 tags:
   - blockchain/bitcoin
   - blockchain/bsc
-  - sector/bridge
-  - sector/lending
-  - sector/oracle
-  - sector/privacy
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/privacy
+  - web3-sector/token
 title: "Meter - REKT"
 protocol: "[[Meter]]"
 date: 2022-02-06

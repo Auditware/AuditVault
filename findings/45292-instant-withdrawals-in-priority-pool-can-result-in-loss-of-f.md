@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/liquid-staking
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/liquid-staking
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/cyfrin
   - has/github
   - has/poc

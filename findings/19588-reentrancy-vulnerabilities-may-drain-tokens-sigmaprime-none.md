@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/streaming
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/streaming
+  - web3-sector/token
   - platform/sigmaprime
   - has/github
   - severity/high

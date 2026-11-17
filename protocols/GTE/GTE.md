@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/farm
-  - sector/launchpad
-  - sector/lending
-  - sector/perpetuals
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/launchpad
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/staking
 ---
 GTE is a DeFi protocol - description pending.

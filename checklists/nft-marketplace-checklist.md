@@ -1,7 +1,7 @@
 ---
 tags:
   - checklist
-  - sector/nft-marketplace
+  - web3-sector/nft-marketplace
 generated: true
 ---
 # Nft Marketplace — Audit Checklist

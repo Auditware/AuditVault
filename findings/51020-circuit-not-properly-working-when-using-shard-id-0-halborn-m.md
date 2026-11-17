@@ -7,8 +7,8 @@ tags:
   - platform/halborn
   - has/github
   - severity/high
-  - sector/privacy
-  - sector/zk
+  - web3-sector/privacy
+  - web3-sector/zk
 protocol: "[[zkSync]]"
 auditors:
   - "[[Halborn]]"

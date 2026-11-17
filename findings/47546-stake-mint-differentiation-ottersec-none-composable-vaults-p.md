@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/rust
-  - sector/options
-  - sector/restaking
-  - sector/staking
+  - web3-sector/options
+  - web3-sector/restaking
+  - web3-sector/staking
   - platform/ottersec
   - severity/high
   - vuln/arithmetic/decimal-mismatch

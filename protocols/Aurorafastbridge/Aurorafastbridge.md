@@ -3,6 +3,7 @@ tags:
   - blockchain/evm
   - blockchain/near
   - lang/rust
-  - sector/bridge
+  - lang/solidity
+  - web3-sector/bridge
 ---
 Aurorafastbridge is a DeFi protocol - description pending.

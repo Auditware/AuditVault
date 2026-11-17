@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[LEND]]"
 auditors:
   - patitonar
 report: "https://github.com/sherlock-audit/2025-05-lend-audit-contest-judging"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # H-16: `CoreRouter.sol`’s `repayBorrowInternal` incorrectly updates `same chain` borrow balances on `cross chain` repayments
 
 - id: 58385

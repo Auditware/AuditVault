@@ -1,9 +1,13 @@
 ---
 tags:
-  - sector/token
+  - lang/solidity
+  - web3-sector/token
   - has/github
   - severity/high
-  - lang/solidity
+  - vuln/access-control/missing-modifier
+  - vuln/reentrancy/single-function
+  - fix/use-reentrancy-guard
+  - novelty/known-pattern
 protocol: "[[Hanji]]"
 auditors:
   - MixBytes
@@ -15,8 +19,7 @@ genome:
   - "[[use-reentrancy-guard]]"
   - "[[known-pattern]]"
   - "[[admin-is-honest]]"
-  - "[[external-call-is-safe]]"
----
+  - "[[external-call-is-safe]]"---
 # Several reentracy scenarios
 
 - id: 55167

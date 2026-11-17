@@ -1,22 +1,22 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/staking
-  - sector/staking-pool
-  - sector/streaming
+  - web3-sector/dex
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/streaming
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - novelty/variant
 protocol: "[[Superfluid Locker System]]"
 auditors:
   - newspacexyz
 report: "https://github.com/sherlock-audit/2025-06-superfluid-locker-system-judging"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # H-1: Staked tokens inside FluidLocker can be withdrawn without calling Unstake
 
 - id: 58281

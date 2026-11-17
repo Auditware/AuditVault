@@ -2,7 +2,7 @@
 tags:
   - platform/ottersec
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Dialect Blinks]]"
 auditors:
   - "[[Bruno Halltari]]"

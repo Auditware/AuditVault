@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/nft
-  - sector/options
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/nft
+  - web3-sector/options
+  - web3-sector/token
 auditors:
   - "[[Code4rena]]"
 report: "https://code4rena.com/reports/2023-01-timeswap"

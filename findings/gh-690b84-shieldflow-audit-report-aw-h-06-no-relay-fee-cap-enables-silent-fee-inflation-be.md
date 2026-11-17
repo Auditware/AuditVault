@@ -1,11 +1,11 @@
 ---
 tags:
-  - sector/privacy
+  - web3-sector/privacy
   - severity/high
 protocol: "[[Shieldflow]]"
 auditors:
   - "[[Auditware]]"
-  - sector/bridge
+  - web3-sector/bridge
 genome:
   - "[[fee-accounting]]"
   - "[[access-roles]]"

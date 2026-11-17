@@ -4,7 +4,7 @@ tags:
   - lang/solidity
   - has/poc
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Berachain]]"
 auditors:
   - "[[zigtur]]"

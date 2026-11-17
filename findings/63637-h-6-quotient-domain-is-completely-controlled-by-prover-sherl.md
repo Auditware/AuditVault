@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/zk
+  - web3-sector/zk
   - platform/sherlock
   - has/github
   - has/poc

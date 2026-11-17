@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/oracle
+  - web3-sector/governance
+  - web3-sector/oracle
 ---
 Sqwid is a DeFi protocol - description pending.

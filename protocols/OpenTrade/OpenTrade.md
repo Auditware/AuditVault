@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/lending
 ---
 OpenTrade is a DeFi protocol - description pending.

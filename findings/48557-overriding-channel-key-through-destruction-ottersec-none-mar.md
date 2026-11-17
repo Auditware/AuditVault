@@ -3,7 +3,7 @@ tags:
   - platform/ottersec
   - has/poc
   - severity/high
-  - sector/wallet
+  - web3-sector/wallet
 protocol: "[[Martian]]"
 auditors:
   - "[[Maxwell Garrett]]"

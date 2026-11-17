@@ -8,7 +8,7 @@ tags:
   - vuln/dos/frozen-funds
   - impact/loss-of-funds/locked-funds
   - novelty/variant
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Polynomial Protocol]]"
 auditors:
   - "[[peakbolt]]"

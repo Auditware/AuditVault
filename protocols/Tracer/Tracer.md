@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
+  - web3-sector/options
 ---
 Tracer is a DeFi protocol - description pending.

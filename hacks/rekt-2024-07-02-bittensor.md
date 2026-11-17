@@ -1,6 +1,6 @@
 ---
 tags:
-  - sector/staking
+  - web3-sector/staking
 title: "Bittensor - Rekt"
 protocol: "[[Bittensor]]"
 date: 2024-07-02

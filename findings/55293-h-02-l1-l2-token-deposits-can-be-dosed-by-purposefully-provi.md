@@ -3,10 +3,10 @@ tags:
   - severity/high
   - has/github
   - has/poc
-  - sector/bridge
-  - sector/oracle
-  - sector/lending
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/oracle
+  - web3-sector/lending
+  - web3-sector/staking
   - platform/code4rena
 protocol: "[[Initia]]"
 auditors:

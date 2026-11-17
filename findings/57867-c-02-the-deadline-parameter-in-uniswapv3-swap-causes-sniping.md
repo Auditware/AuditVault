@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - platform/shieldify
 protocol: "[[Daoslive]]"
 auditors:

@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/move
-  - sector/lending
-  - sector/oracle
-  - sector/streaming
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/streaming
+  - web3-sector/token
   - platform/ottersec
   - severity/high
   - impact/mev/frontrun

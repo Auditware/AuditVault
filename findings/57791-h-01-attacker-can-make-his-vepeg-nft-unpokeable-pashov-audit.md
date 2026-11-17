@@ -4,8 +4,8 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/governance
-  - sector/nft
+  - web3-sector/governance
+  - web3-sector/nft
 protocol: "[[Hyperstable]]"
 auditors:
   - "[[Pashov Audit Group]]"

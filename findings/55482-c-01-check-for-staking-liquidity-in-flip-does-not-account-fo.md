@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/staking
+  - web3-sector/gaming
+  - web3-sector/staking
   - has/github
   - severity/high
+  - vuln/dos/frozen-funds
+  - impact/loss-of-funds/locked-funds
+  - novelty/variant
 protocol: "[[Coinflip]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +16,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[frozen-funds]]"
   - "[[locked-funds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [C-01] Check for `Staking` liquidity in `flip()` does not account for other game contracts
 
 - id: 55482

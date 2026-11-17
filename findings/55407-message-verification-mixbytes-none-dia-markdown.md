@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
+  - web3-sector/oracle
   - has/github
   - severity/high
+  - blast-radius/cross-protocol
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
 report: "https://github.com/mixbytes/audits_public/blob/master/DIA/Multi%20Scope/README.md#2-message-verification"
 genome:
   - "[[bridge-message-validation]]"
-  - "[[cross-protocol]]"
----
+  - "[[cross-protocol]]"---
 # Message Verification
 
 - id: 55407

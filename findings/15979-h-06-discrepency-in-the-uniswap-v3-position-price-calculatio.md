@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/oracle
+  - web3-sector/dex
+  - web3-sector/oracle
   - platform/code4rena
   - has/github
   - has/poc

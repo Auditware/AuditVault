@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/rust
+  - web3-sector/infra
   - platform/cantina
   - has/poc
   - severity/high
-  - sector/infra
+  - novelty/known-pattern
 protocol: "[[OpenVM]]"
 auditors:
   - Leo Alt
 report: "https://cdn.cantina.xyz/reports/cantina_competition_openvm_january2025.pdf"
 genome:
   - "[[integer-bounds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Heap pointer can overﬂow 
 
 - id: 53427

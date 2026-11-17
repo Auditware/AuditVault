@@ -6,7 +6,7 @@ tags:
   - has/github
   - severity/high
   - precondition/insider
-  - sector/stable
+  - web3-sector/stable
 protocol: "[[Thala]]"
 auditors:
   - "[[Devtooligan]]"

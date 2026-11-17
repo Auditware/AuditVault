@@ -6,7 +6,7 @@ tags:
   - has/poc
   - severity/high
   - precondition/uninitialized
-  - sector/gaming
+  - web3-sector/gaming
 protocol: "[[Virtuals]]"
 auditors:
   - "[[sergei2340]]"

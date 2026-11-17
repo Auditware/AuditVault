@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/arithmetic/underflow
+  - novelty/known-pattern
 protocol: "[[Remora Pledge]]"
 auditors:
   - Dacian
@@ -14,8 +16,7 @@ genome:
   - "[[underflow]]"
   - "[[known-pattern]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # `PledgeManager::pledge`, `refundTokens` will revert due to overflow when `pricePerToken * numTokens > type(uint32).max`
 
 - id: 61172

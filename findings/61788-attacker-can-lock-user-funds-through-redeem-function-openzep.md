@@ -3,8 +3,8 @@ tags:
   - blockchain/evm
   - blockchain/evm/optimism
   - lang/solidity
-  - sector/lending
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/stable
   - platform/openzeppelin
   - has/github
   - has/poc

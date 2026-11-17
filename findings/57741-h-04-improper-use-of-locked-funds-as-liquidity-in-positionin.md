@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/options
-  - sector/stable
+  - web3-sector/farm
+  - web3-sector/options
+  - web3-sector/stable
   - has/github
   - severity/high
+  - impact/loss-of-funds/locked-funds
 protocol: "[[Hyperhyper]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/Hyperhyper-security-review_2025-03-30.md"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[locked-funds]]"
----
+  - "[[locked-funds]]"---
 # [H-04] Improper use of locked funds as liquidity in `PositionInteractionFacet`
 
 - id: 57741

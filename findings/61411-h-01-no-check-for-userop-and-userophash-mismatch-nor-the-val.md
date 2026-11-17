@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
-  - sector/stable
-  - sector/staking
+  - web3-sector/account
+  - web3-sector/stable
+  - web3-sector/staking
   - platform/shieldify
   - has/github
   - has/poc

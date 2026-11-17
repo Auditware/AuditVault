@@ -4,9 +4,9 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/governance
-  - sector/infra
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/infra
+  - web3-sector/staking
 protocol: "[[Shardeum]]"
 auditors:
   - "[[Guillermo Larregay Trail of Bits PUBLIC]]"

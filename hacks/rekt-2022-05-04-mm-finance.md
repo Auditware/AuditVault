@@ -2,10 +2,10 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "MM Finance - REKT"
 protocol: "[[Mm Finance]]"
 date: 2022-05-04

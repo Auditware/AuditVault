@@ -4,8 +4,8 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/staking
-  - sector/liquid-staking
+  - web3-sector/staking
+  - web3-sector/liquid-staking
 protocol: "[[Kinetiq]]"
 auditors:
   - Pashov Audit Group

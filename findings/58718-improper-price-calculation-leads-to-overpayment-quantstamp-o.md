@@ -3,7 +3,7 @@ tags:
   - severity/high
   - lang/rust
   - platform/quantstamp
-  - sector/insurance
+  - web3-sector/insurance
 protocol: "[[OnRe Solana]]"
 auditors:
   - Paul Clemson

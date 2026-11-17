@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Switchboard]]"
 auditors:
   - "[[Woosun Song]]"

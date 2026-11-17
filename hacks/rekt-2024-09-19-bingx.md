@@ -3,8 +3,8 @@ tags:
   - blockchain/bsc
   - blockchain/ethereum
   - blockchain/polygon
-  - sector/dex
-  - sector/gaming
+  - web3-sector/dex
+  - web3-sector/gaming
 title: "BingX - Rekt"
 protocol: "[[Bingx]]"
 date: 2024-09-19

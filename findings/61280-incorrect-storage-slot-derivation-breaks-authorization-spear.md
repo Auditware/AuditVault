@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
+  - web3-sector/bridge
+  - web3-sector/dex
   - platform/spearbit
   - has/github
   - has/poc

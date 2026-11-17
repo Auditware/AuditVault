@@ -1,15 +1,16 @@
 ---
 tags:
+  - web3-sector/vault
   - severity/high
-  - sector/vault
+  - impact/loss-of-funds/direct-drain
+  - precondition/insider
 protocol: "[[Shieldflow]]"
 auditors:
   - "[[Auditware]]"
 genome:
   - "[[weak-randomness]]"
   - "[[direct-drain]]"
-  - "[[insider]]"
----
+  - "[[insider]]"---
 # **AW-C-02: Complete User Fund Theft via 53-bit Entropy Truncation in Master Key Generation** {#aw-c-02:-complete-user-fund-theft-via-53-bit-entropy-truncation-in-master-key-generation}
 
 **Severity: *Critical***									**Status:** ***Fixed***

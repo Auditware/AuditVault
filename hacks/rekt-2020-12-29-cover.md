@@ -1,11 +1,11 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/multisig
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/stable
+  - web3-sector/token
   - has/audit
   - blast-radius/cross-protocol
 title: "Cover - REKT"

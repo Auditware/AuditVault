@@ -3,9 +3,9 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/lending
-  - sector/staking
-  - sector/cdp
+  - web3-sector/lending
+  - web3-sector/staking
+  - web3-sector/cdp
 protocol: "[[Roots]]"
 auditors:
   - Pashov Audit Group

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/nft-lending
+  - web3-sector/lending
+  - web3-sector/nft-lending
   - platform/ottersec
   - has/poc
   - severity/high

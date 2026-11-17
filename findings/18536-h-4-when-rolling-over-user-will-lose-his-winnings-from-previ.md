@@ -4,7 +4,7 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/farm
+  - web3-sector/farm
 protocol: "[[Y2K]]"
 auditors:
   - "[[iglyx]]"

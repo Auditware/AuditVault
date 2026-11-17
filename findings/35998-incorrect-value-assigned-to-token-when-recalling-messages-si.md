@@ -5,7 +5,7 @@ tags:
   - has/github
   - severity/high
   - impact/loss-of-funds/locked-funds
-  - sector/token
+  - web3-sector/token
 protocol: "[[Taiko]]"
 auditors:
   - "[[Sigma Prime]]"

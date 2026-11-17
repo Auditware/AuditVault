@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/privacy
-  - sector/stable
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/vault
   - has/audit
   - trigger/flash-loan
   - precondition/flash-loan-available

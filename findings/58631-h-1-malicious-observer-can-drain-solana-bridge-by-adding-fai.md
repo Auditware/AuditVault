@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/rust
-  - sector/bridge
-  - sector/governance
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/staking
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/arithmetic/decimal-mismatch
+  - novelty/variant
 protocol: "[[ZetaChain Cross Chain]]"
 auditors:
   - berndartmueller
@@ -17,8 +19,7 @@ genome:
   - "[[decimal-mismatch]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # H-1: Malicious observer can drain Solana bridge by adding failed deposit transaction to inbound tracker
 
 - id: 58631

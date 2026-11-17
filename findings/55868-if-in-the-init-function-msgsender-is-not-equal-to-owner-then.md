@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Eqifi]]"
 auditors:
   - "[[Zokyo]]"

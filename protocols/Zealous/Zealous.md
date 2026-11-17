@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
 ---
 Zealous is a DeFi protocol - description pending.

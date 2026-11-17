@@ -1,7 +1,7 @@
 ---
 tags:
   - checklist
-  - sector/privacy
+  - web3-sector/privacy
 generated: true
 ---
 # Privacy — Audit Checklist

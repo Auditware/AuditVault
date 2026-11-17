@@ -4,8 +4,8 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/bridge
-  - sector/zk
+  - web3-sector/bridge
+  - web3-sector/zk
 protocol: "[[Linea]]"
 auditors:
   - "[[Dacian]]"

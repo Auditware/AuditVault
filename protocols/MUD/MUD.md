@@ -1,6 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/infra
+  - web3-sector/staking
 ---
 MUD Audit is a DeFi protocol - description pending.

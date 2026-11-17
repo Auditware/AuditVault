@@ -4,8 +4,8 @@ tags:
   - platform/cantina
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/staking-pool
+  - web3-sector/bridge
+  - web3-sector/staking-pool
 protocol: "[[MilkyWay]]"
 auditors:
   - "[[alpo]]"

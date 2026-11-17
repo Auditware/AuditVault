@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Wormhole]]"
 auditors:
   - "[[Ajay Shankar Kunapareddy]]"

@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Heurist]]"
 auditors:
   - "[[Zokyo]]"

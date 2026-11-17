@@ -6,7 +6,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[StakeDAO]]"
 auditors:
   - "[[Pashov Audit Group]]"

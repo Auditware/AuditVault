@@ -1,11 +1,11 @@
 ---
 tags:
-  - sector/privacy
+  - web3-sector/privacy
   - severity/high
 protocol: "[[Shieldflow]]"
 auditors:
   - "[[Auditware]]"
-  - sector/account
+  - web3-sector/account
 genome:
   - "[[proxy-initialization]]"
   - "[[dos-resistance]]"

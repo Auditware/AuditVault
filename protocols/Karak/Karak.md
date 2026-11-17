@@ -2,11 +2,11 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/governance
-  - sector/lending
-  - sector/liquid-staking
-  - sector/restaking
-  - sector/staking
-  - sector/vault
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/restaking
+  - web3-sector/staking
+  - web3-sector/vault
 ---
 Karak is a DeFi protocol - description pending.

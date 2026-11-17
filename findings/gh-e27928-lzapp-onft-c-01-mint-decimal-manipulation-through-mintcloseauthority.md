@@ -4,7 +4,7 @@ tags:
   - lang/solidity
   - platform/pashov
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[LayerZero]]"
 auditors:
   - "[[FrankCastle]]"

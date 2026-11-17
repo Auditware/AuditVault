@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[LayerEdge   Staking]]"
 auditors:
   - newspacexyz
 report: "https://github.com/sherlock-audit/2025-05-layeredge-judging"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # H-1: Incorrect tier tracking when tier 3 staker exits in a certain case
 
 - id: 56947

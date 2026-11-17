@@ -3,11 +3,11 @@ tags:
   - blockchain/arbitrum
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
   - vuln/reentrancy/read-only
   - vuln/reentrancy/single-function
   - impact/mev/frontrun

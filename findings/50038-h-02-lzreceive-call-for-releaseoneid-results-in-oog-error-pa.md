@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/nft
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/nft
+  - web3-sector/staking
   - has/github
   - has/poc
   - severity/high
+  - vuln/dos/unbounded-loop
+  - novelty/known-pattern
 protocol: "[[NFTMirror]]"
 auditors:
   - Pashov Audit Group
@@ -14,8 +16,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/NFTMirror-security
 genome:
   - "[[dos-resistance]]"
   - "[[unbounded-loop]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # [H-02] `lzReceive()` call for `releaseOnEid()` results in OOG error
 
 - id: 50038

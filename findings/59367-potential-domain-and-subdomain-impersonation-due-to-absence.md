@@ -4,7 +4,7 @@ tags:
   - platform/quantstamp
   - severity/high
   - novelty/variant
-  - sector/dns
+  - web3-sector/dns
 protocol: "[[Zero Name Service (ZNS)]]"
 auditors:
   - "[[Jennifer Wu]]"

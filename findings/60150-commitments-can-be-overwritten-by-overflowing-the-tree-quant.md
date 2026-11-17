@@ -2,7 +2,7 @@
 tags:
   - lang/circom
   - lang/solidity
-  - sector/zk
+  - web3-sector/zk
   - platform/quantstamp
   - severity/high
   - novelty/known-pattern

@@ -1,17 +1,17 @@
 ---
 tags:
+  - lang/solidity
+  - web3-sector/oracle
   - has/github
   - severity/high
-  - lang/solidity
-  - sector/oracle
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/Omo-security-review_2025-01-25.md"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # [H-09] OmoAgent: `getPositionValue()` doesn't consider deposited assets
 
 - id: 53327

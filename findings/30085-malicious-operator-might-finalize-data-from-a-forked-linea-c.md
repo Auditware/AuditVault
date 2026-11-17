@@ -3,9 +3,9 @@ tags:
   - blockchain/evm
   - blockchain/evm/linea
   - lang/solidity
-  - sector/algo-stable
-  - sector/bridge
-  - sector/zk
+  - web3-sector/algo-stable
+  - web3-sector/bridge
+  - web3-sector/zk
   - platform/consensys
   - severity/high
   - impact/loss-of-funds/direct-drain

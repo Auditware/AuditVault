@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/bridge
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/oracle
 protocol: "[[DIA]]"
 auditors:
   - MixBytes

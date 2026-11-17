@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - severity/high
+  - impact/loss-of-funds/locked-funds
+  - novelty/known-pattern
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -13,8 +15,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/202
 genome:
   - "[[dos-resistance]]"
   - "[[locked-funds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Reward tokens can become inaccessible due to revert when `rewardPerTokenStored` is downcast and overflows
 
 - id: 61553

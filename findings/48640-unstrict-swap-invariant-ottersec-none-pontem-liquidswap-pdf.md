@@ -3,7 +3,7 @@ tags:
   - lang/move
   - platform/ottersec
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Pontem (Liquidswap)]]"
 auditors:
   - "[[OtterSec]]"

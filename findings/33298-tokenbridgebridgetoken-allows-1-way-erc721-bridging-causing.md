@@ -5,11 +5,11 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/nft
-  - sector/options
-  - sector/token
-  - sector/zk
+  - web3-sector/bridge
+  - web3-sector/nft
+  - web3-sector/options
+  - web3-sector/token
+  - web3-sector/zk
 protocol: "[[Linea]]"
 auditors:
   - "[[Dacian]]"

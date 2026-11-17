@@ -1,10 +1,10 @@
 ---
 tags:
-  - sector/gaming
-  - sector/lending
-  - sector/multisig
-  - sector/restaking
-  - sector/stable
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/restaking
+  - web3-sector/stable
   - has/audit
   - trigger/flash-loan
   - precondition/flash-loan-available

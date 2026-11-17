@@ -6,7 +6,7 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
+  - web3-sector/dex
   - lang/anchor
 protocol: "[[Deriverse]]"
 auditors:

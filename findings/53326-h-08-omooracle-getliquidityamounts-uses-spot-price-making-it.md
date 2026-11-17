@@ -1,10 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/oracle
+  - web3-sector/dex
+  - web3-sector/oracle
   - has/github
   - severity/high
+  - vuln/oracle/spot-price
+  - impact/data-corruption/price-manipulation
+  - trigger/price-manipulation
+  - fix/use-twap
+  - novelty/known-pattern
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
@@ -17,8 +22,7 @@ genome:
   - "[[use-twap]]"
   - "[[known-pattern]]"
   - "[[oracle-is-reliable]]"
-  - "[[price-cannot-be-manipulated]]"
----
+  - "[[price-cannot-be-manipulated]]"---
 # [H-08] OmoOracle `getLiquidityAmounts()` uses spot price making it manipulatable
 
 - id: 53326

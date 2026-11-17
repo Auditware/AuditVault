@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/oracle
+  - web3-sector/governance
+  - web3-sector/oracle
   - platform/ottersec
   - severity/high
   - fix/use-multi-oracle

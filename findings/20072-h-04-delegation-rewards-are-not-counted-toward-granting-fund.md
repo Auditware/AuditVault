@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/staking
   - platform/code4rena
   - has/github
   - has/poc

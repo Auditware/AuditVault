@@ -4,10 +4,10 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
-  - sector/launchpad
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/dex
+  - web3-sector/launchpad
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
 protocol: "[[Sudoswap]]"
 auditors:
   - "[[Hans]]"

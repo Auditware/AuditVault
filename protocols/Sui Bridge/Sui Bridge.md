@@ -2,6 +2,6 @@
 tags:
   - blockchain/sui
   - lang/move
-  - sector/bridge
+  - web3-sector/bridge
 ---
 Sui Bridge is a DeFi protocol - description pending.

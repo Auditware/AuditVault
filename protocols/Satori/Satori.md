@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/lending
-  - sector/nft
-  - sector/nft-marketplace
-  - sector/stable
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
+  - web3-sector/stable
 ---
 Satori is a DeFi protocol - description pending.

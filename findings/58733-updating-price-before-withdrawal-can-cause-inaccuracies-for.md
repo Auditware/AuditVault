@@ -1,10 +1,14 @@
 ---
 tags:
   - lang/rust
-  - sector/restaking
-  - sector/staking-pool
+  - web3-sector/restaking
+  - web3-sector/staking-pool
   - platform/quantstamp
   - severity/high
+  - vuln/arithmetic/underflow
+  - vuln/oracle/spot-price
+  - impact/loss-of-funds/direct-drain
+  - novelty/known-pattern
 protocol: "[[Fragmetric Restaking Program]]"
 auditors:
   - Michael Boyle
@@ -20,8 +24,7 @@ genome:
   - "[[price-cannot-be-manipulated]]"
   - "[[fix-arithmetic]]"
   - "[[use-twap]]"
-  - "[[trigger/price-manipulation]]"
----
+  - "[[trigger/price-manipulation]]"---
 # Updating Price Before Withdrawal Can Cause Inaccuracies for the Withdrawal Amount
 
 - id: 58733

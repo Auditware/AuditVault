@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/shieldify
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[Beraji Ko]]"
 auditors:
   - Shieldify Security
@@ -14,8 +16,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-02] Users Might Not Be Able To Fully Claim
 
 - id: 49514

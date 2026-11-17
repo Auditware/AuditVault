@@ -3,8 +3,8 @@ tags:
   - lang/move
   - platform/ottersec
   - severity/high
-  - sector/lending
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/staking
 protocol: "[[Navi]]"
 auditors:
   - "[[Ajay Shankar]]"

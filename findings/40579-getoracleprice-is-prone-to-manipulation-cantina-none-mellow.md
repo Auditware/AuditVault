@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
+  - web3-sector/oracle
   - platform/cantina
   - severity/high
   - vuln/oracle/spot-price

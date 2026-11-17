@@ -4,8 +4,8 @@ tags:
   - platform/cantina
   - has/poc
   - severity/high
-  - sector/restaking
-  - sector/staking
+  - web3-sector/restaking
+  - web3-sector/staking
 protocol: "[[EigenLayer]]"
 auditors:
   - "[[hash]]"

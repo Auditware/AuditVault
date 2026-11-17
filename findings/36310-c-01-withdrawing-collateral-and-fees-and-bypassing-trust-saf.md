@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/multisig
+  - web3-sector/lending
+  - web3-sector/multisig
   - platform/pashov
   - has/github
   - severity/high

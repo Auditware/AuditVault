@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
-  - sector/token
+  - web3-sector/stable
+  - web3-sector/token
   - platform/quantstamp
   - severity/high
   - impact/loss-of-funds/direct-drain

@@ -9,7 +9,7 @@ tags:
   - misassumption/external-call-is-safe
   - fix/use-reentrancy-guard
   - trigger/reentrancy-callback
-  - sector/account
+  - web3-sector/account
 protocol: "[[BLS Wallet]]"
 auditors:
   - "[[Sigma Prime]]"

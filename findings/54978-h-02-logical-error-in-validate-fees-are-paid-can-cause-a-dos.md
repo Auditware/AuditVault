@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/rust
-  - sector/dex
+  - web3-sector/dex
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - vuln/logic/fee-calculation
+  - novelty/variant
 protocol: "[[MANTRA]]"
 auditors:
   - carrotsmuggler
@@ -15,8 +17,7 @@ genome:
   - "[[fee-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-02] Logical error in `validate_fees_are_paid` can cause a DoS or allow users to bypass fees if `denom_creation_fee` includes multiple coins, including `pool_creation_fee`, and the user attempts to pay all fees using only `pool_creation_fee`
 
 - id: 54978

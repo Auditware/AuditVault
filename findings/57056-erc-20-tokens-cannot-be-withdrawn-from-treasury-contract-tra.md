@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
-  - sector/token
+  - web3-sector/stable
+  - web3-sector/token
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
+  - vuln/dos/frozen-funds
+  - novelty/variant
 protocol: "[[Otim Smart Wallet]]"
 auditors:
   - Quan Nguyen
@@ -14,8 +16,7 @@ report: "https://github.com/trailofbits/publications/blob/master/reviews/2025-03
 genome:
   - "[[dos-resistance]]"
   - "[[frozen-funds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # ERC-20 tokens cannot be withdrawn from Treasury contract
 
 - id: 57056

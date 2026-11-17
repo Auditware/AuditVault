@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
+  - web3-sector/nft
   - has/github
   - severity/high
+  - vuln/dependency/upgradeable-contract
+  - novelty/variant
 protocol: "[[Fireblocks Upgradeable Tokens Audit   ERC721F]]"
 auditors:
   - OpenZeppelin
@@ -13,8 +15,7 @@ genome:
   - "[[upgradeable-contract]]"
   - "[[variant]]"
   - "[[external-call-is-safe]]"
-  - "[[upgrade-dependency]]"
----
+  - "[[upgrade-dependency]]"---
 # ERC721F Transfer Access List Can Be Bypassed
 
 - id: 49781

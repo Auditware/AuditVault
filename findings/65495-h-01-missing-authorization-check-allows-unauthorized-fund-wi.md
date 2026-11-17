@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/staking
-  - sector/token
-  - sector/vault
+  - web3-sector/staking
+  - web3-sector/token
+  - web3-sector/vault
 protocol: "[[SukukFi]]"
 auditors:
   - "[[0xpetern]]"

@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/liquid-staking
-  - sector/streaming
-  - sector/token
+  - web3-sector/liquid-staking
+  - web3-sector/streaming
+  - web3-sector/token
   - platform/cantina
   - severity/high
   - impact/loss-of-funds/direct-drain

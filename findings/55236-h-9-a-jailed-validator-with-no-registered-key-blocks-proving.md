@@ -1,20 +1,20 @@
 ---
 tags:
-  - sector/staking
+  - lang/rust
+  - lang/solidity
+  - web3-sector/staking
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
-  - lang/solidity
-  - lang/rust
+  - novelty/variant
 protocol: "[[SEDA Protocol]]"
 auditors:
   - g
 report: "https://github.com/sherlock-audit/2024-12-seda-protocol-judging"
 genome:
   - "[[dos-resistance]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # H-9: A jailed validator with no registered key blocks proving scheme activation
 
 - id: 55236

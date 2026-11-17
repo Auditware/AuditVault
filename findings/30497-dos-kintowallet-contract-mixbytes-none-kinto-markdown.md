@@ -7,7 +7,7 @@ tags:
   - vuln/access-control/missing-signer
   - novelty/variant
   - misassumption/admin-is-honest
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Kinto]]"
 auditors:
   - "[[MixBytes]]"

@@ -2,13 +2,13 @@
 tags:
   - blockchain/arbitrum
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/multisig
-  - sector/privacy
-  - sector/stable
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/staking
   - has/audit
   - impact/loss-of-funds/direct-drain
 title: "Hope Finance - REKT"

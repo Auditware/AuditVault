@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/gaming
+  - web3-sector/bridge
+  - web3-sector/gaming
   - platform/pashov
   - has/github
   - severity/high

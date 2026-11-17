@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/farm
-  - sector/governance
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/governance
   - platform/pashov
   - has/github
   - severity/high

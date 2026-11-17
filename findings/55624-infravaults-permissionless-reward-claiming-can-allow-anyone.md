@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
-  - sector/token
+  - web3-sector/staking
+  - web3-sector/token
   - platform/cyfrin
   - has/github
   - severity/high
+  - fix/use-reentrancy-guard
 protocol: "[[Dolomite Polvaults]]"
 auditors:
   - 0kage
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/2025-04-24-cyfrin-dolomite-POLVaults-v2.0.md"
 genome:
   - "[[reentrancy-guard]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # InfraVault's Permissionless Reward Claiming Can Allow Anyone to Lock Rewards in the MetaVault
 
 - id: 55624

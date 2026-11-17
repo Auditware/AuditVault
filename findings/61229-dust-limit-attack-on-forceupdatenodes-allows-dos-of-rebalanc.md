@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/arithmetic/precision-loss
+  - novelty/variant
 protocol: "[[Suzaku Core]]"
 auditors:
   - 0kage
@@ -14,8 +16,7 @@ genome:
   - "[[precision-loss]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Dust limit attack on `forceUpdateNodes` allows DoS of rebalancing and potential vault insolvency
 
 - id: 61229

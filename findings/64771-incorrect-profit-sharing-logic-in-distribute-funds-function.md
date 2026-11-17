@@ -3,7 +3,7 @@ tags:
   - platform/quantstamp
   - lang/move
   - severity/high
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Dipcoin]]"
 auditors:
   - "[[Hamed Mohammadi]]"

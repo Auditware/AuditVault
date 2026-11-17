@@ -1,10 +1,10 @@
 ---
 tags:
   - blockchain/arbitrum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
   - has/audit
   - impact/data-corruption/price-manipulation
   - impact/loss-of-funds/direct-drain

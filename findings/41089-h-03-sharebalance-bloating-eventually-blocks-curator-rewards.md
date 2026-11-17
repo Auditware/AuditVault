@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/launchpad
-  - sector/options
+  - web3-sector/dex
+  - web3-sector/launchpad
+  - web3-sector/options
 protocol: "[[Phi]]"
 auditors:
   - "[[rare_one]]"

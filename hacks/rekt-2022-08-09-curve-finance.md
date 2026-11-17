@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/privacy
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/privacy
 title: "Curve Finance - REKT"
 protocol: "[[Curve Finance]]"
 date: 2022-08-09

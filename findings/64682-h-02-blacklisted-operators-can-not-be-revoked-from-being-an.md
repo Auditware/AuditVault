@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/nft
-  - sector/rwa
-  - sector/staking
+  - web3-sector/nft
+  - web3-sector/rwa
+  - web3-sector/staking
 protocol: "[[Shiny]]"
 auditors:
   - "[[Shieldify Security]]"

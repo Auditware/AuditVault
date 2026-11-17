@@ -6,7 +6,7 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/staking
+  - web3-sector/staking
   - lang/anchor
 protocol: "[[Saffron]]"
 auditors:

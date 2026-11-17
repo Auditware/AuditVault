@@ -1,11 +1,11 @@
 ---
 tags:
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/privacy
-  - sector/stable
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/vault
 title: "Yearn - Rekt IV"
 protocol: "[[Yearn]]"
 date: 2025-12-16

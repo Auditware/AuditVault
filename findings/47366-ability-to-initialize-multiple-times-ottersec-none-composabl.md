@@ -4,8 +4,8 @@ tags:
   - sdk/anchor
   - platform/ottersec
   - severity/high
-  - sector/restaking
-  - sector/staking
+  - web3-sector/restaking
+  - web3-sector/staking
 protocol: "[[ComposableFi]]"
 auditors:
   - "[[Ajay Shankar Kunapareddy]]"

@@ -2,8 +2,8 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/bridge
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/staking
   - platform/pashov
   - has/github
   - severity/high

@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/perpetuals
+  - web3-sector/perpetuals
 
 protocol: "[[Filament]]"
 auditors:

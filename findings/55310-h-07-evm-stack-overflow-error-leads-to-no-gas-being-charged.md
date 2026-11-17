@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/infra
+  - web3-sector/infra
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - vuln/dos/unbounded-loop
+  - novelty/known-pattern
 protocol: "[[Initia]]"
 auditors:
   - berndartmueller
@@ -13,8 +15,7 @@ report: "https://code4rena.com/reports/2025-02-initia-cosmos"
 genome:
   - "[[dos-resistance]]"
   - "[[unbounded-loop]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # [H-07] EVM stack overflow error leads to no gas being charged, which can be exploited to DoS the chain by dispatching EVM calls via the cosmos precompile
 
 - id: 55310

@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/lending
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/stable
   - trigger/flash-loan
   - precondition/flash-loan-available
 title: "X-Token - REKT X2"

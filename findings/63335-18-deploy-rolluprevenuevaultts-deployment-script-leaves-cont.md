@@ -9,7 +9,7 @@ tags:
   - novelty/variant
   - misassumption/proxy-is-initialized
   - fix/initialize-proxy
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Linea]]"
 auditors:
   - "[[Arturo Roura]]"

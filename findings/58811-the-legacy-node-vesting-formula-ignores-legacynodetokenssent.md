@@ -2,8 +2,8 @@
 tags:
   - severity/high
   - lang/solidity
-  - sector/token
-  - sector/streaming
+  - web3-sector/token
+  - web3-sector/streaming
   - platform/quantstamp
 protocol: "[[Powerloom L2]]"
 auditors:

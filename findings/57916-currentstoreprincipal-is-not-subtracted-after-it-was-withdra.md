@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
 report: "https://github.com/mixbytes/audits_public/blob/master/DIA/Lumina%20Staking/README.md#4-currentstoreprincipal-is-not-subtracted-after-it-was-withdrawn-allowing-users-to-claim-it-again-infinitely"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # `currentStore.principal` is not subtracted after it was withdrawn, allowing users to claim it again infinitely
 
 - id: 57916

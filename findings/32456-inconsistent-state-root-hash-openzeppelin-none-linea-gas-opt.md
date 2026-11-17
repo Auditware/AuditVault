@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/zk
+  - web3-sector/zk
   - platform/openzeppelin
   - has/github
   - severity/high

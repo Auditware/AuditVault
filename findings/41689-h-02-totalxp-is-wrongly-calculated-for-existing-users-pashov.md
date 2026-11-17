@@ -2,9 +2,9 @@
 tags:
   - lang/move
   - lang/solidity
-  - sector/dex
-  - sector/oracle
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/oracle
+  - web3-sector/staking
   - platform/pashov
   - has/github
   - severity/high

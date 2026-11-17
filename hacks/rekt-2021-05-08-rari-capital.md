@@ -3,11 +3,11 @@ tags:
   - blockchain/bsc
   - blockchain/ethereum
   - has/audit
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/privacy
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/privacy
+  - web3-sector/vault
 title: "Rari Capital - REKT"
 protocol: "[[Rari Capital]]"
 date: 2021-05-08

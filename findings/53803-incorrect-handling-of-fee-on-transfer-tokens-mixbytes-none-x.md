@@ -1,8 +1,11 @@
 ---
 tags:
-  - sector/token
+  - web3-sector/token
   - has/github
   - severity/high
+  - vuln/logic/fee-calculation
+  - precondition/specific-token-type
+  - novelty/variant
 protocol: "[[XPress Protocol]]"
 auditors:
   - MixBytes
@@ -13,8 +16,7 @@ genome:
   - "[[specific-token-type]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Incorrect Handling of Fee-on-Transfer Tokens
 
 - id: 53803

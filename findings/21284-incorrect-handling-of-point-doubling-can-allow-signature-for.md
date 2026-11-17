@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/zk
+  - web3-sector/zk
 protocol: "[[Succinct]]"
 auditors:
   - "[[Joe Doyle]]"

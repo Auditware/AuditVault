@@ -3,11 +3,11 @@ tags:
   - blockchain/avalanche
   - blockchain/ethereum
   - has/audit
-  - sector/bridge
-  - sector/dex
-  - sector/oracle
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/oracle
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "Vee Finance - REKT"
 protocol: "[[Vee Finance]]"
 date: 2021-09-21

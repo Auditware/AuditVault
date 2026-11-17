@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/move
-  - sector/lending
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/lending
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/ottersec
   - has/poc
   - severity/high

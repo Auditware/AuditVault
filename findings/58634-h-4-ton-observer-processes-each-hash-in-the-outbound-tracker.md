@@ -1,18 +1,18 @@
 ---
 tags:
-  - sector/bridge
+  - web3-sector/bridge
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[ZetaChain Cross Chain]]"
 auditors:
   - g
 report: "https://github.com/sherlock-audit/2025-04-zetachain-cross-chain-judging"
 genome:
   - "[[bridge-sender-auth]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # H-4: TON Observer processes each hash in the Outbound tracker and stores the result of the last nonce successfully processed
 
 - id: 58634

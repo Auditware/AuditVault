@@ -3,10 +3,10 @@ tags:
   - blockchain/arbitrum
   - blockchain/avalanche
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
   - impact/privilege-escalation/ownership-transfer
 title: "Steadefi - REKT"

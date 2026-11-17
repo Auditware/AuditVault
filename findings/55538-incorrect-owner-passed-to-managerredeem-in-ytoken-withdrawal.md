@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
-  - sector/staking
-  - sector/vault
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/vault
   - platform/cyfrin
   - has/github
   - severity/high
+  - fix/use-reentrancy-guard
 protocol: "[[Yieldfi]]"
 auditors:
   - Immeas
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/2025-04-24-cyfrin-yieldfi-v2.0.md"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # Incorrect `owner` passed to `Manager::redeem` in YToken withdrawal flow
 
 - id: 55538

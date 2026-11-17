@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/staking
-  - sector/token
+  - web3-sector/nft
+  - web3-sector/staking
+  - web3-sector/token
   - platform/consensys
   - severity/high
   - impact/loss-of-funds/direct-drain

@@ -5,11 +5,11 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/oracle
-  - sector/staking
-  - sector/token
-  - sector/vault
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/staking
+  - web3-sector/token
+  - web3-sector/vault
 protocol: "[[Notional]]"
 auditors:
   - "[[mstpr-brainbot]]"

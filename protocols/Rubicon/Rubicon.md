@@ -1,12 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/stable
-  - sector/token
-  - sector/uncollat-lending
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/token
+  - web3-sector/uncollat-lending
 ---
 Rubicon is a DeFi protocol - description pending.

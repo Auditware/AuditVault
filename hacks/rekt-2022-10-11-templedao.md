@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/stable
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/stable
+  - web3-sector/vault
 title: "TempleDAO - REKT"
 protocol: "[[Templedao]]"
 date: 2022-10-11

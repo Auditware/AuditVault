@@ -4,9 +4,9 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/bridge
-  - sector/lending
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/staking
 protocol: "[[DForce]]"
 auditors:
   - "[[MixBytes]]"

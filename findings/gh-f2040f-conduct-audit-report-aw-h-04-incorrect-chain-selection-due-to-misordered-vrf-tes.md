@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/auditware
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Conduct]]"
 auditors:
   - "[[Auditware]]"

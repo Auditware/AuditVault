@@ -3,6 +3,6 @@ tags:
   - lang/rust
   - lang/solidity
   - sdk/stylus
-  - sector/dex
+  - web3-sector/dex
 ---
 [[Superposition]] is a DeFi protocol - description pending.

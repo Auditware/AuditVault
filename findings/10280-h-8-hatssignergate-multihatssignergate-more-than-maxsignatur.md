@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/multisig
+  - web3-sector/multisig
   - platform/sherlock
   - has/github
   - severity/high

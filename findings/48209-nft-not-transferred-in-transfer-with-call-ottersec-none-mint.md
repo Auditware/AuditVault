@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/rust
-  - sector/nft
-  - sector/options
+  - web3-sector/nft
+  - web3-sector/options
   - platform/ottersec
   - severity/high
   - impact/privilege-escalation/ownership-transfer

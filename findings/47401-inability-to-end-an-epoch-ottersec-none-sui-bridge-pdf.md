@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/move
-  - sector/bridge
-  - sector/governance
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/staking
   - platform/ottersec
   - severity/high
   - trigger/time-based/epoch-boundary

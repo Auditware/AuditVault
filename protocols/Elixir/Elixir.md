@@ -2,7 +2,7 @@
 tags:
   - lang/move
   - lang/rust
-  - sector/lending
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/staking
 ---
 Elixir is a DeFi protocol - description pending.

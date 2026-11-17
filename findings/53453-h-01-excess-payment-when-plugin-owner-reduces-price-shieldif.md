@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - platform/shieldify
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
+  - novelty/variant
 protocol: "[[Bullasv2]]"
 auditors:
   - Shieldify Security
 report: "https://github.com/shieldify-security/audits-portfolio-md/blob/main/BullasV2-Security-Review.md"
 genome:
   - "[[fee-accounting]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-01] Excess Payment When Plugin Owner Reduces Price
 
 - id: 53453

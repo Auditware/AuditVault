@@ -5,7 +5,7 @@ tags:
   - severity/high
   - impact/loss-of-funds/direct-drain
   - impact/loss-of-funds/locked-funds
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Rarible]]"
 auditors:
   - "[[Auditware]]"

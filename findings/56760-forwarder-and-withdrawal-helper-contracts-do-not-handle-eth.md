@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
   - has/github
   - severity/high
+  - blast-radius/cross-protocol
 protocol: "[[Across]]"
 auditors:
   - OpenZeppelin
 report: "https://blog.openzeppelin.com/across-audit"
 genome:
   - "[[dos-resistance]]"
-  - "[[cross-protocol]]"
----
+  - "[[cross-protocol]]"---
 # Forwarder and Withdrawal Helper Contracts Do Not Handle ETH Transfers Correctly
 
 - id: 56760

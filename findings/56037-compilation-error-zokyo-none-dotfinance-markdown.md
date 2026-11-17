@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Dotfinance]]"
 auditors:
   - "[[Zokyo]]"

@@ -3,7 +3,7 @@ tags:
   - lang/rust
   - lang/solidity
   - sdk/anchor
-  - sector/nft
+  - web3-sector/nft
   - platform/cyfrin
   - has/github
   - severity/high

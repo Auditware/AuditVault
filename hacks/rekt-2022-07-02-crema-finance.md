@@ -2,9 +2,9 @@
 tags:
   - blockchain/ethereum
   - blockchain/solana
-  - sector/bridge
-  - sector/dex
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
   - has/audit
   - impact/loss-of-funds/fee-theft
   - trigger/flash-loan

@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/vault
+  - web3-sector/vault
   - has/github
   - has/poc
   - severity/high
+  - impact/mev/frontrun
+  - trigger/first-deposit
 protocol: "[[Burve]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +14,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/Burve-security-rev
 genome:
   - "[[frontrun-exposure]]"
   - "[[mev/frontrun]]"
-  - "[[first-deposit]]"
----
+  - "[[first-deposit]]"---
 # [H-02] First deposit front-running attack
 
 - id: 57723

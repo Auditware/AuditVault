@@ -4,8 +4,8 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/governance
-  - sector/liquid-staking
+  - web3-sector/governance
+  - web3-sector/liquid-staking
 protocol: "[[Lido]]"
 auditors:
   - "[[MixBytes]]"

@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/governance
-  - sector/nft
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/stable
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - has/poc

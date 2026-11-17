@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/stable
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - has/github
   - severity/high
+  - fix/use-reentrancy-guard
 protocol: "[[Coinflip]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/Coinflip-security-review_2025-02-05.md"
 genome:
   - "[[reentrancy-guard]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [H-03] Users can potentially steal other user's staking rewards
 
 - id: 55486

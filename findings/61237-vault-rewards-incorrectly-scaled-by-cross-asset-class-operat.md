@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/staking
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[Suzaku Core]]"
 auditors:
   - 0kage
@@ -15,8 +17,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Vault rewards incorrectly scaled by cross-asset-class operator totals instead of asset class specific shares causing rewards leakage
 
 - id: 61237

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/vault
+  - web3-sector/nft
+  - web3-sector/vault
   - platform/ottersec
   - has/poc
   - severity/high

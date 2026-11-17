@@ -4,9 +4,9 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/lending
-  - sector/token
-  - sector/vault
+  - web3-sector/lending
+  - web3-sector/token
+  - web3-sector/vault
 protocol: "[[Blueberry]]"
 auditors:
   - "[[Pashov Audit Group]]"

@@ -1,8 +1,11 @@
 ---
 tags:
-  - sector/oracle
+  - web3-sector/oracle
   - platform/quantstamp
   - severity/high
+  - vuln/access-control/missing-signer
+  - vuln/oracle/single-source
+  - novelty/variant
 protocol: "[[Crouton Finance   StableSwap]]"
 auditors:
   - Julio Aguilar
@@ -15,8 +18,7 @@ genome:
   - "[[admin-is-honest]]"
   - "[[oracle-is-reliable]]"
   - "[[add-access-control]]"
-  - "[[use-multi-oracle]]"
----
+  - "[[use-multi-oracle]]"---
 # Duplicate Signatures Allow Single Signer to Bypass Oracle Valid Signer Threshold Requirement
 
 - id: 58836

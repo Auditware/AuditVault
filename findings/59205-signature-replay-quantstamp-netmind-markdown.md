@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[NetMind]]"
 auditors:
   - "[[Jennifer Wu]]"

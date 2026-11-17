@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Gains Network]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/GainsNetwork-security-review_2025-05-26.md"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # [H-04] Traders could lose assets when increasing counter trade position size
 
 - id: 58131

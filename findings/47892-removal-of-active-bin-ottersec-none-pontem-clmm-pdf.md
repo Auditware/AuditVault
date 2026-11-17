@@ -4,8 +4,8 @@ tags:
   - platform/ottersec
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/lending
 protocol: "[[Pontem (Liquidswap)]]"
 auditors:
   - "[[Michał Bochnak]]"

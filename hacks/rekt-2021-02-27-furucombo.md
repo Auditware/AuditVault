@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/lending
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/stable
 title: "Furucombo - REKT"
 protocol: "[[Furucombo]]"
 date: 2021-02-27

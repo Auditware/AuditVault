@@ -1,9 +1,9 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/governance
-  - sector/lending
-  - sector/privacy
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/privacy
   - vuln/reentrancy/single-function
   - trigger/flash-loan
   - precondition/flash-loan-available

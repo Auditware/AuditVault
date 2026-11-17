@@ -1,14 +1,16 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/oracle
-  - sector/stable
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/staking
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
+  - vuln/oracle/stale-price
+  - novelty/known-pattern
 protocol: "[[CAP Labs Covered Agent Protocol]]"
 auditors:
   - Benjamin Samuels
@@ -18,8 +20,7 @@ genome:
   - "[[stale-price]]"
   - "[[known-pattern]]"
   - "[[oracle-is-reliable]]"
-  - "[[add-check]]"
----
+  - "[[add-check]]"---
 # Incorrect oracle staleness period leads to price feed DoS
 
 - id: 61525

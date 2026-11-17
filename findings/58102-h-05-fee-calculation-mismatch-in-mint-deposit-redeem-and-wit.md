@@ -1,9 +1,11 @@
 ---
 tags:
+  - lang/solidity
+  - web3-sector/bridge
   - has/github
   - severity/high
-  - lang/solidity
-  - sector/bridge
+  - vuln/logic/fee-calculation
+  - novelty/variant
 protocol: "[[Astrolab]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +15,7 @@ genome:
   - "[[fee-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-05] Fee calculation mismatch in `mint`, `deposit`, `redeem` and `withdraw`
 
 - id: 58102

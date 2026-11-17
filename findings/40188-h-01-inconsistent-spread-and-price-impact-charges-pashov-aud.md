@@ -4,7 +4,7 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[GainsNetwork]]"
 auditors:
   - "[[Pashov Audit Group]]"

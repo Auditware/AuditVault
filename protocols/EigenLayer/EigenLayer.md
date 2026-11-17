@@ -2,9 +2,9 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/liquid-staking
-  - sector/oracle
-  - sector/restaking
-  - sector/staking
+  - web3-sector/liquid-staking
+  - web3-sector/oracle
+  - web3-sector/restaking
+  - web3-sector/staking
 ---
 EigenLayer is a DeFi protocol - description pending.

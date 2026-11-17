@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - severity/high
+  - impact/data-corruption/price-manipulation
+  - trigger/price-manipulation
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -13,8 +15,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/202
 genome:
   - "[[oracle-manipulation-resistance]]"
   - "[[data-corruption/price-manipulation]]"
-  - "[[trigger/price-manipulation]]"
----
+  - "[[trigger/price-manipulation]]"---
 # Manipulation of price outside of the `FullRangeHook` liquidity range can result in DoS and financial loss to liquidity providers
 
 - id: 61556

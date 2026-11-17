@@ -2,8 +2,8 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/gaming
-  - sector/lending
-  - sector/options
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/options
 ---
 Blobhouse Smart Contract Audit Report is a DeFi protocol - description pending.

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/farm
+  - web3-sector/dex
+  - web3-sector/farm
   - platform/quantstamp
   - severity/high
   - vuln/arithmetic/underflow

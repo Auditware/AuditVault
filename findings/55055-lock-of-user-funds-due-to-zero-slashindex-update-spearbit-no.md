@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/spearbit
   - has/github
   - severity/high
+  - impact/loss-of-funds/locked-funds
 protocol: "[[InfiniFi Contracts]]"
 auditors:
   - R0bert
 report: "https://github.com/spearbit/portfolio/blob/master/pdfs/InfiniFi-Spearbit-Security-Review-March-2025.pdf"
 genome:
   - "[[dos-resistance]]"
-  - "[[locked-funds]]"
----
+  - "[[locked-funds]]"---
 # Lock of user funds due to zero slashIndex update
 
 - id: 55055

@@ -2,10 +2,10 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/multisig
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/multisig
+  - web3-sector/token
   - trigger/low-liquidity
   - precondition/insider
 title: "Hacken - Rekt"

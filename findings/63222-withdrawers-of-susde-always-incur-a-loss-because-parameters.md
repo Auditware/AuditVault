@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
-  - sector/staking
+  - web3-sector/oracle
+  - web3-sector/staking
   - platform/cyfrin
   - has/github
   - has/poc

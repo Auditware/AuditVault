@@ -1,6 +1,6 @@
 ---
 tags:
-  - sector/privacy
+  - web3-sector/privacy
   - novelty/variant
 title: "Unibot - REKT"
 protocol: "[[Unibot]]"

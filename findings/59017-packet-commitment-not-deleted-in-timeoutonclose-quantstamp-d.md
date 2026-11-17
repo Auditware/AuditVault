@@ -4,7 +4,7 @@ tags:
   - platform/quantstamp
   - has/github
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Datachain IBC]]"
 auditors:
   - "[[Andrei Stefan]]"

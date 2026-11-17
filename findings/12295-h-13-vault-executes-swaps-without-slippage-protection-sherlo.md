@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/vault
   - platform/sherlock
   - has/github
   - severity/high

@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
+  - web3-sector/dex
+  - web3-sector/governance
   - has/audit
   - trigger/low-liquidity
 title: "Team Finance - REKT"

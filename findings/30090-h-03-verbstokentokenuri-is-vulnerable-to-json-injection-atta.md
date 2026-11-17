@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/nft
-  - sector/wallet
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/wallet
 protocol: "[[Collective]]"
 auditors:
   - "[[ZanyBonzy]]"

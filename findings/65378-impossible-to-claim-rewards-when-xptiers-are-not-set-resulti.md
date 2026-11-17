@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/nft
-  - sector/stable
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - has/poc

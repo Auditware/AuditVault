@@ -5,11 +5,11 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/token
 protocol: "[[Rubicon]]"
 auditors:
   - "[[popular00]]"

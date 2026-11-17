@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/staking
+  - web3-sector/gaming
+  - web3-sector/staking
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[Coinflip]]"
 auditors:
   - Pashov Audit Group
@@ -14,8 +16,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-01] Staking.earned calculates the rewards wrongly
 
 - id: 55484

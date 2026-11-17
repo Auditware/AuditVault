@@ -6,7 +6,7 @@ tags:
   - has/poc
   - severity/high
   - novelty/variant
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Mellow]]"
 auditors:
   - "[[0xShoonya]]"

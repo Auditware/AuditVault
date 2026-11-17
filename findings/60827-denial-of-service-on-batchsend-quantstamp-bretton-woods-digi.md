@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/rwa
+  - web3-sector/rwa
   - platform/quantstamp
   - severity/high
   - vuln/reentrancy/single-function

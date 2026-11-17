@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/cdp
+  - web3-sector/cdp
 generated: true
 ---
 # Cdp — Audit Checklist
 
-> Auto-generated from **20** findings in this sector (**5** with bug-class tags), ranked by frequency.
+> Auto-generated from **18** findings in this sector (**5** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

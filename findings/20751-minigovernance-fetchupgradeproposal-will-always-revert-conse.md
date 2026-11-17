@@ -3,8 +3,8 @@ tags:
   - lang/solidity
   - platform/consensys
   - severity/high
-  - sector/governance
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/staking
 protocol: "[[Geodefi]]"
 auditors:
   - "[[Sergii Kravchenko]]"

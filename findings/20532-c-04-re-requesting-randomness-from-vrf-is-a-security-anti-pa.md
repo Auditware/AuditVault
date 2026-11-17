@@ -4,7 +4,7 @@ tags:
   - platform/pashov-audit-group
   - has/github
   - severity/high
-  - sector/gaming
+  - web3-sector/gaming
 protocol: "[[Bearcave]]"
 auditors:
   - "[[Pashov]]"

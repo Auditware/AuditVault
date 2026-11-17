@@ -2,11 +2,11 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/bridge
-  - sector/governance
-  - sector/oracle
-  - sector/staking
-  - sector/zk
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/oracle
+  - web3-sector/staking
+  - web3-sector/zk
   - platform/sherlock
   - has/github
   - has/poc

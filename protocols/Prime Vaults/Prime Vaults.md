@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
 ---
 Prime Vaults is a DeFi protocol - description pending.

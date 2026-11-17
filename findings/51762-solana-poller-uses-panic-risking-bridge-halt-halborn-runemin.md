@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - severity/high
   - platform/halborn
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Off-chain Bridge]]"
 auditors:
   - "[[Halborn]]"

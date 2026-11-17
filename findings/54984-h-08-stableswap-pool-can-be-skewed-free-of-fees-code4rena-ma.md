@@ -2,13 +2,16 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/bridge
-  - sector/dex
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - impact/data-corruption/price-manipulation
+  - impact/loss-of-funds/direct-drain
+  - trigger/price-manipulation
 protocol: "[[MANTRA]]"
 auditors:
   - carrotsmuggler
@@ -17,8 +20,7 @@ genome:
   - "[[oracle-manipulation-resistance]]"
   - "[[data-corruption/price-manipulation]]"
   - "[[direct-drain]]"
-  - "[[trigger/price-manipulation]]"
----
+  - "[[trigger/price-manipulation]]"---
 # [H-08] Stableswap pool can be skewed free of fees
 
 - id: 54984

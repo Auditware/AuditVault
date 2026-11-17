@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/insurance
+  - web3-sector/bridge
+  - web3-sector/insurance
   - platform/quantstamp
   - severity/high
   - novelty/variant

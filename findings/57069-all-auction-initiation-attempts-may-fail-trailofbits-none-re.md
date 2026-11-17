@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/token
   - platform/trailofbits
   - has/github
   - severity/high

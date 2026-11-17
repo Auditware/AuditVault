@@ -5,9 +5,9 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/dex
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/dex
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
 protocol: "[[Lucidly]]"
 auditors:
   - "[[Pashov Audit Group]]"

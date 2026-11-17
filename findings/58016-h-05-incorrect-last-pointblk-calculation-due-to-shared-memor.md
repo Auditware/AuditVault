@@ -1,18 +1,18 @@
 ---
 tags:
-  - sector/governance
-  - sector/nft
+  - lang/solidity
+  - web3-sector/governance
+  - web3-sector/nft
   - has/github
   - severity/high
-  - lang/solidity
+  - fix/add-snapshot
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/KittenSwap-security-review_2025-05-07.md"
 genome:
   - "[[governance-voting-power-snapshot]]"
-  - "[[add-snapshot]]"
----
+  - "[[add-snapshot]]"---
 # [H-05]  Incorrect `last_point.blk` calculation due to shared memory in `_checkpoint()`
 
 - id: 58016

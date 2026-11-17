@@ -2,14 +2,14 @@
 tags:
   - blockchain/arbitrum
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/perpetuals
-  - sector/privacy
-  - sector/stable
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/perpetuals
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/staking
   - vuln/reentrancy/single-function
   - impact/data-corruption/price-manipulation
   - trigger/flash-loan

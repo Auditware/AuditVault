@@ -4,7 +4,7 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/staking-pool
+  - web3-sector/staking-pool
 protocol: "[[Thala]]"
 auditors:
   - "[[Devtooligan]]"

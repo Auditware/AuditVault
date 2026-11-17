@@ -2,7 +2,7 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/dex
-  - sector/perpetuals
+  - web3-sector/dex
+  - web3-sector/perpetuals
 ---
 Vertex is a DeFi protocol - description pending.

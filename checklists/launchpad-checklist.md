@@ -1,7 +1,7 @@
 ---
 tags:
   - checklist
-  - sector/launchpad
+  - web3-sector/launchpad
 generated: true
 ---
 # Launchpad — Audit Checklist

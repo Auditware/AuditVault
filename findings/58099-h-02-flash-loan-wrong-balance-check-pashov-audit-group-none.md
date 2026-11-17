@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - has/github
   - severity/high
+  - trigger/flash-loan
+  - precondition/flash-loan-available
+  - fix/use-reentrancy-guard
 protocol: "[[Astrolab]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +15,7 @@ genome:
   - "[[flashloan-callback-auth]]"
   - "[[flash-loan]]"
   - "[[flash-loan-available]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [H-02] Flash loan wrong balance check
 
 - id: 58099

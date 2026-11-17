@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/options
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/options
+  - web3-sector/stable
   - has/github
   - severity/high
+  - blast-radius/cross-protocol
 protocol: "[[Across Protocol OFT Integration Differential]]"
 auditors:
   - OpenZeppelin
 report: "https://blog.openzeppelin.com/across-protocol-oft-integration-differential-audit"
 genome:
   - "[[dos-resistance]]"
-  - "[[cross-protocol]]"
----
+  - "[[cross-protocol]]"---
 # Failed Messenger Can Render the Canonical Methods Useless
 
 - id: 58416

@@ -4,7 +4,7 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Burve]]"
 auditors:
   - "[[Pashov Audit Group]]"

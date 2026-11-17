@@ -7,7 +7,7 @@ tags:
   - novelty/variant
   - misassumption/admin-is-honest
   - fix/add-access-control
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Aftermath Orderbook]]"
 auditors:
   - "[[Robert Chen]]"

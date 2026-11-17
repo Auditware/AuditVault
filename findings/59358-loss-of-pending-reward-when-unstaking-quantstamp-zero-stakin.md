@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Zero Staking]]"
 auditors:
   - "[[Jennifer Wu]]"

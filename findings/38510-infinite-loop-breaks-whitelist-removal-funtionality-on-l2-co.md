@@ -6,8 +6,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/nft
+  - web3-sector/bridge
+  - web3-sector/nft
 protocol: "[[ArkProject NFT Bridge]]"
 auditors:
   - "[[0xAsen]]"

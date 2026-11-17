@@ -5,8 +5,8 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/lending
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/staking
 protocol: "[[Elixir]]"
 auditors:
   - "[[Pashov Audit Group]]"

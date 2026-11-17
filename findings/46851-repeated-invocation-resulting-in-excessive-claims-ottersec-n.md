@@ -3,8 +3,8 @@ tags:
   - lang/move
   - platform/ottersec
   - severity/high
-  - sector/governance
-  - sector/options
+  - web3-sector/governance
+  - web3-sector/options
 protocol: "[[Mysten Labs Sui]]"
 auditors:
   - "[[Michał Bochnak]]"

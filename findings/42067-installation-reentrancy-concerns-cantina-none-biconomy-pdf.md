@@ -8,7 +8,7 @@ tags:
   - misassumption/external-call-is-safe
   - fix/use-reentrancy-guard
   - trigger/reentrancy-callback
-  - sector/account
+  - web3-sector/account
 protocol: "[[Biconomy]]"
 auditors:
   - "[[Chinmay Farkya]]"

@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/governance
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/lending
 protocol: "[[Maia DAO Ecosystem]]"
 auditors:
   - "[[Voyvoda]]"

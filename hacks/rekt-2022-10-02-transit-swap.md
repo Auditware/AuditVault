@@ -1,10 +1,10 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/bridge
-  - sector/dex
-  - sector/gaming
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/privacy
   - precondition/insider
 title: "Transit Swap - REKT"
 protocol: "[[Transit Swap]]"

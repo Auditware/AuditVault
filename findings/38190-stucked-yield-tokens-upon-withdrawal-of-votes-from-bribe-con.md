@@ -5,11 +5,11 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/nft
-  - sector/staking
-  - sector/staking-pool
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/token
 protocol: "[[Alchemix]]"
 auditors:
   - "[[Saediek]]"

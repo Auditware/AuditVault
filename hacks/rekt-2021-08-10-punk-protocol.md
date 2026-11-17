@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/launchpad
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/launchpad
+  - web3-sector/privacy
+  - web3-sector/stable
   - vuln/access-control/missing-modifier
   - impact/loss-of-funds/direct-drain
   - impact/mev/frontrun

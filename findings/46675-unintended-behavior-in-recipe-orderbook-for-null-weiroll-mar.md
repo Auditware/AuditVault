@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/token
+  - web3-sector/token
   - platform/cantina
   - severity/high
   - impact/loss-of-funds/direct-drain

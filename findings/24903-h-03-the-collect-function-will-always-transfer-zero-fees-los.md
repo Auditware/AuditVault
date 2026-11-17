@@ -9,7 +9,7 @@ tags:
   - novelty/variant
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Timeswap]]"
 auditors:
   - "[[0xcm]]"

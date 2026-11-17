@@ -2,8 +2,8 @@
 tags:
   - severity/high
   - lang/rust
-  - sector/restaking
-  - sector/staking-pool
+  - web3-sector/restaking
+  - web3-sector/staking-pool
   - platform/quantstamp
 protocol: "[[Fragmetric Restaking Program]]"
 auditors:

@@ -3,6 +3,6 @@ tags:
   - blockchain/bsc
   - blockchain/evm
   - lang/solidity
-  - sector/yield-aggregator
+  - web3-sector/yield-aggregator
 ---
 Another week finished and another protocol with it.

@@ -1,8 +1,8 @@
 ---
 tags:
   - vuln/oracle/missing-circuit-breaker
-  - sector/oracle
-  - sector/lending
-  - sector/cdp
+  - web3-sector/oracle
+  - web3-sector/lending
+  - web3-sector/cdp
 ---
 No price deviation check; extreme move accepted as valid.

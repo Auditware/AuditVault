@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - novelty/known-pattern
 protocol: "[[THORWallet]]"
 auditors:
   - Striking\_Lions
 report: "https://code4rena.com/reports/2025-02-thorwallet"
 genome:
   - "[[integer-bounds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # [H-1] MergeTgt has no handling if TGT*TO*EXCHANGE is exceeded during the exchange period
 
 - id: 55396

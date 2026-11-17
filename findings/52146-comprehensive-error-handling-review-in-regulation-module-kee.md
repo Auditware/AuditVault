@@ -4,7 +4,7 @@ tags:
   - has/github
   - severity/high
   - novelty/variant
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[AppChain Modules]]"
 auditors:
   - "[[Halborn]]"

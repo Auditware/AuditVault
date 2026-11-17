@@ -3,10 +3,10 @@ tags:
   - blockchain/arbitrum
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/multisig
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/multisig
   - trigger/flash-loan
   - precondition/flash-loan-available
   - precondition/insider

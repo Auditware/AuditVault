@@ -5,8 +5,8 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/staking
+  - web3-sector/staking-pool
 protocol: "[[Lucidly]]"
 auditors:
   - "[[Pashov Audit Group]]"

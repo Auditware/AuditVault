@@ -6,9 +6,9 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
-  - sector/nft
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/nft
+  - web3-sector/staking
   - lang/anchor
 protocol: "[[Doryoku]]"
 auditors:

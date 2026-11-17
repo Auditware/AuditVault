@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/stable
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/stable
+  - web3-sector/staking
   - platform/sherlock
   - has/github
   - has/poc

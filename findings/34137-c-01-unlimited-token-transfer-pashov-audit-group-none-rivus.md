@@ -4,8 +4,8 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/dex
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/lending
 protocol: "[[Rivus]]"
 auditors:
   - "[[Pashov Audit Group]]"

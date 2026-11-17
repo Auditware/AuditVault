@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/rust
-  - sector/zk
+  - web3-sector/zk
   - platform/cantina
   - has/poc
   - severity/high
+  - novelty/known-pattern
 protocol: "[[OpenVM]]"
 auditors:
   - Leo Alt
 report: "https://cdn.cantina.xyz/reports/cantina_competition_openvm_january2025.pdf"
 genome:
   - "[[integer-bounds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Missing range checks in AUIPC 
 
 - id: 53421

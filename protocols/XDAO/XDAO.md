@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/options
-  - sector/perpetuals
+  - web3-sector/governance
+  - web3-sector/options
+  - web3-sector/perpetuals
 ---
 XDAO is a DeFi protocol - description pending.

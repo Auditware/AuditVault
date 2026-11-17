@@ -2,11 +2,11 @@
 tags:
   - blockchain/arbitrum
   - has/audit
-  - sector/bridge
-  - sector/infra
-  - sector/lending
-  - sector/multisig
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/infra
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/staking
 title: "ZKasino - Rekt"
 protocol: "[[Zkasino]]"
 date: 2024-04-20

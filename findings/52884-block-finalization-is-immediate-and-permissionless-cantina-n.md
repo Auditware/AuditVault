@@ -2,7 +2,7 @@
 tags:
   - severity/high
   - lang/rust
-  - sector/staking
+  - web3-sector/staking
   - platform/cantina
 protocol: "[[Layer N]]"
 auditors:

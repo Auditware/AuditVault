@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/move
-  - sector/infra
-  - sector/nft
+  - web3-sector/infra
+  - web3-sector/nft
   - platform/code4rena
   - has/github
   - has/poc

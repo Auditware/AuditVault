@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/rwa
+  - web3-sector/rwa
 ---
 Bretton Woods is a DeFi protocol - description pending.

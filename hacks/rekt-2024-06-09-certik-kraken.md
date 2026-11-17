@@ -1,6 +1,6 @@
 ---
 tags:
-  - sector/privacy
+  - web3-sector/privacy
 title: "Certik/Kraken - Rekt"
 protocol: "[[Certik Kraken]]"
 date: 2024-06-09

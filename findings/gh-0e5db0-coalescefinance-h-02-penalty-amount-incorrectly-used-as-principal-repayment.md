@@ -2,7 +2,7 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/lending
+  - web3-sector/lending
   - platform/pashov
   - severity/high
   - vuln/arithmetic/precision-loss

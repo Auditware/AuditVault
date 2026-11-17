@@ -2,6 +2,6 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/payment
+  - web3-sector/payment
 ---
 Standard crisis protocol - investigate, promise, rebuild.

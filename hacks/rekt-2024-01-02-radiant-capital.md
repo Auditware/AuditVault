@@ -2,9 +2,9 @@
 tags:
   - blockchain/arbitrum
   - blockchain/bsc
-  - sector/governance
-  - sector/lending
-  - sector/stable
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/stable
   - trigger/flash-loan
   - precondition/flash-loan-available
 title: "Radiant Capital - REKT"

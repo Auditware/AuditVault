@@ -3,11 +3,11 @@ tags:
   - blockchain/bitcoin
   - blockchain/bsc
   - blockchain/polygon
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/stable
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/vault
   - impact/loss-of-funds/direct-drain
   - trigger/flash-loan
   - precondition/flash-loan-available

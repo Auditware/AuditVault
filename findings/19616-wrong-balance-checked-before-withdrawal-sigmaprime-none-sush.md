@@ -4,7 +4,7 @@ tags:
   - platform/sigmaprime
   - has/github
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Sushi]]"
 auditors:
   - "[[Sigma Prime]]"

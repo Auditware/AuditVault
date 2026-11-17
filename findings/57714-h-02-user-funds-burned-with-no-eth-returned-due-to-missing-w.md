@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Mystic Finance]]"
 auditors:
   - Kann

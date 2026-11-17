@@ -4,7 +4,7 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[NuCypher]]"
 auditors:
   - "[[MixBytes]]"

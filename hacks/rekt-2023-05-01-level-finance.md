@@ -1,8 +1,8 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/dex
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/lending
   - has/audit
   - trigger/flash-loan
   - trigger/time-based/epoch-boundary

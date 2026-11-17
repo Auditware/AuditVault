@@ -2,6 +2,6 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/stable
+  - web3-sector/stable
 ---
 There is an infinite mint glitch.

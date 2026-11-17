@@ -10,7 +10,7 @@ tags:
   - novelty/variant
   - misassumption/proxy-is-initialized
   - fix/add-check
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Cantina Oro February2025]]"
 auditors:
   - "[[FrankCastle]]"

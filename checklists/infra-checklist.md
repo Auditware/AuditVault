@@ -1,19 +1,19 @@
 ---
 tags:
   - checklist
-  - sector/infra
+  - web3-sector/infra
 generated: true
 ---
 # Infra — Audit Checklist
 
-> Auto-generated from **106** findings in this sector (**14** with bug-class tags), ranked by frequency.
+> Auto-generated from **100** findings in this sector (**16** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
 What actually goes wrong in this sector, most common first. Tick each as you rule it out.
 
+- [ ] **Arithmetic: Underflow** — 3 findings `vuln/arithmetic/underflow`
 - [ ] **Pda: Reinitialization** — 2 findings `vuln/pda/reinitialization`
-- [ ] **Arithmetic: Underflow** — 2 findings `vuln/arithmetic/underflow`
 - [ ] **Logic: Fee Calculation** — 2 findings `vuln/logic/fee-calculation`
 - [ ] **Bridge: Replay** — 2 findings `vuln/bridge/replay`
 - [ ] **Oracle: Spot Price** — 2 findings `vuln/oracle/spot-price`
@@ -21,6 +21,7 @@ What actually goes wrong in this sector, most common first. Tick each as you rul
 - [ ] **Access Control: Proxy Storage Collision** — 1 finding `vuln/access-control/proxy-storage-collision`
 - [ ] **Reentrancy: Single Function** — 1 finding `vuln/reentrancy/single-function`
 - [ ] **Logic: Reward Calculation** — 1 finding `vuln/logic/reward-calculation`
+- [ ] **Dos: Unbounded Loop** — 1 finding `vuln/dos/unbounded-loop`
 
 ## 🎯 Common triggers
 The conditions attackers use to set these bugs off — check each path is constrained.

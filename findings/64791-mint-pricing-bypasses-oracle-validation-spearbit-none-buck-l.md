@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
-  - sector/oracle
+  - web3-sector/options
+  - web3-sector/oracle
   - platform/spearbit
   - has/github
   - severity/high

@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/cdp
-  - sector/lending
-  - sector/token
+  - web3-sector/cdp
+  - web3-sector/lending
+  - web3-sector/token
   - platform/recon-audits
   - has/github
   - severity/high
+  - precondition/specific-token-type
 protocol: "[[Bold Report]]"
 auditors:
   - Alex The Entreprenerd
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Recon Audits/2025-03-23-bold-report.md"
 genome:
   - "[[token-decimal-normalization]]"
-  - "[[specific-token-type]]"
----
+  - "[[specific-token-type]]"---
 # [H-01] Bold Batch Shares Math can be rebased by combining rounding errors and `setBatchManagerAnnualInterestRate` to borrow for free
 
 - id: 53947

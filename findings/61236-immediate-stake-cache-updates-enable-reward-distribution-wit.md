@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/staking
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[Suzaku Core]]"
 auditors:
   - 0kage
@@ -15,8 +17,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Immediate stake cache updates enable reward distribution without P-Chain confirmation
 
 - id: 61236

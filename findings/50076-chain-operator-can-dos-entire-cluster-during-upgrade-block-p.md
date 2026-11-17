@@ -1,11 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
   - platform/spearbit
   - has/github
   - has/poc
   - severity/high
+  - vuln/dos/unbounded-loop
+  - impact/loss-of-funds/locked-funds
+  - novelty/known-pattern
 protocol: "[[Optimism Interop]]"
 auditors:
   - Zach Obront
@@ -14,8 +17,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[unbounded-loop]]"
   - "[[locked-funds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Chain operator can DOS entire cluster during upgrade block, potentially stealing ETH from other
 
 - id: 50076

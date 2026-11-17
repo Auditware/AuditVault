@@ -7,7 +7,7 @@ tags:
   - vuln/dos/frozen-funds
   - impact/loss-of-funds/locked-funds
   - novelty/variant
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Btr]]"
 auditors:
   - "[[FrankCastle]]"

@@ -2,8 +2,8 @@
 tags:
   - lang/rust
   - sdk/stylus
-  - sector/multisig
-  - sector/staking
+  - web3-sector/multisig
+  - web3-sector/staking
   - platform/trailofbits
   - severity/high
   - vuln/reentrancy/single-function

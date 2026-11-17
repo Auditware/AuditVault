@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
-  - sector/perpetuals
+  - web3-sector/oracle
+  - web3-sector/perpetuals
   - platform/quantstamp
   - severity/high
   - vuln/oracle/stale-price

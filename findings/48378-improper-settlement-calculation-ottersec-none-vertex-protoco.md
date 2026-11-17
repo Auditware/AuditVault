@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/perpetuals
+  - web3-sector/dex
+  - web3-sector/perpetuals
   - platform/ottersec
   - severity/high
   - impact/loss-of-funds/direct-drain

@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/rust
-  - sector/zk
+  - web3-sector/zk
 ---
 Risc Zero is a DeFi protocol - description pending.

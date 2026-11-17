@@ -2,6 +2,6 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
 ---
 Radiant June is a DeFi protocol - description pending.

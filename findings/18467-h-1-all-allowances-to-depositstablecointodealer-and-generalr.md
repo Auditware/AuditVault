@@ -4,9 +4,9 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/dex
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/stable
+  - web3-sector/token
 protocol: "[[JOJO Exchange]]"
 auditors:
   - "[[dingo]]"

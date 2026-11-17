@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/bridge
-  - sector/dex
-  - sector/privacy
-  - sector/stable
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/vault
 title: "Gym Network - REKT"
 protocol: "[[Gym Network]]"
 date: 2022-06-08

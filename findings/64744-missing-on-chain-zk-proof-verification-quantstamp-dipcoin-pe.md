@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
-  - sector/perpetuals
-  - sector/zk
+  - web3-sector/options
+  - web3-sector/perpetuals
+  - web3-sector/zk
   - platform/quantstamp
   - severity/high
   - novelty/variant

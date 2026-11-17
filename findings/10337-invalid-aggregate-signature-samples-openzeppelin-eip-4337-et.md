@@ -4,7 +4,7 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/account
+  - web3-sector/account
 protocol: "[[EIP-4337]]"
 auditors:
   - "[[OpenZeppelin]]"

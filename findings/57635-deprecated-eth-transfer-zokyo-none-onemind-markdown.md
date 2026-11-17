@@ -4,7 +4,7 @@ tags:
   - platform/zokyo
   - has/github
   - severity/high
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Onemind]]"
 auditors:
   - "[[Zokyo]]"

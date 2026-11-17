@@ -1,20 +1,20 @@
 ---
 tags:
-  - sector/staking
+  - lang/rust
+  - lang/solidity
+  - web3-sector/staking
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
-  - lang/solidity
-  - lang/rust
+  - novelty/variant
 protocol: "[[SEDA Protocol]]"
 auditors:
   - dod4ufn
 report: "https://github.com/sherlock-audit/2024-12-seda-protocol-judging"
 genome:
   - "[[bridge-message-validation]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # H-19: Missing Minimum Length Check in verifyBatchSignatures Allows Chain Halting Attack
 
 - id: 55246

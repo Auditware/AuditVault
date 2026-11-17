@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/perpetuals
+  - web3-sector/lending
+  - web3-sector/perpetuals
   - platform/codehawks
   - has/github
   - has/poc

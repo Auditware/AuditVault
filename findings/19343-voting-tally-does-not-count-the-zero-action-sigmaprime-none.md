@@ -4,8 +4,8 @@ tags:
   - platform/sigmaprime
   - has/github
   - severity/high
-  - sector/governance
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/token
 protocol: "[[DXdao]]"
 auditors:
   - "[[Sigma Prime]]"

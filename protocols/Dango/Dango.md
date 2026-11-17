@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/rust
-  - sector/dex
-  - sector/oracle
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/oracle
+  - web3-sector/stable
 ---
 Dango is a DeFi protocol - description pending.

@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/streaming
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/streaming
+  - web3-sector/token
   - platform/cantina
   - severity/high
   - impact/loss-of-funds/direct-drain

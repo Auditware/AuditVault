@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/lending
 protocol: "[[Beanstalk]]"
 auditors:
   - "[[Hans]]"

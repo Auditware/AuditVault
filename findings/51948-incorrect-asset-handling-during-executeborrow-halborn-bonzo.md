@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - severity/high
   - platform/halborn
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Bonzo Finance]]"
 auditors:
   - "[[Halborn]]"

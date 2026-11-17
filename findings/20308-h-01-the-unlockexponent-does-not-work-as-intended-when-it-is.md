@@ -8,7 +8,7 @@ tags:
   - vuln/dos/frozen-funds
   - impact/loss-of-funds/locked-funds
   - novelty/variant
-  - sector/streaming
+  - web3-sector/streaming
 protocol: "[[Zerem]]"
 auditors:
   - "[[Pashov]]"

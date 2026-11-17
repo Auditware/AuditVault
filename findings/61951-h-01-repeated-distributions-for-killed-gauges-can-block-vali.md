@@ -4,10 +4,10 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/dex
-  - sector/farm
-  - sector/governance
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/governance
+  - web3-sector/lending
 protocol: "[[KittenSwap]]"
 auditors:
   - "[[Pashov Audit Group]]"

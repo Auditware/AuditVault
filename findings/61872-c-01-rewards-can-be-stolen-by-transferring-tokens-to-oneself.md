@@ -6,7 +6,7 @@ tags:
   - has/poc
   - severity/high
   - impact/loss-of-funds/reward-theft
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Resolv]]"
 auditors:
   - "[[Pashov Audit Group]]"

@@ -9,7 +9,7 @@ tags:
   - novelty/known-pattern
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Perena]]"
 auditors:
   - "[[FrankCastle]]"

@@ -4,7 +4,7 @@ tags:
   - platform/pashov-audit-group
   - has/github
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[Vetenet]]"
 auditors:
   - "[[Pashov]]"

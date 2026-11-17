@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/avalanche
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
   - trigger/flash-loan
   - precondition/flash-loan-available

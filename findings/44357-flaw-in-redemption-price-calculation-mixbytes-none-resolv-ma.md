@@ -4,7 +4,7 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/stable
+  - web3-sector/stable
 
 protocol: "[[Resolv]]"
 auditors:

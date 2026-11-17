@@ -5,10 +5,10 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/dex
-  - sector/stable
-  - sector/staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/token
 protocol: "[[DYAD]]"
 auditors:
   - "[[Pashov Audit Group]]"

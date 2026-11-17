@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/insurance
-  - sector/token
+  - web3-sector/insurance
+  - web3-sector/token
   - platform/mixbytes
   - has/github
   - severity/high

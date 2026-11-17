@@ -1,14 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/farm
-  - sector/governance
-  - sector/lending
-  - sector/options
-  - sector/staking
-  - sector/staking-pool
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/options
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
 ---
 Brahma Fi is a DeFi protocol - description pending.

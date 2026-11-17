@@ -3,9 +3,9 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/nft
-  - sector/nft-lending
-  - sector/staking
+  - web3-sector/nft
+  - web3-sector/nft-lending
+  - web3-sector/staking
 protocol: "[[NiftyApes]]"
 auditors:
   - "[[Michael Boyle]]"

@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/governance
-  - sector/nft
+  - web3-sector/governance
+  - web3-sector/nft
 title: "Treasure DAO - REKT"
 protocol: "[[Treasure Dao]]"
 date: 2022-03-03

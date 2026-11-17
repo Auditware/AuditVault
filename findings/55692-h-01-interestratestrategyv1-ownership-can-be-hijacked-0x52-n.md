@@ -1,11 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - lang/vyper
+  - web3-sector/lending
   - platform/0x52
   - has/github
   - severity/high
-  - lang/vyper
+  - vuln/access-control/uninitialized-owner
+  - vuln/dependency/upgradeable-contract
+  - impact/loss-of-funds/direct-drain
+  - novelty/variant
 protocol: "[[Hyperstable]]"
 auditors:
   - "[[@IAm0x52]]"
@@ -17,8 +21,7 @@ genome:
   - "[[direct-drain]]"
   - "[[variant]]"
   - "[[external-call-is-safe]]"
-  - "[[proxy-is-initialized]]"
----
+  - "[[proxy-is-initialized]]"---
 # [H-01] `InterestRateStrategyV1` ownership can be hijacked
 
 - id: 55692

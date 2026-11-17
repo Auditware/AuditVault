@@ -5,7 +5,7 @@ tags:
   - has/github
   - severity/high
   - novelty/variant
-  - sector/token
+  - web3-sector/token
 protocol: "[[Hubii]]"
 auditors:
   - "[[OpenZeppelin]]"

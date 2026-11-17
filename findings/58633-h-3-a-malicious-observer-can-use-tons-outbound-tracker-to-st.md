@@ -1,19 +1,19 @@
 ---
 tags:
-  - sector/bridge
-  - sector/governance
+  - web3-sector/bridge
+  - web3-sector/governance
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[ZetaChain Cross Chain]]"
 auditors:
   - g
 report: "https://github.com/sherlock-audit/2025-04-zetachain-cross-chain-judging"
 genome:
   - "[[bridge-sender-auth]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # H-3: A Malicious Observer can use TON's Outbound Tracker to steal funds from Zetachain
 
 - id: 58633

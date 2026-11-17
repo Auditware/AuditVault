@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/infra
+  - web3-sector/infra
   - platform/trailofbits
   - has/github
   - has/poc

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/privacy
-  - sector/zk
+  - web3-sector/privacy
+  - web3-sector/zk
   - platform/trailofbits
   - has/github
   - has/poc

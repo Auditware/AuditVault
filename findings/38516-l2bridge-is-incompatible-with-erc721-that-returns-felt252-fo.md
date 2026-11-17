@@ -4,9 +4,9 @@ tags:
   - lang/cairo
   - lang/rust
   - lang/solidity
-  - sector/bridge
-  - sector/nft
-  - sector/options
+  - web3-sector/bridge
+  - web3-sector/nft
+  - web3-sector/options
   - platform/codehawks
   - has/github
   - has/poc

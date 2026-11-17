@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/circom
-  - sector/bridge
-  - sector/zk
+  - web3-sector/bridge
+  - web3-sector/zk
   - platform/trailofbits
   - has/github
   - has/poc

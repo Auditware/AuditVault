@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/oracle
+  - web3-sector/gaming
+  - web3-sector/oracle
   - platform/pashov
   - has/github
   - severity/high

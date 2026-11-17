@@ -1,6 +1,7 @@
 ---
 tags:
   - severity/high
+  - novelty/variant
 protocol: "[[Privacy Pools Seed Phrase Generationaudit Report]]"
 auditors:
   - "[[Auditware]]"
@@ -15,8 +16,7 @@ genome:
   - "[[misassumption/offchain-is-trusted]]"
   - "[[precondition/user-interaction]]"
   - "[[blast-radius/single-user]]"
-  - sector/gaming
----
+  - web3-sector/gaming---
 # **AW-H-01: Authentication Bypass via Insecure EIP-712 Implementation in Seed Derivation** {#aw-h-01:-authentication-bypass-via-insecure-eip-712-implementation-in-seed-derivation}
 
 **Severity:** *High*									**Status:** *Acknowledged*

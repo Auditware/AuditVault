@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
+  - web3-sector/governance
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +15,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-07] Inconsistent rounding of lock time causes voting power errors
 
 - id: 58018

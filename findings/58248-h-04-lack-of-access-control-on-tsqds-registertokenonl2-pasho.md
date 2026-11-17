@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
   - has/github
   - severity/high
+  - impact/mev/frontrun
 protocol: "[[Subsquid]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/Subsquid-security-review.md"
 genome:
   - "[[access-roles]]"
-  - "[[mev/frontrun]]"
----
+  - "[[mev/frontrun]]"---
 # [H-04] Lack of access control on tSQD's `registerTokenOnL2`
 
 - id: 58248

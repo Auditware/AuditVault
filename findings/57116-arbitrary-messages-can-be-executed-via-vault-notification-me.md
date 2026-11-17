@@ -4,8 +4,8 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/dex
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/vault
 protocol: "[[Swap Coffee]]"
 auditors:
   - "[[Bo Henderson]]"

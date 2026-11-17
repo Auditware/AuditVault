@@ -4,7 +4,7 @@ tags:
   - platform/auditone
   - has/github
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Aurorafastbridge]]"
 auditors:
   - "[[AuditOne]]"

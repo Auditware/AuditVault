@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/account
-  - sector/bridge
-  - sector/token
+  - web3-sector/account
+  - web3-sector/bridge
+  - web3-sector/token
 protocol: "[[Etherspot]]"
 auditors:
   - "[[Shieldify Security]]"

@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/solana
-  - sector/bridge
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
   - has/audit
   - trigger/flash-loan
   - precondition/flash-loan-available

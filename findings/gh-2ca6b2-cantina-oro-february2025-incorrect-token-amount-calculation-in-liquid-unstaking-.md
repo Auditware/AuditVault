@@ -8,7 +8,7 @@ tags:
   - impact/loss-of-funds/direct-drain
   - novelty/variant
   - fix/add-check
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Cantina Oro February2025]]"
 auditors:
   - "[[FrankCastle]]"

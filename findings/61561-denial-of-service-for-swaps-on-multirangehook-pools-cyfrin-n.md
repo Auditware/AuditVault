@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
+  - vuln/dos/unbounded-loop
+  - novelty/known-pattern
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -12,8 +14,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/202
 genome:
   - "[[dos-resistance]]"
   - "[[unbounded-loop]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Denial of service for swaps on `MultiRangeHook` pools
 
 - id: 61561

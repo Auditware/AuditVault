@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/vault
   - platform/consensys
   - severity/high
-  - sector/vault
+  - vuln/logic/fee-calculation
+  - fix/use-reentrancy-guard
+  - novelty/variant
 protocol: "[[USDi]]"
 auditors:
   - George Kobakhidze
@@ -14,8 +17,7 @@ genome:
   - "[[use-reentrancy-guard]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Incorrect Fee Handling During Withdrawals ✓ Fixed
 
 - id: 55383

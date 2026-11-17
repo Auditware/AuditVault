@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/dex
-  - sector/lending
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/token
 title: "SushiSwap - REKT"
 protocol: "[[Sushiswap]]"
 date: 2023-04-09

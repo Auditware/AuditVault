@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/move
-  - sector/stable
+  - web3-sector/stable
   - platform/ottersec
   - severity/high
   - impact/loss-of-funds/direct-drain

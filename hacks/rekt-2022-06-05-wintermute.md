@@ -2,9 +2,9 @@
 tags:
   - blockchain/ethereum
   - blockchain/optimism
-  - sector/governance
-  - sector/multisig
-  - sector/privacy
+  - web3-sector/governance
+  - web3-sector/multisig
+  - web3-sector/privacy
   - precondition/insider
 title: "Wintermute - REKT"
 protocol: "[[Wintermute]]"

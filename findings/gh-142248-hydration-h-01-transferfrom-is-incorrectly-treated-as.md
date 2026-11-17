@@ -3,7 +3,7 @@ tags:
   - lang/rust
   - platform/pashov
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[Hydration]]"
 auditors:
   - "[[FrankCastle]]"

@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/token
 protocol: "[[Polynomial Protocol]]"
 auditors:
   - "[[rbserver]]"

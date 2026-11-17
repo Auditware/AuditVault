@@ -5,7 +5,7 @@ tags:
   - platform/pashov
   - severity/high
   - novelty/variant
-  - sector/dex
+  - web3-sector/dex
 auditors:
   - "[[FrankCastle]]"
 genome:

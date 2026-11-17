@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/nft
-  - sector/options
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/options
   - platform/codehawks
   - has/github
   - severity/high

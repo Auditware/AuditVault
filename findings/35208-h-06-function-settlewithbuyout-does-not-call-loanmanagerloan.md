@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/token
-  - sector/vault
+  - web3-sector/lending
+  - web3-sector/token
+  - web3-sector/vault
 protocol: "[[Gondi]]"
 auditors:
   - "[[minhquanym]]"

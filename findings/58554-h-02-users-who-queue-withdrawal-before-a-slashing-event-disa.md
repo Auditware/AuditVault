@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/code4rena
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - fix/use-reentrancy-guard
 protocol: "[[Kinetiq]]"
 auditors:
   - zhaojohnson
@@ -12,8 +14,7 @@ report: "https://code4rena.com/reports/2025-04-kinetiq"
 genome:
   - "[[cross-contract-state-consistency]]"
   - "[[direct-drain]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [H-02] Users Who Queue Withdrawal Before A Slashing Event Disadvantage Users Who Queue After And Eventually Leads To Loss Of Funds For Them
 
 - id: 58554

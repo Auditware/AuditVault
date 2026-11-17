@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/governance
-  - sector/nft
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/farm
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/cantina
   - has/poc
   - severity/high

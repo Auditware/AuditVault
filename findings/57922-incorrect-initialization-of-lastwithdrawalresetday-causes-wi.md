@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - has/github
   - severity/high
+  - precondition/uninitialized
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
 report: "https://github.com/mixbytes/audits_public/blob/master/DIA/Lumina%20Staking/README.md#5-incorrect-initialization-of-lastwithdrawalresetday-causes-withdrawal-limits-to-malfunction"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[precondition/uninitialized]]"
----
+  - "[[precondition/uninitialized]]"---
 # Incorrect Initialization of `lastWithdrawalResetDay` Causes Withdrawal Limits to Malfunction
 
 - id: 57922

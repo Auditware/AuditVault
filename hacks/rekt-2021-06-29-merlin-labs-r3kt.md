@@ -1,6 +1,6 @@
 ---
 tags:
-  - sector/privacy
+  - web3-sector/privacy
 title: "Merlin Labs - R3KT"
 protocol: "[[Merlin Labs R3kt]]"
 date: 2021-06-29

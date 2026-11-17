@@ -1,9 +1,11 @@
 ---
 tags:
-  - sector/staking
+  - lang/solidity
+  - web3-sector/staking
   - has/github
   - severity/high
-  - lang/solidity
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
@@ -12,8 +14,7 @@ genome:
   - "[[reward-accounting]]"
   - "[[reward-calculation]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # Rewards are lost if user requests unstake in less than one day
 
 - id: 57918

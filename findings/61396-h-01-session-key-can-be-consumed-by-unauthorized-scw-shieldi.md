@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/account
-  - sector/staking
+  - web3-sector/account
+  - web3-sector/staking
 protocol: "[[Etherspot]]"
 auditors:
   - "[[Shieldify Security]]"

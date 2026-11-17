@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
-  - sector/dex
-  - sector/governance
-  - sector/stable
-  - sector/staking
-  - sector/token
+  - web3-sector/account
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/token
 ---
 Sequence is a DeFi protocol - description pending.

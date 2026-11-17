@@ -4,8 +4,8 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
 protocol: "[[Cedro Finance]]"
 auditors:
   - "[[Zokyo]]"

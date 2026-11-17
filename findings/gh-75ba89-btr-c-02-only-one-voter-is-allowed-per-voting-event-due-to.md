@@ -2,7 +2,7 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/governance
+  - web3-sector/governance
   - platform/pashov
   - severity/high
   - vuln/pda/missing-seeds-check

@@ -5,10 +5,10 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/governance
-  - sector/lending
-  - sector/token
-  - sector/vault
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/token
+  - web3-sector/vault
 protocol: "[[Yield Basis]]"
 auditors:
   - "[[MixBytes]]"

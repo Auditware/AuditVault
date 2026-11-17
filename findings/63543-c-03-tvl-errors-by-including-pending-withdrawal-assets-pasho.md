@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
-  - sector/staking
+  - web3-sector/options
+  - web3-sector/staking
   - platform/pashov
   - has/github
   - severity/high

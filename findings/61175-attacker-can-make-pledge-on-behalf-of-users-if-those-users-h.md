@@ -2,7 +2,7 @@
 tags:
   - severity/high
   - has/github
-  - sector/stable
+  - web3-sector/stable
   - platform/cyfrin
   - lang/solidity
 protocol: "[[Remora Pledge]]"

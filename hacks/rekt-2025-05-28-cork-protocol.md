@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/dex
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/stable
+  - web3-sector/token
 title: "Cork Protocol - Rekt"
 protocol: "[[Cork Protocol]]"
 date: 2025-05-28

@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
+  - web3-sector/gaming
 ---
 Lotaheros is a DeFi protocol - description pending.

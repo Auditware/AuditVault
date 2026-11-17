@@ -4,11 +4,11 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/lending
-  - sector/stable
-  - sector/staking
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
 protocol: "[[Yearn Finance]]"
 auditors:
   - "[[MixBytes]]"

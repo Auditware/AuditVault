@@ -2,12 +2,12 @@
 tags:
   - blockchain/bitcoin
   - blockchain/solana
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/perpetuals
+  - web3-sector/stable
   - vuln/oracle/spot-price
   - impact/loss-of-funds/direct-drain
   - novelty/known-pattern

@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/cdp
-  - sector/dex
-  - sector/governance
-  - sector/lending
+  - web3-sector/cdp
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
   - platform/recon-audits
   - has/github
   - severity/high

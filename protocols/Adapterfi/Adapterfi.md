@@ -2,7 +2,7 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/dex
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/token
 ---
 Adapterfi is a DeFi protocol - description pending.

@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/governance
-  - sector/staking
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/staking
+  - web3-sector/token
 protocol: "[[Virtuals]]"
 auditors:
   - "[[natachi]]"

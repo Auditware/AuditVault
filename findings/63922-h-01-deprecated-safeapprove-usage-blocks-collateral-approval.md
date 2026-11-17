@@ -4,8 +4,8 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/lending
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/token
 protocol: "[[Hyperlend]]"
 auditors:
   - "[[Pashov Audit Group]]"

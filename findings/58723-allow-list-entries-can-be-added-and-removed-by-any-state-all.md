@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/rust
-  - sector/staking-pool
+  - web3-sector/staking-pool
   - platform/quantstamp
   - severity/high
+  - novelty/variant
 protocol: "[[Liquid Collective   Solana]]"
 auditors:
   - István Böhm
 report: "https://certificate.quantstamp.com/full/liquid-collective-solana/cbb18ece-3a03-4897-a040-f197fc641e4d/index.html"
 genome:
   - "[[access-roles]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # Allow List Entries Can Be Added and Removed by Any State Allower
 
 - id: 58723

@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
@@ -13,8 +15,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # Incorrect Calculation of Accrued Rewards in `updateRewardRatePerDay`
 
 - id: 57924

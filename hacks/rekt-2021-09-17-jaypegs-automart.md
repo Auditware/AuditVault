@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/dex
-  - sector/privacy
+  - web3-sector/dex
+  - web3-sector/privacy
 title: "JayPegs Automart - REKT"
 protocol: "[[Jaypegs Automart]]"
 date: 2021-09-17

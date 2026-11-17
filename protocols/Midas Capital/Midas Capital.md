@@ -2,6 +2,6 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
 ---
 The jFIATs belonging to the protocol were not collateralized.

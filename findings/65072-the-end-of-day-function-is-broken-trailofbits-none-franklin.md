@@ -4,7 +4,7 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Franklin Templeton Aptos Money Market Fund]]"
 auditors:
   - "[[Jaime Iglesias]]"

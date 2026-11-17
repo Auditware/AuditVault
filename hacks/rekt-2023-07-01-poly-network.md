@@ -1,9 +1,9 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/bridge
-  - sector/multisig
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/multisig
+  - web3-sector/staking
   - vuln/access-control/missing-signer
   - trigger/low-liquidity
   - novelty/variant

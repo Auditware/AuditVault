@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/farm
-  - sector/lending
-  - sector/nft
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/lending
+  - web3-sector/nft
 protocol: "[[BMX]]"
 auditors:
   - "[[0x73696d616f]]"

@@ -1,19 +1,19 @@
 ---
 tags:
-  - sector/lending
+  - lang/anchor
+  - lang/rust
+  - web3-sector/lending
   - platform/cyfrin
   - has/github
   - severity/high
-  - lang/rust
-  - lang/anchor
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Securitize Solana Vault]]"
 auditors:
   - Alex Roan
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/2025-05-23-cyfrin-securitize-solana-vault-v2.0.md"
 genome:
   - "[[integer-bounds]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # Precision Manipulation Due to Missing Mint Check
 
 - id: 64260

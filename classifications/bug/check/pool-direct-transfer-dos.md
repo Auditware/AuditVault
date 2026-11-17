@@ -1,7 +1,7 @@
 ---
 tags:
   - check/pool-direct-transfer-dos
-  - sector/dex
-  - sector/amm
+  - web3-sector/dex
+  - web3-sector/amm
 ---
 Is the protocol resilient to direct token transfers into pool accounts that bypass AMM accounting?

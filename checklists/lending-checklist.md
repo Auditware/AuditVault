@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/lending
+  - web3-sector/lending
 generated: true
 ---
 # Lending — Audit Checklist
 
-> Auto-generated from **593** findings in this sector (**136** with bug-class tags), ranked by frequency.
+> Auto-generated from **548** findings in this sector (**138** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
@@ -14,10 +14,10 @@ What actually goes wrong in this sector, most common first. Tick each as you rul
 
 - [ ] **Logic: Liquidation Logic** — 28 findings `vuln/logic/liquidation-logic`
 - [ ] **Logic: Fee Calculation** — 20 findings `vuln/logic/fee-calculation`
+- [ ] **Dos: Frozen Funds** — 15 findings `vuln/dos/frozen-funds`
 - [ ] **Arithmetic: Underflow** — 14 findings `vuln/arithmetic/underflow`
-- [ ] **Dos: Frozen Funds** — 14 findings `vuln/dos/frozen-funds`
+- [ ] **Logic: Reward Calculation** — 13 findings `vuln/logic/reward-calculation`
 - [ ] **Reentrancy: Single Function** — 13 findings `vuln/reentrancy/single-function`
-- [ ] **Logic: Reward Calculation** — 12 findings `vuln/logic/reward-calculation`
 - [ ] **Oracle: Spot Price** — 12 findings `vuln/oracle/spot-price`
 - [ ] **Arithmetic: Decimal Mismatch** — 7 findings `vuln/arithmetic/decimal-mismatch`
 - [ ] **Oracle: Stale Price** — 5 findings `vuln/oracle/stale-price`
@@ -32,7 +32,7 @@ What actually goes wrong in this sector, most common first. Tick each as you rul
 The conditions attackers use to set these bugs off — check each path is constrained.
 
 - [ ] `trigger/flash-loan` — 29
-- [ ] `trigger/price-manipulation` — 25
+- [ ] `trigger/price-manipulation` — 26
 - [ ] `trigger/reentrancy-callback` — 13
 - [ ] `trigger/sandwich-attack` — 11
 - [ ] `trigger/first-deposit` — 9
@@ -44,16 +44,16 @@ The conditions attackers use to set these bugs off — check each path is constr
 ## 💥 Typical impact
 Where it hurts when these bugs land.
 
-- `impact/loss-of-funds/direct-drain` — 69
+- `impact/loss-of-funds/direct-drain` — 70
 - `impact/mev/frontrun` — 31
-- `impact/data-corruption/price-manipulation` — 22
-- `impact/loss-of-funds/locked-funds` — 22
+- `impact/data-corruption/price-manipulation` — 23
+- `impact/loss-of-funds/locked-funds` — 23
 - `impact/mev/sandwich` — 11
 - `impact/loss-of-funds/fee-theft` — 6
 - `impact/dos/permanent` — 6
 - `impact/privilege-escalation/ownership-transfer` — 3
 - `impact/mev/backrun` — 3
-- `impact/loss-of-funds/reward-theft` — 2
+- `impact/loss-of-funds/reward-theft` — 3
 
 ## 🛠️ Recommended mitigations
 The fixes auditors most often recommended in this sector.

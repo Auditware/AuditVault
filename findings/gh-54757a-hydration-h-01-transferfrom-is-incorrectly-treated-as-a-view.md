@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/token
+  - web3-sector/token
   - platform/pashov
   - severity/high
   - novelty/variant

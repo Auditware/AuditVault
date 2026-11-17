@@ -2,9 +2,9 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/dex
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/dex
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
   - platform/mixbytes
   - has/github
   - severity/high

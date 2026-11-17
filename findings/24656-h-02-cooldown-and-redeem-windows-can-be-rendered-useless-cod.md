@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/lending
-  - sector/options
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/options
+  - web3-sector/staking
   - platform/code4rena
   - has/github
   - has/poc

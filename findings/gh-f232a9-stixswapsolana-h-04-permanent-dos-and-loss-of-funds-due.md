@@ -10,7 +10,7 @@ tags:
   - impact/loss-of-funds/locked-funds
   - impact/mev/frontrun
   - novelty/known-pattern
-  - sector/dex
+  - web3-sector/dex
   - check/same-token-swap-protection
   - check/token-dust-handling
 protocol: "[[Stixswapsolana]]"

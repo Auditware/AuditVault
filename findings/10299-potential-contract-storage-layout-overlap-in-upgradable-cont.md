@@ -10,7 +10,7 @@ tags:
   - misassumption/external-call-is-safe
   - misassumption/proxy-is-initialized
   - fix/upgrade-dependency
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[ink!]]"
 auditors:
   - "[[OpenZeppelin]]"

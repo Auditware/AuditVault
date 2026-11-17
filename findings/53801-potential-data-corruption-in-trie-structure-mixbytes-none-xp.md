@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - has/github
   - severity/high
-  - sector/dex
+  - impact/loss-of-funds/direct-drain
 protocol: "[[XPress Protocol]]"
 auditors:
   - MixBytes
 report: "https://github.com/mixbytes/audits_public/blob/master/XPress%20Protocol/OnchainCLOB/README.md#3-potential-data-corruption-in-trie-structure"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # Potential Data Corruption in Trie Structure
 
 - id: 53801

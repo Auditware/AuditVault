@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
   - platform/sherlock
   - has/github
   - has/poc

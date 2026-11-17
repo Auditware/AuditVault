@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/lending
-  - sector/nft
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/stable
 protocol: "[[Vultisig]]"
 auditors:
   - "[[Ryonen]]"

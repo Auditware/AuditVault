@@ -4,7 +4,7 @@ tags:
   - platform/halborn
   - has/github
   - severity/high
-  - sector/wallet
+  - web3-sector/wallet
 protocol: "[[Aptos Wallet]]"
 auditors:
   - "[[Halborn]]"

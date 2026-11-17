@@ -4,10 +4,10 @@ tags:
   - platform/zachobront
   - has/github
   - severity/high
-  - sector/dex
-  - sector/governance
-  - sector/launchpad
-  - sector/nft
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/launchpad
+  - web3-sector/nft
 protocol: "[[Sound.Xyz]]"
 auditors:
   - "[[Zach Obront]]"

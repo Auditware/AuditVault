@@ -4,7 +4,7 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[Radius Technology]]"
 auditors:
   - "[[Quan Nguyen Trail of Bits PUBLIC]]"

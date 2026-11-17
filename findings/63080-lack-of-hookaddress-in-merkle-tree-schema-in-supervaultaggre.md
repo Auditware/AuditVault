@@ -5,7 +5,7 @@ tags:
   - has/github
   - severity/high
   - impact/loss-of-funds/direct-drain
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Superform]]"
 auditors:
   - "[[MiloTruck]]"

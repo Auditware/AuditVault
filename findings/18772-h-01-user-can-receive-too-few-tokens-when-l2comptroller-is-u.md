@@ -6,7 +6,7 @@ tags:
   - has/poc
   - severity/high
   - novelty/variant
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Dhedge]]"
 auditors:
   - "[[Zach Obront]]"

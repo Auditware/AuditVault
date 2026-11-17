@@ -2,9 +2,9 @@
 tags:
   - blockchain/ethereum
   - blockchain/optimism
-  - sector/bridge
-  - sector/lending
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/privacy
 title: "Exactly Protocol - REKT"
 protocol: "[[Exactly Protocol]]"
 date: 2023-08-18

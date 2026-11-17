@@ -1,7 +1,7 @@
 ---
 tags:
   - checklist
-  - sector/nft-lending
+  - web3-sector/nft-lending
 generated: true
 ---
 # Nft Lending — Audit Checklist

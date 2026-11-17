@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/account
+  - web3-sector/account
   - platform/cyfrin
 protocol: "[[Paladin Valkyrie]]"
 auditors:

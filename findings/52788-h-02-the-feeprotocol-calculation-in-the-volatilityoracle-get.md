@@ -1,11 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/lending
   - platform/shieldify
   - has/github
   - severity/high
+  - vuln/logic/fee-calculation
 protocol: "[[Stackingsalmon]]"
 auditors:
   - Shieldify Security
@@ -14,8 +15,7 @@ genome:
   - "[[fee-accounting]]"
   - "[[fee-calculation]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-02] The `feeProtocol` Calculation in the `VolatilityOracle::_getPoolMetadata()` Is Flawed
 
 - id: 52788

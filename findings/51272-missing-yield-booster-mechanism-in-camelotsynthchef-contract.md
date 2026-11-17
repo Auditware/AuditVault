@@ -4,9 +4,9 @@ tags:
   - platform/halborn
   - has/github
   - severity/high
-  - sector/farm
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/farm
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
 protocol: "[[Trillion Contracts + Synth Chefs (Updates)]]"
 auditors:
   - "[[Halborn]]"

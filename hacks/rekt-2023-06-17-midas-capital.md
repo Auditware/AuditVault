@@ -3,9 +3,9 @@ tags:
   - blockchain/bsc
   - blockchain/ethereum
   - blockchain/optimism
-  - sector/bridge
-  - sector/lending
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/privacy
 title: "Midas Capital - REKT 2"
 protocol: "[[Midas Capital]]"
 date: 2023-06-17

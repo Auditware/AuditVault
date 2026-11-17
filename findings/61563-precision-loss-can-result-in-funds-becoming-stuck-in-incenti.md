@@ -1,10 +1,16 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
+  - vuln/arithmetic/precision-loss
+  - vuln/logic/reward-calculation
+  - impact/loss-of-funds/direct-drain
+  - impact/loss-of-funds/locked-funds
+  - fix/use-reentrancy-guard
+  - novelty/variant
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -17,8 +23,7 @@ genome:
   - "[[locked-funds]]"
   - "[[use-reentrancy-guard]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # Precision loss can result in funds becoming stuck in incentive logic contracts
 
 - id: 61563

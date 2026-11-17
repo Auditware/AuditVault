@@ -2,10 +2,10 @@
 tags:
   - blockchain/bitcoin
   - has/audit
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/privacy
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/privacy
 title: "Saddle Finance - REKT"
 protocol: "[[Saddle Finance]]"
 date: 2021-01-20

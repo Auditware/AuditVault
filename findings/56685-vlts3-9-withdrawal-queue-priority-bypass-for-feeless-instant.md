@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/token
+  - web3-sector/token
   - has/github
   - severity/high
+  - fix/use-reentrancy-guard
 protocol: "[[Valantis]]"
 auditors:
   - Hexens
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Hexens/2025-03-17-Valantis.md"
 genome:
   - "[[reentrancy-guard]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [VLTS3-9] Withdrawal queue priority bypass for feeless instant withdrawal
 
 - id: 56685

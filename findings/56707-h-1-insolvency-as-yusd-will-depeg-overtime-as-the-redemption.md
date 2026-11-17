@@ -1,11 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/insurance
-  - sector/lending
+  - web3-sector/insurance
+  - web3-sector/lending
   - platform/sherlock
   - has/github
   - severity/high
+  - vuln/logic/fee-calculation
+  - fix/use-reentrancy-guard
+  - novelty/variant
 protocol: "[[Aegis.Im YUSD]]"
 auditors:
   - w33kEd
@@ -16,8 +19,7 @@ genome:
   - "[[use-reentrancy-guard]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # H-1: Insolvency as `YUSD` will depeg overtime as the redemption fees are disbursed with no collaterals backing them.
 
 - id: 56707

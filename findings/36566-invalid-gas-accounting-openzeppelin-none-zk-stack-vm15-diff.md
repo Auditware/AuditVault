@@ -7,8 +7,8 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/account
-  - sector/token
+  - web3-sector/account
+  - web3-sector/token
 protocol: "[[ZK Stack]]"
 auditors:
   - "[[OpenZeppelin]]"

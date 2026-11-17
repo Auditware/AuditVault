@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/cdp
-  - sector/lending
-  - sector/oracle
+  - web3-sector/cdp
+  - web3-sector/lending
+  - web3-sector/oracle
   - platform/trailofbits
   - has/github
   - severity/high

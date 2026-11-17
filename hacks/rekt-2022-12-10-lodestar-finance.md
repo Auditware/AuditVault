@@ -2,11 +2,11 @@
 tags:
   - blockchain/arbitrum
   - blockchain/polygon
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
   - impact/data-corruption/price-manipulation
   - impact/loss-of-funds/direct-drain
   - trigger/flash-loan

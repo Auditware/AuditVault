@@ -2,9 +2,9 @@
 tags:
   - lang/move
   - lang/solidity
-  - sector/lending
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/lending
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/pashov
   - has/github
   - severity/high

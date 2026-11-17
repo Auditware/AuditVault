@@ -1,7 +1,7 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/bridge
+  - web3-sector/bridge
   - impact/loss-of-funds/direct-drain
   - impact/mev/frontrun
 title: "Safemoon - REKT"

@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
+  - web3-sector/governance
 ---
 LoopVaults is a DeFi protocol - description pending.

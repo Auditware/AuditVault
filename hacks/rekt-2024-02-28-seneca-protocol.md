@@ -3,8 +3,8 @@ tags:
   - blockchain/arbitrum
   - blockchain/ethereum
   - has/audit
-  - sector/dex
-  - sector/multisig
+  - web3-sector/dex
+  - web3-sector/multisig
 title: "Seneca Protocol - REKT"
 protocol: "[[Seneca Protocol]]"
 date: 2024-02-28

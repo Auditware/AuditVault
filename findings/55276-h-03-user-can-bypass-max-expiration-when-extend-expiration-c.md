@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/lending
-  - sector/nft
-  - sector/options
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/options
 protocol: "[[Initia]]"
 auditors:
   - "[[p4y4b13]]"

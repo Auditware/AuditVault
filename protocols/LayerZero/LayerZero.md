@@ -5,7 +5,7 @@ tags:
   - blockchain/solana
   - lang/move
   - lang/solidity
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
 ---
 LayerZero is a protocol - description pending.

@@ -2,9 +2,9 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/gaming
-  - sector/lending
-  - sector/options
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/options
   - platform/auditware
   - severity/high
   - vuln/dos/griefing

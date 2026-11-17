@@ -4,7 +4,7 @@ tags:
   - has/github
   - lang/solidity
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[AppChain Modules]]"
 auditors:
   - "[[Halborn]]"

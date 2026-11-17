@@ -4,7 +4,7 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/privacy
+  - web3-sector/privacy
 protocol: "[[Nocturne Snap]]"
 auditors:
   - "[[Caue Obici]]"

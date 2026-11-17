@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/staking
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/pda/missing-seeds-check
+  - novelty/variant
 protocol: "[[Suzaku Core]]"
 auditors:
   - 0kage
@@ -14,8 +16,7 @@ genome:
   - "[[upgrade-safety]]"
   - "[[missing-seeds-check]]"
   - "[[variant]]"
-  - "[[add-check]]"
----
+  - "[[add-check]]"---
 # Blacklisted implementation versions are accessible through migrations
 
 - id: 61231

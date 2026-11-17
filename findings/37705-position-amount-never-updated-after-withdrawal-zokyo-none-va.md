@@ -5,7 +5,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/staking
+  - web3-sector/staking
   - lang/anchor
 protocol: "[[Vaultka]]"
 auditors:

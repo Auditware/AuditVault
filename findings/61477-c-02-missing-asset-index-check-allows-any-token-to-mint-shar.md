@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/stable
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/token
 protocol: "[[Blueberry]]"
 auditors:
   - "[[Pashov Audit Group]]"

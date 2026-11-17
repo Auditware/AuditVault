@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/lending
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/token
   - platform/spearbit
   - has/github
   - has/poc

@@ -2,7 +2,7 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/cdp
-  - sector/oracle
+  - web3-sector/cdp
+  - web3-sector/oracle
 ---
 DeFi Money is a DeFi protocol - description pending.

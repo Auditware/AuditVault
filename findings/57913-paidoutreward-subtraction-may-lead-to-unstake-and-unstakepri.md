@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[DIA]]"
 auditors:
   - MixBytes
@@ -13,8 +15,7 @@ genome:
   - "[[reward-calculation]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # `paidOutReward` subtraction may lead to `unstake` and `unstakePrincipal` functions reverting
 
 - id: 57913

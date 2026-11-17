@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/lending
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/token
 protocol: "[[Tapioca DAO]]"
 auditors:
   - "[[zzzitron]]"

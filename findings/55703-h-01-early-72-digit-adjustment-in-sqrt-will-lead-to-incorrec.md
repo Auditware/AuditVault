@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/gaming
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
-  - sector/gaming
+  - novelty/variant
 protocol: "[[Forte]]"
 auditors:
   - 0xcrazyboy999
 report: "https://code4rena.com/reports/2025-04-forte-float128-solidity-library"
 genome:
   - "[[integer-bounds]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-01] Early 72-digit adjustment in sqrt will lead to incorrect result exponent calculation
 
 - id: 55703

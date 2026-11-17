@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/gaming
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
 protocol: "[[Majority Protocol]]"
 auditors:
   - "[[Dacian]]"

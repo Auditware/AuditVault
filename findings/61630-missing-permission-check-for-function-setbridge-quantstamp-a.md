@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Arbitrum Token Bridge]]"
 auditors:
   - "[[Poming Lee]]"

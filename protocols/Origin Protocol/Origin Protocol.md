@@ -2,8 +2,8 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/nft-marketplace
-  - sector/stable
+  - web3-sector/nft-marketplace
+  - web3-sector/stable
 ---
 Origin Protocol is a DeFi protocol - description pending.
 

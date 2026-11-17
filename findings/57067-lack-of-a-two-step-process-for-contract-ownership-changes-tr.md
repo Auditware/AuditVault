@@ -9,7 +9,7 @@ tags:
   - novelty/variant
   - misassumption/external-call-is-safe
   - fix/upgrade-dependency
-  - sector/token
+  - web3-sector/token
 protocol: "[[Reserve]]"
 auditors:
   - "[[Felipe Manzano]]"

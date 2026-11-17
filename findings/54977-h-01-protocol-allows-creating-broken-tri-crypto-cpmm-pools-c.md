@@ -5,10 +5,10 @@ tags:
   - has/poc
   - lang/solidity
   - lang/rust
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/options
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/options
   - platform/code4rena
 protocol: "[[MANTRA]]"
 auditors:

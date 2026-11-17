@@ -3,9 +3,9 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/perpetuals
-  - sector/staking
-  - sector/governance
+  - web3-sector/perpetuals
+  - web3-sector/staking
+  - web3-sector/governance
 protocol: "[[Hyperstable]]"
 auditors:
   - Pashov Audit Group

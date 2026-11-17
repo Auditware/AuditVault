@@ -4,7 +4,7 @@ tags:
   - platform/consensys
   - has/github
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Skale Token]]"
 auditors:
   - "[[Sergii Kravchenko]]"

@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/lending
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/staking
 protocol: "[[Mass]]"
 auditors:
   - "[[Gustavo Grieco]]"

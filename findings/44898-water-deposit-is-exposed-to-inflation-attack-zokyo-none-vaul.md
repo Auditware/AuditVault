@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/openzeppelin
   - severity/high
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Vaultka]]"
 auditors:
   - "[[Zokyo]]"

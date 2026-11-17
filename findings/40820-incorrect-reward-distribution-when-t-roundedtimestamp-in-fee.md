@@ -8,7 +8,7 @@ tags:
   - novelty/variant
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/token
+  - web3-sector/token
 protocol: "[[ZeroLend]]"
 auditors:
   - "[[0xarno]]"

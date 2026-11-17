@@ -8,7 +8,7 @@ tags:
   - novelty/variant
   - misassumption/proxy-is-initialized
   - fix/upgrade-dependency
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[ink!]]"
 auditors:
   - "[[OpenZeppelin]]"

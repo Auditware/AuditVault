@@ -2,14 +2,14 @@
 tags:
   - blockchain/arbitrum
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/multisig
-  - sector/oracle
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/token
   - impact/loss-of-funds/direct-drain
   - blast-radius/cross-protocol
 title: "Zero To Lend"

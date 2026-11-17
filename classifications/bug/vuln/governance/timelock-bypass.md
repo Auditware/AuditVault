@@ -1,6 +1,6 @@
 ---
 tags:
   - vuln/governance/timelock-bypass
-  - sector/governance
+  - web3-sector/governance
 ---
 Timelock circumvented; malicious action executes without delay.

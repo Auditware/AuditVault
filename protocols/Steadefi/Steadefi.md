@@ -1,5 +1,5 @@
 ---
 tags:
-  - sector/lending
+  - web3-sector/lending
 ---
 Credit: Steadefi According to Steadefi’s own announcement, the deployer address of the protocol was compromised.

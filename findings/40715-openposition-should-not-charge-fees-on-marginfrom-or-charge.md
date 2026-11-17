@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/stable
   - platform/cantina
   - severity/high
   - vuln/logic/fee-calculation

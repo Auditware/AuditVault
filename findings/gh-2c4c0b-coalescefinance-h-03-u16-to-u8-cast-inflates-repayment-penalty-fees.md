@@ -2,9 +2,9 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/account
-  - sector/lending
-  - sector/oracle
+  - web3-sector/account
+  - web3-sector/lending
+  - web3-sector/oracle
   - platform/pashov
   - severity/high
   - novelty/variant

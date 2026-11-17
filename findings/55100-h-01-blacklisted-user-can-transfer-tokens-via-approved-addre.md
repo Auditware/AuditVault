@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/access-control/missing-modifier
+  - novelty/variant
 protocol: "[[Terplayer Berabtc]]"
 auditors:
   - Shieldify Security
@@ -13,8 +15,7 @@ genome:
   - "[[access-roles]]"
   - "[[missing-modifier]]"
   - "[[variant]]"
-  - "[[admin-is-honest]]"
----
+  - "[[admin-is-honest]]"---
 # [H-01] Blacklisted User Can Transfer Tokens via Approved Addresses
 
 - id: 55100

@@ -5,7 +5,7 @@ tags:
   - has/github
   - severity/high
   - novelty/variant
-  - sector/wallet
+  - web3-sector/wallet
 protocol: "[[Wallet Guard]]"
 auditors:
   - "[[ConsenSys]]"

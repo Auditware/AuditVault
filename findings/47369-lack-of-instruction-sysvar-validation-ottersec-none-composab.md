@@ -2,7 +2,7 @@
 tags:
   - lang/rust
   - sdk/anchor
-  - sector/restaking
+  - web3-sector/restaking
   - platform/ottersec
   - severity/high
   - novelty/variant

@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/dex
-  - sector/staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/staking
+  - web3-sector/token
   - impact/privilege-escalation/ownership-transfer
   - precondition/insider
 title: "Paid Network - REKT"

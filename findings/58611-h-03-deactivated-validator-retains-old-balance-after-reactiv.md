@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
-  - sector/staking
+  - web3-sector/oracle
+  - web3-sector/staking
   - has/github
   - severity/high
+  - vuln/arithmetic/underflow
+  - fix/use-reentrancy-guard
+  - novelty/known-pattern
 protocol: "[[Kinetiq]]"
 auditors:
   - Pashov Audit Group
@@ -15,8 +18,7 @@ genome:
   - "[[use-reentrancy-guard]]"
   - "[[known-pattern]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [H-03] Deactivated validator retains old balance after reactivation
 
 - id: 58611

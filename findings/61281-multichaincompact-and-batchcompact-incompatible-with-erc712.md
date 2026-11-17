@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
-  - sector/wallet
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/wallet
   - platform/spearbit
   - has/github
   - severity/high

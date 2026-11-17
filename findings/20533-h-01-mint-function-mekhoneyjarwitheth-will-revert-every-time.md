@@ -4,8 +4,8 @@ tags:
   - platform/pashov-audit-group
   - has/github
   - severity/high
-  - sector/options
-  - sector/token
+  - web3-sector/options
+  - web3-sector/token
 protocol: "[[Bearcave]]"
 auditors:
   - "[[Pashov]]"

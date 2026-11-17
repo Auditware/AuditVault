@@ -4,7 +4,7 @@ tags:
   - has/github
   - lang/solidity
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[Decentraland]]"
 auditors:
   - "[[OpenZeppelin]]"

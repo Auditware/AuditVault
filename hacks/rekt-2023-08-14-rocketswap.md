@@ -2,8 +2,8 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/launchpad
+  - web3-sector/bridge
+  - web3-sector/launchpad
   - precondition/insider
 title: "RocketSwap - REKT"
 protocol: "[[Rocketswap]]"

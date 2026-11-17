@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/token
+  - web3-sector/token
   - platform/shieldify
   - has/github
   - severity/high

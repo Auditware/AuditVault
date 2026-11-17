@@ -4,9 +4,9 @@ tags:
   - blockchain/bsc
   - blockchain/ethereum
   - blockchain/fantom
-  - sector/bridge
-  - sector/governance
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/stable
   - precondition/insider
 title: "Anyswap - REKT"
 protocol: "[[Anyswap]]"

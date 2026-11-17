@@ -4,7 +4,7 @@ tags:
   - platform/trust-security
   - has/github
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Mozaic]]"
 auditors:
   - "[[Trust Security]]"

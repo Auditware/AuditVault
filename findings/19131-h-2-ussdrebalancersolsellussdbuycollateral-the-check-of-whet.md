@@ -4,10 +4,10 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
 protocol: "[[USSD]]"
 auditors:
   - "[[0xHati]]"

@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/fantom
-  - sector/bridge
-  - sector/dex
-  - sector/multisig
-  - sector/stable
-  - sector/token
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/multisig
+  - web3-sector/stable
+  - web3-sector/token
+  - web3-sector/vault
   - precondition/insider
 title: "Multichain - REKT 2"
 protocol: "[[Multichain]]"

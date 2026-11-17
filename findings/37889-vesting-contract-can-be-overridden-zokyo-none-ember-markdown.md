@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/streaming
+  - web3-sector/streaming
 protocol: "[[Ember]]"
 auditors:
   - "[[Zokyo]]"

@@ -3,15 +3,15 @@ tags:
   - blockchain/arbitrum
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/multisig
-  - sector/privacy
-  - sector/staking
-  - sector/token
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/staking
+  - web3-sector/token
+  - web3-sector/vault
   - trigger/low-liquidity
   - novelty/variant
 title: "Hyperbridge - Rekt"

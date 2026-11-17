@@ -1,9 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
+  - web3-sector/nft
   - has/github
   - severity/high
+  - vuln/dos/unbounded-loop
+  - impact/dos/permanent
+  - impact/loss-of-funds/locked-funds
+  - novelty/known-pattern
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +17,7 @@ genome:
   - "[[unbounded-loop]]"
   - "[[permanent]]"
   - "[[locked-funds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # [C-07] Unrestricted `OmoAgent.onERC721Received()` allows permanent DoS and stuck funds
 
 - id: 53318

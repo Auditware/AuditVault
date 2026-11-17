@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/dex
-  - sector/governance
-  - sector/multisig
-  - sector/privacy
-  - sector/stable
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/vault
   - vuln/governance/timelock-bypass
 title: "Pickle Finance - REKT"
 protocol: "[[Pickle Finance]]"

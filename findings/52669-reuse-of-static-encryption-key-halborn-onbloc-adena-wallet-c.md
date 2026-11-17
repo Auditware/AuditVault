@@ -2,7 +2,7 @@
 tags:
   - severity/high
   - has/poc
-  - sector/wallet
+  - web3-sector/wallet
 protocol: "[[Adena Wallet Chrome Extension]]"
 auditors:
   - Halborn

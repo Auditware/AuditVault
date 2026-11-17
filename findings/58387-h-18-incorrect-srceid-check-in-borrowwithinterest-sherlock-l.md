@@ -1,12 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/logic/liquidation-logic
+  - novelty/variant
 protocol: "[[LEND]]"
 auditors:
   - FalseGenius
@@ -16,8 +18,7 @@ genome:
   - "[[liquidation-logic]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[redesign-logic]]"
----
+  - "[[redesign-logic]]"---
 # H-18: Incorrect `srcEid` check in `borrowWithInterest()`
 
 - id: 58387

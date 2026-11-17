@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/dex
-  - sector/gaming
-  - sector/lending
-  - sector/oracle
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/privacy
+  - web3-sector/stable
   - has/audit
   - impact/data-corruption/price-manipulation
   - trigger/flash-loan

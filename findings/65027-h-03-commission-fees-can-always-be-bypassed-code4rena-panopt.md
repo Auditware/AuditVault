@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/options
-  - sector/perpetuals
+  - web3-sector/lending
+  - web3-sector/options
+  - web3-sector/perpetuals
   - platform/code4rena
   - has/github
   - has/poc

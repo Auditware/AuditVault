@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - platform/quantstamp
   - severity/high
   - impact/loss-of-funds/locked-funds

@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
-  - sector/bridge
-  - sector/lending
+  - web3-sector/account
+  - web3-sector/bridge
+  - web3-sector/lending
   - platform/quantstamp
   - severity/high
   - impact/loss-of-funds/direct-drain

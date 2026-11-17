@@ -5,7 +5,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[Global Interlink]]"
 auditors:
   - "[[Zokyo]]"

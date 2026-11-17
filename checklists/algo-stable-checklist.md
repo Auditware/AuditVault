@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/algo-stable
+  - web3-sector/algo-stable
 generated: true
 ---
 # Algo Stable — Audit Checklist
 
-> Auto-generated from **16** findings in this sector (**2** with bug-class tags), ranked by frequency.
+> Auto-generated from **14** findings in this sector (**2** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

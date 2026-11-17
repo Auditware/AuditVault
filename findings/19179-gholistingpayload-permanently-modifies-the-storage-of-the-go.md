@@ -4,10 +4,10 @@ tags:
   - platform/sigmaprime
   - has/github
   - severity/high
-  - sector/algo-stable
-  - sector/governance
-  - sector/lending
-  - sector/staking
+  - web3-sector/algo-stable
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/staking
 protocol: "[[Aave]]"
 auditors:
   - "[[Sigma Prime]]"

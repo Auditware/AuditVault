@@ -1,11 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/oracle
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/bridge/message-spoofing
+  - vuln/pda/missing-seeds-check
+  - novelty/variant
 protocol: "[[Yieldfi]]"
 auditors:
   - Immeas
@@ -17,8 +20,7 @@ genome:
   - "[[variant]]"
   - "[[bridge-is-secure]]"
   - "[[add-check]]"
-  - "[[cross-chain-message]]"
----
+  - "[[cross-chain-message]]"---
 # Missing source validation in CCIP message handling
 
 - id: 55536

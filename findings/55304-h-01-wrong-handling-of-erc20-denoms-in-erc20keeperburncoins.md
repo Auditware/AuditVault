@@ -4,7 +4,7 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/token
+  - web3-sector/token
   - platform/code4rena
 protocol: "[[Initia]]"
 auditors:

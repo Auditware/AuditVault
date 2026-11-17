@@ -6,10 +6,10 @@ tags:
   - blockchain/ethereum
   - blockchain/optimism
   - blockchain/polygon
-  - sector/dex
-  - sector/multisig
-  - sector/perpetuals
-  - sector/privacy
+  - web3-sector/dex
+  - web3-sector/multisig
+  - web3-sector/perpetuals
+  - web3-sector/privacy
   - vuln/dos/frozen-funds
   - impact/loss-of-funds/direct-drain
   - precondition/insider

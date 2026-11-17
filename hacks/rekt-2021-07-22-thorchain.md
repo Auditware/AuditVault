@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/privacy
-  - sector/stable
-  - sector/token
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
 title: "THORChain - REKT 2"
 protocol: "[[Thorchain]]"
 date: 2021-07-22

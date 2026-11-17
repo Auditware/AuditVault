@@ -4,7 +4,7 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/token
+  - web3-sector/token
 protocol: "[[Taiko]]"
 auditors:
   - "[[pa6kuda]]"

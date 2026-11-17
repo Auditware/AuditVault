@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/mev/frontrun
 protocol: "[[LEND]]"
 auditors:
   - newspacexyz
 report: "https://github.com/sherlock-audit/2025-05-lend-audit-contest-judging"
 genome:
   - "[[frontrun-exposure]]"
-  - "[[mev/frontrun]]"
----
+  - "[[mev/frontrun]]"---
 # H-7: CoreRouter Prone to Fund Depletion or Trapping Due to Miscalculated Redemption Payouts
 
 - id: 58376

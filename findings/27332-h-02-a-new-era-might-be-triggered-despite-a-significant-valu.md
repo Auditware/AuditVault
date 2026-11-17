@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/governance
+  - web3-sector/staking
+  - web3-sector/staking-pool
 protocol: "[[Reserve]]"
 auditors:
   - "[[0xA5DF]]"

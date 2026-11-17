@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/liquid-staking
+  - web3-sector/liquid-staking
 generated: true
 ---
 # Liquid Staking — Audit Checklist
 
-> Auto-generated from **52** findings in this sector (**10** with bug-class tags), ranked by frequency.
+> Auto-generated from **46** findings in this sector (**10** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

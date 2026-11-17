@@ -8,7 +8,7 @@ tags:
   - vuln/logic/fee-calculation
   - novelty/variant
   - misassumption/math-is-safe
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Mellow]]"
 auditors:
   - "[[bughuntoor]]"

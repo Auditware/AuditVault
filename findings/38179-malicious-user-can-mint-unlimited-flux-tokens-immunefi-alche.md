@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/farm
-  - sector/governance
-  - sector/token
+  - web3-sector/farm
+  - web3-sector/governance
+  - web3-sector/token
 protocol: "[[Alchemix]]"
 auditors:
   - "[[mahdikarimi]]"

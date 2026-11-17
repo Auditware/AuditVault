@@ -5,7 +5,7 @@ tags:
   - platform/pashov
   - severity/high
   - impact/dos/permanent
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Stixswapsolana]]"
 auditors:
   - "[[FrankCastle]]"

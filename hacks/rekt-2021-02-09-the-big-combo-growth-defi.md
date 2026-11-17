@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/dex
-  - sector/gaming
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/staking
   - has/audit
   - impact/data-corruption/price-manipulation
   - trigger/price-manipulation

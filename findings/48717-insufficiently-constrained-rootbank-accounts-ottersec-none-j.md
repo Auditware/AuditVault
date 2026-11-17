@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/move
-  - sector/options
-  - sector/stable
+  - web3-sector/options
+  - web3-sector/stable
   - platform/ottersec
   - has/poc
   - severity/high

@@ -4,7 +4,7 @@ tags:
   - lang/rust
   - platform/cantina
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Cantina Oro February2025]]"
 auditors:
   - "[[FrankCastle]]"

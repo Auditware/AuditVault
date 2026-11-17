@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/perpetuals
-  - sector/vault
+  - web3-sector/lending
+  - web3-sector/perpetuals
+  - web3-sector/vault
   - platform/shieldify
   - has/github
   - severity/high

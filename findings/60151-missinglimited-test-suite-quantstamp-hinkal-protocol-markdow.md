@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/circom
-  - sector/farm
-  - sector/zk
+  - web3-sector/farm
+  - web3-sector/zk
   - platform/quantstamp
   - severity/high
   - vuln/reentrancy/single-function

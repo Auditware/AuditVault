@@ -4,12 +4,12 @@ tags:
   - blockchain/ethereum
   - blockchain/polygon
   - blockchain/solana
-  - sector/bridge
-  - sector/dex
-  - sector/nft
-  - sector/privacy
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/nft
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
 title: "ChainSwap - REKT"
 protocol: "[[Chainswap]]"
 date: 2021-07-11

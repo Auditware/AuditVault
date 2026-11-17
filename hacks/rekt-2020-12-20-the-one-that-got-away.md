@@ -1,8 +1,8 @@
 ---
 tags:
   - blockchain/bitcoin
-  - sector/gaming
-  - sector/governance
+  - web3-sector/gaming
+  - web3-sector/governance
 title: "The One That Got Away"
 protocol: "[[The One That Got Away]]"
 date: 2020-12-20

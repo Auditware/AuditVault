@@ -6,8 +6,8 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
-  - sector/governance
+  - web3-sector/dex
+  - web3-sector/governance
   - lang/anchor
 protocol: "[[Deriverse]]"
 auditors:

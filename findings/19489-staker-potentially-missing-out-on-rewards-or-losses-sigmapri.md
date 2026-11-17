@@ -4,10 +4,10 @@ tags:
   - platform/sigmaprime
   - has/github
   - severity/high
-  - sector/governance
-  - sector/lending
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/staking
+  - web3-sector/staking-pool
 protocol: "[[Linkpool]]"
 auditors:
   - "[[Sigma Prime]]"

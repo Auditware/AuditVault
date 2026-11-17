@@ -6,9 +6,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/farm
-  - sector/lending
-  - sector/nft-lending
+  - web3-sector/farm
+  - web3-sector/lending
+  - web3-sector/nft-lending
 protocol: "[[Blend]]"
 auditors:
   - "[[oakcobalt]]"

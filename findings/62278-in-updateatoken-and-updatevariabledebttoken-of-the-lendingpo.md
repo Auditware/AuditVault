@@ -4,8 +4,8 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/lending
-  - sector/staking-pool
+  - web3-sector/lending
+  - web3-sector/staking-pool
 protocol: "[[Astera]]"
 auditors:
   - "[[Saw-mon and Natalie]]"

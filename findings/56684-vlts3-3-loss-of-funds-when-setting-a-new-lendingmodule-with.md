@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - impact/loss-of-funds/locked-funds
 protocol: "[[Valantis]]"
 auditors:
   - Hexens
@@ -11,8 +13,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/Hexens/202
 genome:
   - "[[upgrade-safety]]"
   - "[[direct-drain]]"
-  - "[[locked-funds]]"
----
+  - "[[locked-funds]]"---
 # [VLTS3-3] Loss of funds when setting a new lendingModule with stHYPEWithdrawalModule::setProposedLendingModule
 
 - id: 56684

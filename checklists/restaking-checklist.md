@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/restaking
+  - web3-sector/restaking
 generated: true
 ---
 # Restaking — Audit Checklist
 
-> Auto-generated from **49** findings in this sector (**6** with bug-class tags), ranked by frequency.
+> Auto-generated from **46** findings in this sector (**6** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

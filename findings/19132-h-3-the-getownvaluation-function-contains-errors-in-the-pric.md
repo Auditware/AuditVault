@@ -4,7 +4,7 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[USSD]]"
 auditors:
   - "[[0xPkhatri]]"

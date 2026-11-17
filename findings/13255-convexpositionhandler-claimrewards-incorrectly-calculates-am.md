@@ -1,12 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/farm
-  - sector/options
-  - sector/staking-pool
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/options
+  - web3-sector/staking-pool
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
   - platform/consensys
   - severity/high
   - vuln/logic/reward-calculation

@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/gaming
+  - web3-sector/gaming
 generated: true
 ---
 # Gaming — Audit Checklist
 
-> Auto-generated from **58** findings in this sector (**15** with bug-class tags), ranked by frequency.
+> Auto-generated from **55** findings in this sector (**16** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
@@ -16,6 +16,7 @@ What actually goes wrong in this sector, most common first. Tick each as you rul
 - [ ] **Reentrancy: Single Function** — 4 findings `vuln/reentrancy/single-function`
 - [ ] **Dos: Griefing** — 3 findings `vuln/dos/griefing`
 - [ ] **Access Control: Missing Modifier** — 1 finding `vuln/access-control/missing-modifier`
+- [ ] **Arithmetic: Precision Loss** — 1 finding `vuln/arithmetic/precision-loss`
 - [ ] **Logic: Reward Calculation** — 1 finding `vuln/logic/reward-calculation`
 - [ ] **Logic: Fee Calculation** — 1 finding `vuln/logic/fee-calculation`
 
@@ -52,4 +53,4 @@ The fixes auditors most often recommended in this sector.
 - [[21017-reentrancy-exploit-in-initiateadventure-function-auditone-no|Reentrancy exploit in initiateAdventure function.]] — `vuln/reentrancy/single-function`
 - [[34117-c-03-incorrect-logical-check-in-endgame-function-pashov-audi|[C-03] Incorrect logical check in `endGame` function]] — `vuln/dos/frozen-funds`
 - [[34118-h-01-game-fee-locked-in-earlyendgame-pashov-audit-group-none|[H-01] Game fee locked in `earlyEndGame`]] — `vuln/dos/frozen-funds`
-- [[61819-h-02-hero-owner-with-mythical-weapon-can-never-receive-weapo|[H-02] Hero Owner With Mythical Weapon Can Never Receive Weapon Shard Rewards]] — `vuln/logic/reward-calculation`
+- [[55707-h-05-precision-loss-in-topackedfloat-function-when-mantissa|[H-05] Precision loss in `toPackedFloat` function when mantissa is in range (`MAX_M_DIGIT_NUMBER`, `MIN_L_DIGIT_NUMBER`)]] — `vuln/arithmetic/precision-loss`

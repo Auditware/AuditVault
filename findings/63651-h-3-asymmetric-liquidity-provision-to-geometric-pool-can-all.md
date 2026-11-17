@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/oracle
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/oracle
+  - web3-sector/stable
 protocol: "[[Dango]]"
 auditors:
   - "[[axelot]]"

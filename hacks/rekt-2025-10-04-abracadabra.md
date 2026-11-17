@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "Abracadabra - Rekt III"
 protocol: "[[Abracadabra]]"
 date: 2025-10-04

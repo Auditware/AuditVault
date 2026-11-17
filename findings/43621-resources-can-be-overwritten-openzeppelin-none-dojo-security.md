@@ -7,7 +7,7 @@ tags:
   - has/github
   - severity/high
   - impact/privilege-escalation/admin-takeover
-  - sector/gaming
+  - web3-sector/gaming
 protocol: "[[Dojo]]"
 auditors:
   - "[[OpenZeppelin]]"

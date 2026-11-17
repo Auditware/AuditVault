@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/move
-  - sector/lending
-  - sector/oracle
+  - web3-sector/lending
+  - web3-sector/oracle
   - platform/ottersec
   - has/poc
   - severity/high

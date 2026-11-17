@@ -2,10 +2,10 @@
 tags:
   - blockchain/ethereum
   - blockchain/solana
-  - sector/bridge
-  - sector/dex
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
   - precondition/insider
 title: "Raydium - REKT"

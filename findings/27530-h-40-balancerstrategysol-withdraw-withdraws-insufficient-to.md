@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/governance
-  - sector/liquid-staking
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/liquid-staking
+  - web3-sector/vault
 protocol: "[[Tapioca DAO]]"
 auditors:
   - "[[carrotsmuggler]]"

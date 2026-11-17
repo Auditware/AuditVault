@@ -4,7 +4,7 @@ tags:
   - platform/ottersec
   - severity/high
   - novelty/variant
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[Composable Vaults]]"
 auditors:
   - "[[Akash Gurugunti]]"

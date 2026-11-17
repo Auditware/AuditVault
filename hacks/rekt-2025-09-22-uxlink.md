@@ -3,15 +3,15 @@ tags:
   - blockchain/arbitrum
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/multisig
-  - sector/oracle
-  - sector/stable
-  - sector/staking
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/token
 title: "UXLink - Rekt"
 protocol: "[[Uxlink]]"
 date: 2025-09-22

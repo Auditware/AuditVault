@@ -1,25 +1,26 @@
 ---
 tags:
   - checklist
-  - sector/options
+  - web3-sector/options
 generated: true
 ---
 # Options — Audit Checklist
 
-> Auto-generated from **103** findings in this sector (**18** with bug-class tags), ranked by frequency.
+> Auto-generated from **96** findings in this sector (**20** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
 What actually goes wrong in this sector, most common first. Tick each as you rule it out.
 
+- [ ] **Arithmetic: Decimal Mismatch** — 4 findings `vuln/arithmetic/decimal-mismatch`
 - [ ] **Reentrancy: Single Function** — 3 findings `vuln/reentrancy/single-function`
-- [ ] **Arithmetic: Decimal Mismatch** — 3 findings `vuln/arithmetic/decimal-mismatch`
 - [ ] **Logic: Reward Calculation** — 2 findings `vuln/logic/reward-calculation`
 - [ ] **Dos: Griefing** — 2 findings `vuln/dos/griefing`
 - [ ] **Dos: Frozen Funds** — 2 findings `vuln/dos/frozen-funds`
 - [ ] **Governance: Flash Loan Voting** — 1 finding `vuln/governance/flash-loan-voting`
 - [ ] **Oracle: Stale Price** — 1 finding `vuln/oracle/stale-price`
 - [ ] **Access Control: Missing Signer** — 1 finding `vuln/access-control/missing-signer`
+- [ ] **Oracle: Spot Price** — 1 finding `vuln/oracle/spot-price`
 - [ ] **Dos: Unbounded Loop** — 1 finding `vuln/dos/unbounded-loop`
 - [ ] **Oracle: Missing Circuit Breaker** — 1 finding `vuln/oracle/missing-circuit-breaker`
 - [ ] **Oracle: Single Source** — 1 finding `vuln/oracle/single-source`

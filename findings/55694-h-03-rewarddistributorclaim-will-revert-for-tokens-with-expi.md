@@ -1,11 +1,14 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
+  - lang/vyper
+  - web3-sector/governance
   - platform/0x52
   - has/github
   - severity/high
-  - lang/vyper
+  - vuln/dos/frozen-funds
+  - fix/use-reentrancy-guard
+  - novelty/variant
 protocol: "[[Hyperstable]]"
 auditors:
   - "[[@IAm0x52]]"
@@ -14,8 +17,7 @@ genome:
   - "[[dos-resistance]]"
   - "[[frozen-funds]]"
   - "[[use-reentrancy-guard]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-03] `RewardDistributor#claim` will revert for tokens with expired locks leading to loss of rewards
 
 - id: 55694

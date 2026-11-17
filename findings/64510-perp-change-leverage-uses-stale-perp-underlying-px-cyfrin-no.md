@@ -6,9 +6,9 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
-  - sector/oracle
-  - sector/perpetuals
+  - web3-sector/dex
+  - web3-sector/oracle
+  - web3-sector/perpetuals
   - lang/anchor
 protocol: "[[Deriverse]]"
 auditors:

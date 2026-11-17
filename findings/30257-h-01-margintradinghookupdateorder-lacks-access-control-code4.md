@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/perpetuals
+  - web3-sector/stable
 protocol: "[[INIT Capital]]"
 auditors:
   - "[[sashik_eth]]"

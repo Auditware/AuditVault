@@ -2,6 +2,6 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/liquid-staking
+  - web3-sector/liquid-staking
 ---
 Berachain Pol is a DeFi protocol - description pending.

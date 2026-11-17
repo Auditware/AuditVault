@@ -4,7 +4,7 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/stable
+  - web3-sector/stable
 protocol: "[[Derby]]"
 auditors:
   - "[[cergyk]]"

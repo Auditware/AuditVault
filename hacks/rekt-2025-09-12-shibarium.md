@@ -1,13 +1,13 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/gaming
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/stable
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/staking
   - trigger/flash-loan
   - precondition/flash-loan-available
 title: "Shibarium - Rekt"

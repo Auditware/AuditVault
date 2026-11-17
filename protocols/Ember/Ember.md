@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/streaming
+  - web3-sector/streaming
 ---
 Ember is a DeFi protocol - description pending.

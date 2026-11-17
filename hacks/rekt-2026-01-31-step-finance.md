@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/solana
-  - sector/bridge
-  - sector/governance
-  - sector/privacy
-  - sector/rwa
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/privacy
+  - web3-sector/rwa
+  - web3-sector/staking
 title: "Step Finance - Rekt"
 protocol: "[[Step Finance]]"
 date: 2026-01-31

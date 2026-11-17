@@ -5,7 +5,7 @@ tags:
   - has/github
   - severity/high
   - novelty/variant
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Overprotocol]]"
 auditors:
   - "[[DTheo]]"

@@ -2,8 +2,8 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/dex
-  - sector/launchpad
+  - web3-sector/dex
+  - web3-sector/launchpad
   - platform/pashov
   - severity/high
   - impact/dos/permanent

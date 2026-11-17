@@ -1,37 +1,37 @@
 ---
 tags:
   - checklist
-  - sector/dex
+  - web3-sector/dex
 generated: true
 ---
 # Dex — Audit Checklist
 
-> Auto-generated from **446** findings in this sector (**93** with bug-class tags), ranked by frequency.
+> Auto-generated from **399** findings in this sector (**96** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
 What actually goes wrong in this sector, most common first. Tick each as you rule it out.
 
-- [ ] **Logic: Fee Calculation** — 16 findings `vuln/logic/fee-calculation`
+- [ ] **Logic: Fee Calculation** — 17 findings `vuln/logic/fee-calculation`
 - [ ] **Reentrancy: Single Function** — 13 findings `vuln/reentrancy/single-function`
 - [ ] **Oracle: Spot Price** — 13 findings `vuln/oracle/spot-price`
-- [ ] **Logic: Reward Calculation** — 10 findings `vuln/logic/reward-calculation`
+- [ ] **Logic: Reward Calculation** — 11 findings `vuln/logic/reward-calculation`
 - [ ] **Dos: Frozen Funds** — 10 findings `vuln/dos/frozen-funds`
 - [ ] **Access Control: Missing Modifier** — 9 findings `vuln/access-control/missing-modifier`
-- [ ] **Arithmetic: Decimal Mismatch** — 8 findings `vuln/arithmetic/decimal-mismatch`
+- [ ] **Arithmetic: Decimal Mismatch** — 9 findings `vuln/arithmetic/decimal-mismatch`
 - [ ] **Arithmetic: Underflow** — 6 findings `vuln/arithmetic/underflow`
 - [ ] **Pda: Reinitialization** — 4 findings `vuln/pda/reinitialization`
 - [ ] **Reentrancy: Read Only** — 3 findings `vuln/reentrancy/read-only`
+- [ ] **Dos: Unbounded Loop** — 3 findings `vuln/dos/unbounded-loop`
 - [ ] **Pda: Missing Seeds Check** — 3 findings `vuln/pda/missing-seeds-check`
 - [ ] **Dos: Griefing** — 2 findings `vuln/dos/griefing`
 - [ ] **Bridge: Replay** — 2 findings `vuln/bridge/replay`
 - [ ] **Logic: Liquidation Logic** — 2 findings `vuln/logic/liquidation-logic`
-- [ ] **Dos: Unbounded Loop** — 2 findings `vuln/dos/unbounded-loop`
 
 ## 🎯 Common triggers
 The conditions attackers use to set these bugs off — check each path is constrained.
 
-- [ ] `trigger/price-manipulation` — 30
+- [ ] `trigger/price-manipulation` — 31
 - [ ] `trigger/sandwich-attack` — 19
 - [ ] `trigger/reentrancy-callback` — 13
 - [ ] `trigger/low-liquidity` — 8
@@ -44,12 +44,12 @@ The conditions attackers use to set these bugs off — check each path is constr
 ## 💥 Typical impact
 Where it hurts when these bugs land.
 
-- `impact/loss-of-funds/direct-drain` — 56
-- `impact/mev/frontrun` — 28
-- `impact/data-corruption/price-manipulation` — 27
+- `impact/loss-of-funds/direct-drain` — 59
+- `impact/mev/frontrun` — 29
+- `impact/data-corruption/price-manipulation` — 28
 - `impact/mev/sandwich` — 19
 - `impact/loss-of-funds/locked-funds` — 17
-- `impact/loss-of-funds/reward-theft` — 9
+- `impact/loss-of-funds/reward-theft` — 11
 - `impact/loss-of-funds/fee-theft` — 7
 - `impact/dos/permanent` — 7
 - `impact/mev/backrun` — 6
@@ -59,7 +59,7 @@ Where it hurts when these bugs land.
 The fixes auditors most often recommended in this sector.
 
 - `fix/fix-arithmetic` — 35
-- `fix/use-reentrancy-guard` — 28
+- `fix/use-reentrancy-guard` — 29
 - `fix/add-access-control` — 12
 - `fix/use-twap` — 11
 - `fix/add-check` — 5

@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
+  - web3-sector/farm
   - platform/cantina
   - has/poc
   - severity/high

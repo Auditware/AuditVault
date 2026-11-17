@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/anchor
-  - sector/multisig
+  - lang/rust
+  - web3-sector/multisig
   - has/github
   - severity/high
-  - lang/rust
+  - impact/mev/sandwich
+  - trigger/sandwich-attack
+  - novelty/variant
 protocol: "[[Gatekeeper]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +16,7 @@ genome:
   - "[[pda-derivation]]"
   - "[[sandwich]]"
   - "[[trigger/sandwich-attack]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [C-02] Improper PDA validation in `handler` enables arbitrary data clearing
 
 - id: 58695

@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - severity/high
   - platform/openzeppelin
-  - sector/token
+  - web3-sector/token
 protocol: "[[SphereX]]"
 auditors:
   - "[[OpenZeppelin]]"

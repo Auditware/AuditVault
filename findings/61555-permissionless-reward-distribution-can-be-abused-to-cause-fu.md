@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
+  - vuln/dos/frozen-funds
+  - impact/loss-of-funds/direct-drain
+  - novelty/known-pattern
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
@@ -13,8 +16,7 @@ genome:
   - "[[reward-accounting]]"
   - "[[frozen-funds]]"
   - "[[direct-drain]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Permissionless reward distribution can be abused to cause full denial of service and loss of funds for pools
 
 - id: 61555

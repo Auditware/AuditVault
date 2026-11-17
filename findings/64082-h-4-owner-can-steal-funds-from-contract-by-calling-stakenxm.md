@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/liquid-staking
-  - sector/nft
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/liquid-staking
+  - web3-sector/nft
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/sherlock
   - has/github
   - has/poc

@@ -2,9 +2,9 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/dex
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/stable
+  - web3-sector/token
   - has/audit
   - impact/loss-of-funds/direct-drain
 title: "Arbix Finance - REKT"

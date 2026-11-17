@@ -1,9 +1,11 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/staking
   - has/github
   - severity/high
-  - sector/staking
+  - vuln/logic/reward-calculation
+  - novelty/variant
 protocol: "[[Mystic Finance]]"
 auditors:
   - Kann
@@ -12,8 +14,7 @@ genome:
   - "[[reward-accounting]]"
   - "[[reward-calculation]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # [C-01] Miscalculation in rewardswill give toomuchrewardstousers
 
 - id: 57712

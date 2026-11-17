@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/bridge
+  - novelty/variant
 protocol: "[[Harmonixfinance Hyperliquid]]"
 auditors:
   - Shieldify Security
 report: "https://github.com/shieldify-security/audits-portfolio-md/blob/main/HarmonixFinance-Hyperliquid-Security-Review.md"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-01] Incorrect Withdrawal State Update Causes Partial Withdrawals to Fail
 
 - id: 57886

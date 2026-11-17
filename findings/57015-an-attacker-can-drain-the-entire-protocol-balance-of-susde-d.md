@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/streaming
-  - sector/token
+  - web3-sector/streaming
+  - web3-sector/token
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/arithmetic/underflow
+  - novelty/known-pattern
 protocol: "[[Strata]]"
 auditors:
   - Dacian
@@ -15,8 +17,7 @@ genome:
   - "[[underflow]]"
   - "[[known-pattern]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # An attacker can drain the entire protocol balance of sUSDe during the yield phase due to incorrect redemption accounting logic in `pUSDeVault::_withdraw`
 
 - id: 57015

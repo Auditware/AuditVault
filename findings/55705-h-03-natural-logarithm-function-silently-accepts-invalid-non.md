@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
+  - web3-sector/options
   - platform/code4rena
   - has/github
   - severity/high
+  - novelty/variant
 protocol: "[[Forte]]"
 auditors:
   - dreamcoder
 report: "https://code4rena.com/reports/2025-04-forte-float128-solidity-library"
 genome:
   - "[[circuit-input-range-check]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # [H-03] Natural logarithm function silently accepts invalid non-positive inputs
 
 - id: 55705

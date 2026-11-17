@@ -2,11 +2,13 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - impact/mev/frontrun
 protocol: "[[SEDA Protocol]]"
 auditors:
   - dod4ufn
@@ -14,8 +16,7 @@ report: "https://github.com/sherlock-audit/2024-12-seda-protocol-judging"
 genome:
   - "[[frontrun-exposure]]"
   - "[[direct-drain]]"
-  - "[[mev/frontrun]]"
----
+  - "[[mev/frontrun]]"---
 # H-8: Attacker can front-run Withdraw and steal the withdrawal
 
 - id: 55235

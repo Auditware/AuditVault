@@ -1,12 +1,12 @@
 ---
 tags:
-  - sector/bridge
-  - sector/dex
-  - sector/gaming
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/perpetuals
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/perpetuals
 title: "BALD on Base - REKT"
 protocol: "[[Bald On Base]]"
 date: 2023-07-31

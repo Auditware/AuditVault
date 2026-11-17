@@ -1,7 +1,8 @@
 ---
 tags:
   - blockchain/evm
-  - sector/bridge
+  - lang/solidity
+  - web3-sector/bridge
 ---
 LiFi is a protocol - description pending.
 

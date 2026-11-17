@@ -3,8 +3,8 @@ tags:
   - blockchain/evm
   - blockchain/evm/arbitrum
   - lang/solidity
-  - sector/gaming
-  - sector/zk
+  - web3-sector/gaming
+  - web3-sector/zk
   - platform/cantina
   - severity/high
   - novelty/variant

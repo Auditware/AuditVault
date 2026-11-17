@@ -3,7 +3,7 @@ tags:
   - lang/rust
   - platform/auditware
   - severity/high
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Bullpen]]"
 auditors:
   - "[[Auditware]]"

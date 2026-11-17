@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/token
-  - sector/vault
+  - web3-sector/token
+  - web3-sector/vault
   - platform/shieldify
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - trigger/first-deposit
 protocol: "[[Harmonixfinance Hyperliquid]]"
 auditors:
   - Shieldify Security
@@ -13,8 +15,7 @@ report: "https://github.com/shieldify-security/audits-portfolio-md/blob/main/Har
 genome:
   - "[[frontrun-exposure]]"
   - "[[direct-drain]]"
-  - "[[first-deposit]]"
----
+  - "[[first-deposit]]"---
 # [C-01] First Depositor Can Inflate Share Price to Steal Funds from Subsequent Depositors
 
 - id: 57883

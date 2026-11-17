@@ -4,8 +4,8 @@ tags:
   - has/github
   - has/poc
   - lang/rust
-  - sector/dex
-  - sector/farm
+  - web3-sector/dex
+  - web3-sector/farm
   - platform/code4rena
 protocol: "[[MANTRA]]"
 auditors:

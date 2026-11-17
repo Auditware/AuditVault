@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - platform/cyfrin
   - has/github
   - severity/high
+  - trigger/low-liquidity
 protocol: "[[Paladin Valkyrie]]"
 auditors:
   - Draiakoo
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/2025-03-12-cyfrin-paladin-valkyrie-v2.0.md"
 genome:
   - "[[dos-resistance]]"
-  - "[[trigger/low-liquidity]]"
----
+  - "[[trigger/low-liquidity]]"---
 # Swaps performed in pools with zero liquidity can cause a complete DoS of `FullRangeHook`
 
 - id: 61558

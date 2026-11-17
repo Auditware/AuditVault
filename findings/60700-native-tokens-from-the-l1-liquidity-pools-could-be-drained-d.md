@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/dex
+  - web3-sector/bridge
+  - web3-sector/dex
   - platform/quantstamp
   - severity/high
   - novelty/known-pattern

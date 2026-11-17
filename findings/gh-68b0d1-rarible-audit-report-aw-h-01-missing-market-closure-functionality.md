@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/nft
+  - web3-sector/nft
   - platform/auditware
   - severity/high
   - vuln/logic/fee-calculation

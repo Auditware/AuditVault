@@ -1,7 +1,7 @@
 ---
 tags:
-  - sector/bridge
-  - sector/gaming
+  - web3-sector/bridge
+  - web3-sector/gaming
   - impact/loss-of-funds/locked-funds
   - precondition/insider
 title: "Shibarium Bridge - REKT"

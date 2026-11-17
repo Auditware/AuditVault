@@ -3,9 +3,9 @@ tags:
   - blockchain/bsc
   - blockchain/ethereum
   - has/audit
-  - sector/dex
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "StableMagnet - REKT"
 protocol: "[[Stablemagnet]]"
 date: 2021-06-23

@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/governance
-  - sector/oracle
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/oracle
+  - web3-sector/staking
   - platform/spearbit
   - has/github
   - severity/high

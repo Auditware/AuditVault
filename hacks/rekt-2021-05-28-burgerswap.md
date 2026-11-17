@@ -1,8 +1,8 @@
 ---
 tags:
   - blockchain/bsc
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
   - vuln/reentrancy/single-function
   - novelty/known-pattern
 title: "BurgerSwap - REKT"

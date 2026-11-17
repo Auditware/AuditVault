@@ -1,30 +1,30 @@
 ---
 tags:
   - checklist
-  - sector/bridge
+  - web3-sector/bridge
 generated: true
 ---
 # Bridge — Audit Checklist
 
-> Auto-generated from **251** findings in this sector (**32** with bug-class tags), ranked by frequency.
+> Auto-generated from **204** findings in this sector (**39** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
 What actually goes wrong in this sector, most common first. Tick each as you rule it out.
 
 - [ ] **Dos: Frozen Funds** — 7 findings `vuln/dos/frozen-funds`
+- [ ] **Logic: Fee Calculation** — 5 findings `vuln/logic/fee-calculation`
+- [ ] **Bridge: Replay** — 5 findings `vuln/bridge/replay`
 - [ ] **Dos: Unbounded Loop** — 4 findings `vuln/dos/unbounded-loop`
-- [ ] **Logic: Fee Calculation** — 3 findings `vuln/logic/fee-calculation`
-- [ ] **Arithmetic: Decimal Mismatch** — 3 findings `vuln/arithmetic/decimal-mismatch`
-- [ ] **Bridge: Replay** — 3 findings `vuln/bridge/replay`
+- [ ] **Arithmetic: Decimal Mismatch** — 4 findings `vuln/arithmetic/decimal-mismatch`
+- [ ] **Logic: Reward Calculation** — 3 findings `vuln/logic/reward-calculation`
 - [ ] **Dependency: Upgradeable Contract** — 2 findings `vuln/dependency/upgradeable-contract`
-- [ ] **Logic: Reward Calculation** — 2 findings `vuln/logic/reward-calculation`
 - [ ] **Reentrancy: Single Function** — 2 findings `vuln/reentrancy/single-function`
+- [ ] **Arithmetic: Underflow** — 2 findings `vuln/arithmetic/underflow`
 - [ ] **Access Control: Missing Modifier** — 2 findings `vuln/access-control/missing-modifier`
 - [ ] **Dos: Griefing** — 2 findings `vuln/dos/griefing`
 - [ ] **Dependency: Unchecked Return Value** — 1 finding `vuln/dependency/unchecked-return-value`
 - [ ] **Pda: Missing Seeds Check** — 1 finding `vuln/pda/missing-seeds-check`
-- [ ] **Arithmetic: Underflow** — 1 finding `vuln/arithmetic/underflow`
 - [ ] **Arithmetic: Precision Loss** — 1 finding `vuln/arithmetic/precision-loss`
 - [ ] **Oracle: Stale Price** — 1 finding `vuln/oracle/stale-price`
 
@@ -33,19 +33,20 @@ The conditions attackers use to set these bugs off — check each path is constr
 
 - [ ] `trigger/cross-chain-message` — 8
 - [ ] `trigger/reorg` — 2
+- [ ] `trigger/price-manipulation` — 2
 - [ ] `trigger/reentrancy-callback` — 2
 - [ ] `trigger/time-based/epoch-boundary` — 1
-- [ ] `trigger/price-manipulation` — 1
 
 ## 💥 Typical impact
 Where it hurts when these bugs land.
 
-- `impact/loss-of-funds/direct-drain` — 16
+- `impact/loss-of-funds/direct-drain` — 18
 - `impact/loss-of-funds/locked-funds` — 14
 - `impact/mev/frontrun` — 2
 - `impact/dos/permanent` — 2
 - `impact/mev/backrun` — 1
 - `impact/privilege-escalation/ownership-transfer` — 1
+- `impact/data-corruption/price-manipulation` — 1
 
 ## 🛠️ Recommended mitigations
 The fixes auditors most often recommended in this sector.

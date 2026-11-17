@@ -1,21 +1,21 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/restaking
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/restaking
+  - web3-sector/staking
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
+  - impact/mev/frontrun
 protocol: "[[CAP Labs Covered Agent Protocol]]"
 auditors:
   - Benjamin Samuels
 report: "https://github.com/trailofbits/publications/blob/master/reviews/2025-05-caplabs-coveredagentprotocol-securityreview.pdf"
 genome:
   - "[[frontrun-exposure]]"
-  - "[[mev/frontrun]]"
----
+  - "[[mev/frontrun]]"---
 # Reward distribution enables front-running attacks and reward siphoning
 
 - id: 61538

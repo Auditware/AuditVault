@@ -2,7 +2,7 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/lending
+  - web3-sector/lending
   - has/audit
   - vuln/reentrancy/single-function
   - fix/use-reentrancy-guard

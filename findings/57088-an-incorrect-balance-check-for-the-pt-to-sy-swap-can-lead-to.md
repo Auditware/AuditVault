@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[FIVA Yield Tokenization Protocol]]"
 auditors:
   - Tarun Bansal
 report: "https://github.com/trailofbits/publications/blob/master/reviews/2025-05-FIVA-yieldtokenizationprotocol-securityreview.pdf"
 genome:
   - "[[cross-contract-state-consistency]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # An incorrect balance check for the PT-to-SY swap can lead to a loss of funds
 
 - id: 57088

@@ -5,7 +5,7 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[SEDA]]"
 auditors:
   - "[[tallo]]"

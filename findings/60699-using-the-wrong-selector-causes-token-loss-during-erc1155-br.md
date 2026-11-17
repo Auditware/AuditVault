@@ -5,8 +5,8 @@ tags:
   - blockchain/evm/base
   - platform/quantstamp
   - severity/high
-  - sector/bridge
-  - sector/nft
+  - web3-sector/bridge
+  - web3-sector/nft
 protocol: "[[Boba 1 (Bridges And LP Floating Fee)]]"
 auditors:
   - "[[Pavel Shabarkin]]"

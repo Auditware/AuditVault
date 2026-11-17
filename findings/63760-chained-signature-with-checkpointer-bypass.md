@@ -4,7 +4,7 @@ tags:
   - platform/code4rena
   - has/poc
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[Sequence]]"
 auditors:
   - "[[hgrano]]"

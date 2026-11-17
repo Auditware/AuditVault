@@ -6,10 +6,10 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/dex
-  - sector/infra
-  - sector/staking
-  - sector/zk
+  - web3-sector/dex
+  - web3-sector/infra
+  - web3-sector/staking
+  - web3-sector/zk
 protocol: "[[Kakarot]]"
 auditors:
   - "[[RadiantLabs]]"

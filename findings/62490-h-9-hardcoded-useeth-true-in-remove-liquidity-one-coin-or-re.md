@@ -2,11 +2,11 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/dex
-  - sector/staking
-  - sector/staking-pool
-  - sector/token
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/token
+  - web3-sector/vault
   - platform/sherlock
   - has/github
   - has/poc

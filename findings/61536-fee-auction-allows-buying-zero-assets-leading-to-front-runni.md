@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/insurance
   - platform/trailofbits
   - has/github
   - has/poc
   - severity/high
-  - sector/insurance
+  - impact/mev/frontrun
 protocol: "[[CAP Labs Covered Agent Protocol]]"
 auditors:
   - Benjamin Samuels
 report: "https://github.com/trailofbits/publications/blob/master/reviews/2025-05-caplabs-coveredagentprotocol-securityreview.pdf"
 genome:
   - "[[frontrun-exposure]]"
-  - "[[mev/frontrun]]"
----
+  - "[[mev/frontrun]]"---
 # Fee auction allows buying zero assets, leading to front-running attacks
 
 - id: 61536

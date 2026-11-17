@@ -1,10 +1,10 @@
 ---
 tags:
   - blockchain/polygon
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
   - vuln/reentrancy/read-only
   - vuln/reentrancy/single-function
   - impact/data-corruption/price-manipulation

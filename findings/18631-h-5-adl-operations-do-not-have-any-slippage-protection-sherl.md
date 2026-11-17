@@ -4,8 +4,8 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/lending
-  - sector/perpetuals
+  - web3-sector/lending
+  - web3-sector/perpetuals
 protocol: "[[GMX]]"
 auditors:
   - "[[Breeje]]"

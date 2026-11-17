@@ -3,8 +3,8 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/dex
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/lending
 protocol: "[[Aptos Securitize]]"
 auditors:
   - "[[Bartłomiej Wierzbiński]]"

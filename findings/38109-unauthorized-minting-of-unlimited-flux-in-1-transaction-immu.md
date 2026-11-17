@@ -5,9 +5,9 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/governance
-  - sector/nft
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/token
 protocol: "[[Alchemix]]"
 auditors:
   - "[[infosec_us_team]]"

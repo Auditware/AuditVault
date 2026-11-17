@@ -5,7 +5,7 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
   - lang/anchor
 protocol: "[[Securitize]]"
 auditors:

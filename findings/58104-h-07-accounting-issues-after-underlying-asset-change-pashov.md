@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Astrolab]]"
 auditors:
   - Pashov Audit Group

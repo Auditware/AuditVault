@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/perpetuals
-  - sector/stable
-  - sector/staking
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/perpetuals
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/token
 ---
 Remora is a DeFi protocol - description pending.

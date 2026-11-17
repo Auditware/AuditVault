@@ -2,8 +2,8 @@
 tags:
   - lang/move
   - lang/solidity
-  - sector/streaming
-  - sector/token
+  - web3-sector/streaming
+  - web3-sector/token
   - platform/zokyo
   - has/github
   - severity/high

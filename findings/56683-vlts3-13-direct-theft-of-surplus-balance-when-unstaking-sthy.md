@@ -1,13 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/liquid-staking
-  - sector/options
-  - sector/staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/liquid-staking
+  - web3-sector/options
+  - web3-sector/staking
+  - web3-sector/token
   - has/github
   - severity/high
+  - vuln/access-control/missing-modifier
+  - vuln/reentrancy/single-function
+  - precondition/specific-token-type
+  - fix/use-reentrancy-guard
+  - novelty/known-pattern
 protocol: "[[Valantis]]"
 auditors:
   - Hexens
@@ -22,8 +27,7 @@ genome:
   - "[[admin-is-honest]]"
   - "[[external-call-is-safe]]"
   - "[[add-access-control]]"
-  - "[[reentrancy-callback]]"
----
+  - "[[reentrancy-callback]]"---
 # [VLTS3-13] Direct theft of surplus balance when unstaking stHYPE
 
 - id: 56683

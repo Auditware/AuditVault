@@ -7,7 +7,7 @@ tags:
   - vuln/logic/reward-calculation
   - novelty/variant
   - misassumption/math-is-safe
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Cwbc]]"
 auditors:
   - "[[Zokyo]]"

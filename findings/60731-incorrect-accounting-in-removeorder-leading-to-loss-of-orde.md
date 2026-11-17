@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/quantstamp
   - severity/high
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Talentir Token & Marketplace]]"
 auditors:
   - "[[Zeeshan Meghji]]"

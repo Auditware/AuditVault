@@ -4,7 +4,7 @@ tags:
   - platform/halborn
   - has/github
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[Consortium]]"
 auditors:
   - "[[Halborn]]"

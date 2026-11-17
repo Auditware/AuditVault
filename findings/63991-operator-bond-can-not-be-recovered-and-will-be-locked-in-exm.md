@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
-  - sector/liquid-staking
-  - sector/staking
+  - web3-sector/gaming
+  - web3-sector/liquid-staking
+  - web3-sector/staking
   - platform/spearbit
   - has/github
   - severity/high

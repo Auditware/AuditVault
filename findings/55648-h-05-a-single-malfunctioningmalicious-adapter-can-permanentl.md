@@ -2,8 +2,8 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/governance
-  - sector/lending
+  - web3-sector/governance
+  - web3-sector/lending
   - platform/0x52
   - has/github
   - severity/high

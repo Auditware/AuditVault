@@ -1,9 +1,9 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/stable
   - novelty/variant
 title: "LiFi/Jumper - Rekt"
 protocol: "[[LiFi]]"

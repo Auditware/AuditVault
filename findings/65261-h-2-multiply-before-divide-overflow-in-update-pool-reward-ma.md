@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/stable
-  - sector/uncollat-lending
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/uncollat-lending
   - platform/sherlock
   - has/github
   - severity/high

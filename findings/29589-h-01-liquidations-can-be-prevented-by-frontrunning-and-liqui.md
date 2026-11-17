@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/stable
   - platform/code4rena
   - has/github
   - has/poc

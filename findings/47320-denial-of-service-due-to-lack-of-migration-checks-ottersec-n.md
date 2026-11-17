@@ -4,7 +4,7 @@ tags:
   - platform/ottersec
   - severity/high
   - precondition/uninitialized
-  - sector/account
+  - web3-sector/account
 protocol: "[[Infinex]]"
 auditors:
   - "[[Robert Chen]]"

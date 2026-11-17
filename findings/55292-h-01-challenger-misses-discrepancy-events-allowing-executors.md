@@ -2,9 +2,9 @@
 tags:
   - severity/high
   - has/github
-  - sector/bridge
-  - sector/governance
-  - sector/farm
+  - web3-sector/bridge
+  - web3-sector/governance
+  - web3-sector/farm
   - platform/code4rena
 protocol: "[[Initia]]"
 auditors:

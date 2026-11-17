@@ -7,7 +7,7 @@ tags:
   - has/github
   - severity/high
   - novelty/variant
-  - sector/gaming
+  - web3-sector/gaming
 protocol: "[[Dojo]]"
 auditors:
   - "[[OpenZeppelin]]"

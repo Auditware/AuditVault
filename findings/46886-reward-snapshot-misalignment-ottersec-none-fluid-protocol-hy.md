@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/rust
-  - sector/cdp
-  - sector/governance
-  - sector/lending
+  - web3-sector/cdp
+  - web3-sector/governance
+  - web3-sector/lending
   - platform/ottersec
   - severity/high
   - vuln/logic/reward-calculation

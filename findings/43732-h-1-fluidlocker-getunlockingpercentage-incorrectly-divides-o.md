@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/streaming
+  - web3-sector/streaming
 protocol: "[[Superfluid]]"
 auditors:
   - "[[056Security]]"

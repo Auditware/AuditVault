@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Gains Network]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/GainsNetwork-security-review_2025-05-26.md"
 genome:
   - "[[fee-accounting]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # [H-01] Holding fees accounting discrepancy when collateral is less than fees
 
 - id: 58128

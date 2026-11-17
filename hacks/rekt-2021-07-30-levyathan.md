@@ -1,10 +1,10 @@
 ---
 tags:
-  - sector/governance
-  - sector/multisig
-  - sector/privacy
-  - sector/staking
-  - sector/token
+  - web3-sector/governance
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/staking
+  - web3-sector/token
   - vuln/logic/reward-calculation
   - precondition/insider
   - novelty/variant

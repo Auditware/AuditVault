@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/token
+  - web3-sector/token
 generated: true
 ---
 # Token — Audit Checklist
 
-> Auto-generated from **333** findings in this sector (**53** with bug-class tags), ranked by frequency.
+> Auto-generated from **296** findings in this sector (**54** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
@@ -14,9 +14,9 @@ What actually goes wrong in this sector, most common first. Tick each as you rul
 
 - [ ] **Reentrancy: Single Function** — 15 findings `vuln/reentrancy/single-function`
 - [ ] **Logic: Fee Calculation** — 6 findings `vuln/logic/fee-calculation`
+- [ ] **Dos: Frozen Funds** — 6 findings `vuln/dos/frozen-funds`
 - [ ] **Logic: Reward Calculation** — 6 findings `vuln/logic/reward-calculation`
 - [ ] **Arithmetic: Decimal Mismatch** — 5 findings `vuln/arithmetic/decimal-mismatch`
-- [ ] **Dos: Frozen Funds** — 5 findings `vuln/dos/frozen-funds`
 - [ ] **Access Control: Missing Modifier** — 4 findings `vuln/access-control/missing-modifier`
 - [ ] **Arithmetic: Underflow** — 3 findings `vuln/arithmetic/underflow`
 - [ ] **Dependency: Upgradeable Contract** — 3 findings `vuln/dependency/upgradeable-contract`
@@ -45,12 +45,12 @@ The conditions attackers use to set these bugs off — check each path is constr
 ## 💥 Typical impact
 Where it hurts when these bugs land.
 
-- `impact/loss-of-funds/direct-drain` — 58
+- `impact/loss-of-funds/direct-drain` — 59
 - `impact/mev/frontrun` — 19
-- `impact/loss-of-funds/locked-funds` — 14
+- `impact/loss-of-funds/locked-funds` — 15
 - `impact/privilege-escalation/ownership-transfer` — 5
 - `impact/data-corruption/price-manipulation` — 4
-- `impact/loss-of-funds/reward-theft` — 3
+- `impact/loss-of-funds/reward-theft` — 4
 - `impact/mev/sandwich` — 3
 - `impact/loss-of-funds/fee-theft` — 3
 - `impact/mev/backrun` — 2
@@ -60,7 +60,7 @@ Where it hurts when these bugs land.
 ## 🛠️ Recommended mitigations
 The fixes auditors most often recommended in this sector.
 
-- `fix/use-reentrancy-guard` — 33
+- `fix/use-reentrancy-guard` — 34
 - `fix/fix-arithmetic` — 21
 - `fix/add-access-control` — 6
 - `fix/upgrade-dependency` — 3

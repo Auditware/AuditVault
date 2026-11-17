@@ -4,9 +4,9 @@ tags:
   - platform/cantina
   - has/poc
   - severity/high
-  - sector/lending
-  - sector/streaming
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/streaming
+  - web3-sector/token
 protocol: "[[Sablier]]"
 auditors:
   - "[[Zach Obront]]"

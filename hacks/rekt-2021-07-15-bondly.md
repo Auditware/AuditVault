@@ -1,10 +1,10 @@
 ---
 tags:
-  - sector/gaming
-  - sector/nft
-  - sector/privacy
-  - sector/stable
-  - sector/token
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
 title: "Bondly - REKT"
 protocol: "[[Bondly]]"
 date: 2021-07-15

@@ -4,7 +4,7 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - platform/trailofbits
 protocol: "[[FIVA Yield Tokenization Protocol]]"
 auditors:

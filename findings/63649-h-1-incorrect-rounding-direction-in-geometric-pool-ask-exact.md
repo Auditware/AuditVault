@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/rust
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
   - platform/sherlock
   - has/github
   - has/poc

@@ -2,7 +2,7 @@
 tags:
   - misassumption/sequencer-is-live
   - blockchain/evm
-  - sector/lending
-  - sector/cdp
+  - web3-sector/lending
+  - web3-sector/cdp
 ---
 L2 sequencer assumed always available.

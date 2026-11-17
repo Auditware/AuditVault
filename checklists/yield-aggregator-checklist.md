@@ -1,7 +1,7 @@
 ---
 tags:
   - checklist
-  - sector/yield-aggregator
+  - web3-sector/yield-aggregator
 generated: true
 ---
 # Yield Aggregator — Audit Checklist

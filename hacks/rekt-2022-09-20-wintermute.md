@@ -1,9 +1,9 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/dex
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/privacy
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
   - precondition/insider
 title: "Wintermute - REKT 2"

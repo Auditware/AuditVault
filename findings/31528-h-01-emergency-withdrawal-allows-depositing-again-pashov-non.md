@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/stable
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/stable
+  - web3-sector/staking
   - platform/pashov
   - has/github
   - severity/high

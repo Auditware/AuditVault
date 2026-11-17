@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/rust
+  - web3-sector/infra
   - has/github
   - severity/high
-  - sector/infra
+  - novelty/known-pattern
 protocol: "[[Stylus Contracts Library]]"
 auditors:
   - OpenZeppelin
 report: "https://blog.openzeppelin.com/stylus-contracts-library-v0.2.0-audit"
 genome:
   - "[[integer-bounds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Limb Shift Overflow in shr_assign and shl_assign
 
 - id: 57998

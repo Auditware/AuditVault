@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
 ---
 Dotfinance is a DeFi protocol - description pending.

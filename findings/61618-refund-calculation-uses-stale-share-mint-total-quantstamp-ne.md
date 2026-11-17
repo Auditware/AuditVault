@@ -3,7 +3,7 @@ tags:
   - lang/rust
   - platform/quantstamp
   - severity/high
-  - sector/perpetuals
+  - web3-sector/perpetuals
 protocol: "[[Neutral Trade]]"
 auditors:
   - "[[Yamen Merhi]]"

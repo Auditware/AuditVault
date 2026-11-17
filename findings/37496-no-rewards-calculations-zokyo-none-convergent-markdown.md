@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/staking
+  - web3-sector/nft
+  - web3-sector/staking
   - platform/zokyo
   - has/github
   - severity/high

@@ -4,8 +4,8 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/dex
-  - sector/governance
+  - web3-sector/dex
+  - web3-sector/governance
   - platform/code4rena
 protocol: "[[Audit 507]]"
 auditors:

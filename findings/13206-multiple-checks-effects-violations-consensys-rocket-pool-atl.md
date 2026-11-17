@@ -1,11 +1,11 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/infra
-  - sector/lending
-  - sector/liquid-staking
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/infra
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/staking
   - platform/consensys
   - severity/high
   - vuln/reentrancy/single-function

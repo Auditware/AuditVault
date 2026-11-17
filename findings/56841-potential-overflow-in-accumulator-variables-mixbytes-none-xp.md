@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - has/github
   - severity/high
-  - sector/dex
+  - novelty/known-pattern
 protocol: "[[XPress]]"
 auditors:
   - MixBytes
 report: "https://github.com/mixbytes/audits_public/blob/master/XPress/OnchainCLOB/README.md#2-potential-overflow-in-accumulator-variables"
 genome:
   - "[[integer-bounds]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # Potential Overflow in Accumulator Variables
 
 - id: 56841

@@ -7,7 +7,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Autonomint Colored Dollar V1]]"
 auditors:
   - "[[0x37]]"

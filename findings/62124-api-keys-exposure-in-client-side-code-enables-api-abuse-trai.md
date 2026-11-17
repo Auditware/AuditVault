@@ -4,7 +4,7 @@ tags:
   - lang/solidity
   - has/github
   - severity/high
-  - sector/wallet
+  - web3-sector/wallet
 protocol: "[[Gemini]]"
 auditors:
   - "[[Coriolan Pinhas Trail of Bits PUBLIC]]"

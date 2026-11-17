@@ -3,7 +3,7 @@ tags:
   - platform/ottersec
   - lang/rust
   - severity/high
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Clockwork]]"
 auditors:
   - "[[Maher Azzouzi]]"

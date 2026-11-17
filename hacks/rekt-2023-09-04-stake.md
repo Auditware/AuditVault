@@ -3,8 +3,8 @@ tags:
   - blockchain/bsc
   - blockchain/ethereum
   - blockchain/polygon
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
   - precondition/insider
 title: "Stake - REKT"

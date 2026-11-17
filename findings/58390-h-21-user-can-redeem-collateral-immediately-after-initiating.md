@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/uncollat-lending
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/uncollat-lending
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - trigger/cross-chain-message
 protocol: "[[LEND]]"
 auditors:
   - owanemi
@@ -15,8 +17,7 @@ report: "https://github.com/sherlock-audit/2025-05-lend-audit-contest-judging"
 genome:
   - "[[bridge-message-ordering]]"
   - "[[direct-drain]]"
-  - "[[cross-chain-message]]"
----
+  - "[[cross-chain-message]]"---
 # H-21: User can redeem collateral immediately after initiating the borrow, leading undercollateralization.
 
 - id: 58390

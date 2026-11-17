@@ -2,7 +2,7 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/dex
+  - web3-sector/dex
   - platform/pashov
   - has/github
   - severity/high

@@ -6,7 +6,7 @@ tags:
   - has/poc
   - severity/high
   - impact/loss-of-funds/direct-drain
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Subsquid]]"
 auditors:
   - "[[Pashov Audit Group]]"

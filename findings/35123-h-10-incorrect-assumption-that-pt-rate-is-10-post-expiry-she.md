@@ -4,11 +4,11 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/dex
-  - sector/lending
-  - sector/oracle
-  - sector/restaking
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/restaking
+  - web3-sector/staking
 protocol: "[[Notional]]"
 auditors:
   - "[[lemonmon]]"

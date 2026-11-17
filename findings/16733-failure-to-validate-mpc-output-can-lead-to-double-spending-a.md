@@ -6,8 +6,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/privacy
-  - sector/staking
+  - web3-sector/privacy
+  - web3-sector/staking
 protocol: "[[AZTEC]]"
 auditors:
   - "[[James Miller]]"

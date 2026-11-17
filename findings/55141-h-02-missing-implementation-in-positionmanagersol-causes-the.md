@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/bridge
+  - impact/loss-of-funds/direct-drain
 protocol: "[[Surge]]"
 auditors:
   - Shieldify Security
 report: "https://github.com/shieldify-security/audits-portfolio-md/blob/main/Surge-Security-Review.md"
 genome:
   - "[[dos-resistance]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # [H-02] Missing Implementation in `PositionManager.sol` Causes the Liquidity in Positions to Not Be Retrievable
 
 - id: 55141

@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/infra
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/infra
+  - web3-sector/staking
   - platform/spearbit
   - has/github
   - severity/high

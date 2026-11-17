@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/token
+  - web3-sector/farm
+  - web3-sector/token
   - has/github
   - severity/high
+  - impact/data-corruption/price-manipulation
+  - trigger/price-manipulation
+  - fix/use-reentrancy-guard
 protocol: "[[Astrolab]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +16,7 @@ genome:
   - "[[cross-contract-state-consistency]]"
   - "[[data-corruption/price-manipulation]]"
   - "[[trigger/price-manipulation]]"
-  - "[[use-reentrancy-guard]]"
----
+  - "[[use-reentrancy-guard]]"---
 # [C-02] Wrong usage of mapping target in `cancelRedeemRequest``
 
 - id: 58097

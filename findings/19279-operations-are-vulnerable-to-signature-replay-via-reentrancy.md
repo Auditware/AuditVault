@@ -9,7 +9,7 @@ tags:
   - novelty/known-pattern
   - misassumption/external-call-is-safe
   - fix/use-reentrancy-guard
-  - sector/account
+  - web3-sector/account
 protocol: "[[BLS Wallet]]"
 auditors:
   - "[[Sigma Prime]]"

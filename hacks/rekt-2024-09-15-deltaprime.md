@@ -2,9 +2,9 @@
 tags:
   - blockchain/arbitrum
   - blockchain/avalanche
-  - sector/dex
-  - sector/multisig
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/multisig
+  - web3-sector/stable
   - precondition/insider
   - blast-radius/cross-protocol
 title: "DeltaPrime - Rekt"

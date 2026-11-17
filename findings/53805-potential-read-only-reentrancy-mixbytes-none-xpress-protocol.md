@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - has/github
   - severity/high
-  - sector/dex
+  - vuln/reentrancy/read-only
+  - vuln/reentrancy/single-function
+  - novelty/known-pattern
 protocol: "[[XPress Protocol]]"
 auditors:
   - MixBytes
@@ -15,8 +18,7 @@ genome:
   - "[[known-pattern]]"
   - "[[external-call-is-safe]]"
   - "[[use-reentrancy-guard]]"
-  - "[[reentrancy-callback]]"
----
+  - "[[reentrancy-callback]]"---
 # Potential Read-Only Reentrancy
 
 - id: 53805

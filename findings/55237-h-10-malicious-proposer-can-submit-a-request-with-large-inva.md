@@ -1,21 +1,21 @@
 ---
 tags:
-  - sector/governance
-  - sector/staking
+  - lang/rust
+  - lang/solidity
+  - web3-sector/governance
+  - web3-sector/staking
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
-  - lang/solidity
-  - lang/rust
+  - novelty/variant
 protocol: "[[SEDA Protocol]]"
 auditors:
   - bronze\_pickaxe
 report: "https://github.com/sherlock-audit/2024-12-seda-protocol-judging"
 genome:
   - "[[dos-resistance]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # H-10: Malicious proposer can submit a request with large invalid transactions because of no mempool to bloat the block store
 
 - id: 55237

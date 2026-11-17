@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/rust
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[ZKsync Crypto Precompile]]"
 auditors:
   - OpenZeppelin

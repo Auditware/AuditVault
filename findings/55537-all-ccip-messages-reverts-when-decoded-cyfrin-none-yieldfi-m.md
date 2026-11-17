@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/oracle
   - platform/cyfrin
   - has/github
   - severity/high
+  - impact/loss-of-funds/direct-drain
+  - novelty/known-pattern
 protocol: "[[Yieldfi]]"
 auditors:
   - Immeas
@@ -13,8 +15,7 @@ report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/202
 genome:
   - "[[bridge-message-validation]]"
   - "[[direct-drain]]"
-  - "[[known-pattern]]"
----
+  - "[[known-pattern]]"---
 # All CCIP messages reverts when decoded
 
 - id: 55537

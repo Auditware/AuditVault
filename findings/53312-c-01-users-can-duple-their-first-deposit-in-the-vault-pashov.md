@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/vault
+  - web3-sector/dex
+  - web3-sector/vault
   - has/github
   - severity/high
+  - trigger/first-deposit
 protocol: "[[Omo]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/Omo-security-review_2025-01-25.md"
 genome:
   - "[[frontrun-exposure]]"
-  - "[[first-deposit]]"
----
+  - "[[first-deposit]]"---
 # [C-01] Users can duple their first deposit in the vault
 
 - id: 53312

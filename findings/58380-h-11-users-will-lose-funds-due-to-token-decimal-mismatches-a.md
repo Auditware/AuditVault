@@ -1,13 +1,15 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/lending
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/lending
+  - web3-sector/stable
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - vuln/arithmetic/decimal-mismatch
+  - novelty/variant
 protocol: "[[LEND]]"
 auditors:
   - Sa1ntRobi
@@ -17,8 +19,7 @@ genome:
   - "[[decimal-mismatch]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # H-11: Users will lose funds due to token decimal mismatches across chains
 
 - id: 58380

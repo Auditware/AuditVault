@@ -2,7 +2,7 @@
 tags:
   - blockchain/ethereum
   - blockchain/polygon
-  - sector/stable
+  - web3-sector/stable
 title: "SafeDollar - REKT"
 protocol: "[[Safedollar]]"
 date: 2021-06-28

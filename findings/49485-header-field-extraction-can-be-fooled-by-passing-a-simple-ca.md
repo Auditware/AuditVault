@@ -4,7 +4,7 @@ tags:
   - lang/noir
   - platform/consensys
   - severity/high
-  - sector/privacy
+  - web3-sector/privacy
 protocol: "[[ZK Email Noir]]"
 auditors:
   - "[[Heiko Fisch]]"

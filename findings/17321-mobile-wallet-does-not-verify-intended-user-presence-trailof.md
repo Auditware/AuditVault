@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/privacy
+  - web3-sector/bridge
+  - web3-sector/privacy
   - platform/trailofbits
   - has/github
   - has/poc

@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/options
+  - web3-sector/options
   - platform/spearbit
   - has/github
   - severity/high
+  - vuln/pda/missing-seeds-check
+  - novelty/variant
 protocol: "[[InfiniFi Contracts]]"
 auditors:
   - R0bert
@@ -13,8 +15,7 @@ genome:
   - "[[reward-accounting]]"
   - "[[missing-seeds-check]]"
   - "[[variant]]"
-  - "[[add-check]]"
----
+  - "[[add-check]]"---
 # Double-claiming of accrued rewards via unwinding after accrue call
 
 - id: 55050

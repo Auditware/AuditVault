@@ -9,8 +9,8 @@ tags:
   - blockchain/polygon
   - blockchain/solana
   - blockchain/tron
-  - sector/dex
-  - sector/gaming
+  - web3-sector/dex
+  - web3-sector/gaming
 title: "Phemex - Rekt"
 protocol: "[[Phemex]]"
 date: 2025-01-23

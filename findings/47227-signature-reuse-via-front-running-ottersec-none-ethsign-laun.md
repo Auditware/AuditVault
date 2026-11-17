@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/launchpad
+  - web3-sector/launchpad
   - platform/ottersec
   - severity/high
   - impact/mev/frontrun

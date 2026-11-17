@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/lending
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/shieldify
   - has/github
   - severity/high

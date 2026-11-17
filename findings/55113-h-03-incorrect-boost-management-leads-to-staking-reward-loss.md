@@ -3,8 +3,8 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/staking
+  - web3-sector/staking-pool
 protocol: "[[Roots]]"
 auditors:
   - Pashov Audit Group

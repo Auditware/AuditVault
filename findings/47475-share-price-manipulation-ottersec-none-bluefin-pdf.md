@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
   - platform/ottersec
   - severity/high
   - impact/data-corruption/price-manipulation

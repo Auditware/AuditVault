@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/oracle/stale-price
+  - fix/use-reentrancy-guard
+  - novelty/known-pattern
 protocol: "[[Astrolab]]"
 auditors:
   - Pashov Audit Group
@@ -13,8 +16,7 @@ genome:
   - "[[stale-price]]"
   - "[[use-reentrancy-guard]]"
   - "[[known-pattern]]"
-  - "[[oracle-is-reliable]]"
----
+  - "[[oracle-is-reliable]]"---
 # [H-04] `withdraw()` worst price will distort `sharePrice()`
 
 - id: 58101

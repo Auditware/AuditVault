@@ -10,7 +10,7 @@ tags:
   - misassumption/signature-is-unique
   - fix/add-nonce
   - trigger/cross-chain-message
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[Overprotocol]]"
 auditors:
   - "[[DTheo]]"

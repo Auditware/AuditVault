@@ -4,7 +4,7 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/stable
+  - web3-sector/stable
 protocol: "[[Remora]]"
 auditors:
   - "[[0xStalin]]"

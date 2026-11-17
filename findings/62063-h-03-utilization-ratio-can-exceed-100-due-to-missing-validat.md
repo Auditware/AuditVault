@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/rust
-  - sector/lending
-  - sector/nft-lending
-  - sector/oracle
+  - web3-sector/lending
+  - web3-sector/nft-lending
+  - web3-sector/oracle
   - platform/code4rena
   - has/github
   - has/poc

@@ -1,7 +1,8 @@
 ---
 tags:
   - blockchain/evm
-  - sector/infra
+  - lang/solidity
+  - web3-sector/infra
 ---
 Crypto.com is a protocol - description pending.
 

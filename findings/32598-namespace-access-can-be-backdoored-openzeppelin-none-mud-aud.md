@@ -6,7 +6,7 @@ tags:
   - severity/high
   - impact/mev/frontrun
   - impact/privilege-escalation/ownership-transfer
-  - sector/infra
+  - web3-sector/infra
 protocol: "[[MUD]]"
 auditors:
   - "[[OpenZeppelin]]"

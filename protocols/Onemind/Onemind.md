@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
-  - sector/nft-marketplace
-  - sector/vault
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
+  - web3-sector/vault
 ---
 Onemind is a DeFi protocol - description pending.

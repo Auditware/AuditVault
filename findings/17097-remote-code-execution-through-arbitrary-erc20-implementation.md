@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/nft
-  - sector/token
+  - web3-sector/nft
+  - web3-sector/token
 protocol: "[[Origin]]"
 auditors:
   - "[[Robert Tonic]]"

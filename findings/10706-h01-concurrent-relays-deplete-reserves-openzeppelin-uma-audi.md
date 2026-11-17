@@ -4,7 +4,7 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[UMA]]"
 auditors:
   - "[[OpenZeppelin]]"

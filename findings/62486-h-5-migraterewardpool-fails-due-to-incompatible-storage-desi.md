@@ -5,12 +5,12 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/farm
-  - sector/staking
-  - sector/staking-pool
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
 protocol: "[[Notional]]"
 auditors:
   - "[[Ledger_Patrol]]"

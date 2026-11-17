@@ -4,7 +4,7 @@ tags:
   - lang/rust
   - platform/pashov
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Coalescefinance]]"
 auditors:
   - "[[FrankCastle]]"

@@ -4,7 +4,7 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[EYWA]]"
 auditors:
   - "[[MixBytes]]"

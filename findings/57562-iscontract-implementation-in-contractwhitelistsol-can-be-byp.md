@@ -4,9 +4,9 @@ tags:
   - platform/zokyo
   - has/github
   - severity/high
-  - sector/account
-  - sector/multisig
-  - sector/staking
+  - web3-sector/account
+  - web3-sector/multisig
+  - web3-sector/staking
 protocol: "[[Umami]]"
 auditors:
   - "[[Zokyo]]"

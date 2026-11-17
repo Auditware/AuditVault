@@ -5,7 +5,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/lending
+  - web3-sector/lending
   - lang/anchor
 protocol: "[[Vaultka]]"
 auditors:

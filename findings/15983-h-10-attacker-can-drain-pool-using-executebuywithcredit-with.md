@@ -1,13 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/nft
-  - sector/nft-lending
-  - sector/nft-marketplace
-  - sector/stable
-  - sector/staking
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/nft-lending
+  - web3-sector/nft-marketplace
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - has/poc

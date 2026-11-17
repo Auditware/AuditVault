@@ -5,7 +5,7 @@ tags:
   - platform/cantina
   - severity/high
   - novelty/variant
-  - sector/zk
+  - web3-sector/zk
 protocol: "[[Polymer]]"
 auditors:
   - "[[FrankCastle]]"

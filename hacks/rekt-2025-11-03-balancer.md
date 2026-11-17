@@ -5,13 +5,13 @@ tags:
   - blockchain/ethereum
   - blockchain/optimism
   - blockchain/polygon
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/multisig
-  - sector/stable
-  - sector/staking
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/token
   - vuln/arithmetic/rounding-direction
   - novelty/variant
   - blast-radius/cross-protocol

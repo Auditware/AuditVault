@@ -11,7 +11,7 @@ tags:
   - novelty/variant
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/stable
+  - web3-sector/stable
 protocol: "[[Opus]]"
 auditors:
   - "[[bin2chen]]"

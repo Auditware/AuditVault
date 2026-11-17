@@ -1,9 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - has/github
   - severity/high
+  - vuln/logic/reward-calculation
+  - impact/privilege-escalation/ownership-transfer
+  - novelty/variant
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
@@ -14,8 +17,7 @@ genome:
   - "[[ownership-transfer]]"
   - "[[variant]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [C-02] CLGauge sends KITTEN rewards to itself instead of to stakers
 
 - id: 58011

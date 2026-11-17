@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/gaming
+  - web3-sector/gaming
   - platform/pashov-audit-group
   - has/github
   - severity/high

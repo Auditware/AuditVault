@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/liquid-staking
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/staking
   - platform/sherlock
   - has/github
   - has/poc

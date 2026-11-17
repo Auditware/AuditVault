@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
 title: "Compound - REKT"
 protocol: "[[Compound]]"
 date: 2021-09-29

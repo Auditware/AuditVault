@@ -4,9 +4,9 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/nft
-  - sector/streaming
-  - sector/token
+  - web3-sector/nft
+  - web3-sector/streaming
+  - web3-sector/token
 protocol: "[[FairSide]]"
 auditors:
   - "[[WATCHPUG]]"

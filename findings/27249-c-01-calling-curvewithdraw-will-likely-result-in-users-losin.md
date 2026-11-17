@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
-  - sector/liquid-staking
+  - web3-sector/dex
+  - web3-sector/liquid-staking
 protocol: "[[Pino]]"
 auditors:
   - "[[Pashov]]"

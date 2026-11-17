@@ -2,19 +2,19 @@
 tags:
   - lang/rust
   - lang/solidity
-  - sector/staking
+  - web3-sector/staking
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
+  - novelty/variant
 protocol: "[[SEDA Protocol]]"
 auditors:
   - g
 report: "https://github.com/sherlock-audit/2024-12-seda-protocol-judging"
 genome:
   - "[[fee-accounting]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # H-17: A request poster can set gas_price to 1 and pay minimal fees for a lot of gas and drain validators' resources
 
 - id: 55244

@@ -4,7 +4,7 @@ tags:
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Etherspot]]"
 auditors:
   - "[[Shieldify Security]]"

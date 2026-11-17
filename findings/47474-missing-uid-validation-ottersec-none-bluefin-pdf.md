@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/perpetuals
+  - web3-sector/stable
   - platform/ottersec
   - has/poc
   - severity/high

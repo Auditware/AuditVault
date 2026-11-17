@@ -1,6 +1,7 @@
 ---
 tags:
   - severity/high
+  - novelty/variant
 protocol: "[[Privacy Pools Batch Relayer]]"
 auditors:
   - "[[Auditware]]"
@@ -14,8 +15,7 @@ genome:
   - "[[misassumption/offchain-is-trusted]]"
   - "[[precondition/user-interaction]]"
   - "[[blast-radius/single-user]]"
-  - sector/bridge
----
+  - web3-sector/bridge---
 # **AW-H-01: Unrestricted Processor Address Acceptance** {#aw-h-01:-unrestricted-processor-address-acceptance}
 
 **Severity:** *High*									**Status:** *Unmitigated*

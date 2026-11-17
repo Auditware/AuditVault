@@ -3,8 +3,8 @@ tags:
   - blockchain/arbitrum
   - blockchain/bitcoin
   - blockchain/ethereum
-  - sector/bridge
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/stable
   - impact/loss-of-funds/direct-drain
   - impact/privilege-escalation/ownership-transfer
   - precondition/insider

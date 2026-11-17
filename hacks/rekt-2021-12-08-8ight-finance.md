@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/multisig
-  - sector/privacy
-  - sector/stable
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/stable
   - precondition/insider
 title: "8ight Finance - REKT"
 protocol: "[[8ight Finance]]"

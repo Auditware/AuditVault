@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/insurance
+  - web3-sector/insurance
 generated: true
 ---
 # Insurance — Audit Checklist
 
-> Auto-generated from **21** findings in this sector (**4** with bug-class tags), ranked by frequency.
+> Auto-generated from **19** findings in this sector (**4** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

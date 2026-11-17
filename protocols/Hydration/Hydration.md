@@ -2,7 +2,7 @@
 tags:
   - blockchain/polkadot
   - lang/rust
-  - sector/dex
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/token
 ---
 Hydration is a DeFi protocol - description pending.

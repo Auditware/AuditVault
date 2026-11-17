@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/nft
+  - web3-sector/nft
 ---
 Museumofmahomes is a DeFi protocol - description pending.

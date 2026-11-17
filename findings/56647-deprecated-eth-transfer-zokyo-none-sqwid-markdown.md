@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/governance
+  - web3-sector/governance
 protocol: "[[Sqwid]]"
 auditors:
   - "[[Zokyo]]"

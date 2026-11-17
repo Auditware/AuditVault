@@ -4,11 +4,11 @@ tags:
   - platform/cyfrin
   - has/github
   - severity/high
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/oracle
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
 protocol: "[[The Standard Smart Vault]]"
 auditors:
   - "[[immeas]]"

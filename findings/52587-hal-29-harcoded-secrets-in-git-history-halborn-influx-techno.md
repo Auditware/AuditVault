@@ -1,17 +1,17 @@
 ---
 tags:
+  - web3-sector/wallet
   - has/github
   - has/poc
   - severity/high
-  - sector/wallet
+  - precondition/insider
 protocol: "[[SSP Wallet, Relay And Key]]"
 auditors:
   - Halborn
 report: "https://www.halborn.com/audits/influx-technologies/ssp-wallet-relay-and-key"
 genome:
   - "[[access-roles]]"
-  - "[[insider]]"
----
+  - "[[insider]]"---
 # HAL-29 - HARCODED SECRETS IN GIT HISTORY
 
 - id: 52587

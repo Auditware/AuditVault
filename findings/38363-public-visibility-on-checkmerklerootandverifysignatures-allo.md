@@ -9,7 +9,7 @@ tags:
   - novelty/variant
   - misassumption/admin-is-honest
   - fix/add-access-control
-  - sector/zk
+  - web3-sector/zk
 protocol: "[[Aligned Layer]]"
 auditors:
   - "[[Martin Ortner]]"

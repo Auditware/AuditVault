@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/staking
   - platform/openzeppelin
   - has/github
   - severity/high

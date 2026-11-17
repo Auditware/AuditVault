@@ -9,7 +9,7 @@ tags:
   - novelty/known-pattern
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Perena]]"
 auditors:
   - "[[FrankCastle]]"

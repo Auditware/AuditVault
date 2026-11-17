@@ -1,10 +1,13 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/logic/fee-calculation
+  - fix/use-reentrancy-guard
+  - novelty/variant
 protocol: "[[Harmonixfinance Hyperliquid]]"
 auditors:
   - Shieldify Security
@@ -14,8 +17,7 @@ genome:
   - "[[fee-calculation]]"
   - "[[use-reentrancy-guard]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # [H-04] Faulty NAV Update Logic Creates Compounding Asset Depletion
 
 - id: 57889

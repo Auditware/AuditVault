@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/governance
-  - sector/privacy
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/privacy
+  - web3-sector/staking
   - has/audit
   - vuln/access-control/proxy-storage-collision
   - vuln/pda/reinitialization

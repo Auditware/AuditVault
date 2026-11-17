@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
   - platform/shieldify
   - has/github
   - has/poc
   - severity/high
+  - impact/mev/frontrun
 protocol: "[[Daoslive]]"
 auditors:
   - Shieldify Security
 report: "https://github.com/shieldify-security/audits-portfolio-md/blob/main/DaosLive-Security-Review.md"
 genome:
   - "[[frontrun-exposure]]"
-  - "[[mev/frontrun]]"
----
+  - "[[mev/frontrun]]"---
 # [H-03] Predictable Token Deployment Address Enables Liquidity Pool Exploit in `finalize()` in `DaosLive`
 
 - id: 57870

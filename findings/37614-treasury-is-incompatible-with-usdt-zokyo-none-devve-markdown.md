@@ -4,8 +4,8 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/stable
-  - sector/token
+  - web3-sector/stable
+  - web3-sector/token
 protocol: "[[Devve]]"
 auditors:
   - "[[Zokyo]]"

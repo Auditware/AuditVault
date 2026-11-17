@@ -3,9 +3,9 @@ tags:
   - lang/solidity
   - platform/consensys
   - severity/high
-  - sector/algo-stable
-  - sector/dex
-  - sector/lending
+  - web3-sector/algo-stable
+  - web3-sector/dex
+  - web3-sector/lending
 protocol: "[[Fei Protocol V2 Phase 1]]"
 auditors:
   - "[[Sergii Kravchenko]]"

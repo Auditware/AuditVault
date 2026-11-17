@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/rust
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[DesciLaunchpad]]"
 auditors:
   - Pashov Audit Group

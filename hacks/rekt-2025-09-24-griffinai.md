@@ -2,12 +2,12 @@
 tags:
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/multisig
-  - sector/privacy
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/token
 title: "GriffinAI - Rekt"
 protocol: "[[Griffinai]]"
 date: 2025-09-24

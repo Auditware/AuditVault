@@ -1,19 +1,19 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/stable
+  - web3-sector/lending
+  - web3-sector/stable
   - platform/cyfrin
   - has/github
   - severity/high
+  - vuln/dos/griefing
 protocol: "[[Remora Pledge]]"
 auditors:
   - Dacian
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Cyfrin/2025-07-04-cyfrin-remora-pledge-v2.0.md"
 genome:
   - "[[dos-resistance]]"
-  - "[[griefing]]"
----
+  - "[[griefing]]"---
 # A single holder can grief the payouts of all holders forwarding their payouts to the same forwarder
 
 - id: 61174

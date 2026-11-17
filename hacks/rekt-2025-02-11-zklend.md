@@ -1,12 +1,12 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/gaming
-  - sector/lending
-  - sector/privacy
-  - sector/stable
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/gaming
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
   - vuln/arithmetic/precision-loss
   - trigger/flash-loan
   - precondition/flash-loan-available

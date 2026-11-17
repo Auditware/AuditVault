@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/nft
-  - sector/streaming
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/nft
+  - web3-sector/streaming
   - platform/spearbit
   - has/github
   - has/poc

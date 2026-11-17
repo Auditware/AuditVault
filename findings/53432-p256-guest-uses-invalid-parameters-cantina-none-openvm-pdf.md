@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/rust
-  - sector/zk
+  - web3-sector/zk
   - platform/cantina
   - severity/high
+  - novelty/variant
 protocol: "[[OpenVM]]"
 auditors:
   - zigtur
 report: "https://cdn.cantina.xyz/reports/cantina_competition_openvm_january2025.pdf"
 genome:
   - "[[circuit-constraint-completeness]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # P256 guest uses invalid parameters 
 
 - id: 53432

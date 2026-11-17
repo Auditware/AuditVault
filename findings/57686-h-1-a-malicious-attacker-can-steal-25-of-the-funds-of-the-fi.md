@@ -2,9 +2,9 @@
 tags:
   - lang/solidity
   - lang/vyper
-  - sector/staking
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/staking
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
   - platform/sherlock
   - has/github
   - has/poc

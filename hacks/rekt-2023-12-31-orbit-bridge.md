@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/multisig
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "Orbit Bridge - REKT"
 protocol: "[[Orbit Bridge]]"
 date: 2023-12-31

@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - platform/shieldify
   - has/github
   - severity/high
-  - sector/bridge
+  - vuln/logic/fee-calculation
+  - novelty/variant
 protocol: "[[Harmonixfinance Hyperliquid]]"
 auditors:
   - Shieldify Security
@@ -13,8 +15,7 @@ genome:
   - "[[fee-accounting]]"
   - "[[fee-calculation]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # [H-05] Admin Can Overcharge Users Due to Incorrect Fee Application in `FundContract`
 
 - id: 57890

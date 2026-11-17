@@ -2,8 +2,8 @@
 tags:
   - severity/high
   - lang/rust
-  - sector/staking
-  - sector/liquid-staking
+  - web3-sector/staking
+  - web3-sector/liquid-staking
   - platform/quantstamp
 protocol: "[[Exceed Finance Liquid Staking & Early Purchase]]"
 auditors:

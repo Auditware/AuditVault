@@ -3,7 +3,7 @@ tags:
   - lang/solidity
   - platform/ottersec
   - severity/high
-  - sector/farm
+  - web3-sector/farm
 protocol: "[[Exponent]]"
 auditors:
   - "[[Ajay Shankar Kunapareddy]]"

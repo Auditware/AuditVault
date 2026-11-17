@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/governance
-  - sector/staking
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/staking
+  - web3-sector/token
   - platform/consensys
   - has/github
   - severity/high

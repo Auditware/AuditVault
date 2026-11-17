@@ -1,11 +1,14 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/dex
   - platform/sherlock
   - has/github
   - has/poc
   - severity/high
-  - sector/dex
+  - vuln/logic/fee-calculation
+  - fix/use-reentrancy-guard
+  - novelty/variant
 protocol: "[[Burve]]"
 auditors:
   - v1c7
@@ -15,8 +18,7 @@ genome:
   - "[[fee-calculation]]"
   - "[[use-reentrancy-guard]]"
   - "[[variant]]"
-  - "[[math-is-safe]]"
----
+  - "[[math-is-safe]]"---
 # H-6: Fee Bypass in `ValueFacet.removeValueSingle`
 
 - id: 56955

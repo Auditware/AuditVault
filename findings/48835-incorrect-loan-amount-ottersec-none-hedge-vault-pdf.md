@@ -4,7 +4,7 @@ tags:
   - platform/ottersec
   - has/poc
   - severity/high
-  - sector/lending
+  - web3-sector/lending
 protocol: "[[Hedge Vault]]"
 auditors:
   - "[[Robert Chen]]"

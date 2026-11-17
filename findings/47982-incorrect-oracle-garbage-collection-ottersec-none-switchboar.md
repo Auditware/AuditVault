@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/solidity
-  - sector/oracle
+  - web3-sector/oracle
   - platform/ottersec
   - severity/high
   - vuln/oracle/stale-price

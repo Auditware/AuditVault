@@ -4,7 +4,7 @@ tags:
   - platform/pashov
   - has/github
   - severity/high
-  - sector/gaming
+  - web3-sector/gaming
 protocol: "[[RipIt]]"
 auditors:
   - "[[Pashov Audit Group]]"

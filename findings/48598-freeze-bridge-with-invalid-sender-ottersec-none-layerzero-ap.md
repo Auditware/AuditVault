@@ -3,8 +3,8 @@ tags:
   - lang/move
   - platform/ottersec
   - severity/high
-  - sector/bridge
-  - sector/lending
+  - web3-sector/bridge
+  - web3-sector/lending
 protocol: "[[LayerZero]]"
 auditors:
   - "[[Robert Chen]]"

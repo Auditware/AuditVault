@@ -3,7 +3,7 @@ tags:
   - severity/high
   - has/github
   - lang/solidity
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[Ufarm]]"
 auditors:
   - Hexens

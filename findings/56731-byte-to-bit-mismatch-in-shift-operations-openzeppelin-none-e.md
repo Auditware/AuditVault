@@ -9,7 +9,7 @@ tags:
   - novelty/known-pattern
   - misassumption/math-is-safe
   - fix/fix-arithmetic
-  - sector/zk
+  - web3-sector/zk
 protocol: "[[zkSync]]"
 auditors:
   - "[[OpenZeppelin]]"

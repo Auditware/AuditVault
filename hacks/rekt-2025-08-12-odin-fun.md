@@ -1,13 +1,13 @@
 ---
 tags:
   - blockchain/bitcoin
-  - sector/dex
-  - sector/governance
-  - sector/launchpad
-  - sector/lending
-  - sector/multisig
-  - sector/nft
-  - sector/privacy
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/launchpad
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/nft
+  - web3-sector/privacy
 title: "Odin.Fun - Rekt"
 protocol: "[[Odin Fun]]"
 date: 2025-08-12

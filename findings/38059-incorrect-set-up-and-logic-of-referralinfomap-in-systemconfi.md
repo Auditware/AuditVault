@@ -3,7 +3,7 @@ tags:
   - platform/codehawks
   - lang/solidity
   - severity/high
-  - sector/launchpad
+  - web3-sector/launchpad
 protocol: "[[Tadle]]"
 auditors:
   - "[[unnamed]]"

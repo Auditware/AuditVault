@@ -4,12 +4,12 @@ tags:
   - blockchain/avalanche
   - blockchain/bitcoin
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/multisig
-  - sector/stable
-  - sector/staking
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/multisig
+  - web3-sector/stable
+  - web3-sector/staking
   - has/audit
   - trigger/flash-loan
   - precondition/flash-loan-available

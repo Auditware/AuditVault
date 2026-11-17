@@ -4,19 +4,19 @@ tags:
   - blockchain/evm/arbitrum
   - lang/solidity
   - lang/vyper
-  - sector/dex
-  - sector/farm
-  - sector/governance
-  - sector/lending
-  - sector/liquid-staking
-  - sector/options
-  - sector/oracle
-  - sector/restaking
-  - sector/stable
-  - sector/staking
-  - sector/staking-pool
-  - sector/token
-  - sector/vault
-  - sector/yield-aggregator
+  - web3-sector/dex
+  - web3-sector/farm
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/options
+  - web3-sector/oracle
+  - web3-sector/restaking
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/staking-pool
+  - web3-sector/token
+  - web3-sector/vault
+  - web3-sector/yield-aggregator
 ---
 Notional is a DeFi protocol - description pending.

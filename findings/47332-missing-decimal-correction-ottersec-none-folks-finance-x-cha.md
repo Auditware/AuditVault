@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/oracle
-  - sector/stable
-  - sector/token
+  - web3-sector/lending
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/token
   - platform/ottersec
   - severity/high
   - vuln/arithmetic/decimal-mismatch

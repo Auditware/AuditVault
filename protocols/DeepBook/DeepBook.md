@@ -2,6 +2,7 @@
 tags:
   - blockchain/sui
   - lang/move
-  - sector/dex
+  - web3-sector/dex
+  - web3-sector/vault
 ---
 DeepBook is a protocol - description pending.

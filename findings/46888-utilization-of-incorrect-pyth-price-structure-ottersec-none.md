@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/oracle
+  - web3-sector/oracle
   - platform/ottersec
   - severity/high
   - vuln/logic/fee-calculation

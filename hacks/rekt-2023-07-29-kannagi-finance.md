@@ -1,10 +1,10 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/privacy
-  - sector/token
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/privacy
+  - web3-sector/token
+  - web3-sector/vault
 title: "Kannagi Finance - REKT"
 protocol: "[[Kannagi Finance]]"
 date: 2023-07-29

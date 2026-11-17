@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/bridge
-  - sector/staking
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/staking
+  - web3-sector/token
   - platform/trailofbits
   - has/github
   - severity/high

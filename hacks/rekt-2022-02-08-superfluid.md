@@ -2,12 +2,12 @@
 tags:
   - blockchain/polygon
   - has/audit
-  - sector/dex
-  - sector/governance
-  - sector/lending
-  - sector/privacy
-  - sector/stable
-  - sector/token
+  - web3-sector/dex
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
+  - web3-sector/token
 title: "Superfluid - REKT"
 protocol: "[[Superfluid]]"
 date: 2022-02-08

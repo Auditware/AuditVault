@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/lending
+  - web3-sector/farm
+  - web3-sector/lending
   - platform/quantstamp
   - severity/high
   - vuln/dos/frozen-funds

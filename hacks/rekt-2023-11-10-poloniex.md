@@ -3,9 +3,9 @@ tags:
   - blockchain/bitcoin
   - blockchain/ethereum
   - blockchain/tron
-  - sector/dex
-  - sector/lending
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/stable
   - precondition/insider
 title: "Poloniex - REKT"
 protocol: "[[Poloniex]]"

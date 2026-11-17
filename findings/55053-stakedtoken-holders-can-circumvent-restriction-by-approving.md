@@ -4,9 +4,9 @@ tags:
   - has/github
   - has/poc
   - lang/solidity
-  - sector/staking
-  - sector/vault
-  - sector/token
+  - web3-sector/staking
+  - web3-sector/vault
+  - web3-sector/token
   - platform/spearbit
 protocol: "[[InfiniFi Contracts]]"
 auditors:

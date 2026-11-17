@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
+  - web3-sector/dex
 ---
 Onchain Trade is a DeFi protocol - description pending.

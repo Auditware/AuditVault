@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
+  - web3-sector/lending
 ---
 OpenLeverage is a DeFi protocol - description pending.

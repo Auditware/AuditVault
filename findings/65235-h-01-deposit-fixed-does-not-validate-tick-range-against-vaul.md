@@ -7,7 +7,7 @@ tags:
   - severity/high
   - novelty/variant
   - lang/anchor
-  - sector/dex
+  - web3-sector/dex
 protocol: "[[Saffron]]"
 auditors:
   - "[[Pashov Audit Group]]"

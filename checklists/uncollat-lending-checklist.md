@@ -1,12 +1,12 @@
 ---
 tags:
   - checklist
-  - sector/uncollat-lending
+  - web3-sector/uncollat-lending
 generated: true
 ---
 # Uncollat Lending — Audit Checklist
 
-> Auto-generated from **22** findings in this sector (**7** with bug-class tags), ranked by frequency.
+> Auto-generated from **15** findings in this sector (**7** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes

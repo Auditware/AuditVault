@@ -1,7 +1,7 @@
 ---
 tags:
   - lang/rust
-  - sector/oracle
+  - web3-sector/oracle
   - platform/code4rena
   - has/github
   - has/poc

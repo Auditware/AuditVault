@@ -9,7 +9,7 @@ tags:
   - novelty/variant
   - misassumption/proxy-is-initialized
   - fix/add-check
-  - sector/account
+  - web3-sector/account
 protocol: "[[Infinex]]"
 auditors:
   - "[[Robert Chen]]"

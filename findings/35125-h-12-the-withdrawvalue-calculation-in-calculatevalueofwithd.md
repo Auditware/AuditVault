@@ -4,9 +4,9 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/lending
-  - sector/liquid-staking
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/staking
 protocol: "[[Notional]]"
 auditors:
   - "[[ZeroTrust]]"

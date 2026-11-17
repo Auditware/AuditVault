@@ -4,8 +4,8 @@ tags:
   - platform/mixbytes
   - has/github
   - severity/high
-  - sector/dex
-  - sector/multisig
+  - web3-sector/dex
+  - web3-sector/multisig
 protocol: "[[CloudWalk]]"
 auditors:
   - "[[MixBytes]]"

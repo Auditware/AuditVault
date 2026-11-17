@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/rwa
-  - sector/token
+  - web3-sector/rwa
+  - web3-sector/token
   - platform/spearbit
   - has/github
   - severity/high

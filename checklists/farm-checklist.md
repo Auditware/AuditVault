@@ -1,24 +1,25 @@
 ---
 tags:
   - checklist
-  - sector/farm
+  - web3-sector/farm
 generated: true
 ---
 # Farm — Audit Checklist
 
-> Auto-generated from **58** findings in this sector (**14** with bug-class tags), ranked by frequency.
+> Auto-generated from **53** findings in this sector (**15** with bug-class tags), ranked by frequency.
 > Regenerate with `node vault-admin/crawler/gen_sector_checklists.js`. Do not edit by hand.
 
 ## ⚠️ Top vulnerability classes
 What actually goes wrong in this sector, most common first. Tick each as you rule it out.
 
-- [ ] **Logic: Reward Calculation** — 6 findings `vuln/logic/reward-calculation`
+- [ ] **Logic: Reward Calculation** — 7 findings `vuln/logic/reward-calculation`
 - [ ] **Logic: Liquidation Logic** — 2 findings `vuln/logic/liquidation-logic`
 - [ ] **Reentrancy: Single Function** — 2 findings `vuln/reentrancy/single-function`
 - [ ] **Arithmetic: Underflow** — 2 findings `vuln/arithmetic/underflow`
 - [ ] **Dos: Griefing** — 1 finding `vuln/dos/griefing`
 - [ ] **Governance: Proposal Manipulation** — 1 finding `vuln/governance/proposal-manipulation`
 - [ ] **Arithmetic: Precision Loss** — 1 finding `vuln/arithmetic/precision-loss`
+- [ ] **Dos: Unbounded Loop** — 1 finding `vuln/dos/unbounded-loop`
 - [ ] **Dos: Frozen Funds** — 1 finding `vuln/dos/frozen-funds`
 
 ## 🎯 Common triggers
@@ -35,7 +36,7 @@ The conditions attackers use to set these bugs off — check each path is constr
 Where it hurts when these bugs land.
 
 - `impact/loss-of-funds/direct-drain` — 7
-- `impact/loss-of-funds/reward-theft` — 4
+- `impact/loss-of-funds/reward-theft` — 6
 - `impact/loss-of-funds/locked-funds` — 2
 - `impact/mev/frontrun` — 2
 - `impact/privilege-escalation/ownership-transfer` — 1

@@ -3,11 +3,11 @@ tags:
   - blockchain/bitcoin
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/staking
-  - sector/token
-  - sector/vault
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/staking
+  - web3-sector/token
+  - web3-sector/vault
   - vuln/dependency/upgradeable-contract
   - impact/loss-of-funds/direct-drain
   - impact/privilege-escalation/admin-takeover

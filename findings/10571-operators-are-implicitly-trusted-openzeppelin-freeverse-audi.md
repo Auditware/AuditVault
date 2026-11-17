@@ -4,7 +4,7 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/nft
+  - web3-sector/nft
 protocol: "[[Freeverse]]"
 auditors:
   - "[[OpenZeppelin]]"

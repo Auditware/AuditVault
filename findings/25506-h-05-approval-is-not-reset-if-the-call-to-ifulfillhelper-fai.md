@@ -4,7 +4,7 @@ tags:
   - lang/solidity
   - has/github
   - severity/high
-  - sector/bridge
+  - web3-sector/bridge
 protocol: "[[Connext]]"
 auditors:
   - "[[Code4rena]]"

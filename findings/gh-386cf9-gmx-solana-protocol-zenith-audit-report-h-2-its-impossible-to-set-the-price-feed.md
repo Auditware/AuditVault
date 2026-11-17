@@ -4,7 +4,7 @@ tags:
   - lang/rust
   - platform/zenith
   - severity/high
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[GMX]]"
 auditors:
   - "[[FrankCastle]]"

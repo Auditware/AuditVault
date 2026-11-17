@@ -1,7 +1,7 @@
 ---
 tags:
   - blockchain/avalanche
-  - sector/multisig
+  - web3-sector/multisig
   - has/audit
   - vuln/dependency/upgradeable-contract
   - impact/privilege-escalation/ownership-transfer

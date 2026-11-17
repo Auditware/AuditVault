@@ -1,11 +1,11 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/gaming
-  - sector/rwa
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/rwa
+  - web3-sector/token
   - precondition/insider
 title: "Grand Base - REKT"
 protocol: "[[Grand Base]]"

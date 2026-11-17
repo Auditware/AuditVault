@@ -3,8 +3,8 @@ tags:
   - lang/rust
   - lang/solidity
   - sdk/anchor
-  - sector/dex
-  - sector/perpetuals
+  - web3-sector/dex
+  - web3-sector/perpetuals
   - platform/cyfrin
   - has/github
   - severity/high

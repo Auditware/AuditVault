@@ -2,6 +2,6 @@
 tags:
   - blockchain/evm
   - lang/solidity
-  - sector/bridge
+  - web3-sector/bridge
 ---
 Succinct Labs Telepathy is a DeFi protocol - description pending.

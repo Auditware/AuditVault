@@ -6,7 +6,7 @@ tags:
   - severity/high
   - impact/mev/frontrun
   - trigger/first-deposit
-  - sector/oracle
+  - web3-sector/oracle
 protocol: "[[NUTS Finance]]"
 auditors:
   - "[[MixBytes]]"

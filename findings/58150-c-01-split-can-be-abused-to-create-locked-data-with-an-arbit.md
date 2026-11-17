@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/nft
+  - web3-sector/governance
+  - web3-sector/nft
   - has/github
   - severity/high
+  - vuln/arithmetic/underflow
+  - novelty/known-pattern
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
@@ -14,8 +16,7 @@ genome:
   - "[[underflow]]"
   - "[[known-pattern]]"
   - "[[math-is-safe]]"
-  - "[[fix-arithmetic]]"
----
+  - "[[fix-arithmetic]]"---
 # [C-01] `split` can be abused to create `locked` data with an arbitrary `amount`
 
 - id: 58150

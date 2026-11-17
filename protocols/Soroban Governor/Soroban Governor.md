@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/rust
-  - sector/governance
+  - web3-sector/governance
 ---
 Soroban Governor is a DeFi protocol - description pending.

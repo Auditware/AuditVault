@@ -2,14 +2,14 @@
 tags:
   - lang/move
   - lang/solidity
-  - sector/cdp
-  - sector/lending
-  - sector/nft
-  - sector/nft-lending
-  - sector/oracle
-  - sector/stable
-  - sector/staking
-  - sector/token
+  - web3-sector/cdp
+  - web3-sector/lending
+  - web3-sector/nft
+  - web3-sector/nft-lending
+  - web3-sector/oracle
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/token
   - platform/code4rena
   - has/github
   - has/poc

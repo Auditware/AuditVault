@@ -5,7 +5,7 @@ tags:
   - platform/ottersec
   - has/poc
   - severity/high
-  - sector/gaming
+  - web3-sector/gaming
 protocol: "[[Sui]]"
 auditors:
   - "[[Cauê Obici]]"

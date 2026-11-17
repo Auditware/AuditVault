@@ -5,7 +5,7 @@ tags:
   - blockchain/solana
   - blockchain/sui
   - lang/solidity
-  - sector/oracle
-  - sector/token
+  - web3-sector/oracle
+  - web3-sector/token
 ---
 Chainlink is a decentralized oracle network that provides smart contracts on Ethereum and other blockchains with reliable real-world data feeds.

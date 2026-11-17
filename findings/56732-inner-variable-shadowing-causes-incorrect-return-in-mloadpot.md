@@ -5,7 +5,7 @@ tags:
   - platform/openzeppelin
   - has/github
   - severity/high
-  - sector/zk
+  - web3-sector/zk
 protocol: "[[zkSync]]"
 auditors:
   - "[[OpenZeppelin]]"

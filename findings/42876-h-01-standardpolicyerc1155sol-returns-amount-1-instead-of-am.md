@@ -5,8 +5,8 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/nft
-  - sector/nft-marketplace
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
 protocol: "[[Blur]]"
 auditors:
   - "[[0x52]]"

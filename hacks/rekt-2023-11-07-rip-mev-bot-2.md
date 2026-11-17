@@ -1,9 +1,9 @@
 ---
 tags:
-  - sector/dex
-  - sector/lending
-  - sector/privacy
-  - sector/staking
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/staking
   - impact/mev/sandwich
   - trigger/flash-loan
   - trigger/sandwich-attack

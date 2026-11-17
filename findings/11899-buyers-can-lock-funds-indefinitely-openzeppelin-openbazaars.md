@@ -6,7 +6,7 @@ tags:
   - severity/high
   - impact/loss-of-funds/locked-funds
   - trigger/time-based/timelock-expiry
-  - sector/escrow
+  - web3-sector/escrow
 protocol: "[[OpenBazaar]]"
 auditors:
   - "[[OpenZeppelin]]"

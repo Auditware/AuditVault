@@ -4,8 +4,8 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/bridge
-  - sector/liquid-staking
+  - web3-sector/bridge
+  - web3-sector/liquid-staking
 protocol: "[[DRAFT]]"
 auditors:
   - "[[Milo Truck]]"

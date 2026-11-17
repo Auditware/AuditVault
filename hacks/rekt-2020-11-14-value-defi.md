@@ -1,8 +1,8 @@
 ---
 tags:
-  - sector/dex
-  - sector/lending
-  - sector/oracle
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/oracle
   - vuln/oracle/spot-price
   - trigger/flash-loan
   - precondition/flash-loan-available

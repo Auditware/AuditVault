@@ -3,10 +3,10 @@ tags:
   - lang/solidity
   - platform/cantina
   - severity/high
-  - sector/nft
-  - sector/streaming
-  - sector/token
-  - sector/wallet
+  - web3-sector/nft
+  - web3-sector/streaming
+  - web3-sector/token
+  - web3-sector/wallet
 protocol: "[[Sablier]]"
 auditors:
   - "[[Zach Obront]]"

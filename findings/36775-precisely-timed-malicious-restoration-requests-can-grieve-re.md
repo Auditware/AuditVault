@@ -8,7 +8,7 @@ tags:
   - trigger/time-based/epoch-boundary
   - misassumption/admin-is-honest
   - fix/add-access-control
-  - sector/insurance
+  - web3-sector/insurance
 protocol: "[[Overprotocol]]"
 auditors:
   - "[[DTheo]]"

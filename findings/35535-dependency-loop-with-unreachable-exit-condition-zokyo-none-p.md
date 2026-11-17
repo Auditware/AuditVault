@@ -4,7 +4,7 @@ tags:
   - has/github
   - platform/zokyo
   - severity/high
-  - sector/options
+  - web3-sector/options
 
 protocol: "[[Provenance]]"
 auditors:

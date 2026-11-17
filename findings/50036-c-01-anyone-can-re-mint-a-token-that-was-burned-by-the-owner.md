@@ -1,18 +1,18 @@
 ---
 tags:
   - lang/solidity
+  - web3-sector/bridge
   - has/github
   - has/poc
   - severity/high
-  - sector/bridge
+  - precondition/specific-token-type
 protocol: "[[NFTMirror]]"
 auditors:
   - Pashov Audit Group
 report: "https://github.com/pashov/audits/blob/master/team/md/NFTMirror-security-review_2024-12-30.md"
 genome:
   - "[[access-roles]]"
-  - "[[specific-token-type]]"
----
+  - "[[specific-token-type]]"---
 # [C-01] Anyone can re-mint a token that was burned by the owner
 
 - id: 50036

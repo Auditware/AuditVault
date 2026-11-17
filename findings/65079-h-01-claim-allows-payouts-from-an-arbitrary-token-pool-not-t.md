@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/gaming
-  - sector/nft
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/gaming
+  - web3-sector/nft
+  - web3-sector/stable
   - platform/shieldify
   - has/github
   - severity/high

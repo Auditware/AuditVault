@@ -1,10 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/governance
-  - sector/nft
+  - web3-sector/governance
+  - web3-sector/nft
   - has/github
   - severity/high
+  - impact/mev/frontrun
+  - fix/add-access-control
 protocol: "[[KittenSwap]]"
 auditors:
   - Pashov Audit Group
@@ -12,8 +14,7 @@ report: "https://github.com/pashov/audits/blob/master/team/md/KittenSwap-securit
 genome:
   - "[[access-roles]]"
   - "[[mev/frontrun]]"
-  - "[[add-access-control]]"
----
+  - "[[add-access-control]]"---
 # [H-06] Lack of access control in `CLGauge` creation allows unauthorized `Pools`
 
 - id: 58017

@@ -2,7 +2,7 @@
 tags:
   - blockchain/starknet
   - lang/cairo
-  - sector/zk
+  - web3-sector/zk
   - platform/cantina
   - has/poc
   - severity/high

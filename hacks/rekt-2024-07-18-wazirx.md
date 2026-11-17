@@ -1,10 +1,10 @@
 ---
 tags:
   - blockchain/bitcoin
-  - sector/dex
-  - sector/multisig
-  - sector/privacy
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/multisig
+  - web3-sector/privacy
+  - web3-sector/stable
   - precondition/insider
 title: "WazirX - Rekt"
 protocol: "[[Wazirx]]"

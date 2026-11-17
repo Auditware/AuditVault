@@ -5,10 +5,10 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/farm
-  - sector/nft
-  - sector/nft-marketplace
-  - sector/staking-pool
+  - web3-sector/farm
+  - web3-sector/nft
+  - web3-sector/nft-marketplace
+  - web3-sector/staking-pool
 protocol: "[[Foundation]]"
 auditors:
   - "[[jmak]]"

@@ -1,11 +1,13 @@
 ---
 tags:
   - lang/solidity
-  - sector/staking
-  - sector/token
-  - sector/wallet
+  - web3-sector/staking
+  - web3-sector/token
+  - web3-sector/wallet
   - has/github
   - severity/high
+  - precondition/specific-token-type
+  - novelty/variant
 protocol: "[[Metamask Delegation Framework]]"
 auditors:
   - George Kobakhidze
@@ -13,8 +15,7 @@ report: "https://diligence.consensys.io/audits/2025/04/metamask-delegation-frame
 genome:
   - "[[extcall-return-validation]]"
   - "[[specific-token-type]]"
-  - "[[variant]]"
----
+  - "[[variant]]"---
 # Missing Safe Transfer Validation in Execution Logic  Acknowledged
 
 - id: 56800

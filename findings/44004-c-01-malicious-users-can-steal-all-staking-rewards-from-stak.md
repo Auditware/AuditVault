@@ -1,10 +1,10 @@
 ---
 tags:
   - lang/solidity
-  - sector/lending
-  - sector/stable
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/lending
+  - web3-sector/stable
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/shieldify
   - has/github
   - has/poc

@@ -2,8 +2,8 @@
 tags:
   - severity/high
   - has/github
-  - sector/staking
-  - sector/staking-pool
+  - web3-sector/staking
+  - web3-sector/staking-pool
   - platform/shieldify
   - lang/solidity
 protocol: "[[Surge]]"

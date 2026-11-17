@@ -2,8 +2,8 @@
 tags:
   - blockchain/bsc
   - has/audit
-  - sector/bridge
-  - sector/dex
+  - web3-sector/bridge
+  - web3-sector/dex
 title: "Merlin Labs - REKT"
 protocol: "[[Merlin Labs]]"
 date: 2021-05-26

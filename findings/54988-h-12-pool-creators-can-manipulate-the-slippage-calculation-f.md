@@ -1,20 +1,20 @@
 ---
 tags:
   - lang/rust
-  - sector/bridge
-  - sector/dex
+  - web3-sector/bridge
+  - web3-sector/dex
   - platform/code4rena
   - has/github
   - has/poc
   - severity/high
+  - impact/loss-of-funds/direct-drain
 protocol: "[[MANTRA]]"
 auditors:
   - DadeKuma
 report: "https://code4rena.com/reports/2024-11-mantra-dex"
 genome:
   - "[[oracle-manipulation-resistance]]"
-  - "[[direct-drain]]"
----
+  - "[[direct-drain]]"---
 # [H-12] Pool creators can manipulate the slippage calculation for liquidity providers
 
 - id: 54988

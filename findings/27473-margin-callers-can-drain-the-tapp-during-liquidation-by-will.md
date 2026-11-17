@@ -4,8 +4,8 @@ tags:
   - platform/codehawks
   - has/github
   - severity/high
-  - sector/lending
-  - sector/oracle
+  - web3-sector/lending
+  - web3-sector/oracle
 protocol: "[[DittoETH]]"
 auditors:
   - "[[Cosine]]"

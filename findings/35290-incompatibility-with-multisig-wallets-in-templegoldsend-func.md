@@ -4,8 +4,8 @@ tags:
   - platform/codehawks
   - has/poc
   - severity/high
-  - sector/bridge
-  - sector/multisig
+  - web3-sector/bridge
+  - web3-sector/multisig
 protocol: "[[TempleGold]]"
 auditors:
   - "[[n0kto]]"

@@ -2,8 +2,8 @@
 tags:
   - blockchain/solana
   - lang/rust
-  - sector/governance
-  - sector/oracle
+  - web3-sector/governance
+  - web3-sector/oracle
   - platform/zenith
   - severity/high
   - vuln/access-control/missing-signer

@@ -4,8 +4,8 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/perpetuals
-  - sector/stable
+  - web3-sector/perpetuals
+  - web3-sector/stable
 protocol: "[[Panoptic]]"
 auditors:
   - "[[kvar]]"

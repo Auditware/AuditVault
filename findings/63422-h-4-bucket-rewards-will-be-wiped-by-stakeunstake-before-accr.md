@@ -5,7 +5,7 @@ tags:
   - has/github
   - has/poc
   - severity/high
-  - sector/staking
+  - web3-sector/staking
 protocol: "[[Super DCA]]"
 auditors:
   - "[[0x00T1]]"

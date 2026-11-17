@@ -5,8 +5,8 @@ tags:
   - platform/sherlock
   - has/github
   - severity/high
-  - sector/bridge
-  - sector/oracle
+  - web3-sector/bridge
+  - web3-sector/oracle
 protocol: "[[SEDA]]"
 auditors:
   - "[[x0lohaclohell]]"

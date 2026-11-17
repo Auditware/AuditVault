@@ -4,10 +4,10 @@ tags:
   - platform/trailofbits
   - has/github
   - severity/high
-  - sector/cdp
-  - sector/governance
-  - sector/lending
-  - sector/options
+  - web3-sector/cdp
+  - web3-sector/governance
+  - web3-sector/lending
+  - web3-sector/options
 protocol: "[[Opus]]"
 auditors:
   - "[[Justin Jacob]]"

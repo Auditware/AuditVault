@@ -1,9 +1,9 @@
 ---
 tags:
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/token
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/token
   - has/audit
   - vuln/reentrancy/single-function
   - novelty/known-pattern

@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/dex
-  - sector/lending
+  - web3-sector/dex
+  - web3-sector/lending
   - platform/cantina
   - has/poc
   - severity/high

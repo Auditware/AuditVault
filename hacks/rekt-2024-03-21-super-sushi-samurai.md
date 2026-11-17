@@ -2,8 +2,8 @@
 tags:
   - blockchain/arbitrum
   - has/audit
-  - sector/gaming
-  - sector/token
+  - web3-sector/gaming
+  - web3-sector/token
 title: "Super Sushi Samurai - REKT"
 protocol: "[[Super Sushi Samurai]]"
 date: 2024-03-21

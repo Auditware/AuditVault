@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/farm
-  - sector/staking
+  - web3-sector/farm
+  - web3-sector/staking
   - platform/code4rena
   - has/github
   - has/poc

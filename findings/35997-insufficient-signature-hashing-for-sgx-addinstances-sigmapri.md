@@ -5,7 +5,7 @@ tags:
   - has/github
   - severity/high
   - precondition/insider
-  - sector/zk
+  - web3-sector/zk
 protocol: "[[Taiko]]"
 auditors:
   - "[[Sigma Prime]]"

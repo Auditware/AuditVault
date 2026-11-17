@@ -4,7 +4,7 @@ tags:
   - lang/solidity
   - has/github
   - severity/high
-  - sector/vault
+  - web3-sector/vault
 protocol: "[[BadgerDAO]]"
 auditors:
   - "[[cmichel]]"

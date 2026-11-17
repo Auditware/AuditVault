@@ -1,17 +1,17 @@
 ---
 tags:
   - lang/solidity
-  - sector/token
+  - web3-sector/token
   - has/github
   - severity/high
+  - precondition/specific-token-type
 protocol: "[[Valantis]]"
 auditors:
   - Hexens
 report: "https://github.com/solodit/solodit_content/blob/main/reports/Hexens/2025-03-17-Valantis.md"
 genome:
   - "[[token-decimal-normalization]]"
-  - "[[specific-token-type]]"
----
+  - "[[specific-token-type]]"---
 # [VLTS3-5] The calculation of shares in STEXAMM is incorrect because of using the outdated amountToken1PendingLPWithdrawal
 
 - id: 56682

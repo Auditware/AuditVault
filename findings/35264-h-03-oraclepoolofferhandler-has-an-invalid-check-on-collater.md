@@ -4,10 +4,10 @@ tags:
   - platform/code4rena
   - has/github
   - severity/high
-  - sector/lending
-  - sector/nft-lending
-  - sector/oracle
-  - sector/staking
+  - web3-sector/lending
+  - web3-sector/nft-lending
+  - web3-sector/oracle
+  - web3-sector/staking
 protocol: "[[Gondi]]"
 auditors:
   - "[[oakcobalt]]"

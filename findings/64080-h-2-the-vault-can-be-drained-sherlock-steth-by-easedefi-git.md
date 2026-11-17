@@ -1,12 +1,12 @@
 ---
 tags:
   - lang/solidity
-  - sector/insurance
-  - sector/lending
-  - sector/liquid-staking
-  - sector/nft
-  - sector/staking
-  - sector/vault
+  - web3-sector/insurance
+  - web3-sector/lending
+  - web3-sector/liquid-staking
+  - web3-sector/nft
+  - web3-sector/staking
+  - web3-sector/vault
   - platform/sherlock
   - has/github
   - has/poc

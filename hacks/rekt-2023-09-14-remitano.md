@@ -2,8 +2,8 @@
 tags:
   - blockchain/ethereum
   - blockchain/tron
-  - sector/dex
-  - sector/stable
+  - web3-sector/dex
+  - web3-sector/stable
   - precondition/insider
 title: "Remitano - REKT"
 protocol: "[[Remitano]]"

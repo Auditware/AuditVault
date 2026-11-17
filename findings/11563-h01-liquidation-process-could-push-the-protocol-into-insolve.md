@@ -3,8 +3,8 @@ tags:
   - lang/solidity
   - severity/high
   - platform/openzeppelin
-  - sector/lending
-  - sector/options
+  - web3-sector/lending
+  - web3-sector/options
 protocol: "[[Opyn]]"
 auditors:
   - "[[OpenZeppelin]]"

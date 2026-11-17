@@ -1,8 +1,8 @@
 ---
 tags:
   - lang/solidity
-  - sector/liquid-staking
-  - sector/staking
+  - web3-sector/liquid-staking
+  - web3-sector/staking
   - platform/halborn
   - has/github
   - has/poc

@@ -4,8 +4,8 @@ tags:
   - platform/spearbit
   - has/github
   - severity/high
-  - sector/governance
-  - sector/staking
+  - web3-sector/governance
+  - web3-sector/staking
 protocol: "[[Monad]]"
 auditors:
   - "[[Haxatron]]"

@@ -1,6 +1,6 @@
 ---
 tags:
   - lang/rust
-  - sector/oracle
+  - web3-sector/oracle
 ---
 Reflector is a DeFi protocol - description pending.

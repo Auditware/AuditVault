@@ -1,9 +1,9 @@
 ---
 tags:
   - lang/solidity
-  - sector/account
-  - sector/options
-  - sector/token
+  - web3-sector/account
+  - web3-sector/options
+  - web3-sector/token
   - platform/spearbit
   - has/github
   - severity/high

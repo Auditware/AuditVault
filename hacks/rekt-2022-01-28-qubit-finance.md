@@ -3,11 +3,11 @@ tags:
   - blockchain/bitcoin
   - blockchain/bsc
   - blockchain/ethereum
-  - sector/bridge
-  - sector/dex
-  - sector/lending
-  - sector/privacy
-  - sector/stable
+  - web3-sector/bridge
+  - web3-sector/dex
+  - web3-sector/lending
+  - web3-sector/privacy
+  - web3-sector/stable
 title: "Qubit Finance - REKT"
 protocol: "[[Qubit Finance]]"
 date: 2022-01-28

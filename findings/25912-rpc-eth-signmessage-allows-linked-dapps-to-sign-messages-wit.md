@@ -3,8 +3,8 @@ tags:
   - lang/solidity
   - platform/consensys
   - severity/high
-  - sector/options
-  - sector/wallet
+  - web3-sector/options
+  - web3-sector/wallet
 protocol: "[[MetaMask]]"
 auditors:
   - "[[Valentin Quelquejay]]"
