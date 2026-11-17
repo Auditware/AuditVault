@@ -1,0 +1,134 @@
+---
+tags:
+  - type/cwe
+generated: true
+---
+# Improper Authentication Generic
+
+> **Disclosures in vault:** 119 | **Critical:** 41 | **High:** 78 | **Total known bounty:** $97,367 (23 disclosed) | **Top programs:** `U.S. Dept Of Defense` (16), `Rocket.Chat` (6), `Uber` (5), `Nextcloud` (4), `Basecamp` (4), `Starbucks` (4), `IBM` (4), `X / xAI` (3), `GitLab` (3), `MTN Group` (3)
+
+## All disclosures of this class
+
+Ranked by community votes - the top of this list is the canonical writeup set for how this class actually lands.
+
+- [[disclosures/h1-921780-improper-authentication-any-user-can-login-as-other-user-wit|"Improper Authentication - any user can login as other user with otp/logout & otp/login"]] - `critical`, undisclosed, 973 votes, Snapchat
+- [[disclosures/h1-1342088-flickr-account-takeover-using-aws-cognito-api|"Flickr Account Takeover using AWS Cognito API"]] - `critical`, undisclosed, 440 votes, Flickr
+- [[disclosures/h1-202781-chained-bugs-to-leak-victim-s-uber-s-fb-oauth-token|"Chained Bugs to Leak Victim's Uber's FB Oauth Token"]] - `high`, undisclosed, 427 votes, Uber
+- [[disclosures/h1-770504-bypass-password-authentication-for-updating-email-and-phone-|"Bypass Password Authentication for updating email and phone number - Security Vulnerability"]] - `high`, undisclosed, 288 votes, X / xAI
+- [[disclosures/h1-976603-ability-to-dos-any-organization-s-sso-and-open-up-the-door-t|"Ability to DOS any organization's SSO and open up the door to account takeovers"]] - `high`, $10,500, 260 votes, Superhuman (formerly Grammarly)
+- [[disclosures/h1-990048-improper-validation-at-partners-login|"Improper Validation at Partners Login"]] - `critical`, $2,000, 251 votes, Eternal
+- [[disclosures/h1-1328546-incorrect-authorization-to-the-intelbot-service-leading-to-t|"Incorrect authorization to the intelbot service leading to ticket information"]] - `critical`, $15,000, 219 votes, TikTok
+- [[disclosures/h1-2885636-2fa-bypass-leads-to-impersonation-of-legimate-users|"2FA Bypass leads to  impersonation of legimate users"]] - `high`, undisclosed, 207 votes, Drugs.com
+- [[disclosures/h1-421859-h1514-my-shopify-com-viewing-password-protected-content|"H1514 [*.(my)shopify.com] - Viewing Password Protected Content"]] - `critical`, $3,000, 192 votes, Shopify
+- [[disclosures/h1-219205-authentication-bypass-on-auth-uber-com-via-subdomain-takeove|"Authentication bypass on auth.uber.com via subdomain takeover of saostatic.uber.com"]] - `critical`, undisclosed, 183 votes, Uber
+- [[disclosures/h1-766578-absence-of-token-expiry-leads-to-unauthorized-login-access|"Absence of Token expiry leads to Unauthorized login Access"]] - `critical`, undisclosed, 155 votes, Affirm
+- [[disclosures/h1-206591-open-redirect-on-central-uber-com-allows-for-account-takeove|"Open Redirect on central.uber.com allows for account takeover"]] - `high`, undisclosed, 144 votes, Uber
+- [[disclosures/h1-1170024-attacker-can-obtain-write-access-to-any-federated-share-publ|"Attacker can obtain write access to any federated share/public link"]] - `high`, $4,000, 142 votes, Nextcloud
+- [[disclosures/h1-1148364-mint-oauth2-access-token-for-targeted-user|"Mint Oauth2 access token for targeted user"]] - `high`, $5,580, 140 votes, GitLab
+- [[disclosures/h1-2635315-yet-another-otp-code-leaked-in-the-api-response|"Yet Another OTP code Leaked in the API Response"]] - `critical`, undisclosed, 135 votes, MTN Group
+- [[disclosures/h1-3329310-improper-bot-authentication-allows-to-impersonate-any-user-w|"Improper bot-authentication allows to impersonate any user when sending messages in a room"]] - `high`, $2,000, 128 votes, Basecamp
+- [[disclosures/h1-1380121-critical-full-compromise-of-jarvis-new-urbanclap-com-via-wea|"Critical full compromise of jarvis-new.urbanclap.com via weak session signing"]] - `critical`, $1,500, 123 votes, Urban Company
+- [[disclosures/h1-1372667-able-to-steal-bearer-token-from-deep-link|"Able to steal bearer token from deep link"]] - `high`, $6,337, 110 votes, Basecamp
+- [[disclosures/h1-1716016-ability-to-join-an-arbitrary-workspace-by-utilizing-a-proxy-|"Ability to join an arbitrary workspace by utilizing a proxy to manipulate invite links"]] - `critical`, undisclosed, 109 votes, Slack
+- [[disclosures/h1-245408-login-to-any-account-with-the-emailaddress|"Login to any account with the emailaddress"]] - `high`, $1,000, 103 votes, Eternal
+- [[disclosures/h1-307050-leak-information-in-real-time-through-api-request|"Leak ██████████ information in real time through API request"]] - `high`, $3,000, 103 votes, Grab
+- [[disclosures/h1-173551-password-reset-token-leaking-allowed-for-ato-of-an-uber-acco|"password reset token leaking allowed for ATO of an Uber account"]] - `critical`, $10,000, 100 votes, Uber
+- [[disclosures/h1-2315420-email-otp-2fa-bypass|"Email OTP/2FA Bypass"]] - `critical`, undisclosed, 100 votes, Drugs.com
+- [[disclosures/h1-1245762-account-takeover-via-sms-authentication-flow|"Account Takeover via SMS Authentication Flow "]] - `high`, undisclosed, 94 votes, Zenly
+- [[disclosures/h1-3994056-full-admin-takeover-of-r3-limited-s-jfrog-artifactory-292-us|"Full Admin Takeover of R3 Limited's JFrog Artifactory - 292 Users, Corda Enterprise & CBDC Supply Chain Compromised"]] - `critical`, undisclosed, 91 votes, R3
+- [[disclosures/h1-223014-saml-authentication-bypass-on-uchat-uberinternal-com|"SAML Authentication Bypass on uchat.uberinternal.com"]] - `high`, $8,500, 88 votes, Uber
+- [[disclosures/h1-1257586-pin-bypass|"PIN 📌 BYPASS 🥷"]] - `high`, undisclosed, 84 votes, Yoti
+- [[disclosures/h1-671406-account-takeover-via-google-onetap|"Account takeover via Google OneTap"]] - `high`, undisclosed, 81 votes, Priceline
+- [[disclosures/h1-2160178-default-credentials-at-https-52-42-105-71|"default credentials at https://52.42.105.71/"]] - `critical`, undisclosed, 77 votes, Trellix
+- [[disclosures/h1-314814-oauth-token-leak-at-oauth-semrush-com|"[oauth token leak] at oauth.semrush.com"]] - `high`, undisclosed, 70 votes, Semrush
+- [[disclosures/h1-1580493-bypass-validation-parts-in-aws-iam-authenticator-for-kuberne|"Bypass validation parts in AWS IAM Authenticator for Kubernetes"]] - `high`, $2,500, 68 votes, Kubernetes
+- [[disclosures/h1-205000-authorization-bypass-using-login-by-phone-option-horizontal-|"Authorization bypass using login by phone option+horizontal escalation possible on Grab Android App"]] - `high`, undisclosed, 68 votes, Grab
+- [[disclosures/h1-206650-broken-authentication-security-token-gets-captured-via-man-i|"Broken Authentication - Security token gets captured via man in the middle attack"]] - `high`, undisclosed, 67 votes, Automattic
+- [[disclosures/h1-2334420-improper-authentication-login-without-registration-with-any-|"Improper Authentication (Login without Registration with any user) at ████"]] - `high`, undisclosed, 67 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2501984-bypassing-the-victim-s-phone-number-otp-in-the-account-recov|"Bypassing the victim's phone number OTP in the account recovery process on the https://hackerone.com/settings/auth/setup_account_recovery"]] - `critical`, undisclosed, 67 votes, HackerOne
+- [[disclosures/h1-328724-improper-authentication-in-vimeo-s-api-versions-endpoint|"Improper Authentication in Vimeo's API 'versions' endpoint."]] - `high`, undisclosed, 64 votes, Vimeo
+- [[disclosures/h1-397130-unauthenticated-access-to-zendesk-tickets-through-athena-fle|"Unauthenticated access to Zendesk tickets through athena-flex-production.shopifycloud.com Okta bypass"]] - `critical`, undisclosed, 61 votes, Shopify
+- [[disclosures/h1-970157-bypass-password-authentication-to-update-the-password|"Bypass Password Authentication to Update the Password"]] - `high`, undisclosed, 59 votes, X / xAI
+- [[disclosures/h1-1065134-firebase-database-takeover-in-zego-sense-android-app|"Firebase Database Takeover in Zego Sense Android app"]] - `high`, undisclosed, 58 votes, Zego
+- [[disclosures/h1-1539426-broken-access-control|"Broken access control "]] - `high`, undisclosed, 55 votes, UPS VDP
+- [[disclosures/h1-3489490-authentication-bypass-in-id4me-handling-via-missing-jwt-sign|"Authentication Bypass in ID4me handling via Missing JWT Signature Verification in User OIDC"]] - `high`, $2,500, 55 votes, Nextcloud
+- [[disclosures/h1-215053-ability-to-log-in-as-any-user-without-authentication-if-is-e|"Ability to log in as any user without authentication if █████████ is empty"]] - `critical`, undisclosed, 54 votes, Ubiquiti Inc.
+- [[disclosures/h1-218230-access-to-gitlab-s-slack-by-abusing-issue-creation-from-e-ma|"Access to GitLab's Slack by abusing issue creation from e-mail"]] - `critical`, undisclosed, 54 votes, GitLab
+- [[disclosures/h1-3120790-session-replay-attack-allows-authentication-bypass-via-captu|"Session Replay Attack Allows Authentication Bypass via Captured Login Responses Allowing Bypass of 429 Too many attempts for Multiple Failed Logins"]] - `high`, undisclosed, 54 votes, WakaTime
+- [[disclosures/h1-3620006-wallet-rpc-restricted-mode-policy-bypass|"Wallet RPC Restricted-Mode Policy Bypass"]] - `high`, undisclosed, 54 votes, Monero
+- [[disclosures/h1-1343528-android|"Уязвимость в приложении для Android"]] - `high`, $3,000, 53 votes, VK.com
+- [[disclosures/h1-2262554-critical-unauthenticated-access-to-sensitive-employee-and-cu|"Critical Unauthenticated Access to Sensitive Employee and Customer Data Including Invoice Details at ████"]] - `critical`, undisclosed, 53 votes, Mars
+- [[disclosures/h1-1792544-security-issue-into-wallet-lock-protection|"Security Issue into Wallet lock protection "]] - `high`, $200, 52 votes, Hiro
+- [[disclosures/h1-1442783-improper-authentication-inside-the-rockstar-games-launcher-w|"Improper Authentication inside the Rockstar Games Launcher which leads to Account takeover to some extend"]] - `high`, $750, 51 votes, Rockstar Games
+- [[disclosures/h1-3955956-launchpad-37signals-com-oauth-as-issues-victim-bound-credent|"launchpad.37signals.com OAuth AS issues victim-bound credential to unverified attacker redirect → full CIA triad on Basecamp API "]] - `high`, undisclosed, 50 votes, Basecamp
+- [[disclosures/h1-332586-unauthorized-access-to-jiratest-starbucks-com|"Unauthorized access to jiratest.starbucks.com "]] - `critical`, undisclosed, 49 votes, Starbucks
+- [[disclosures/h1-2354136-attacker-can-add-itself-as-admin-user-and-can-also-change-pr|"Attacker can Add itself as admin user and can also change privileges of Existing Users [█████████]"]] - `critical`, undisclosed, 48 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2122690-accessing-apps-protected-via-zt-s-access-when-user-account-i|"Accessing apps protected via ZT's Access when user account is deleted/disabled even after clearing user session/seat"]] - `high`, undisclosed, 43 votes, Cloudflare Public Bug Bounty
+- [[disclosures/h1-209008-authentication-bypass-chaining-two-vulnerabilities-leads-to-|"Authentication Bypass - Chaining two vulnerabilities leads to account takeover at en.instagram-brand.com"]] - `high`, undisclosed, 41 votes, Automattic
+- [[disclosures/h1-3601469-restricted-rpc-policy-bypass-on-zmq-json-rpc-allows-unauthen|"Restricted RPC Policy Bypass on ZMQ JSON-RPC Allows Unauthenticated Remote Admin Actions"]] - `high`, undisclosed, 40 votes, Monero
+- [[disclosures/h1-2139047-jenkins-server-access-due-to-weak-password|"Jenkins server access due to weak password"]] - `high`, undisclosed, 39 votes, IBM
+- [[disclosures/h1-3666576-negotiate-authentication-premature-on-connection-reuse|"Negotiate Authentication Premature on Connection Reuse"]] - `high`, undisclosed, 39 votes, curl
+- [[disclosures/h1-3827674-authentication-bypass-via-xml-signature-wrapping-in-saml-sso|"Authentication Bypass via XML Signature Wrapping in SAML SSO"]] - `critical`, undisclosed, 39 votes, Rocket.Chat
+- [[disclosures/h1-99600-urgent-unauthorised-access-to-media-content-of-all-direct-me|"Urgent : Unauthorised Access to Media content of all Direct messages and protected tweets(Indirect object reference)"]] - `high`, undisclosed, 39 votes, X / xAI
+- [[disclosures/h1-2178941-unauthenticated-jenkins-instance-exposed-information-related|"Unauthenticated Jenkins instance exposed information related to █████"]] - `high`, undisclosed, 38 votes, U.S. Dept Of Defense
+- [[disclosures/h1-4000084-a-disabled-account-s-api-key-still-works-on-bmo-s-mojoliciou|"A disabled account's API key still works on BMO's Mojolicious /rest/ routes, including for security-group bugs filed after the disable"]] - `high`, $4,000, 37 votes, Mozilla
+- [[disclosures/h1-1040786-exposure-of-a-valid-gitlab-workhorse-jwt-leading-to-various-|"Exposure of a valid Gitlab-Workhorse JWT leading to various bad things"]] - `high`, $10,000, 36 votes, GitLab
+- [[disclosures/h1-1267476-authentication-csrf-resulting-in-unauthorized-account-access|"Authentication CSRF resulting in unauthorized account access on Krisp app"]] - `high`, undisclosed, 35 votes, Krisp
+- [[disclosures/h1-1278881-see-drafts-and-post-articles-if-the-account-owner-hasn-t-set|"See drafts and post articles if the account owner hasn't set password (livedoor CMS plugin)"]] - `critical`, undisclosed, 35 votes, LY Corporation
+- [[disclosures/h1-1242212-pin-bypass|"PIN bypass"]] - `critical`, undisclosed, 34 votes, MyEtherWallet
+- [[disclosures/h1-3611837-unauthenticated-file-deletion-via-deletefilemessage-ddp-meth|"Unauthenticated file deletion via deleteFileMessage DDP method allows permanent destruction of any uploaded file"]] - `high`, undisclosed, 34 votes, Rocket.Chat
+- [[disclosures/h1-3979217-cross-account-webhook-takeover-put-and-delete-on-account-web|" Cross-account webhook takeover: PUT and DELETE on /<account>/webhooks/<id>.json reach another account's webhook"]] - `high`, undisclosed, 34 votes, Basecamp
+- [[disclosures/h1-1593404-sign-in-with-apple-works-on-existing-accounts-bypasses-2fa|"Sign in with Apple works on existing accounts, bypasses 2FA"]] - `high`, $1,000, 32 votes, Cloudflare Public Bug Bounty
+- [[disclosures/h1-1994227-response-manipulation-leads-to-bypass-in-register-at-employe|"response manipulation leads to bypass in register at employee website than 0 click account takeover"]] - `critical`, undisclosed, 32 votes, IBM
+- [[disclosures/h1-1447619-authentication-bypass-in-login-token-authentication-method|"Authentication Bypass in login-token Authentication Method"]] - `critical`, undisclosed, 31 votes, Rocket.Chat
+- [[disclosures/h1-2529780-improper-authentication-2fa-otp-reusable|"Improper Authentication - 2FA OTP Reusable"]] - `high`, undisclosed, 31 votes, HackerOne
+- [[disclosures/h1-576504-authentication-bypass-by-abusing-insecure-crypto-tokens-in-l|"Authentication Bypass by abusing Insecure crypto tokens in /lib/OA/Dal/PasswordRecovery.php:"]] - `high`, undisclosed, 31 votes, Revive Adserver
+- [[disclosures/h1-684070-authentication-bypass-and-rce-on-the-https-due-to-exposed-ci|"Authentication bypass and RCE on the https://████ due to exposed Cisco TelePresence SX80 with default credentials"]] - `critical`, undisclosed, 30 votes, U.S. Dept Of Defense
+- [[disclosures/h1-767829-account-take-over-of-light-starbuckscardb2b-users|"Account take over of 'light' starbuckscardb2b users"]] - `high`, undisclosed, 30 votes, Starbucks
+- [[disclosures/h1-1071102-registration-bypass-with-leaked-invite-token|"Registration bypass with leaked Invite Token"]] - `high`, undisclosed, 29 votes, Rocket.Chat
+- [[disclosures/h1-2858876-unauthorized-access-exposing-sensitive-data|"Unauthorized Access  Exposing Sensitive Data"]] - `high`, undisclosed, 28 votes, U.S. Dept Of Defense
+- [[disclosures/h1-197789-insideok-ru-database-dump|"[insideok.ru] Database Dump"]] - `high`, undisclosed, 27 votes, ok.ru
+- [[disclosures/h1-1954364-subdomain-takeover-affecting-at-vex-weather-com|"Subdomain Takeover Affecting at  vex.weather.com"]] - `critical`, undisclosed, 26 votes, IBM
+- [[disclosures/h1-566811-complete-account-takeover|"████ - Complete account takeover"]] - `critical`, undisclosed, 26 votes, U.S. Dept Of Defense
+- [[disclosures/h1-923022-administrative-access-to-development-deployment-of-web-servi|"Administrative access to development deployment of web service due to auto-filled credentials"]] - `high`, $250, 26 votes, Acronis
+- [[disclosures/h1-1314172-otp-bypass-in-verifying-nin|"Otp  bypass in verifying nin"]] - `high`, undisclosed, 25 votes, MTN Group
+- [[disclosures/h1-1508661-response-manipulation-leads-to-admin-panel-login-bypass-at-h|"Response Manipulation leads to Admin Panel Login Bypass at https://██████/"]] - `high`, undisclosed, 25 votes, Sony
+- [[disclosures/h1-1267174-access-to-tomcat-manager-with-default-creds|"Access to tomcat-manager with default creds"]] - `high`, undisclosed, 24 votes, JetBlue
+- [[disclosures/h1-406486-thailand-a-small-number-of-alarm-system-portals-accessible-w|"Thailand – a small number of alarm system portals accessible with the default credentials"]] - `high`, undisclosed, 23 votes, Starbucks
+- [[disclosures/h1-410475-unauthorized-access-to-a-system-used-for-ci-cd-processes|"Unauthorized access to a system used for CI/CD processes"]] - `high`, undisclosed, 22 votes, Starbucks
+- [[disclosures/h1-248656-bypass-of-2fa|"bypass of 2FA"]] - `high`, $750, 20 votes, Nextcloud
+- [[disclosures/h1-1031437-https-vulnerable-to-cve-2020-3187-unauthenticated-arbitrary-|"https://██████ vulnerable to CVE-2020-3187 - Unauthenticated arbitrary file deletion in Cisco ASA/FTD"]] - `critical`, undisclosed, 19 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2586616-restrict-any-user-from-login-to-their-account|"Restrict any user from Login to their account"]] - `high`, undisclosed, 19 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2588810-totp-authenticator-implementation-accepts-expired-codes|"TOTP Authenticator implementation Accepts Expired Codes"]] - `high`, undisclosed, 19 votes, HackerOne
+- [[disclosures/h1-222082-broken-authentication-session-management-login-bypass-at-sup|"Broken Authentication & Session Management (Login Bypass) at support.owox.com"]] - `critical`, undisclosed, 17 votes, OWOX, Inc.
+- [[disclosures/h1-1146600-administration-authentication-bypass-on-https|"Administration Authentication Bypass on https://█████"]] - `critical`, undisclosed, 16 votes, U.S. Dept Of Defense
+- [[disclosures/h1-734936-sso-bypass-in-zendesk-using-trint-organization-able-to-leak-|"SSO bypass in zendesk using trint organization able to leak internal ticket information"]] - `high`, undisclosed, 16 votes, Trint Ltd
+- [[disclosures/h1-776684-h1-415-2020-my-writeup-on-how-to-retrieve-the-special-secret|"[h1-415 2020] My writeup on how to retrieve the special secret document"]] - `critical`, undisclosed, 16 votes, h1-ctf
+- [[disclosures/h1-1089583-insecure-object-permissions-for-guest-user-leads-to-access-t|"Insecure Object Permissions for Guest User leads to access to internal documents!"]] - `critical`, undisclosed, 15 votes, IBM
+- [[disclosures/h1-1627961-account-takeover-on-htus|"Account takeover on ███████ [HtUS]"]] - `high`, undisclosed, 15 votes, U.S. Dept Of Defense
+- [[disclosures/h1-812064-saml-authentication-bypass|"SAML authentication bypass"]] - `high`, undisclosed, 15 votes, Rocket.Chat
+- [[disclosures/h1-924487-exposed-docker-registry-at-https|"Exposed Docker Registry at https://████"]] - `high`, undisclosed, 15 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1483201-account-takeover-leading-to-pii-chained-with-stored-xss|"Account takeover leading to PII chained with stored XSS"]] - `high`, undisclosed, 14 votes, U.S. General Services Administration
+- [[disclosures/h1-1839012-authentication-bypass-using-default-credentials-on|"Authentication Bypass Using Default Credentials on █████"]] - `critical`, undisclosed, 14 votes, U.S. Dept Of Defense
+- [[disclosures/h1-384289-redirect-on-authorization-allows-account-compromise|"Redirect on authorization allows account compromise"]] - `critical`, undisclosed, 14 votes, GSA Bounty
+- [[disclosures/h1-684758-authentication-bypass-and-potential-rce-on-the-https-due-to-|"Authentication bypass and potential RCE on the https://████ due to exposed Cisco TelePresence SX80 with default credentials"]] - `high`, undisclosed, 14 votes, U.S. Dept Of Defense
+- [[disclosures/h1-761000-account-take-over-of-millions-of-mtn-users-account-due-to-la|"Account Take over of millions of  MTN users account due to lack of Rate limiting when sending OTP code"]] - `high`, undisclosed, 13 votes, MTN Group
+- [[disclosures/h1-748214-express-laravel-passport-improper-authentication|"[express-laravel-passport] Improper Authentication"]] - `high`, undisclosed, 12 votes, Node.js third-party modules
+- [[disclosures/h1-779910-h1-415-2020-finally|"[h1-415 2020] finally"]] - `high`, undisclosed, 11 votes, h1-ctf
+- [[disclosures/h1-192074-default-credentials-on-a-dod-website|"Default credentials on a DoD website"]] - `high`, undisclosed, 9 votes, U.S. Dept Of Defense
+- [[disclosures/h1-4053116-curl-connect-response-header-colon-check-bypass-in-cf-h1-pro|"curl CONNECT response header colon-check bypass in cf-h1-proxy single_header — proxy authentication bypass via injected HTTP/1.x status line"]] - `high`, undisclosed, 9 votes, curl
+- [[disclosures/h1-843263-outdated-coturn-is-vulnerable-to-known-vulnerabilities-high|"Outdated Coturn is vulnerable to known vulnerabilities (High)"]] - `high`, undisclosed, 9 votes, 8x8
+- [[disclosures/h1-1241116-hardcoded-api-secret-api-key-in-com-reddit-frontpage|"hardcoded api secret & api key in com.reddit.frontpage"]] - `critical`, undisclosed, 8 votes, Reddit
+- [[disclosures/h1-1448268-totp-2-factor-authentication-bypass|"TOTP 2 Factor Authentication Bypass"]] - `high`, undisclosed, 8 votes, Rocket.Chat
+- [[disclosures/h1-1080901-misconfiguration-of-merchant-id-in-jwt-header-weird-debug-mo|"Misconfiguration of Merchant id in jwt header + Weird Debug mode enabling behavior leads to exposed OTP of mobile number."]] - `high`, undisclosed, 6 votes, Kartpay
+- [[disclosures/h1-241244-spring-security-configuration-allows-agent-sessions-to-be-hi|"Spring security configuration allows agent sessions to be hijacked"]] - `high`, undisclosed, 6 votes, GoCD
+- [[disclosures/h1-986459-recently-change-email-but-still-login-with-old-email|"Recently change email but still login with old email"]] - `high`, undisclosed, 6 votes, Nextcloud
+- [[disclosures/h1-1035742-able-to-authenticate-as-administrator-by-navigating-to-https|"Able to authenticate as administrator by navigating to https://█████/admin/"]] - `high`, undisclosed, 5 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1000922-unsecured-grafana-instance-on-https-monitoring-prow-canary-k|"Unsecured Grafana instance on https://monitoring.prow-canary.k8s.io/dashboards"]] - `high`, undisclosed, 4 votes, Kubernetes
+- [[disclosures/h1-736522-authmagic-timerange-stateless-core-improper-authentication|"[authmagic-timerange-stateless-core] Improper Authentication"]] - `high`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-890196-h1-2006-2020-multiple-vulnerabilities-lead-to-ceo-account-ta|"[H1-2006 2020]  Multiple vulnerabilities lead to CEO account takeover and paid bounties"]] - `critical`, undisclosed, 4 votes, h1-ctf
+- [[disclosures/h1-184884-subdomain-takeover-on-http-blog-owox-com|"Subdomain Takeover on  http://blog.owox.com/"]] - `critical`, undisclosed, 2 votes, OWOX, Inc.
+- [[disclosures/h1-186393-subdomain-takeover-on-owox-ru|"Subdomain Takeover on OWOX.RU"]] - `critical`, undisclosed, 2 votes, OWOX, Inc.
+- [[disclosures/h1-496219-pre-generation-of-viewstate-allows-cac-bypass|"█████ - Pre-generation of VIEWSTATE allows CAC bypass"]] - `critical`, undisclosed, 2 votes, U.S. Dept Of Defense
+
+> Auto-generated from `disclosures/` by `node vault-admin/crawler/gen_cwe_pages.js`. Do not edit by hand.

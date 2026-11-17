@@ -169,7 +169,7 @@ const KNOWN_PATTERNS = new Set([
 const TAXONOMY_AXES = ['vuln/', 'impact/', 'trigger/', 'precondition/', 'fix/', 'novelty/', 'blast-radius/', 'misassumption/'];
 
 const TAG_ORDER = [
-  'blockchain/', 'lang/', 'sdk/', 'sector/', 'platform/', 'has/', 'severity/',
+  'blockchain/', 'lang/', 'sdk/', 'web3-sector/', 'platform/', 'has/', 'severity/',
   'vuln/', 'impact/', 'trigger/', 'precondition/', 'fix/',
   'novelty/', 'blast-radius/', 'misassumption/',
 ];

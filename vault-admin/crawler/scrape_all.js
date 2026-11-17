@@ -47,22 +47,16 @@ function buildInput(page) {
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
+// Transport: crawlee browser-TLS client via lib/http.js (anti-bot standard).
+const { getText } = require('./lib/http');
+
 function fetchPage(page) {
-  return new Promise((resolve, reject) => {
-    const input = encodeURIComponent(buildInput(page));
-    const url   = `https://solodit.cyfrin.io/api/trpc/trialRouter.get,findings.get?batch=1&input=${input}`;
-    https.get(url, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36',
-        Accept:       'application/json',
-        Referer:      'https://solodit.cyfrin.io/',
-      },
-    }, (res) => {
-      let data = '';
-      res.on('data', c => data += c);
-      res.on('end', () => resolve(data));
-    }).on('error', reject);
-  });
+  const input = encodeURIComponent(buildInput(page));
+  const url   = `https://solodit.cyfrin.io/api/trpc/trialRouter.get,findings.get?batch=1&input=${input}`;
+  return getText(url, {
+    Accept:  'application/json',
+    Referer: 'https://solodit.cyfrin.io/',
+  }, { label: ' (solodit trpc)' });
 }
 
 // ── Response parser ───────────────────────────────────────────────────────────

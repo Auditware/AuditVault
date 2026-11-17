@@ -1,0 +1,236 @@
+---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/high
+  - cwe/heap-overflow
+  - env/web
+substate: "resolved"
+weakness: "Heap Overflow"
+enriched: true
+date: 2021-08-26
+submitted: 2019-07-12T15:23:24.750Z
+bounty_usd: null
+votes: 15
+cve: "CVE-2019-12527"
+program: "[[programs/ibb|Internet Bug Bounty]]"
+reporter: "jeriko_one"
+source: "https://hackerone.com/reports/641240"
+title: "Basic Authentication Heap Overflow"
+---
+# Basic Authentication Heap Overflow
+
+> **Severity:** High | **Bounty:** undisclosed | **Votes:** 15 | **Program:** Internet Bug Bounty | **Disclosed:** 2021-08-26
+
+- Report: [https://hackerone.com/reports/641240](https://hackerone.com/reports/641240)
+- CWE: Heap Overflow | CVE: CVE-2019-12527
+- Submitted: 2019-07-12T15:23:24.750Z
+
+## Timeline
+
+- **Report Filed**
+- **2019-07-16** @ktistai: Hi @jeriko_one 
+
+Thank you for your submission. Your report is currently being reviewed and the HackerOne triage team will get back to you once there is additional information to share.
+
+Kind regards,
+@ktistai
+- **Report Needs More Info**
+- **Report New**
+- **Report Needs More Info**
+- **Report New**
+- **2019-07-18** @ktistai: Installing squid as a package actually made the configuration work like a charm. It's now compiling, hopefully it won't be taking long.
+- **Report Needs More Info**
+- **Report New**
+- **Report Needs More Info**
+- **Report New**
+- **Report Needs More Info**
+- **Report New**
+- **2019-07-26** @ktistai: @jeriko_one , 
+
+Ubuntu 18.04, the basic one from Digital Ocean. It's on a remote VM, so yeah I must enable the ACL's, wihch I did just now and yet it's still not working. I am not receiving any message back now. Also, I've attached GDB just to see if there is any exception that I may catch. 
+
+{F540150}
+
+Thanks, 
+@ktistai
+- **Report Needs More Info**
+- **Report New**
+- **2019-07-27** @jeriko_one: Oh I was able to upload it! I just needed to change the extension of the file.
+
+Please replace <sever> and <port> with  the appropriate values for your setup.
+
+Run squid in one terminal
+
+```
+ ASAN_OPTIONS="abort_on_error=true" ./sbin/squid --foreground -d 100
+```
+
+In another issue this command
+
+```
+cat long_auth.txt | nc <server> <port>
+```
+
+Then the Asan message should appear. Squid will restart the child process so you'll have to scroll up to see the message, alternatively you can attach gdb to the squid child process. WIth the default config you should see 2 entries if you do pgrep squid, the second is the child process which you need to attach to.
+- **2019-07-29** @ktistai: @jeriko_one , 
+
+You should be able to upload a file here, it's fairly straightforward. We cannot share email that we use to work. 
+
+Regarding your question, I do use that command, but without the foreground parameter, as it's not working for me. I do have stdout on the screen though. 
+
+In gdb, I was expecting to see an exception of some sort in the heap, and I would have considered the issue triaged (for memory corruption). 
+
+I will forward this to the team, maybe it's something I am doing wrong. 
+
+Thanks, 
+@ktistasi
+- **2019-07-29** @jeriko_one: Please refer to my previous comment for the full request needed. I was able to upload it after changing the extension of the file to .txt. 
+
+In your screenshot I see that you're using netcat, but aren't catting anything into it. The formatting of the request is crucial for Squid to process it. 
+
+Please use the attachment long_auth.txt, changing <server> and <port> in the first line of the file to proper values for your setup. 
+
+Running squid as
+
+```
+$ ASAN_OPTIONS="abort_on_error=true" ./sbin/squid -d 100
+```
+
+Should provide debug messages to stdout. I'd leave this terminal open as this is where your asan output will show up. --foreground isn't necessary, but will ensure that the terminal isn't used for somethign else. What errors are you getting with --foreground
+
+You can attach gdb, but ensure it's the child process
+
+```
+gdb -q -p $(pgrep squid |tail -n 1)
+```
+
+Please use cat to pipe the request into netcat. That way the formatting will be correct
+
+```
+cat long_auth.txt | nc <server> <port>
+```
+
+Now in gdb you will hit a SIGABRT
+
+```
+Program received signal SIGABRT, Aborted.
+0x00007fb947cf61d7 in raise () from /lib64/libc.so.6
+
+(gdb) bt
+#0  0x00007fb947cf61d7 in raise () from /lib64/libc.so.6
+#1  0x00007fb947cde565 in abort () from /lib64/libc.so.6
+#2  0x00007fb94921a59e in __sanitizer::Abort () at /var/tmp/portage/sys-devel/gcc-8.3.0-r1/work/gcc-8.3.0/libsanitizer/sanitizer_common/sanitizer_posix_libcdep.cc:145
+#3  0x00007fb9492241f8 in __sanitizer::Die () at /var/tmp/portage/sys-devel/gcc-8.3.0-r1/work/gcc-8.3.0/libsanitizer/sanitizer_common/sanitizer_termination.cc:57
+#4  0x00007fb949201e15 in __asan::ScopedInErrorReport::~ScopedInErrorReport (this=<optimized out>, __in_chrg=<optimized out>) at /var/tmp/portage/sys-devel/gcc-8.3.0-r1/work/gcc-8.3.0/libsanitizer/asan/asan_report.cc:181
+#5  __asan::ReportGenericError (pc=<optimized out>, bp=bp@entry=140736894440352, sp=sp@entry=140736894438216, addr=addr@entry=94875395443680, is_write=is_write@entry=false, access_size=access_size@entry=43012, exp=0, fatal=false) at /var/tmp/portage/sys-devel/gcc-8.3.0-r1/work/gcc-8.3.0/libsanitizer/asan/asan_report.cc:397
+#6  0x00007fb9491bb7cc in __interceptor_strchr (s=<optimized out>, c=<optimized out>) at /var/tmp/portage/sys-devel/gcc-8.3.0-r1/work/gcc-8.3.0/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:618
+#7  0x00005649e5687d71 in CacheManager::ParseHeaders (this=0x603000000e80, request=0x61c00002a880, params=...) at cache_manager.cc:252
+#8  0x00005649e5688b4e in CacheManager::Start (this=0x603000000e80, client=..., request=0x61c00002a880, entry=0x60c000018640) at cache_manager.cc:325
+#9  0x00005649e585421c in internalStart (clientConn=..., request=0x61c00002a880, entry=0x60c000018640) at internal.cc:58
+#10 0x00005649e57917c9 in FwdState::Start (clientConn=..., entry=0x60c000018640, request=0x61c00002a880, al=...) at FwdState.cc:361
+#11 0x00005649e56dedcd in clientReplyContext::processMiss (this=0x62100005f118) at client_side_reply.cc:783
+#12 0x00005649e56ebd7c in clientReplyContext::doGetMoreData (this=0x62100005f118) at client_side_reply.cc:1855
+#13 0x00005649e56e9f54 in clientReplyContext::identifyFoundObject (this=0x62100005f118, newEntry=0x5649e6440120 <NullStoreEntry::_instance>) at client_side_reply.cc:1707
+#14 0x00005649e56e0c85 in clientReplyContext::created (this=0x62100005f118, newEntry=0x5649e6440120 <NullStoreEntry::_instance>) at client_side_reply.cc:937
+#15 0x00005649e58faec8 in StoreEntry::getPublicByRequest (aClient=0x62100005f118, request=0x61c00002a880) at store.cc:524
+#16 0x00005649e56e9979 in clientReplyContext::identifyStoreObject (this=0x62100005f118) at client_side_reply.cc:1667
+#17 0x00005649e56eb57a in clientGetMoreData (aNode=0x60c0000184d8, http=0x613000006258) at client_side_reply.cc:1813
+#18 0x00005649e571e1b0 in clientStreamRead (thisObject=0x60c000018598, http=0x613000006258, readBuffer=...) at clientStream.cc:182
+#19 0x00005649e570509d in ClientHttpRequest::httpStart (this=0x613000006258) at client_side_request.cc:1542
+#20 0x00005649e5704c47 in ClientHttpRequest::processRequest (this=0x613000006258) at client_side_request.cc:1528
+#21 0x00005649e57082fe in ClientHttpRequest::doCallouts (this=0x613000006258) at client_side_request.cc:1896
+#22 0x00005649e56fef7a in ClientRequestContext::clientAccessCheckDone (this=0x60b0000198b8, answer=...) at client_side_request.cc:830
+#23 0x00005649e56fda9e in ClientRequestContext::clientAccessCheck2 (this=0x60b0000198b8) at client_side_request.cc:729
+#24 0x00005649e570685b in ClientHttpRequest::doCallouts (this=0x613000006258) at client_side_request.cc:1781
+#25 0x00005649e56fef7a in ClientRequestContext::clientAccessCheckDone (this=0x60b0000198b8, answer=...) at client_side_request.cc:830
+#26 0x00005649e56fdbf6 in clientAccessCheckDoneWrapper (answer=..., data=0x60b0000198b8) at client_side_request.cc:741
+#27 0x00005649e5a4bcb9 in ACLChecklist::checkCallback (this=0x61500000f318, answer=...) at Checklist.cc:169
+#28 0x00005649e5a4a5a6 in ACLChecklist::completeNonBlocking (this=0x61500000f318) at Checklist.cc:54
+#29 0x00005649e5a4c78f in ACLChecklist::nonBlockingCheck (this=0x61500000f318, callback_=0x5649e56fdb20 <clientAccessCheckDoneWrapper(allow_t, void*)>, callback_data_=0x60b0000198b8) at Checklist.cc:257
+#30 0x00005649e56fd6a2 in ClientRequestContext::clientAccessCheck (this=0x60b0000198b8) at client_side_request.cc:709
+#31 0x00005649e5706255 in ClientHttpRequest::doCallouts (this=0x613000006258) at client_side_request.cc:1753
+#32 0x00005649e56fb55c in ClientRequestContext::hostHeaderVerify (this=0x60b0000198b8) at client_side_request.cc:600
+#33 0x00005649e5706045 in ClientHttpRequest::doCallouts (this=0x613000006258) at client_side_request.cc:1746
+#34 0x00005649e56add2e in clientProcessRequest (conn=0x61500000df18, hp=..., context=0x62100005dd00) at client_side.cc:1753
+#35 0x00005649e5ad401c in Http::One::Server::processParsedRequest (this=0x61500000df18, context=...) at Http1Server.cc:269
+#36 0x00005649e56b1a3f in ConnStateData::clientParseRequests (this=0x61500000df18) at client_side.cc:2114
+#37 0x00005649e56b2368 in ConnStateData::afterClientRead (this=0x61500000df18) at client_side.cc:2148
+#38 0x00005649e5ada45c in Server::doClientRead (this=0x61500000df18, io=...) at Server.cc:176
+#39 0x00005649e5adc8b6 in CommCbMemFunT<Server, CommIoCbParams>::doDial (this=0x60e00049d1d0) at ../../src/CommCalls.h:205
+#40 0x00005649e5adcada in JobDialer<Server>::dial (this=0x60e00049d1d0, call=...) at ../../src/base/AsyncJobCalls.h:174
+#41 0x00005649e5adc6f9 in AsyncCallT<CommCbMemFunT<Server, CommIoCbParams> >::fire (this=0x60e00049d1a0) at ../../src/base/AsyncCall.h:145
+#42 0x00005649e5b0b4a0 in AsyncCall::make (this=0x60e00049d1a0) at AsyncCall.cc:40
+#43 0x00005649e5b0d020 in AsyncCallQueue::fireNext (this=0x602000016c10) at AsyncCallQueue.cc:56
+#44 0x00005649e5b0cb3c in AsyncCallQueue::fire (this=0x602000016c10) at AsyncCallQueue.cc:42
+#45 0x00005649e576fb0f in EventLoop::dispatchCalls (this=0x7fffdc99fbf0) at EventLoop.cc:144
+#46 0x00005649e576f7a6 in EventLoop::runOnce (this=0x7fffdc99fbf0) at EventLoop.cc:121
+#47 0x00005649e576f263 in EventLoop::run (this=0x7fffdc99fbf0) at EventLoop.cc:83
+#48 0x00005649e5866f74 in SquidMain (argc=5, argv=0x7fffdc99fe58) at main.cc:1709
+#49 0x00005649e5865592 in SquidMainSafe (argc=5, argv=0x7fffdc99fe58) at main.cc:1417
+#50 0x00005649e58654df in main (argc=5, argv=0x7fffdc99fe58) at main.cc:1405
+
+```
+
+The terminal you started Squid from should have outputed the crash log.
+- **Report Needs More Info**
+- **Report New**
+- **2019-08-01** @jeriko_one: Another thing I just noticed about your repo is that you're using the IP. Please use the hostname when making the request
+
+```
+ftp://<squid hostname>:<port>
+```
+
+That is the only way the request will be marked as internal, and will reach the vulnerable code. 
+
+Fro me my hostname is set in
+
+/etc/conf.d/hostname
+
+I can also get it via the command
+
+```
+$ hostname
+g64
+```
+
+Looking at the code you could also set it via the config option
+
+```
+visable_hostname <hostname>
+```
+
+If that still doesn't work you could try setting a breakpoint on 
+
+```
+getMyHostname
+```
+
+and see what it returns, and use that in the repo.
+- **Report Triaged**
+- **2019-09-02** @jeriko_one: Is there any update on this? There has already been patches and releases for this vulnerability. 
+
+http://www.squid-cache.org/Advisories/SQUID-2019_5.txt
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-12527
+- **2019-11-07** @jeriko_one: It's been 3 months since I've received a reply. Has there been a final ruling yet?
+- **2019-12-30** @h1_analyst_oceana: Hello  @jeriko_one,
+
+Thanks for your patience! The Squid Cache (IBB) team is still working on this internally, and you will be updated once there is more information to share.
+
+Regards,
+
+@magicmouse
+- **2020-03-10** @jeriko_one: It has been an additional 2 months since I've last heard from y'all. Totaling 8 months since I've made the initial report, and 7 months since it has been validated and sent for a final ruling. 
+
+Is this still on someone's radar?
+- **2020-03-12** @h1_analyst_caesar: Hello  @jeriko_one,
+
+Thanks for your patience! The Squid Cache (IBB) team is still working on this internally, and you will be updated once there is more information to share.
+
+Regards,
+@turtle_shell
+- **Cve Id Added**
+- **Bounty Awarded**
+- **Report Resolved**
+- **Agreed On Going Public**
+- **Report Became Public**

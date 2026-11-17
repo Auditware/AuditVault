@@ -1,0 +1,184 @@
+---
+tags:
+  - type/cwe
+generated: true
+---
+# Cross Site Scripting Xss Stored
+
+> **Disclosures in vault:** 169 | **Critical:** 27 | **High:** 142 | **Total known bounty:** $159,987 (52 disclosed) | **Top programs:** `GitLab` (26), `U.S. Dept Of Defense` (14), `VK.com` (9), `Node.js third-party modules` (9), `WordPress` (7), `Automattic` (7), `Shopify` (6), `Rocket.Chat` (6), `Rockstar Games` (5), `X / xAI` (5)
+
+## All disclosures of this class
+
+Ranked by community votes - the top of this list is the canonical writeup set for how this class actually lands.
+
+- [[disclosures/h1-526325-stored-xss-in-wiki-pages|"Stored XSS in Wiki pages"]] - `high`, undisclosed, 633 votes, GitLab
+- [[disclosures/h1-639684-the-return-of-the|"The return of the ＜"]] - `high`, $1,000, 576 votes, Rockstar Games
+- [[disclosures/h1-409850-xss-in-steam-react-chat-client|"XSS in steam react chat client"]] - `critical`, $7,500, 499 votes, Valve
+- [[disclosures/h1-1010466-blind-xss-on-image-upload|"Blind XSS on image upload"]] - `critical`, $1,000, 450 votes, CS Money
+- [[disclosures/h1-643908-stored-xss-vulnerability|"Stored XSS Vulnerability"]] - `high`, undisclosed, 403 votes, WordPress
+- [[disclosures/h1-982291-hey-com-email-stored-xss|"HEY.com email stored XSS"]] - `critical`, $5,000, 360 votes, Basecamp
+- [[disclosures/h1-1207040-blind-xss-on-twitter-s-internal-big-data-panel-at|"Blind XSS on Twitter's internal Big Data panel at █████████████"]] - `critical`, undisclosed, 357 votes, X / xAI
+- [[disclosures/h1-733248-stored-xss-in-wordpress-com|"Stored XSS in wordpress.com"]] - `high`, undisclosed, 356 votes, Automattic
+- [[disclosures/h1-487081-stored-xss-in-private-message-component-buddypress|"Stored XSS in Private Message component (BuddyPress)"]] - `critical`, undisclosed, 337 votes, WordPress
+- [[disclosures/h1-946053-stored-xss-in-my-staff-name-fired-in-another-your-internal-p|"Stored XSS in my staff name fired in another your internal panel"]] - `high`, undisclosed, 326 votes, Shopify
+- [[disclosures/h1-1212067-stored-xss-in-markdown-via-the-designreferencefilter|"Stored XSS in markdown via the DesignReferenceFilter "]] - `critical`, $16,000, 318 votes, GitLab
+- [[disclosures/h1-1731349-stored-xss-via-kroki-diagram|"Stored XSS via Kroki diagram"]] - `high`, $13,950, 295 votes, GitLab
+- [[disclosures/h1-534450-account-takeover-through-the-combination-of-cookie-manipulat|"Account takeover through the combination of cookie manipulation and XSS"]] - `high`, undisclosed, 292 votes, Superhuman (formerly Grammarly)
+- [[disclosures/h1-1930763-richtext-parser-vulnerability-in-scheduled-posts-allows-xss|"RichText parser vulnerability in scheduled posts allows XSS"]] - `high`, $5,000, 280 votes, Reddit
+- [[disclosures/h1-411690-stored-xss-in-address-field-in-billing-activity-at-https-sho|"Stored xss in address field in billing activity at https://shop.aaf.com/Order/step1/index.cfm"]] - `high`, undisclosed, 244 votes, Alliance of American Football 
+- [[disclosures/h1-485748-stored-xss-on-reports|"Stored XSS on reports."]] - `high`, $700, 232 votes, X / xAI
+- [[disclosures/h1-1504410-xss-via-mod-log-removed-posts|"XSS via Mod Log Removed Posts"]] - `high`, undisclosed, 218 votes, Reddit
+- [[disclosures/h1-249131-ability-to-create-own-account-uuid-leads-to-stored-xss|"Ability to create own account UUID leads to stored XSS"]] - `high`, $1,500, 207 votes, Upserve 
+- [[disclosures/h1-380103-stored-xss-vulnerability-on|"Stored Xss Vulnerability on ████████"]] - `high`, undisclosed, 192 votes, U.S. Dept Of Defense
+- [[disclosures/h1-299728-markdown-parsing-issue-enables-insertion-of-malicious-tags-a|"Markdown parsing issue enables insertion of malicious tags and event handlers"]] - `high`, $5,000, 184 votes, HackerOne
+- [[disclosures/h1-1665658-stored-xss-with-csp-bypass-via-labels-color|"Stored-XSS with CSP-bypass via labels' color"]] - `high`, undisclosed, 169 votes, GitLab
+- [[disclosures/h1-1481207-stored-xss-in-notes-with-csp-bypass-for-gitlab-com|"Stored XSS in Notes (with CSP bypass for gitlab.com)"]] - `high`, undisclosed, 161 votes, GitLab
+- [[disclosures/h1-2974307-stored-xss-via-post-tittle-enabling-non-privileged-user-to-p|"Stored XSS via Post Tittle Enabling Non-Privileged User to Privileged User Exploitation on https://forums.autodesk.com/"]] - `high`, undisclosed, 139 votes, Autodesk
+- [[disclosures/h1-508184-persistent-xss-in-note-objects|"Persistent XSS in Note objects"]] - `high`, $4,500, 139 votes, GitLab
+- [[disclosures/h1-392106-first-30-stored-xss-on-login-uber-com-oauth-v2-authorize-via|"[First 30] Stored XSS on login.uber.com/oauth/v2/authorize via redirect_uri parameter"]] - `high`, $3,000, 131 votes, Uber
+- [[disclosures/h1-1198517-stored-xss-in-custom-emoji|"Stored XSS in custom emoji"]] - `high`, $3,000, 130 votes, GitLab
+- [[disclosures/h1-309531-stored-xss-in-snapmatic-r-editor-comments|"Stored XSS in Snapmatic + R★Editor comments"]] - `high`, undisclosed, 118 votes, Rockstar Games
+- [[disclosures/h1-3115705-stored-xss-in-file-upload-leads-to-privilege-escalation-and-|"Stored XSS in File Upload Leads to Privilege Escalation and Full Workspace Takeover"]] - `high`, undisclosed, 118 votes, Dust
+- [[disclosures/h1-1760213-cache-poisoning-allows-stored-xss-via-hav-cookie-parameter-t|"Cache Poisoning Allows Stored XSS Via hav Cookie Parameter (To Account Takeover)"]] - `high`, undisclosed, 117 votes, Expedia Group Bug Bounty
+- [[disclosures/h1-1955485-stored-cross-site-scripting-in-mercadopago-com-ar|"Stored Cross-Site Scripting in mercadopago.com.ar"]] - `high`, undisclosed, 109 votes, MercadoLibre
+- [[disclosures/h1-2078490-stored-xss-at-https-8x8-com-api-id|"Stored xss at https://█.8x8.com/api/█/ID"]] - `high`, $1,337, 108 votes, 8x8
+- [[disclosures/h1-1392262-stored-xss-via-link-name|"Stored XSS via LINK Name."]] - `high`, undisclosed, 107 votes, Insightly
+- [[disclosures/h1-217739-stored-xss-on-any-page-in-most-uber-domains|"Stored XSS on any page in most Uber domains"]] - `high`, $6,000, 107 votes, Uber
+- [[disclosures/h1-1698652-xss-in-socialicon-link|"XSS in SocialIcon Link"]] - `high`, undisclosed, 106 votes, Linktree
+- [[disclosures/h1-1369674-blind-xss-on-twitter-s-internal-jira-panel-at-allows-exfiltr|"Blind XSS on Twitter's internal Jira panel at ████ allows exfiltration of hackers reports and other sensitive data"]] - `critical`, undisclosed, 99 votes, X / xAI
+- [[disclosures/h1-1675516-stored-xss-in-reclamos|"Stored XSS in reclamos"]] - `high`, undisclosed, 97 votes, MercadoLibre
+- [[disclosures/h1-1693150-bypass-stored-xss-with-csp-bypass-via-scoped-labels-color|"Bypass: Stored-XSS with CSP-bypass via scoped labels' color"]] - `high`, undisclosed, 96 votes, GitLab
+- [[disclosures/h1-1578400-new-add-contacts-remove-contacts-quick-commands-susseptible-|"New /add_contacts /remove_contacts quick commands susseptible to XSS from Customer Contact firstname/lastname fields"]] - `high`, $13,950, 93 votes, GitLab
+- [[disclosures/h1-2212950-stored-xss-on-linkedin-app-via-iframe-tag-in-article|"Stored XSS on LinkedIn App via iframe tag in Article"]] - `critical`, undisclosed, 93 votes, LinkedIn
+- [[disclosures/h1-303730-defacement-of-catalog-data-gov-via-web-cache-poisoning-to-st|"Defacement of catalog.data.gov via web cache poisoning to stored DOMXSS"]] - `high`, $750, 93 votes, GSA Bounty
+- [[disclosures/h1-647130-stored-xss-in-create-groups|"Stored XSS in 'Create Groups'"]] - `high`, $2,500, 89 votes, GitLab
+- [[disclosures/h1-232174-xss-on-shop-myshopify-com-admin-and-partners-shopify-com-via|"XSS on $shop$.myshopify.com/admin/ and partners.shopify.com via whitelist bypass in SVG icon for sales channel applications"]] - `high`, $5,000, 88 votes, Shopify
+- [[disclosures/h1-1751333-metamask-browser-url-and-transaction-origin-spoofing-metamas|"MetaMask Browser URL and Transaction Origin Spoofing - Metamask wallet Android & Metamask wallet iOS"]] - `high`, undisclosed, 87 votes, MetaMask
+- [[disclosures/h1-1256777-stored-xss-in-main-page-of-a-project-caused-by-arbitrary-scr|"Stored XSS in main page of a project caused by arbitrary script payload in group 'Default initial branch name'"]] - `high`, undisclosed, 80 votes, GitLab
+- [[disclosures/h1-509930-potential-unprivileged-stored-xss-through-wp-targeted-link-r|"Potential unprivileged Stored XSS through wp_targeted_link_rel"]] - `high`, undisclosed, 80 votes, WordPress
+- [[disclosures/h1-974271-stored-xss-on-https-app-crowdsignal-com-surveys-survey-id-qu|"Stored XSS on https://app.crowdsignal.com/surveys/[Survey-Id]/question - Bypass"]] - `high`, undisclosed, 78 votes, Automattic
+- [[disclosures/h1-2521419-stored-xss-on-trix-editor-version-2-1-1|"Stored XSS on trix editor version 2.1.1"]] - `high`, $1,000, 76 votes, Basecamp
+- [[disclosures/h1-881557-stored-xss-through-pdf-viewer|"Stored XSS through PDF viewer"]] - `high`, $4,875, 76 votes, Slack
+- [[disclosures/h1-1901706-stored-xss-on-https-www-question-com|"Stored Xss On 'https://www.question.com/'"]] - `high`, undisclosed, 75 votes, Drugs.com
+- [[disclosures/h1-423797-passive-stored-xss-at-broadcast-room|"Passive stored XSS at broadcast room"]] - `high`, undisclosed, 74 votes, Chaturbate
+- [[disclosures/h1-219957-xss-via-api-v1-chat-postmessage|"XSS via /api/v1/chat.postMessage "]] - `critical`, undisclosed, 73 votes, Rocket.Chat
+- [[disclosures/h1-3008066-stored-xss-in-area-tutorials|"Stored XSS in AREA tutorials"]] - `high`, undisclosed, 73 votes, Autodesk
+- [[disclosures/h1-503298-multiple-xss-on-account-settings-that-can-hijack-any-users-i|"Multiple XSS on account settings that can hijack any users in the company. "]] - `critical`, $700, 73 votes, X / xAI
+- [[disclosures/h1-2257080-stored-xss-injected-in-wiki-page-via-banzai-pipeline|"Stored-XSS injected in Wiki page via Banzai pipeline"]] - `high`, undisclosed, 71 votes, GitLab
+- [[disclosures/h1-667188-stored-self-xss-on-https-app-crowdsignal-com-in-photo-insert|"Stored Self XSS on https://app.crowdsignal.com (in Photo Insert App) + Stored XSS on https://*your-subdomain*.survey.fm"]] - `high`, undisclosed, 68 votes, Automattic
+- [[disclosures/h1-666040-blind-xss-on-admin-acronis-com-via-delete-account-form-on-ac|"Blind XSS on admin.acronis.com via delete account form on account.acronis.com"]] - `high`, undisclosed, 65 votes, Acronis
+- [[disclosures/h1-275518-blind-xss-in-mobpub-marketplace-admin-production-sentry-via-|"Blind XSS in Mobpub Marketplace Admin Production \| Sentry via demand.mopub.com (User-Agent)"]] - `high`, undisclosed, 63 votes, X / xAI
+- [[disclosures/h1-3423950-variation-of-3321406-yetanother-1-click-chaining-of-self-xss|"[Variation of #3321406] YetAnother 1-Click Chaining of Self-XSS, Cookie Tossing and AntiCSRF Token Prediction leads to auto approval in AccessTempAuth"]] - `high`, undisclosed, 63 votes, Cloudflare Public Bug Bounty
+- [[disclosures/h1-3988961-stored-xss-on-the-public-pontoon-dashboards-the-latest-activ|"Stored XSS on the public Pontoon dashboards: the latest-activity tooltip re-parses a contributor's account address as HTML"]] - `high`, $3,000, 63 votes, Mozilla
+- [[disclosures/h1-4175245-cross-account-stored-xss-on-app-basecamp-com-leads-to-persis|"Cross-account stored XSS on app.basecamp.com leads to persistent administrator takeover"]] - `high`, undisclosed, 59 votes, Basecamp
+- [[disclosures/h1-765679-stored-xss-on-upload-files-leads-to-steal-cookie|"Stored XSS on upload files leads to steal cookie"]] - `high`, undisclosed, 59 votes, Palo Alto Software
+- [[disclosures/h1-1106238-stored-xss-via-mermaid-prototype-pollution-vulnerability|"Stored XSS via Mermaid Prototype Pollution vulnerability"]] - `high`, $3,000, 58 votes, GitLab
+- [[disclosures/h1-1339034-blind-xss-via-feedback-form|"Blind XSS via Feedback form."]] - `high`, undisclosed, 57 votes, Judge.me 
+- [[disclosures/h1-391390-stored-xss-on-activity|"Stored XSS on activity"]] - `high`, $2,000, 55 votes, Shopify
+- [[disclosures/h1-1534636-stored-xss-in-photos-user-map-gne|"Stored XSS in photos_user_map.gne"]] - `high`, $3,263, 54 votes, Flickr
+- [[disclosures/h1-472470-manage-jumpbikes-com-blind-xss-on-jump-admin-panel-via-user-|"[manage.jumpbikes.com] Blind XSS on Jump admin panel via user name"]] - `critical`, undisclosed, 54 votes, Uber
+- [[disclosures/h1-723307-stored-xss-in-merge-request-pages|"Stored XSS in merge request pages"]] - `high`, $3,500, 53 votes, GitLab
+- [[disclosures/h1-1039750-stored-xss-in-intense-debate-comment-system|"Stored XSS in Intense Debate comment system"]] - `high`, undisclosed, 52 votes, Automattic
+- [[disclosures/h1-415484-stored-xss|"Stored xss"]] - `high`, $1,000, 52 votes, Shopify
+- [[disclosures/h1-256152-possibility-to-inject-a-malicious-javascript-code-in-any-fil|"Possibility to inject a malicious JavaScript code in any file on tags.tiqcdn.com results in a stored XSS on any page in most Uber domains"]] - `high`, $6,000, 51 votes, Uber
+- [[disclosures/h1-394016-web-cache-deception-attack-xss|"Web Cache Deception Attack (XSS)"]] - `high`, $256, 51 votes, Discourse
+- [[disclosures/h1-251224-blind-stored-xss-parcel-grab-com-name-parameter|"Blind stored xss [parcel.grab.com] > name parameter "]] - `critical`, $750, 50 votes, Grab
+- [[disclosures/h1-836649-stored-xss-in-markdown-when-redacting-references|"Stored XSS in markdown when redacting references"]] - `high`, $5,000, 50 votes, GitLab
+- [[disclosures/h1-856554-stored-xss-on-the-job-page|"Stored XSS on the job page"]] - `high`, $3,000, 50 votes, GitLab
+- [[disclosures/h1-1054526-stored-xss-in-wordpress-com|"Stored XSS in wordpress.com"]] - `high`, undisclosed, 48 votes, Automattic
+- [[disclosures/h1-1280002-stored-xss-via-mermaid-prototype-pollution-vulnerability|"Stored XSS via Mermaid Prototype Pollution vulnerability"]] - `high`, $3,000, 48 votes, GitLab
+- [[disclosures/h1-3729501-pre-authentication-stored-xss-in-essity-customer-service-pip|"Pre-authentication Stored XSS in Essity Customer-Service Pipeline via ContactApi (reCAPTCHA bypass + no rate limit)"]] - `critical`, undisclosed, 48 votes, Essity
+- [[disclosures/h1-948929-blind-stored-xss-via-staff-name|"Blind Stored XSS Via Staff Name"]] - `high`, $3,000, 45 votes, Shopify
+- [[disclosures/h1-735638-account-takeover-via-xss|"Account takeover via XSS"]] - `critical`, undisclosed, 41 votes, Rocket.Chat
+- [[disclosures/h1-302253-xss-m-ok-ru|"Очень жесткая XSS в личных сообщениях m.ok.ru"]] - `critical`, undisclosed, 40 votes, ok.ru
+- [[disclosures/h1-530499-woocommerce-persistent-xss-via-customer-address-state-county|"WooCommerce: Persistent XSS via customer address (state/county)"]] - `high`, undisclosed, 40 votes, Automattic
+- [[disclosures/h1-2234564-client-side-template-injection-to-stored-xss-in-image-collec|"Client Side Template Injection to Stored XSS in Image Collection"]] - `high`, undisclosed, 39 votes, Mars
+- [[disclosures/h1-1398305-stored-xss-on-issue-comments-and-other-pages-which-contain-n|"Stored XSS on issue comments and other pages which contain notes"]] - `high`, $3,000, 38 votes, GitLab
+- [[disclosures/h1-615672-cross-site-scripting-on-algorithm-collaborator|"Cross-site scripting on algorithm collaborator "]] - `high`, $2,100, 37 votes, Quantopian
+- [[disclosures/h1-333008-persistent-xss-in-https-sandbox-reverb-com-item|"Persistent XSS in https://sandbox.reverb.com/item/"]] - `high`, undisclosed, 36 votes, Reverb.com
+- [[disclosures/h1-771882-xss-business|"Хранимый XSS в Business-аккаунте, на странице компании"]] - `high`, undisclosed, 36 votes, DRIVE.NET, Inc.
+- [[disclosures/h1-282604-stored-xss-on-profile-page-via-steam-display-name|"Stored XSS on profile page via Steam display name"]] - `high`, $1,250, 35 votes, Rockstar Games
+- [[disclosures/h1-950190-store-xss-in-error-message-of-build-dependencies|"Store-XSS in error message of build-dependencies "]] - `high`, undisclosed, 35 votes, GitLab
+- [[disclosures/h1-1100096-ssrf-blind-xss-in-gravatar-email|"SSRF & Blind XSS in Gravatar email "]] - `high`, undisclosed, 34 votes, Automattic
+- [[disclosures/h1-299424-bypass-filter-and-get-stored-xss|"Bypass Filter and get Stored Xss "]] - `high`, $3,000, 34 votes, Shopify
+- [[disclosures/h1-1028820-blind-stored-xss-in-https-partners-acronis-com-admin-which-l|"Blind Stored XSS in https://partners.acronis.com/admin which lead to sensitive information/PII leakage"]] - `high`, $150, 33 votes, Acronis
+- [[disclosures/h1-1051369-blind-stored-xss-payload-fired-at-the-backend-on-https|"Blind Stored XSS Payload fired at the backend on https://█████████/"]] - `critical`, undisclosed, 33 votes, U.S. Dept Of Defense
+- [[disclosures/h1-977697-stored-xss-in-merge-requests|"Stored-XSS in merge requests"]] - `high`, undisclosed, 33 votes, GitLab
+- [[disclosures/h1-1342009-stored-xss-in-merge-request-creation-page-through-payload-in|"Stored XSS in merge request creation page through payload in approval rule name"]] - `high`, undisclosed, 32 votes, GitLab
+- [[disclosures/h1-3931771-author-stored-xss-in-wp-admin-unescaped-sub-size-filename-fr|"Author → stored XSS in wp-admin: unescaped sub-size filename from attachment metadata breaks out of the `src` attribute in `get_media_item()`"]] - `critical`, undisclosed, 32 votes, WordPress
+- [[disclosures/h1-354262-stored-xss-angular-injection-in-support-rockstargames-com-us|"stored XSS (angular injection) in support.rockstargames.com using zendesk register form via name parameter"]] - `high`, $1,000, 31 votes, Rockstar Games
+- [[disclosures/h1-375886-xss|"XSS-уязвимость, связанная с загрузкой файлов"]] - `critical`, undisclosed, 30 votes, VK.com
+- [[disclosures/h1-2372332-multiple-xss-and-open-http-redirection|"Multiple XSS and open HTTP redirection"]] - `high`, undisclosed, 29 votes, ExpressionEngine
+- [[disclosures/h1-3400506-stored-xss-in-conversion-statistics-via-tracker-name|"Stored XSS in Conversion Statistics via Tracker Name"]] - `high`, undisclosed, 28 votes, Revive Adserver
+- [[disclosures/h1-923912-blind-stored-xss-on-the-internal-host|"Blind Stored XSS on the internal host - █████████████"]] - `high`, undisclosed, 28 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1103258-stored-dom-xss-via-mermaid-chart|"Stored DOM XSS via Mermaid chart"]] - `high`, $3,000, 27 votes, GitLab
+- [[disclosures/h1-1436558-universal-xss-with-playlist-feature|"Universal XSS with Playlist feature"]] - `high`, undisclosed, 27 votes, Brave Software
+- [[disclosures/h1-264002-stored-xss-on-member-post-feed|"Stored XSS on member post feed"]] - `high`, $1,000, 25 votes, Rockstar Games
+- [[disclosures/h1-324194-blind-stored-xss-in-demo-form|"Blind stored xss in demo form"]] - `high`, $500, 25 votes, Upserve 
+- [[disclosures/h1-281851-xss|"XSS в личных сообщениях"]] - `high`, undisclosed, 23 votes, VK.com
+- [[disclosures/h1-684268-stored-xss-for-grafana-dashboard-url|"Stored XSS for Grafana dashboard URL"]] - `high`, undisclosed, 21 votes, GitLab
+- [[disclosures/h1-413077-stored-cross-site-scripting|"Stored Cross Site Scripting."]] - `high`, undisclosed, 20 votes, 8x8
+- [[disclosures/h1-430029-stored-xss-in-infogram-com-via-language|"Stored XSS in infogram.com via language "]] - `high`, undisclosed, 20 votes, Infogram
+- [[disclosures/h1-218226-stored-xss-in-comments-on-https-www-starbucks-co-uk-blog|"Stored XSS in comments on https://www.starbucks.co.uk/blog/*"]] - `high`, undisclosed, 19 votes, Starbucks
+- [[disclosures/h1-283539-stored-xss-lead-forms-app-php|"Stored xss в /lead_forms_app.php"]] - `high`, $500, 19 votes, VK.com
+- [[disclosures/h1-333507-stored-xss-in-post-last-edited-option|"Stored XSS in 'post last edited' option"]] - `high`, $256, 19 votes, Discourse
+- [[disclosures/h1-878145-blind-stored-xss-due-to-insecure-contact-form-at-https-www-t|"Blind stored XSS due to insecure contact form at https://www.topcoder.com leads to leakage of session token and other PII"]] - `high`, undisclosed, 19 votes, Lab45
+- [[disclosures/h1-409380-stored-xss-in-merge-request-pages|"Stored XSS in merge request pages"]] - `high`, undisclosed, 18 votes, GitLab
+- [[disclosures/h1-266072-xss-vk|"Хранимая XSS в группе VK"]] - `high`, $500, 17 votes, VK.com
+- [[disclosures/h1-1036877-blind-stored-xss-due-to-insecure-contact-form-at-https-mil-l|"Blind stored XSS due to insecure contact form at https://█████.mil leads to leakage of session token and "]] - `high`, undisclosed, 16 votes, U.S. Dept Of Defense
+- [[disclosures/h1-384255-stored-xss-on-issue-details-page|"Stored XSS on Issue details page"]] - `high`, undisclosed, 16 votes, GitLab
+- [[disclosures/h1-899954-xss-in-message-attachment-fileds|"XSS in message attachment fileds."]] - `critical`, undisclosed, 16 votes, Rocket.Chat
+- [[disclosures/h1-1011888-improper-sanitization-leads-to-xss-fire-on-admin-panel|"Improper Sanitization leads to XSS Fire on admin panel"]] - `high`, undisclosed, 15 votes, Informatica
+- [[disclosures/h1-2031855-xss-with-visual-language-editor-tags|"XSS with Visual Language Editor tags"]] - `high`, undisclosed, 15 votes, Invision Power Services, Inc.
+- [[disclosures/h1-316946-upgreid-xss|"новенькое (старенькое upgreid) хакерство: делаем демократию во всем в контакте (XSS - на англиском)"]] - `critical`, undisclosed, 15 votes, VK.com
+- [[disclosures/h1-550266-okmedia-insideok-ru-web-cache-poisoing-xss|"[okmedia.insideok.ru] Web Cache Poisoing & XSS"]] - `high`, undisclosed, 14 votes, ok.ru
+- [[disclosures/h1-1532858-cross-site-scripting-on-dashboard2-omise-co|"Cross-site scripting on dashboard2.omise.co"]] - `critical`, $200, 13 votes, Omise
+- [[disclosures/h1-1620247-stored-xss-at-https|"Stored XSS at https://█████"]] - `high`, undisclosed, 13 votes, U.S. Dept Of Defense
+- [[disclosures/h1-733222-stored-xss-in-https-www-smule-com|"stored xss in https://www.smule.com"]] - `high`, undisclosed, 13 votes, Smule
+- [[disclosures/h1-1110243-blind-stored-xss-on-leads-to-takeover-admin-account|"Blind Stored XSS on ███████  leads to takeover admin account"]] - `critical`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1379400-xss-in-various-messagetypes|"XSS in various MessageTypes"]] - `high`, undisclosed, 12 votes, Rocket.Chat
+- [[disclosures/h1-250837-stored-xss-via-template-injection|"Stored xss via template injection"]] - `high`, undisclosed, 12 votes, WordPress
+- [[disclosures/h1-633231-pre-auth-stored-xss-in-comments-via-javascript-url-when-admi|"pre-auth Stored XSS in comments via javascript: url when administrator edits user supplied comment"]] - `high`, undisclosed, 12 votes, WordPress
+- [[disclosures/h1-846905-stored-xss-in-elastic-app-search|"Stored XSS in Elastic App Search"]] - `high`, $2,000, 12 votes, Elastic
+- [[disclosures/h1-274112-xss-wysiwyg|"Хранимая XSS в функционале добавления аудио в WYSIWYG"]] - `high`, $500, 11 votes, VK.com
+- [[disclosures/h1-507159-fileview-inadequate-output-encoding-and-escaping|"[fileview] Inadequate Output Encoding and Escaping "]] - `high`, undisclosed, 11 votes, Node.js third-party modules
+- [[disclosures/h1-779908-stored-xss-at-connect-topcoder-com-projects-affected-on-proj|"Stored-Xss at connect.topcoder.com/projects/ affected on project chat members"]] - `high`, undisclosed, 11 votes, Lab45
+- [[disclosures/h1-283565-xss-on-infogram-com|"XSS on infogram.com"]] - `high`, undisclosed, 10 votes, Infogram
+- [[disclosures/h1-329862-stored-xss-in-shop-name-lp-reverb-com|"Stored xss in shop name @ lp.reverb.com"]] - `high`, undisclosed, 10 votes, Reverb.com
+- [[disclosures/h1-867133-stored-xss-on-https-apps-topcoder-com-wiki-pages-editpage-ac|"Stored XSS on https://apps.topcoder.com/wiki/pages/editpage.action"]] - `high`, undisclosed, 10 votes, Lab45
+- [[disclosures/h1-244902-xss-through-document-projects|"XSS through document projects"]] - `high`, undisclosed, 9 votes, Khan Academy
+- [[disclosures/h1-294048-stored-xss-community-ubnt-com|"Stored XSS => community.ubnt.com "]] - `high`, undisclosed, 9 votes, Ubiquiti Inc.
+- [[disclosures/h1-754352-stored-xss-on-wordpress-5-3-via-title-post|"Stored XSS on Wordpress 5.3 via Title Post"]] - `high`, undisclosed, 9 votes, WordPress
+- [[disclosures/h1-847176-stored-xss-via-64-vulnerable-fields-in-leads-to-credential-t|"Stored XSS via 64(?) vulnerable fields in ███ leads to credential theft/account takeover"]] - `high`, undisclosed, 9 votes, U.S. Dept Of Defense
+- [[disclosures/h1-247517-stored-xss-in-private-messages-reply-allows-to-execute-malic|"Stored XSS in Private Messages 'Reply' allows to execute malicious JavaScript against any user while replying to the message which contains payload"]] - `high`, undisclosed, 8 votes, Concrete CMS
+- [[disclosures/h1-309648-simplehttpserver-stored-xss-in-file-names-leads-to-malicious|"[simplehttpserver] Stored XSS in file names leads to malicious JavaScript code execution when directory listing is output in HTML"]] - `critical`, undisclosed, 8 votes, Node.js third-party modules
+- [[disclosures/h1-346111-xss-persistent-selecting-role-s-for-protected-branches|"XSS (Persistent) - Selecting role(s) for protected branches"]] - `high`, undisclosed, 8 votes, GitLab
+- [[disclosures/h1-915073-stored-xss-via-comment-form-at|"Stored XSS via Comment Form at ████████"]] - `high`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1245787-swiftype-stored-xss-via-document-field-url-triggers-on-https|"[Swiftype] - Stored XSS via document field `url` triggers on `https://app.swiftype.com/engines/<engine>/document_types/<type>/documents/<id>`"]] - `high`, undisclosed, 7 votes, Elastic
+- [[disclosures/h1-235292-compose-mixmax-com-stored-xss-on-compose-mixmax-com-in-conta|"[compose.mixmax.com] Stored XSS on compose.mixmax.com in contact names."]] - `high`, undisclosed, 7 votes, Mixmax
+- [[disclosures/h1-309367-metascraper-stored-xss-in-open-graph-meta-properties-read-by|"[metascraper] Stored XSS in Open Graph meta properties read by metascrapper"]] - `critical`, undisclosed, 7 votes, Node.js third-party modules
+- [[disclosures/h1-349146-stored-xss-in-node-red|"Stored XSS in Node-Red"]] - `high`, undisclosed, 7 votes, Node.js third-party modules
+- [[disclosures/h1-1081994-stored-xss-at-https-www-mil|"Stored XSS at https://www.█████████.mil"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-273960-xss|"Хранимая XSS на странице 'Виджет для авторизации'"]] - `high`, undisclosed, 6 votes, VK.com
+- [[disclosures/h1-277259-marketplace-informatica-com-stored-xss|"[marketplace.informatica.com] - Stored XSS"]] - `high`, undisclosed, 6 votes, Informatica
+- [[disclosures/h1-282909-report-design-critical-stored-dom-xss-vulnerability|"Report Design Critical Stored DOM XSS Vulnerability "]] - `critical`, undisclosed, 6 votes, Infogram
+- [[disclosures/h1-309394-anywhere-an-iframe-element-with-url-to-malicious-html-file-w|"[anywhere] An iframe element with url to malicious HTML file (with eg. JavaScript malware) can be used as filename and served via anywhere"]] - `critical`, undisclosed, 6 votes, Node.js third-party modules
+- [[disclosures/h1-309641-simple-server-html-with-iframe-element-can-be-used-as-filena|"[simple-server] HTML with iframe element can be used as filename, which might lead to load and execute malicious JavaScript "]] - `high`, undisclosed, 6 votes, Node.js third-party modules
+- [[disclosures/h1-866815-stored-xss-on-https-apps-topcoder-com-wiki-plugins-socialboo|"Stored XSS on https://apps.topcoder.com/wiki/plugins/socialbookmarking/updatebookmark.action"]] - `high`, undisclosed, 6 votes, Lab45
+- [[disclosures/h1-901377-stored-xss-at-userprofile-aspx|"Stored XSS at ██████userprofile.aspx"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1017189-blind-stored-xss-on-https-after-filling-a-request-at-https|"Blind Stored XSS on https://█████████ after filling a request at https://█████"]] - `high`, undisclosed, 5 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1132202-post-auth-stored-xss-with-user-interaction-leads-to-remote-c|"Post-Auth Stored XSS with User Interaction leads to Remote Code Execution"]] - `high`, undisclosed, 5 votes, Rocket.Chat
+- [[disclosures/h1-216822-stored-xss-via-transloadit-com-and-imageproxy|"Stored XSS via transloadit.com and imageproxy"]] - `high`, undisclosed, 5 votes, Coursera
+- [[disclosures/h1-369573-stored-xss-in-scrape-metadata-when-reading-metadata-from-an-|"stored xss in scrape-metadata when reading metadata from an html page"]] - `high`, undisclosed, 5 votes, Node.js third-party modules
+- [[disclosures/h1-858874-stored-xss-in-tsvb-visualizations-markdown-panel|"Stored XSS in TSVB Visualizations Markdown Panel"]] - `high`, undisclosed, 5 votes, Elastic
+- [[disclosures/h1-1072616-stored-xss-through-name-last-name-on-https|"Stored XSS through name / last name on https://██████████/"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1401268-persistent-css-injection-with-marked-markdown-parser-in-rock|"Persistent CSS injection with ’marked’ markdown parser in Rocket.Chat"]] - `high`, undisclosed, 4 votes, Rocket.Chat
+- [[disclosures/h1-311101-crud-file-server-stored-xss-in-filenames-when-directory-inde|"[crud-file-server] Stored XSS in filenames when directory index is served by crud-file-server"]] - `critical`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-418271-stored-xss-agent-status|"Stored XSS agent_status "]] - `high`, undisclosed, 4 votes, 8x8
+- [[disclosures/h1-670509-stored-xss-al-video-php-act-a-choose-video-box|"Stored XSS вирус в al_video.php?act=a_choose_video_box"]] - `high`, $500, 4 votes, VK.com
+- [[disclosures/h1-854445-unrestricted-file-upload-leads-to-stored-xss-on-https|"Unrestricted file upload leads to stored xss on https://████████/"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-730963-stored-xss-m-vk-com-video|"Stored XSS в m.vk.com/video"]] - `high`, $500, 3 votes, VK.com
+- [[disclosures/h1-1631447-stored-xss-in-nlc-login-aspx-via-edit-get-parameter-through-|"STORED XSS in █████████/nlc/login.aspx via 'edit' GET parameter through markdown editor [HtUS]"]] - `high`, undisclosed, 2 votes, U.S. Dept Of Defense
+- [[disclosures/h1-507303-file-browser-inadequate-output-encoding-and-escaping|"[file-browser] Inadequate Output Encoding and Escaping "]] - `high`, undisclosed, 1 votes, Node.js third-party modules
+
+> Auto-generated from `disclosures/` by `node vault-admin/crawler/gen_cwe_pages.js`. Do not edit by hand.

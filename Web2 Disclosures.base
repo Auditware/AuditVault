@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"sources": [
+		{
+			"type": "folder",
+			"path": "disclosures"
+		}
+	],
+	"viewType": "table",
+	"filters": {
+		"and": [
+			"file.folder == \"disclosures\""
+		]
+	},
+	"order": [],
+	"columns": {}
+}

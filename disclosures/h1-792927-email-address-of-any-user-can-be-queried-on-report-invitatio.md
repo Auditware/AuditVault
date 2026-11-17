@@ -1,0 +1,99 @@
+---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/high
+  - cwe/improper-authorization
+  - env/web
+substate: "resolved"
+weakness: "Improper Authorization"
+enriched: true
+date: 2020-02-20
+submitted: 2020-02-11T05:53:53.346Z
+bounty_usd: null
+votes: 672
+cve: []
+program: "[[programs/security|HackerOne]]"
+reporter: "msdian7"
+source: "https://hackerone.com/reports/792927"
+title: "Email address of any user can be queried on Report Invitation GraphQL type when username is known"
+---
+# Email address of any user can be queried on Report Invitation GraphQL type when username is known
+
+> **Severity:** High | **Bounty:** undisclosed | **Votes:** 672 | **Program:** HackerOne | **Disclosed:** 2020-02-20
+
+- Report: [https://hackerone.com/reports/792927](https://hackerone.com/reports/792927)
+- CWE: Improper Authorization
+- Submitted: 2020-02-11T05:53:53.346Z
+
+## Report summary
+
+# Issue Summary
+Through the HackerOne Bug Bounty Program on February 11, 2020 at 5:55 UTC, a HackerOne community member (“hacker”) notified HackerOne that they were able to determine a user’s email address by generating an invitation using only their username. The team patched the vulnerability at 08:30 UTC the same day.
+
+The technical investigation finished at 8:40 UTC, concluding that there was no malicious intent or indicators of exploitation.
+
+# Timeline
+| Date Time (UTC) | Action |
+|---|---|
+|2020-02-10 15:13|Software containing vulnerability deployed to production.
+|2020-02-11 05:53|Vulnerability submitted to HackerOne’s bug bounty program.
+|2020-02-11 05:55|Incident Response (IR) team member on-call was paged about a critical severity report submitted to the HackerOne bug bounty program.|
+|2020-02-11 05:57|The on-call team member triaged the report and notified the full IR team.|
+|2020-02-11 06:04|A specialized IR team was assembled and began the investigation.|
+|2020-02-11 08:30|A vulnerability patch was deployed.|
+|2020-02-11 08:44|HackerOne’s IR team concluded technical investigation.|
+|2020-02-11 23:54|Two users were alerted that their information was exposed to the reporters who submitted the vulnerability.|
+
+# Root Cause
+HackerOne has an invitation system that allows program owners to send invitations to users for various purposes, such as invitations to hack on private programs, claim bounties, be added to programs, among others. The invitation system allows users to be invited by email or by username. If a user is invited by their username, the sender is not permitted to view the email address the invitation is sent to for user privacy. This rule has been guarded by HackerOne’s Access Control Lists (ACLs) in HackerOne’s Representational state transfer (REST) framework, but HackerOne has been migrating these objects to GraphQL under a new protection layer. When exposing a new invitation object, the ACL rule previously applied wasn’t implemented correctly to the new GraphQL protection layer.
+
+*How could this have been exploited to impact any user?*
+HackerOne provides demo programs for customers to experience the product as well as hackers to test against our production system. When you are a team member in a demo program, you can demo the report interface. In the report interface, you can invite an external participant to the report, which could be any user on the platform. By generating that invitation with a username and then viewing the invitation, the user’s email could have been exposed.
+
+# Resolution and Recovery
+At 5:57 UTC, HackerOne successfully reproduced the vulnerability as described by the reporter. The IR team identified the change that introduced the vulnerability shortly after. A fix was deployed at 8:30 UTC, adding the necessary ACL into the GraphQL protection layer.
+
+The IR team worked in parallel to identify the accounts impacted. It was determined shortly after the fix that there were no other usages except for those attempts by the reporter.
+
+The maximum possible impact was assumed in determining the Common Vulnerability Scoring System (CVSS) score, which resulted in High (8.3). HackerOne decided to award a bonus of $1,000 due to the time to discover the vulnerability since the code was released, approximately 16 hours after the change was deployed.
+# Vulnerability Impact on Data
+The reporter accessed the email addresses of two specific users to verify the findings, no other information could have been accessed with the discovered vulnerability.
+
+|Attribute| Description |
+|---|---|
+|email|The email address of the user invited|
+
+# Preventative Measures
+As part of the HackerOne Incident Response process, HackerOne has conducted an internal review and analysis of the incident. HackerOne has taken the following actions to address the underlying cause of the issue and help prevent future occurrence.
+
+## Implement the proper ACL check within the invitation model
+
+This change was the mitigating fix for resolving this vulnerability. It was deployed at 8:30UTC.
+
+## Identify sensitive database fields being added to GraphQL
+
+HackerOne maintains a list of sensitive database fields. The application security team is planning to leverage this list to have engineers acknowledge that they’ve, to their knowledge, properly implemented the authorization logic when they put up a code merge request. This change is expected to be implemented in Q1 2020.
+
+## Timeline
+
+- **Report Filed**
+- **Report Triaged**
+- **Report Severity Updated**
+- **2020-02-11** @bencode: Hey @msdian7,
+
+Just wanted to check, are the accounts you queried ██████ and █████ your accounts?
+- **2020-02-11** @msdian7: ███████ is my account and ████████ is not my acoount (that's my friend's account)
+- **Report Title Updated**
+- **Report Vulnerability Types Updated**
+- **Report Resolved**
+- **External User Invited**
+- **External User Invited**
+- **External User Joined**
+- **Bounty Awarded**
+- **External User Invited**
+- **External User Joined**
+- **Agreed On Going Public**
+- **Agreed On Going Public**
+- **Report Became Public**
+- **User Left Retest**

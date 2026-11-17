@@ -1,0 +1,236 @@
+---
+tags:
+  - type/cwe
+generated: true
+---
+# Improper Access Control Generic
+
+> **Disclosures in vault:** 221 | **Critical:** 72 | **High:** 149 | **Total known bounty:** $127,906 (30 disclosed) | **Top programs:** `U.S. Dept Of Defense` (40), `Nextcloud` (12), `GitLab` (10), `h1-ctf` (8), `Valve` (6), `Starbucks` (6), `GitHub` (6), `Node.js` (6), `HackerOne` (5), `Khan Academy` (5)
+
+## All disclosures of this class
+
+Ranked by community votes - the top of this list is the canonical writeup set for how this class actually lands.
+
+- [[disclosures/h1-2293343-account-takeover-via-password-reset-without-user-interaction|"Account Takeover via Password Reset without user interactions"]] - `critical`, $35,000, 991 votes, GitLab
+- [[disclosures/h1-446585-exfiltrate-and-mutate-repository-and-project-data-through-in|"Exfiltrate and mutate repository and project data through injected templated service"]] - `critical`, $11,000, 762 votes, GitLab
+- [[disclosures/h1-391217-getting-all-the-cd-keys-of-any-game|"Getting all the CD keys of any game"]] - `critical`, $20,000, 638 votes, Valve
+- [[disclosures/h1-322985-ability-to-reset-password-for-account|"Ability to reset password for account"]] - `critical`, undisclosed, 637 votes, Upserve 
+- [[disclosures/h1-313457-publicly-accessible-continuous-integration-tool|"Publicly accessible Continuous Integration Tool"]] - `critical`, undisclosed, 562 votes, Snapchat
+- [[disclosures/h1-1567186-one-click-account-hijack-for-anyone-using-apple-sign-in-with|"One-click account hijack for anyone using Apple sign-in with Reddit, due to response-type switch + leaking href to XSS on www.redditmedia.com"]] - `critical`, undisclosed, 510 votes, Reddit
+- [[disclosures/h1-1888915-reset-password-link-sent-over-unsecured-http-protocol|"Reset password link sent over unsecured http protocol"]] - `high`, $750, 440 votes, Mattermost
+- [[disclosures/h1-314808-full-account-takeover|"Full account takeover"]] - `high`, undisclosed, 413 votes, Reverb.com
+- [[disclosures/h1-502593-attacker-is-able-to-access-commit-title-and-team-member-comm|"Attacker is able to access commit title and team member comments which are supposed to be private"]] - `high`, undisclosed, 351 votes, GitLab
+- [[disclosures/h1-2967634-exposed-proxy-allows-to-access-internal-reddit-domains|"Exposed proxy allows to access internal reddit domains"]] - `high`, $7,500, 296 votes, Reddit
+- [[disclosures/h1-2831902-critical-0-click-account-takeover-via-password-reset-auth-32|"[CRITICAL] 0-Click Account Takeover via Password Reset [AUTH-3243] /orchestrator/v1/password_reset/start"]] - `critical`, undisclosed, 291 votes, Remitly
+- [[disclosures/h1-809816-organization-takeover|"Organization Takeover"]] - `high`, $500, 263 votes, Helium
+- [[disclosures/h1-2312029-view-titles-of-private-reports-with-pending-email-invitation|"View Titles of Private Reports with pending email invitation"]] - `high`, undisclosed, 257 votes, HackerOne
+- [[disclosures/h1-1027822-unrestricted-file-upload-leads-to-rce-on-mobile-starbucks-co|"Unrestricted File Upload Leads to RCE on mobile.starbucks.com.sg"]] - `critical`, undisclosed, 247 votes, Starbucks
+- [[disclosures/h1-3178999-account-takeover-of-existing-hackerone-accounts-through-scim|"Account takeover of existing HackerOne accounts through SCIM provisioning"]] - `high`, undisclosed, 232 votes, HackerOne
+- [[disclosures/h1-3081691-1-click-account-takeover-via-auth-token-theft-on-marketing-h|"1 Click Account Takeover via Auth Token Theft on marketing.hostinger.com"]] - `high`, undisclosed, 219 votes, hostinger 
+- [[disclosures/h1-1439026-discoverability-by-phone-number-email-restriction-bypass|"Discoverability by phone number/email restriction bypass"]] - `high`, $5,040, 217 votes, X / xAI
+- [[disclosures/h1-692252-group-search-leaks-private-mrs-code-commits|"Group search leaks private MRs, code, commits"]] - `high`, undisclosed, 212 votes, GitLab
+- [[disclosures/h1-1551176-able-to-bypass-email-verification-and-change-email-to-any-ot|"Able to bypass email verification and change email to any other user email "]] - `high`, $5,000, 200 votes, Reddit
+- [[disclosures/h1-1711938-github-apps-can-use-scoped-user-to-server-tokens-to-obtain-f|"Github Apps can use Scoped-User-To-Server Tokens to Obtain Full Access to User's Projects in Project V2 GraphQL api"]] - `high`, undisclosed, 198 votes, GitHub
+- [[disclosures/h1-2579939-saml-signature-verification-bypass-allows-logging-into-any-u|"SAML Signature verification bypass allows logging into any user (with specific conditions)"]] - `critical`, undisclosed, 196 votes, GitHub
+- [[disclosures/h1-1596663-admin-can-create-a-hidden-admin-account-which-even-the-owner|"Admin can create a hidden admin account  which even the owner can not detect and remove and do administrative actions on the application."]] - `high`, undisclosed, 186 votes, Reddit
+- [[disclosures/h1-1901040-authentication-bypass-on-gist-github-com-through-ssh-certifi|"Authentication bypass on gist.github.com through SSH Certificates"]] - `high`, $10,000, 182 votes, GitHub
+- [[disclosures/h1-1667998-1-click-account-takeover-via-deeplink-in-com-kayak-android|"1 click Account takeover via deeplink in [com.kayak.android]"]] - `critical`, undisclosed, 173 votes, KAYAK
+- [[disclosures/h1-837400-idor-in-the-https-market-semrush-com|"IDOR in the https://market.semrush.com/"]] - `critical`, undisclosed, 173 votes, Semrush
+- [[disclosures/h1-473742-bug-in-graphql-and-api-integration-leads-to-limited-user-add|"Bug in GraphQL and API integration leads to limited user address disclosure"]] - `high`, undisclosed, 144 votes, Starbucks
+- [[disclosures/h1-2950536-applicant-security-exam-attachments-documents-accessible-thr|"Applicant security exam Attachments/Documents accessible through an IDOR/BAC on the custom Apex controller on https://█████.mil "]] - `critical`, undisclosed, 142 votes, U.S. Dept Of Defense
+- [[disclosures/h1-999765-ticket-trick-at-https-account-acronis-com|"Ticket Trick at https://account.acronis.com"]] - `high`, undisclosed, 142 votes, Acronis
+- [[disclosures/h1-3459285-critical-unauthorized-cross-tenant-data-access-in-stripo-ai-|"[Critical] Unauthorized Cross-Tenant Data Access in Stripo AI Hub Campaign via Deleted Project."]] - `critical`, undisclosed, 140 votes, Stripo Inc
+- [[disclosures/h1-535436-lack-or-origin-check-leads-to-cross-site-websocket-hijacking|"Lack or Origin check leads to Cross-Site Websocket Hijacking (CSWSH)"]] - `high`, $800, 134 votes, Superhuman (formerly Grammarly)
+- [[disclosures/h1-3723458-1-click-account-takeover-via-open-redirect-through-regex-byp|"1-Click Account Takeover via Open Redirect through Regex Bypass in Domain Validation"]] - `critical`, undisclosed, 126 votes, Khan Academy
+- [[disclosures/h1-2516250-access-control-vulnerability-enabling-unauthorized-access-to|"Access Control Vulnerability Enabling Unauthorized Access to Limited Disclosure Reports"]] - `high`, undisclosed, 109 votes, HackerOne
+- [[disclosures/h1-577584-isteamassets-gives-partners-control-over-unrelated-community|"ISteamAssets gives partners control over unrelated community market transactions"]] - `high`, undisclosed, 109 votes, Valve
+- [[disclosures/h1-1474536-connect-8x8-com-admin-user-can-send-invites-on-behalf-of-ano|"connect.8x8.com: admin user can send invites on behalf of another admin user via POST /api/v1/users/<User ID>/invites"]] - `high`, undisclosed, 105 votes, 8x8
+- [[disclosures/h1-1464168-idor-allowing-to-read-another-user-s-token-on-the-social-med|"IDOR allowing to read another user's token on the Social Media Ads service"]] - `high`, undisclosed, 104 votes, Semrush
+- [[disclosures/h1-2513082-program-member-could-duplicate-report-to-a-non-related-progr|"Program Member Could Duplicate Report To A Non Related Program Original Report "]] - `high`, undisclosed, 104 votes, HackerOne
+- [[disclosures/h1-739321-user-account-compromised-authentication-bypass-via-oauth-tok|"User account compromised authentication bypass via oauth token impersonation"]] - `high`, undisclosed, 101 votes, Picsart
+- [[disclosures/h1-708820-group-search-with-elastic-search-enable-leaks-unrelated-data|"Group search with Elastic search enable leaks unrelated data"]] - `high`, undisclosed, 100 votes, GitLab
+- [[disclosures/h1-781265-h1-415-2020-spent-a-week-and-failed-at-solving-the-last-step|"[h1-415 2020] Spent a week and failed at solving the last step."]] - `critical`, undisclosed, 99 votes, h1-ctf
+- [[disclosures/h1-1732595-github-app-privilege-escalation-to-administrator-owner-of-th|"Github app Privilege Escalation to Administrator/Owner of the Organization "]] - `high`, undisclosed, 98 votes, GitHub
+- [[disclosures/h1-499348-twitter-lite-android-vulnerable-to-local-file-steal-javascri|"Twitter lite(Android): Vulnerable to local file steal, Javascript injection, Open redirect "]] - `critical`, undisclosed, 95 votes, X / xAI
+- [[disclosures/h1-2585855-missing-line-terminator-on-allowedorigins-enables-origin-spo|"Missing Line Terminator on allowedOrigins enables origin spoofing"]] - `high`, undisclosed, 90 votes, MetaMask
+- [[disclosures/h1-2190808-user-automatically-logged-in-as-sys-admin-user-on-https-admi|"User automatically logged in as Sys Admin user on https://███/Administration/Administration.aspx"]] - `critical`, undisclosed, 88 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2342461-improper-access-controls-admin-path|"Improper Access Controls(Admin Path)"]] - `high`, undisclosed, 88 votes, MTN Group
+- [[disclosures/h1-836081-insufficient-access-control-on-all-bcrm-instances-leading-to|"Insufficient access control on all BCRM instances leading to the ability to create admin accounts using the API"]] - `high`, undisclosed, 88 votes, LY Corporation
+- [[disclosures/h1-975212-access-to-microtransaction-sales-data-for-lots-of-apps-from-|"Access to microtransaction sales data for lots of apps from 2014 to present at /valvefinance/sanity/"]] - `critical`, undisclosed, 88 votes, Valve
+- [[disclosures/h1-1805779-2fa-bypass|"2FA BYPASS"]] - `high`, undisclosed, 87 votes, Cloudflare Public Bug Bounty
+- [[disclosures/h1-3103755-privilege-escalation-in-edit-and-create-secret-endpoints-lea|"Privilege Escalation in Edit and Create Secret Endpoints Leads to Unauthorized Secret Modification"]] - `high`, undisclosed, 86 votes, Dust
+- [[disclosures/h1-347296-docker-registry-http-api-v2-exposed-in-http-without-authenti|"Docker Registry HTTP API v2 exposed in HTTP without authentication leads to docker images dumping and poisoning"]] - `critical`, undisclosed, 83 votes, Semmle
+- [[disclosures/h1-3592387-potential-subdomain-takeover-on-ibm-com-domain|"Potential Subdomain Takeover on IBM.com domain."]] - `high`, undisclosed, 82 votes, IBM
+- [[disclosures/h1-2633888-otp-code-leaked-in-api-response|"OTP code Leaked in API Response "]] - `critical`, undisclosed, 81 votes, MTN Group
+- [[disclosures/h1-2801787-admin-dashboard-access-leads-to-updating-merchant-info|"Admin Dashboard Access Leads to Updating Merchant Info"]] - `critical`, undisclosed, 81 votes, MTN Group
+- [[disclosures/h1-2976481-unauthorized-coins-transfer-from-locking-account-s|"Unauthorized coins transfer from locking account(s)"]] - `critical`, undisclosed, 81 votes, Cosmos
+- [[disclosures/h1-3638909-github-scoped-user-to-server-tokens-can-escape-their-install|"GitHub scoped user to server tokens can escape their installation"]] - `high`, undisclosed, 80 votes, GitHub
+- [[disclosures/h1-3027461-bypass-of-cloudflare-s-cache-keys-and-waf-via-header-overflo|"Bypass of Cloudflare's Cache Keys and WAF via header overflow"]] - `high`, undisclosed, 77 votes, Cloudflare Public Bug Bounty
+- [[disclosures/h1-452559-possibility-to-overwrite-any-file-in-the-vpe-cdn-vimeo-tv-le|"Possibility to overwrite any file in the vpe.cdn.vimeo.tv leads to the Stored XSS for the all customers on the embed.vhx.tv"]] - `high`, undisclosed, 76 votes, Vimeo
+- [[disclosures/h1-1960107-rider-can-forcefully-get-passenger-s-order-accepted-resultin|"Rider can forcefully get passenger's order accepted resulting in multiple impacts including PII reveal  and more mentioned in the report."]] - `high`, undisclosed, 73 votes, inDrive
+- [[disclosures/h1-2192984-unauthenticated-remote-access-to-testing-endpoint|"Unauthenticated Remote Access to Testing Endpoint"]] - `critical`, undisclosed, 67 votes, IBM
+- [[disclosures/h1-1534465-ticket-trick-attack-allows-access-to-workspaces|"Ticket Trick Attack allows access to ████████' workspaces"]] - `high`, undisclosed, 66 votes, Rockstar Games
+- [[disclosures/h1-804548-administrative-access-to-oracle-weblogic-server-using-defaul|"[█████████] Administrative access to Oracle WebLogic Server using default credentials"]] - `critical`, undisclosed, 65 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2499178-subdomain-takeover-mil|"Subdomain takeover ████████.mil"]] - `critical`, undisclosed, 64 votes, U.S. Dept Of Defense
+- [[disclosures/h1-915110-no-email-checking-at-invitation-confirmation-link-leads-to-a|"No Email Checking at Invitation Confirmation Link leads to Account Takeover without User Interaction at CrowdSignal"]] - `critical`, undisclosed, 63 votes, Automattic
+- [[disclosures/h1-1022048-critically-sensitive-spring-boot-endpoints-exposed|"Critically Sensitive Spring Boot Endpoints Exposed"]] - `critical`, undisclosed, 59 votes, Semrush
+- [[disclosures/h1-501081-guest-privilege-escalation-to-admin-group|"Guest Privilege Escalation to admin group"]] - `critical`, undisclosed, 59 votes, Rocket.Chat
+- [[disclosures/h1-430249-cors-misconfiguration-leading-to-private-information-disclos|"CORS Misconfiguration leading to Private Information Disclosure"]] - `high`, undisclosed, 57 votes, Ubiquiti Inc.
+- [[disclosures/h1-1018368-add-any-depot-to-your-app-and-access-its-contents-without-de|"Add any depot to your app and access its contents without decryption key;  via /apps/setcommonredists"]] - `high`, undisclosed, 56 votes, Valve
+- [[disclosures/h1-2197796-ghes-management-console-eop-editor-to-site-admin|"GHES Management console EoP (editor to site admin)"]] - `high`, undisclosed, 56 votes, GitHub
+- [[disclosures/h1-2623715-sensitive-data-exposure-candidate-resumes-cvs-available-to-d|"Sensitive data exposure: █████████ candidate resumes/CVs available to download with no authentication through BAC/IDOR/Improper Salesforce config"]] - `high`, undisclosed, 55 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1175081-full-account-takeover-of-any-user-through-reset-password|"Full account takeover of any user through reset password"]] - `critical`, undisclosed, 54 votes, UPchieve
+- [[disclosures/h1-2828641-unauthorized-access-and-add-user-and-change-personal-informa|"unauthorized access and add user and change personal information all users"]] - `critical`, undisclosed, 54 votes, Mars
+- [[disclosures/h1-3622877-http-request-smuggling-via-unsanitized-hop-by-hop-headers|"HTTP Request Smuggling via Unsanitized Hop-by-Hop Headers"]] - `high`, $1,500, 54 votes, Cloudflare Public Bug Bounty
+- [[disclosures/h1-2828693-change-part-of-personal-information-all-users|"change part of personal information all users"]] - `critical`, undisclosed, 53 votes, Mars
+- [[disclosures/h1-275714-subdomain-takeover-on-developer-openapi-starbucks-com|"Subdomain takeover on developer.openapi.starbucks.com"]] - `high`, undisclosed, 51 votes, Starbucks
+- [[disclosures/h1-3687142-unauthenticated-reading-of-every-file-via-livechat-auth-and-|"Unauthenticated reading of every file via livechat auth and predicting MongoDB ObjectId()"]] - `critical`, undisclosed, 50 votes, Rocket.Chat
+- [[disclosures/h1-311289-ci-for-example-gov-can-be-logged-in-and-accessible|"CI for [example.gov] can be logged in and accessible"]] - `critical`, $2,000, 49 votes, GSA Bounty
+- [[disclosures/h1-684099-periscope-all-firebase-database-takeover|"Periscope-all Firebase database takeover"]] - `critical`, undisclosed, 49 votes, X / xAI
+- [[disclosures/h1-1486310-admin-8x8-vc-member-users-with-no-permission-can-integrate-e|"admin.8x8.vc: Member users with no permission can integrate email to connect calendar via GET /meet-external/spot-roomkeeper/v1/calendar/auth/init?.."]] - `high`, undisclosed, 48 votes, 8x8
+- [[disclosures/h1-1394910-unauthenticated-access-to-admin-panel-functions-at-https|"Unauthenticated Access to Admin Panel Functions at https://██████████/████████"]] - `critical`, undisclosed, 47 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1714979-dns-rebinding-in-inspect-insufficient-fix-of-cve-2022-32212-|"DNS rebinding in --inspect (insufficient fix of CVE-2022-32212 affecting macOS devices)"]] - `high`, $4,200, 47 votes, Internet Bug Bounty
+- [[disclosures/h1-3445710-broken-access-control-allows-advertiser-accounts-to-delete-t|"Broken Access Control allows advertiser accounts to delete trackers they do not own"]] - `high`, undisclosed, 47 votes, Revive Adserver
+- [[disclosures/h1-2212627-delete-external-storage-of-any-user|"Delete external storage of any user"]] - `high`, undisclosed, 45 votes, Nextcloud
+- [[disclosures/h1-3942522-wordpress-org-rosetta-invite-stores-unvalidated-role-editor-|"wordpress.org Rosetta: invite stores unvalidated role — Editor can assign site Administrator despite editable_roles"]] - `high`, undisclosed, 45 votes, WordPress
+- [[disclosures/h1-1210043-enumerate-all-the-class-codes-via-google-dorking|"Enumerate all the class codes via google dorking "]] - `high`, undisclosed, 44 votes, Khan Academy
+- [[disclosures/h1-1806387-accessing-unauthorized-administration-pages-and-seeing-admin|"Accessing unauthorized administration pages and seeing admin password - speakerkit.state.gov"]] - `high`, undisclosed, 44 votes, U.S. Department of State
+- [[disclosures/h1-2337427-authentication-bypass-with-usage-of-presignedurl|"Authentication Bypass with usage of PreSignedURL"]] - `high`, $2,000, 44 votes, ownCloud
+- [[disclosures/h1-369581-http-put-method-enabled|"HTTP PUT method enabled"]] - `critical`, undisclosed, 44 votes, RATELIMITED
+- [[disclosures/h1-4035023-ordinary-hey-user-can-make-hey-originate-authenticated-mail-|"Ordinary HEY user can make HEY originate authenticated mail from attacker-selected @hey.com  addresses"]] - `high`, undisclosed, 44 votes, Basecamp
+- [[disclosures/h1-998457-authentication-token-and-csrf-token-bypass|"Authentication token and CSRF token bypass"]] - `high`, $300, 44 votes, Enjin
+- [[disclosures/h1-1914115-end-to-end-encrypted-file-drops-can-be-made-inaccessible|"End-to-end encrypted file-drops can be made inaccessible"]] - `high`, $400, 43 votes, Nextcloud
+- [[disclosures/h1-1025881-accessing-editing-folders-of-other-users-in-the-orginisation|"Accessing/Editing Folders of Other Users in the Orginisation."]] - `high`, undisclosed, 42 votes, Lark Technologies
+- [[disclosures/h1-1297480-default-login-credentials-on-https-broadbandmaps-mtn-com-gh|"Default Login Credentials on https://broadbandmaps.mtn.com.gh/ "]] - `critical`, undisclosed, 42 votes, MTN Group
+- [[disclosures/h1-2575105-worker-permission-bypass-via-internalworker-leak-in-diagnost|"Worker permission bypass via InternalWorker leak in diagnostics"]] - `high`, undisclosed, 42 votes, Node.js
+- [[disclosures/h1-1098793-kroki-arbitrary-file-read-write|"Kroki Arbitrary File Read/Write "]] - `high`, $5,600, 41 votes, GitLab
+- [[disclosures/h1-2327238-lack-of-tenant-scoping-enables-limited-cross-tenant-data-que|"Lack of Tenant Scoping Enables Limited Cross-Tenant Data Querying and Mutation"]] - `critical`, undisclosed, 41 votes, Enjin
+- [[disclosures/h1-2633988-dod-workstation-exposed-to-internet-via-tinypilot-kvm-with-n|"DoD workstation exposed to internet via TinyPilot KVM with no authentication"]] - `critical`, undisclosed, 41 votes, U.S. Dept Of Defense
+- [[disclosures/h1-294201-subdomain-takeover-at-news-static-semrush-com|"subdomain takeover at news-static.semrush.com"]] - `high`, undisclosed, 40 votes, Semrush
+- [[disclosures/h1-3619409-windows-installer-grants-low-privileged-users-write-access-t|"Windows installer grants low-privileged users write access to executable P2Pool directory, enabling local code execution"]] - `high`, undisclosed, 40 votes, Monero
+- [[disclosures/h1-382678-client-ip-spoofing-using-x-forwarded-for-127-0-0-1-on-studio|"Client IP Spoofing using 'X-Forwarded-For: 127.0.0.1' on 'studio-app.snapchat.com' exposing bucket details"]] - `high`, $500, 40 votes, Snapchat
+- [[disclosures/h1-1193321-scoped-apptokens-can-be-changed-by-that-very-apptoken|"Scoped apptokens can be changed by that very apptoken"]] - `high`, $1,000, 39 votes, Nextcloud
+- [[disclosures/h1-380158-svcardproxydevus-starbucks-com-subdomain-take-over|"svcardproxydevus.starbucks.com Subdomain take over"]] - `high`, undisclosed, 39 votes, Starbucks
+- [[disclosures/h1-452854-expired-reshare-links-allow-access-to-all-files-in-share|"Expired reshare links allow access to all files in share"]] - `critical`, undisclosed, 38 votes, Nextcloud
+- [[disclosures/h1-1166500-zero-click-account-takeover-due-to-api-misconfiguration|"Zero click account Takeover due to Api misconfiguration 🏂🎩"]] - `critical`, undisclosed, 37 votes, UPchieve
+- [[disclosures/h1-3398283-authorization-bypass-allows-changing-email-address-of-other-|"Authorization bypass allows changing email address of other users"]] - `high`, undisclosed, 35 votes, Revive Adserver
+- [[disclosures/h1-3876430-mariadb-grant-proxy-permits-unauthorized-authentication-chan|"MariaDB GRANT PROXY permits unauthorized authentication changes and administrator account takeover"]] - `high`, undisclosed, 35 votes, MariaDB
+- [[disclosures/h1-1525309-a-malicious-actor-could-rotate-tokens-of-a-victim-given-that|"A malicious actor could rotate tokens of a victim, given that he knows the victim's token ID"]] - `high`, undisclosed, 34 votes, Cloudflare Public Bug Bounty
+- [[disclosures/h1-470298-cross-origin-resource-sharing-misconfiguration-cors|"[██████] Cross-origin resource sharing misconfiguration (CORS)"]] - `high`, undisclosed, 34 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3761342-permission-model-allow-fs-read-allow-fs-write-radix-tree-pre|"Permission Model: --allow-fs-read/--allow-fs-write radix-tree prefix-boundary over-grant"]] - `high`, undisclosed, 33 votes, Node.js
+- [[disclosures/h1-2289425-can-reshare-read-share-only-folder-with-more-permissions|"Can reshare read&share only folder with more permissions"]] - `high`, $750, 32 votes, Nextcloud
+- [[disclosures/h1-3999856-a-third-party-basecamp-oauth-token-mints-a-full-launchpad-we|"A third-party Basecamp OAuth token mints a full launchpad web session through GET /my/login_option"]] - `high`, undisclosed, 32 votes, Basecamp
+- [[disclosures/h1-538008-add-users-to-groups-who-have-restricted-group-invites|"Add users to groups who have restricted group invites"]] - `high`, undisclosed, 32 votes, WordPress
+- [[disclosures/h1-1991214-automatic-admin-access|"Automatic Admin Access"]] - `critical`, undisclosed, 31 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3941626-instamojo-camptix-fail-open-mac-webhook-credit-without-bindi|"Instamojo CampTix: fail-open MAC + webhook Credit without binding payment to order"]] - `high`, undisclosed, 31 votes, WordPress
+- [[disclosures/h1-1195325-default-admin-username-and-password-on-server-at-mil|"Default Admin Username and Password on █████ Server at █████████mil"]] - `critical`, undisclosed, 30 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3871816-unauthenticated-private-csv-export-of-meetup-organizer-pii-v|"Unauthenticated private CSV export of Meetup organizer PII via broken authz check in WordCamp Reports"]] - `high`, undisclosed, 30 votes, WordPress
+- [[disclosures/h1-474798-subdomain-takeover-on-healthyhackathon-khanacademy-org-and-h|"Subdomain takeover on healthyhackathon.khanacademy.org and hackweek.khanacademy.org"]] - `high`, undisclosed, 30 votes, Khan Academy
+- [[disclosures/h1-781150-hackerone-pentesters-can-access-any-structured-scope-object-|"HackerOne Pentesters can access any structured scope object through GraphQL node interface"]] - `high`, undisclosed, 30 votes, HackerOne
+- [[disclosures/h1-1061664-access-to-alerta-khanacademy-org-leak-sensitive-data|"Access to alerta.khanacademy.org leak sensitive data "]] - `critical`, undisclosed, 29 votes, Khan Academy
+- [[disclosures/h1-2188126-permissions-policies-can-be-bypassed-via-module-load-and-req|"Permissions policies can be bypassed via Module._load and require.extensions (High) (CVE-2023-30587)"]] - `high`, $1,165, 29 votes, Internet Bug Bounty
+- [[disclosures/h1-951230-can-buy-atavist-magazine-subscription-for-free|"Can buy Atavist Magazine subscription for free"]] - `high`, undisclosed, 29 votes, Automattic
+- [[disclosures/h1-1169340-improper-access-control-on-lark-footer-feature|"Improper Access Control on Lark Footer Feature"]] - `high`, undisclosed, 28 votes, Lark Technologies
+- [[disclosures/h1-1991290-endpoint-redirects-to-admin-page-and-provides-admin-role|"Endpoint Redirects to Admin Page and Provides Admin role"]] - `critical`, undisclosed, 28 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3938927-an-organization-admin-can-create-an-attacker-controlled-orga|"An organization admin can create an attacker-controlled organization owner via the gem transfer flow "]] - `high`, undisclosed, 28 votes, RubyGems
+- [[disclosures/h1-969605-developer-uploaded-files-missing-authentication-on-line-game|"Developer uploaded files missing authentication on LINE GAME Developers site(gdc.game.line.me)"]] - `high`, undisclosed, 28 votes, LY Corporation
+- [[disclosures/h1-2078581-cve-2023-30587-process-based-permissions-can-be-bypassed-wit|"CVE-2023-30587 Process-based permissions can be bypassed with the 'inspector' module."]] - `high`, $3,495, 27 votes, Internet Bug Bounty
+- [[disclosures/h1-1479894-jaas-8x8-vc-removed-users-can-still-have-read-write-access-t|"jaas.8x8.vc: Removed users can still have READ/WRITE access to the workspace via different API endpoints"]] - `high`, undisclosed, 25 votes, 8x8
+- [[disclosures/h1-1548870-unauthorized-packages-modification-or-secrets-exfiltration-v|"Unauthorized packages modification or secrets exfiltration via GitHub actions"]] - `high`, $1,500, 25 votes, Linux Foundation Decentralized Trust
+- [[disclosures/h1-4177724-curl-8-23-0-keeps-sending-requests-to-an-http-3-backend-afte|"curl 8.23.0 keeps sending requests to an HTTP/3 backend after Alt-Svc: clear"]] - `high`, undisclosed, 25 votes, curl
+- [[disclosures/h1-674741-examples-directory-is-public-on-https-mil-leading-to-multipl|"Examples directory is PUBLIC on https://████████mil, leading to multiple vulns"]] - `critical`, undisclosed, 25 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1058015-full-account-takeover-on-https-mil|"Full account takeover on https://████████.mil"]] - `critical`, undisclosed, 24 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1473071-connect-8x8-com-deactivated-users-remain-access-to-api-v1-us|"connect.8x8.com: deactivated users remain access to /api/v1/users/UUID/roles"]] - `high`, undisclosed, 24 votes, 8x8
+- [[disclosures/h1-1990338-leaks-of-username-and-password-leads-to-cve-2018-18862-explo|"Leaks of username and password leads to CVE-2018-18862 exploitation"]] - `high`, undisclosed, 24 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2408480-cve-2021-39226-discovered-on-endpoint-https-api-snapshots|"CVE-2021-39226 Discovered on endpoint https://██████/api/snapshots"]] - `high`, undisclosed, 24 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3801107-unauthenticated-disclosure-of-private-and-hidden-forum-conte|"Unauthenticated disclosure of private and hidden forum content in bbPress via the WordPress core REST single-item endpoint"]] - `critical`, undisclosed, 24 votes, WordPress
+- [[disclosures/h1-1248852-misuse-of-groups-feature-allows-workspace-members-to-join-pr|"Misuse of groups feature allows workspace members to join private channels without being invited"]] - `high`, undisclosed, 23 votes, Slack
+- [[disclosures/h1-1653676-mk8dx-improper-verification-of-competition-creation-allows-t|"[MK8DX] Improper verification of Competition creation allows to create 'Official' competitions"]] - `high`, undisclosed, 23 votes, Nintendo
+- [[disclosures/h1-815547-unauthorized-updates-to-extended-info-properties-in-store-aj|"Unauthorized updates to extended_info properties in /store/ajaxpackagesave"]] - `high`, undisclosed, 23 votes, Valve
+- [[disclosures/h1-824802-urn-request-bypass-acl-checks|"URN Request bypass ACL Checks"]] - `critical`, undisclosed, 23 votes, Internet Bug Bounty
+- [[disclosures/h1-2262365-default-admin-username-and-password-on|"Default Admin Username and Password on ███"]] - `critical`, undisclosed, 22 votes, U.S. Dept Of Defense
+- [[disclosures/h1-471265-unuse-domain-still-in-using-at-wechat-by-starbucks-east-chin|"unuse domain still in using at wechat by Starbucks East China"]] - `critical`, undisclosed, 22 votes, Starbucks
+- [[disclosures/h1-788257-secure-view-aka-hide-download-can-be-bypassed-easily|"'Secure View' aka 'Hide Download' can be bypassed easily"]] - `high`, undisclosed, 22 votes, Nextcloud
+- [[disclosures/h1-1051029-public-and-secret-api-key-leaked-in-javascript-source|"Public and secret api key leaked in JavaScript source"]] - `high`, undisclosed, 21 votes, Top Echelon Software
+- [[disclosures/h1-1218680-improper-authorization-on-api-as-v1-credentials-for-dev-role|"Improper authorization on `/api/as/v1/credentials/` for  Dev Role User with Limited Engine Access"]] - `high`, undisclosed, 21 votes, Elastic
+- [[disclosures/h1-3231321-http-proxy-bypass-via-curlopt-customrequest-verb-tunneling|"HTTP Proxy Bypass via `CURLOPT_CUSTOMREQUEST` Verb Tunneling"]] - `high`, undisclosed, 21 votes, curl
+- [[disclosures/h1-345162-local-file-download|"Local File Download"]] - `critical`, undisclosed, 20 votes, RATELIMITED
+- [[disclosures/h1-777099-h1-415-2020-i-got-the-flag|"[h1-415 2020] I got the flag"]] - `critical`, undisclosed, 20 votes, h1-ctf
+- [[disclosures/h1-1757663-low-authorization-level-at-server-side-api-operation-e2e-upd|"Low authorization level at server side API operation e2e.updateGroupKey, let an attacker break the E2E architecture."]] - `high`, undisclosed, 19 votes, Rocket.Chat
+- [[disclosures/h1-1959540-full-account-takeover-at|"' Full Account Takeover ' at █████"]] - `critical`, undisclosed, 19 votes, Mars
+- [[disclosures/h1-312647-gaining-access-to-private-topics-using-quoting-feature|"Gaining access to private topics using quoting feature"]] - `high`, $256, 19 votes, Discourse
+- [[disclosures/h1-3908943-drop-package-leaves-package-body-grant-in-mysql-procs-priv-c|"DROP PACKAGE leaves PACKAGE BODY grant in mysql.procs_priv causing privilege escalation"]] - `high`, undisclosed, 19 votes, MariaDB
+- [[disclosures/h1-1847140-argo-cd-reconciles-apps-outside-configured-namespaces-when-s|"Argo CD reconciles apps outside configured namespaces when sharding is enabled"]] - `high`, $2,000, 18 votes, Internet Bug Bounty
+- [[disclosures/h1-2968391-air-force-candidate-pii-recruitment-chat-logs-accessible-via|"Air Force candidate PII + recruitment chat logs accessible via BAC/IDOR on █████████ (very large/significant exposure)"]] - `critical`, undisclosed, 18 votes, U.S. Dept Of Defense
+- [[disclosures/h1-4038342-dns-resolve-truncates-names-containing-nul-char|"dns.resolve truncates names containing NUL char"]] - `high`, undisclosed, 18 votes, Node.js
+- [[disclosures/h1-858671-insufficient-type-check-on-graphql-leading-to-maintainer-del|"Insufficient Type Check on GraphQL leading to Maintainer delete repository"]] - `high`, $4,000, 18 votes, GitLab
+- [[disclosures/h1-1700896-access-nagios-dashboard-using-default-credentials-in-omon1-f|"access nagios dashboard using default credentials in ** omon1.fpki.gov, 3.220.248.203**"]] - `critical`, undisclosed, 17 votes, U.S. General Services Administration
+- [[disclosures/h1-781253-h1-415-2020-h1ctf-y3s-1m-c0sm1c-n0w|"[h1-415 2020] h1ctf{y3s_1m_c0sm1c_n0w}"]] - `critical`, undisclosed, 17 votes, h1-ctf
+- [[disclosures/h1-1492447-public-jenkins-instance-with-script-enabled|"Public Jenkins instance with /script enabled"]] - `critical`, undisclosed, 16 votes, IBM
+- [[disclosures/h1-1632921-dns-rebinding-in-inspect-insufficient-fix-of-cve-2022-32212-|"DNS rebinding in --inspect (insufficient fix of CVE-2022-32212 affecting macOS devices)"]] - `high`, undisclosed, 16 votes, Node.js
+- [[disclosures/h1-3475613-haproxy-connection-reuse-leads-to-ip-spoofing-and-mtls-conte|"HAProxy Connection Reuse leads to IP Spoofing and mTLS Context Smuggling"]] - `high`, undisclosed, 16 votes, curl
+- [[disclosures/h1-409237-broken-authentication|"Broken Authentication"]] - `high`, undisclosed, 16 votes, U.S. Dept Of Defense
+- [[disclosures/h1-827816-missing-server-side-controls-when-editing-the-board-s-sharin|"Missing server side controls when editing the board’s sharing permissions per user"]] - `high`, undisclosed, 16 votes, Nextcloud
+- [[disclosures/h1-2082528-adobe-coldfusion-access-control-bypass-cve-2023-38205-at|"Adobe ColdFusion - Access Control Bypass [CVE-2023-38205] at ██████"]] - `high`, undisclosed, 15 votes, U.S. Dept Of Defense
+- [[disclosures/h1-416123-memectf-serial-exploitation-to-local-file-read-to-papertrail|"MemeCTF serial exploitation to local file read to Papertrail access via API-token leakage and more"]] - `high`, undisclosed, 15 votes, h1-5411-CTF
+- [[disclosures/h1-1194606-virtual-data-room-hide-download-on-collabora-is-easy-to-bypa|"Virtual Data Room / Hide download on collabora is easy to bypass"]] - `high`, $150, 14 votes, Nextcloud
+- [[disclosures/h1-1397564-unauthenticated-access-to-admin-panel-functions-at-https|"Unauthenticated Access to Admin Panel Functions at https://███████/███"]] - `critical`, undisclosed, 14 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2442229-missing-access-control-allows-for-user-creation-and-privileg|"Missing Access Control Allows for User Creation and Privilege Escalation "]] - `high`, undisclosed, 14 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2518407-cve-2023-26347-in-https-mil-hax-cfide-adminapi-administrator|"CVE-2023-26347 in https://████.mil/hax/..CFIDE/adminapi/administrator.cfc?method=getBuildNumber&_cfclient=true"]] - `high`, undisclosed, 14 votes, U.S. Dept Of Defense
+- [[disclosures/h1-301137-github-import-allows-user-to-create-child-group-under-existi|"GitHub import allows user to create child group under existing namespace"]] - `high`, $750, 14 votes, GitLab
+- [[disclosures/h1-3836021-missing-file-privilege-enforcement-in-connect-file-udfs-allo|"Missing FILE-privilege enforcement in CONNECT file UDFs allows server-side file read and write"]] - `high`, undisclosed, 14 votes, MariaDB
+- [[disclosures/h1-1168528-improper-authorization-on-api-as-v1-credentials-allows-any-a|"Improper authorization on `/api/as/v1/credentials/` allows any App Search user to access all API keys and escalate privileges"]] - `high`, undisclosed, 13 votes, Elastic
+- [[disclosures/h1-247158-bypass-otp-verification-when-placing-order|"Bypass OTP verification when placing Order"]] - `high`, undisclosed, 13 votes, Eternal
+- [[disclosures/h1-255651-unauthorized-update-of-merchants-information-via-php-merchan|"Unauthorized update of merchants' information via /php/merchant_details.php"]] - `high`, undisclosed, 13 votes, Eternal
+- [[disclosures/h1-915541-cross-site-websocket-hijacking-lead-to-steal-xsrf-token|"Cross-Site WebSocket Hijacking Lead to Steal XSRF-TOKEN"]] - `high`, undisclosed, 13 votes, Stripo Inc
+- [[disclosures/h1-1026146-unauthorized-access-to-admin-panel-of-the-questionmark-perce|"Unauthorized access to admin panel of the Questionmark Perception system at https://██████████"]] - `critical`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1442118-container-escape-on-public-gitlab-ci-runners|"Container escape on public GitLab CI runners"]] - `high`, undisclosed, 12 votes, GitLab
+- [[disclosures/h1-1493007-broken-access-control-can-lead-to-legitimate-user-data-loss|"Broken access control, can lead to legitimate user data loss"]] - `high`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2090435-adobe-coldfusion-access-control-bypass-cve-2023-38205|"Adobe ColdFusion Access Control Bypass - CVE-2023-38205"]] - `high`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-972243-add-apps-to-packages-0-61-62-with-store-ajaxpackagemerge|"Add apps to packages 0, 61, 62 with /store/ajaxpackagemerge"]] - `high`, undisclosed, 12 votes, Valve
+- [[disclosures/h1-1690548-authentication-bypass-leads-to-information-disclosure-at-u-s|"Authentication bypass leads to Information Disclosure at  U.S Air Force 'https://███'"]] - `high`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2067572-new-apppassword-can-be-generated-without-password-confirmati|"New AppPassword can be generated without password confirmation"]] - `high`, $250, 11 votes, Nextcloud
+- [[disclosures/h1-2086301-permanent-casb-integration-takeover-due-to-improper-access-c|"Permanent CASB Integration Takeover due to Improper Access Controls+Confused Deputy Problem"]] - `high`, undisclosed, 11 votes, Cloudflare Public Bug Bounty
+- [[disclosures/h1-2248781-unauthenticated-file-read-adobe-coldfusion|"Unauthenticated File Read Adobe ColdFusion"]] - `high`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-522876-in-dockerized-environments-failing-to-read-config-php-grants|"In Dockerized Environments, Failing to Read config.php Grants Any Anonymous User Full Admin Access"]] - `high`, undisclosed, 11 votes, Nextcloud
+- [[disclosures/h1-837510-create-an-account-on-auth-sandbox-elastic-co-with-email-elas|"Create an account on auth-sandbox.elastic.co with email @elastic.co or any other @domain.com"]] - `high`, undisclosed, 11 votes, Elastic
+- [[disclosures/h1-895798-h1-2006-2020-bounty-pay-ctf-challenge|"[H1-2006 2020] Bounty Pay CTF challenge"]] - `critical`, undisclosed, 11 votes, h1-ctf
+- [[disclosures/h1-992618-improper-access-control-generic-on-https|"Improper Access Control - Generic on https://████"]] - `high`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1329792-aws-subdomain-takeover-of-www|"AWS subdomain takeover of www.███████"]] - `high`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1714767-upload-and-delete-files-in-debug-page-without-access-control|"Upload and delete files in debug page without access control."]] - `high`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-462442-unauthorized-access-of-monero-wallet-by-an-unprivileged-proc|"Unauthorized access of Monero wallet by an unprivileged process"]] - `high`, undisclosed, 10 votes, Monero
+- [[disclosures/h1-895778-h1-2006-ctf-writeup|"[H1-2006] CTF Writeup"]] - `critical`, undisclosed, 10 votes, h1-ctf
+- [[disclosures/h1-1067912-a-visit-from-the-grinch-twas-the-night-before-hackmas|"A Visit from The Grinch ~ 'Twas the night before Hackmas..."]] - `critical`, undisclosed, 9 votes, h1-ctf
+- [[disclosures/h1-1472721-idor-at-https-demo-sftool-gov-twshome-scorecardmanage-via-sc|"IDOR at https://demo.sftool.gov/TwsHome/ScorecardManage/ via scorecard name"]] - `high`, undisclosed, 9 votes, U.S. General Services Administration
+- [[disclosures/h1-1937235-ldap-server-null-bind-connection-information-disclosure|"LDAP Server NULL Bind Connection Information Disclosure"]] - `high`, undisclosed, 9 votes, U.S. Dept Of Defense
+- [[disclosures/h1-455726-thailand-snmp-publicly-accessible|"Thailand - SNMP Publicly Accessible"]] - `high`, undisclosed, 9 votes, Starbucks
+- [[disclosures/h1-491892-broken-access-control-on-apps|"Broken access control on apps "]] - `critical`, undisclosed, 9 votes, Rocket.Chat
+- [[disclosures/h1-868146-unauthorised-account-detail-modification|"Unauthorised Account Detail Modification "]] - `high`, undisclosed, 9 votes, Khan Academy
+- [[disclosures/h1-1061591-acting-under-any-different-user-via-db-stored-credentials|"Acting under any different user via DB-stored credentials"]] - `high`, undisclosed, 8 votes, Nextcloud
+- [[disclosures/h1-1198439-no-valid-spf-records-don-t-have-dmarc-record|"No Valid SPF Records/don't have DMARC record"]] - `critical`, undisclosed, 8 votes, UPchieve
+- [[disclosures/h1-1624374-broken-access-discloses-users-and-pii-at-https-htus|"Broken access discloses users and PII at https://███████ [HtUS]"]] - `high`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-460642-http-put-method-enabled|"HTTP PUT method enabled"]] - `critical`, undisclosed, 8 votes, RATELIMITED
+- [[disclosures/h1-683024-unrestricted-file-upload|"Unrestricted File Upload"]] - `critical`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-796379-critical-insufficient-access-control-on-registration-page-of|"[Critical] Insufficient Access Control On Registration Page of Webapps Website Allows Privilege Escalation to Administrator "]] - `critical`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1069396-hackyholidays-h1-ctf-writeup-mission-stop-the-grinch|"Hackyholidays [ h1-ctf] writeup [mission:- stop the grinch ]"]] - `critical`, undisclosed, 7 votes, h1-ctf
+- [[disclosures/h1-2870951-unauthenticated-file-read-adobe-coldfusion|"Unauthenticated File Read Adobe ColdFusion"]] - `high`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1102780-bypassing-dashboard-without-account-information-disclosure-t|"bypassing dashboard without account + Information disclosure trough websockets "]] - `high`, undisclosed, 6 votes, Nextcloud
+- [[disclosures/h1-1962701-process-based-permissions-can-be-bypassed-with-the-inspector|"Process-based permissions can be bypassed with the 'inspector' module.  "]] - `high`, undisclosed, 6 votes, Node.js
+- [[disclosures/h1-648222-unauthorized-access-to-admin-panel|"[██████████] Unauthorized access to admin panel"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-733017-cors-misconfiguration-leads-to-exposing-user-data|"CORS Misconfiguration Leads to Exposing User Data"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-869450-support-incident-can-be-opened-for-any-user-via-and-pii-leak|"Support incident can be opened for any user via /███████ and PII leak via █████████ field"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-995347-param-allows-any-external-resource-to-be-downloadable-https|"param allows  any external resource to be downloadable \| https://████████"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1049375-saml-authentication-bypass-through-unauthenticated-addsamlpr|"SAML authentication bypass through unauthenticated `addSamlProvider` Meteor Call"]] - `critical`, undisclosed, 5 votes, Rocket.Chat
+- [[disclosures/h1-1069487-dns-rebinding-in-inspect-insufficient-fix-of-cve-2018-7160|"DNS rebinding in --inspect (insufficient fix of CVE-2018-7160)"]] - `high`, $500, 5 votes, Node.js
+- [[disclosures/h1-247225-session-duplication-due-to-broken-access-control|"Session Duplication due to Broken Access Control"]] - `high`, undisclosed, 5 votes, WakaTime
+- [[disclosures/h1-790786-members-from-parent-group-keep-their-access-level-on-a-subgr|"Members from parent group keep their access level on a subgroup transfer and are invisible"]] - `high`, undisclosed, 5 votes, GitLab
+- [[disclosures/h1-1271710-broken-authentication-and-session-management-lead-to-take-ov|"Broken Authentication and Session Management lead to take over account"]] - `high`, undisclosed, 4 votes, Phabricator
+- [[disclosures/h1-1566462-error-parse-uri-path-in-curl|"error parse uri path in curl"]] - `high`, undisclosed, 4 votes, curl
+- [[disclosures/h1-418267-bypass-email-activation-on-http-axa-dxi-eu|"Bypass Email activation on http://axa.dxi.eu"]] - `high`, undisclosed, 4 votes, 8x8
+- [[disclosures/h1-894174-h1-2006-2020-in-depth-resolution-of-the-h1-2006-ctf|"[H1-2006 2020] In-depth resolution of the h1-2006 CTF"]] - `critical`, undisclosed, 4 votes, h1-ctf
+- [[disclosures/h1-953866-unauthorized-access-and-updation-of-email-settings-of-other-|"Unauthorized Access and updation of EMAIL settings of other user  at https://app.dropcontact.io/app/sponsorship/ by changing the ' email ' parameter."]] - `high`, undisclosed, 4 votes, Dropcontact
+- [[disclosures/h1-1028392-cve-2020-6287-https-redapi2-acronis-com|"CVE-2020-6287  https://redapi2.acronis.com"]] - `critical`, undisclosed, 3 votes, Acronis
+- [[disclosures/h1-745171-unprotected-and-test-site-api-exposes-documents-credentials-|"Unprotected ██████ and Test site API Exposes Documents, Credentials, and Emails in ██████████ Proposal System"]] - `high`, undisclosed, 3 votes, U.S. Dept Of Defense
+- [[disclosures/h1-460121-publicly-editable-github-wikis|"Publicly editable GitHub wikis"]] - `high`, undisclosed, 2 votes, Liberapay
+
+> Auto-generated from `disclosures/` by `node vault-admin/crawler/gen_cwe_pages.js`. Do not edit by hand.

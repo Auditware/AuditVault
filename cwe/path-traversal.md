@@ -1,0 +1,170 @@
+---
+tags:
+  - type/cwe
+generated: true
+---
+# Path Traversal
+
+> **Disclosures in vault:** 155 | **Critical:** 34 | **High:** 121 | **Total known bounty:** $123,042 (22 disclosed) | **Top programs:** `Node.js third-party modules` (42), `U.S. Dept Of Defense` (37), `Node.js` (9), `Internet Bug Bounty` (8), `curl` (8), `GitLab` (5), `Ubiquiti Inc.` (5), `Starbucks` (3), `WordPress` (3), `Ruby on Rails` (3)
+
+## All disclosures of this class
+
+Ranked by community votes - the top of this list is the canonical writeup set for how this class actually lands.
+
+- [[disclosures/h1-827052-arbitrary-file-read-via-the-uploadsrewriter-when-moving-and-|"Arbitrary file read via the UploadsRewriter when moving and issue"]] - `critical`, $20,000, 1503 votes, GitLab
+- [[disclosures/h1-1439593-arbitrary-file-read-via-the-bulk-imports-uploadspipeline|"Arbitrary file read  via the bulk imports UploadsPipeline"]] - `critical`, $29,000, 329 votes, GitLab
+- [[disclosures/h1-876295-misuse-of-an-authentication-cookie-combined-with-a-path-trav|"Misuse of an authentication cookie combined with a path traversal on app.starbucks.com permitted access to restricted data"]] - `critical`, undisclosed, 239 votes, Starbucks
+- [[disclosures/h1-1132378-arbitrary-file-read-during-project-import|"Arbitrary file read during project import"]] - `critical`, $16,000, 194 votes, GitLab
+- [[disclosures/h1-3712279-burp-suite-professional-browser-powered-crawl-can-write-atta|"Burp Suite Professional: browser-powered crawl can write attacker-controlled files through file input handling"]] - `high`, $5,000, 177 votes, PortSwigger Web Security
+- [[disclosures/h1-727727-path-traversal-in-filename-in-line-mac-client|"Path traversal in filename in LINE Mac client"]] - `high`, undisclosed, 175 votes, LY Corporation
+- [[disclosures/h1-2995025-mozilla-vpn-clients-rce-via-file-write-and-path-traversal|"Mozilla VPN Clients: RCE via file write and path traversal"]] - `high`, $6,000, 173 votes, Mozilla
+- [[disclosures/h1-436928-rce-as-admin-defeats-wordpress-hardening-and-file-permission|"RCE as Admin defeats WordPress hardening and file permissions"]] - `critical`, undisclosed, 164 votes, WordPress
+- [[disclosures/h1-2424815-portswigger-net-path-traversal-al-cms-audioitems|"[portswigger.net] Path Traversal al /cms/audioitems"]] - `high`, undisclosed, 146 votes, PortSwigger Web Security
+- [[disclosures/h1-3181066-path-traversal-vulnerability-in-lila-project|"Path Traversal Vulnerability in Lila Project"]] - `high`, undisclosed, 117 votes, Lichess
+- [[disclosures/h1-1415820-zero-day-path-traversal-vulnerability-in-grafana-8-x-allows-|"Zero day path traversal vulnerability in Grafana 8.x allows unauthenticated arbitrary local file read"]] - `high`, $1,000, 105 votes, Aiven Ltd
+- [[disclosures/h1-1394916-path-traversal-and-file-disclosure-vulnerability-in-apache-h|"Path traversal and file disclosure vulnerability in Apache HTTP Server 2.4.49"]] - `critical`, $4,000, 96 votes, Internet Bug Bounty
+- [[disclosures/h1-822262-path-traversal-in-nuget-package-registry|"Path traversal in Nuget Package Registry"]] - `high`, $12,000, 88 votes, GitLab
+- [[disclosures/h1-780021-korea-lfi-via-path-traversal-at-https-msr-istarbucks-co-kr-6|"Korea - LFI via path traversal at https://msr.istarbucks.co.kr:6443/appif/"]] - `critical`, undisclosed, 81 votes, Starbucks
+- [[disclosures/h1-519220-file-writing-by-directory-traversal-at-actionpack-page-cachi|"File writing by Directory traversal at actionpack-page_caching and RCE by it"]] - `high`, $1,000, 80 votes, Ruby on Rails
+- [[disclosures/h1-960330-cve-2020-3187-unauthenticated-arbitrary-file-deletion|"CVE-2020-3187 - Unauthenticated Arbitrary File Deletion"]] - `critical`, undisclosed, 70 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2778380-unauthenticated-lfi-local-file-inclusion-using-the-symbol-at|"Unauthenticated LFI (Local File Inclusion) using the symbol `!` At the target `https://████/`"]] - `high`, undisclosed, 69 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2434811-path-traversal-by-monkey-patching-buffer-internals|"Path traversal by monkey-patching Buffer internals"]] - `high`, $2,430, 67 votes, Internet Bug Bounty
+- [[disclosures/h1-3060373-path-traversal-vulnerability-found-on-ibm-cloud|"Path Traversal Vulnerability found on IBM Cloud"]] - `critical`, undisclosed, 63 votes, IBM
+- [[disclosures/h1-2375666-cve-2018-0296-cisco-asa-denial-of-service-path-traversal-vul|"CVE-2018-0296 Cisco ASA Denial of Service & Path Traversal vulnerable on [mtn.co.ug]"]] - `critical`, undisclosed, 62 votes, MTN Group
+- [[disclosures/h1-3962925-launchpad-file-read-leaks-production-keys|"Launchpad file read leaks production keys"]] - `critical`, $9,337, 58 votes, Basecamp
+- [[disclosures/h1-3384150-arbitrary-file-write|"Arbitrary File Write"]] - `high`, undisclosed, 56 votes, arkadiyt-projects
+- [[disclosures/h1-1050231-path-traversal-ios|"Path Traversal в iOS приложении"]] - `high`, $700, 55 votes, VK.com
+- [[disclosures/h1-1070247-git-flag-injection-leads-to-arbitrary-file-write|"Git flag injection leads to arbitrary file write"]] - `high`, undisclosed, 54 votes, Phabricator
+- [[disclosures/h1-4057637-high-cwe-22-path-traversal-in-ftp-wildcard-download-via-unen|"[HIGH] CWE-22 — Path Traversal in FTP Wildcard Download via Unencoded `.` in Escaped Filenames"]] - `high`, undisclosed, 54 votes, curl
+- [[disclosures/h1-1378889-android-directory-traversal-leading-to-disclosure-of-auth-to|"[Android] Directory traversal leading to disclosure of auth tokens"]] - `high`, $3,500, 50 votes, Slack
+- [[disclosures/h1-3931777-author-arbitrary-file-deletion-anywhere-on-disk-site-takeove|"Author → arbitrary file deletion anywhere on disk (site takeover) via `POST /wp/v2/media/<id>/finalize` poisoning `_wp_attachment_metadata`"]] - `critical`, undisclosed, 48 votes, WordPress
+- [[disclosures/h1-3514640-unauthenticated-path-traversal-lfi-via-custom-sounds-when-cu|"Unauthenticated Path Traversal (LFI) via /custom-sounds/ when CustomSounds uses FileSystem storage"]] - `high`, undisclosed, 47 votes, Rocket.Chat
+- [[disclosures/h1-2256167-path-traversal-through-path-stored-in-uint8array-in-node-js-|"Path traversal through path stored in Uint8Array in Node.js 20"]] - `high`, $3,495, 44 votes, Internet Bug Bounty
+- [[disclosures/h1-301432-gitlab-ci-runner-can-read-and-poison-cache-of-all-other-proj|"GitLab CI runner can read and poison cache of all other projects"]] - `critical`, $2,000, 43 votes, GitLab
+- [[disclosures/h1-2225660-permission-model-improperly-protects-against-path-traversal-|"Permission model improperly protects against path traversal in Node.js 20"]] - `high`, $2,330, 42 votes, Internet Bug Bounty
+- [[disclosures/h1-1320084-path-traversal-issue-at-https-blaze|"Path Traversal issue at https://████/blaze/"]] - `high`, undisclosed, 40 votes, Sony
+- [[disclosures/h1-765291-remote-code-execution-via-path-traversal-in-zip-extraction-i|"Remote code execution via path traversal in Zip extraction in the Extract app"]] - `high`, undisclosed, 40 votes, Nextcloud
+- [[disclosures/h1-3255707-windows-device-names-still-allow-path-traversal-in-unc-paths|"Windows Device Names Still Allow Path Traversal in UNC Paths After CVE-2025-27210 Fix"]] - `high`, undisclosed, 39 votes, Node.js
+- [[disclosures/h1-1710541-arbitrary-write-in-the-application-s-data-folder-and-arbitra|"Arbitrary write in the application's data folder and arbitrary read of server's replies from 3rd party apps. "]] - `high`, undisclosed, 38 votes, Basecamp
+- [[disclosures/h1-2334455-path-traversal-in-acitvestorage-and-lead-rce|"Path traversal in AcitveStorage, and lead RCE"]] - `high`, undisclosed, 37 votes, Ruby on Rails
+- [[disclosures/h1-1302155-arbitrary-read-of-all-svg-files-on-a-nextcloud-server|"Arbitrary read of all SVG files on a Nextcloud server"]] - `high`, $1,250, 36 votes, Nextcloud
+- [[disclosures/h1-2218653-path-traversal-by-monkey-patching-buffer-internals|"Path traversal by monkey-patching Buffer internals"]] - `high`, undisclosed, 36 votes, Node.js
+- [[disclosures/h1-2233418-unathenticated-file-read-cve-2020-3452|"Unathenticated file read (CVE-2020-3452) "]] - `high`, undisclosed, 36 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3160912-windows-device-names-con-prn-aux-bypass-path-traversal-prote|"Windows Device Names (CON, PRN, AUX) Bypass Path Traversal Protection in path.normalize()"]] - `high`, undisclosed, 35 votes, Node.js
+- [[disclosures/h1-1096043-non-authenticated-path-traversal-leading-to-arbitrary-file-r|"Non-authenticated path traversal leading to arbitrary file read "]] - `high`, undisclosed, 34 votes, ExpressionEngine
+- [[disclosures/h1-1377748-2-click-remote-code-execution-in-evernote-android|"2 click Remote Code execution in Evernote Android"]] - `high`, undisclosed, 31 votes, Evernote
+- [[disclosures/h1-260420-dev-nightly-ubnt-com-local-file-reading|"[dev-nightly.ubnt.com] Local File Reading"]] - `high`, undisclosed, 31 votes, Ubiquiti Inc.
+- [[disclosures/h1-3242087-arbitrary-file-read-via-file-protocol-in-curl|"Arbitrary File Read via file:// Protocol in cURL"]] - `critical`, undisclosed, 31 votes, curl
+- [[disclosures/h1-696276-arbitrary-file-reading-leads-to-rce-in-the-pulse-secure-ssl-|"Arbitrary File Reading leads to RCE in the Pulse Secure SSL VPN on the https://██████ (███)"]] - `high`, undisclosed, 31 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3553340-active-storage-vips-transformer-missing-validate-transformat|"Active Storage Vips Transformer Missing validate_transformation — CVE-2025-24293 Incomplete Fix"]] - `high`, undisclosed, 30 votes, Ruby on Rails
+- [[disclosures/h1-1400238-path-traversal-and-remote-code-execution-in-apache-http-serv|"Path Traversal and Remote Code Execution in Apache HTTP Server 2.4.49 and 2.4.50 (incomplete fix of CVE-2021-41773) (CVE-2021-42013)"]] - `critical`, $1,000, 29 votes, Internet Bug Bounty
+- [[disclosures/h1-288298-lfi-in-pchart-php-library|"LFI in pChart php library"]] - `high`, undisclosed, 29 votes, Valve
+- [[disclosures/h1-3678395-path-traversal-in-mbstream-extract|"Path Traversal in mbstream Extract"]] - `high`, undisclosed, 29 votes, MariaDB
+- [[disclosures/h1-1404731-path-traversal-and-remote-code-execution-in-apache-http-serv|"Path Traversal and Remote Code Execution in Apache HTTP Server 2.4.50"]] - `critical`, $1,000, 26 votes, Internet Bug Bounty
+- [[disclosures/h1-229622-directory-traversal-at-https-nightly-ubnt-com|"Directory traversal at https://nightly.ubnt.com"]] - `high`, undisclosed, 26 votes, Ubiquiti Inc.
+- [[disclosures/h1-411519-dns-srv-lookup-of-file-sources-enables-local-hijacking-of-ge|"DNS SRV lookup of file:// sources enables local hijacking of gems"]] - `high`, $500, 22 votes, RubyGems
+- [[disclosures/h1-2259914-multiple-permission-model-bypasses-due-to-improper-path-trav|"Multiple permission model bypasses due to improper path traversal sequence sanitization"]] - `high`, undisclosed, 20 votes, Node.js
+- [[disclosures/h1-232371-doc-rt-informaticacloud-com-arbitrary-file-reading-via-doubl|"[doc.rt.informaticacloud.com] Arbitrary File Reading via Double URL Encode"]] - `high`, undisclosed, 20 votes, Informatica
+- [[disclosures/h1-936399-path-traversal-on-https-allows-arbitrary-file-read-cve-2020-|"Path traversal on https://███ allows arbitrary file read (CVE-2020-3452)"]] - `high`, undisclosed, 20 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1102067-authenticated-path-traversal-to-rce|"Authenticated path traversal to RCE"]] - `high`, undisclosed, 18 votes, Concrete CMS
+- [[disclosures/h1-3465094-path-traversal-bypass-in-file-urls-due-to-incomplete-url-enc|"Path Traversal Bypass in file:// URLs Due to Incomplete URL-Encoded Path Normalization"]] - `high`, undisclosed, 18 votes, curl
+- [[disclosures/h1-3485930-path-traversal-in-curl-file-protocol-handler-allows-unauthor|"Path Traversal in curl file:// Protocol Handler Allows Unauthorized File Access"]] - `high`, undisclosed, 18 votes, curl
+- [[disclosures/h1-959187-is-vulnerable-to-cve-2020-3452-read-only-path-traversal-vuln|"███ is vulnerable to CVE-2020-3452 Read-Only Path Traversal Vulnerability"]] - `high`, undisclosed, 18 votes, U.S. Dept Of Defense
+- [[disclosures/h1-291878-arbitrary-file-deletion-in-wp-core-guides-towards-rce-and-in|"Arbitrary file deletion in wp-core - guides towards RCE and information disclosure"]] - `critical`, undisclosed, 17 votes, WordPress
+- [[disclosures/h1-1436223-arbitrary-file-read-at-via-filename-parameter|"Arbitrary File Read at ███ via filename parameter"]] - `critical`, undisclosed, 16 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3418861-libcurl-ftp-path-normalization-flaw-allows-decoded-2e-2e-cwd|"libcurl FTP path normalization flaw allows decoded %2e%2e → CWD .. and directory escape (Path Traversal, CWE-22)"]] - `high`, undisclosed, 16 votes, curl
+- [[disclosures/h1-844067-korea-lfi-server-directory-traversal-at-starbucks-co-kr|"Korea - LFI Server directory traversal at starbucks.co.kr"]] - `high`, undisclosed, 16 votes, Starbucks
+- [[disclosures/h1-938684-cve-2020-3452-cisco-asa-firepower-read-only-path-traversal-v|"CVE-2020-3452 Cisco ASA / Firepower Read-Only Path Traversal Vulnerability - https://esccvc.de.ibm.com"]] - `high`, undisclosed, 16 votes, IBM
+- [[disclosures/h1-3445174-path-traversal-in-file-protocol-allows-arbitrary-file-read|"Path Traversal in file:// protocol allows Arbitrary File Read"]] - `high`, undisclosed, 15 votes, curl
+- [[disclosures/h1-402473-arbitrary-file-download-as-shopmanager|"Arbitrary File Download as Shopmanager"]] - `high`, undisclosed, 15 votes, Automattic
+- [[disclosures/h1-473811-bower-arbitrary-file-write-through-improper-validation-of-sy|"[bower] Arbitrary File Write through improper validation of symlinks while package extraction"]] - `high`, undisclosed, 15 votes, Node.js third-party modules
+- [[disclosures/h1-343726-unrestricted-file-upload-rce|"Unrestricted file upload (RCE)"]] - `critical`, undisclosed, 14 votes, Node.js third-party modules
+- [[disclosures/h1-497771-critical-full-local-fylesystem-access-lfi-lfd-as-admin-via-p|"[Critical] Full local fylesystem access (LFI/LFD) as admin via Path Traversal in the misconfigured Java servlet on the https://███/"]] - `high`, undisclosed, 14 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2061826-nginx-alias-traversal-babel-bluetab-net|"Nginx Alias Traversal -  babel.bluetab.net"]] - `high`, undisclosed, 13 votes, IBM
+- [[disclosures/h1-306607-html-pages-path-traversal-in-html-pages-module-allows-to-rea|"[html-pages] Path Traversal in html-pages module allows to read any file from the server with curl"]] - `critical`, undisclosed, 13 votes, Node.js third-party modules
+- [[disclosures/h1-1007799-local-file-inclusion-in-registration-page|"Local File Inclusion In Registration Page"]] - `high`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1626210-local-file-read-at-https-htus|"Local file read at https://████/ [HtUS]"]] - `critical`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1888808-path-traversal-leads-to-reading-of-local-files-on-and|"Path traversal leads to reading of local files on ███████ and ████"]] - `high`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-217344-path-traversal-on|"Path traversal on ████████"]] - `high`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-311218-hekto-path-traversal-vulnerability-allows-to-read-content-of|"[hekto] Path Traversal vulnerability allows to read content of arbitrary files"]] - `high`, undisclosed, 12 votes, Node.js third-party modules
+- [[disclosures/h1-358112-buttle-path-traversal-in-mid-buttle-module-allows-to-read-an|"[buttle] Path traversal in mid-buttle module allows to read any file in the server."]] - `critical`, undisclosed, 12 votes, Node.js third-party modules
+- [[disclosures/h1-1137321-path-traversal-cve-2020-3452|"Path Traversal - [ CVE-2020-3452 ]"]] - `high`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-243156-installing-a-crafted-gem-package-may-create-or-overwrite-fil|"Installing a crafted gem package may create or overwrite files"]] - `high`, $1,000, 11 votes, RubyGems
+- [[disclosures/h1-329770-unifi-video-server-web-interface-configuration-restore-path-|"UniFi Video Server web interface Configuration Restore path traversal leading to local system compromise"]] - `critical`, undisclosed, 11 votes, Ubiquiti Inc.
+- [[disclosures/h1-330051-unifi-video-server-web-interface-admin-user-firmware-update-|"UniFi Video Server web interface admin user Firmware Update path traversal leading to local system compromise"]] - `high`, undisclosed, 11 votes, Ubiquiti Inc.
+- [[disclosures/h1-357109-simplehttpserver-list-any-file-in-the-folder-by-using-path-t|"[simplehttpserver] List any file in the folder by using path traversal."]] - `high`, undisclosed, 11 votes, Node.js third-party modules
+- [[disclosures/h1-998925-https-is-vulnerable-to-cve-2020-3452|"https://████ is vulnerable to cve-2020-3452"]] - `critical`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1026265-unauthenticated-arbitrary-file-deletion-cve-2020-3187-in|"Unauthenticated Arbitrary File Deletion 'CVE-2020-3187' in █████"]] - `critical`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1056611-unauthenticated-arbitrary-file-deletion-cve-2020-3187|"Unauthenticated Arbitrary File Deletion (CVE-2020-3187)"]] - `high`, undisclosed, 10 votes, MTN Group
+- [[disclosures/h1-129641-unifi-video-server-arbitrary-file-upload-as-system|"UniFi Video Server - Arbitrary file upload as SYSTEM"]] - `high`, undisclosed, 10 votes, Ubiquiti Inc.
+- [[disclosures/h1-1542734-lfi-in-filepathdownload-parameter-via|"lfi in filePathDownload parameter via ███████"]] - `high`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-307666-serve-directory-index-of-arbitrary-folder-available-due-to-l|"[serve] Directory index of arbitrary folder available due to lack of sanitization of %2e and %2f characters in url"]] - `critical`, undisclosed, 10 votes, Node.js third-party modules
+- [[disclosures/h1-671857-cve-2019-11510-path-traversal-on-leads-to-leaked-passwords-r|"[CVE-2019-11510 ] Path Traversal on ████████ leads to leaked passwords, RCE, etc"]] - `critical`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-978335-unauthenticated-arbitrary-file-deletion-cve-2020-3187-in|"Unauthenticated Arbitrary File Deletion ('CVE-2020-3187') in ████████"]] - `critical`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1555025-cve-2020-3187-unauthenticated-arbitrary-file-deletion|"CVE-2020-3187 - Unauthenticated Arbitrary File Deletion"]] - `critical`, undisclosed, 9 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2092852-permission-model-improperly-protects-against-path-traversal|"Permission model improperly protects against path traversal"]] - `high`, undisclosed, 9 votes, Node.js
+- [[disclosures/h1-309120-angular-http-server-path-traversal-in-angular-http-server-js|"[angular-http-server] Path Traversal in angular-http-server.js allows to read arbitrary file from the remote server"]] - `high`, undisclosed, 9 votes, Node.js third-party modules
+- [[disclosures/h1-310943-general-file-server-path-traversal-vulnerability-allows-to-r|"[general-file-server] Path Traversal vulnerability allows to read content on arbitrary file on the server"]] - `high`, undisclosed, 9 votes, Node.js third-party modules
+- [[disclosures/h1-312889-localhost-now-path-traversal-allows-to-read-content-of-arbit|"[localhost-now] Path Traversal allows to read content of arbitrary file"]] - `high`, undisclosed, 9 votes, Node.js third-party modules
+- [[disclosures/h1-951508-cve-2020-3452-unauthenticated-file-read-in-cisco-asa-cisco-f|"CVE-2020-3452, unauthenticated file read in Cisco ASA & Cisco Firepower."]] - `high`, undisclosed, 9 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1049367-server-side-rce-through-directory-traversal-based-arbitrary-|"Server-side RCE through directory traversal-based arbitrary file write"]] - `critical`, undisclosed, 8 votes, Rocket.Chat
+- [[disclosures/h1-2051257-process-binding-can-bypass-the-permission-model-through-path|"process.binding() can bypass the permission model through path traversal"]] - `high`, undisclosed, 8 votes, Node.js
+- [[disclosures/h1-3100073-path-traversal-vulnerability-in-curl-via-unsanitized-ipfs-pa|"Path Traversal Vulnerability in curl via Unsanitized IPFS_PATH Environment Variable"]] - `high`, undisclosed, 8 votes, curl
+- [[disclosures/h1-403707-knightjs-path-traversal-allows-to-read-content-of-arbitrary-|"[knightjs] Path Traversal allows to read content of arbitrary files"]] - `high`, undisclosed, 8 votes, Node.js third-party modules
+- [[disclosures/h1-569891-min-http-server-list-any-file-in-the-folder-by-using-path-tr|"[min-http-server] List any file in the folder by using path traversal."]] - `high`, undisclosed, 8 votes, Node.js third-party modules
+- [[disclosures/h1-569966-serve-here-js-list-any-file-in-the-folder-by-using-path-trav|"[serve-here.js] List any file in the folder by using path traversal."]] - `high`, undisclosed, 8 votes, Node.js third-party modules
+- [[disclosures/h1-695416-path-traversal-using-symlink|"Path traversal using symlink"]] - `high`, undisclosed, 8 votes, Node.js third-party modules
+- [[disclosures/h1-2199818-path-traversal-through-path-stored-in-uint8array|"Path traversal through path stored in Uint8Array"]] - `high`, undisclosed, 7 votes, Node.js
+- [[disclosures/h1-310106-glance-path-traversal-in-glance-static-file-server-allows-to|"[glance] Path Traversal in glance static file server allows to read content of arbitrary file"]] - `high`, undisclosed, 7 votes, Node.js third-party modules
+- [[disclosures/h1-3120987-high-arbitrary-file-write-via-path-traversal-in-curl-cli-o-o|"[High] Arbitrary File Write via Path Traversal in cURL CLI (`-o`, `--output`) (CWE-22: Improper Limitation of a Pathname to a Restricted Directory)"]] - `high`, undisclosed, 7 votes, curl
+- [[disclosures/h1-315760-path-traversal-on-resolve-path|"Path Traversal on Resolve-Path"]] - `high`, undisclosed, 7 votes, Node.js third-party modules
+- [[disclosures/h1-319003-stattic-inproper-path-validation-leads-to-path-traversal-and|"[stattic] Inproper path validation leads to Path Traversal and allows to read arbitrary files with any extension(s)"]] - `high`, undisclosed, 7 votes, Node.js third-party modules
+- [[disclosures/h1-330285-mcstatic-server-directory-traversal|"[mcstatic] Server Directory Traversal"]] - `high`, undisclosed, 7 votes, Node.js third-party modules
+- [[disclosures/h1-492512-bower-arbitrary-file-write-through-improper-validation-of-sy|"[bower] Arbitrary File Write through improper validation of symlinks while package extraction"]] - `high`, $500, 7 votes, Internet Bug Bounty
+- [[disclosures/h1-570133-http-file-server-list-any-files-and-sub-folders-in-the-folde|"[http-file-server] List any files and sub folders in the folder by using path traversal."]] - `high`, undisclosed, 7 votes, Node.js third-party modules
+- [[disclosures/h1-1212746-path-traversal-on|"Path traversal on [███]"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1234925-cve-2020-3452-on|"[CVE-2020-3452] on ███████"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1555027-cve-2020-3187-unauthenticated-arbitrary-file-deletion|"CVE-2020-3187 - Unauthenticated Arbitrary File Deletion"]] - `critical`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-309124-node-srv-path-traversal-allows-to-read-arbitrary-files-from-|"[node-srv] Path Traversal allows to read arbitrary files from remote server"]] - `high`, undisclosed, 6 votes, Node.js third-party modules
+- [[disclosures/h1-311216-626-path-traversal-allows-to-read-arbitrary-file-from-remote|"[626] Path Traversal allows to read arbitrary file from remote server"]] - `high`, undisclosed, 6 votes, Node.js third-party modules
+- [[disclosures/h1-312907-mcstatic-path-traversal-allows-to-read-content-of-arbitrary-|"[mcstatic] Path Traversal allows to read content of arbitrary files"]] - `high`, undisclosed, 6 votes, Node.js third-party modules
+- [[disclosures/h1-358645-serve-server-directory-traversal|"[serve] Server Directory Traversal"]] - `critical`, undisclosed, 6 votes, Node.js third-party modules
+- [[disclosures/h1-403736-takeapeek-path-traversal-allow-to-expose-directory-and-files|"[takeapeek] Path traversal allow to expose directory and files"]] - `high`, undisclosed, 6 votes, Node.js third-party modules
+- [[disclosures/h1-622864-https-vulnerable-to-cve-2018-0296-cisco-asa-path-traversal-a|"https://█████████ Vulnerable to CVE-2018-0296 Cisco ASA Path Traversal Authentication Bypass"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-962908-read-only-path-traversal-cve-2020-3452-at-https-mil|"Read-only path traversal (CVE-2020-3452)  at https://██████.mil"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1952978-filesystem-experimental-permissions-policy-does-not-handle-p|"Filesystem experimental permissions policy does not handle path traversal cases."]] - `high`, undisclosed, 5 votes, Node.js
+- [[disclosures/h1-319951-superstatic-is-vulnerable-to-path-traversal-on-windows|"`superstatic` is vulnerable to path traversal on Windows"]] - `high`, undisclosed, 5 votes, Node.js third-party modules
+- [[disclosures/h1-362119-arbitrary-file-write-through-archive-extraction|"Arbitrary File Write through archive extraction"]] - `high`, undisclosed, 5 votes, Node.js third-party modules
+- [[disclosures/h1-384939-http-live-simulator-npm-module-is-prone-to-path-traversal-at|"http-live-simulator npm module is prone to path traversal attacks"]] - `high`, undisclosed, 5 votes, Node.js third-party modules
+- [[disclosures/h1-570035-statichttpserver-list-any-file-in-the-folder-by-using-path-t|"[statichttpserver] List any file in the folder by using path traversal."]] - `high`, undisclosed, 5 votes, Node.js third-party modules
+- [[disclosures/h1-1555015-cve-2020-3452-unauthenticated-file-read-in-cisco-asa|"[CVE-2020-3452] Unauthenticated file read in Cisco ASA"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2038134-permission-model-bypass-by-specifying-a-path-traversal-seque|"Permission model bypass by specifying a path traversal sequence in a buffer, "]] - `high`, undisclosed, 4 votes, Node.js
+- [[disclosures/h1-2104564-cve-2023-32004-permission-model-bypass-by-specifying-a-path-|"(CVE-2023-32004) Permission model bypass by specifying a path traversal sequence in a Buffer"]] - `high`, undisclosed, 4 votes, Internet Bug Bounty
+- [[disclosures/h1-312918-public-path-traversal-allows-to-read-content-of-arbitrary-fi|"[public] Path Traversal allows to read content of arbitrary files"]] - `high`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-329837-bypass-to-defective-fix-of-path-traversal|"Bypass to defective fix of Path Traversal "]] - `high`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-330349-angular-http-server-server-directory-traversal|"[angular-http-server] Server Directory Traversal"]] - `high`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-334837-localhost-now-bypassing-url-filter-which-leads-to-read-conte|"[localhost-now] bypassing url filter which leads to read content of arbitrary file"]] - `high`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-383112-ponse-path-traversal-in-ponse-module-allows-to-read-any-file|"[ponse] Path traversal in ponse module allows to read any file on server"]] - `high`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-579517-hnzserver-path-traversal-allowing-to-read-any-files-on-the-s|"[hnzserver] Path Traversal allowing to read any files on the server"]] - `high`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-820224-sapper-path-traversal|"[sapper] Path Traversal"]] - `high`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-943717-mil-cisco-vpn-service-path-traversal|"[██████████.mil] Cisco VPN Service Path Traversal"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-951530-cve-2020-3452-unauthenticated-file-read-in-cisco-asa|"[CVE-2020-3452] Unauthenticated file read in Cisco ASA"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-959679-read-only-path-traversal-cve-2020-3452-at-https|"Read-only path traversal (CVE-2020-3452)  at https://████████"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-960082-read-only-path-traversal-cve-2020-3452-at-https|"Read-only path traversal (CVE-2020-3452)  at https://█████"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1555021-cve-2020-3452-unauthenticated-file-read-in-cisco-asa|"[CVE-2020-3452] Unauthenticated file read in Cisco ASA"]] - `high`, undisclosed, 3 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1641148-directory-traversal-at|"Directory Traversal at █████"]] - `high`, undisclosed, 3 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1664244-fix-security-path-traversal-bug|"fix(security):Path Traversal Bug"]] - `high`, undisclosed, 3 votes, Linux Foundation Decentralized Trust
+- [[disclosures/h1-411405-http-live-simulator-path-traversal-vulnerability|"[http-live-simulator] Path traversal vulnerability"]] - `high`, undisclosed, 2 votes, Node.js third-party modules
+- [[disclosures/h1-579523-http-server-path-traversal-allowing-to-read-any-files-on-the|"[http_server] Path Traversal allowing to read any files on the server"]] - `high`, undisclosed, 2 votes, Node.js third-party modules
+- [[disclosures/h1-581939-static-server-gx-path-traversal-allowing-to-read-any-files-o|"[static-server-gx] Path Traversal allowing to read any files on the server"]] - `high`, undisclosed, 2 votes, Node.js third-party modules
+- [[disclosures/h1-1415825-cve-2020-3452-unauthenticated-file-read-in-cisco-asa|"[CVE-2020-3452] Unauthenticated file read in Cisco ASA"]] - `critical`, undisclosed, 1 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1455257-cve-2020-3452-on-https|"CVE-2020-3452 on  https://█████/"]] - `high`, undisclosed, 1 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1455266-arbitrary-file-deletion-cve-2020-3187-on|"Arbitrary File Deletion (CVE-2020-3187) on ████████"]] - `high`, undisclosed, 1 votes, U.S. Dept Of Defense
+- [[disclosures/h1-507310-deliver-or-else-path-traversal|"[deliver-or-else] Path Traversal"]] - `high`, undisclosed, 1 votes, Node.js third-party modules
+- [[disclosures/h1-509697-md-fileserver-path-traversal|"[md-fileserver] Path Traversal"]] - `high`, undisclosed, 1 votes, Node.js third-party modules
+- [[disclosures/h1-790623-sirloin-web-server-directory-traversal-via-crafted-get-reque|"[sirloin] Web Server Directory Traversal via Crafted GET Request"]] - `high`, undisclosed, 1 votes, Node.js third-party modules
+- [[disclosures/h1-790873-hangersteak-web-server-directory-traversal-via-crafted-get-r|"[hangersteak] Web Server Directory Traversal via Crafted GET Request"]] - `high`, undisclosed, 1 votes, Node.js third-party modules
+- [[disclosures/h1-940384-https-is-vulnerable-to-cve-2020-3452-read-only-path-traversa|"https://█████ is vulnerable to CVE-2020-3452 Read-Only Path Traversal Vulnerability"]] - `high`, undisclosed, 1 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1326352-access-to-admininstrative-resources-account-via-path-travers|"Access to admininstrative resources/account via path traversal"]] - `critical`, undisclosed, 0 votes, U.S. Dept Of Defense
+
+> Auto-generated from `disclosures/` by `node vault-admin/crawler/gen_cwe_pages.js`. Do not edit by hand.

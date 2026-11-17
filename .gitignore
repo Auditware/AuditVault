@@ -34,3 +34,5 @@ venv/
 
 # Logs
 *.log
+
+vault-admin/crawler/hacktivity_progress.json

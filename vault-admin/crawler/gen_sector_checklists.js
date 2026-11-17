@@ -60,7 +60,7 @@ function indexFindings() {
     const content = fs.readFileSync(path.join(FINDINGS_DIR, file), 'utf8');
     const fm = frontmatter(content);
 
-    const findingSectors = [...new Set(tagValues(fm, 'sector'))];
+    const findingSectors = [...new Set(tagValues(fm, 'web3-sector'))];
     if (!findingSectors.length) continue;
 
     const vulns    = tagValues(fm, 'vuln');
@@ -118,7 +118,7 @@ function renderChecklist(sector, data) {
   const impacts  = ranked(data.impact, MAX_ITEMS_PER_AXIS);
 
   const header =
-    `---\ntags:\n  - checklist\n  - sector/${sector}\ngenerated: true\n---\n` +
+    `---\ntags:\n  - checklist\n  - web3-sector/${sector}\ngenerated: true\n---\n` +
     `# ${titleCase(sector)} — Audit Checklist\n\n` +
     `> Auto-generated from **${data.total}** findings in this sector ` +
     `(**${data.tagged}** with bug-class tags), ranked by frequency.\n` +

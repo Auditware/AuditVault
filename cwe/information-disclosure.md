@@ -1,0 +1,217 @@
+---
+tags:
+  - type/cwe
+generated: true
+---
+# Information Disclosure
+
+> **Disclosures in vault:** 202 | **Critical:** 71 | **High:** 131 | **Total known bounty:** $121,261 (28 disclosed) | **Top programs:** `U.S. Dept Of Defense` (49), `HackerOne` (10), `h1-ctf` (8), `VK.com` (8), `Starbucks` (6), `MTN Group` (6), `Uber` (5), `Brave Software` (5), `8x8` (5), `curl` (5)
+
+## All disclosures of this class
+
+Ranked by community votes - the top of this list is the canonical writeup set for how this class actually lands.
+
+- [[disclosures/h1-489146-confidential-data-of-users-and-limited-metadata-of-programs-|"Confidential data of users and limited metadata of programs and reports accessible via GraphQL"]] - `critical`, undisclosed, 1034 votes, HackerOne
+- [[disclosures/h1-542340-sensitive-user-information-disclosure-at-bonjour-uber-com-ma|"Sensitive user information disclosure at bonjour.uber.com/marketplace/_rpc via the 'userUuid' parameter"]] - `high`, undisclosed, 643 votes, Uber
+- [[disclosures/h1-3000510-the-reports-id-json-endpoint-discloses-potentially-sensitive|"The /reports/:id.json endpoint discloses potentially sensitive user attributes when reporter summary is present"]] - `critical`, undisclosed, 626 votes, HackerOne
+- [[disclosures/h1-807448-customer-private-program-can-disclose-email-any-users-throug|"Customer private program can disclose email any users through invited via username"]] - `high`, $7,500, 590 votes, HackerOne
+- [[disclosures/h1-663628-access-to-multiple-production-grafana-dashboards|"Access to multiple production Grafana dashboards"]] - `high`, $10,000, 464 votes, Snapchat
+- [[disclosures/h1-231460-open-prod-jenkins-instance|"Open prod Jenkins instance"]] - `high`, $15,000, 436 votes, Snapchat
+- [[disclosures/h1-2032716-an-attacker-can-can-view-any-hacker-email-via-savecollaborat|"An attacker can can view any hacker email via  /SaveCollaboratorsMutation operation name "]] - `high`, $12,500, 429 votes, HackerOne
+- [[disclosures/h1-850447-gitlab-workhorse-bypass-in-gitlab-middleware-multipart-allow|"gitlab-workhorse bypass in Gitlab::Middleware::Multipart allowing files in `allowed_paths` to be read"]] - `critical`, $10,000, 410 votes, GitLab
+- [[disclosures/h1-496937-employee-s-github-token-found-in-travis-ci-build-logs|"Employee's GitHub Token Found In Travis CI Build Logs"]] - `high`, $5,000, 408 votes, Superhuman (formerly Grammarly)
+- [[disclosures/h1-509924-json-serialization-of-any-project-model-results-in-all-runne|"JSON serialization of any Project model results in all Runner tokens being exposed through Quick Actions"]] - `critical`, $12,000, 366 votes, GitLab
+- [[disclosures/h1-676212-github-information-leaked|"Github information leaked"]] - `high`, undisclosed, 344 votes, Semrush
+- [[disclosures/h1-404822-aws-bucket-leading-to-ios-test-build-code-and-configuration-|"AWS bucket leading to iOS test build code and configuration exposure"]] - `critical`, $1,500, 321 votes, Slack
+- [[disclosures/h1-1077022-brave-browser-tor-window-leaks-user-s-real-ip-to-the-externa|"Brave Browser Tor Window leaks user's real IP to the external DNS server"]] - `high`, undisclosed, 280 votes, Brave Software
+- [[disclosures/h1-1234406-exfiltrating-a-victim-s-exact-location-to-within-5m|"Exfiltrating a victim's exact location (to within 5m)"]] - `high`, undisclosed, 278 votes, Bumble
+- [[disclosures/h1-2107680-aws-keys-and-user-cookie-leakage-via-uninitialized-memory-le|"AWS keys and user cookie leakage via uninitialized memory leak in outdated librsvg version in Basecamp"]] - `high`, $8,868, 248 votes, Basecamp
+- [[disclosures/h1-769016-sdrc-starbucks-com-information-disclosure-via-unsecured-atta|"sdrc.starbucks.com - Information Disclosure via unsecured attachment directory"]] - `critical`, undisclosed, 197 votes, Starbucks
+- [[disclosures/h1-1069335-how-the-hackers-saved-christmas|"How The Hackers Saved Christmas"]] - `critical`, undisclosed, 179 votes, h1-ctf
+- [[disclosures/h1-739251-information-disclosure-via-a-misconfigured-third-party-produ|"Information disclosure via a misconfigured third-party product"]] - `high`, undisclosed, 156 votes, Algolia
+- [[disclosures/h1-2473173-internal-logs-info-leaked-via-endpoint-https-203-137-128-240|"Internal logs/info leaked via endpoint {https://203.137.128.240/server-status}"]] - `high`, undisclosed, 145 votes, pixiv
+- [[disclosures/h1-268382-nginx-misconfiguration-leading-to-direct-php-source-code-dow|"Nginx misconfiguration leading to direct PHP source code download"]] - `high`, undisclosed, 145 votes, GSA Bounty
+- [[disclosures/h1-397527-leaking-sensitive-information-on-github-lead-full-access-to-|"Leaking sensitive information on Github lead full access to all Grab Slack channels "]] - `critical`, undisclosed, 145 votes, Grab
+- [[disclosures/h1-911606-leaked-jfrog-artifactory-username-and-password-exposed-on-gi|"Leaked JFrog Artifactory  username and password exposed on GitHub - https://snapchat.jfrog.io"]] - `high`, $15,000, 137 votes, Snapchat
+- [[disclosures/h1-1785145-full-access-to-indrive-jira-panel-via-exposed-api-token|"Full access to InDrive jira panel via exposed API token "]] - `critical`, undisclosed, 125 votes, inDrive
+- [[disclosures/h1-272578-unauthenticated-lfi-revealing-log-information|"Unauthenticated LFI revealing log information"]] - `high`, undisclosed, 123 votes, Slack
+- [[disclosures/h1-2915647-netlify-authentication-token-exposed-in-public-mozilla-ci-lo|"Netlify Authentication Token Exposed in Public Mozilla CI Logs"]] - `critical`, undisclosed, 123 votes, Mozilla
+- [[disclosures/h1-202823-vine-all-registered-user-private-sensitive-information-discl|"Vine all registered user Private/sensitive information disclosure .[ Ip address/phone no/email and many other informations ]"]] - `critical`, undisclosed, 121 votes, X / xAI
+- [[disclosures/h1-1273292-internal-gitlab-ticket-disclosure-via-external-slack-channel|"Internal Gitlab Ticket Disclosure via External Slack Channels"]] - `high`, undisclosed, 118 votes, HackerOne
+- [[disclosures/h1-659248-china-limited-partner-pii-regarding-work-scheduling-via-unau|"China – Limited Partner PII Regarding Work Scheduling via Unauthenticated API Endpoint"]] - `critical`, undisclosed, 116 votes, Starbucks
+- [[disclosures/h1-2534458-can-see-phone-numbers-of-others-by-providing-mail-address|"Can see phone numbers of others by providing mail address"]] - `high`, undisclosed, 111 votes, LinkedIn
+- [[disclosures/h1-671935-ssrf-via-office-file-thumbnails|"SSRF via Office file thumbnails"]] - `critical`, $4,000, 109 votes, Slack
+- [[disclosures/h1-2382120-creation-of-bounties-through-customer-api-leads-to-private-e|"Creation of bounties through Customer API leads to private email disclosure"]] - `critical`, undisclosed, 101 votes, HackerOne
+- [[disclosures/h1-2926447-public-google-drive-link-exposes-military-orders-containing-|"Public google drive link Exposes Military Orders Containing PII (Name, SSN etc..) and Operational Details"]] - `critical`, undisclosed, 99 votes, U.S. Dept Of Defense
+- [[disclosures/h1-266766-access-grab-road-bigdata-database-via-open-presto-coordinato|"Access Grab_Road BigData Database via Open Presto coordinator"]] - `critical`, $5,000, 97 votes, Grab
+- [[disclosures/h1-3250691-337k-users-and-1-employee-leaked-credentials|"337k users and 1 employee leaked credentials"]] - `high`, undisclosed, 87 votes, Khan Academy
+- [[disclosures/h1-3082917-possible-sensitive-session-information-leak-in-active-storag|"Possible Sensitive Session Information Leak in Active Storage"]] - `high`, $4,323, 82 votes, Internet Bug Bounty
+- [[disclosures/h1-560668-access-to-resumes-applied-through-linkedin-jobs|"Access to resumes applied through LinkedIn Jobs"]] - `critical`, undisclosed, 79 votes, LinkedIn
+- [[disclosures/h1-1787644-any-organization-s-assets-pending-review-can-be-downloaded|"Any organization's assets pending review can be downloaded"]] - `high`, undisclosed, 76 votes, HackerOne
+- [[disclosures/h1-3463719-aslr-leak-in-mario-kart-world-through-lan-mode|"ASLR leak in Mario Kart World through LAN mode"]] - `high`, undisclosed, 74 votes, Nintendo
+- [[disclosures/h1-301831-leaking-sensitive-files-on-github-leads-to-internal-files-py|"Leaking sensitive files on Github leads to internal files (python scripts,SQL files)"]] - `critical`, undisclosed, 73 votes, Starbucks
+- [[disclosures/h1-878724-linkedin-users-primary-email-full-name-visibilty|"LinkedIn users primary email + full name visibilty"]] - `high`, undisclosed, 73 votes, LinkedIn
+- [[disclosures/h1-1067547-unauthenticated-access-to-webmail-at-maildev-happytools-dev-|"Unauthenticated access to webmail at maildev.happytools.dev leading to compromised wordpress site api.happytools.dev [RCE]"]] - `high`, undisclosed, 71 votes, Automattic
+- [[disclosures/h1-2401648-two-aws-access-key-and-secret-key-and-database-username-and-|"two aws access key and secret key and database username and password exposed "]] - `critical`, undisclosed, 71 votes, Mozilla
+- [[disclosures/h1-253429-linux-tbb-sftp-uri-allows-local-ip-disclosure|"Linux TBB SFTP URI allows local IP disclosure"]] - `critical`, $3,000, 71 votes, Tor
+- [[disclosures/h1-2981756-wordpress-users-disclosure|"Wordpress users Disclosure"]] - `critical`, undisclosed, 69 votes, Autodesk
+- [[disclosures/h1-491473-protected-tweets-exposure-through-the-url|"Protected tweets exposure through the URL"]] - `high`, $560, 67 votes, X / xAI
+- [[disclosures/h1-2467999-jira-credential-disclosure-within-mozilla-slack|"Jira Credential Disclosure within Mozilla Slack"]] - `critical`, $1,000, 65 votes, Mozilla
+- [[disclosures/h1-401098-mena-starbucks-com-laravel-app-log-configuration-disclosure|"[mena.starbucks.com] Laravel App Log & Configuration Disclosure."]] - `high`, undisclosed, 63 votes, Starbucks
+- [[disclosures/h1-2404415-view-any-user-email-using-the-team-s-audit-log-section|"View any user email using the Team's audit log section"]] - `critical`, undisclosed, 61 votes, HackerOne
+- [[disclosures/h1-1079561-big-picture-web-browser-leaks-login-cookies-and-discloses-se|"Big Picture web browser leaks login cookies and discloses sensitive information (may lead to account takeover)"]] - `high`, undisclosed, 60 votes, Valve
+- [[disclosures/h1-1168557-https-srcds-valve-net-find-is-leaking-server-config-api-keys|"https://srcds.valve.net/find/ is leaking server config / API keys"]] - `high`, undisclosed, 56 votes, Valve
+- [[disclosures/h1-1717210-exposure-of-service-tokens-to-webpack-bundle|"Exposure of service tokens to webpack bundle"]] - `high`, undisclosed, 56 votes, Semrush
+- [[disclosures/h1-2410111-docker-secret-disclosure-via-github-actions-cache-poisoning|"Docker Secret Disclosure via GitHub Actions Cache Poisoning"]] - `high`, undisclosed, 56 votes, Linux Foundation Decentralized Trust
+- [[disclosures/h1-787955-pii-of-users-disclosure-using-members-invite-endpoint|"PII of Users Disclosure using '/members/invite/' endpoint"]] - `high`, undisclosed, 54 votes, Lab45
+- [[disclosures/h1-4152553-unauthenticated-disclosure-of-private-draft-and-password-pro|"Unauthenticated Disclosure of Private, Draft, and Password-Protected Post Content via Core Read-Permission Bypass in SCF Reference Fields"]] - `high`, undisclosed, 53 votes, WordPress
+- [[disclosures/h1-1007988-able-to-comment-view-in-others-support-ticket-at-https-en-in|"Able to comment/view in others support ticket at https://en.instagram-brand.com/requests/dashboard"]] - `high`, undisclosed, 52 votes, Automattic
+- [[disclosures/h1-1203842-dns-leaks-when-using-any-vpn-browser-extension-with-brave-sh|"DNS Leaks when using any VPN Browser extension with Brave Shield enabled"]] - `high`, undisclosed, 51 votes, Brave Software
+- [[disclosures/h1-292761-stealing-private-information-in-vk-android-app-through-playe|"Stealing Private Information in VK Android App through PlayerProxy Port Remotely"]] - `critical`, $700, 50 votes, VK.com
+- [[disclosures/h1-953649-critical-information-disclosure-of-rtapi-token-for-any-user-|"Critical Information disclosure of rtapi token for any user via https://video-support-staging.uber.com/video/api/getPopulousUser"]] - `critical`, undisclosed, 49 votes, Uber
+- [[disclosures/h1-360811-information-leak-github-jms-information|"Information Leak - Github - JMS Information"]] - `high`, undisclosed, 48 votes, Starbucks
+- [[disclosures/h1-708019-information-disclousure-by-clicking-on-the-link-shown-in-htt|"Information disclousure by clicking on the link shown in http://████████/"]] - `high`, undisclosed, 48 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1541740-pull-any-automated-record-brief|"Pull Any Automated Record Brief"]] - `critical`, undisclosed, 47 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2307933-datadog-api-keys-exposed-can-be-used-to-do-all-the-read-and-|"Datadog api keys exposed can be used to do all the read and write access to the instance"]] - `critical`, undisclosed, 47 votes, Mars
+- [[disclosures/h1-2735646-user-api-key-leakage-in-github-commit-leads-to-unauthorized-|"User API Key leakage in Github commit leads to unauthorized access to sql.telemetry.mozilla.org"]] - `high`, undisclosed, 47 votes, Mozilla
+- [[disclosures/h1-719875-lfi-through-the-mysql-connection|"LFI through the MySQL connection"]] - `high`, undisclosed, 47 votes, Infogram
+- [[disclosures/h1-963352-sensitive-information-disclosure|"Sensitive Information Disclosure"]] - `critical`, undisclosed, 47 votes, Dropcontact
+- [[disclosures/h1-3340797-ibm-aspera-http-gateway-stores-sensitive-information-in-clea|"IBM Aspera HTTP Gateway stores sensitive information in clear text in easily obtainable files which can be read by an unauthenticated user."]] - `high`, undisclosed, 46 votes, IBM
+- [[disclosures/h1-248693-git-repository-found|"Git repository found"]] - `high`, undisclosed, 43 votes, Grab
+- [[disclosures/h1-1337624-information-disclosure-referer-leak|"Information disclosure-Referer leak"]] - `high`, undisclosed, 42 votes, Brave Software
+- [[disclosures/h1-761790-leaked-db-credentials-on-https-mil|"Leaked DB credentials on https://██████████.mil/███"]] - `critical`, undisclosed, 42 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1050753-endpoint-without-access-control-leads-to-order-informations-|"Endpoint without access control leads to order informations and status changes"]] - `critical`, undisclosed, 41 votes, Azbuka Vkusa
+- [[disclosures/h1-958432-corporate-jira-credentials-disclosed-in-public-gist|"Corporate Jira credentials disclosed in public gist"]] - `high`, undisclosed, 40 votes, Azbuka Vkusa
+- [[disclosures/h1-1082891-duplicate-entry-of-email-leads-to-500-server-error-which-dis|"Duplicate Entry of email leads to 500 Server Error which disclosing the SQL Database table information"]] - `critical`, undisclosed, 39 votes, Kartpay
+- [[disclosures/h1-284155-uninitialized-server-memory-disclosure-via-imagemagick-gif-p|"Uninitialized server memory disclosure via ImageMagick gif parser"]] - `high`, undisclosed, 39 votes, Mavenlink
+- [[disclosures/h1-864489-workspace-configuration-metadata-disclosure|"Workspace configuration metadata disclosure"]] - `high`, undisclosed, 39 votes, Slack
+- [[disclosures/h1-2486086-two-factor-authentication-bypass-lead-to-information-disclos|"Two-factor authentication bypass lead to information disclosure about the program and all hackers participate"]] - `high`, undisclosed, 37 votes, HackerOne
+- [[disclosures/h1-1100383-course-registration-form-allowing-an-attacker-to-dump-all-th|"Course Registration Form Allowing an attacker to dump all the candidate name who had enrolled for the course"]] - `high`, undisclosed, 36 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1626236-critical-sensitive-information-disclosure-htus|"Critical sensitive information Disclosure. [HtUS]"]] - `high`, $500, 36 votes, U.S. Dept Of Defense
+- [[disclosures/h1-317391-exploiting-misconfigured-cors-to-steal-user-information|"Exploiting Misconfigured CORS to Steal User Information"]] - `high`, $500, 36 votes, Rockstar Games
+- [[disclosures/h1-580268-api-on-campus-vtc-com-allows-access-to-100-uber-users-full-n|"API on campus-vtc.com allows access to ~100 Uber users full names, email addresses and telephone numbers."]] - `high`, $750, 35 votes, Uber
+- [[disclosures/h1-2508422-mail-auto-configurator-can-be-tricked-into-sending-account-i|"Mail auto configurator can be tricked into sending account information to wrong servers "]] - `high`, $100, 34 votes, Nextcloud
+- [[disclosures/h1-1239633-information-discloure-via-logs-files-at-https-ihelp-mtnbusin|"information discloure via logs files at ==> https://ihelp.mtnbusiness.com/logfiles/Log_21-06-2021.txt"]] - `high`, undisclosed, 33 votes, MTN Group
+- [[disclosures/h1-1735586-wordpress-users-disclosure-wp-json-wp-v2-users|"Wordpress users Disclosure [ /wp-json/wp/v2/users/ ]"]] - `critical`, undisclosed, 33 votes, MTN Group
+- [[disclosures/h1-2308654-sensitive-information-exposed-at|"Sensitive Information Exposed at █████"]] - `high`, undisclosed, 33 votes, Mars
+- [[disclosures/h1-326043-ssrf-xss|"SSRF+XSS"]] - `critical`, undisclosed, 33 votes, U.S. Dept Of Defense
+- [[disclosures/h1-440629-starbucks-china-android-app-cloud-storage-service-leaks-a-cr|"Starbucks China Android app cloud storage service leaks a credential."]] - `high`, undisclosed, 33 votes, Starbucks
+- [[disclosures/h1-1499114-connect-8x8-com-users-with-no-permission-can-track-access-re|"connect.8x8.com: Users with no permission can track/access restricted details/data via GET /api/v2/support/requests/<ticket number >HTTP/2"]] - `high`, undisclosed, 31 votes, 8x8
+- [[disclosures/h1-1785021-leaking-usernames-through-endpoints-wordpress|"Leaking usernames through endpoints Wordpress"]] - `high`, undisclosed, 31 votes, MTN Group
+- [[disclosures/h1-1225164-identify-the-mobile-number-of-a-twitter-user|"Identify the mobile number of a twitter user"]] - `critical`, $560, 30 votes, X / xAI
+- [[disclosures/h1-1880610-snowflake-server-leak-of-tls-packets-from-other-clients|"Snowflake server: Leak of TLS packets from other clients"]] - `high`, undisclosed, 30 votes, Tor
+- [[disclosures/h1-330860-information-disclosure|"Information Disclosure"]] - `critical`, undisclosed, 30 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1784999-wordpress-users-disclosure-wp-json-wp-v2-users-not-resolved|"Wordpress users Disclosure [ /wp-json/wp/v2/users/ ]  Not Resolved () "]] - `critical`, undisclosed, 29 votes, MTN Group
+- [[disclosures/h1-4064040-use-after-free-read-of-the-freed-referer-buffer-in-curl-easy|" Use-after-free read of the freed referer buffer in `curl_easy_setopt(CURLOPT_REFERER)` — stale heap bytes transmitted in an outbound `Referer:` heade"]] - `high`, undisclosed, 29 votes, curl
+- [[disclosures/h1-1507412-api-docs-expose-an-active-token-for-the-sample-domain-thebur|"API docs expose an active token for the sample domain theburritobot.com"]] - `high`, $500, 28 votes, Cloudflare Public Bug Bounty
+- [[disclosures/h1-358007-compromising-the-user-id|"Compromising the user ID"]] - `high`, undisclosed, 28 votes, Bumble
+- [[disclosures/h1-370629-faq|"Доступ к администраторским faq "]] - `high`, $500, 28 votes, VK.com
+- [[disclosures/h1-848905-exposed-in-apk-file-devbuilds-uber-com|"Exposed█████████in apk file - devbuilds.uber.com"]] - `high`, undisclosed, 28 votes, Uber
+- [[disclosures/h1-176013-disclosure-of-sensitive-information-through-google-cloud-sto|"Disclosure of sensitive information through Google Cloud Storage bucket"]] - `high`, undisclosed, 27 votes, Vimeo
+- [[disclosures/h1-3840113-mass-pii-exposure-120-000-consumer-email-addresses-leaked-vi|"Mass PII Exposure: 120,000+ Consumer Email Addresses Leaked via Author Enumeration on ████████"]] - `critical`, undisclosed, 27 votes, Essity
+- [[disclosures/h1-388740-github-api-key-for-brewtestbot-is-publicly-exposed|"GitHub API Key for BrewTestBot is publicly exposed"]] - `critical`, undisclosed, 27 votes, Homebrew
+- [[disclosures/h1-2083270-idor-in-channel-id-leads-to-customer-email-disclosure-on-htt|"IDOR in channel ID leads to customer email disclosure on https://video.ibm.com"]] - `high`, undisclosed, 26 votes, IBM
+- [[disclosures/h1-584582-report|"Просмотр закрытых фотографий"]] - `high`, $500, 25 votes, VK.com
+- [[disclosures/h1-631348-public-github-repo-leaking-internal-credentials-leading-to-d|"Public Github Repo Leaking Internal Credentials Leading To DiscoveryIQ Docker Access"]] - `critical`, undisclosed, 24 votes, Informatica
+- [[disclosures/h1-1632104-sensitive-information-disclosure-htus|"Sensitive information disclosure [HtUS]"]] - `high`, undisclosed, 23 votes, U.S. Dept Of Defense
+- [[disclosures/h1-231267-development-configuration-file|"Development configuration file"]] - `critical`, undisclosed, 23 votes, Pushwoosh
+- [[disclosures/h1-326040-ssrf-on-allowing-internal-server-data-access|"SSRF on █████████ Allowing internal server data access"]] - `critical`, undisclosed, 23 votes, U.S. Dept Of Defense
+- [[disclosures/h1-642488-smtp-failure-leads-to-chain-of-internal-system-failure|"SMTP Failure Leads to Chain of Internal System Failure"]] - `high`, undisclosed, 23 votes, Kartpay
+- [[disclosures/h1-887611-h1-2006-2020-h1-2006-ctf-writeup|"[H1-2006 2020] H1-2006 CTF Writeup"]] - `critical`, undisclosed, 23 votes, h1-ctf
+- [[disclosures/h1-321594-report|"Смотрим фотографии из частных/закрытых групп."]] - `high`, $500, 22 votes, VK.com
+- [[disclosures/h1-719631-partial-ssn-pii-exposed-through-iperms-presentation-slide|"[Partial] SSN & [PII] exposed through iPERMs Presentation Slide."]] - `critical`, undisclosed, 22 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2312609-full-access-to-sonarqube-and-docker|"Full Access to sonarQube and Docker"]] - `critical`, undisclosed, 21 votes, U.S. Dept Of Defense
+- [[disclosures/h1-341675-report|"Просмотр любых записей на стене"]] - `high`, $700, 21 votes, VK.com
+- [[disclosures/h1-947725-s3-bucket-data-at-http-rockset-support-s3-us-west-2-amazonaw|"S3 bucket data at http://rockset-support.s3-us-west-2.amazonaws.com/ reveals user addresses based on latitudes and longitudes."]] - `high`, undisclosed, 21 votes, Rockset
+- [[disclosures/h1-1106009-critical-information-disclosure|"critical information disclosure"]] - `critical`, undisclosed, 20 votes, U.S. Dept Of Defense
+- [[disclosures/h1-947946-open-sonarqube-instance-leaking-internal-source-code|"Open SonarQube instance leaking internal source code"]] - `critical`, undisclosed, 20 votes, Equifax-vdp
+- [[disclosures/h1-1082288-disclosure-of-merchant-id-into-the-source-code-without-enter|"Disclosure of Merchant_id into the source code without entered OTP code leads to Victims MID takeover."]] - `critical`, undisclosed, 19 votes, Kartpay
+- [[disclosures/h1-323992-publicly-accessible-order-confirmations-leaking-user-emails-|"Publicly accessible Order confirmations leaking User Emails on ███"]] - `high`, undisclosed, 19 votes, U.S. Dept Of Defense
+- [[disclosures/h1-389116-exposes-sensitive-shipment-information-to-public-web|"███ exposes sensitive shipment information to public web"]] - `high`, undisclosed, 19 votes, U.S. Dept Of Defense
+- [[disclosures/h1-879562-admin-reseller-account-disclosure|"Admin Reseller Account Disclosure"]] - `critical`, undisclosed, 19 votes, 8x8
+- [[disclosures/h1-1049402-php-info-exposing-secrets-at-https-radio-mtn-bj-info|"PHP Info Exposing Secrets at https://radio.mtn.bj/info"]] - `high`, undisclosed, 18 votes, MTN Group
+- [[disclosures/h1-1514356-enumerate-class-codes-via-yahoo-dork-can-access-any-course-u|"Enumerate class codes via yahoo dork - Can access any course under teacher - Sensitive information leaked"]] - `high`, undisclosed, 18 votes, Khan Academy
+- [[disclosures/h1-2199174-critical-curl-cve-2023-38545-vulnerability-code-changes-are-|"[Critical] Curl CVE-2023-38545 vulnerability code changes are disclosed on the internet"]] - `critical`, undisclosed, 18 votes, curl
+- [[disclosures/h1-412772-hardcoded-credentials-in-android-app|"Hardcoded credentials in Android App"]] - `high`, undisclosed, 17 votes, 8x8
+- [[disclosures/h1-693933-pii-leakage-due-to-scrceenshot-of-health-records|"PII leakage due to scrceenshot of health records"]] - `critical`, undisclosed, 17 votes, U.S. Dept Of Defense
+- [[disclosures/h1-797988-snmp-community-string-disclosure-to-readonly-users-on-edgesw|"SNMP Community String Disclosure to ReadOnly Users on EdgeSwitch"]] - `high`, undisclosed, 17 votes, Ubiquiti Inc.
+- [[disclosures/h1-1161141-improper-data-update-process-on-updatephabricatorintegration|"Improper data update process on UpdatePhabricatorIntegration mutation leads to leak of Phabricator Conduit API token."]] - `critical`, undisclosed, 16 votes, HackerOne
+- [[disclosures/h1-1261413-heic-image-preview-can-be-used-to-invoke-imagick|"HEIC image preview can be used to invoke Imagick"]] - `critical`, undisclosed, 16 votes, Nextcloud
+- [[disclosures/h1-344086-uber-employees-are-sharing-information-on-productforums-goog|"Uber employees are sharing information on productforums.google.com"]] - `high`, undisclosed, 16 votes, Uber
+- [[disclosures/h1-1183601-cross-origin-resource-sharing-misconfig-steal-user-informati|"Cross-origin resource sharing misconfig \| steal user information "]] - `high`, undisclosed, 15 votes, UPchieve
+- [[disclosures/h1-294364-de-anonymization-by-visiting-specially-crafted-bookmark|"De-anonymization by visiting specially crafted bookmark."]] - `high`, undisclosed, 15 votes, Tor
+- [[disclosures/h1-685344-local-file-disclosure-on-the-https-leads-to-the-source-code-|"Local File Disclosure on the ████████ (https://████/) leads to the source code disclosure & DB credentials leak"]] - `high`, undisclosed, 15 votes, U.S. Dept Of Defense
+- [[disclosures/h1-291489-kovri-potential-buffer-over-read-in-garlic-clove-handling-i2|"Kovri: potential buffer over-read in garlic clove handling + I2NP message creation"]] - `high`, undisclosed, 14 votes, Monero
+- [[disclosures/h1-374007-pii-leakage-due-to-caching-of-order-contract-id-s-on|"PII leakage due to caching of Order/Contract ID's on █████████"]] - `high`, undisclosed, 14 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1004964-all-private-support-requests-to-are-being-disclosed-at-https|"All private support requests to ███████ are being disclosed at https://███████"]] - `high`, undisclosed, 13 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1720278-sensitive-data-exposure-at-https|"Sensitive Data Exposure at https://█████████"]] - `high`, undisclosed, 13 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1668723-security-token-and-handler-name-leak-from-window-braveblockr|"Security token and handler name leak from window.braveBlockRequests"]] - `high`, undisclosed, 12 votes, Brave Software
+- [[disclosures/h1-902322-source-code-disclosure-at|"Source code disclosure at ███"]] - `high`, undisclosed, 12 votes, RATELIMITED
+- [[disclosures/h1-1624157-git-folder-exposed-htus|".git folder exposed [HtUS]"]] - `critical`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-276976-information-disclosure-and-privilege-escalation-in-app-goodh|"Information Disclosure and Privilege Escalation in app.goodhire.com/member/developers/api-settings"]] - `high`, undisclosed, 11 votes, Inflection
+- [[disclosures/h1-2853023-information-disclosure-at-https-curl-se-mailmap|"Information Disclosure at : https://curl.se/.mailmap"]] - `high`, undisclosed, 11 votes, curl
+- [[disclosures/h1-308355-opcode-cache|"Opcode Cache"]] - `high`, undisclosed, 11 votes, VK.com
+- [[disclosures/h1-399174-access-mopub-reports-data-even-after-company-removed-you-fro|"Access MoPub Reports Data even after Company removed you from their MoPub Account."]] - `high`, undisclosed, 11 votes, X / xAI
+- [[disclosures/h1-1106505-critical-information-disclosure|"critical information disclosure"]] - `critical`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1187003-critical-file-found-etc-passwd-on-www-reddit-com|"critical file found etc/passwd on www.reddit.com"]] - `high`, undisclosed, 10 votes, Reddit
+- [[disclosures/h1-1406479-moving-private-messages-into-vision-with-updatemessage-metho|"Moving private messages into vision with updateMessage method"]] - `high`, undisclosed, 10 votes, Rocket.Chat
+- [[disclosures/h1-1566758-the-dashboard-is-exposed-in-https|"The dashboard is exposed in https://███"]] - `critical`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1624152-insecure-gitlab-repositories-at-htus|"insecure gitlab repositories at ████████ [HtUS]"]] - `high`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1912671-sensitive-data-exposure-via-wp-config-php-file|"Sensitive Data Exposure via wp-config.php file"]] - `critical`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2081332-ldap-anonymous-login-enabled-in|"LDAP Anonymous Login enabled in ████"]] - `high`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2915426-git-repository-found|"Git repository found"]] - `high`, undisclosed, 10 votes, curl
+- [[disclosures/h1-309537-backup-source-code-detected|"Backup Source Code Detected"]] - `critical`, undisclosed, 10 votes, VK.com
+- [[disclosures/h1-589400-report|"Просмотр любых статей по их айди."]] - `high`, $200, 10 votes, VK.com
+- [[disclosures/h1-963327-dropcontact-s-disclosed-report-is-exposing-private-confident|"Dropcontact's disclosed report is exposing Private/Confidential information"]] - `high`, undisclosed, 10 votes, Dropcontact
+- [[disclosures/h1-1416665-recaptcha-secret-key-leaked|"Recaptcha Secret key Leaked"]] - `high`, undisclosed, 9 votes, Paragon Initiative Enterprises
+- [[disclosures/h1-311058-http-www-informatica-com-info-disclosure|"[http://www.informatica.com]- info disclosure"]] - `critical`, undisclosed, 9 votes, Informatica
+- [[disclosures/h1-962462-unauthorized-user-is-able-to-access-schedule-pipeline-variab|"Unauthorized user is able to access schedule pipeline variables and values"]] - `high`, undisclosed, 9 votes, GitLab
+- [[disclosures/h1-1062538-pinning-leaks-message-content|"Pinning leaks message content"]] - `high`, undisclosed, 8 votes, Rocket.Chat
+- [[disclosures/h1-1218461-user-information-disclosed-via-api|"User information disclosed via API"]] - `high`, undisclosed, 8 votes, U.S. General Services Administration
+- [[disclosures/h1-1433581-the-return-of-the-grinch|"The Return of the Grinch"]] - `critical`, undisclosed, 8 votes, h1-ctf
+- [[disclosures/h1-407319-activestorage-service-s-signed-urls-can-be-hijacked-via-appc|"ActiveStorage service's signed URLs can be hijacked via AppCache+Cookie stuffing trick when using GCS or DiskService"]] - `high`, undisclosed, 8 votes, Ruby on Rails
+- [[disclosures/h1-625199-wordpress-users-disclosure|"Wordpress Users Disclosure"]] - `high`, undisclosed, 8 votes, Nextcloud
+- [[disclosures/h1-905679-pii-leak-via|"PII Leak via /████████"]] - `high`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-189458-information-disclosure-vulnerability-on-a-dod-website|"Information disclosure vulnerability on a DoD website"]] - `high`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3019290-exposure-of-sensitive-debug-file-containing-database-dump-wi|"Exposure of Sensitive Debug File Containing database dump with passwords in plain text"]] - `high`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-484377-information-disclosure-can-access-all-s-within-view-portal|"Information Disclosure (can access all ███s) within ███████ view █████████ Portal"]] - `high`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-587214-authenticated-user-data-disclosure|"██████ Authenticated User Data Disclosure"]] - `high`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-838817-insecure-crossdomain-xml-on-https-vdc-mtnonline-com|"Insecure crossdomain.xml on https://vdc.mtnonline.com/"]] - `high`, undisclosed, 7 votes, MTN Group
+- [[disclosures/h1-954818-default-creds-spring-boot-admin|"Default Creds Spring Boot Admin"]] - `high`, undisclosed, 7 votes, 8x8
+- [[disclosures/h1-997988-external-service-interaction-https-mil|"External Service Interaction \| https://█████████.mil"]] - `high`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1069175-h1-ctf-12-days-of-hack-holiday-writeup|"h1-ctf : 12 days of hack holiday writeup"]] - `critical`, undisclosed, 6 votes, h1-ctf
+- [[disclosures/h1-1095830-crxde-lite-crx-is-on-exposed-that-leads-to-pii-disclosure|"CRXDE Lite/CRX is on ██████ exposed that leads to PII disclosure"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2954320-asbs-viewing-other-soldiers-pii-board-board-voters-etc|"ASBS viewing other soldiers PII/Board/Board Voters/ETC"]] - `critical`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3252302-exposed-wp-config-php-file|"Exposed wp-config.php file"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3328408-exposed-wp-config-php-file-in-national-guard-website|"Exposed wp-config.php file in ███ National Guard website"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-883693-information-disclosure-phpinfo-credentials-on-dod-asset|"Information Disclosure(PHPINFO/Credentials) on DoD Asset"]] - `critical`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1443654-registered-users-contact-information-disclosure-on-salesforc|"Registered users contact  information disclosure on salesforce lightning endpoint https://disposal.gsa.gov"]] - `high`, undisclosed, 5 votes, U.S. General Services Administration
+- [[disclosures/h1-186530-information-disclosure-vulnerability-on-a-dod-website|"Information disclosure vulnerability on a DoD website"]] - `critical`, undisclosed, 5 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2471924-net-framework-objrefs-disclosure-cve-2024-29059|"[███] .NET Framework ObjRefs Disclosure (CVE-2024-29059)"]] - `high`, undisclosed, 5 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2914739-secret-access-key-of-aws-firehose-disclosure|"Secret Access Key of AWS Firehose Disclosure"]] - `high`, undisclosed, 5 votes, U.S. Dept Of Defense
+- [[disclosures/h1-894110-h1-ctf-writeup-finally-paid-the-payments-by-chaining-multipl|"h1-ctf writeup , finally paid the payments by chaining multiple bugs"]] - `critical`, undisclosed, 5 votes, h1-ctf
+- [[disclosures/h1-904671-access-to-requests-and-approvals-via-allows-sensitive-inform|"Access to requests and approvals via /█████ allows sensitive information gathering"]] - `high`, undisclosed, 5 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1250273-tor-browser-using-log-or-verbose-logs-the-exact-connection-t|"Tor Browser using --log or --verbose logs the exact connection time a client connects to any v2 domains."]] - `high`, undisclosed, 4 votes, Tor
+- [[disclosures/h1-1422641-wrong-settings-in-adf-faces-leads-to-information-disclosure|"Wrong settings in ADF Faces leads to information disclosure"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1446767-api-route-chat-getthreadslist-leaks-private-message-content|"API route chat.getThreadsList leaks private message content"]] - `high`, undisclosed, 4 votes, Rocket.Chat
+- [[disclosures/h1-1662474-springboot-actuator-is-leaking-internals-at|"springboot actuator is leaking internals at ██████████"]] - `critical`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-312292-https-life-informatica-com-information-disclose|"[https://life.informatica.com] - information disclose "]] - `high`, undisclosed, 4 votes, Informatica
+- [[disclosures/h1-711662-default-creds-on-https|"default ████ creds on https://████████"]] - `critical`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-894165-h1-2006-ctf-payments-for-may-have-been-processed|"[h1-2006 CTF] Payments for May have been processed!"]] - `critical`, undisclosed, 4 votes, h1-ctf
+- [[disclosures/h1-904659-pii-leak-via|"PII Leak via /███████"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-905688-pii-leak-via|"PII Leak via /██████"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1410246-getusermentionsbychannel-leaks-messages-with-mention-from-pr|"getUserMentionsByChannel leaks messages with mention from private channel"]] - `high`, undisclosed, 3 votes, Rocket.Chat
+- [[disclosures/h1-271360-avito-ru|"[avito.ru] Утекают креды от платежных провайдеров"]] - `critical`, undisclosed, 3 votes, Avito
+- [[disclosures/h1-799898-admin-login-credential-leak-for-dod-gitlab-ee-instance|"Admin Login Credential Leak for DoD Gitlab EE instance"]] - `high`, undisclosed, 3 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1347249-information-disclosure|"Information disclosure"]] - `high`, undisclosed, 2 votes, Brave Software
+- [[disclosures/h1-804980-username-password-is-disclosure-in-readme-file-in-https|"Username&password is Disclosure in readme file in [https://█████████]"]] - `high`, undisclosed, 2 votes, U.S. Dept Of Defense
+- [[disclosures/h1-970520-exposed-git-repo-at-http-api-e2e-kops-aws-canary-test-cncf-a|"exposed Git Repo at http://api.e2e-kops-aws-canary.test-cncf-aws.canary.k8s.io/.git/"]] - `high`, undisclosed, 2 votes, Kubernetes
+- [[disclosures/h1-1068434-hackyholidays-2020-full-write-up-information-disclosure-of-1|"HackyHolidays 2020 Full Write-up: Information Disclosure of 12 Flags"]] - `critical`, undisclosed, 1 votes, h1-ctf
+- [[disclosures/h1-257276-open-aws-s3-bucket-s3-rubyci|"Open aws s3 bucket s3://rubyci"]] - `critical`, undisclosed, 1 votes, Ruby
+- [[disclosures/h1-516237-uninitialized-read-in-exif-process-ifd-in-makernote|"Uninitialized read in exif_process_IFD_in_MAKERNOTE"]] - `high`, undisclosed, 1 votes, Internet Bug Bounty
+- [[disclosures/h1-543775-sensitive-data-disclosure-via-exposed-phpunit-file|"Sensitive data disclosure via exposed phpunit file"]] - `high`, undisclosed, 1 votes, 8x8
+- [[disclosures/h1-764731-publicly-accessible-grafana-install-allows-pivoting-to-prome|"Publicly accessible Grafana install allows pivoting to Prometheus datasource"]] - `high`, undisclosed, 1 votes, U.S. Dept Of Defense
+- [[disclosures/h1-770190-unexpected-access-to-process-open-files-via-file-proc-self-f|"Unexpected access to process open files via file:///proc/self/fd/n"]] - `high`, undisclosed, 1 votes, curl
+- [[disclosures/h1-1069171-h1-hackyholidays-ctf-writeup|"[H1 hackyholidays] CTF Writeup"]] - `critical`, undisclosed, 0 votes, h1-ctf
+
+> Auto-generated from `disclosures/` by `node vault-admin/crawler/gen_cwe_pages.js`. Do not edit by hand.

@@ -1,0 +1,42 @@
+---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/high
+  - cwe/cross-site-request-forgery-csrf
+  - env/web
+substate: "resolved"
+weakness: "Cross-Site Request Forgery (CSRF)"
+enriched: true
+date: 2023-11-05
+submitted: 2023-06-28T07:05:46.405Z
+bounty_usd: null
+votes: 111
+cve: []
+program: "[[programs/owncloud|ownCloud]]"
+reporter: "pascal_geuter"
+source: "https://hackerone.com/reports/2041007"
+title: "Cross-Site Request Forgery "
+---
+# Cross-Site Request Forgery 
+
+> **Severity:** High | **Bounty:** undisclosed | **Votes:** 111 | **Program:** ownCloud | **Disclosed:** 2023-11-05
+
+- Report: [https://hackerone.com/reports/2041007](https://hackerone.com/reports/2041007)
+- CWE: Cross-Site Request Forgery (CSRF)
+- Submitted: 2023-06-28T07:05:46.405Z
+
+## Timeline
+
+- **Report Filed**
+- **2023-06-28** @ownCloud: Thanks a lot for reporting this potential issue back to us. We take security very seriously and would appreciate if you would not share any information about this bug until we have determined a potential patch.
+ 
+Our security team will take a look at this issue as soon as possible. We will reply to your report within 72 hours, usually much faster.
+- **Report Triaged**
+- **Report Resolved**
+- **Not Eligible For Bounty**
+- **Agreed On Going Public**
+- **Cancelled Disclosure Request**
+- **Agreed On Going Public**
+- **Report Became Public**
+- **2024-07-26** @pascal_geuter: Hello all, in accordance with our [responsible disclosure policy](https://cirosec.de/cirosec-responsible-disclosure-policy/), we are now seeking to obtain a CVE for this vulnerability. As my employer, cirosec, is a CNA and is therefore able to issue CVEs, we are in a position to offer to issue a CVE. Should you wish to issue a CVE yourself, we would be fine with this as well.

@@ -1,0 +1,135 @@
+---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/high
+  - cwe/man-in-the-middle
+  - env/web
+substate: "resolved"
+weakness: "Man-in-the-Middle"
+enriched: true
+date: 2021-09-22
+submitted: 2020-09-14T18:26:33.466Z
+bounty_usd: null
+votes: 6
+cve: "CVE-2021-40099"
+program: "[[programs/concretecms|Concrete CMS]]"
+reporter: "pabl00nicarres"
+source: "https://hackerone.com/reports/982130"
+title: "Fetching the update json scheme from concrete5 over HTTP leads to remote code execution"
+---
+# Fetching the update json scheme from concrete5 over HTTP leads to remote code execution
+
+> **Severity:** High | **Bounty:** undisclosed | **Votes:** 6 | **Program:** Concrete CMS | **Disclosed:** 2021-09-22
+
+- Report: [https://hackerone.com/reports/982130](https://hackerone.com/reports/982130)
+- CWE: Man-in-the-Middle | CVE: CVE-2021-40099
+- Submitted: 2020-09-14T18:26:33.466Z
+
+## Timeline
+
+- **Report Filed**
+- **2020-10-06** @pabl00nicarres: Hi, 
+is possible to have this at least triaged before automatic closing after 30 days?
+
+Thanks
+- **Report Triaged**
+- **Report Severity Updated**
+- **Report Informative**
+- **2020-10-07** @pabl00nicarres: Hi Korvin,
+I totally disagree with your answer for two reasons:
+
+- The issue does not lie in proxy settings functionalities, this is a legitimate and useful feature implemented by many web applications. 
+_It lies in the fact that first request is performed over HTTP and not over HTTPS, as I clearly stated_.
+The result of first request then defines download locations.
+_If the first request was made over HTTPS an attacker could not impersonate concrete5 website and could not be able to tamper with anything_. 
+Again, the only way for an attacker to break HTTPS in this case is to install a root CA certificate in concrete5 system, but this means that he/she has already access to the underlying machine.
+If breaking HTTPS was simply possible by setting a HTTP proxy, then it had absolutely no sense :) 
+
+- There is a separation between application layer and system layer, even an Administrator is not supposed to run arbitrary code in the underlying system.
+This is why concrete5 does not let an Administrator to upload PHP files and has a whitelist of allowed filetypes as shown here:  https://hackerone.com/reports/768322
+
+The best way to mitigate this issue is to modify a line of code, just adding https protocol scheme, pointing to https://concrete5.org even in the first request.
+This fix does not affect concrete5 users or outbound connections, just makes concrete5 a little bit more secure.
+
+For these reasons I kindly ask to re open this report.
+
+Thanks
+Best Regards
+- **2020-10-08** @pabl00nicarres: For the sake of completness,
+concrete5 already retrieves updates over HTTPS, returned JSON already points correctly to "https://www.concrete5.org/download_file/view/etc...". Notice the protocol scheme below.
+{F1027241}
+So, if retrieving updates over HTTPS was an issue (e.g. an IDS/IPS proxy that needs to strip SSL), update mechanism would not work in any case.
+
+The only line of code that has to be changed is this one, in configuration file:
+{F1027232}
+
+Concluding, if advanced users have to make all outbound traffic pass through a SSL stripping proxy, e.g. for IPS/IDS analysis, then they just have to install proxy root CA certificate on concrete5 machine, as usually for this kind of tasks. 
+But for doing this, they're demonstrating to already have system level access.
+  
+Thanks,
+Kind Regards
+- **Report Reopened**
+- **Report Triaged**
+- **2021-04-09** @pabl00nicarres: Hi @korvin,
+is there any update on this ?
+
+Regards
+Paolo
+- **2021-07-01** @pabl00nicarres: Hi @korvin,
+can I ask if there is any update on this report?
+
+Thanks in advance
+Paolo
+- **2021-07-20** @lisaciso: @pabl00nicarres  This is an awesome report! We really appreciate when reporters provide suggested solutions. We are working on a release candidate right now and I will personally track to make sure that the remediation is included in QA testing.
+
+We will be getting a CVE for this vulnerability but will embargo it until the full release. In order to keep the internet safe, we would appreciate no disclosures of this vulnerability until a fix is available for the community. Thanks for being a White Hat!
+- **2021-08-05** @lisaciso: @pabl00nicarres 
+
+We greatly appreciate the work that you put into this report! A fix for the vulnerability you reported has been put into Concrete CMS release candidate 9.0.0RC1. This release is a test release for the community to debug prior to a full release in the fall. You are more than welcome to download the release candidate to confirm the fix does indeed remediate the vulnerability you reported.
+
+I will be obtaining a CVE for this vulnerability that will be disclosed upon the full version 9 release. We respectfully request that you refrain from publicizing the vulnerability or the CVE before then. We will communicate with you at that time to give you permission to publicize it.
+
+We value reporters like yourself helping us to make the project more secure!
+
+Sincerely
+~Lisa
+
+https://www.concretecms.com/about/blog/core-releases/concrete-cms-900rc1-now-available
+- **2021-08-20** @lisaciso: @pabl00nicarres 
+
+Thanks again for all the work you did on reporting this vulnerability to us.
+
+A fix for this vulnerability you reported has been merged into these release candidates:
+9.0.0RC3https://www.concretecms.com/download_file/8c1f8bf8-6e0f-4730-bfb6-649c8213f283
+8.5.6RC1https://www.concretecms.com/download_file/2e714705-d861-484f-9e33-2b7ecfd7e585
+
+It would be greatly appreciated if you could verify that we have indeed fixed the issue.
+
+ will be attaching a CVE to this HackerOne report. Respectfully, please do not disclose the CVE until we give you the "ok" to do so. Thanks for understanding!
+~Lisa
+- **2021-08-27** @pabl00nicarres: Hi @lisaciso,
+thanks to you, I'll check the fix in a few days. Of course I'll wait for your "ok" before disclosing the CVE or any detail related to this report.
+
+Thanks
+Kind regards
+- **Cve Id Added**
+- **2021-09-02** @pabl00nicarres: Hi @lisaciso,
+I confirm that this is fixed now.
+Please let me now when I can disclose the CVE.
+
+Thanks
+Paolo
+- **2021-09-22** @pabl00nicarres: @lisaciso,
+I've noticed that the fix has been implemented into the Concrete5 release 8.5.6.
+Is possibile to close this report as resolved (I'd like to ask the disclosure) and having a CVE assigned?
+
+Thanks
+Best regards
+- **2021-09-22** @lisaciso: @pabl00nicarres 
+CVE-2021-40099 has been assigned to this vulnerability. We have requested MITRE to  publish the CVE but it is still showing up as "reserved". You are welcome to disclose.
+- **Report Resolved**
+- **Agreed On Going Public**
+- **Agreed On Going Public**
+- **Report Became Public**
+- **2021-10-04** @lisaciso: NIST scored this as 7.2 CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H https://nvd.nist.gov/vuln/detail/CVE-2021-40099

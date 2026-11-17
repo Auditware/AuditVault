@@ -1,0 +1,66 @@
+---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/high
+  - cwe/uncontrolled-resource-consumption
+  - env/web
+substate: "resolved"
+weakness: "Uncontrolled Resource Consumption"
+enriched: true
+date: 2022-03-22
+submitted: 2022-03-21T20:57:04.184Z
+bounty_usd: 4000
+votes: 25
+cve: "CVE-2022-24713"
+program: "[[programs/ibb|Internet Bug Bounty]]"
+reporter: "addisoncrump"
+source: "https://hackerone.com/reports/1518036"
+title: "Regexes with large repetitions on empty sub-expressions take a very long time to parse"
+---
+# Regexes with large repetitions on empty sub-expressions take a very long time to parse
+
+> **Severity:** High | **Bounty:** 4,000 USD | **Votes:** 25 | **Program:** Internet Bug Bounty | **Disclosed:** 2022-03-22
+
+- Report: [https://hackerone.com/reports/1518036](https://hackerone.com/reports/1518036)
+- CWE: Uncontrolled Resource Consumption | CVE: CVE-2022-24713
+- Submitted: 2022-03-21T20:57:04.184Z
+
+## Report summary
+
+Security advisory for the regex crate (CVE-2022-24713)
+Mar. 8, 2022 · The Rust Security Response WG
+
+The Rust Security Response WG was notified that the regex crate did not properly limit the complexity of the regular expressions (regex) it parses. An attacker could use this security issue to perform a denial of service, by sending a specially crafted regex to a service accepting untrusted regexes. No known vulnerability is present when parsing untrusted input with trusted regexes.
+
+This issue has been assigned CVE-2022-24713. The severity of this vulnerability is "high" when the regex crate is used to parse untrusted regexes. Other uses of the regex crate are not affected by this vulnerability.
+
+Overview
+The regex crate features built-in mitigations to prevent denial of service attacks caused by untrusted regexes, or untrusted input matched by trusted regexes. Those (tunable) mitigations already provide sane defaults to prevent attacks. This guarantee is documented and it's considered part of the crate's API.
+
+Unfortunately a bug was discovered in the mitigations designed to prevent untrusted regexes to take an arbitrary amount of time during parsing, and it's possible to craft regexes that bypass such mitigations. This makes it possible to perform denial of service attacks by sending specially crafted regexes to services accepting user-controlled, untrusted regexes.
+
+Affected versions
+All versions of the regex crate before or equal to 1.5.4 are affected by this issue. The fix is included starting from regex 1.5.5.
+
+Mitigations
+We recommend everyone accepting user-controlled regexes to upgrade immediately to the latest version of the regex crate.
+
+Unfortunately there is no fixed set of problematic regexes, as there are practically infinite regexes that could be crafted to exploit this vulnerability. Because of this, we do not recommend denying known problematic regexes.
+
+Acknowledgements
+We want to thank Addison Crump for responsibly disclosing this to us according to the Rust security policy, and for helping review the fix.
+
+We also want to thank Andrew Gallant for developing the fix, and Pietro Albini for coordinating the disclosure and writing this advisory.
+
+https://blog.rust-lang.org/2022/03/08/cve-2022-24713.html
+
+## Timeline
+
+- **Report Filed**
+- **Cve Id Added**
+- **Bounty Awarded**
+- **Report Resolved**
+- **Agreed On Going Public**
+- **Agreed On Going Public**
+- **Report Became Public**

@@ -1,0 +1,156 @@
+---
+tags:
+  - type/cwe
+generated: true
+---
+# Sql Injection
+
+> **Disclosures in vault:** 141 | **Critical:** 67 | **High:** 74 | **Total known bounty:** $45,850 (12 disclosed) | **Top programs:** `U.S. Dept Of Defense` (47), `IBM` (8), `h1-ctf` (8), `Eternal` (7), `Node.js third-party modules` (7), `MTN Group` (6), `Starbucks` (4), `Django` (4), `Acronis` (3), `HackerOne` (3)
+
+## All disclosures of this class
+
+Ranked by community votes - the top of this list is the canonical writeup set for how this class actually lands.
+
+- [[disclosures/h1-531051-sql-injection-extracts-starbucks-enterprise-accounting-finan|"SQL Injection Extracts Starbucks Enterprise Accounting, Financial, Payroll Database"]] - `critical`, undisclosed, 801 votes, Starbucks
+- [[disclosures/h1-297478-sql-injection-in-https-labs-data-gov-dashboard-datagov-csv-t|"SQL injection in https://labs.data.gov/dashboard/datagov/csv_to_json via User-agent "]] - `critical`, undisclosed, 699 votes, GSA Bounty
+- [[disclosures/h1-383127-sql-injection-in-report-xml-php-through-countryfilter-parame|"SQL Injection in report_xml.php through countryFilter[] parameter"]] - `critical`, $25,000, 410 votes, Valve
+- [[disclosures/h1-403616-www-zomato-com-sqli-php-item-id|"[www.zomato.com] SQLi - /php/██████████ - item_id"]] - `critical`, $4,500, 326 votes, Eternal
+- [[disclosures/h1-761304-sql-injection-on-cookie-parameter|" SQL Injection on cookie parameter"]] - `high`, undisclosed, 323 votes, MTN Group
+- [[disclosures/h1-962889-sql-injection-in-agent-manager|"SQL Injection in agent-manager"]] - `high`, undisclosed, 237 votes, Acronis
+- [[disclosures/h1-592400-blind-sqli-leading-to-rce-from-unauthenticated-access-to-a-t|"Blind SQLi leading to RCE, from Unauthenticated access to a test API Webservice"]] - `critical`, undisclosed, 236 votes, Starbucks
+- [[disclosures/h1-549355-blind-sql-injection-on-starbucks-com-gt-and-waf-bypass|"Blind SQL Injection on starbucks.com.gt and WAF Bypass  :*"]] - `high`, undisclosed, 210 votes, Starbucks
+- [[disclosures/h1-273946-www-drivegrab-com-sql-injection|"www.drivegrab.com SQL injection"]] - `high`, $4,500, 205 votes, Grab
+- [[disclosures/h1-435066-sql-injection-in-graphql-endpoint-through-embedded-submissio|"SQL injection in GraphQL endpoint through embedded_submission_form_uuid parameter"]] - `critical`, undisclosed, 175 votes, HackerOne
+- [[disclosures/h1-1039315-sql-injection-on-docs-atavist-com|"Sql injection on docs.atavist.com"]] - `high`, undisclosed, 170 votes, Automattic
+- [[disclosures/h1-2958619-sqli-in-url-paths|"SQLi \| in URL paths"]] - `critical`, undisclosed, 149 votes, MTN Group
+- [[disclosures/h1-3578842-sql-injection-vulnerability-found-on-ibm-com-endpoint|"SQL Injection vulnerability found on ibm.com endpoint"]] - `critical`, undisclosed, 137 votes, IBM
+- [[disclosures/h1-952501-solr-injection-in-user-id-parameter-at-v2-leaderboard-v2-jso|"Solr Injection in `user_id` parameter at :/v2/leaderboard_v2.json"]] - `critical`, $2,000, 137 votes, Eternal
+- [[disclosures/h1-1044698-intensedebate-com-sql-injection-time-based-on-js-commentacti|"[intensedebate.com] SQL Injection Time Based On /js/commentAction/"]] - `critical`, undisclosed, 130 votes, Automattic
+- [[disclosures/h1-1525200-sql-injection-at-https-files-palantir-com-due-to-cve-2021-38|"SQL Injection at https://files.palantir.com/ due to CVE-2021-38159"]] - `high`, undisclosed, 121 votes, Palantir Public
+- [[disclosures/h1-923020-sql-injection-on-admin-acronis-host-development-web-service|"SQL injection on admin.acronis.host development web service"]] - `high`, $250, 118 votes, Acronis
+- [[disclosures/h1-2633959-sql-injection-in-url-path-leads-to-database-access|"SQL injection in URL path leads to Database Access"]] - `critical`, undisclosed, 115 votes, MTN Group
+- [[disclosures/h1-3564655-complete-authentication-bypass-to-admin-permissions|"Complete authentication bypass to admin permissions"]] - `critical`, undisclosed, 100 votes, Rocket.Chat
+- [[disclosures/h1-2312334-time-based-sql-injection-at|"Time based SQL injection at████████"]] - `high`, undisclosed, 96 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3292573-sql-injection-when-using-filteredrelation|"SQL Injection when using FilteredRelation"]] - `critical`, undisclosed, 96 votes, Django
+- [[disclosures/h1-2209130-sql-injection-on-prod-oidc-proxy-prod-webservices-mozgcp-net|"SQL Injection on prod.oidc-proxy.prod.webservices.mozgcp.net via invite_code parameter - Mozilla social inscription"]] - `critical`, undisclosed, 93 votes, Mozilla
+- [[disclosures/h1-3395221-error-based-time-based-sql-injection-in-keyword-parameter-of|"Error-Based & Time-Based SQL Injection in 'keyword' Parameter of admin-search.php Allowing Full Database Access in Revive Adserver v6.0.0"]] - `high`, undisclosed, 93 votes, Revive Adserver
+- [[disclosures/h1-2737595-sql-injection|"SQL Injection"]] - `high`, undisclosed, 91 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1893800-sql-injection-in-cve-discovery-search|"SQL Injection in CVE Discovery Search "]] - `high`, undisclosed, 88 votes, HackerOne
+- [[disclosures/h1-995122-sqli-time-bassed-injection-at-via-referer-header|"[SQLI ]Time  Bassed Injection at ██████████ via referer header"]] - `high`, undisclosed, 87 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1042746-intensedebate-com-sql-injection-time-based-on-changereplaceo|"[intensedebate.com] SQL Injection Time Based on /changeReplaceOpt.php"]] - `critical`, undisclosed, 80 votes, Automattic
+- [[disclosures/h1-3462991-sql-injection-in-column-type-parameter-allows-arbitrary-sql-|"SQL Injection in Column Type Parameter Allows Arbitrary SQL Execution"]] - `high`, undisclosed, 80 votes, Nextcloud
+- [[disclosures/h1-390879-sql-injection-on-www-on-countid-parameter|"SQL Injection on www.██████████ on countID parameter"]] - `high`, undisclosed, 80 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3335709-sql-injection-in-django-orm-via-unvalidated-connector-in-q-o|"SQL Injection in Django ORM via Unvalidated `_connector` in Q Objects"]] - `critical`, undisclosed, 77 votes, Django
+- [[disclosures/h1-508487-arbitrary-sql-command-injection|"Arbitrary SQL command injection"]] - `critical`, undisclosed, 77 votes, Nextcloud
+- [[disclosures/h1-1935151-sql-injection-at-https-via-parameter|"SQL Injection at https://████ via ███ parameter"]] - `critical`, undisclosed, 74 votes, Sony
+- [[disclosures/h1-419017-sql-injection-in|"SQL Injection in ████"]] - `high`, undisclosed, 73 votes, U.S. Dept Of Defense
+- [[disclosures/h1-300176-https-reviews-zomato-com-time-based-sql-injection|"[https://reviews.zomato.com] Time Based SQL Injection"]] - `critical`, $1,000, 72 votes, Eternal
+- [[disclosures/h1-1034625-blind-sql-injection-at-tsftp-informatica-com|"Blind SQL injection at tsftp.informatica.com"]] - `critical`, undisclosed, 68 votes, Informatica
+- [[disclosures/h1-2588426-sql-injection-in-jsonfield-keytransform|"SQL injection in JSONField KeyTransform"]] - `high`, undisclosed, 68 votes, Django
+- [[disclosures/h1-838855-www-zomato-com-blind-sql-injection-in-php-geto2banner|"[www.zomato.com] Blind SQL Injection in /php/geto2banner"]] - `critical`, $2,000, 68 votes, Eternal
+- [[disclosures/h1-1878584-time-based-sql-injection|"Time Based SQL Injection"]] - `critical`, undisclosed, 64 votes, U.S. Department of State
+- [[disclosures/h1-2256032-sql-injection-at|"SQL injection at ███████"]] - `critical`, undisclosed, 63 votes, Sony
+- [[disclosures/h1-358669-www-zomato-com-sqli-on-order-id-parameter|"[www.zomato.com] SQLi on `order_id` parameter"]] - `critical`, $1,000, 63 votes, Eternal
+- [[disclosures/h1-3293803-sqli-at-via-theme-name|"SQLi At `███████` via `theme_name` "]] - `critical`, undisclosed, 62 votes, Mars
+- [[disclosures/h1-1626226-unauthenticated-sql-injection-at-htus|"Unauthenticated SQL Injection at █████████  [HtUS]"]] - `critical`, undisclosed, 61 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2882887-cve-2024-53908-django-potential-sql-injection-in-haskey-lhs-|"CVE-2024-53908: Django Potential SQL injection in `HasKey(lhs, rhs)` on Oracle"]] - `high`, undisclosed, 61 votes, Internet Bug Bounty
+- [[disclosures/h1-1355817-sql-injection-in-ibm-access-control-panel-broken-access-in-a|"SQL Injection in IBM access control panel & Broken access in admin panel"]] - `critical`, undisclosed, 54 votes, IBM
+- [[disclosures/h1-836079-www-zomato-com-blind-sql-injection-in-php-widgets-handler-ph|"[www.zomato.com] Blind SQL Injection in /php/widgets_handler.php"]] - `critical`, $2,000, 54 votes, Eternal
+- [[disclosures/h1-3417967-potential-sql-injection-when-annotating-filteredrelation-on-|"Potential SQL Injection when annotating FilteredRelation on PostgreSQL"]] - `high`, undisclosed, 52 votes, Django
+- [[disclosures/h1-1436751-sql-injection-in-https-demor-adr-acronis-com-via-the-usernam|"SQL injection in https://demor.adr.acronis.com/ via the username parameter"]] - `high`, undisclosed, 49 votes, Acronis
+- [[disclosures/h1-3653196-blind-sql-injection-via-clientid-parameter-in-zone-include-p|"Blind SQL injection via clientid parameter in zone‑include.php"]] - `high`, undisclosed, 49 votes, Revive Adserver
+- [[disclosures/h1-519631-sql-injection-in|"SQL Injection in ████"]] - `high`, undisclosed, 49 votes, U.S. Dept Of Defense
+- [[disclosures/h1-384397-sql-injection-vulnerability-located-at|"SQL Injection vulnerability located at ████████"]] - `high`, undisclosed, 45 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1069531-blind-sql-injection|"Blind SQL Injection "]] - `critical`, undisclosed, 43 votes, MTN Group
+- [[disclosures/h1-361623-sqli-on-uberpartner-eu-leads-to-exposure-of-sensitive-user-d|"SQLI on uberpartner.eu leads to exposure of sensitive user data of Uber partners"]] - `high`, $1,500, 43 votes, Uber
+- [[disclosures/h1-3277276-sqli-at-parameter|"SQLi at █████ parameter"]] - `critical`, undisclosed, 42 votes, Mars
+- [[disclosures/h1-1567516-sql-injection-via-https-setup-p2p-ihost-com|"sql injection via https://setup.p2p.ihost.com/"]] - `critical`, undisclosed, 41 votes, IBM
+- [[disclosures/h1-298176-sql-injection-in-milestonefinder-order-method|"SQL injection in MilestoneFinder order method"]] - `critical`, $2,000, 41 votes, GitLab
+- [[disclosures/h1-690349-sql-injection-in-errors-viewbuild|"SQL injection in /errors/viewbuild/"]] - `critical`, undisclosed, 41 votes, Valve
+- [[disclosures/h1-3778282-critical-sql-injection-wdm-api|"Critical SQL Injection WDM API (████████)"]] - `critical`, undisclosed, 40 votes, Essity
+- [[disclosures/h1-1527284-sql-injection-in-url-path-processing-on-www-ibm-com|"SQL injection in URL path processing on www.ibm.com"]] - `critical`, undisclosed, 35 votes, IBM
+- [[disclosures/h1-3662095-sql-injection-found-on-ibm-com-subdomain|"SQL Injection found on ibm.com subdomain"]] - `critical`, undisclosed, 34 votes, IBM
+- [[disclosures/h1-1506129-sql-injection-in-version-1-4-3-and-below|"SQL Injection in version 1.4.3 and below"]] - `high`, undisclosed, 32 votes, ImpressCMS
+- [[disclosures/h1-865436-sql-injection-on-the-administrator-panel|"SQL Injection on the administrator panel"]] - `critical`, undisclosed, 32 votes, MTN Group
+- [[disclosures/h1-1081145-sql-injection-through-include-findusers-php|"SQL Injection through /include/findusers.php"]] - `critical`, undisclosed, 30 votes, ImpressCMS
+- [[disclosures/h1-1125752-sql-injection-on-https-soa-accp-glbx-tva-gov-via-api-path-vi|"SQL Injection on https://soa-accp.glbx.tva.gov/ via '/api/' path - VI-21-015"]] - `critical`, undisclosed, 30 votes, Tennessee Valley Authority
+- [[disclosures/h1-1628408-sql-injection-at-https-asp-selmajcom-htus|"SQL Injection at https://████████.asp (█████████) [selMajcom] [HtUS]"]] - `critical`, undisclosed, 30 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1663299-ability-to-escape-database-transaction-through-sql-injection|"Ability to escape database transaction through SQL injection, leading to arbitrary code execution"]] - `high`, undisclosed, 30 votes, HackerOne
+- [[disclosures/h1-390359-soap-wsdl-parser-sql-code-execution|"SOAP WSDL Parser SQL Code Execution"]] - `critical`, undisclosed, 30 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1627995-sql-injection-at-https-htus|"SQL injection at [https://█████████] [HtUS]"]] - `critical`, undisclosed, 29 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2266081-blind-sql-injection-on-via-uri-path|"Blind SQL Injection on █████ via URI Path"]] - `critical`, undisclosed, 29 votes, Mars
+- [[disclosures/h1-311922-sql-injection|" SQL injection "]] - `high`, undisclosed, 29 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3797662-sql-injection-via-unsanitized-identifiers-and-string-literal|"SQL Injection via Unsanitized Identifiers and String Literals in `@aws-cdk/aws-redshift-alpha` Custom Resource Handlers"]] - `high`, undisclosed, 27 votes, AWS VDP
+- [[disclosures/h1-491191-sql-injection-in-the-move-papers-php-on-the-https|"SQL Injection in the `move_papers.php` on the https://██████████"]] - `high`, undisclosed, 26 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1216408-h1-ctf-100k-solution-congratz-on-the-100k-rep-todayisnew|"H1-CTF 100k Solution - Congratz on the 100k Rep todayisnew"]] - `critical`, undisclosed, 25 votes, h1-ctf
+- [[disclosures/h1-488795-sql-injection-on-the-https|"SQL injection on the https://████/"]] - `high`, undisclosed, 23 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1213207-sql-injection-on|"SQL Injection on [█████████]"]] - `high`, undisclosed, 22 votes, Sony
+- [[disclosures/h1-319279-critical-sql-injection-by-get-method|"[critical] sql injection by GET method"]] - `high`, undisclosed, 22 votes, Khan Academy
+- [[disclosures/h1-277380-sql-injection-on|"SQL Injection on █████"]] - `high`, undisclosed, 21 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1434017-saving-christmas-from-grinchy-gods|"Saving Christmas from Grinchy Gods"]] - `critical`, undisclosed, 20 votes, h1-ctf
+- [[disclosures/h1-1627970-time-based-sql-injection-at-https-htus|"time based SQL injection at [https://███] [HtUS]"]] - `critical`, undisclosed, 20 votes, U.S. Dept Of Defense
+- [[disclosures/h1-246412-sql-injection-exploitable-in-boolean-mode|"SQL Injection, exploitable in boolean mode"]] - `critical`, undisclosed, 20 votes, Eternal
+- [[disclosures/h1-1626198-sql-injection-at-htus|"SQL injection at [█████████] [HtUS]"]] - `critical`, undisclosed, 17 votes, U.S. Dept Of Defense
+- [[disclosures/h1-179920-wordpress-db-class-bad-implementation-of-prepare-method-guid|"WordPress DB Class, bad implementation of prepare method guides to sqli and information disclosure"]] - `critical`, undisclosed, 17 votes, WordPress
+- [[disclosures/h1-1216591-100k-ctf-s-writeup|"100K CTF's Writeup"]] - `critical`, undisclosed, 15 votes, h1-ctf
+- [[disclosures/h1-313037-blind-sql-injection-on|"Blind SQL injection on ████████"]] - `high`, undisclosed, 15 votes, U.S. Dept Of Defense
+- [[disclosures/h1-506654-typeorm-sql-injection|"[typeorm] SQL Injection"]] - `high`, undisclosed, 15 votes, Node.js third-party modules
+- [[disclosures/h1-1024984-sqli-time-bassed-injection-at-via-library-php-c-g14-paramete|"[SQLI ]Time Bassed Injection at ██████████ via /██████/library.php?c=G14 parameter"]] - `high`, undisclosed, 14 votes, U.S. Dept Of Defense
+- [[disclosures/h1-311244-query-mysql-sql-injection-due-to-lack-of-user-input-sanitiza|"[query-mysql] SQL Injection due to lack of user input sanitization allows to run arbitrary SQL queries when fetching data from database"]] - `critical`, undisclosed, 14 votes, Node.js third-party modules
+- [[disclosures/h1-374027-blind-sql-injection|"blind sql injection"]] - `high`, undisclosed, 14 votes, Hanno's projects
+- [[disclosures/h1-3873072-unauthenticated-sql-injection-via-rest-batch-route-confusion|"Unauthenticated SQL Injection via REST Batch Route Confusion ████████"]] - `critical`, undisclosed, 14 votes, Essity
+- [[disclosures/h1-4152726-blind-sql-injection-ibm-training-course-search-api|"Blind SQL Injection — IBM Training Course Search API"]] - `critical`, undisclosed, 14 votes, IBM
+- [[disclosures/h1-507222-untitled-model-sql-injection|"[untitled-model] sql injection"]] - `high`, undisclosed, 14 votes, Node.js third-party modules
+- [[disclosures/h1-1216085-ccc-ctf|"ccc ctf "]] - `critical`, $100, 13 votes, h1-ctf
+- [[disclosures/h1-272506-sql-injections|" SQL injections"]] - `high`, undisclosed, 13 votes, U.S. Dept Of Defense
+- [[disclosures/h1-310031-sql-injection-on-due-to-tech-cfm|"SQL injection on █████ due to tech.cfm "]] - `high`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-447742-sql-injection-in-login-page-https-login-php|"SQL Injection in Login Page: https://█████/█████████/login.php"]] - `high`, undisclosed, 12 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1757676-nosql-injection-in-listemojicustom-method-call|"NoSQL injection in listEmojiCustom method call"]] - `high`, undisclosed, 11 votes, Rocket.Chat
+- [[disclosures/h1-2081316-blind-sql-injection-in-https-qssearch-aspx|"Blind Sql Injection in https://█████/qsSearch.aspx"]] - `high`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-216699-sql-injection-vulnerability-in-a-dod-website|"SQL Injection vulnerability in a DoD website"]] - `high`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-232378-sql-injection-on-https|"SQL Injection on https://████████/"]] - `high`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3809973-error-based-sql-injection-in-com-login-password-reset-userna|"Error-Based SQL Injection in ████████.com Login/Password Reset (username parameter)"]] - `critical`, undisclosed, 11 votes, Essity
+- [[disclosures/h1-577612-mssql-injection-via-param-customwho-in-https-news-transcript|"MSSQL injection via param Customwho in https://█████/News/Transcripts/Search/Sort/ and WAF bypass"]] - `high`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-703819-sql-injection-and-plaintext-passwords-via-user-search|"SQL Injection and plaintext passwords via User Search"]] - `high`, undisclosed, 11 votes, IBM
+- [[disclosures/h1-1390331-sql-injextion-via-vulnerable-doctrine-dbal-version|"SQL injextion via vulnerable doctrine/dbal version"]] - `high`, undisclosed, 10 votes, Nextcloud
+- [[disclosures/h1-1489744-sql-injection-in|"SQL Injection in █████"]] - `critical`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3234050-sql-injection-in-uri-path-leading-to-full-database-disclosur|"SQL Injection in URI Path Leading to Full Database Disclosure on ████████"]] - `high`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-982202-sqli-in-login-form-of|"SQLi in login form of █████"]] - `critical`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1581059-regex-account-takeover|"Regex account takeover"]] - `critical`, undisclosed, 9 votes, Rocket.Chat
+- [[disclosures/h1-2072306-blind-sql-injection-in-https|"Blind Sql Injection in https://████████/"]] - `high`, undisclosed, 9 votes, U.S. Dept Of Defense
+- [[disclosures/h1-924855-sql-injection-futexpert-mtngbissau-com|"SQL injection [futexpert.mtngbissau.com]"]] - `high`, undisclosed, 9 votes, MTN Group
+- [[disclosures/h1-954667-sqli-on|"SQLi on █████████"]] - `high`, undisclosed, 9 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1002641-sql-injection-leads-to-retrieve-the-contents-of-an-entire-da|"SQL Injection leads to retrieve the contents of an entire database. "]] - `critical`, undisclosed, 8 votes, BlockDev Sp. Z o.o
+- [[disclosures/h1-1015406-sql-injection-in-www|"SQL Injection in www.██████████"]] - `high`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-186367-sqli-in-lasco-cme-query|"SQLi in LASCO CME Query"]] - `high`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2830573-sql-injection-identified-on-ibm-endpoint|"SQL injection identified on IBM endpoint. "]] - `critical`, undisclosed, 8 votes, IBM
+- [[disclosures/h1-869574-sql-injection-or-denial-of-service-due-to-a-prototype-pollut|"SQL Injection or Denial of Service due to a Prototype Pollution"]] - `critical`, undisclosed, 8 votes, Node.js third-party modules
+- [[disclosures/h1-1067037-taking-grinch-down-to-save-holidays|"Taking Grinch Down To Save Holidays"]] - `critical`, undisclosed, 7 votes, h1-ctf
+- [[disclosures/h1-193936-sql-injection-vulnerability-on-a-dod-website|"SQL injection vulnerability on a DoD website"]] - `high`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3127562-sql-injection-via-url|"SQL Injection via URL"]] - `high`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1018621-sql-injections-on-referer-header-exploitable-via-time-based-|"[████] SQL Injections on Referer Header exploitable via Time-Based method"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1215919-ccc-h1ctf-com-ctf|"ccc.h1ctf.com CTF"]] - `critical`, undisclosed, 6 votes, h1-ctf
+- [[disclosures/h1-3127152-sql-injection-data-account-id-parameter|"SQL Injection - data[account][id] parameter"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3127198-sql-injection-entryid-parameter-in-formbuilderv2-confirmatio|"SQL Injection - entryid parameter in 'formbuilderv2-confirmation.php'"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3257171-sql-injection-json-name-parameter|"SQL Injection - JSON 'name' parameter"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-397445-express-cart-customer-and-admin-email-enumeration-through-mo|"[express-cart] Customer and admin email enumeration through MongoDB injection"]] - `high`, undisclosed, 6 votes, Node.js third-party modules
+- [[disclosures/h1-489483-sql-injection-in-the-get-publications-php-on-the-https|"SQL Injection in the get_publications.php on the https://█████"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-722145-critical-sql-injection-on-http-axa-dxi-eu|"[CRITICAL] Sql Injection on http://axa.dxi.eu"]] - `critical`, undisclosed, 6 votes, 8x8
+- [[disclosures/h1-1066233-ctf-writeup|"CTF Writeup"]] - `critical`, undisclosed, 5 votes, h1-ctf
+- [[disclosures/h1-381758-sql-injection-on-messagecenter-messagingcenter-at-https-www|"sql injection on  /messagecenter/messagingcenter at https://www.███████/"]] - `high`, undisclosed, 5 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1262757-sql-injection-located-in-in-post-param|"SQL injection located in `███` in POST param `████████` "]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1278928-blind-sql-on-https-argocd-upchieve-org-login-return-url-id|"blind sql on  [ https://argocd.upchieve.org/login?return_url=id= ]"]] - `critical`, undisclosed, 4 votes, UPchieve
+- [[disclosures/h1-192079-sql-injection-vulnerability-in-a-dod-website|"SQL Injection vulnerability in a DoD website"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-192110-sql-injection-vulnerability-in-a-dod-website|"SQL Injection vulnerability in a DoD website"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-348047-code-reversion-allowing-sqli-again-in|"Code reversion allowing SQLI again in ███████"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-374748-sql-injection-in-serendipity-serendipity-fetchcomments|"SQL injection in Serendipity (serendipity_fetchComments)"]] - `high`, undisclosed, 4 votes, Hanno's projects
+- [[disclosures/h1-381771-sql|"████████ SQL"]] - `high`, undisclosed, 3 votes, U.S. Dept Of Defense
+- [[disclosures/h1-692326-followup-sql-injection-https-msi-portal|"Followup - SQL Injection - https://██████████/██████/MSI.portal"]] - `high`, undisclosed, 3 votes, U.S. Dept Of Defense
+- [[disclosures/h1-922567-sql-injection-stacked-queries-in-the-export-to-excel-functio|"SQL injection (stacked queries) in the export to Excel functionality on Vidyo Server"]] - `high`, undisclosed, 3 votes, 8x8
+- [[disclosures/h1-360539-sql-injection-proof-of-concept-for-starbucks-url|"SQL Injection Proof of Concept for Starbucks URL"]] - `high`, undisclosed, 2 votes, Starbucks
+- [[disclosures/h1-3896779-blind-sql-injection-due-to-request-precedence-issue-in-globa|"Blind SQL injection due to request precedence issue in global input registration"]] - `high`, undisclosed, 2 votes, Revive Adserver
+- [[disclosures/h1-506644-azhou-basemodel-sql-injection|"[@azhou/basemodel] SQL injection"]] - `high`, undisclosed, 2 votes, Node.js third-party modules
+- [[disclosures/h1-508346-increments-sql-injection|"[increments] sql injection"]] - `high`, undisclosed, 1 votes, Node.js third-party modules
+- [[disclosures/h1-1069263-first-ctf-ever|"First CTF ever!"]] - `critical`, undisclosed, 0 votes, h1-ctf
+
+> Auto-generated from `disclosures/` by `node vault-admin/crawler/gen_cwe_pages.js`. Do not edit by hand.

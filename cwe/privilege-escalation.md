@@ -1,0 +1,130 @@
+---
+tags:
+  - type/cwe
+generated: true
+---
+# Privilege Escalation
+
+> **Disclosures in vault:** 115 | **Critical:** 37 | **High:** 78 | **Total known bounty:** $75,350 (20 disclosed) | **Top programs:** `Starbucks` (9), `h1-ctf` (7), `Ubiquiti Inc.` (6), `U.S. Dept Of Defense` (6), `Internet Bug Bounty` (5), `8x8` (5), `Acronis` (5), `Node.js` (5), `GitLab` (3), `Semmle` (3)
+
+## All disclosures of this class
+
+Ranked by community votes - the top of this list is the canonical writeup set for how this class actually lands.
+
+- [[disclosures/h1-910300-email-confirmation-bypass-in-your-store-myshopify-com-which-|"Email Confirmation Bypass in your-store.myshopify.com which leads to privilege escalation"]] - `critical`, undisclosed, 559 votes, Shopify
+- [[disclosures/h1-698579-able-to-become-admin-for-any-line-official-account|"Able to Become Admin for Any LINE Official Account"]] - `critical`, undisclosed, 493 votes, LY Corporation
+- [[disclosures/h1-689314-project-template-functionality-can-be-used-to-copy-private-p|"Project Template functionality can be used to copy private project data, such as repository, confidential issues, snippets, and merge requests"]] - `critical`, $12,000, 457 votes, GitLab
+- [[disclosures/h1-665398-subdomain-takeover-of-datacafe-cert-starbucks-com|"Subdomain takeover of datacafe-cert.starbucks.com"]] - `high`, undisclosed, 311 votes, Starbucks
+- [[disclosures/h1-1379975-bd-j-exploit-chain|"bd-j exploit chain"]] - `high`, $20,000, 298 votes, PlayStation
+- [[disclosures/h1-493324-privilege-escalation-from-any-user-including-external-to-git|"Privilege escalation from any user (including external) to gitlab admin when admin impersonates you"]] - `critical`, undisclosed, 256 votes, GitLab
+- [[disclosures/h1-692603-privilege-escalation-in-workers-container|"Privilege escalation in workers container "]] - `high`, $1,500, 206 votes, Semmle
+- [[disclosures/h1-697055-worker-container-escape-lead-to-arbitrary-file-reading-in-ho|"Worker container escape lead to arbitrary file reading in host machine [again]"]] - `critical`, $2,000, 178 votes, Semmle
+- [[disclosures/h1-779442-subdomain-takeover-of-storybook-lystit-com|"Subdomain takeover of storybook.lystit.com"]] - `high`, $1,000, 163 votes, Lyst
+- [[disclosures/h1-661751-subdomain-takeover-of-d02-1-ag-productioncontroller-starbuck|"Subdomain takeover of d02-1-ag.productioncontroller.starbucks.com"]] - `high`, undisclosed, 122 votes, Starbucks
+- [[disclosures/h1-520903-apache-http-2-4-17-2-4-38-local-root-privilege-escalation|"Apache HTTP [2.4.17-2.4.38] Local Root Privilege Escalation"]] - `high`, $1,500, 121 votes, Internet Bug Bounty
+- [[disclosures/h1-694181-worker-container-escape-lead-to-arbitrary-file-reading-in-ho|"Worker container escape lead to arbitrary file reading in host machine"]] - `critical`, $2,000, 112 votes, Semmle
+- [[disclosures/h1-325336-subdomain-takeover-on-svcgatewayus-starbucks-com|"Subdomain takeover on svcgatewayus.starbucks.com"]] - `critical`, undisclosed, 109 votes, Starbucks
+- [[disclosures/h1-484420-subdomain-takeover-on-usclsapipma-cv-ford-com|"Subdomain takeover on usclsapipma.cv.ford.com"]] - `high`, undisclosed, 105 votes, Ford
+- [[disclosures/h1-496285-ubuntu-linux-privilege-escalation-dirty-sock|"Ubuntu Linux privilege escalation (dirty_sock)"]] - `high`, undisclosed, 103 votes, Internet Bug Bounty
+- [[disclosures/h1-1107282-privilege-escalation-via-rest-api-to-administrator-leads-to-|"Privilege Escalation via REST API to Administrator leads to RCE"]] - `high`, undisclosed, 92 votes, WordPress
+- [[disclosures/h1-388622-subdomain-takeover-on-wfmnarptpc-starbucks-com|"Subdomain takeover on wfmnarptpc.starbucks.com"]] - `high`, undisclosed, 91 votes, Starbucks
+- [[disclosures/h1-264494-subdomain-takeover-at-creatorforum-roblox-com|"Subdomain Takeover at creatorforum.roblox.com"]] - `high`, undisclosed, 90 votes, Roblox
+- [[disclosures/h1-1363185-attacker-is-able-to-join-any-tenant-on-larksuite-and-view-pe|"Attacker is able to join any tenant on larksuite and view personal files/chats."]] - `critical`, undisclosed, 84 votes, Lark Technologies
+- [[disclosures/h1-276269-multiple-subdomain-takeovers-via-unclaimed-instances|"Multiple Subdomain takeovers via unclaimed instances"]] - `high`, undisclosed, 83 votes, Starbucks
+- [[disclosures/h1-2450685-unauthorized-access-to-pii-leads-to-administrator-account-ta|"Unauthorized access to PII leads to Administrator account Takeover"]] - `critical`, undisclosed, 82 votes, MTN Group
+- [[disclosures/h1-511025-privilege-0-to-root-privilege-escalation-on-edgeswitch|"Privilege-0 to Root Privilege Escalation on EdgeSwitch"]] - `high`, undisclosed, 82 votes, Ubiquiti Inc.
+- [[disclosures/h1-197489-subdomain-takeover-at-signup-uber-com|"Subdomain takeover at signup.uber.com"]] - `high`, undisclosed, 79 votes, Uber
+- [[disclosures/h1-3303136-pending-invites-remain-valid-even-after-the-inviter-is-remov|"Pending invites remain valid even after the inviter is removed."]] - `high`, undisclosed, 77 votes, Omise
+- [[disclosures/h1-423269-china-president-starbucks-com-cn-dns-configuration-reported-|"China - president-starbucks.com.cn DNS configuration reported as takeover"]] - `high`, undisclosed, 71 votes, Starbucks
+- [[disclosures/h1-583184-arbitrary-file-write-as-system-from-unprivileged-user|"Arbitrary File Write as SYSTEM from unprivileged user"]] - `high`, $1,250, 71 votes, Valve
+- [[disclosures/h1-2372018-non-org-admin-group-manager-can-create-groups-in-an-organiza|"Non Org Admin/Group Manager can create groups in an organization"]] - `high`, undisclosed, 68 votes, HackerOne
+- [[disclosures/h1-1851895-bug-report-23jan136-subdomain-takeover-via-shopify|"Bug Report #23JAN136 (subdomain takeover via shopify )"]] - `high`, undisclosed, 63 votes, Mars
+- [[disclosures/h1-3103849-privilege-escalation-leads-to-unauthorized-access-to-private|"Privilege Escalation leads to Unauthorized Access to Private Conversations By any Regular user  [Read , Edit and Delete]"]] - `critical`, undisclosed, 62 votes, Dust
+- [[disclosures/h1-1249583-authenticated-kubernetes-principal-with-restricted-permissio|"Authenticated kubernetes principal with restricted permissions can retrieve ingress-nginx serviceaccount token and secrets across all namespaces"]] - `high`, undisclosed, 55 votes, Kubernetes
+- [[disclosures/h1-1235008-social-club-account-takeover-via-rgl-and-steam-epic-linked-a|"Social Club Account Takeover Via RGL And Steam/Epic Linked Account"]] - `high`, undisclosed, 53 votes, Rockstar Games
+- [[disclosures/h1-1842829-privilege-escalation-in-kops-using-gce-gcp-provider|"Privilege Escalation in kOps using GCE/GCP Provider"]] - `high`, $2,500, 52 votes, Kubernetes
+- [[disclosures/h1-277138-privilege-escalation-read-only-to-admin|"Privilege Escalation: Read-Only to Admin"]] - `high`, undisclosed, 51 votes, Inflection
+- [[disclosures/h1-1851886-bug-report-23jan135-subdomain-takeover-via-shopify|"Bug Report #23JAN135 (subdomain takeover via shopify )"]] - `high`, undisclosed, 50 votes, Mars
+- [[disclosures/h1-921675-uncontrolled-search-path-element-allows-dll-hijacking-for-pr|"Uncontrolled Search Path Element allows DLL hijacking for priv esc to SYSTEM"]] - `high`, $250, 50 votes, GlassWire
+- [[disclosures/h1-412481-china-ecjobsdc-starbucks-com-cn-html-shtml-file-upload-vulne|"China - ecjobsdc.starbucks.com.cn html/shtml file upload vulnerability"]] - `high`, undisclosed, 46 votes, Starbucks
+- [[disclosures/h1-1168475-non-privileged-user-is-able-to-approve-his-own-app-himself-l|"Non privileged user is able to approve his own app himself leading to mass privilege  escalations."]] - `high`, undisclosed, 45 votes, Lark Technologies
+- [[disclosures/h1-1354452-api|"Выполнение API-методов при открытии сообщества/приложения"]] - `high`, $2,000, 44 votes, VK.com
+- [[disclosures/h1-478621-privilege-escalation-okl-lt|"Privilege Escalation удаляем все созданные ссылки с okl.lt"]] - `critical`, undisclosed, 44 votes, ok.ru
+- [[disclosures/h1-1636552-email-verification-bypass-allows-users-to-add-verify-any-ema|"Email Verification Bypass Allows Users to Add & verify Any Email  As Guardians Email "]] - `high`, undisclosed, 42 votes, Khan Academy
+- [[disclosures/h1-1181762-subdomain-takeover-of-wavecell-com|"Subdomain takeover of ███.wavecell.com"]] - `high`, undisclosed, 39 votes, 8x8
+- [[disclosures/h1-945122-arbitrary-file-creation-via-symlink-attack-on-syncagentsrv-a|"Arbitrary file creation via symlink attack on syncagentsrv (Acronis Sync Agent Service)"]] - `high`, undisclosed, 38 votes, Acronis
+- [[disclosures/h1-304378-acme-tls-sni-01-02-challenge-vulnerable-when-combined-with-s|"ACME TLS-SNI-01/02 challenge vulnerable when combined with shared hosting providers"]] - `critical`, undisclosed, 35 votes, Internet Bug Bounty
+- [[disclosures/h1-383564-subdomain-takeover-on-svcgatewaydevus-starbucks-com-and-svcg|"Subdomain takeover on svcgatewaydevus.starbucks.com and svcgatewayloadus.starbucks.com"]] - `critical`, undisclosed, 35 votes, Starbucks
+- [[disclosures/h1-1296366-ec2-subdomain-takeover-at-http|"EC2 subdomain takeover at http://████████/"]] - `critical`, undisclosed, 33 votes, U.S. Dept Of Defense
+- [[disclosures/h1-753375-upload-profile-photo-in-any-folder-you-want-with-any-extensi|"Upload Profile Photo in any folder you want with any extension you want"]] - `critical`, undisclosed, 33 votes, Stripo Inc
+- [[disclosures/h1-1718371-subdomain-takeover-at-http-test-www-midigator-com|"Subdomain takeover at http://test.www.midigator.com"]] - `high`, undisclosed, 32 votes, Equifax-vdp
+- [[disclosures/h1-392785-domain-takeover-in-obviousengine-com-a-snapchat-acquisitions|"Domain Takeover in [obviousengine.com] a snapchat acquisitions"]] - `high`, undisclosed, 32 votes, Snapchat
+- [[disclosures/h1-508493-group-admins-can-remove-arbitrary-data-from-data-directory-i|"Group admins can remove arbitrary data from 'data' directory (including admin data)"]] - `high`, undisclosed, 32 votes, Nextcloud
+- [[disclosures/h1-200427-access-of-android-protected-components-via-embedded-intent|"Access of Android protected components via embedded intent"]] - `critical`, undisclosed, 31 votes, Slack
+- [[disclosures/h1-219171-report|"Возможность взлома любого пользователя, не использующего двухфакторной аутентификации, через получения кода восстановления на чужой номер."]] - `critical`, undisclosed, 31 votes, VK.com
+- [[disclosures/h1-1791720-ad-account-takeover|"Ad Account Takeover"]] - `critical`, undisclosed, 30 votes, LinkedIn
+- [[disclosures/h1-403039-woocommerce-blacklist-in-map-meta-cap-leads-to-privilege-esc|"WooCommerce Blacklist in 'map_meta_cap' leads to Privilege Escalation of Shopmanagers"]] - `high`, undisclosed, 28 votes, Automattic
+- [[disclosures/h1-4081135-privilege-escalation-via-unfiltered-role-restoration-in-proj|"Privilege escalation via unfiltered role restoration in project backup import"]] - `critical`, undisclosed, 28 votes, Weblate
+- [[disclosures/h1-736863-bulgaria-subdomain-takeover-of-mail-starbucks-bg|"Bulgaria - Subdomain takeover of mail.starbucks.bg"]] - `high`, undisclosed, 26 votes, Starbucks
+- [[disclosures/h1-1071832-local-privilege-escalation-via-insecure-msi-file|"Local privilege escalation via insecure MSI file"]] - `high`, $250, 25 votes, Acronis
+- [[disclosures/h1-1168765-rce-hazard-in-reporting-via-chromium|"RCE hazard in reporting (via Chromium)"]] - `critical`, $10,000, 25 votes, Elastic
+- [[disclosures/h1-2170226-setuid-does-not-drop-all-privileges-due-to-io-uring|"setuid() does not drop all privileges due to io_uring"]] - `high`, undisclosed, 24 votes, Node.js
+- [[disclosures/h1-1108874-password-reset-link-hijacking-via-host-header-poisoning-lead|"Password Reset link hijacking via Host Header Poisoning leads to account takeover"]] - `critical`, undisclosed, 23 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2237545-code-injection-and-privilege-escalation-through-linux-capabi|"Code injection and privilege escalation through Linux capabilities"]] - `high`, undisclosed, 23 votes, Node.js
+- [[disclosures/h1-239719-privilege-escalation-using-api-feature|"Privilege Escalation using API->Feature"]] - `critical`, undisclosed, 23 votes, Ubiquiti Inc.
+- [[disclosures/h1-895172-h1-2006-2020-bypassing-access-control-checks-by-modifying-th|"[H1-2006 2020] Bypassing access control checks by modifying the URL, internal application state, or the HTML page, or using a custom API attack tool"]] - `critical`, undisclosed, 23 votes, h1-ctf
+- [[disclosures/h1-852613-remote-code-execution-on-cloud-via-latest-kibana-7-6-2|"Remote Code Execution on Cloud via latest Kibana 7.6.2"]] - `critical`, $10,000, 22 votes, Elastic
+- [[disclosures/h1-263542-subdomain-take-over-of-redacted-18f-gov|"Subdomain take-over of {REDACTED}.18f.gov"]] - `high`, undisclosed, 20 votes, GSA Bounty
+- [[disclosures/h1-268794-all-private-tokens-are-leaked-to-an-unauthenticated-attacker|"all private tokens are leaked to an unauthenticated attacker"]] - `critical`, undisclosed, 20 votes, GitLab
+- [[disclosures/h1-1382919-ingress-nginx-path-allows-retrieval-of-ingress-nginx-service|"Ingress-nginx path allows retrieval of ingress-nginx serviceaccount token"]] - `high`, $2,500, 18 votes, Kubernetes
+- [[disclosures/h1-269109-subdomain-takeover-via-unclaimed-uservoice-domain|"Subdomain Takeover via unclaimed UserVoice domain"]] - `high`, $250, 18 votes, Snapchat
+- [[disclosures/h1-900062-subdomain-takeover-of|"Subdomain takeover of ████"]] - `critical`, undisclosed, 18 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1429148-subdomain-takeover-at-https-new-rubyonrails-org|"Subdomain Takeover at https://new.rubyonrails.org/"]] - `high`, undisclosed, 17 votes, Ruby on Rails
+- [[disclosures/h1-1089502-dns-misconfiguration-subdomain-takeover-wavecell-com|"DNS Misconfiguration (Subdomain Takeover) ███.wavecell.com"]] - `high`, undisclosed, 15 votes, 8x8
+- [[disclosures/h1-1341133-subdomain-takeover|"Subdomain takeover [​████████]"]] - `critical`, undisclosed, 15 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2941920-elevation-of-privileges-eop-vulnerabilities-related-to-the-s|"Elevation of Privileges (EoP) vulnerabilities related to the some easy_options on Windows"]] - `high`, undisclosed, 14 votes, curl
+- [[disclosures/h1-495495-cve-2019-5736-escape-from-docker-and-kubernetes-containers-t|"CVE-2019-5736: Escape from Docker and Kubernetes containers to root on host"]] - `high`, undisclosed, 14 votes, Internet Bug Bounty
+- [[disclosures/h1-596363-report|"Бесконечный доступ к аккаунту если мы смогли хотя бы раз зайти на аккаунт."]] - `high`, $500, 14 votes, VK.com
+- [[disclosures/h1-824909-subdomain-takeover-uptime|"Subdomain Takeover uptime"]] - `high`, $100, 14 votes, BTFS
+- [[disclosures/h1-861744-remote-code-execution-in-coming-kibana-7-7-0|"Remote Code Execution in coming Kibana 7.7.0"]] - `critical`, $5,000, 14 votes, Elastic
+- [[disclosures/h1-1010787-request-access-for-uber-device-returns-management-platform-h|"Request Access for Uber Device Returns Management Platform (https://www.eats-devicereturns.com/request-access/) Bypass Allows Access to PII"]] - `high`, undisclosed, 13 votes, Uber
+- [[disclosures/h1-221454-privilege-escalation-in-the-client-impersonation-functionali|"Privilege escalation in the client impersonation functionality"]] - `high`, undisclosed, 13 votes, Ubiquiti Inc.
+- [[disclosures/h1-235059-privilege-escalation-user-who-does-not-have-access-is-able-t|"Privilege escalation-User who does not have access is able to add notes to the contact"]] - `high`, undisclosed, 13 votes, Mixmax
+- [[disclosures/h1-1197013-subdomain-takeover-of-jitsi-net|"Subdomain takeover of ████.jitsi.net"]] - `high`, undisclosed, 12 votes, 8x8
+- [[disclosures/h1-129698-unifi-video-server-broken-access-control-on-system-configura|"UniFi Video Server - Broken access control on system configuration"]] - `high`, undisclosed, 12 votes, Ubiquiti Inc.
+- [[disclosures/h1-1819668-brave-news-feeds-can-open-arbitrary-chrome-urls|"Brave News feeds can open arbitrary chrome: URLs"]] - `high`, undisclosed, 12 votes, Brave Software
+- [[disclosures/h1-324006-saas-admin-can-modify-delete-get-user-information|"SaaS admin can modify/delete/get user information."]] - `high`, undisclosed, 12 votes, Ping Identity
+- [[disclosures/h1-386807-flintcms-account-takeover-due-to-blind-mongodb-injection-in-|"[flintcms] Account takeover due to blind MongoDB injection in password reset"]] - `critical`, undisclosed, 12 votes, Node.js third-party modules
+- [[disclosures/h1-547145-okl-lt-js|"[okl.lt] Раскрытие администраторских функций в .js + Возможность использования этих функций."]] - `critical`, undisclosed, 12 votes, ok.ru
+- [[disclosures/h1-712318-able-to-login-into-login-topechelon-com|"able to login into login.topechelon.com"]] - `high`, undisclosed, 12 votes, Top Echelon Software
+- [[disclosures/h1-1010340-cve-2020-27194-linux-kernel-ebpf-verifier-bug-in-or-binary-o|"[CVE-2020-27194] Linux kernel: eBPF verifier bug in `or` binary operation tracking function leads to LPE"]] - `high`, $750, 11 votes, Internet Bug Bounty
+- [[disclosures/h1-1108125-dns-misconfiguration-subdomain-takeover-staging-8x8-com|"DNS Misconfiguration (Subdomain Takeover) █.staging.█.8x8.com"]] - `high`, undisclosed, 11 votes, 8x8
+- [[disclosures/h1-329659-unifi-video-web-interface-configuration-restore-user-privile|"UniFi Video web interface Configuration Restore user privilege escalation"]] - `high`, undisclosed, 11 votes, Ubiquiti Inc.
+- [[disclosures/h1-343626-privilege-escalation-allows-any-user-to-add-an-administrator|"Privilege escalation allows any user to add an administrator"]] - `critical`, undisclosed, 11 votes, Node.js third-party modules
+- [[disclosures/h1-944735-arbitrary-dll-injection-in-mmsminisrv-acronis-managed-machin|"Arbitrary DLL injection in mmsminisrv (Acronis Managed Machine Service Mini)"]] - `high`, undisclosed, 11 votes, Acronis
+- [[disclosures/h1-1101877-dns-misconfiguration-subdomain-takeover-8x8-com|"DNS Misconfiguration (Subdomain Takeover) ███████.8x8.com"]] - `high`, undisclosed, 10 votes, 8x8
+- [[disclosures/h1-1294492-dns-miconfiguration-leads-to-subdomain-takeover-max1-livepla|"DNS Miconfiguration Leads to Subdomain Takeover  - max1.liveplan.com"]] - `high`, undisclosed, 10 votes, Palo Alto Software
+- [[disclosures/h1-593926-homebrew-privilege-escalation-vulnerability|"Homebrew privilege escalation vulnerability"]] - `high`, undisclosed, 10 votes, Homebrew
+- [[disclosures/h1-887700-h1-2006-2020-multiple-vulnerabilities-leading-account-takeov|"[H1-2006 2020]  Multiple vulnerabilities leading account takeover"]] - `critical`, undisclosed, 10 votes, h1-ctf
+- [[disclosures/h1-166581-privilege-escalation-normal-user-can-somehow-make-admin-to-d|"Privilege escalation - Normal user can somehow make admin to delete shared folders"]] - `high`, undisclosed, 9 votes, Nextcloud
+- [[disclosures/h1-1251464-acronis-true-image-local-privilege-escalation-due-to-race-co|"Acronis True Image Local Privilege Escalation Due To Race Condition In Application Verification "]] - `high`, undisclosed, 8 votes, Acronis
+- [[disclosures/h1-1877919-the-use-of-proto-in-process-mainmodule-proto-require-bypasse|"The use of __proto__ in process.mainModule.__proto__.require() bypasses the permission system in Node v19.6.1"]] - `high`, undisclosed, 8 votes, Node.js
+- [[disclosures/h1-1960870-permissions-policies-can-be-bypassed-via-module-load|"Permissions policies can be bypassed via Module._load."]] - `high`, undisclosed, 8 votes, Node.js
+- [[disclosures/h1-544334-critical-possibility-to-takeover-any-user-account-2-without-|"[Critical] Possibility to takeover any user account #2 without interaction on the https://██████████"]] - `critical`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-586251-homebrew-installed-launchdaemons-create-simple-root-esclatio|"Homebrew installed LaunchDaemons create simple root esclations"]] - `high`, undisclosed, 8 votes, Homebrew
+- [[disclosures/h1-894604-h1-2006-2020-ctf-write-up|"[H1-2006 2020] CTF write-up"]] - `critical`, undisclosed, 8 votes, h1-ctf
+- [[disclosures/h1-1747642-permissions-policies-can-be-bypassed-via-process-mainmodule|"Permissions policies can be bypassed via process.mainModule"]] - `high`, undisclosed, 7 votes, Node.js
+- [[disclosures/h1-779113-h1-415-2020-bayotop-h1-415-ctf-writeup|"[h1-415 2020] @_bayotop h1-415-ctf writeup"]] - `critical`, undisclosed, 7 votes, h1-ctf
+- [[disclosures/h1-289051-subdomain-takeover|"Subdomain Takeover"]] - `high`, undisclosed, 6 votes, GSA Bounty
+- [[disclosures/h1-664044-app-takeover-makerdao-herokuapp-com|"App Takeover ( makerdao.herokuapp.com )"]] - `high`, undisclosed, 6 votes, BlockDev Sp. Z o.o
+- [[disclosures/h1-750118-local-privilege-escalation-to-root-via-xpc|"Local Privilege escalation to root via XPC"]] - `high`, undisclosed, 5 votes, Clario
+- [[disclosures/h1-892667-subdomain-takeover-of|"Subdomain takeover of ███"]] - `critical`, undisclosed, 5 votes, U.S. Dept Of Defense
+- [[disclosures/h1-140793-unifi-video-v3-2-2-windows-local-privileges-escalation-due-t|"UniFi Video v3.2.2 (Windows) Local Privileges Escalation due to weak default install directory ACLs"]] - `high`, undisclosed, 3 votes, Ubiquiti Inc.
+- [[disclosures/h1-358359-privilage-escalation-with-malicious-npmrc|"Privilage escalation with malicious .npmrc"]] - `high`, undisclosed, 3 votes, Node.js third-party modules
+- [[disclosures/h1-891093-h1-2006-2020-solution-for-the-h1-2006-ctf-challenge|"[H1-2006 2020] Solution for the h1-2006 CTF challenge"]] - `high`, undisclosed, 3 votes, h1-ctf
+- [[disclosures/h1-892337-h1-2006-2020-ctf-writeup-a-story-about-bounty-payments-colla|"[H1-2006 2020] [CTF Writeup] A story about Bounty Payments, Collaboration & Community"]] - `critical`, undisclosed, 3 votes, h1-ctf
+- [[disclosures/h1-1018790-subdomains-takeover-of-register-acronis-com-promo-acronis-co|"Subdomains takeover of  register.acronis.com, promo.acronis.com, info.acronis.com and promosandbox.acronis.com"]] - `high`, undisclosed, 2 votes, Acronis
+- [[disclosures/h1-714215-curl-on-windows-can-be-forced-to-execute-code-via-openssl-en|"curl on Windows can be forced to execute code via OpenSSL environment variables"]] - `high`, undisclosed, 2 votes, curl
+- [[disclosures/h1-895795-h1-2006-2020-writeup-h12006-ctf|"[h1-2006 2020]  Writeup h12006 CTF"]] - `high`, undisclosed, 2 votes, h1-ctf
+
+> Auto-generated from `disclosures/` by `node vault-admin/crawler/gen_cwe_pages.js`. Do not edit by hand.

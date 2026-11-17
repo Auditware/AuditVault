@@ -28,19 +28,17 @@ const GH_TOKEN = process.env.GITHUB_TOKEN || '';
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
+// Transport: crawlee browser-TLS client via lib/http.js (anti-bot standard).
+const { getRaw } = require('./lib/http');
+
 function get(url, extraHeaders = {}) {
-  return new Promise((resolve, reject) => {
-    const headers = { 'User-Agent': 'Mozilla/5.0', ...extraHeaders };
-    if (GH_TOKEN) headers['Authorization'] = `token ${GH_TOKEN}`;
-    require('https').get(url, { headers }, res => {
-      if ([301, 302, 307, 308].includes(res.statusCode) && res.headers.location) {
-        return get(res.headers.location, extraHeaders).then(resolve, reject);
-      }
-      const chunks = [];
-      res.on('data', c => chunks.push(c));
-      res.on('end', () => resolve({ status: res.statusCode, body: Buffer.concat(chunks) }));
-    }).on('error', reject);
-  });
+  const headers = { ...extraHeaders };
+  if (GH_TOKEN) headers['Authorization'] = `token ${GH_TOKEN}`;
+  // Preserve the original { status, body } contract used by ghList/ghDownload.
+  return (async () => {
+    const r = await getRaw(url, headers, { label: ' (github api)' });
+    return { status: r.statusCode, body: r.body };
+  })();
 }
 
 async function ghList(owner, repo, repoPath = '') {

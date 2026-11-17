@@ -1,0 +1,150 @@
+---
+tags:
+  - type/cwe
+generated: true
+---
+# Code Injection
+
+> **Disclosures in vault:** 135 | **Critical:** 67 | **High:** 68 | **Total known bounty:** $156,100 (19 disclosed) | **Top programs:** `U.S. Dept Of Defense` (29), `Node.js third-party modules` (18), `Kubernetes` (6), `Nextcloud` (5), `Internet Bug Bounty` (5), `curl` (5), `MTN Group` (4), `8x8` (4), `Revive Adserver` (4), `Automattic` (3)
+
+## All disclosures of this class
+
+Ranked by community votes - the top of this list is the canonical writeup set for how this class actually lands.
+
+- [[disclosures/h1-925585-rce-via-npm-misconfig-installing-internal-libraries-from-the|"RCE via npm misconfig -- installing internal libraries from the public registry"]] - `critical`, $30,000, 946 votes, PayPal
+- [[disclosures/h1-873614-websites-can-run-arbitrary-code-on-machines-running-the-play|"Websites Can Run Arbitrary Code on Machines Running the 'PlayStation Now' Application"]] - `critical`, $15,000, 780 votes, PlayStation
+- [[disclosures/h1-502758-rce-and-complete-server-takeover-of-http-www-starbucks-com-s|"RCE and Complete Server Takeover of http://www.█████.starbucks.com.sg/"]] - `critical`, undisclosed, 572 votes, Starbucks
+- [[disclosures/h1-783877-remote-code-execution-in-slack-desktop-apps-bonus|"Remote Code Execution in Slack desktop apps + bonus"]] - `critical`, undisclosed, 509 votes, Slack
+- [[disclosures/h1-1154542-rce-when-removing-metadata-with-exiftool|"RCE when removing metadata with ExifTool"]] - `critical`, $20,000, 508 votes, GitLab
+- [[disclosures/h1-1125425-rce-via-unsafe-inline-kramdown-options-when-rendering-certai|"RCE via unsafe inline Kramdown options when rendering certain Wiki pages"]] - `critical`, $20,000, 427 votes, GitLab
+- [[disclosures/h1-631956-panorama-ui-xss-leads-to-remote-code-execution-via-kick-disc|"Panorama UI XSS leads to Remote Code Execution via Kick/Disconnect Message"]] - `critical`, undisclosed, 420 votes, Valve
+- [[disclosures/h1-3782701-unauthenticated-rce-in-taskcluster-web-server-via-graphql-fi|"Unauthenticated RCE in Taskcluster web-server via GraphQL filter argument (sift $where)"]] - `critical`, $12,000, 361 votes, Mozilla
+- [[disclosures/h1-487008-arbitrary-file-read-via-ffmpeg-hls-parser-at-https-www-flick|"Arbitrary file read via ffmpeg HLS parser at https://www.flickr.com/photos/upload"]] - `critical`, undisclosed, 340 votes, Flickr
+- [[disclosures/h1-1007014-rce-via-npm-misconfig-installing-internal-libraries-from-the|"RCE via npm misconfig -- installing internal libraries from the public registry"]] - `critical`, $9,000, 325 votes, Uber
+- [[disclosures/h1-851807-code-injection-possible-with-malformed-nextcloud-talk-chat-c|"Code injection possible with malformed Nextcloud Talk chat commands"]] - `high`, undisclosed, 317 votes, Nextcloud
+- [[disclosures/h1-1024575-rce-on-tiktok-ads-portal|"RCE on TikTok Ads Portal"]] - `critical`, undisclosed, 312 votes, TikTok
+- [[disclosures/h1-1043385-arbitrary-code-execution-via-npm-misconfiguration-installing|"Arbitrary Code Execution via npm misconfiguration – installing internal libraries from the public registry"]] - `critical`, $11,500, 288 votes, LY Corporation
+- [[disclosures/h1-1044716-sql-injection-in-www-hyperpure-com|"SQL Injection in www.hyperpure.com"]] - `critical`, $2,000, 229 votes, Eternal
+- [[disclosures/h1-3694007-authenticated-elasticsearch-painless-script-execution-via-qu|"Authenticated Elasticsearch Painless script execution via Query.search.sort_query on hackerone.com/graphql"]] - `high`, $7,000, 174 votes, HackerOne
+- [[disclosures/h1-210741-unserialize-leading-to-arbitrary-php-function-invoke|"Unserialize leading to arbitrary PHP function invoke"]] - `critical`, undisclosed, 119 votes, Rockstar Games
+- [[disclosures/h1-768266-public-instance-of-jenkins-on-https-with-script-enabled|"Public instance of Jenkins on https://██████████/ with /script enabled"]] - `critical`, undisclosed, 118 votes, U.S. Dept Of Defense
+- [[disclosures/h1-816156-team-members-can-trigger-arbitrary-code-execution-in-slack-d|"Team members can trigger arbitrary code execution in Slack Desktop Apps via HTML Notifications"]] - `high`, undisclosed, 107 votes, Slack
+- [[disclosures/h1-1072832-hta3-remote-code-execution-on|"[hta3] Remote Code Execution on ████"]] - `critical`, undisclosed, 104 votes, U.S. Dept Of Defense
+- [[disclosures/h1-2701701-injection-in-path-parameter-of-ingress-nginx|"Injection in path parameter of Ingress-nginx"]] - `high`, undisclosed, 92 votes, Kubernetes
+- [[disclosures/h1-248116-remote-code-execution-rce-in-a-dod-website|"Remote Code Execution (RCE) in a DoD website"]] - `critical`, undisclosed, 84 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1356845-cve-2021-40870-on-52-204-160-31|"CVE-2021-40870 on [52.204.160.31]"]] - `critical`, undisclosed, 75 votes, Elastic
+- [[disclosures/h1-403402-public-jenkins-instance-with-script-enabled|"Public Jenkins instance with /script enabled"]] - `critical`, undisclosed, 74 votes, Ubiquiti Inc.
+- [[disclosures/h1-2231019-cve-2023-5528-insufficient-input-sanitization-in-in-tree-sto|"CVE-2023-5528: Insufficient input sanitization in in-tree storage plugin leads to privilege escalation on Windows nodes"]] - `high`, $5,000, 69 votes, Kubernetes
+- [[disclosures/h1-198734-gmp-deserialization-type-confusion-vulnerability-mybb-1-8-3-|"GMP Deserialization Type Confusion Vulnerability [MyBB <= 1.8.3 RCE Vulnerability]"]] - `high`, undisclosed, 68 votes, Internet Bug Bounty
+- [[disclosures/h1-576887-rce-on-via-cve-2017-10271|"RCE on █████ via CVE-2017-10271"]] - `critical`, undisclosed, 68 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1115864-persistant-arbitrary-code-execution-in-mattermost-android|"Persistant Arbitrary code execution in mattermost android"]] - `high`, undisclosed, 67 votes, Mattermost
+- [[disclosures/h1-2289836-account-takeover-arbitrary-file-read-and-deletion-partial-co|"Account Takeover / Arbitrary File read and deletion / Partial code execution (intent redirection)"]] - `high`, undisclosed, 67 votes, MercadoLibre
+- [[disclosures/h1-3458235-rce-remote-code-execution-via-react-server-components-vulner|"[RCE] Remote Code Execution via  React Server Components Vulnerability CVE-2025-55182"]] - `critical`, undisclosed, 67 votes, IBM
+- [[disclosures/h1-182104-completed-compromise-source-code-disclosure-via-exposed-jenk|"Completed Compromise & Source Code Disclosure via Exposed Jenkins Dashboard at https://jenkins101.udemy.com"]] - `high`, undisclosed, 63 votes, Udemy
+- [[disclosures/h1-1776476-cve-2022-40127-rce-in-apache-airflow-2-4-0-bash-example|"CVE-2022-40127: RCE in Apache Airflow <2.4.0 bash example"]] - `high`, $4,000, 60 votes, Internet Bug Bounty
+- [[disclosures/h1-1677047-remote-code-execution-via-crafted-pentaho-report-uploaded-us|"Remote code execution via crafted pentaho report uploaded using default credentials for pentaho business server"]] - `critical`, undisclosed, 59 votes, MTN Group
+- [[disclosures/h1-2255750-remote-code-execution-and-exfiltration-of-secret-tokens-by-p|"Remote code execution and exfiltration of secret tokens by poisoning the mozilla/fxa CI build cache"]] - `critical`, $8,000, 58 votes, Mozilla
+- [[disclosures/h1-1728174-ingress-nginx-annotation-injection-causes-arbitrary-command-|"Ingress nginx annotation injection causes arbitrary command execution"]] - `high`, $2,500, 57 votes, Kubernetes
+- [[disclosures/h1-1016966-remote-code-execution-in-basecamp-windows-electron-app|"Remote Code Execution in Basecamp Windows Electron App"]] - `high`, undisclosed, 48 votes, Basecamp
+- [[disclosures/h1-1429014-log4shell-rce-0-day-exploit-on|"Log4Shell: RCE 0-day exploit on █████████"]] - `critical`, undisclosed, 48 votes, U.S. Dept Of Defense
+- [[disclosures/h1-221294-java-deserialization-rce-via-jboss-on-card-starbucks-in|"Java Deserialization RCE via JBoss on card.starbucks.in"]] - `critical`, undisclosed, 48 votes, Starbucks
+- [[disclosures/h1-1620702-rce-on-ingress-nginx-controller-via-ingress-spec-rules-http-|"RCE  on ingress-nginx-controller via Ingress spec.rules.http.paths.path field"]] - `high`, $2,500, 47 votes, Kubernetes
+- [[disclosures/h1-1636382-synthetics-recorder-code-injection-when-recording-website-wi|"Synthetics Recorder: Code injection when recording website with malicious content"]] - `high`, undisclosed, 47 votes, Elastic
+- [[disclosures/h1-1519841-f5-big-ip-tmui-rce-cve-2020-5902-packet8-net|"F5 BIG-IP TMUI RCE - CVE-2020-5902 (██.packet8.net)"]] - `critical`, undisclosed, 46 votes, 8x8
+- [[disclosures/h1-2762119-cve-2017-9822-dotnetnuke-cookie-deserialization-remote-code-|"CVE-2017-9822 DotNetNuke Cookie Deserialization Remote Code Execution (RCE) on lonidoor.mtn.ci"]] - `critical`, undisclosed, 46 votes, MTN Group
+- [[disclosures/h1-3781492-php-code-injection-in-delivery-limitation-logical-validation|"PHP code injection in delivery-limitation `logical` validation bypass - XML-RPC setChannelTargeting"]] - `high`, undisclosed, 46 votes, Revive Adserver
+- [[disclosures/h1-415501-rce-via-local-file-read-php-unserialization-xxe-unpickling|"RCE via Local File Read -> php unserialization-> XXE -> unpickling"]] - `critical`, undisclosed, 46 votes, h1-5411-CTF
+- [[disclosures/h1-402362-rce-due-to-imagetragick-v2|"RCE due to ImageTragick v2"]] - `critical`, $2,000, 44 votes, pixiv
+- [[disclosures/h1-357858-forum-getmonero-org-shell-upload|"forum.getmonero.org Shell upload"]] - `high`, undisclosed, 43 votes, Monero
+- [[disclosures/h1-2039464-code-inject-via-nginx-ingress-kubernetes-io-permanent-redire|"Code inject via nginx.ingress.kubernetes.io/permanent-redirect annotation"]] - `high`, $2,500, 41 votes, Kubernetes
+- [[disclosures/h1-3923967-wordpress-7-1-media-processing-race-enables-persistent-php-f|"WordPress 7.1 Media Processing Race Enables Persistent PHP File Write and Author-to-RCE"]] - `high`, undisclosed, 37 votes, WordPress
+- [[disclosures/h1-1391576-remote-code-execution-on-8x8-com-via-net-vstate-deserializat|"Remote Code Execution on ██.8x8.com via .NET VSTATE Deserialization"]] - `critical`, undisclosed, 36 votes, 8x8
+- [[disclosures/h1-3656781-php-code-injection-via-delivery-limitation-logical|"PHP code injection via delivery limitation logical "]] - `high`, undisclosed, 36 votes, Revive Adserver
+- [[disclosures/h1-3780854-php-code-injection-in-delivery-limitation-logical-validation|"PHP code injection in delivery-limitation `logical` validation bypass"]] - `high`, undisclosed, 35 votes, Revive Adserver
+- [[disclosures/h1-1378175-ingress-nginx-annotation-injection-allows-retrieval-of-ingre|"Ingress-nginx annotation injection allows retrieval of ingress-nginx serviceaccount token and secrets across all namespaces"]] - `high`, undisclosed, 34 votes, Kubernetes
+- [[disclosures/h1-1248052-pre-auth-rce-in-forgerock-openam-cve-2021-35464|"Pre-auth RCE in ForgeRock OpenAM (CVE-2021-35464)"]] - `high`, undisclosed, 30 votes, U.S. Dept Of Defense
+- [[disclosures/h1-791293-modify-host-header-which-is-sent-to-email|"Modify Host Header which is sent to email"]] - `high`, undisclosed, 30 votes, Endless Group
+- [[disclosures/h1-889886-h1-2006-2020-connecting-the-dots-to-send-hackers-their-bug-b|"[H1-2006 2020]  Connecting the dots to send hackers their Bug Bounty"]] - `critical`, undisclosed, 30 votes, h1-ctf
+- [[disclosures/h1-1070532-rce-apache-struts2-remote-command-execution-s2-045-on-wifi-p|"RCE Apache Struts2 remote command execution (S2-045) on [wifi-partner.mtn.com.gh]"]] - `high`, undisclosed, 29 votes, MTN Group
+- [[disclosures/h1-3648199-internal-application-wrapper-or-script-using-curl|"Internal application wrapper or script using curl"]] - `critical`, undisclosed, 29 votes, curl
+- [[disclosures/h1-1104349-server-side-template-injection-on-name-parameter-during-sign|"Server Side Template Injection on Name parameter during Sign Up process"]] - `high`, undisclosed, 28 votes, Glovo
+- [[disclosures/h1-1122791-hta3-remote-code-execution-on-https-via-improper-access-cont|"[hta3] Remote Code Execution on  https://███ via improper access control to SCORM Zip upload/import"]] - `critical`, undisclosed, 28 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1624172-remote-code-execution-at-cve-2021-44529-htus|"[███████] Remote Code Execution at ██████ [CVE-2021-44529] [HtUS]"]] - `critical`, $1,000, 28 votes, U.S. Dept Of Defense
+- [[disclosures/h1-358049-rce-via-print-function-simplenote-1-1-3-desktop-app|"RCE via Print function [Simplenote 1.1.3 - Desktop app] "]] - `high`, undisclosed, 28 votes, Automattic
+- [[disclosures/h1-1154034-argument-code-injection-via-activestorage-s-image-transforma|"Argument/Code Injection via ActiveStorage's image transformation functionality"]] - `high`, undisclosed, 27 votes, Ruby on Rails
+- [[disclosures/h1-1092574-php-code-injection-through-previewblock-method|"PHP Code Injection through 'previewBlock()' method"]] - `high`, undisclosed, 26 votes, Invision Power Services, Inc.
+- [[disclosures/h1-3897236-rce-in-aws-amplify-cli-via-prototype-chain-traversal-in-ampl|"RCE in AWS Amplify CLI via Prototype Chain Traversal in amplify-velocity-template"]] - `high`, undisclosed, 25 votes, AWS VDP
+- [[disclosures/h1-608577-cve-2019-5443-windows-privilege-escalation-malicious-openssl|"CVE-2019-5443: Windows Privilege Escalation: Malicious OpenSSL Engine"]] - `high`, undisclosed, 25 votes, curl
+- [[disclosures/h1-2905013-security-cve-2024-50379-apache-tomcat-rce-via-write-enabled-|"[SECURITY] CVE-2024-50379 Apache Tomcat - RCE via write-enabled default servlet"]] - `high`, undisclosed, 24 votes, Internet Bug Bounty
+- [[disclosures/h1-822002-apache-solr-rce-via-velocity-template|"Apache solr RCE via velocity template"]] - `critical`, undisclosed, 24 votes, U.S. Dept Of Defense
+- [[disclosures/h1-841397-low-privileges-auth-remote-command-execution-php-file-upload|"Low privileges (auth) Remote Command Execution - PHP file upload bypass."]] - `high`, undisclosed, 22 votes, ExpressionEngine
+- [[disclosures/h1-415967-chrome-brave-navigation-from-web|"chrome://brave navigation from web"]] - `critical`, undisclosed, 21 votes, Brave Software
+- [[disclosures/h1-3250117-uncontrolled-file-write-arbitrary-file-creation|"Uncontrolled File Write/Arbitrary File Creation "]] - `high`, undisclosed, 20 votes, curl
+- [[disclosures/h1-415222-solution-for-h15411-s-ctf-challenge|"Solution for h15411's CTF challenge"]] - `critical`, undisclosed, 20 votes, h1-5411-CTF
+- [[disclosures/h1-291539-simplenote-for-windows-client-rce-via-external-javascript-in|"[Simplenote for Windows] Client RCE via External JavaScript Inclusion leveraging Electron"]] - `high`, undisclosed, 19 votes, Automattic
+- [[disclosures/h1-962013-remote-code-execution-on|"Remote Code Execution on █████████"]] - `critical`, undisclosed, 19 votes, U.S. Dept Of Defense
+- [[disclosures/h1-212985-remote-code-execution-vulnerability-on-a-dod-website|"Remote code execution vulnerability on a DoD website"]] - `critical`, undisclosed, 17 votes, U.S. Dept Of Defense
+- [[disclosures/h1-235605-remote-code-execution-rce-in-dod-websites|"Remote Code Execution (RCE) in DoD Websites"]] - `critical`, undisclosed, 17 votes, U.S. Dept Of Defense
+- [[disclosures/h1-843171-desktop-app-rce-276031-bypass|"Desktop app RCE (#276031 bypass)"]] - `high`, undisclosed, 17 votes, Rocket.Chat
+- [[disclosures/h1-902739-bunyan-rce-via-insecure-command-formatting|"bunyan - RCE via insecure command formatting"]] - `high`, undisclosed, 17 votes, Node.js third-party modules
+- [[disclosures/h1-720306-docker-image-with-fpm-is-vulnerable-to-cve-2019-11043|"Docker image with FPM is vulnerable to CVE-2019-11043"]] - `critical`, $100, 16 votes, Nextcloud
+- [[disclosures/h1-841947-remote-code-execution-through-extension-bypass-on-log-functi|"Remote Code Execution through Extension Bypass on Log Functionality"]] - `high`, undisclosed, 16 votes, Concrete CMS
+- [[disclosures/h1-701183-tree-kill-rce-via-insecure-command-concatenation-only-window|"[tree-kill] RCE via insecure command concatenation (only Windows)"]] - `high`, undisclosed, 15 votes, Node.js third-party modules
+- [[disclosures/h1-781664-several-simple-remote-code-execution-in-pdf-image|"Several simple remote code execution in pdf-image"]] - `critical`, undisclosed, 15 votes, Node.js third-party modules
+- [[disclosures/h1-825729-logkitty-rce-via-insecure-command-formatting|"[logkitty] RCE via insecure command formatting"]] - `high`, undisclosed, 15 votes, Node.js third-party modules
+- [[disclosures/h1-870615-fixed-a-vulnerability-in-kavkis-2020-products-family-allows-|"[Fixed] A vulnerability in KAVKIS 2020 products family allows full disabling of protection"]] - `high`, undisclosed, 15 votes, Kaspersky
+- [[disclosures/h1-1652042-cve-2022-21831-possible-code-injection-vulnerability-in-rail|"CVE-2022-21831: Possible code injection vulnerability in Rails / Active Storage"]] - `high`, $2,000, 14 votes, Internet Bug Bounty
+- [[disclosures/h1-469730-urgent-critical-vulnerability-rce-on-vulnerable-to-remote-co|"[Urgent] Critical Vulnerability [RCE] on ███ vulnerable to Remote Code Execution by exploiting MS15-034, CVE-2015-1635"]] - `high`, undisclosed, 14 votes, U.S. Dept Of Defense
+- [[disclosures/h1-276031-remote-code-execution-in-rocket-chat-desktop|"Remote Code Execution in Rocket.Chat Desktop"]] - `high`, undisclosed, 13 votes, Rocket.Chat
+- [[disclosures/h1-3293801-title-remote-code-execution-rce-via-arbitrary-library-loadin|"Title: Remote Code Execution (RCE) via Arbitrary Library Loading in `--engine` option"]] - `critical`, undisclosed, 13 votes, curl
+- [[disclosures/h1-778629-critical-remote-code-execution-through-old-tinymce-upload-by|"(Critical) Remote Code Execution Through Old TinyMCE upload bypass"]] - `high`, undisclosed, 13 votes, 8x8
+- [[disclosures/h1-1360593-cve-2021-40870-in|"CVE-2021-40870 in [███]"]] - `critical`, undisclosed, 12 votes, Informatica
+- [[disclosures/h1-299241-marketplace-informatica-com-template-injection|"[marketplace.informatica.com] -  Template Injection"]] - `critical`, undisclosed, 12 votes, Informatica
+- [[disclosures/h1-415178-chrome-brave-can-still-be-navigated-to-leading-to-rce|"chrome://brave can still be navigated to, leading to RCE"]] - `high`, undisclosed, 12 votes, Brave Software
+- [[disclosures/h1-1248040-pre-auth-rce-in-forgerock-openam-cve-2021-35464|" Pre-auth RCE in ForgeRock OpenAM (CVE-2021-35464)"]] - `high`, undisclosed, 11 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3744200-php-code-injection-via-unexpected-delivery-limitation-parame|"PHP code injection via unexpected delivery limitation parameter"]] - `high`, undisclosed, 11 votes, Revive Adserver
+- [[disclosures/h1-1067291-rce-in-subdomain-via-cve-2017-1000486|"RCE in ██████ subdomain via CVE-2017-1000486"]] - `high`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1332433-rce-on-17-different-docker-containers-on-your-network|"RCE on 17 different Docker containers on your network"]] - `critical`, undisclosed, 10 votes, Nextcloud
+- [[disclosures/h1-218088-request-hijacking-vulnerability-in-rubygems-2-6-11-and-earli|"Request Hijacking Vulnerability in RubyGems 2.6.11 and earlier"]] - `high`, undisclosed, 10 votes, RubyGems
+- [[disclosures/h1-231926-remote-code-execution-rce-in-a-dod-website|"Remote Code Execution (RCE) in a DoD website"]] - `critical`, undisclosed, 10 votes, U.S. Dept Of Defense
+- [[disclosures/h1-301458-remote-code-execution-in-wordpress-desktop|"Remote Code Execution in Wordpress Desktop"]] - `critical`, undisclosed, 10 votes, Automattic
+- [[disclosures/h1-532667-server-side-javascript-code-injection|"Server Side JavaScript Code Injection"]] - `high`, undisclosed, 10 votes, Node.js third-party modules
+- [[disclosures/h1-630903-monero-wallet-gui-for-windows-arbitrary-code-execution|"Monero Wallet Gui for Windows (Arbitrary Code Execution)"]] - `high`, undisclosed, 10 votes, Monero
+- [[disclosures/h1-192931-server-side-include-injection-vulnerability-in-a-dod-website|"Server-side include injection vulnerability in a DoD website"]] - `high`, undisclosed, 9 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1249456-pre-auth-rce-in-forgerock-openam-cve-2021-35464|"Pre-auth RCE in ForgeRock OpenAM (CVE-2021-35464)"]] - `high`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-226245-remote-code-execution-rce-in-multiple-dod-websites|"Remote code execution (RCE) in multiple DoD websites"]] - `critical`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-3118915-potential-xss-vector-in-curl-via-unsanitized-url-parameter-h|"Potential XSS vector in curl via unsanitized URL parameter handling"]] - `high`, undisclosed, 8 votes, curl
+- [[disclosures/h1-346516-remote-code-executio-in-npm-package-getcookies|"Remote code executio in  NPM package getcookies"]] - `critical`, undisclosed, 8 votes, Node.js third-party modules
+- [[disclosures/h1-350418-insecure-implementation-of-deserialization-in-cryo|"Insecure implementation of deserialization in cryo"]] - `high`, undisclosed, 8 votes, Node.js third-party modules
+- [[disclosures/h1-418308-critical-remote-code-execution-on-http-axa-dxi-eu|"[CRITICAL] Remote code execution on http://axa.dxi.eu"]] - `critical`, undisclosed, 8 votes, 8x8
+- [[disclosures/h1-767482-java-debug-console-provides-command-injection-without-privel|"Java Debug Console Provides Command Injection Without Privellage Esclation"]] - `critical`, undisclosed, 8 votes, MTN Group
+- [[disclosures/h1-904672-server-side-template-injection-in-lodash-js|"Server-side Template Injection in lodash.js "]] - `high`, undisclosed, 8 votes, Node.js third-party modules
+- [[disclosures/h1-954398-ode-injection-host|"Сode injection host  █████████"]] - `high`, undisclosed, 8 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1838674-remote-code-execution-on-owncloud-instances-with-imagemagick|"Remote Code Execution on ownCloud instances with ImageMagick installed"]] - `critical`, undisclosed, 7 votes, ownCloud
+- [[disclosures/h1-212022-remote-code-execution-rce-in-a-dod-website|"Remote Code Execution (RCE) in a DoD website"]] - `critical`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-228825-authenticated-rce-by-bypassing-of-the-htaccess-blacklist|"(Authenticated) RCE by bypassing of the .htaccess blacklist"]] - `critical`, undisclosed, 7 votes, Nextcloud
+- [[disclosures/h1-350401-insecure-implementation-of-deserialization-in-funcster|"Insecure implementation of deserialization in funcster"]] - `high`, undisclosed, 7 votes, Node.js third-party modules
+- [[disclosures/h1-632721-root-remote-code-execution-on-https|"Root Remote Code Execution on https://███"]] - `critical`, undisclosed, 7 votes, U.S. Dept Of Defense
+- [[disclosures/h1-672243-accounts-informatica-com-rce-due-to-exposed-groovy-console|"accounts.informatica.com - RCE due to exposed Groovy console"]] - `critical`, undisclosed, 7 votes, Informatica
+- [[disclosures/h1-772448-blamer-rce-via-insecure-command-formatting|"[blamer] RCE via insecure command formatting"]] - `high`, undisclosed, 7 votes, Node.js third-party modules
+- [[disclosures/h1-1537543-vulnerable-to-cve-2022-22954|"██████████ vulnerable to CVE-2022-22954"]] - `critical`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-192567-remote-code-execution-vulnerability-on-a-dod-website|"Remote code execution vulnerability on a DoD website"]] - `high`, undisclosed, 6 votes, U.S. Dept Of Defense
+- [[disclosures/h1-809012-notevil-sandbox-escape-lead-to-rce-on-node-js-and-xss-in-the|"[notevil] - Sandbox Escape Lead to RCE on Node.js and XSS in the Browser"]] - `high`, undisclosed, 6 votes, Node.js third-party modules
+- [[disclosures/h1-390929-code-injection-vulnerability-in-dot-package|"Code Injection Vulnerability in dot Package"]] - `high`, undisclosed, 5 votes, Node.js third-party modules
+- [[disclosures/h1-534887-custom-crafted-message-object-in-meteor-call-allows-remote-c|"Custom crafted message object in Meteor.Call allows remote code execution and impersonation"]] - `critical`, undisclosed, 5 votes, Rocket.Chat
+- [[disclosures/h1-678727-potential-rce-and-xss-via-file-upload-requiring-user-account|"potential RCE and XSS via file upload requiring user account and default settings"]] - `high`, undisclosed, 5 votes, Nextcloud
+- [[disclosures/h1-703412-node-df-rce-via-insecure-command-concatenation|"[node-df] RCE via insecure command concatenation"]] - `high`, undisclosed, 5 votes, Node.js third-party modules
+- [[disclosures/h1-972220-arpping-remote-code-execution|"[arpping] Remote Code Execution"]] - `critical`, undisclosed, 5 votes, Node.js third-party modules
+- [[disclosures/h1-1537694-vulnerable-to-cve-2022-22954|"███ vulnerable to CVE-2022-22954"]] - `critical`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-182557-links-the-user-may-download-can-be-a-malicious-files|"links the user may download can be a malicious files"]] - `high`, undisclosed, 4 votes, Brave Software
+- [[disclosures/h1-231687-remote-code-execution-rce-vulnerability-in-multiple-dod-webs|"Remote Code Execution (RCE) vulnerability in multiple DoD websites"]] - `critical`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-703415-treekill-rce-via-insecure-command-concatenation-only-windows|"[treekill] RCE via insecure command concatenation (only Windows)"]] - `high`, undisclosed, 4 votes, Node.js third-party modules
+- [[disclosures/h1-904064-dashboard-sharing-enables-code-injection-into-emails|"Dashboard sharing enables code injection into ████ emails"]] - `high`, undisclosed, 4 votes, U.S. Dept Of Defense
+- [[disclosures/h1-222020-mercurial-can-be-tricked-into-granting-authorized-users-acce|"Mercurial can be tricked into granting authorized users access to the Python debugger"]] - `high`, undisclosed, 3 votes, Internet Bug Bounty
+- [[disclosures/h1-878420-windows-edge-rce-via-insecure-command-formatting|"[windows-edge] RCE via insecure command formatting"]] - `critical`, undisclosed, 3 votes, Node.js third-party modules
+- [[disclosures/h1-694471-create-git-rce-via-insecure-command-formatting|"[create-git] RCE via insecure command formatting"]] - `critical`, undisclosed, 2 votes, Node.js third-party modules
+- [[disclosures/h1-1631364-log4j-https|"██████_log4j - https://██████"]] - `critical`, undisclosed, 1 votes, U.S. Dept Of Defense
+- [[disclosures/h1-1631370-solr-log4j-http|"solr_log4j - http://██████████"]] - `critical`, undisclosed, 1 votes, U.S. Dept Of Defense
+- [[disclosures/h1-973245-imagickal-remote-code-execution|"[imagickal] Remote Code Execution"]] - `critical`, undisclosed, 0 votes, Node.js third-party modules
+
+> Auto-generated from `disclosures/` by `node vault-admin/crawler/gen_cwe_pages.js`. Do not edit by hand.
