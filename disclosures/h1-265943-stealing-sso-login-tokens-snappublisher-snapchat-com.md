@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/authentication-bypass
   - env/web
+  - vuln/xss
+  - vuln/csrf
+  - impact/credential-theft
 substate: "resolved"
 weakness: "Authentication Bypass"
 enriched: true

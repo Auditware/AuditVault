@@ -6,6 +6,9 @@ tags:
   - cwe/sql-injection
   - env/web
   - stack/python
+  - vuln/sql-injection
+  - vuln/command-injection
+  - impact/rce
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

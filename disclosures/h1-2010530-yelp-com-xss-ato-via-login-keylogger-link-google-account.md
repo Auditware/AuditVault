@@ -5,6 +5,15 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-generic
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/csrf
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/jwt
+  - impact/account-takeover
+  - impact/credential-theft
+  - trigger/low-priv-user
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/information-exposure-through-debug-information
   - env/web
+  - vuln/info-disclosure
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Information Exposure Through Debug Information"
 enriched: true

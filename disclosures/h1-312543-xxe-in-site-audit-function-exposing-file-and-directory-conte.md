@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/xml-external-entities-xxe
   - env/web
+  - vuln/xxe
 substate: "resolved"
 weakness: "XML External Entities (XXE)"
 enriched: true

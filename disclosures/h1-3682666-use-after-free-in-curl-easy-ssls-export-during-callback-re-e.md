@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/use-after-free
   - env/web
+  - vuln/dos
 substate: "not-applicable"
 weakness: "Use After Free"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/integer-overflow
   - env/network
+  - vuln/dos
+  - vuln/misconfiguration
 substate: "informative"
 weakness: "Integer Overflow"
 enriched: true

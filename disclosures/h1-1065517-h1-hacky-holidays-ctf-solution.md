@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/buffer-over-read
   - env/web
+  - vuln/sql-injection
+  - vuln/ssrf
+  - trigger/dns-rebinding
 substate: "resolved"
 weakness: "Buffer Over-read"
 enriched: true

@@ -41,3 +41,37 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-1728174-ingress-nginx-annotation-injection-causes-arbitrary-command-|"Ingress nginx annotation injection causes arbitrary command execution"]] - `high`, $2,500, 57 votes, [[programs/kubernetes|Kubernetes]]
 - [[disclosures/h1-1249583-authenticated-kubernetes-principal-with-restricted-permissio|"Authenticated kubernetes principal with restricted permissions can retrieve ingress-nginx serviceaccount token and secrets across all namespaces"]] - `high`, undisclosed, 55 votes, [[programs/kubernetes|Kubernetes]]
 - [[disclosures/h1-1842829-privilege-escalation-in-kops-using-gce-gcp-provider|"Privilege Escalation in kOps using GCE/GCP Provider"]] - `high`, $2,500, 52 votes, [[programs/kubernetes|Kubernetes]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `command-injection` - 4
+- `code-injection` - 2
+- `dos` - 2
+- `broken-access-control` - 2
+- `privilege-escalation` - 2
+- `misconfiguration` - 1
+- `xss-stored` - 1
+- `xss` - 1
+- `csrf` - 1
+- `cors-misconfig` - 1
+- `ssrf` - 1
+- `idor` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `admin-required` - 2
+- `auth-required` - 1
+- `brute-force` - 1
+- `victim-interaction` - 1
+- `cors-origin` - 1
+- `session-cookie` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 2
+- `internal-network` - 1
+- `credential-theft` - 1
+
+## 🛠️ Recommended fixes (fix/)
+
+- `input-validation` - 1

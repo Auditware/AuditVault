@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/xss
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/info-disclosure
+  - impact/sensitive-data
+  - trigger/admin-required
+  - fix/input-validation
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

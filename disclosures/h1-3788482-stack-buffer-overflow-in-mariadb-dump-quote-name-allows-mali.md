@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/stack-overflow
   - env/web
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Stack Overflow"
 enriched: true

@@ -7,6 +7,9 @@ tags:
   - env/web
   - stack/ruby
   - stack/gitlab
+  - vuln/ssrf
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

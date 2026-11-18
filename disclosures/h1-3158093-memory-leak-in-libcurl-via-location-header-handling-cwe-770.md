@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/allocation-of-resources-without-limits-or-throttling
   - env/web
+  - vuln/dos
 substate: "spam"
 weakness: "Allocation of Resources Without Limits or Throttling"
 enriched: true

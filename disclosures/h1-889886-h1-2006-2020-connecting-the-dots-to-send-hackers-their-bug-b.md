@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/code-injection
   - env/web
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/authentication-bypass
+  - vuln/info-disclosure
+  - vuln/open-redirect
+  - vuln/secrets-leak
+  - vuln/jwt
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

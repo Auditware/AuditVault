@@ -6,6 +6,10 @@ tags:
   - cwe/improper-access-control-generic
   - env/web
   - stack/gitlab
+  - vuln/idor
+  - vuln/privilege-escalation
+  - impact/account-takeover
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

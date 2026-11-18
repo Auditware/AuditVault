@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/violation-of-secure-design-principles
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/file-upload
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true

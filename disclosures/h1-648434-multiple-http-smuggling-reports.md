@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/http-request-smuggling
   - env/web
+  - vuln/xss
+  - vuln/csrf
+  - vuln/ssrf
+  - vuln/code-injection
+  - vuln/dos
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true

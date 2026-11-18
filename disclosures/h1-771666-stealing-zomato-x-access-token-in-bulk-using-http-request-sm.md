@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/http-request-smuggling
   - env/web
+  - vuln/info-disclosure
+  - vuln/open-redirect
+  - impact/credential-theft
+  - impact/sensitive-data
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true

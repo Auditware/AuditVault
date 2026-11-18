@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/use-of-hard-coded-cryptographic-key
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/secrets-leak
+  - impact/sensitive-data
+  - trigger/brute-force
 substate: "not-applicable"
 weakness: "Use of Hard-coded Cryptographic Key"
 enriched: true

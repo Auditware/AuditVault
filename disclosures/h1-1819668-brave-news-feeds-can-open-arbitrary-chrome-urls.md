@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/web
+  - vuln/csrf
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

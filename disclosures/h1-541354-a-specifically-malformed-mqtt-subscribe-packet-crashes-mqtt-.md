@@ -6,6 +6,7 @@ tags:
   - cwe/buffer-over-read
   - env/network
   - stack/node
+  - vuln/dos
 substate: "resolved"
 weakness: "Buffer Over-read"
 enriched: true

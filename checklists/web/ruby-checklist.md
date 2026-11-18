@@ -43,3 +43,33 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-299473-evaluating-ruby-code-by-injecting-rescue-job-on-the-system-h|"Evaluating Ruby code by injecting Rescue job on the system_hook_push queue through web hook"]] - `high`, $750, 36 votes, [[programs/gitlab|GitLab]]
 - [[disclosures/h1-1464396-ruby-cve-2021-41819-cookie-prefix-spoofing-in-cgi-cookie-par|"Ruby CVE-2021-41819: Cookie Prefix Spoofing in CGI::Cookie.parse"]] - `high`, $2,000, 31 votes, [[programs/ibb|Internet Bug Bounty]]
 - [[disclosures/h1-3553340-active-storage-vips-transformer-missing-validate-transformat|"Active Storage Vips Transformer Missing validate_transformation — CVE-2025-24293 Incomplete Fix"]] - `high`, undisclosed, 30 votes, [[programs/rails|Ruby on Rails]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `code-injection` - 7
+- `deserialization` - 4
+- `command-injection` - 3
+- `xss` - 3
+- `dos` - 2
+- `path-traversal` - 2
+- `ssrf` - 2
+- `info-disclosure` - 1
+- `xss-stored` - 1
+- `subdomain-takeover` - 1
+- `idor` - 1
+- `misconfiguration` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `social-engineering` - 3
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 10
+- `account-takeover` - 1
+- `sensitive-data` - 1
+
+## 🛠️ Recommended fixes (fix/)
+
+- `patch-upstream` - 3
+- `file-validation` - 1

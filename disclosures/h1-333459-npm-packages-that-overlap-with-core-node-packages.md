@@ -6,6 +6,7 @@ tags:
   - cwe/phishing
   - env/web
   - stack/node
+  - trigger/social-engineering
 substate: "informative"
 weakness: "Phishing"
 enriched: true

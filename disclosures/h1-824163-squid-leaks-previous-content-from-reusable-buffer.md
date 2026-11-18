@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/buffer-over-read
   - env/web
+  - vuln/path-traversal
+  - vuln/dos
 substate: "resolved"
 weakness: "Buffer Over-read"
 enriched: true

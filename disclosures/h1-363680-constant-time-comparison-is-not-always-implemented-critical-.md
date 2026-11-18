@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/missing-required-cryptographic-step
   - env/web
+  - trigger/race-window
 substate: "resolved"
 weakness: "Missing Required Cryptographic Step"
 enriched: true

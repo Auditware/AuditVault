@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/cross-site-request-forgery-csrf
   - env/web
+  - vuln/csrf
+  - trigger/social-engineering
+  - trigger/brute-force
 substate: "not-applicable"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true

@@ -6,6 +6,7 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - os/windows
+  - vuln/code-injection
 substate: "informative"
 weakness: "Privilege Escalation"
 enriched: true

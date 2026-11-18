@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/authentication-bypass-by-primary-weakness
   - env/web
+  - vuln/authentication-bypass
+  - impact/persistence
 substate: "not-applicable"
 weakness: "Authentication Bypass by Primary Weakness"
 enriched: true

@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/classic-buffer-overflow
   - env/web
+  - vuln/dos
 substate: "informative"
 weakness: "Classic Buffer Overflow"
 enriched: true

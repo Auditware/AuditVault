@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/missing-critical-step-in-authentication
   - env/web
+  - vuln/broken-access-control
+  - vuln/jwt
+  - impact/credential-theft
 substate: "resolved"
 weakness: "Missing Critical Step in Authentication"
 enriched: true

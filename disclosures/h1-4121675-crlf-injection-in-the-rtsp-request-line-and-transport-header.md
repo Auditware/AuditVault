@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/crlf-injection
   - env/web
+  - vuln/authentication-bypass
 substate: "not-applicable"
 weakness: "CRLF Injection"
 enriched: true

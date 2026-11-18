@@ -6,6 +6,8 @@ tags:
   - cwe/authentication-bypass-using-an-alternate-path-or-channel
   - env/web
   - stack/gitlab
+  - vuln/csrf
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Authentication Bypass Using an Alternate Path or Channel"
 enriched: true

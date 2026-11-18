@@ -4,6 +4,13 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/sql-injection
+  - vuln/code-injection
+  - vuln/secrets-leak
+  - impact/account-takeover
+  - impact/rce
+  - trigger/admin-required
+  - trigger/password-reset
 substate: "resolved"
 weakness: null
 enriched: true

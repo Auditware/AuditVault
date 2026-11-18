@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/array-index-underflow
   - env/web
+  - impact/rce
 substate: "resolved"
 weakness: "Array Index Underflow"
 enriched: true

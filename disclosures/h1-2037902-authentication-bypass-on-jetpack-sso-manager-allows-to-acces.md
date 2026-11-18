@@ -5,6 +5,9 @@ tags:
   - severity/high
   - env/web
   - stack/wordpress
+  - vuln/authentication-bypass
+  - vuln/privilege-escalation
+  - trigger/admin-required
 substate: "resolved"
 weakness: null
 enriched: true

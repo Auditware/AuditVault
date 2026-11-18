@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/business-logic-errors
   - env/web
+  - vuln/dos
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true

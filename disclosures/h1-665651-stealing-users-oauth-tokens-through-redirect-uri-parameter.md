@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/open-redirect
   - env/web
+  - vuln/open-redirect
+  - impact/account-takeover
+  - impact/credential-theft
 substate: "resolved"
 weakness: "Open Redirect"
 enriched: true

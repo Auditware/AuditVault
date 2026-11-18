@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/web
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

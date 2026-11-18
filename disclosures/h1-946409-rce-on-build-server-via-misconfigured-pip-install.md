@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/download-of-code-without-integrity-check
   - env/web
+  - vuln/code-injection
+  - vuln/misconfiguration
+  - impact/rce
 substate: "resolved"
 weakness: "Download of Code Without Integrity Check"
 enriched: true

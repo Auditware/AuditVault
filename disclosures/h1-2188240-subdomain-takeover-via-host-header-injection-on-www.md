@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/violation-of-secure-design-principles
   - env/web
+  - vuln/xss
+  - vuln/authentication-bypass
+  - vuln/subdomain-takeover
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true

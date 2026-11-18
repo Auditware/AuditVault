@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/http-response-splitting
   - env/web
+  - vuln/xss
+  - vuln/dos
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "HTTP Response Splitting"
 enriched: true

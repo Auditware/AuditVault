@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/session-fixation
   - env/web
+  - vuln/info-disclosure
+  - impact/sensitive-data
+  - trigger/session-cookie
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Session Fixation"
 enriched: true

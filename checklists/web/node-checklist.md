@@ -45,3 +45,47 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-3558713-command-injection-via-unsanitized-bundling-options-in-aws-cd|"Command Injection via Unsanitized Bundling Options in `aws-cdk-lib/aws-lambda-nodejs`"]] - `high`, undisclosed, 48 votes, [[programs/aws_vdp|AWS VDP]]
 - [[disclosures/h1-2256167-path-traversal-through-path-stored-in-uint8array-in-node-js-|"Path traversal through path stored in Uint8Array in Node.js 20"]] - `high`, $3,495, 44 votes, [[programs/ibb|Internet Bug Bounty]]
 - [[disclosures/h1-3736889-null-pointer-dereference-in-node-sqlite-databasesync-applych|"NULL pointer dereference in node:sqlite DatabaseSync#applyChangeset() via malformed SQLite changeset"]] - `high`, undisclosed, 44 votes, [[programs/nodejs|Node.js]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `path-traversal` - 58
+- `dos` - 52
+- `code-injection` - 48
+- `command-injection` - 44
+- `xss` - 23
+- `xss-stored` - 9
+- `sql-injection` - 8
+- `info-disclosure` - 8
+- `ssrf` - 6
+- `broken-access-control` - 4
+- `file-upload` - 4
+- `privilege-escalation` - 3
+
+## 🎯 Exploit triggers (trigger/)
+
+- `victim-interaction` - 5
+- `dns-rebinding` - 3
+- `social-engineering` - 3
+- `session-cookie` - 2
+- `one-click` - 2
+- `race-window` - 2
+- `low-priv-user` - 1
+- `file-upload` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 57
+- `dos-impact` - 6
+- `unauthorized-write` - 4
+- `credential-theft` - 2
+- `sensitive-data` - 2
+- `internal-network` - 1
+- `persistence` - 1
+- `account-takeover` - 1
+
+## 🛠️ Recommended fixes (fix/)
+
+- `input-validation` - 8
+- `patch-upstream` - 6
+- `file-validation` - 5
+- `parameterized-query` - 1

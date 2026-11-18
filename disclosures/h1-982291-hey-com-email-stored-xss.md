@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/cross-site-scripting-xss-stored
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/csrf
+  - trigger/brute-force
+  - fix/csp
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

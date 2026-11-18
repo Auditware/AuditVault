@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/ssrf
+  - vuln/path-traversal
 substate: "not-applicable"
 weakness: "Improper Access Control - Generic"
 enriched: true

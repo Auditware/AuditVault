@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/unverified-password-change
   - env/web
+  - impact/account-takeover
+  - trigger/password-reset
 substate: "resolved"
 weakness: "Unverified Password Change"
 enriched: true

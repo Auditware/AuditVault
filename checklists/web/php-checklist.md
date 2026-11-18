@@ -45,3 +45,42 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-3395221-error-based-time-based-sql-injection-in-keyword-parameter-of|"Error-Based & Time-Based SQL Injection in 'keyword' Parameter of admin-search.php Allowing Full Database Access in Revive Adserver v6.0.0"]] - `high`, undisclosed, 93 votes, [[programs/revive_adserver|Revive Adserver]]
 - [[disclosures/h1-1042746-intensedebate-com-sql-injection-time-based-on-changereplaceo|"[intensedebate.com] SQL Injection Time Based on /changeReplaceOpt.php"]] - `critical`, undisclosed, 80 votes, [[programs/automattic|Automattic]]
 - [[disclosures/h1-838855-www-zomato-com-blind-sql-injection-in-php-geto2banner|"[www.zomato.com] Blind SQL Injection in /php/geto2banner"]] - `critical`, $2,000, 68 votes, [[programs/eternal|Eternal]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `sql-injection` - 9
+- `code-injection` - 5
+- `dos` - 4
+- `deserialization` - 3
+- `path-traversal` - 2
+- `ssrf` - 2
+- `misconfiguration` - 2
+- `xss` - 2
+- `secrets-leak` - 1
+- `info-disclosure` - 1
+- `command-injection` - 1
+- `race-condition` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `auth-required` - 3
+- `unauthenticated` - 1
+- `race-window` - 1
+- `brute-force` - 1
+- `admin-required` - 1
+- `password-reset` - 1
+- `session-cookie` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 6
+- `account-takeover` - 2
+- `data-exposure` - 2
+- `unauthorized-write` - 1
+- `internal-network` - 1
+
+## 🛠️ Recommended fixes (fix/)
+
+- `input-validation` - 3
+- `parameterized-query` - 3
+- `patch-upstream` - 1

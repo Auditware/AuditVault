@@ -6,6 +6,8 @@ tags:
   - cwe/improper-restriction-of-authentication-attempts
   - env/web
   - stack/wordpress
+  - trigger/brute-force
+  - fix/authorization-checks
 substate: "resolved"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true

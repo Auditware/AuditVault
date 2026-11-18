@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/use-of-hard-coded-credentials
   - env/web
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Use of Hard-coded Credentials"
 enriched: true

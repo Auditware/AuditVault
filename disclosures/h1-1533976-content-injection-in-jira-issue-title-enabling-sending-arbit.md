@@ -6,6 +6,9 @@ tags:
   - cwe/resource-injection
   - env/web
   - stack/gitlab
+  - vuln/xss
+  - impact/account-takeover
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Resource Injection"
 enriched: true

@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/use-of-externally-controlled-format-string
   - env/web
+  - vuln/code-injection
 substate: "resolved"
 weakness: "Use of Externally-Controlled Format String"
 enriched: true

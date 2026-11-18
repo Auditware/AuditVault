@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/improper-handling-of-url-encoding-hex-encoding
   - env/web
+  - vuln/xss
 substate: "resolved"
 weakness: "Improper Handling of URL Encoding (Hex Encoding)"
 enriched: true

@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

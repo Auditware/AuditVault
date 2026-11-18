@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/information-exposure-through-directory-listing
   - env/web
+  - vuln/info-disclosure
 substate: "not-applicable"
 weakness: "Information Exposure Through Directory Listing"
 enriched: true

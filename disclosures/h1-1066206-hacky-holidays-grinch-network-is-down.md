@@ -4,6 +4,12 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/network
+  - vuln/sql-injection
+  - vuln/xss
+  - vuln/code-injection
+  - vuln/jwt
+  - trigger/low-priv-user
+  - trigger/brute-force
 substate: "resolved"
 weakness: null
 enriched: true

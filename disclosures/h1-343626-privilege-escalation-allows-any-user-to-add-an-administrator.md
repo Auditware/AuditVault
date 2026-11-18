@@ -6,6 +6,9 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - stack/node
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/low-priv-user
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

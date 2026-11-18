@@ -41,3 +41,23 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-2255968-cve-2023-46132|"CVE-2023-46132"]] - `high`, undisclosed, 34 votes, [[programs/hyperledger|Linux Foundation Decentralized Trust]]
 - [[disclosures/h1-1604951-remote-denial-of-service-in-hyperledger-fabric|"Remote denial of service in  HyperLedger Fabric"]] - `high`, undisclosed, 32 votes, [[programs/hyperledger|Linux Foundation Decentralized Trust]]
 - [[disclosures/h1-1548870-unauthorized-packages-modification-or-secrets-exfiltration-v|"Unauthorized packages modification or secrets exfiltration via GitHub actions"]] - `high`, $1,500, 25 votes, [[programs/hyperledger|Linux Foundation Decentralized Trust]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `dos` - 6
+- `code-injection` - 4
+- `misconfiguration` - 2
+- `xss` - 1
+- `path-traversal` - 1
+- `broken-access-control` - 1
+- `privilege-escalation` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `auth-required` - 1
+- `admin-required` - 1
+- `brute-force` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 2

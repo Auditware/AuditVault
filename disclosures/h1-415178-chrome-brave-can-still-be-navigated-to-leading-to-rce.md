@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/code-injection
   - env/web
+  - vuln/xss
+  - impact/rce
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

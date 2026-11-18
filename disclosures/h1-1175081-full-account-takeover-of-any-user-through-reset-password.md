@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/improper-access-control-generic
   - env/web
+  - impact/account-takeover
+  - trigger/password-reset
 substate: "duplicate"
 weakness: "Improper Access Control - Generic"
 enriched: true

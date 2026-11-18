@@ -6,6 +6,9 @@ tags:
   - cwe/improper-access-control-generic
   - env/mobile
   - os/android
+  - vuln/open-redirect
+  - impact/credential-theft
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

@@ -6,6 +6,10 @@ tags:
   - cwe/cross-site-scripting-xss-generic
   - env/cloud
   - stack/aws
+  - vuln/xss
+  - vuln/subdomain-takeover
+  - impact/credential-theft
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true

@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/privilege-escalation
+  - vuln/file-upload
+  - impact/unauthorized-write
+  - trigger/admin-required
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

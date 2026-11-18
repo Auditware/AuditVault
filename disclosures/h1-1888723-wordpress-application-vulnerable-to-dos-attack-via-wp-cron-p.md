@@ -7,6 +7,7 @@ tags:
   - env/web
   - stack/wordpress
   - stack/php
+  - vuln/dos
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

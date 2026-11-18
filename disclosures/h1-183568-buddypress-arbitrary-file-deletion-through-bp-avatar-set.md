@@ -5,6 +5,8 @@ tags:
   - severity/high
   - env/web
   - stack/wordpress
+  - vuln/path-traversal
+  - trigger/file-upload
 substate: "resolved"
 weakness: null
 enriched: true

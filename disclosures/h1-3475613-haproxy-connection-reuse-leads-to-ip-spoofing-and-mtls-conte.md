@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/sql-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/admin-required
 substate: "not-applicable"
 weakness: "Improper Access Control - Generic"
 enriched: true

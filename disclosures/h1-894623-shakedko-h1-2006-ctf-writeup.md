@@ -4,6 +4,18 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/csrf
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/broken-access-control
+  - vuln/authentication-bypass
+  - vuln/privilege-escalation
+  - vuln/info-disclosure
+  - vuln/open-redirect
+  - vuln/cors-misconfig
+  - trigger/auth-required
+  - trigger/cors-origin
+  - fix/authorization-checks
 substate: "resolved"
 weakness: null
 enriched: true

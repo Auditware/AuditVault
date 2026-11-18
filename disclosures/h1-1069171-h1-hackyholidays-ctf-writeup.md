@@ -5,6 +5,15 @@ tags:
   - severity/critical
   - cwe/information-disclosure
   - env/web
+  - vuln/sql-injection
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/rfi
+  - vuln/code-injection
+  - impact/data-exposure
+  - trigger/dns-rebinding
+  - trigger/brute-force
+  - fix/file-validation
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

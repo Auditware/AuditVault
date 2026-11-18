@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/server-side-request-forgery-ssrf
   - env/web
+  - vuln/sql-injection
+  - vuln/ssrf
 substate: "informative"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

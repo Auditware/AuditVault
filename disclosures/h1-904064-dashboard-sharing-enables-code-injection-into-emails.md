@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/code-injection
   - env/web
+  - vuln/code-injection
+  - trigger/social-engineering
+  - fix/escape-output
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

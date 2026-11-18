@@ -42,3 +42,29 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-1776476-cve-2022-40127-rce-in-apache-airflow-2-4-0-bash-example|"CVE-2022-40127: RCE in Apache Airflow <2.4.0 bash example"]] - `high`, $4,000, 60 votes, [[programs/ibb|Internet Bug Bounty]]
 - [[disclosures/h1-2586226-cve-2024-34750-apache-tomcat-dos-vulnerability-in-http-2-con|"CVE-2024-34750 Apache Tomcat DoS vulnerability in HTTP/2 connector"]] - `high`, $4,920, 60 votes, [[programs/ibb|Internet Bug Bounty]]
 - [[disclosures/h1-2327341-cve-2024-21733-apache-tomcat-http-request-smuggling-client-s|"CVE-2024-21733 Apache Tomcat HTTP Request Smuggling (Client- Side Desync) (CWE: 444)"]] - `high`, $4,660, 57 votes, [[programs/ibb|Internet Bug Bounty]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `code-injection` - 7
+- `command-injection` - 5
+- `dos` - 4
+- `path-traversal` - 3
+- `misconfiguration` - 3
+- `ssrf` - 3
+- `cors-misconfig` - 1
+- `info-disclosure` - 1
+- `race-condition` - 1
+- `broken-access-control` - 1
+- `privilege-escalation` - 1
+- `deserialization` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `brute-force` - 1
+- `cors-origin` - 1
+- `unauthenticated` - 1
+- `race-window` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 10

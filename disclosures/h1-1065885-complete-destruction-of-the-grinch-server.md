@@ -5,6 +5,13 @@ tags:
   - severity/high
   - cwe/business-logic-errors
   - env/web
+  - vuln/sql-injection
+  - vuln/xss
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/race-condition
+  - vuln/dos
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true

@@ -6,6 +6,8 @@ tags:
   - cwe/cross-site-request-forgery-csrf
   - env/web
   - stack/node
+  - vuln/xss
+  - vuln/csrf
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true

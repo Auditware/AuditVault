@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/file-manipulation
   - env/web
+  - impact/rce
 substate: "resolved"
 weakness: "File Manipulation"
 enriched: true

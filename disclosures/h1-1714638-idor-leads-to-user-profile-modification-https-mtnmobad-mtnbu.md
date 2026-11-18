@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/incorrect-authorization
   - env/web
+  - vuln/idor
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Incorrect Authorization"
 enriched: true

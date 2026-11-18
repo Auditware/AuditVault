@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/business-logic-errors
   - env/web
+  - vuln/csrf
+  - vuln/race-condition
+  - trigger/race-window
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true

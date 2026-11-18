@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/weak-password-recovery-mechanism-for-forgotten-password
   - env/web
+  - vuln/csrf
+  - impact/account-takeover
+  - impact/credential-theft
+  - fix/authentication-hardening
 substate: "resolved"
 weakness: "Weak Password Recovery Mechanism for Forgotten Password"
 enriched: true

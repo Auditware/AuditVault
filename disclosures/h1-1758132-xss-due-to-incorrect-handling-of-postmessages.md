@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/cross-site-scripting-xss-dom
   - env/web
+  - vuln/xss
+  - vuln/code-injection
+  - impact/credential-theft
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - DOM"
 enriched: true

@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/xss
+  - vuln/cors-misconfig
+  - trigger/victim-interaction
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/improper-input-validation
   - env/web
+  - vuln/code-injection
+  - impact/rce
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Improper Input Validation"
 enriched: true

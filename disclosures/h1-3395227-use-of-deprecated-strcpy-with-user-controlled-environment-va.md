@@ -4,6 +4,13 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/info-disclosure
+  - vuln/dos
+  - impact/rce
+  - fix/input-validation
 substate: "not-applicable"
 weakness: null
 enriched: true

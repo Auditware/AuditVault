@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/time-of-check-time-of-use-toctou-race-condition
   - env/web
+  - vuln/race-condition
+  - impact/account-takeover
+  - trigger/race-window
 substate: "resolved"
 weakness: "Time-of-check Time-of-use (TOCTOU) Race Condition"
 enriched: true

@@ -5,6 +5,10 @@ tags:
   - severity/high
   - env/web
   - stack/gitlab
+  - vuln/cors-misconfig
+  - vuln/subdomain-takeover
+  - trigger/cors-origin
+  - trigger/social-engineering
 substate: "resolved"
 weakness: null
 enriched: true

@@ -4,6 +4,7 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/dos
 substate: "resolved"
 weakness: null
 enriched: true

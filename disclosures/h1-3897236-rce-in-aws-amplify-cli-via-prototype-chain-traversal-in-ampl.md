@@ -6,6 +6,9 @@ tags:
   - cwe/code-injection
   - env/cloud
   - stack/aws
+  - impact/rce
+  - impact/credential-theft
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

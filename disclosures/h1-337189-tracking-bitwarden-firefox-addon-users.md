@@ -4,6 +4,7 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - fix/file-validation
 substate: "resolved"
 weakness: null
 enriched: true

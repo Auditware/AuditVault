@@ -5,6 +5,12 @@ tags:
   - severity/high
   - cwe/stack-overflow
   - env/web
+  - vuln/sql-injection
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
+  - trigger/social-engineering
 substate: "spam"
 weakness: "Stack Overflow"
 enriched: true

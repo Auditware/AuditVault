@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/reliance-on-untrusted-inputs-in-a-security-decision
   - env/web
+  - trigger/victim-interaction
 substate: "not-applicable"
 weakness: "Reliance on Untrusted Inputs in a Security Decision"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/buffer-over-read
   - env/web
+  - vuln/info-disclosure
+  - vuln/dos
 substate: "not-applicable"
 weakness: "Buffer Over-read"
 enriched: true

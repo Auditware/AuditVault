@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/llm01-prompt-injection
   - env/web
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/info-disclosure
+  - fix/input-validation
 substate: "informative"
 weakness: "LLM01: Prompt Injection"
 enriched: true

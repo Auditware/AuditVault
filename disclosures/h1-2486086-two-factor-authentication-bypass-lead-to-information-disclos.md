@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/authentication-bypass
+  - vuln/info-disclosure
 substate: "duplicate"
 weakness: "Information Disclosure"
 enriched: true

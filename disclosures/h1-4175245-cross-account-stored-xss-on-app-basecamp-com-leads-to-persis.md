@@ -5,6 +5,14 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-stored
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/csrf
+  - vuln/cors-misconfig
+  - trigger/victim-interaction
+  - trigger/session-cookie
+  - trigger/cors-origin
+  - fix/csp
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

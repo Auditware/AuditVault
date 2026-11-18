@@ -5,6 +5,8 @@ tags:
   - severity/high
   - env/web
   - stack/ruby
+  - impact/account-takeover
+  - trigger/social-engineering
 substate: "informative"
 weakness: null
 enriched: true

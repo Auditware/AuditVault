@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-dom
   - env/web
+  - vuln/xss
+  - vuln/command-injection
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - DOM"
 enriched: true

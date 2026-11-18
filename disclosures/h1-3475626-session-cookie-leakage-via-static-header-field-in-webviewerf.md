@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/misconfiguration
   - env/web
+  - impact/account-takeover
+  - trigger/one-click
+  - trigger/victim-interaction
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true

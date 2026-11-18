@@ -6,6 +6,11 @@ tags:
   - cwe/deserialization-of-untrusted-data
   - env/web
   - stack/ruby
+  - vuln/code-injection
+  - vuln/deserialization
+  - impact/rce
+  - fix/patch-upstream
+  - fix/file-validation
 substate: "resolved"
 weakness: "Deserialization of Untrusted Data"
 enriched: true

@@ -4,6 +4,12 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/sql-injection
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/misconfiguration
+  - vuln/session-management
+  - fix/patch-upstream
 substate: "resolved"
 weakness: null
 enriched: true

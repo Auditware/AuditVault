@@ -5,6 +5,12 @@ tags:
   - severity/critical
   - cwe/code-injection
   - env/web
+  - vuln/command-injection
+  - vuln/code-injection
+  - impact/rce
+  - trigger/file-upload
+  - trigger/social-engineering
+  - fix/file-validation
 substate: "not-applicable"
 weakness: "Code Injection"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/authentication-bypass
+  - vuln/misconfiguration
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

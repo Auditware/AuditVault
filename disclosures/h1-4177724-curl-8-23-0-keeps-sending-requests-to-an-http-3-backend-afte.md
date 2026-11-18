@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - trigger/session-cookie
 substate: "informative"
 weakness: "Improper Access Control - Generic"
 enriched: true

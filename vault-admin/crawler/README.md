@@ -23,6 +23,7 @@ crawler/
   gen_auditor_profiles.js Generate/update auditors/ notes from indexed findings
   gen_sector_checklists.js Build per-web3-sector audit checklists from tagged findings
   tag_disclosures.js     Add env/ stack/ os/ axes to disclosures/ (web2)
+  tag_web_bugs.js        Rule-based vuln/ impact/ trigger/ fix/ deep tagger over report bodies (web2)
   gen_program_pages.js    Generate programs/ pages from disclosures
   gen_cwe_pages.js        Generate cwe/ per-CWE reference pages from disclosures
   gen_web_checklists.js   Build per-surface web checklists (checklists/web/)
@@ -66,6 +67,7 @@ node gen_sector_checklists.js
 
 # 4. Tag + enrich web2 (disclosures/)
 node tag_disclosures.js
+node tag_web_bugs.js            # vuln/ impact/ trigger/ fix/ deep axes (report-body regex tagger)
 
 # 5. Generate web2 derived pages
 node gen_program_pages.js

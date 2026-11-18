@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/phishing
   - env/web
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Phishing"
 enriched: true

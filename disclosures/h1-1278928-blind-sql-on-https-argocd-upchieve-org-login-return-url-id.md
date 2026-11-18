@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/sql-injection
   - env/web
+  - vuln/sql-injection
+  - fix/parameterized-query
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "SQL Injection"
 enriched: true

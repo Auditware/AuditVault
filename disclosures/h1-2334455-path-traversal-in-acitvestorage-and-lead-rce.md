@@ -6,6 +6,10 @@ tags:
   - cwe/path-traversal
   - env/web
   - stack/ruby
+  - vuln/path-traversal
+  - vuln/command-injection
+  - vuln/deserialization
+  - impact/rce
 substate: "informative"
 weakness: "Path Traversal"
 enriched: true

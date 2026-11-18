@@ -4,6 +4,9 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/misconfiguration
+  - trigger/social-engineering
+  - fix/csp
 substate: "informative"
 weakness: null
 enriched: true

@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/server-side-request-forgery-ssrf
   - env/web
+  - impact/account-takeover
+  - fix/csp
+  - fix/file-validation
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

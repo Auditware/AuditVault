@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/improper-certificate-validation
   - env/web
+  - trigger/auth-required
 substate: "not-applicable"
 weakness: "Improper Certificate Validation"
 enriched: true

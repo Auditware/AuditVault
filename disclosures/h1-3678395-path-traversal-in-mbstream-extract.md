@@ -5,6 +5,13 @@ tags:
   - severity/high
   - cwe/path-traversal
   - env/web
+  - vuln/path-traversal
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/race-condition
+  - vuln/dos
+  - impact/rce
+  - trigger/race-window
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

@@ -6,6 +6,15 @@ tags:
   - cwe/cross-site-scripting-xss-dom
   - env/web
   - stack/gitlab
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/csrf
+  - vuln/code-injection
+  - impact/account-takeover
+  - impact/rce
+  - trigger/auth-required
+  - fix/csp
+  - fix/authentication-hardening
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - DOM"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/improper-restriction-of-authentication-attempts
   - env/web
+  - vuln/authentication-bypass
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true

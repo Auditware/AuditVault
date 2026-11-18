@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/insecure-direct-object-reference-idor
   - env/appliance
+  - trigger/auth-required
+  - fix/input-validation
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true

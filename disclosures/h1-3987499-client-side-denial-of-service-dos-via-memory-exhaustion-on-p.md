@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/uncontrolled-resource-consumption
   - env/web
+  - vuln/dos
+  - trigger/victim-interaction
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

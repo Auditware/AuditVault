@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/xss
+  - vuln/jwt
+  - impact/credential-theft
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

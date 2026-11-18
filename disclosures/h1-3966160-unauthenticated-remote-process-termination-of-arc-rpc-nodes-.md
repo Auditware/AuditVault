@@ -5,6 +5,18 @@ tags:
   - severity/high
   - cwe/uncontrolled-resource-consumption
   - env/web
+  - vuln/sql-injection
+  - vuln/code-injection
+  - vuln/cors-misconfig
+  - vuln/dos
+  - vuln/misconfiguration
+  - impact/rce
+  - impact/sensitive-data
+  - trigger/auth-required
+  - trigger/one-click
+  - trigger/cors-origin
+  - trigger/race-window
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

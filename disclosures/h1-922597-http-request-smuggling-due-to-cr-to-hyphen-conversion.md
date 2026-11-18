@@ -6,6 +6,8 @@ tags:
   - cwe/http-request-smuggling
   - env/web
   - stack/node
+  - vuln/xss
+  - vuln/authentication-bypass
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true

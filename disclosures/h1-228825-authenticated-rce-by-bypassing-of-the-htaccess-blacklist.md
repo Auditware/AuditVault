@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/code-injection
   - env/web
+  - impact/rce
+  - fix/file-validation
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

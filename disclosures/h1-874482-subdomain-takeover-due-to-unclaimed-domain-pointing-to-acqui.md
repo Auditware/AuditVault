@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/misconfiguration
   - env/cloud
+  - vuln/subdomain-takeover
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true

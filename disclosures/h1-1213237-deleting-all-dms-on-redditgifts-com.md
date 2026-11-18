@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/insecure-direct-object-reference-idor
   - env/web
+  - vuln/csrf
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true

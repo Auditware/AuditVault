@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/key-exchange-without-entity-authentication
   - env/web
+  - vuln/xss
 substate: "informative"
 weakness: "Key Exchange without Entity Authentication"
 enriched: true

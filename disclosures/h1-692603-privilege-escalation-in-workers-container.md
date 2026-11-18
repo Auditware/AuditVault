@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/cloud
+  - vuln/command-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

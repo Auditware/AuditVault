@@ -7,6 +7,7 @@ tags:
   - env/web
   - stack/nginx
   - stack/php
+  - vuln/misconfiguration
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

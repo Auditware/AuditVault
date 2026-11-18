@@ -6,6 +6,9 @@ tags:
   - cwe/privacy-violation
   - env/web
   - stack/gitlab
+  - impact/sensitive-data
+  - trigger/victim-interaction
+  - trigger/social-engineering
 substate: "informative"
 weakness: "Privacy Violation"
 enriched: true

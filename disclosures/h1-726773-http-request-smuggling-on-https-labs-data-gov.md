@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/http-request-smuggling
   - env/web
+  - vuln/sql-injection
+  - vuln/xss
+  - impact/credential-theft
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true

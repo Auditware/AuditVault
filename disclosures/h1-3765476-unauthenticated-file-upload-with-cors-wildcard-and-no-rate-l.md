@@ -5,6 +5,14 @@ tags:
   - severity/high
   - cwe/missing-authentication-for-critical-function
   - env/web
+  - vuln/xss
+  - vuln/cors-misconfig
+  - vuln/dos
+  - trigger/auth-required
+  - trigger/session-cookie
+  - trigger/cors-origin
+  - trigger/social-engineering
+  - fix/authentication-hardening
 substate: "resolved"
 weakness: "Missing Authentication for Critical Function"
 enriched: true

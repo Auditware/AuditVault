@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/os-command-injection
   - env/web
+  - vuln/command-injection
+  - vuln/xxe
+  - vuln/info-disclosure
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

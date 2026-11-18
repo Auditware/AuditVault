@@ -6,6 +6,10 @@ tags:
   - cwe/cross-site-scripting-xss-reflected
   - env/web
   - stack/php
+  - vuln/xss-reflected
+  - vuln/xss
+  - impact/account-takeover
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true

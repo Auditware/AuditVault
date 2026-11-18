@@ -5,6 +5,15 @@ tags:
   - severity/critical
   - cwe/insecure-storage-of-sensitive-information
   - env/web
+  - vuln/sql-injection
+  - vuln/xss
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/broken-access-control
+  - vuln/authentication-bypass
+  - vuln/privilege-escalation
+  - vuln/open-redirect
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true

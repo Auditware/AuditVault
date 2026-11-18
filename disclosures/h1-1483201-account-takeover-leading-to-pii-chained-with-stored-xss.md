@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/info-disclosure
+  - impact/account-takeover
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

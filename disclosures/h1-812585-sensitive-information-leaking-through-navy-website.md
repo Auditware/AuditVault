@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/cleartext-storage-of-sensitive-information
   - env/web
+  - vuln/info-disclosure
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "Cleartext Storage of Sensitive Information"
 enriched: true

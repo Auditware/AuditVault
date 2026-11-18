@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/http-request-smuggling
   - env/web
+  - impact/account-takeover
+  - impact/credential-theft
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true

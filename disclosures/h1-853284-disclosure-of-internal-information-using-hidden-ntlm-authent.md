@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/external-control-of-critical-state-data
   - env/web
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: "External Control of Critical State Data"
 enriched: true

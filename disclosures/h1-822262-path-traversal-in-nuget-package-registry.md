@@ -6,6 +6,9 @@ tags:
   - cwe/path-traversal
   - env/web
   - stack/gitlab
+  - vuln/path-traversal
+  - vuln/race-condition
+  - trigger/race-window
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

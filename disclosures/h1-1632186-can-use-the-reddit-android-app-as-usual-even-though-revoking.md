@@ -6,6 +6,7 @@ tags:
   - cwe/insufficient-session-expiration
   - env/mobile
   - os/android
+  - trigger/auth-required
 substate: "informative"
 weakness: "Insufficient Session Expiration"
 enriched: true

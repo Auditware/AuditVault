@@ -6,6 +6,7 @@ tags:
   - cwe/ui-redressing-clickjacking
   - env/web
   - stack/gitlab
+  - vuln/xss
 substate: "resolved"
 weakness: "UI Redressing (Clickjacking)"
 enriched: true

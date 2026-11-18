@@ -6,6 +6,8 @@ tags:
   - cwe/classic-buffer-overflow
   - env/mobile
   - os/android
+  - vuln/dos
+  - trigger/victim-interaction
 substate: "informative"
 weakness: "Classic Buffer Overflow"
 enriched: true

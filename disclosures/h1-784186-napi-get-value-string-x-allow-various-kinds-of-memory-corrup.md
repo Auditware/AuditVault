@@ -6,6 +6,9 @@ tags:
   - cwe/memory-corruption-generic
   - env/web
   - stack/node
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: "Memory Corruption - Generic"
 enriched: true

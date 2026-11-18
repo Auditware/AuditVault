@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/privilege-escalation
   - env/web
+  - impact/account-takeover
+  - trigger/one-click
+  - trigger/victim-interaction
+  - trigger/password-reset
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

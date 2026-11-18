@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/privacy-violation
   - env/web
+  - vuln/broken-access-control
+  - vuln/info-disclosure
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "Privacy Violation"
 enriched: true

@@ -38,3 +38,25 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-2327341-cve-2024-21733-apache-tomcat-http-request-smuggling-client-s|"CVE-2024-21733 Apache Tomcat HTTP Request Smuggling (Client- Side Desync) (CWE: 444)"]] - `high`, $4,660, 57 votes, [[programs/ibb|Internet Bug Bounty]]
 - [[disclosures/h1-2299692-request-smuggling-in-apache-tomcat-important-cve-2023-45648|"Request Smuggling in Apache Tomcat (Important, CVE-2023-45648)"]] - `high`, $4,660, 51 votes, [[programs/ibb|Internet Bug Bounty]]
 - [[disclosures/h1-221294-java-deserialization-rce-via-jboss-on-card-starbucks-in|"Java Deserialization RCE via JBoss on card.starbucks.in"]] - `critical`, undisclosed, 48 votes, [[programs/starbucks|Starbucks]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `command-injection` - 2
+- `misconfiguration` - 2
+- `info-disclosure` - 2
+- `code-injection` - 2
+- `path-traversal` - 2
+- `dos` - 1
+- `race-condition` - 1
+- `xss` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `unauthenticated` - 1
+- `race-window` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 5
+- `account-takeover` - 1
+- `internal-network` - 1

@@ -6,6 +6,9 @@ tags:
   - cwe/command-injection-generic
   - env/web
   - stack/ruby
+  - vuln/deserialization
+  - vuln/rce-unsafe-deserialization
+  - impact/rce
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

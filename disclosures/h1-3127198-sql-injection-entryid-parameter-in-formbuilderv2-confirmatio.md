@@ -6,6 +6,8 @@ tags:
   - cwe/sql-injection
   - env/web
   - stack/php
+  - vuln/sql-injection
+  - fix/parameterized-query
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

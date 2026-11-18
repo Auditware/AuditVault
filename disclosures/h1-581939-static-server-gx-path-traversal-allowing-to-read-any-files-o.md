@@ -6,6 +6,10 @@ tags:
   - cwe/path-traversal
   - env/web
   - stack/node
+  - vuln/path-traversal
+  - vuln/code-injection
+  - impact/rce
+  - fix/file-validation
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

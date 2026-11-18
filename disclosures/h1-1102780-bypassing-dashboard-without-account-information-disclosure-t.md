@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/info-disclosure
+  - trigger/unauthenticated
 substate: "informative"
 weakness: "Improper Access Control - Generic"
 enriched: true

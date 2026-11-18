@@ -6,6 +6,7 @@ tags:
   - cwe/insecure-storage-of-sensitive-information
   - env/web
   - stack/firebase
+  - vuln/misconfiguration
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true

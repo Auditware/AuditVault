@@ -5,6 +5,14 @@ tags:
   - severity/high
   - cwe/path-traversal
   - env/web
+  - vuln/path-traversal
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/secrets-leak
+  - vuln/business-logic
+  - impact/credential-theft
+  - impact/internal-network
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "Path Traversal"
 enriched: true

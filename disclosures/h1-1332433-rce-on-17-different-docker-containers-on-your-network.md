@@ -7,6 +7,7 @@ tags:
   - env/cloud
   - env/network
   - stack/docker
+  - impact/rce
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

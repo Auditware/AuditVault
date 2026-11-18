@@ -6,6 +6,8 @@ tags:
   - cwe/null-pointer-dereference
   - env/web
   - stack/node
+  - vuln/dos
+  - impact/dos-impact
 substate: "informative"
 weakness: "NULL Pointer Dereference"
 enriched: true

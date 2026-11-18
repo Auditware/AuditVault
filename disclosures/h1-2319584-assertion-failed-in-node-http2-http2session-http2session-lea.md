@@ -6,6 +6,9 @@ tags:
   - cwe/uncontrolled-resource-consumption
   - env/web
   - stack/node
+  - vuln/path-traversal
+  - vuln/dos
+  - impact/dos-impact
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

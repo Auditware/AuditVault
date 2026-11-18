@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/insecure-direct-object-reference-idor
   - env/web
+  - vuln/idor
+  - impact/account-takeover
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true

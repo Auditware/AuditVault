@@ -6,6 +6,9 @@ tags:
   - cwe/out-of-bounds-read
   - env/web
   - stack/node
+  - vuln/csrf
+  - vuln/dos
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "Out-of-bounds Read"
 enriched: true

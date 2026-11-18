@@ -6,6 +6,9 @@ tags:
   - cwe/privacy-violation
   - env/mobile
   - os/android
+  - vuln/path-traversal
+  - vuln/command-injection
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Privacy Violation"
 enriched: true

@@ -6,6 +6,7 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - stack/node
+  - vuln/path-traversal
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

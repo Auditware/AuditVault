@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/ui-redressing-clickjacking
   - env/web
+  - vuln/misconfiguration
 substate: "not-applicable"
 weakness: "UI Redressing (Clickjacking)"
 enriched: true

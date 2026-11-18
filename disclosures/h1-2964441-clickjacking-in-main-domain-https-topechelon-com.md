@@ -4,6 +4,12 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/xss
+  - impact/account-takeover
+  - impact/credential-theft
+  - trigger/auth-required
+  - trigger/social-engineering
+  - fix/csp
 substate: "resolved"
 weakness: null
 enriched: true

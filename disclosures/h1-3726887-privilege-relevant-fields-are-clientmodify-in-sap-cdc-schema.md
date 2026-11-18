@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/improper-privilege-management
   - env/web
+  - vuln/privilege-escalation
+  - vuln/misconfiguration
+  - vuln/jwt
+  - impact/account-takeover
+  - impact/sensitive-data
+  - trigger/unauthenticated
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Improper Privilege Management"
 enriched: true

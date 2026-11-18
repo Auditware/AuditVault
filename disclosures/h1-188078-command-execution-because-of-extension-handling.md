@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/command-injection-generic
   - env/web
+  - vuln/command-injection
+  - vuln/code-injection
 substate: "duplicate"
 weakness: "Command Injection - Generic"
 enriched: true

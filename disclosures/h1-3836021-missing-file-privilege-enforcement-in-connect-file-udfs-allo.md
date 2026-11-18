@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/path-traversal
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

@@ -6,6 +6,9 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - os/windows
+  - vuln/race-condition
+  - trigger/low-priv-user
+  - trigger/race-window
 substate: "informative"
 weakness: "Privilege Escalation"
 enriched: true

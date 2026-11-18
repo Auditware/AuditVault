@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/path-traversal
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - impact/data-exposure
+  - fix/file-validation
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

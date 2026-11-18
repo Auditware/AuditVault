@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/path-traversal
   - env/web
+  - vuln/path-traversal
 substate: "resolved"
 weakness: "Path Traversal: '.../...//'"
 enriched: true

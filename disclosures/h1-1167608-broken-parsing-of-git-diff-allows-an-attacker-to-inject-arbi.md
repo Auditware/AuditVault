@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - env/web
   - stack/ruby
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: null
 enriched: true

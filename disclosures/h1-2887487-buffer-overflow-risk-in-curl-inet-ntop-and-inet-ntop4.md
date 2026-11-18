@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/classic-buffer-overflow
   - env/web
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/dos
+  - impact/rce
 substate: "not-applicable"
 weakness: "Classic Buffer Overflow"
 enriched: true

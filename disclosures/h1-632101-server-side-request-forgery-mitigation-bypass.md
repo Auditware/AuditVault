@@ -6,6 +6,10 @@ tags:
   - cwe/server-side-request-forgery-ssrf
   - env/web
   - stack/gitlab
+  - vuln/ssrf
+  - vuln/code-injection
+  - impact/rce
+  - trigger/dns-rebinding
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

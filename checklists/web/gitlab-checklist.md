@@ -45,3 +45,44 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-587854-local-files-could-be-overwritten-in-gitlab-leading-to-remote|"Local files could be overwritten in GitLab, leading to remote command execution"]] - `critical`, $12,000, 542 votes, [[programs/gitlab|GitLab]]
 - [[disclosures/h1-1154542-rce-when-removing-metadata-with-exiftool|"RCE when removing metadata with ExifTool"]] - `critical`, $20,000, 508 votes, [[programs/gitlab|GitLab]]
 - [[disclosures/h1-689314-project-template-functionality-can-be-used-to-copy-private-p|"Project Template functionality can be used to copy private project data, such as repository, confidential issues, snippets, and merge requests"]] - `critical`, $12,000, 457 votes, [[programs/gitlab|GitLab]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `xss` - 37
+- `xss-stored` - 23
+- `code-injection` - 12
+- `ssrf` - 11
+- `path-traversal` - 11
+- `command-injection` - 7
+- `dos` - 5
+- `csrf` - 5
+- `privilege-escalation` - 4
+- `sql-injection` - 3
+- `race-condition` - 3
+- `subdomain-takeover` - 2
+
+## 🎯 Exploit triggers (trigger/)
+
+- `auth-required` - 8
+- `victim-interaction` - 5
+- `social-engineering` - 5
+- `file-upload` - 4
+- `admin-required` - 3
+- `cors-origin` - 2
+- `low-priv-user` - 2
+- `brute-force` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 17
+- `account-takeover` - 5
+- `credential-theft` - 4
+- `sensitive-data` - 3
+- `unauthorized-write` - 2
+
+## 🛠️ Recommended fixes (fix/)
+
+- `csp` - 19
+- `authentication-hardening` - 1
+- `input-validation` - 1
+- `file-validation` - 1

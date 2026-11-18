@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/cryptographic-issues-generic
   - env/web
+  - trigger/race-window
+  - trigger/brute-force
 substate: "informative"
 weakness: "Cryptographic Issues - Generic"
 enriched: true

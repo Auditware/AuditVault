@@ -6,6 +6,9 @@ tags:
   - cwe/privilege-escalation
   - env/cloud
   - stack/aws
+  - vuln/cors-misconfig
+  - vuln/subdomain-takeover
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

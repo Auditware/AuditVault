@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/violation-of-secure-design-principles
   - env/web
+  - vuln/dos
+  - vuln/misconfiguration
+  - impact/internal-network
 substate: "not-applicable"
 weakness: "Violation of Secure Design Principles"
 enriched: true

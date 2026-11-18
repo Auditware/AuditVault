@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/use-after-free
   - env/web
+  - vuln/info-disclosure
+  - vuln/dos
 substate: "duplicate"
 weakness: "Use After Free"
 enriched: true

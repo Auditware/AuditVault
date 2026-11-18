@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/http-request-smuggling
   - env/web
+  - vuln/csrf
+  - impact/credential-theft
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true

@@ -6,6 +6,8 @@ tags:
   - cwe/path-traversal
   - env/web
   - stack/gitlab
+  - vuln/command-injection
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

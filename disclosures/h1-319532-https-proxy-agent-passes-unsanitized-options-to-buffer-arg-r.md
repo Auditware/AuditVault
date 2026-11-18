@@ -6,6 +6,8 @@ tags:
   - cwe/uncontrolled-resource-consumption
   - env/web
   - stack/node
+  - vuln/info-disclosure
+  - vuln/dos
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

@@ -6,6 +6,7 @@ tags:
   - cwe/command-injection-generic
   - env/web
   - stack/node
+  - vuln/command-injection
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

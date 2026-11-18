@@ -5,6 +5,14 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/web
+  - vuln/sql-injection
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/race-condition
+  - trigger/admin-required
+  - trigger/race-window
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

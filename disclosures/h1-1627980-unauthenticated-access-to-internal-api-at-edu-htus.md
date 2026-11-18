@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/improper-authorization
   - env/web
+  - vuln/info-disclosure
+  - impact/sensitive-data
+  - trigger/unauthenticated
 substate: "resolved"
 weakness: "Improper Authorization"
 enriched: true

@@ -6,6 +6,7 @@ tags:
   - cwe/server-side-request-forgery-ssrf
   - env/cloud
   - stack/aws
+  - vuln/ssrf
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

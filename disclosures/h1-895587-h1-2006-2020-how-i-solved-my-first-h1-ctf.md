@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/violation-of-secure-design-principles
   - env/web
+  - vuln/ssrf
+  - vuln/path-traversal
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true

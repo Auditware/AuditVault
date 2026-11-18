@@ -6,6 +6,7 @@ tags:
   - cwe/null-pointer-dereference
   - env/web
   - stack/apache
+  - vuln/dos
 substate: "resolved"
 weakness: "NULL Pointer Dereference"
 enriched: true

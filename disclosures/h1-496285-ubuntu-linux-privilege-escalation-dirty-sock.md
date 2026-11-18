@@ -6,6 +6,8 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - os/linux
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

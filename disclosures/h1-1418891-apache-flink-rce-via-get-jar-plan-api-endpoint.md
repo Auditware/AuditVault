@@ -6,6 +6,10 @@ tags:
   - cwe/command-injection-generic
   - env/web
   - stack/apache
+  - vuln/cors-misconfig
+  - vuln/dos
+  - impact/rce
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

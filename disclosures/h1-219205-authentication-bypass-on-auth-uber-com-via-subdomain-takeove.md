@@ -5,6 +5,16 @@ tags:
   - severity/critical
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/xss
+  - vuln/csrf
+  - vuln/code-injection
+  - vuln/authentication-bypass
+  - vuln/subdomain-takeover
+  - impact/rce
+  - impact/credential-theft
+  - trigger/session-cookie
+  - trigger/social-engineering
+  - fix/csp
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

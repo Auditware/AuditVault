@@ -6,6 +6,9 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - stack/apache
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/dos
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

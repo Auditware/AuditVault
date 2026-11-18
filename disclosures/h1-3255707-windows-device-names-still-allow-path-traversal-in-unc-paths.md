@@ -7,6 +7,8 @@ tags:
   - env/web
   - stack/node
   - os/windows
+  - vuln/path-traversal
+  - impact/internal-network
 substate: "informative"
 weakness: "Path Traversal"
 enriched: true

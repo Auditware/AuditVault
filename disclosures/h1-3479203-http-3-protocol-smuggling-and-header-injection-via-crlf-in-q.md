@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/crlf-injection
   - env/network
+  - vuln/authentication-bypass
 substate: "informative"
 weakness: "CRLF Injection"
 enriched: true

@@ -6,6 +6,9 @@ tags:
   - cwe/code-injection
   - env/web
   - stack/gitlab
+  - vuln/command-injection
+  - impact/rce
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/open-redirect
   - env/web
+  - vuln/csrf
+  - vuln/open-redirect
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Open Redirect"
 enriched: true

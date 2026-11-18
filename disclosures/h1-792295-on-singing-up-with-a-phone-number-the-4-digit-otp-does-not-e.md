@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/violation-of-secure-design-principles
   - env/web
+  - fix/authentication-hardening
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true

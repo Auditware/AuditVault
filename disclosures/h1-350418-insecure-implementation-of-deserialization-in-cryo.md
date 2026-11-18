@@ -6,6 +6,10 @@ tags:
   - cwe/code-injection
   - env/web
   - stack/node
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/deserialization
+  - vuln/dos
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

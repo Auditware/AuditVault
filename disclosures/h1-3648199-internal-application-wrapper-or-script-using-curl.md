@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/code-injection
   - env/web
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/info-disclosure
+  - impact/rce
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "Code Injection"
 enriched: true

@@ -6,6 +6,7 @@ tags:
   - cwe/information-disclosure
   - env/web
   - stack/gitlab
+  - vuln/path-traversal
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

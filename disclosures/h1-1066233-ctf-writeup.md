@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/sql-injection
   - env/web
+  - fix/file-validation
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

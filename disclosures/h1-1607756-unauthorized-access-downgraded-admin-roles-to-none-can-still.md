@@ -4,6 +4,9 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/admin-required
 substate: "not-applicable"
 weakness: null
 enriched: true

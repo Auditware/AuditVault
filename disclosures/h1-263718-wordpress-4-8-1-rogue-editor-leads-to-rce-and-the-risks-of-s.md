@@ -5,6 +5,10 @@ tags:
   - severity/high
   - env/web
   - stack/wordpress
+  - vuln/xss
+  - impact/rce
+  - trigger/victim-interaction
+  - trigger/social-engineering
 substate: "informative"
 weakness: null
 enriched: true

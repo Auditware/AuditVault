@@ -6,6 +6,8 @@ tags:
   - cwe/information-disclosure
   - env/web
   - stack/gitlab
+  - vuln/info-disclosure
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

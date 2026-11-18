@@ -6,6 +6,8 @@ tags:
   - cwe/cross-site-request-forgery-csrf
   - env/web
   - stack/wordpress
+  - vuln/csrf
+  - vuln/ssrf
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true

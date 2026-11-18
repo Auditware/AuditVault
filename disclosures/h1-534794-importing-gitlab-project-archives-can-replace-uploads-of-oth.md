@@ -6,6 +6,7 @@ tags:
   - cwe/insecure-direct-object-reference-idor
   - env/web
   - stack/gitlab
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true

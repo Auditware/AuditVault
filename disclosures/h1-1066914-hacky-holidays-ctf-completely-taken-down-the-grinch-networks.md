@@ -5,6 +5,15 @@ tags:
   - severity/critical
   - cwe/server-side-request-forgery-ssrf
   - env/web
+  - vuln/sql-injection
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/privilege-escalation
+  - vuln/misconfiguration
+  - trigger/auth-required
+  - trigger/admin-required
+  - trigger/dns-rebinding
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

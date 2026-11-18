@@ -7,6 +7,11 @@ tags:
   - env/cloud
   - stack/aws
   - stack/node
+  - vuln/command-injection
+  - impact/rce
+  - impact/credential-theft
+  - impact/persistence
+  - fix/input-validation
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

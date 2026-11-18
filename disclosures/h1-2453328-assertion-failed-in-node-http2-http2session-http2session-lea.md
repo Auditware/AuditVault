@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/uncontrolled-resource-consumption
   - env/web
+  - vuln/race-condition
+  - vuln/dos
+  - impact/dos-impact
+  - trigger/race-window
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/cross-site-request-forgery-csrf
   - env/web
+  - vuln/csrf
+  - vuln/cors-misconfig
+  - trigger/one-click
+  - trigger/victim-interaction
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true

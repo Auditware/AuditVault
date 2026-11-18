@@ -4,6 +4,7 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/open-redirect
 substate: "resolved"
 weakness: null
 enriched: true

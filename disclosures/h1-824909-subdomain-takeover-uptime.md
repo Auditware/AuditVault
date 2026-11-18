@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/web
+  - vuln/xss
+  - vuln/authentication-bypass
+  - vuln/subdomain-takeover
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

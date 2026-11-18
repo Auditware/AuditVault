@@ -6,6 +6,8 @@ tags:
   - cwe/improper-access-control-generic
   - env/web
   - stack/php
+  - vuln/privilege-escalation
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

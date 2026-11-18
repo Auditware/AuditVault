@@ -6,6 +6,7 @@ tags:
   - cwe/embedded-malicious-code
   - env/appliance
   - stack/node
+  - impact/rce
 substate: "resolved"
 weakness: "Embedded Malicious Code"
 enriched: true

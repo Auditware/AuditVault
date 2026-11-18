@@ -6,6 +6,10 @@ tags:
   - cwe/path-traversal
   - env/mobile
   - os/android
+  - vuln/path-traversal
+  - vuln/code-injection
+  - impact/rce
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: "Path Traversal: '.../...//'"
 enriched: true

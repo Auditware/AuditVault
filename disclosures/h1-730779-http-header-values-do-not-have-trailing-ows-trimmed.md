@@ -6,6 +6,7 @@ tags:
   - cwe/improper-input-validation
   - env/web
   - stack/node
+  - vuln/broken-access-control
 substate: "resolved"
 weakness: "Improper Input Validation"
 enriched: true

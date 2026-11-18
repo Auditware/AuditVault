@@ -6,6 +6,7 @@ tags:
   - cwe/information-exposure-through-directory-listing
   - env/cloud
   - stack/aws
+  - vuln/info-disclosure
 substate: "informative"
 weakness: "Information Exposure Through Directory Listing"
 enriched: true

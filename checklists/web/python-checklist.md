@@ -37,3 +37,22 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-3417967-potential-sql-injection-when-annotating-filteredrelation-on-|"Potential SQL Injection when annotating FilteredRelation on PostgreSQL"]] - `high`, undisclosed, 52 votes, [[programs/django|Django]]
 - [[disclosures/h1-1084342-buffer-overflow-in-pycarg-repr-in-ctypes-callproc-c-for-pyth|"Buffer overflow in PyCArg_repr in _ctypes/callproc.c for Python 3.x to 3.9.1"]] - `high`, $1,500, 51 votes, [[programs/ibb|Internet Bug Bounty]]
 - [[disclosures/h1-579760-jenkins-unauthenticated-rce-on-https-djangoci-com|"Jenkins Unauthenticated RCE on https://djangoci.com/"]] - `critical`, undisclosed, 22 votes, [[programs/django|Django]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `sql-injection` - 5
+- `code-injection` - 2
+- `dos` - 2
+- `command-injection` - 2
+- `deserialization` - 1
+- `broken-access-control` - 1
+- `privilege-escalation` - 1
+- `info-disclosure` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 3
+
+## 🛠️ Recommended fixes (fix/)
+
+- `input-validation` - 1

@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/array-index-underflow
   - env/web
+  - vuln/dos
 substate: "resolved"
 weakness: "Array Index Underflow"
 enriched: true

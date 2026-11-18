@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/dos
+  - impact/account-takeover
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

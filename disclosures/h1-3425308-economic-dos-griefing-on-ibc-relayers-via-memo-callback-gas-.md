@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/uncontrolled-resource-consumption
   - env/web
+  - vuln/dos
+  - impact/financial
 substate: "not-applicable"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

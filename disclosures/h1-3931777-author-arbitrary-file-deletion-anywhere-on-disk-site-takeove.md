@@ -6,6 +6,13 @@ tags:
   - cwe/path-traversal
   - env/web
   - stack/wordpress
+  - vuln/xss
+  - vuln/path-traversal
+  - vuln/idor
+  - vuln/dos
+  - impact/rce
+  - trigger/unauthenticated
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

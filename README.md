@@ -121,6 +121,7 @@ node gen_sector_checklists.js   # build checklists/ from tagged findings
 
 # Web2 enrich (disclosures/)
 node tag_disclosures.js         # env/ stack/ os/ axes
+node tag_web_bugs.js            # vuln/ impact/ trigger/ fix/ deep axes (report-body regex tagger)
 node gen_program_pages.js       # programs/ pages from disclosures
 node gen_cwe_pages.js            # cwe/ per-CWE reference pages
 node gen_web_checklists.js      # checklists/web/ per-surface checklists

@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/misconfiguration
   - env/web
+  - vuln/cors-misconfig
+  - vuln/misconfiguration
+  - trigger/password-reset
+  - trigger/cors-origin
 substate: "duplicate"
 weakness: "Misconfiguration"
 enriched: true

@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/path-traversal
   - env/web
+  - vuln/command-injection
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

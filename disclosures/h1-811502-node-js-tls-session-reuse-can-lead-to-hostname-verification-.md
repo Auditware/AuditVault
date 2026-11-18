@@ -6,6 +6,8 @@ tags:
   - cwe/man-in-the-middle
   - env/web
   - stack/node
+  - vuln/path-traversal
+  - trigger/race-window
 substate: "resolved"
 weakness: "Man-in-the-Middle"
 enriched: true

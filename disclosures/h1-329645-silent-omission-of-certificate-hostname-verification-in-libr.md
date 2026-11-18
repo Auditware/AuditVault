@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/improper-certificate-validation
   - env/web
+  - vuln/xss
 substate: "resolved"
 weakness: "Improper Certificate Validation"
 enriched: true

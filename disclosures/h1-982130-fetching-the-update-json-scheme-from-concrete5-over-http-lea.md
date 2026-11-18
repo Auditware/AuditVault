@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/man-in-the-middle
   - env/web
+  - vuln/code-injection
+  - impact/rce
+  - trigger/unauthenticated
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Man-in-the-Middle"
 enriched: true

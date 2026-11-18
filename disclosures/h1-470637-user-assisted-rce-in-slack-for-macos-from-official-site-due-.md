@@ -5,6 +5,11 @@ tags:
   - severity/high
   - env/web
   - os/macos
+  - vuln/command-injection
+  - vuln/code-injection
+  - impact/rce
+  - trigger/one-click
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: null
 enriched: true

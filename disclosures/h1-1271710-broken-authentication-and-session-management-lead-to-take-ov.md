@@ -5,6 +5,12 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/csrf
+  - vuln/cors-misconfig
+  - vuln/session-management
+  - impact/account-takeover
+  - trigger/session-cookie
+  - trigger/cors-origin
 substate: "not-applicable"
 weakness: "Improper Access Control - Generic"
 enriched: true

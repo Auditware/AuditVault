@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/code-injection
   - env/web
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - impact/rce
+  - impact/internal-network
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

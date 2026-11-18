@@ -6,6 +6,7 @@ tags:
   - cwe/missing-encryption-of-sensitive-data
   - env/web
   - stack/node
+  - vuln/command-injection
 substate: "resolved"
 weakness: "Missing Encryption of Sensitive Data"
 enriched: true

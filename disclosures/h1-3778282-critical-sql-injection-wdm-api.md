@@ -5,6 +5,17 @@ tags:
   - severity/critical
   - cwe/sql-injection
   - env/web
+  - vuln/sql-injection
+  - vuln/xss
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/cors-misconfig
+  - impact/rce
+  - impact/unauthorized-write
+  - trigger/unauthenticated
+  - trigger/cors-origin
+  - fix/parameterized-query
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

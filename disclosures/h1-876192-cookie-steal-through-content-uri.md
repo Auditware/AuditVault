@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/weak-password-recovery-mechanism-for-forgotten-password
   - env/web
+  - vuln/command-injection
+  - vuln/misconfiguration
 substate: "resolved"
 weakness: "Weak Password Recovery Mechanism for Forgotten Password"
 enriched: true

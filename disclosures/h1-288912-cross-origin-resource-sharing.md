@@ -4,6 +4,11 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/xss
+  - vuln/cors-misconfig
+  - vuln/misconfiguration
+  - trigger/session-cookie
+  - trigger/cors-origin
 substate: "informative"
 weakness: null
 enriched: true

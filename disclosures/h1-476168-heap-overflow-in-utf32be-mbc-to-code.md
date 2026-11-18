@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/heap-overflow
   - env/web
+  - vuln/dos
 substate: "resolved"
 weakness: "Heap Overflow"
 enriched: true

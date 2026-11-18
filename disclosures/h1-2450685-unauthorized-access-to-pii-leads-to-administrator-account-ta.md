@@ -5,6 +5,16 @@ tags:
   - severity/critical
   - cwe/privilege-escalation
   - env/web
+  - vuln/xss
+  - vuln/info-disclosure
+  - vuln/cors-misconfig
+  - vuln/misconfiguration
+  - impact/account-takeover
+  - impact/sensitive-data
+  - trigger/auth-required
+  - trigger/victim-interaction
+  - trigger/cors-origin
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

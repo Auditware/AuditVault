@@ -5,6 +5,17 @@ tags:
   - severity/critical
   - cwe/violation-of-secure-design-principles
   - env/web
+  - vuln/sql-injection
+  - vuln/xss
+  - vuln/csrf
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/broken-access-control
+  - vuln/authentication-bypass
+  - vuln/privilege-escalation
+  - impact/account-takeover
+  - trigger/social-engineering
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true

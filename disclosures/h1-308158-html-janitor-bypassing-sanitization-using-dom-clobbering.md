@@ -6,6 +6,7 @@ tags:
   - cwe/business-logic-errors
   - env/web
   - stack/node
+  - vuln/xss
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true

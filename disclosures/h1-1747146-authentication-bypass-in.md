@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/authentication-bypass-using-an-alternate-path-or-channel
   - env/web
+  - vuln/authentication-bypass
+  - vuln/misconfiguration
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Authentication Bypass Using an Alternate Path or Channel"
 enriched: true

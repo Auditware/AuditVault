@@ -6,6 +6,8 @@ tags:
   - cwe/heap-overflow
   - env/web
   - stack/php
+  - vuln/dos
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "Heap Overflow"
 enriched: true

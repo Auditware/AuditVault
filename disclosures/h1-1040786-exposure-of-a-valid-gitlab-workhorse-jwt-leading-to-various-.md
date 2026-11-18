@@ -6,6 +6,8 @@ tags:
   - cwe/improper-authentication-generic
   - env/web
   - stack/gitlab
+  - vuln/jwt
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

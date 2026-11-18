@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/http-request-smuggling
   - env/web
+  - vuln/xss
+  - vuln/broken-access-control
+  - vuln/open-redirect
+  - vuln/cors-misconfig
+  - vuln/dos
+  - trigger/victim-interaction
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true

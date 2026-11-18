@@ -6,6 +6,7 @@ tags:
   - cwe/cross-site-scripting-xss-reflected
   - env/web
   - os/linux
+  - vuln/xss
 substate: "informative"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true

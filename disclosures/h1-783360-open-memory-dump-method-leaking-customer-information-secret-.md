@@ -5,6 +5,12 @@ tags:
   - severity/critical
   - cwe/exposed-dangerous-method-or-function
   - env/web
+  - vuln/info-disclosure
+  - vuln/misconfiguration
+  - vuln/jwt
+  - impact/account-takeover
+  - impact/sensitive-data
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Exposed Dangerous Method or Function"
 enriched: true

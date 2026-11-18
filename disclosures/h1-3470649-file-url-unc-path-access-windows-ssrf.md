@@ -5,6 +5,12 @@ tags:
   - severity/high
   - env/web
   - os/windows
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/command-injection
+  - vuln/info-disclosure
+  - impact/credential-theft
+  - impact/internal-network
 substate: "not-applicable"
 weakness: null
 enriched: true

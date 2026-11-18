@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/leftover-debug-code-backdoor
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - trigger/unauthenticated
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Leftover Debug Code (Backdoor)"
 enriched: true

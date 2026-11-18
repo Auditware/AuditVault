@@ -4,6 +4,8 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/info-disclosure
+  - trigger/password-reset
 substate: "resolved"
 weakness: null
 enriched: true

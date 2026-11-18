@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/improper-authentication-generic
   - env/web
+  - impact/account-takeover
+  - impact/credential-theft
+  - trigger/brute-force
+  - fix/authentication-hardening
 substate: "duplicate"
 weakness: "Improper Authentication - Generic"
 enriched: true

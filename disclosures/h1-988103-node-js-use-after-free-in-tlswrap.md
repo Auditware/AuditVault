@@ -6,6 +6,10 @@ tags:
   - cwe/use-after-free
   - env/web
   - stack/node
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: "Use After Free"
 enriched: true

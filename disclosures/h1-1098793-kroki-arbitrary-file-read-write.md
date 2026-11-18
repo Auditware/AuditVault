@@ -6,6 +6,10 @@ tags:
   - cwe/improper-access-control-generic
   - env/web
   - stack/gitlab
+  - vuln/path-traversal
+  - vuln/file-upload
+  - impact/rce
+  - impact/unauthorized-write
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

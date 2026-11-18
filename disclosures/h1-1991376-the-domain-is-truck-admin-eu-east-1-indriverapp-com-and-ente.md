@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/business-logic-errors
   - env/web
+  - vuln/cors-misconfig
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true

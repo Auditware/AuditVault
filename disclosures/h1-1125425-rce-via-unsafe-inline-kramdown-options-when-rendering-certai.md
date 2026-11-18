@@ -6,6 +6,8 @@ tags:
   - cwe/code-injection
   - env/web
   - stack/gitlab
+  - vuln/path-traversal
+  - impact/rce
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

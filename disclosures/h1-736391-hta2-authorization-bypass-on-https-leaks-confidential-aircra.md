@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/improper-authorization
   - env/web
+  - vuln/broken-access-control
+  - trigger/auth-required
 substate: "duplicate"
 weakness: "Improper Authorization"
 enriched: true

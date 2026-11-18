@@ -6,6 +6,8 @@ tags:
   - cwe/improper-authentication-generic
   - env/web
   - stack/gitlab
+  - vuln/xss
+  - vuln/csrf
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

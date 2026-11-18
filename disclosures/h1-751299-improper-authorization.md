@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/improper-authorization
   - env/web
+  - vuln/broken-access-control
+  - vuln/jwt
 substate: "resolved"
 weakness: "Improper Authorization"
 enriched: true

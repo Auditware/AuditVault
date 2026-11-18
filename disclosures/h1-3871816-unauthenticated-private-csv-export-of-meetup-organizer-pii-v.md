@@ -6,6 +6,13 @@ tags:
   - cwe/improper-access-control-generic
   - env/web
   - stack/wordpress
+  - vuln/csrf
+  - vuln/broken-access-control
+  - vuln/info-disclosure
+  - impact/sensitive-data
+  - trigger/unauthenticated
+  - trigger/auth-required
+  - trigger/low-priv-user
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

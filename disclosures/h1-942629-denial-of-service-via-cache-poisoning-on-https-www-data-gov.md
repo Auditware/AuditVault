@@ -4,6 +4,7 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/dos
 substate: "duplicate"
 weakness: null
 enriched: true

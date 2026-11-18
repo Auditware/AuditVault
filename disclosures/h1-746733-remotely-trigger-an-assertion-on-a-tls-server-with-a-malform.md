@@ -6,6 +6,8 @@ tags:
   - cwe/improper-certificate-validation
   - env/web
   - stack/node
+  - vuln/dos
+  - impact/dos-impact
 substate: "resolved"
 weakness: "Improper Certificate Validation"
 enriched: true

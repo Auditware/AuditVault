@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/asi05-unexpected-code-execution-rce
   - env/network
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/dos
+  - impact/rce
+  - impact/persistence
 substate: "informative"
 weakness: "ASI05: Unexpected Code Execution (RCE)"
 enriched: true

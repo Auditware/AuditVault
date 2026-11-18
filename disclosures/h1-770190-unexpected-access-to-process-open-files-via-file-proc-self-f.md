@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/broken-access-control
 substate: "informative"
 weakness: "Information Disclosure"
 enriched: true

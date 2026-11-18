@@ -6,6 +6,8 @@ tags:
   - cwe/cross-site-scripting-xss-reflected
   - env/web
   - stack/node
+  - vuln/xss-reflected
+  - vuln/xss
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true

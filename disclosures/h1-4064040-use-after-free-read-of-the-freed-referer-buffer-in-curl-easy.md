@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/dos
+  - fix/patch-upstream
 substate: "not-applicable"
 weakness: "Information Disclosure"
 enriched: true

@@ -4,6 +4,8 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/idor
+  - impact/account-takeover
 substate: "resolved"
 weakness: null
 enriched: true

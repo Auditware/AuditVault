@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/integer-overflow
   - env/web
+  - vuln/code-injection
+  - vuln/dos
 substate: "resolved"
 weakness: "Integer Overflow"
 enriched: true

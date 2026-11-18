@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/heap-overflow
   - env/web
+  - vuln/dos
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Heap Overflow"
 enriched: true

@@ -45,3 +45,45 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-807772-oob-reads-in-network-message-handlers-leads-to-rce|"OOB reads in network message handlers leads to RCE"]] - `critical`, $7,500, 219 votes, [[programs/valve|Valve]]
 - [[disclosures/h1-2995025-mozilla-vpn-clients-rce-via-file-write-and-path-traversal|"Mozilla VPN Clients: RCE via file write and path traversal"]] - `high`, $6,000, 173 votes, [[programs/mozilla|Mozilla]]
 - [[disclosures/h1-2858802-low-level-p2p-ping-tcp-flooding-leads-to-a-remote-crash-in-m|"low-level p2p ping + tcp flooding leads to a remote crash in monerod"]] - `critical`, undisclosed, 97 votes, [[programs/monero|Monero]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `code-injection` - 18
+- `dos` - 16
+- `command-injection` - 12
+- `path-traversal` - 9
+- `ssrf` - 8
+- `info-disclosure` - 6
+- `xss` - 5
+- `authentication-bypass` - 5
+- `misconfiguration` - 4
+- `privilege-escalation` - 3
+- `broken-access-control` - 3
+- `sql-injection` - 2
+
+## 🎯 Exploit triggers (trigger/)
+
+- `dns-rebinding` - 7
+- `victim-interaction` - 5
+- `unauthenticated` - 5
+- `admin-required` - 2
+- `brute-force` - 2
+- `social-engineering` - 2
+- `low-priv-user` - 1
+- `auth-required` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 18
+- `sensitive-data` - 2
+- `internal-network` - 2
+- `dos-impact` - 1
+- `account-takeover` - 1
+- `persistence` - 1
+
+## 🛠️ Recommended fixes (fix/)
+
+- `input-validation` - 1
+- `network-isolation` - 1
+- `csp` - 1
+- `patch-upstream` - 1

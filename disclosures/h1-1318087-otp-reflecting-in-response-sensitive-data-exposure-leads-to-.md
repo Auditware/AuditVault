@@ -4,6 +4,8 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/info-disclosure
+  - impact/account-takeover
 substate: "not-applicable"
 weakness: null
 enriched: true

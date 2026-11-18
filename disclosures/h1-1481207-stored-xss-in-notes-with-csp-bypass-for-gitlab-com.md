@@ -6,6 +6,10 @@ tags:
   - cwe/cross-site-scripting-xss-stored
   - env/web
   - stack/gitlab
+  - vuln/xss-stored
+  - vuln/xss
+  - impact/account-takeover
+  - fix/csp
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

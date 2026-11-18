@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/privilege-escalation
   - env/web
+  - vuln/cors-misconfig
+  - vuln/subdomain-takeover
+  - trigger/cors-origin
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

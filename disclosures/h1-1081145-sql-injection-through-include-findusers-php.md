@@ -6,6 +6,9 @@ tags:
   - cwe/sql-injection
   - env/web
   - stack/php
+  - vuln/sql-injection
+  - impact/account-takeover
+  - trigger/auth-required
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

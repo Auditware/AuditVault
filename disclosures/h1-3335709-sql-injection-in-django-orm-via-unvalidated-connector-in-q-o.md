@@ -6,6 +6,8 @@ tags:
   - cwe/sql-injection
   - env/web
   - stack/python
+  - vuln/sql-injection
+  - vuln/dos
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

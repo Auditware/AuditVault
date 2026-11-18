@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/remote-file-inclusion
   - env/web
+  - vuln/xss
+  - impact/credential-theft
 substate: "informative"
 weakness: "Remote File Inclusion"
 enriched: true

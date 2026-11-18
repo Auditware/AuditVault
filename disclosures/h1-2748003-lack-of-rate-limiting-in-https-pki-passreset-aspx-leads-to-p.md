@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/information-exposure-through-an-error-message
   - env/web
+  - vuln/info-disclosure
+  - impact/account-takeover
+  - impact/sensitive-data
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Information Exposure Through an Error Message"
 enriched: true

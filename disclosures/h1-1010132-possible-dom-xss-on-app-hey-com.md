@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-dom
   - env/web
+  - vuln/xss
+  - impact/account-takeover
+  - fix/csp
+  - fix/authentication-hardening
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - DOM"
 enriched: true

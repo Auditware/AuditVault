@@ -6,6 +6,10 @@ tags:
   - cwe/command-injection-generic
   - env/cloud
   - stack/aws
+  - vuln/sql-injection
+  - vuln/code-injection
+  - impact/rce
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

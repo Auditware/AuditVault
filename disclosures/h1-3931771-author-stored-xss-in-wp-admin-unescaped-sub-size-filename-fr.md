@@ -6,6 +6,12 @@ tags:
   - cwe/cross-site-scripting-xss-stored
   - env/web
   - stack/wordpress
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/idor
+  - vuln/dos
+  - trigger/unauthenticated
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/business-logic-errors
   - env/web
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true

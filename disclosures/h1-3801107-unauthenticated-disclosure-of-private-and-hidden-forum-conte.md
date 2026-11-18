@@ -6,6 +6,8 @@ tags:
   - cwe/improper-access-control-generic
   - env/web
   - stack/wordpress
+  - trigger/auth-required
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/privilege-escalation
   - env/web
+  - vuln/xss
+  - vuln/open-redirect
+  - impact/rce
+  - fix/csp
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

@@ -6,6 +6,8 @@ tags:
   - cwe/misconfiguration
   - env/web
   - stack/gitlab
+  - impact/sensitive-data
+  - impact/unauthorized-write
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true

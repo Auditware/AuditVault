@@ -6,6 +6,13 @@ tags:
   - cwe/misconfiguration
   - env/web
   - stack/wordpress
+  - vuln/xss
+  - vuln/code-injection
+  - vuln/authentication-bypass
+  - vuln/privilege-escalation
+  - impact/rce
+  - trigger/admin-required
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true

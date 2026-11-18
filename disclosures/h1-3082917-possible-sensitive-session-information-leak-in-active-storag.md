@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/info-disclosure
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

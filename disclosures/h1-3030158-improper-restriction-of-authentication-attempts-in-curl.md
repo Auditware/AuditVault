@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/improper-restriction-of-authentication-attempts
   - env/web
+  - trigger/brute-force
+  - fix/authentication-hardening
 substate: "not-applicable"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true

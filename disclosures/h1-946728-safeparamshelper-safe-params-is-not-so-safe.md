@@ -6,6 +6,11 @@ tags:
   - cwe/cross-site-scripting-xss-reflected
   - env/web
   - stack/gitlab
+  - vuln/xss-reflected
+  - vuln/xss
+  - vuln/open-redirect
+  - trigger/one-click
+  - fix/csp
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true

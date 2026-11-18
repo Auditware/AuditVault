@@ -6,6 +6,9 @@ tags:
   - cwe/cross-site-scripting-xss-generic
   - env/mobile
   - os/android
+  - vuln/xss
+  - vuln/misconfiguration
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true

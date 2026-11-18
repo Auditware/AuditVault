@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/misconfiguration
   - env/web
+  - vuln/command-injection
+  - vuln/broken-access-control
+  - impact/sensitive-data
+  - trigger/unauthenticated
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true

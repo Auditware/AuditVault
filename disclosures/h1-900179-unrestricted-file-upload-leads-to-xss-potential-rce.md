@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/unrestricted-upload-of-file-with-dangerous-type
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/file-upload
+  - impact/rce
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Unrestricted Upload of File with Dangerous Type"
 enriched: true

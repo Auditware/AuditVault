@@ -6,6 +6,7 @@ tags:
   - cwe/information-disclosure
   - env/web
   - stack/php
+  - vuln/info-disclosure
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

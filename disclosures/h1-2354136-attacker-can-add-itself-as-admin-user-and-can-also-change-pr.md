@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/improper-authentication-generic
   - env/web
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

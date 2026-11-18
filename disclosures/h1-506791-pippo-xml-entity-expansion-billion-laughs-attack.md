@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/xml-entity-expansion
   - env/web
+  - vuln/dos
 substate: "informative"
 weakness: "XML Entity Expansion"
 enriched: true

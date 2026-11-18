@@ -6,6 +6,10 @@ tags:
   - cwe/use-of-inherently-dangerous-function
   - env/web
   - stack/node
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/code-injection
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "Use of Inherently Dangerous Function"
 enriched: true

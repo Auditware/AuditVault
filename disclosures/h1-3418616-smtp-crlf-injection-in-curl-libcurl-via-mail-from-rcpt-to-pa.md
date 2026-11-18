@@ -4,6 +4,13 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/network
+  - vuln/command-injection
+  - vuln/broken-access-control
+  - vuln/info-disclosure
+  - impact/account-takeover
+  - impact/sensitive-data
+  - trigger/password-reset
+  - fix/input-validation
 substate: "not-applicable"
 weakness: null
 enriched: true

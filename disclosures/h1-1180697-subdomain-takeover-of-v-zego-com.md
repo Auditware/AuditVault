@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/externally-controlled-reference-to-a-resource-in-another-sph
   - env/web
+  - vuln/subdomain-takeover
 substate: "resolved"
 weakness: "Externally Controlled Reference to a Resource in Another Sphere"
 enriched: true

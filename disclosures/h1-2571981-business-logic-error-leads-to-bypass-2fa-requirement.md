@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/business-logic-errors
   - env/web
+  - vuln/info-disclosure
+  - vuln/business-logic
+  - fix/authentication-hardening
 substate: "duplicate"
 weakness: "Business Logic Errors"
 enriched: true

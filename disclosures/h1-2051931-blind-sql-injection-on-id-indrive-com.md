@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/blind-sql-injection
   - env/web
+  - vuln/sql-injection
+  - vuln/command-injection
+  - vuln/cors-misconfig
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Blind SQL Injection"
 enriched: true

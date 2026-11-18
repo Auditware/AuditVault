@@ -6,6 +6,7 @@ tags:
   - cwe/information-exposure-through-directory-listing
   - env/web
   - stack/node
+  - vuln/info-disclosure
 substate: "resolved"
 weakness: "Information Exposure Through Directory Listing"
 enriched: true

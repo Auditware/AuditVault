@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/command-injection-generic
   - env/web
+  - vuln/command-injection
+  - vuln/cors-misconfig
+  - impact/rce
+  - trigger/file-upload
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

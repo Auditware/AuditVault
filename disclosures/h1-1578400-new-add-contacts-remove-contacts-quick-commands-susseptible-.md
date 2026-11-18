@@ -6,6 +6,8 @@ tags:
   - cwe/cross-site-scripting-xss-stored
   - env/web
   - stack/gitlab
+  - vuln/xss
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

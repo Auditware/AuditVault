@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/out-of-bounds-read
   - env/network
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "Out-of-bounds Read"
 enriched: true

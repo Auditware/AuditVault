@@ -6,6 +6,8 @@ tags:
   - cwe/incorrect-privilege-assignment
   - env/cloud
   - stack/aws
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
 substate: "resolved"
 weakness: "Incorrect Privilege Assignment"
 enriched: true

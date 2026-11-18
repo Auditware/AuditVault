@@ -6,6 +6,8 @@ tags:
   - cwe/cryptographic-issues-generic
   - env/cloud
   - stack/kubernetes
+  - vuln/misconfiguration
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Cryptographic Issues - Generic"
 enriched: true

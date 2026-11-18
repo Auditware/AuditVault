@@ -6,6 +6,7 @@ tags:
   - cwe/improper-access-control-generic
   - env/web
   - stack/gitlab
+  - trigger/low-priv-user
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

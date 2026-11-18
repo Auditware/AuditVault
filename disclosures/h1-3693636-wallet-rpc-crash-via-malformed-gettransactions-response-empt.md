@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/null-pointer-dereference
   - env/web
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/dos
+  - vuln/misconfiguration
+  - impact/rce
 substate: "resolved"
 weakness: "NULL Pointer Dereference"
 enriched: true

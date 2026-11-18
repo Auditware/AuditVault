@@ -5,6 +5,12 @@ tags:
   - severity/critical
   - cwe/command-injection-generic
   - env/web
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/file-upload
+  - impact/rce
+  - impact/unauthorized-write
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "Command Injection - Generic"
 enriched: true

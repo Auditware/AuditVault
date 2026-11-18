@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/buffer-underflow
   - env/web
+  - vuln/path-traversal
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
 substate: "not-applicable"
 weakness: "Buffer Underflow"
 enriched: true

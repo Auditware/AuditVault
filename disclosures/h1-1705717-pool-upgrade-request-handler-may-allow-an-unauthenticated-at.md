@@ -6,6 +6,9 @@ tags:
   - cwe/command-injection-generic
   - env/network
   - os/linux
+  - vuln/code-injection
+  - impact/rce
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

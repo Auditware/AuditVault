@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-generic
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/privilege-escalation
+  - trigger/admin-required
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true

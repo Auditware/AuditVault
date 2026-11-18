@@ -6,6 +6,8 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - stack/node
+  - trigger/victim-interaction
+  - trigger/social-engineering
 substate: "informative"
 weakness: "Privilege Escalation"
 enriched: true

@@ -6,6 +6,13 @@ tags:
   - cwe/cross-site-request-forgery-csrf
   - env/cloud
   - stack/kubernetes
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/csrf
+  - vuln/cors-misconfig
+  - trigger/admin-required
+  - trigger/victim-interaction
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true

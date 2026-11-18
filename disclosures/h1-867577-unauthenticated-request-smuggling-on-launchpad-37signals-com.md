@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/http-request-smuggling
   - env/web
+  - vuln/sql-injection
+  - impact/credential-theft
+  - trigger/unauthenticated
+  - trigger/auth-required
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true

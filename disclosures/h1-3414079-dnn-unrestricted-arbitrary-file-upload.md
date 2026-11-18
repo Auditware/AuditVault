@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/file-content-injection
   - env/web
+  - vuln/xss
+  - vuln/file-upload
+  - trigger/auth-required
 substate: "resolved"
 weakness: "File Content Injection"
 enriched: true

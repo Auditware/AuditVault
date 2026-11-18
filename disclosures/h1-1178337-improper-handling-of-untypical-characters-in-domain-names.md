@@ -6,6 +6,11 @@ tags:
   - cwe/improper-null-termination
   - env/web
   - stack/node
+  - vuln/xss
+  - vuln/command-injection
+  - vuln/code-injection
+  - impact/rce
+  - fix/input-validation
 substate: "resolved"
 weakness: "Improper Null Termination"
 enriched: true

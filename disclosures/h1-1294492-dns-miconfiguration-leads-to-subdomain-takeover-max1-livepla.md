@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/network
+  - vuln/subdomain-takeover
+  - vuln/misconfiguration
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

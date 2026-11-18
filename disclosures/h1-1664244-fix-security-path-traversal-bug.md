@@ -6,6 +6,7 @@ tags:
   - cwe/path-traversal
   - env/web
   - os/linux
+  - vuln/path-traversal
 substate: "not-applicable"
 weakness: "Path Traversal"
 enriched: true

@@ -6,6 +6,13 @@ tags:
   - cwe/os-command-injection
   - env/cloud
   - stack/aws
+  - vuln/ssrf
+  - vuln/command-injection
+  - vuln/code-injection
+  - impact/rce
+  - trigger/auth-required
+  - fix/input-validation
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

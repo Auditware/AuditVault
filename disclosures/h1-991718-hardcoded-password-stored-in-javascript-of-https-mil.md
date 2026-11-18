@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/use-of-hard-coded-password
   - env/web
+  - vuln/secrets-leak
 substate: "resolved"
 weakness: "Use of Hard-coded Password"
 enriched: true

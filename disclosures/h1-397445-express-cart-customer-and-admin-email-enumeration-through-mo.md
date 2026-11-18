@@ -6,6 +6,10 @@ tags:
   - cwe/sql-injection
   - env/web
   - stack/node
+  - vuln/sql-injection
+  - impact/sensitive-data
+  - trigger/social-engineering
+  - fix/input-validation
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

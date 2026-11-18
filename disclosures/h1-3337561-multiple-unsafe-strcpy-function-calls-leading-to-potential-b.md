@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/classic-buffer-overflow
   - env/web
+  - vuln/code-injection
+  - vuln/info-disclosure
+  - vuln/dos
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "Classic Buffer Overflow"
 enriched: true

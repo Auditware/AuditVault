@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/weak-password-recovery-mechanism-for-forgotten-password
   - env/web
+  - trigger/password-reset
 substate: "resolved"
 weakness: "Weak Password Recovery Mechanism for Forgotten Password"
 enriched: true

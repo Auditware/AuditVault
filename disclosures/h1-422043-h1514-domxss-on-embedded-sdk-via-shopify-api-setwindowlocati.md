@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-dom
   - env/appliance
+  - vuln/xss
+  - vuln/csrf
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - DOM"
 enriched: true

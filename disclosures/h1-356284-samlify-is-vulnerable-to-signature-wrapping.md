@@ -6,6 +6,7 @@ tags:
   - cwe/cryptographic-issues-generic
   - env/web
   - stack/node
+  - vuln/authentication-bypass
 substate: "resolved"
 weakness: "Cryptographic Issues - Generic"
 enriched: true

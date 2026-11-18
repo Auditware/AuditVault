@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/http-request-smuggling
   - env/web
+  - vuln/ssrf
 substate: "not-applicable"
 weakness: "HTTP Request Smuggling"
 enriched: true

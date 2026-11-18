@@ -4,6 +4,9 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/command-injection
+  - vuln/code-injection
+  - impact/persistence
 substate: "informative"
 weakness: null
 enriched: true

@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/cryptographic-issues-generic
   - env/web
+  - impact/financial
 substate: "resolved"
 weakness: "Cryptographic Issues - Generic"
 enriched: true

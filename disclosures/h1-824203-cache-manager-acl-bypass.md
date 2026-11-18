@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/authentication-bypass-using-an-alternate-path-or-channel
   - env/web
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "Authentication Bypass Using an Alternate Path or Channel"
 enriched: true

@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/use-after-free
   - env/web
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/dos
+  - trigger/race-window
 substate: "not-applicable"
 weakness: "Use After Free"
 enriched: true

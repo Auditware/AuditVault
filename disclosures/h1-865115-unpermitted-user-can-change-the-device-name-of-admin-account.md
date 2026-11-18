@@ -4,6 +4,7 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - trigger/admin-required
 substate: "resolved"
 weakness: null
 enriched: true

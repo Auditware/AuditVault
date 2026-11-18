@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/deserialization-of-untrusted-data
   - env/web
+  - vuln/code-injection
+  - vuln/deserialization
+  - impact/rce
 substate: "resolved"
 weakness: "Deserialization of Untrusted Data"
 enriched: true

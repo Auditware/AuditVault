@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/web
+  - vuln/subdomain-takeover
+  - impact/credential-theft
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/path-traversal
   - env/web
+  - vuln/path-traversal
+  - vuln/dos
+  - impact/rce
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

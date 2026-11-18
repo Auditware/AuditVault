@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/code-injection
   - env/web
+  - vuln/sql-injection
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

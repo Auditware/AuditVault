@@ -6,6 +6,7 @@ tags:
   - cwe/code-injection
   - env/web
   - stack/java
+  - impact/rce
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

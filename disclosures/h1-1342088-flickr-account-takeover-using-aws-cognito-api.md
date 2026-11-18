@@ -6,6 +6,7 @@ tags:
   - cwe/improper-authentication-generic
   - env/cloud
   - stack/aws
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

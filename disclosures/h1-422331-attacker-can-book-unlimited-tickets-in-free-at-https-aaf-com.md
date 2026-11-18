@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/business-logic-errors
   - env/web
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true

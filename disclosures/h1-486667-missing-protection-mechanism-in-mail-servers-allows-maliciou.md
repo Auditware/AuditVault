@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/violation-of-secure-design-principles
   - env/web
+  - vuln/misconfiguration
+  - trigger/low-priv-user
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true

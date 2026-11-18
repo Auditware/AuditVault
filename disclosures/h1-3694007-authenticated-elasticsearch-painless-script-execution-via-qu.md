@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/code-injection
   - env/web
+  - vuln/csrf
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

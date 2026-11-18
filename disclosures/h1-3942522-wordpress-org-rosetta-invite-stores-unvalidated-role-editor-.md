@@ -6,6 +6,7 @@ tags:
   - cwe/improper-access-control-generic
   - env/web
   - stack/wordpress
+  - vuln/broken-access-control
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

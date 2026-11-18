@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/unrestricted-upload-of-file-with-dangerous-type
   - env/web
+  - vuln/ssrf
+  - impact/rce
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Unrestricted Upload of File with Dangerous Type"
 enriched: true

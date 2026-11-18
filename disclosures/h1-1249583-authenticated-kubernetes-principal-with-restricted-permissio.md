@@ -7,6 +7,8 @@ tags:
   - env/cloud
   - stack/kubernetes
   - stack/nginx
+  - trigger/auth-required
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

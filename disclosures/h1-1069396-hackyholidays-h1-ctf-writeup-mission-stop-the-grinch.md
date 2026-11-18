@@ -5,6 +5,19 @@ tags:
   - severity/critical
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/sql-injection
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/privilege-escalation
+  - vuln/cors-misconfig
+  - impact/credential-theft
+  - trigger/unauthenticated
+  - trigger/auth-required
+  - trigger/admin-required
+  - trigger/dns-rebinding
+  - trigger/cors-origin
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

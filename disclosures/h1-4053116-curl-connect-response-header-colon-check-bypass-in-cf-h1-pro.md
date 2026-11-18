@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/authentication-bypass
 substate: "not-applicable"
 weakness: "Improper Authentication - Generic"
 enriched: true

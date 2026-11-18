@@ -5,6 +5,13 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/xss
+  - vuln/authentication-bypass
+  - vuln/jwt
+  - impact/account-takeover
+  - impact/credential-theft
+  - trigger/one-click
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

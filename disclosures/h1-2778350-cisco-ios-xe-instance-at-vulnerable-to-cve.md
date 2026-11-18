@@ -6,6 +6,10 @@ tags:
   - cwe/command-injection-generic
   - env/mobile
   - os/ios
+  - vuln/command-injection
+  - vuln/authentication-bypass
+  - trigger/low-priv-user
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

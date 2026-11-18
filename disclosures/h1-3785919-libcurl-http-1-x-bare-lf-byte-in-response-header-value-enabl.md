@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/http-response-splitting
   - env/web
+  - vuln/sql-injection
+  - vuln/authentication-bypass
 substate: "not-applicable"
 weakness: "HTTP Response Splitting"
 enriched: true

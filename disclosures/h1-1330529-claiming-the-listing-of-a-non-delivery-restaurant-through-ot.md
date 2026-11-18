@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/improper-authorization
   - env/web
+  - vuln/cors-misconfig
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Improper Authorization"
 enriched: true

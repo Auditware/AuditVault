@@ -5,6 +5,15 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-reflected
   - env/web
+  - vuln/xss
+  - vuln/csrf
+  - impact/credential-theft
+  - impact/unauthorized-write
+  - trigger/one-click
+  - trigger/victim-interaction
+  - trigger/session-cookie
+  - trigger/social-engineering
+  - fix/csp
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true

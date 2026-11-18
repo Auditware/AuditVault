@@ -6,6 +6,9 @@ tags:
   - cwe/uncontrolled-resource-consumption
   - env/web
   - stack/php
+  - vuln/xss
+  - vuln/dos
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

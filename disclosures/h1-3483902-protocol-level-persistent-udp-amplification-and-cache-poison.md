@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/business-logic-errors
   - env/network
+  - vuln/dos
+  - trigger/victim-interaction
 substate: "informative"
 weakness: "Business Logic Errors"
 enriched: true

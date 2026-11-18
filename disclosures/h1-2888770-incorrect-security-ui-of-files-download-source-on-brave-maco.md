@@ -6,6 +6,9 @@ tags:
   - cwe/user-interface-ui-misrepresentation-of-critical-information
   - env/web
   - os/macos
+  - trigger/one-click
+  - trigger/victim-interaction
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "User Interface (UI) Misrepresentation of Critical Information"
 enriched: true

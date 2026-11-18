@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/user-interface-ui-misrepresentation-of-critical-information
   - env/web
+  - vuln/xss
+  - vuln/code-injection
 substate: "resolved"
 weakness: "User Interface (UI) Misrepresentation of Critical Information"
 enriched: true

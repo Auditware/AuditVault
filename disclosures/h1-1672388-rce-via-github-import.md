@@ -6,6 +6,9 @@ tags:
   - cwe/os-command-injection
   - env/web
   - stack/gitlab
+  - vuln/xss
+  - vuln/deserialization
+  - impact/rce
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

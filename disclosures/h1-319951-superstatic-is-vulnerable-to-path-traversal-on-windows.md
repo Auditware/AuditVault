@@ -7,6 +7,7 @@ tags:
   - env/web
   - stack/node
   - os/windows
+  - vuln/path-traversal
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

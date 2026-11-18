@@ -6,6 +6,11 @@ tags:
   - cwe/cross-site-scripting-xss-stored
   - env/web
   - stack/gitlab
+  - vuln/xss-stored
+  - vuln/xss
+  - trigger/victim-interaction
+  - trigger/social-engineering
+  - fix/csp
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

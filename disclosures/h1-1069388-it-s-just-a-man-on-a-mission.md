@@ -4,6 +4,16 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/sql-injection
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/idor
+  - vuln/race-condition
+  - impact/data-exposure
+  - trigger/admin-required
+  - trigger/session-cookie
+  - trigger/dns-rebinding
+  - trigger/social-engineering
 substate: "resolved"
 weakness: null
 enriched: true

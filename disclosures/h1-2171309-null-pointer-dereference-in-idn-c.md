@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/null-pointer-dereference
   - env/web
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
+  - impact/dos-impact
 substate: "informative"
 weakness: "NULL Pointer Dereference"
 enriched: true

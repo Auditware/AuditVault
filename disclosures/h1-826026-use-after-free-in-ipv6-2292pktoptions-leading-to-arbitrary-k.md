@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/use-after-free
   - env/web
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/dos
 substate: "resolved"
 weakness: "Use After Free"
 enriched: true

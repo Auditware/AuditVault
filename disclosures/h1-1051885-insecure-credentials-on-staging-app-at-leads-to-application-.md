@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/insufficiently-protected-credentials
   - env/web
+  - vuln/session-management
+  - impact/rce
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Insufficiently Protected Credentials"
 enriched: true

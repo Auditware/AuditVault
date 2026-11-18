@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/privilege-escalation
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/auth-required
+  - trigger/low-priv-user
 substate: "informative"
 weakness: "Privilege Escalation"
 enriched: true

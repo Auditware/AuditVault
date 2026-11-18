@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/idor
+  - vuln/info-disclosure
+  - vuln/cors-misconfig
+  - impact/sensitive-data
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/info-disclosure
+  - trigger/social-engineering
 substate: "not-applicable"
 weakness: "Information Disclosure"
 enriched: true

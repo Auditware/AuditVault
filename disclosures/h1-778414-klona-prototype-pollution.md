@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - env/web
   - stack/node
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: null
 enriched: true

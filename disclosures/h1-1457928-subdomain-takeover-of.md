@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/security-through-obscurity
   - env/web
+  - vuln/xss
+  - vuln/subdomain-takeover
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Security Through Obscurity"
 enriched: true

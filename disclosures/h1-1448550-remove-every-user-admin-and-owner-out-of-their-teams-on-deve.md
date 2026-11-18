@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/insecure-direct-object-reference-idor
   - env/web
+  - vuln/idor
+  - vuln/info-disclosure
+  - vuln/session-management
+  - impact/sensitive-data
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true

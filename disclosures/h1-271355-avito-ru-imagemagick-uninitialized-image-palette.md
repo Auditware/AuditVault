@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/memory-corruption-generic
   - env/web
+  - vuln/path-traversal
 substate: "resolved"
 weakness: "Memory Corruption - Generic"
 enriched: true

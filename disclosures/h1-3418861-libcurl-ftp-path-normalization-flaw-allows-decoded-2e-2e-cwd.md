@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/path-traversal
   - env/web
+  - vuln/path-traversal
+  - trigger/unauthenticated
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "Path Traversal"
 enriched: true

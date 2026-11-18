@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/use-of-cache-containing-sensitive-information
   - env/web
+  - vuln/xss
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Use of Cache Containing Sensitive Information"
 enriched: true

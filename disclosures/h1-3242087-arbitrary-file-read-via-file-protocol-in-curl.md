@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/path-traversal
   - env/network
+  - vuln/path-traversal
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/misconfiguration
+  - impact/internal-network
 substate: "not-applicable"
 weakness: "Path Traversal"
 enriched: true

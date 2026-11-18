@@ -7,6 +7,8 @@ tags:
   - env/cloud
   - stack/kubernetes
   - stack/gcp
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

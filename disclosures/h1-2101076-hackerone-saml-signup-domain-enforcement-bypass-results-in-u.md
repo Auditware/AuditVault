@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/improper-null-termination
   - env/web
+  - trigger/one-click
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: "Improper Null Termination"
 enriched: true

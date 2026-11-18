@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/write-what-where-condition
   - env/web
+  - vuln/code-injection
+  - vuln/dos
 substate: "resolved"
 weakness: "Write-what-where Condition"
 enriched: true

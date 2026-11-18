@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/out-of-bounds-read
   - env/web
+  - vuln/info-disclosure
+  - vuln/dos
+  - trigger/unauthenticated
+  - trigger/session-cookie
+  - trigger/social-engineering
 substate: "not-applicable"
 weakness: "Out-of-bounds Read"
 enriched: true

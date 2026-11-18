@@ -6,6 +6,8 @@ tags:
   - cwe/ldap-injection
   - env/web
   - stack/node
+  - vuln/dos
+  - impact/dos-impact
 substate: "resolved"
 weakness: "LDAP Injection"
 enriched: true

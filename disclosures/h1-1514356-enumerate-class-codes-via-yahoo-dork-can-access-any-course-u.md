@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/idor
+  - vuln/info-disclosure
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

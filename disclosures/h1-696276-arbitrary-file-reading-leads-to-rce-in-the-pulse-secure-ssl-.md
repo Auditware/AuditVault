@@ -5,6 +5,13 @@ tags:
   - severity/high
   - cwe/path-traversal
   - env/network
+  - vuln/path-traversal
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/authentication-bypass
+  - vuln/dos
+  - impact/rce
+  - trigger/unauthenticated
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

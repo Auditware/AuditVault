@@ -4,6 +4,7 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/dos
 substate: "not-applicable"
 weakness: null
 enriched: true

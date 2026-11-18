@@ -45,3 +45,38 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-2083771-remote-code-execution-and-aws-iam-credentials-exfiltration-i|" Remote Code Execution and AWS IAM Credentials Exfiltration in https://████████/"]] - `critical`, undisclosed, 114 votes, [[programs/deptofdefense|U.S. Dept Of Defense]]
 - [[disclosures/h1-3637898-os-command-injection-in-aws-cdk-lib-nodejsfunction-via-unsan|"OS Command Injection in `aws-cdk-lib` NodejsFunction via Unsanitized `OsCommand` Helper (Supply Chain RCE)"]] - `high`, undisclosed, 111 votes, [[programs/aws_vdp|AWS VDP]]
 - [[disclosures/h1-1285598-s3-bucket-takeover-presented-in-https-github-com-reddit-rpan|"s3 bucket takeover presented in https://github.com/reddit/rpan-studio/blob/e1782332c75ecb2f774343258ff509788feab7ce/CI/full-build-macos.sh"]] - `high`, undisclosed, 96 votes, [[programs/reddit|Reddit]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `ssrf` - 6
+- `subdomain-takeover` - 4
+- `code-injection` - 4
+- `command-injection` - 4
+- `cors-misconfig` - 3
+- `xss` - 3
+- `secrets-leak` - 2
+- `sql-injection` - 1
+- `dos` - 1
+- `info-disclosure` - 1
+- `xss-reflected` - 1
+- `broken-access-control` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `cors-origin` - 3
+- `social-engineering` - 3
+- `session-cookie` - 2
+- `auth-required` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 6
+- `credential-theft` - 5
+- `account-takeover` - 1
+- `persistence` - 1
+
+## 🛠️ Recommended fixes (fix/)
+
+- `input-validation` - 2
+- `patch-upstream` - 2
+- `csp` - 1

@@ -6,6 +6,7 @@ tags:
   - cwe/information-disclosure
   - env/cloud
   - stack/aws
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

@@ -5,6 +5,13 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/xss
+  - vuln/csrf
+  - vuln/cors-misconfig
+  - vuln/misconfiguration
+  - impact/credential-theft
+  - trigger/victim-interaction
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

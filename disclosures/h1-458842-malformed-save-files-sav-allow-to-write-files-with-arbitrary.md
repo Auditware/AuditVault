@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/malware
   - env/web
+  - impact/dos-impact
+  - fix/file-validation
 substate: "resolved"
 weakness: "Malware"
 enriched: true

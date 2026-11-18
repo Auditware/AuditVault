@@ -6,6 +6,8 @@ tags:
   - cwe/modification-of-assumed-immutable-data-maid
   - env/web
   - stack/node
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: "Modification of Assumed-Immutable Data (MAID)"
 enriched: true

@@ -6,6 +6,13 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - stack/node
+  - vuln/sql-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - impact/account-takeover
+  - impact/unauthorized-write
+  - trigger/password-reset
+  - fix/input-validation
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

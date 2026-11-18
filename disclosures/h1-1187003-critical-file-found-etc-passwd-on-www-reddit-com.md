@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/xss
 substate: "not-applicable"
 weakness: "Information Disclosure"
 enriched: true

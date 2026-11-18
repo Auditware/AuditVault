@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/server-side-request-forgery-ssrf
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/ssrf
+  - impact/account-takeover
+  - fix/csp
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

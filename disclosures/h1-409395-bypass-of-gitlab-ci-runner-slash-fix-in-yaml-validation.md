@@ -6,6 +6,7 @@ tags:
   - cwe/improper-input-validation
   - env/web
   - stack/gitlab
+  - vuln/path-traversal
 substate: "resolved"
 weakness: "Improper Input Validation"
 enriched: true

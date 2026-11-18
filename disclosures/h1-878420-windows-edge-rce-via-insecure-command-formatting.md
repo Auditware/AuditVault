@@ -7,6 +7,7 @@ tags:
   - env/web
   - stack/node
   - os/windows
+  - impact/rce
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

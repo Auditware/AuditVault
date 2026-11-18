@@ -4,6 +4,11 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/sql-injection
+  - vuln/cors-misconfig
+  - vuln/misconfiguration
+  - trigger/cors-origin
+  - fix/authentication-hardening
 substate: "informative"
 weakness: null
 enriched: true

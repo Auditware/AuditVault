@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/broken-access-control
+  - trigger/brute-force
 substate: "duplicate"
 weakness: "Improper Access Control - Generic"
 enriched: true

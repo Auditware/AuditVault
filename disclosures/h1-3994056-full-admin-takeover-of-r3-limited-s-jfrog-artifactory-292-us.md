@@ -5,6 +5,17 @@ tags:
   - severity/critical
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/broken-access-control
+  - vuln/authentication-bypass
+  - vuln/privilege-escalation
+  - vuln/jwt
+  - impact/rce
+  - impact/persistence
+  - trigger/unauthenticated
+  - trigger/auth-required
+  - trigger/admin-required
+  - trigger/social-engineering
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

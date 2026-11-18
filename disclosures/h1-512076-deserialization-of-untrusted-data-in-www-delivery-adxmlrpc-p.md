@@ -6,6 +6,7 @@ tags:
   - cwe/deserialization-of-untrusted-data
   - env/web
   - stack/php
+  - vuln/deserialization
 substate: "resolved"
 weakness: "Deserialization of Untrusted Data"
 enriched: true

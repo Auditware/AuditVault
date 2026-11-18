@@ -6,6 +6,8 @@ tags:
   - cwe/code-injection
   - env/web
   - stack/java
+  - vuln/info-disclosure
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

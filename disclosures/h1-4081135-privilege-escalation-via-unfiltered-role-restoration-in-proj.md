@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/privilege-escalation
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/low-priv-user
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

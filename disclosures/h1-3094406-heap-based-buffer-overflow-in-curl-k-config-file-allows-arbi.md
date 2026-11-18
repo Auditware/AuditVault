@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/heap-overflow
   - env/web
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/info-disclosure
+  - vuln/dos
+  - impact/rce
 substate: "informative"
 weakness: "Heap Overflow"
 enriched: true

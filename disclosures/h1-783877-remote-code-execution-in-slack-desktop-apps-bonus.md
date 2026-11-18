@@ -5,6 +5,17 @@ tags:
   - severity/critical
   - cwe/code-injection
   - env/web
+  - vuln/xss
+  - vuln/ssrf
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/open-redirect
+  - impact/rce
+  - impact/internal-network
+  - trigger/one-click
+  - trigger/file-upload
+  - trigger/social-engineering
+  - fix/csp
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

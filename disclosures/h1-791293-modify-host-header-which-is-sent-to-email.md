@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/code-injection
   - env/web
+  - trigger/victim-interaction
+  - trigger/password-reset
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

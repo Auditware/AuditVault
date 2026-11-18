@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/code-injection
+  - vuln/authentication-bypass
+  - vuln/misconfiguration
+  - impact/rce
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

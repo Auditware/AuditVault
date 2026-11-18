@@ -5,6 +5,12 @@ tags:
   - severity/high
   - env/web
   - stack/node
+  - vuln/path-traversal
+  - vuln/command-injection
+  - vuln/file-upload
+  - impact/rce
+  - impact/unauthorized-write
+  - fix/patch-upstream
 substate: "resolved"
 weakness: null
 enriched: true

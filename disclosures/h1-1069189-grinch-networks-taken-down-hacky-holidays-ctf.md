@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/improper-restriction-of-authentication-attempts
   - env/web
+  - vuln/sql-injection
+  - trigger/admin-required
+  - trigger/dns-rebinding
 substate: "resolved"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true

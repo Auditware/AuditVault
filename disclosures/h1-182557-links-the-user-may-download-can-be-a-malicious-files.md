@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/code-injection
   - env/web
+  - trigger/social-engineering
 substate: "informative"
 weakness: "Code Injection"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/information-disclosure
   - env/web
+  - vuln/authentication-bypass
+  - vuln/info-disclosure
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

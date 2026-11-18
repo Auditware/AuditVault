@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/double-free
   - env/web
+  - vuln/xss
+  - vuln/path-traversal
+  - vuln/info-disclosure
+  - vuln/dos
 substate: "informative"
 weakness: "Double Free"
 enriched: true

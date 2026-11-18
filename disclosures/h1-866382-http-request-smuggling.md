@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/http-request-smuggling
   - env/web
+  - vuln/broken-access-control
+  - vuln/authentication-bypass
+  - vuln/privilege-escalation
 substate: "informative"
 weakness: "HTTP Request Smuggling"
 enriched: true

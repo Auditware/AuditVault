@@ -6,6 +6,10 @@ tags:
   - cwe/os-command-injection
   - env/network
   - stack/node
+  - vuln/code-injection
+  - impact/rce
+  - trigger/victim-interaction
+  - trigger/dns-rebinding
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

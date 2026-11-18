@@ -5,6 +5,14 @@ tags:
   - severity/critical
   - cwe/uncontrolled-resource-consumption
   - env/web
+  - vuln/sql-injection
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/privilege-escalation
+  - trigger/admin-required
+  - trigger/session-cookie
+  - trigger/dns-rebinding
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

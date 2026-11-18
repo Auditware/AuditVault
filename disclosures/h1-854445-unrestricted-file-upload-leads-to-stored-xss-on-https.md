@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-stored
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/file-upload
+  - fix/file-validation
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

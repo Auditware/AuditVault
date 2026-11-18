@@ -7,6 +7,7 @@ tags:
   - env/mobile
   - stack/firebase
   - os/android
+  - vuln/misconfiguration
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

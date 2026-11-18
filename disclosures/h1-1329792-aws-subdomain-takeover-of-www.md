@@ -6,6 +6,12 @@ tags:
   - cwe/improper-access-control-generic
   - env/cloud
   - stack/aws
+  - vuln/ssrf
+  - vuln/cors-misconfig
+  - vuln/subdomain-takeover
+  - impact/credential-theft
+  - trigger/cors-origin
+  - fix/csp
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

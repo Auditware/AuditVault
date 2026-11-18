@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/stack-overflow
   - env/web
+  - vuln/xss
+  - vuln/dos
 substate: "informative"
 weakness: "Stack Overflow"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/path-traversal
   - env/network
+  - vuln/path-traversal
+  - vuln/info-disclosure
 substate: "not-applicable"
 weakness: "Path Traversal"
 enriched: true

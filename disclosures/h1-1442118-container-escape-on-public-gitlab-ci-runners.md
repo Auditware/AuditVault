@@ -6,6 +6,9 @@ tags:
   - cwe/improper-access-control-generic
   - env/cloud
   - stack/gitlab
+  - vuln/ssrf
+  - vuln/code-injection
+  - impact/rce
 substate: "informative"
 weakness: "Improper Access Control - Generic"
 enriched: true

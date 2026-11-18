@@ -6,6 +6,8 @@ tags:
   - cwe/sql-injection
   - env/web
   - stack/wordpress
+  - vuln/sql-injection
+  - vuln/info-disclosure
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

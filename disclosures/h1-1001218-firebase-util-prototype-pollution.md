@@ -6,6 +6,9 @@ tags:
   - env/web
   - stack/node
   - stack/firebase
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: null
 enriched: true

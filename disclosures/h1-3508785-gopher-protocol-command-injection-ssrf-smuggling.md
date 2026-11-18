@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/server-side-request-forgery-ssrf
   - env/network
+  - vuln/ssrf
+  - vuln/command-injection
+  - trigger/social-engineering
+  - fix/network-isolation
 substate: "not-applicable"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

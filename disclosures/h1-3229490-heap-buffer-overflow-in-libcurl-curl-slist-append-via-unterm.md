@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/heap-overflow
   - env/web
+  - vuln/info-disclosure
+  - vuln/dos
 substate: "not-applicable"
 weakness: "Heap Overflow"
 enriched: true

@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/open-redirect
+  - impact/account-takeover
+  - trigger/admin-required
+  - trigger/one-click
+  - trigger/victim-interaction
+  - trigger/session-cookie
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

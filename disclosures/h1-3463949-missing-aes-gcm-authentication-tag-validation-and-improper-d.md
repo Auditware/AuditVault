@@ -6,6 +6,7 @@ tags:
   - cwe/missing-required-cryptographic-step
   - env/web
   - stack/node
+  - trigger/brute-force
 substate: "informative"
 weakness: "Missing Required Cryptographic Step"
 enriched: true

@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/business-logic-errors
   - env/web
+  - vuln/code-injection
+  - vuln/file-upload
+  - impact/rce
+  - impact/internal-network
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true

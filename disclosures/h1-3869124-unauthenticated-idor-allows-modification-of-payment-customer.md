@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/insecure-direct-object-reference-idor
   - env/web
+  - vuln/idor
+  - vuln/broken-access-control
+  - trigger/unauthenticated
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true

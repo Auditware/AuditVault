@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/cross-site-request-forgery-csrf
   - env/web
+  - vuln/csrf
+  - fix/authorization-checks
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true

@@ -4,6 +4,8 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - impact/financial
+  - fix/authentication-hardening
 substate: "resolved"
 weakness: null
 enriched: true

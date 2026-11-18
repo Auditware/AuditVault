@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/path-traversal
   - env/web
+  - vuln/path-traversal
+  - vuln/rfi
+  - fix/input-validation
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

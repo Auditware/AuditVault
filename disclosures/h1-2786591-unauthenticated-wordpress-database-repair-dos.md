@@ -6,6 +6,12 @@ tags:
   - cwe/uncontrolled-resource-consumption
   - env/web
   - stack/wordpress
+  - vuln/broken-access-control
+  - vuln/dos
+  - impact/data-exposure
+  - impact/dos-impact
+  - trigger/unauthenticated
+  - trigger/auth-required
 substate: "not-applicable"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

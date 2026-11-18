@@ -6,6 +6,10 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - stack/gitlab
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/auth-required
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

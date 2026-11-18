@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - trigger/unauthenticated
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

@@ -7,6 +7,10 @@ tags:
   - env/cloud
   - stack/kubernetes
   - stack/nginx
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

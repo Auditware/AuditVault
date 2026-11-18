@@ -45,3 +45,29 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-205000-authorization-bypass-using-login-by-phone-option-horizontal-|"Authorization bypass using login by phone option+horizontal escalation possible on Grab Android App"]] - `high`, undisclosed, 68 votes, [[programs/grab|Grab]]
 - [[disclosures/h1-1115864-persistant-arbitrary-code-execution-in-mattermost-android|"Persistant Arbitrary code execution in mattermost android"]] - `high`, undisclosed, 67 votes, [[programs/mattermost|Mattermost]]
 - [[disclosures/h1-1065134-firebase-database-takeover-in-zego-sense-android-app|"Firebase Database Takeover in Zego Sense Android app"]] - `high`, undisclosed, 58 votes, [[programs/zego|Zego]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `path-traversal` - 3
+- `misconfiguration` - 2
+- `code-injection` - 2
+- `dos` - 2
+- `xss` - 2
+- `idor` - 1
+- `broken-access-control` - 1
+- `authentication-bypass` - 1
+- `command-injection` - 1
+- `open-redirect` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `victim-interaction` - 2
+- `auth-required` - 1
+- `session-cookie` - 1
+- `social-engineering` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `account-takeover` - 2
+- `rce` - 1
+- `credential-theft` - 1

@@ -6,6 +6,10 @@ tags:
   - cwe/cross-site-scripting-xss-generic
   - env/web
   - stack/gitlab
+  - vuln/xss
+  - vuln/code-injection
+  - trigger/victim-interaction
+  - fix/csp
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true

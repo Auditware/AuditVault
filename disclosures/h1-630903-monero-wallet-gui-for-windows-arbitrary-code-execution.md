@@ -6,6 +6,10 @@ tags:
   - cwe/code-injection
   - env/web
   - os/windows
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

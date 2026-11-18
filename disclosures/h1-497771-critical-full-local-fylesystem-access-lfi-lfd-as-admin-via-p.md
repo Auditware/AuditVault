@@ -6,6 +6,9 @@ tags:
   - cwe/path-traversal
   - env/web
   - stack/java
+  - vuln/path-traversal
+  - vuln/misconfiguration
+  - impact/rce
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

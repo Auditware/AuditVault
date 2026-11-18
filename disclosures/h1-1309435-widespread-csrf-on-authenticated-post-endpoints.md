@@ -5,6 +5,15 @@ tags:
   - severity/high
   - cwe/cross-site-request-forgery-csrf
   - env/web
+  - vuln/xss
+  - vuln/csrf
+  - vuln/cors-misconfig
+  - impact/credential-theft
+  - trigger/auth-required
+  - trigger/victim-interaction
+  - trigger/password-reset
+  - trigger/session-cookie
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true

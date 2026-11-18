@@ -6,6 +6,10 @@ tags:
   - cwe/cross-site-scripting-xss-stored
   - env/web
   - stack/node
+  - vuln/xss-stored
+  - vuln/xss
+  - impact/credential-theft
+  - trigger/session-cookie
 substate: "informative"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

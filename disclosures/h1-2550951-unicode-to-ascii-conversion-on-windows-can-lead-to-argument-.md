@@ -6,6 +6,7 @@ tags:
   - cwe/encoding-error
   - env/web
   - os/windows
+  - vuln/command-injection
 substate: "not-applicable"
 weakness: "Encoding Error"
 enriched: true

@@ -5,6 +5,17 @@ tags:
   - severity/critical
   - cwe/sql-injection
   - env/web
+  - vuln/sql-injection
+  - vuln/code-injection
+  - vuln/authentication-bypass
+  - vuln/info-disclosure
+  - impact/account-takeover
+  - impact/rce
+  - impact/sensitive-data
+  - trigger/auth-required
+  - trigger/admin-required
+  - trigger/session-cookie
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

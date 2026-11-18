@@ -6,6 +6,7 @@ tags:
   - cwe/cross-site-scripting-xss-dom
   - env/web
   - stack/node
+  - vuln/xss
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - DOM"
 enriched: true

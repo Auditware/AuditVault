@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/exposure-of-data-element-to-wrong-session
   - env/web
+  - vuln/race-condition
+  - vuln/dos
+  - trigger/race-window
 substate: "not-applicable"
 weakness: "Exposure of Data Element to Wrong Session"
 enriched: true

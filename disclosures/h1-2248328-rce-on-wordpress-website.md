@@ -6,6 +6,12 @@ tags:
   - cwe/deserialization-of-untrusted-data
   - env/web
   - stack/wordpress
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/deserialization
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - impact/rce
 substate: "resolved"
 weakness: "Deserialization of Untrusted Data"
 enriched: true

@@ -6,6 +6,11 @@ tags:
   - cwe/command-injection-generic
   - env/web
   - stack/gitlab
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

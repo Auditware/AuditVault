@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/misconfiguration
   - env/web
+  - vuln/misconfiguration
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true

@@ -45,3 +45,51 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-827052-arbitrary-file-read-via-the-uploadsrewriter-when-moving-and-|"Arbitrary file read via the UploadsRewriter when moving and issue"]] - `critical`, $20,000, 1503 votes, [[programs/gitlab|GitLab]]
 - [[disclosures/h1-739737-token-leak-in-security-challenge-flow-allows-retrieving-vict|"Token leak in security challenge flow allows retrieving victim's PayPal email and plain text password"]] - `high`, $15,300, 1410 votes, [[programs/paypal|PayPal]]
 - [[disclosures/h1-470520-rce-on-steam-client-via-buffer-overflow-in-server-info|"RCE on Steam Client via buffer overflow in Server Info"]] - `critical`, undisclosed, 1289 votes, [[programs/valve|Valve]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `xss` - 383
+- `code-injection` - 294
+- `dos` - 275
+- `path-traversal` - 235
+- `info-disclosure` - 188
+- `command-injection` - 150
+- `sql-injection` - 146
+- `xss-stored` - 119
+- `privilege-escalation` - 117
+- `ssrf` - 117
+- `broken-access-control` - 116
+- `csrf` - 97
+
+## 🎯 Exploit triggers (trigger/)
+
+- `auth-required` - 130
+- `social-engineering` - 89
+- `admin-required` - 89
+- `session-cookie` - 72
+- `cors-origin` - 64
+- `brute-force` - 61
+- `unauthenticated` - 60
+- `victim-interaction` - 59
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 313
+- `account-takeover` - 146
+- `credential-theft` - 97
+- `sensitive-data` - 94
+- `data-exposure` - 28
+- `unauthorized-write` - 26
+- `internal-network` - 19
+- `dos-impact` - 16
+
+## 🛠️ Recommended fixes (fix/)
+
+- `input-validation` - 60
+- `csp` - 54
+- `file-validation` - 25
+- `authentication-hardening` - 22
+- `patch-upstream` - 20
+- `parameterized-query` - 19
+- `authorization-checks` - 11
+- `secrets-rotation` - 3

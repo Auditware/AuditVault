@@ -6,6 +6,12 @@ tags:
   - cwe/time-of-check-time-of-use-toctou-race-condition
   - env/web
   - stack/node
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/info-disclosure
+  - vuln/race-condition
+  - vuln/dos
+  - trigger/race-window
 substate: "informative"
 weakness: "Time-of-check Time-of-use (TOCTOU) Race Condition"
 enriched: true

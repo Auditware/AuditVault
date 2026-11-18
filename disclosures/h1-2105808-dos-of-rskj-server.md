@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/uncontrolled-resource-consumption
   - env/web
+  - vuln/cors-misconfig
+  - vuln/dos
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

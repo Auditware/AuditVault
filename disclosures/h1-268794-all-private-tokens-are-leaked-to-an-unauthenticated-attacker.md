@@ -6,6 +6,7 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - stack/gitlab
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

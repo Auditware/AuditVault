@@ -5,6 +5,12 @@ tags:
   - severity/critical
   - cwe/relative-path-traversal
   - env/web
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/file-upload
+  - impact/rce
+  - impact/unauthorized-write
+  - fix/file-validation
 substate: "not-applicable"
 weakness: "Relative Path Traversal"
 enriched: true

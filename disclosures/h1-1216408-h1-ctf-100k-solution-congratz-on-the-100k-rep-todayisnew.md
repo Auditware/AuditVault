@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/sql-injection
   - env/web
+  - impact/account-takeover
+  - trigger/admin-required
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

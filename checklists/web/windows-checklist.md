@@ -41,3 +41,32 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-2585385-important-apache-http-server-on-windows-unc-ssrf-cve-2024-38|"important: Apache HTTP Server on WIndows UNC SSRF (CVE-2024-38472)"]] - `high`, $4,920, 45 votes, [[programs/ibb|Internet Bug Bounty]]
 - [[disclosures/h1-3619409-windows-installer-grants-low-privileged-users-write-access-t|"Windows installer grants low-privileged users write access to executable P2Pool directory, enabling local code execution"]] - `high`, undisclosed, 40 votes, [[programs/monero|Monero]]
 - [[disclosures/h1-3255707-windows-device-names-still-allow-path-traversal-in-unc-paths|"Windows Device Names Still Allow Path Traversal in UNC Paths After CVE-2025-27210 Fix"]] - `high`, undisclosed, 39 votes, [[programs/nodejs|Node.js]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `code-injection` - 7
+- `broken-access-control` - 5
+- `privilege-escalation` - 5
+- `command-injection` - 4
+- `path-traversal` - 4
+- `ssrf` - 3
+- `dos` - 1
+- `race-condition` - 1
+- `info-disclosure` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `victim-interaction` - 1
+- `low-priv-user` - 1
+- `race-window` - 1
+- `auth-required` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 5
+- `internal-network` - 2
+- `credential-theft` - 1
+
+## 🛠️ Recommended fixes (fix/)
+
+- `input-validation` - 1

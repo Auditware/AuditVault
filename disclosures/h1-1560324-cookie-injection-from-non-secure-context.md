@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/session-fixation
   - env/web
+  - vuln/authentication-bypass
+  - trigger/victim-interaction
 substate: "not-applicable"
 weakness: "Session Fixation"
 enriched: true

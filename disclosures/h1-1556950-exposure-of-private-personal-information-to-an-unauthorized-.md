@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/violation-of-secure-design-principles
   - env/web
+  - vuln/broken-access-control
+  - vuln/info-disclosure
+  - impact/sensitive-data
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true

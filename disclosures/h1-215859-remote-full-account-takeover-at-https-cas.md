@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/reliance-on-cookies-without-validation-and-integrity-checkin
   - env/web
+  - impact/account-takeover
+  - trigger/victim-interaction
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Reliance on Cookies without Validation and Integrity Checking in a Security Decision"
 enriched: true

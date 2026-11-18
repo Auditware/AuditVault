@@ -6,6 +6,9 @@ tags:
   - cwe/sql-injection
   - env/web
   - stack/node
+  - vuln/sql-injection
+  - fix/parameterized-query
+  - fix/input-validation
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

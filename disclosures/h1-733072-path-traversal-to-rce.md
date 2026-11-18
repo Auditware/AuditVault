@@ -6,6 +6,8 @@ tags:
   - cwe/command-injection-generic
   - env/web
   - stack/gitlab
+  - vuln/path-traversal
+  - impact/rce
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

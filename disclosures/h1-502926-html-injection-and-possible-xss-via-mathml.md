@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/cross-site-scripting-xss-generic
   - env/web
+  - vuln/xss
+  - impact/credential-theft
 substate: "duplicate"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true

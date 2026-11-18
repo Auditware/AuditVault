@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/improper-access-control-generic
   - env/web
+  - trigger/unauthenticated
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

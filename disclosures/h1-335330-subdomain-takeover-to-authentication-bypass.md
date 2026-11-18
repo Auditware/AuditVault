@@ -4,6 +4,13 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/xss
+  - vuln/authentication-bypass
+  - vuln/cors-misconfig
+  - vuln/subdomain-takeover
+  - impact/account-takeover
+  - impact/credential-theft
+  - trigger/cors-origin
 substate: "resolved"
 weakness: null
 enriched: true

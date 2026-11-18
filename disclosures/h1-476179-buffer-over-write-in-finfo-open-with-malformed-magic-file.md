@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/heap-overflow
   - env/web
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: "Heap Overflow"
 enriched: true

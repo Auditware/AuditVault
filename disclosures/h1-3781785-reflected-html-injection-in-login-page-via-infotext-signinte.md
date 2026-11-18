@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/improper-input-validation
   - env/web
+  - vuln/xss
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Improper Input Validation"
 enriched: true

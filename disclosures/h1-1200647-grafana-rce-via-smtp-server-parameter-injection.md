@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/crlf-injection
   - env/network
+  - vuln/command-injection
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "CRLF Injection"
 enriched: true

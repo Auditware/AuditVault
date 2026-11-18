@@ -6,6 +6,10 @@ tags:
   - cwe/improper-authentication-generic
   - env/mobile
   - os/android
+  - vuln/idor
+  - vuln/broken-access-control
+  - vuln/authentication-bypass
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

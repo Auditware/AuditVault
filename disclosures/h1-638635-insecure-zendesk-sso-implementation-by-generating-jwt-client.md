@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/password-in-configuration-file
   - env/web
+  - vuln/jwt
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Password in Configuration File"
 enriched: true

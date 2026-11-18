@@ -4,6 +4,9 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/authentication-bypass
+  - impact/account-takeover
+  - fix/authentication-hardening
 substate: "duplicate"
 weakness: null
 enriched: true

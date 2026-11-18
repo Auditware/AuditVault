@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/violation-of-secure-design-principles
   - env/web
+  - impact/account-takeover
+  - trigger/low-priv-user
+  - fix/authentication-hardening
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true

@@ -6,6 +6,8 @@ tags:
   - cwe/improper-authentication-generic
   - env/web
   - stack/node
+  - vuln/jwt
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

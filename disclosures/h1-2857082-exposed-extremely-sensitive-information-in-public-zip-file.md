@@ -5,6 +5,15 @@ tags:
   - severity/critical
   - cwe/insecure-storage-of-sensitive-information
   - env/web
+  - vuln/command-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/secrets-leak
+  - trigger/auth-required
+  - trigger/session-cookie
+  - trigger/social-engineering
+  - fix/authorization-checks
+  - fix/secrets-rotation
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true

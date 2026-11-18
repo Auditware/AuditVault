@@ -5,6 +5,12 @@ tags:
   - severity/critical
   - cwe/sql-injection
   - env/web
+  - vuln/sql-injection
+  - vuln/dos
+  - impact/data-exposure
+  - impact/unauthorized-write
+  - trigger/unauthenticated
+  - fix/input-validation
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

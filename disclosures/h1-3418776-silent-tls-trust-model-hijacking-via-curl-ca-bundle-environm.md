@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/improper-certificate-validation
   - env/web
+  - vuln/command-injection
+  - trigger/session-cookie
 substate: "not-applicable"
 weakness: "Improper Certificate Validation"
 enriched: true

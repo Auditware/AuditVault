@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/password-in-configuration-file
   - env/web
+  - vuln/info-disclosure
 substate: "resolved"
 weakness: "Password in Configuration File"
 enriched: true

@@ -39,3 +39,23 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-240098-csrf-replacing-the-router-configuration-backup-having-an-ope|"CSRF: Replacing the router configuration backup having an 'operator' user and bypassing the 'Referer:' whitelist protection"]] - `critical`, undisclosed, 14 votes, [[programs/ui|Ubiquiti Inc.]]
 - [[disclosures/h1-450006-flatmap-stream-malicious-package-distributed-via-the-popular|"flatmap-stream malicious package (distributed via the popular events-stream)"]] - `critical`, undisclosed, 13 votes, [[programs/nodejs-ecosystem|Node.js third-party modules]]
 - [[disclosures/h1-330051-unifi-video-server-web-interface-admin-user-firmware-update-|"UniFi Video Server web interface admin user Firmware Update path traversal leading to local system compromise"]] - `high`, undisclosed, 11 votes, [[programs/ui|Ubiquiti Inc.]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `info-disclosure` - 2
+- `xss` - 1
+- `csrf` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `auth-required` - 2
+- `session-cookie` - 1
+- `brute-force` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 1
+
+## 🛠️ Recommended fixes (fix/)
+
+- `input-validation` - 1

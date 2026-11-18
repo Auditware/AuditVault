@@ -6,6 +6,9 @@ tags:
   - cwe/improper-access-control-generic
   - env/desktop
   - os/windows
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

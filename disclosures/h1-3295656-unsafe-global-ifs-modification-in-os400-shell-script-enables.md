@@ -5,6 +5,12 @@ tags:
   - severity/high
   - cwe/improper-input-validation
   - env/web
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - impact/internal-network
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "Improper Input Validation"
 enriched: true

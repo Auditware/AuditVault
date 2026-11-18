@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/information-exposure-through-directory-listing
   - env/web
+  - vuln/privilege-escalation
+  - vuln/info-disclosure
+  - impact/sensitive-data
+  - trigger/admin-required
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Information Exposure Through Directory Listing"
 enriched: true

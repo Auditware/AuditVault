@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/xml-external-entities-xxe
   - env/web
+  - vuln/ssrf
+  - vuln/code-injection
+  - vuln/xxe
+  - impact/rce
 substate: "resolved"
 weakness: "XML External Entities (XXE)"
 enriched: true

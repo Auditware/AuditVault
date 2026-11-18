@@ -5,6 +5,16 @@ tags:
   - severity/critical
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/sql-injection
+  - vuln/xss
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - impact/account-takeover
+  - trigger/admin-required
+  - fix/authentication-hardening
+  - fix/file-validation
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

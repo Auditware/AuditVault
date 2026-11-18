@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/sql-injection
   - env/web
+  - vuln/code-injection
+  - vuln/privilege-escalation
+  - impact/rce
+  - trigger/admin-required
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

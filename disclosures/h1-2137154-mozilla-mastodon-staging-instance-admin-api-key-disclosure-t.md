@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/insecure-storage-of-sensitive-information
   - env/web
+  - vuln/secrets-leak
+  - impact/unauthorized-write
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true

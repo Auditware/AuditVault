@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/use-of-default-credentials
   - env/web
+  - vuln/misconfiguration
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Use of Default Credentials"
 enriched: true

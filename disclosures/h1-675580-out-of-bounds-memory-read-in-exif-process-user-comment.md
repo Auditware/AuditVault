@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/out-of-bounds-read
   - env/web
+  - vuln/info-disclosure
+  - vuln/dos
 substate: "resolved"
 weakness: "Out-of-bounds Read"
 enriched: true

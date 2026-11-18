@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/path-traversal
+  - fix/input-validation
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

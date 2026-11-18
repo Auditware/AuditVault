@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/information-exposure-through-sent-data
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - impact/account-takeover
+  - impact/credential-theft
+  - trigger/admin-required
 substate: "not-applicable"
 weakness: "Information Exposure Through Sent Data"
 enriched: true

@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/xss
+  - vuln/subdomain-takeover
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

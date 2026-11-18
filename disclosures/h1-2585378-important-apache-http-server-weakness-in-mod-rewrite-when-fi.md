@@ -6,6 +6,7 @@ tags:
   - cwe/improper-input-validation
   - env/web
   - stack/apache
+  - vuln/code-injection
 substate: "resolved"
 weakness: "Improper Input Validation"
 enriched: true

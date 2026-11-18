@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/information-exposure-through-debug-information
   - env/web
+  - vuln/info-disclosure
 substate: "resolved"
 weakness: "Information Exposure Through Debug Information"
 enriched: true

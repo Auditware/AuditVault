@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/ssrf
+  - vuln/broken-access-control
+  - impact/internal-network
 substate: "not-applicable"
 weakness: "Improper Access Control - Generic"
 enriched: true

@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/insecure-direct-object-reference-idor
   - env/web
+  - vuln/idor
+  - vuln/race-condition
+  - trigger/race-window
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true

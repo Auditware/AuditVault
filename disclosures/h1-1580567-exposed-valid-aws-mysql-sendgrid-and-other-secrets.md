@@ -6,6 +6,7 @@ tags:
   - cwe/use-of-hard-coded-credentials
   - env/cloud
   - stack/aws
+  - vuln/secrets-leak
 substate: "resolved"
 weakness: "Use of Hard-coded Credentials"
 enriched: true

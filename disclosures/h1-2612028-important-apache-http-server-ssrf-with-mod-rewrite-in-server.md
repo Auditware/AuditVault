@@ -6,6 +6,7 @@ tags:
   - env/web
   - stack/apache
   - os/windows
+  - vuln/ssrf
 substate: "resolved"
 weakness: null
 enriched: true

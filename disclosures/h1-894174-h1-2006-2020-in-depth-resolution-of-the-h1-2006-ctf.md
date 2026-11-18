@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/csrf
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/info-disclosure
+  - vuln/secrets-leak
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

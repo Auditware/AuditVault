@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/improper-authorization
   - env/web
+  - impact/account-takeover
 substate: "resolved"
 weakness: "Improper Authorization"
 enriched: true

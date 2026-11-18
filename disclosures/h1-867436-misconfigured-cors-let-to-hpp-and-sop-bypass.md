@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/misconfiguration
   - env/web
+  - vuln/csrf
+  - vuln/cors-misconfig
+  - vuln/misconfiguration
+  - trigger/cors-origin
+  - trigger/social-engineering
 substate: "not-applicable"
 weakness: "Misconfiguration"
 enriched: true

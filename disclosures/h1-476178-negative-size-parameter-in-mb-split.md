@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/buffer-underflow
   - env/web
+  - vuln/dos
 substate: "resolved"
 weakness: "Buffer Underflow"
 enriched: true

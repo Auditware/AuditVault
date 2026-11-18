@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/improper-restriction-of-authentication-attempts
   - env/web
+  - impact/account-takeover
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true

@@ -6,6 +6,9 @@ tags:
   - cwe/information-disclosure
   - env/web
   - stack/ruby
+  - vuln/xss
+  - vuln/code-injection
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

@@ -7,6 +7,9 @@ tags:
   - env/web
   - stack/node
   - os/windows
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: "Untrusted Search Path"
 enriched: true

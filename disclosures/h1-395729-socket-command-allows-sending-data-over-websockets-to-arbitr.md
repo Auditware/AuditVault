@@ -4,6 +4,9 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/cors-misconfig
+  - impact/rce
+  - trigger/cors-origin
 substate: "resolved"
 weakness: null
 enriched: true

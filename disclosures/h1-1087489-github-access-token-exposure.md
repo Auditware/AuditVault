@@ -4,6 +4,7 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - fix/secrets-rotation
 substate: "resolved"
 weakness: null
 enriched: true

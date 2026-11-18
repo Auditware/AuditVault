@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/idor
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

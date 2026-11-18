@@ -7,6 +7,9 @@ tags:
   - env/cloud
   - stack/kubernetes
   - stack/aws
+  - vuln/subdomain-takeover
+  - impact/credential-theft
+  - trigger/session-cookie
 substate: "duplicate"
 weakness: "Misconfiguration"
 enriched: true

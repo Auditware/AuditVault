@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/sql-injection
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/open-redirect
+  - vuln/secrets-leak
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

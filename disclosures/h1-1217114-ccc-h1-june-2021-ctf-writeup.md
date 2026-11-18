@@ -5,6 +5,16 @@ tags:
   - severity/critical
   - cwe/xml-external-entities-xxe
   - env/web
+  - vuln/sql-injection
+  - vuln/path-traversal
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/xxe
+  - vuln/privilege-escalation
+  - impact/rce
+  - impact/data-exposure
+  - trigger/admin-required
+  - fix/parameterized-query
 substate: "resolved"
 weakness: "XML External Entities (XXE)"
 enriched: true

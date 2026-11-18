@@ -5,6 +5,12 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-stored
   - env/web
+  - vuln/xss
+  - vuln/privilege-escalation
+  - vuln/info-disclosure
+  - impact/credential-theft
+  - trigger/admin-required
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

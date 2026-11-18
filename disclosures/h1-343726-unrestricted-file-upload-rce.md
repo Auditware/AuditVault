@@ -6,6 +6,11 @@ tags:
   - cwe/path-traversal
   - env/web
   - stack/node
+  - vuln/path-traversal
+  - vuln/dos
+  - vuln/file-upload
+  - impact/rce
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

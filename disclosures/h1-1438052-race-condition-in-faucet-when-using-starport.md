@@ -4,6 +4,8 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/race-condition
+  - trigger/race-window
 substate: "resolved"
 weakness: null
 enriched: true

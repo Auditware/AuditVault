@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/insufficiently-protected-credentials
   - env/web
+  - vuln/info-disclosure
 substate: "resolved"
 weakness: "Insufficiently Protected Credentials"
 enriched: true

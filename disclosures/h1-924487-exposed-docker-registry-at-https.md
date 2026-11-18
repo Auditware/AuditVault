@@ -6,6 +6,9 @@ tags:
   - cwe/improper-authentication-generic
   - env/cloud
   - stack/docker
+  - vuln/authentication-bypass
+  - impact/rce
+  - trigger/unauthenticated
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

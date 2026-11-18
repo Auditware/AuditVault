@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/improper-authentication-generic
   - env/web
+  - vuln/authentication-bypass
+  - vuln/jwt
+  - trigger/session-cookie
+  - fix/authentication-hardening
 substate: "informative"
 weakness: "Improper Authentication - Generic"
 enriched: true

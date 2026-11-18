@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/cross-site-request-forgery-csrf
   - env/web
+  - vuln/xss
+  - vuln/csrf
+  - impact/account-takeover
+  - trigger/one-click
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true

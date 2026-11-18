@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/improper-authentication-generic
   - env/web
+  - impact/account-takeover
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

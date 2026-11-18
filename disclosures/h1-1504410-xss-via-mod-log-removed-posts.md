@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/cross-site-scripting-xss-stored
   - env/web
+  - vuln/xss
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

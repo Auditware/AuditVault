@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/code-injection
   - env/web
+  - vuln/xss
+  - impact/credential-theft
+  - trigger/session-cookie
+  - trigger/social-engineering
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "Code Injection"
 enriched: true

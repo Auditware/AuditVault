@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/off-by-one-error
   - env/web
+  - vuln/ssrf
+  - fix/input-validation
 substate: "informative"
 weakness: "Off-by-one Error"
 enriched: true

@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/privilege-escalation
   - env/cloud
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

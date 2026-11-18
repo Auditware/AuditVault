@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/code-injection
   - env/web
+  - fix/file-validation
 substate: "not-applicable"
 weakness: "Code Injection"
 enriched: true

@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/information-disclosure
   - env/web
+  - fix/csp
 substate: "duplicate"
 weakness: "Information Disclosure"
 enriched: true

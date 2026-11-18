@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/web
+  - vuln/command-injection
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

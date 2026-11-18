@@ -6,6 +6,8 @@ tags:
   - cwe/reflected-xss
   - env/cloud
   - stack/aws
+  - vuln/xss-reflected
+  - vuln/xss
 substate: "informative"
 weakness: "Reflected XSS"
 enriched: true

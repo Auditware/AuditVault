@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/server-side-request-forgery-ssrf
   - env/web
+  - vuln/ssrf
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

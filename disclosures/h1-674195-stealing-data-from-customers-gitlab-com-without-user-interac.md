@@ -6,6 +6,11 @@ tags:
   - cwe/insecure-direct-object-reference-idor
   - env/web
   - stack/gitlab
+  - vuln/info-disclosure
+  - vuln/cors-misconfig
+  - impact/sensitive-data
+  - trigger/cors-origin
+  - fix/input-validation
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true

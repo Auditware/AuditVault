@@ -6,6 +6,8 @@ tags:
   - cwe/deserialization-of-untrusted-data
   - env/web
   - stack/ruby
+  - vuln/deserialization
+  - impact/rce
 substate: "informative"
 weakness: "Deserialization of Untrusted Data"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/http-request-smuggling
   - env/web
+  - vuln/xss
+  - impact/internal-network
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true

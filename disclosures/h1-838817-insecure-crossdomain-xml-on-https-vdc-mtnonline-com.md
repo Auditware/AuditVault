@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - vuln/csrf
+  - vuln/info-disclosure
+  - impact/credential-theft
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

@@ -6,6 +6,9 @@ tags:
   - cwe/code-injection
   - env/mobile
   - os/android
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/dos
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

@@ -6,6 +6,7 @@ tags:
   - cwe/cross-site-scripting-xss-generic
   - env/web
   - stack/wordpress
+  - vuln/xss
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true

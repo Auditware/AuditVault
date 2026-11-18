@@ -5,6 +5,9 @@ tags:
   - severity/high
   - env/cloud
   - stack/aws
+  - vuln/cors-misconfig
+  - trigger/cors-origin
+  - trigger/social-engineering
 substate: "resolved"
 weakness: null
 enriched: true

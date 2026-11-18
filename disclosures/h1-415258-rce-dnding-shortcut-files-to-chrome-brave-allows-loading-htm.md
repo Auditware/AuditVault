@@ -4,6 +4,10 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/xss-reflected
+  - vuln/xss
+  - vuln/command-injection
+  - impact/rce
 substate: "resolved"
 weakness: null
 enriched: true

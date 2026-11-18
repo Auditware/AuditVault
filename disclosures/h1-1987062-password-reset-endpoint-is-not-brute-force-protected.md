@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/improper-restriction-of-authentication-attempts
   - env/web
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true

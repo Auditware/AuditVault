@@ -5,6 +5,13 @@ tags:
   - severity/high
   - cwe/use-after-free
   - env/web
+  - vuln/code-injection
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/info-disclosure
+  - vuln/dos
+  - impact/rce
+  - trigger/session-cookie
 substate: "not-applicable"
 weakness: "Use After Free"
 enriched: true

@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/cleartext-storage-of-sensitive-information
   - env/web
+  - vuln/info-disclosure
+  - vuln/cors-misconfig
+  - vuln/misconfiguration
+  - impact/sensitive-data
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Cleartext Storage of Sensitive Information"
 enriched: true

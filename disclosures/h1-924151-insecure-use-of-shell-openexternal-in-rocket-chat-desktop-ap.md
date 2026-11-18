@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/os-command-injection
   - env/web
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

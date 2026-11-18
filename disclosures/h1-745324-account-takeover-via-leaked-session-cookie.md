@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/insufficiently-protected-credentials
   - env/web
+  - impact/account-takeover
+  - trigger/session-cookie
 substate: "resolved"
 weakness: "Insufficiently Protected Credentials"
 enriched: true

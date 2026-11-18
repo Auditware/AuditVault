@@ -6,6 +6,8 @@ tags:
   - cwe/crlf-injection
   - env/web
   - stack/ruby
+  - vuln/code-injection
+  - vuln/info-disclosure
 substate: "informative"
 weakness: "CRLF Injection"
 enriched: true

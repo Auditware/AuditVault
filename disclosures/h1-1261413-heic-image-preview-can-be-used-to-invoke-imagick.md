@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/information-disclosure
   - env/web
+  - vuln/ssrf
+  - trigger/file-upload
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/use-of-hard-coded-credentials
   - env/web
+  - vuln/info-disclosure
+  - impact/data-exposure
 substate: "resolved"
 weakness: "Use of Hard-coded Credentials"
 enriched: true

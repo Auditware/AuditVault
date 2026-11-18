@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/insecure-storage-of-sensitive-information
   - env/web
+  - vuln/info-disclosure
 substate: "not-applicable"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true

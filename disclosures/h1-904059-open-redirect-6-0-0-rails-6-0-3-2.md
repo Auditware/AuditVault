@@ -6,6 +6,9 @@ tags:
   - cwe/open-redirect
   - env/web
   - stack/ruby
+  - vuln/ssrf
+  - vuln/open-redirect
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Open Redirect"
 enriched: true

@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/memory-corruption-generic
   - env/web
+  - vuln/dos
 substate: "resolved"
 weakness: "Memory Corruption - Generic"
 enriched: true

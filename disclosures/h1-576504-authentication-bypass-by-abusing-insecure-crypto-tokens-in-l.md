@@ -6,6 +6,8 @@ tags:
   - cwe/improper-authentication-generic
   - env/web
   - stack/php
+  - vuln/authentication-bypass
+  - trigger/password-reset
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

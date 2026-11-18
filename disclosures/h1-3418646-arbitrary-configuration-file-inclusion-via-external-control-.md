@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/external-control-of-file-name-or-path
   - env/web
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/info-disclosure
+  - vuln/dos
+  - vuln/file-upload
+  - impact/unauthorized-write
 substate: "not-applicable"
 weakness: "External Control of File Name or Path"
 enriched: true

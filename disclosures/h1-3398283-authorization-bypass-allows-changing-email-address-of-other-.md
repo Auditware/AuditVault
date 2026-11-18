@@ -5,6 +5,12 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - impact/account-takeover
+  - trigger/unauthenticated
+  - trigger/auth-required
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

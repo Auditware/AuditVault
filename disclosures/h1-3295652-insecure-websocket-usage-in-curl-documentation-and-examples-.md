@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/cleartext-transmission-of-sensitive-information
   - env/web
+  - vuln/authentication-bypass
 substate: "not-applicable"
 weakness: "Cleartext Transmission of Sensitive Information"
 enriched: true

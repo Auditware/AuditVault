@@ -6,6 +6,10 @@ tags:
   - cwe/sql-injection
   - env/web
   - stack/node
+  - vuln/sql-injection
+  - vuln/command-injection
+  - vuln/code-injection
+  - vuln/dos
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

@@ -6,6 +6,8 @@ tags:
   - cwe/code-injection
   - env/web
   - stack/java
+  - vuln/info-disclosure
+  - impact/internal-network
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

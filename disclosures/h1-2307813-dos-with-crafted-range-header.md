@@ -5,6 +5,8 @@ tags:
   - severity/high
   - env/web
   - stack/ruby
+  - vuln/dos
+  - impact/sensitive-data
 substate: "resolved"
 weakness: null
 enriched: true

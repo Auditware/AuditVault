@@ -6,6 +6,9 @@ tags:
   - cwe/cross-site-request-forgery-csrf
   - env/web
   - stack/gitlab
+  - vuln/xss
+  - vuln/csrf
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true

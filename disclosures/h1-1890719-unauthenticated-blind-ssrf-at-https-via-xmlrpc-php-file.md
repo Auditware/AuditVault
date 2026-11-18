@@ -6,6 +6,8 @@ tags:
   - cwe/server-side-request-forgery-ssrf
   - env/web
   - stack/php
+  - vuln/ssrf
+  - fix/input-validation
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

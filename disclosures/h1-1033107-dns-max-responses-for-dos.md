@@ -6,6 +6,7 @@ tags:
   - cwe/uncontrolled-resource-consumption
   - env/network
   - stack/node
+  - vuln/dos
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/server-side-request-forgery-ssrf
   - env/network
+  - vuln/ssrf
+  - trigger/dns-rebinding
+  - trigger/race-window
 substate: "informative"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

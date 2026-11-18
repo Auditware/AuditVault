@@ -45,3 +45,43 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-659419-reflected-xss-on-https-make-wordpress-org-via-channel-parame|"Reflected XSS on https://make.wordpress.org via 'channel' parameter"]] - `high`, undisclosed, 97 votes, [[programs/wordpress|WordPress]]
 - [[disclosures/h1-428019-csrf-to-html-injection-in-comments|"CSRF to HTML Injection in Comments"]] - `high`, undisclosed, 95 votes, [[programs/wordpress|WordPress]]
 - [[disclosures/h1-1107282-privilege-escalation-via-rest-api-to-administrator-leads-to-|"Privilege Escalation via REST API to Administrator leads to RCE"]] - `high`, undisclosed, 92 votes, [[programs/wordpress|WordPress]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `xss` - 17
+- `xss-stored` - 9
+- `code-injection` - 7
+- `broken-access-control` - 5
+- `privilege-escalation` - 4
+- `path-traversal` - 4
+- `dos` - 4
+- `authentication-bypass` - 3
+- `info-disclosure` - 3
+- `csrf` - 3
+- `idor` - 2
+- `xss-reflected` - 2
+
+## 🎯 Exploit triggers (trigger/)
+
+- `unauthenticated` - 7
+- `auth-required` - 7
+- `social-engineering` - 4
+- `admin-required` - 4
+- `victim-interaction` - 3
+- `session-cookie` - 2
+- `file-upload` - 1
+- `low-priv-user` - 1
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 10
+- `credential-theft` - 5
+- `data-exposure` - 1
+- `dos-impact` - 1
+- `sensitive-data` - 1
+- `account-takeover` - 1
+- `internal-network` - 1
+
+## 🛠️ Recommended fixes (fix/)
+
+- `authorization-checks` - 1

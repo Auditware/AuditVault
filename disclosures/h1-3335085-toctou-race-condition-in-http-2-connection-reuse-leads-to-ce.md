@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/time-of-check-time-of-use-toctou-race-condition
   - env/web
+  - vuln/sql-injection
+  - vuln/race-condition
+  - trigger/race-window
 substate: "not-applicable"
 weakness: "Time-of-check Time-of-use (TOCTOU) Race Condition"
 enriched: true

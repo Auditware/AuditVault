@@ -4,6 +4,9 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - trigger/social-engineering
 substate: "resolved"
 weakness: null
 enriched: true

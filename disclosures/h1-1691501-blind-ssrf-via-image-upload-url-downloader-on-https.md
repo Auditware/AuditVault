@@ -5,6 +5,12 @@ tags:
   - severity/high
   - cwe/server-side-request-forgery-ssrf
   - env/web
+  - vuln/ssrf
+  - vuln/command-injection
+  - vuln/cors-misconfig
+  - trigger/auth-required
+  - trigger/cors-origin
+  - fix/input-validation
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

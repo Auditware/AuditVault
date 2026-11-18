@@ -6,6 +6,13 @@ tags:
   - cwe/path-traversal
   - env/web
   - stack/wordpress
+  - vuln/xss-reflected
+  - vuln/xss
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/privilege-escalation
+  - impact/rce
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

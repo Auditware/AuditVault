@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/type-confusion
   - env/web
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/code-injection
+  - impact/rce
 substate: "not-applicable"
 weakness: "Type Confusion"
 enriched: true

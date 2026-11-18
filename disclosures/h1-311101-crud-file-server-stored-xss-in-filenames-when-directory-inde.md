@@ -6,6 +6,9 @@ tags:
   - cwe/cross-site-scripting-xss-stored
   - env/web
   - stack/node
+  - vuln/xss-stored
+  - vuln/xss
+  - trigger/one-click
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

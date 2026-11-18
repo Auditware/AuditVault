@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/information-disclosure
   - env/web
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/authentication-bypass
+  - vuln/cors-misconfig
+  - vuln/session-management
+  - trigger/cors-origin
+  - trigger/brute-force
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

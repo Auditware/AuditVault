@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/command-injection-generic
   - env/web
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true

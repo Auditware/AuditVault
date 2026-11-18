@@ -6,6 +6,12 @@ tags:
   - cwe/remote-file-inclusion
   - env/web
   - stack/node
+  - vuln/xss
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/command-injection
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "Remote File Inclusion"
 enriched: true

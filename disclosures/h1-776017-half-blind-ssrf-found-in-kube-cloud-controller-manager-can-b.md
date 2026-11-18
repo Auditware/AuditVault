@@ -6,6 +6,13 @@ tags:
   - cwe/server-side-request-forgery-ssrf
   - env/cloud
   - stack/kubernetes
+  - vuln/ssrf
+  - vuln/command-injection
+  - vuln/idor
+  - vuln/info-disclosure
+  - vuln/dos
+  - impact/rce
+  - impact/internal-network
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

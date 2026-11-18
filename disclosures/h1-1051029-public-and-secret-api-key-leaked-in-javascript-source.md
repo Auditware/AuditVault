@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/info-disclosure
+  - vuln/dos
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

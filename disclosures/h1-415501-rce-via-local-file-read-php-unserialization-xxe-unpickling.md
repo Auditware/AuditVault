@@ -6,6 +6,13 @@ tags:
   - cwe/code-injection
   - env/web
   - stack/php
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/code-injection
+  - vuln/deserialization
+  - vuln/rce-unsafe-deserialization
+  - vuln/xxe
+  - impact/rce
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

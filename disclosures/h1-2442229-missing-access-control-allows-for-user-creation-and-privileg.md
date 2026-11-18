@@ -5,6 +5,10 @@ tags:
   - severity/high
   - cwe/improper-access-control-generic
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - vuln/misconfiguration
+  - trigger/auth-required
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/business-logic-errors
   - env/web
+  - vuln/xss
+  - fix/csp
+  - fix/authentication-hardening
 substate: "not-applicable"
 weakness: "Business Logic Errors"
 enriched: true

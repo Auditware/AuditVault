@@ -6,6 +6,7 @@ tags:
   - cwe/path-traversal
   - env/web
   - stack/gitlab
+  - vuln/ssrf
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true

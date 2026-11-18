@@ -6,6 +6,7 @@ tags:
   - cwe/improper-access-control-generic
   - env/cloud
   - stack/docker
+  - trigger/unauthenticated
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

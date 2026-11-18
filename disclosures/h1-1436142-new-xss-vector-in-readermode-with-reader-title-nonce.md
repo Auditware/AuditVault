@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/cross-site-scripting-xss-generic
   - env/web
+  - vuln/xss
+  - vuln/csrf
+  - fix/csp
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true

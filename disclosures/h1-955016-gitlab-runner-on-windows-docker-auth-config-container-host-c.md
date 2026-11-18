@@ -7,6 +7,8 @@ tags:
   - env/cloud
   - stack/gitlab
   - os/windows
+  - vuln/path-traversal
+  - vuln/command-injection
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

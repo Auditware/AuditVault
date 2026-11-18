@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/use-after-free
   - env/web
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
+  - impact/internal-network
+  - trigger/auth-required
+  - trigger/low-priv-user
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Use After Free"
 enriched: true

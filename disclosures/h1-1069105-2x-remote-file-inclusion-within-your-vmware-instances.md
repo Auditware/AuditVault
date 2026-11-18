@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/remote-file-inclusion
   - env/web
+  - vuln/rfi
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "Remote File Inclusion"
 enriched: true

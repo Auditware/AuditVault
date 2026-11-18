@@ -6,6 +6,8 @@ tags:
   - cwe/null-pointer-dereference
   - env/web
   - stack/node
+  - vuln/dos
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "NULL Pointer Dereference"
 enriched: true

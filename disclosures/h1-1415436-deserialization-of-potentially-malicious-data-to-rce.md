@@ -6,6 +6,11 @@ tags:
   - cwe/deserialization-of-untrusted-data
   - env/web
   - stack/python
+  - vuln/command-injection
+  - vuln/deserialization
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - impact/rce
 substate: "informative"
 weakness: "Deserialization of Untrusted Data"
 enriched: true

@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

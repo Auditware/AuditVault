@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/cryptographic-issues-generic
   - env/web
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "Cryptographic Issues - Generic"
 enriched: true

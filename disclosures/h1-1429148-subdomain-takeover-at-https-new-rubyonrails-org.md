@@ -6,6 +6,10 @@ tags:
   - cwe/privilege-escalation
   - env/web
   - stack/ruby
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/subdomain-takeover
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

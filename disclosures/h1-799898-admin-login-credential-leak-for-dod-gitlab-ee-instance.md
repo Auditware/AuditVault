@@ -6,6 +6,7 @@ tags:
   - cwe/information-disclosure
   - env/web
   - stack/gitlab
+  - impact/credential-theft
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

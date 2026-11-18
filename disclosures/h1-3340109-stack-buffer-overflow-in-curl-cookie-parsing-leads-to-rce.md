@@ -5,6 +5,12 @@ tags:
   - severity/high
   - cwe/stack-overflow
   - env/web
+  - vuln/code-injection
+  - vuln/info-disclosure
+  - vuln/dos
+  - impact/rce
+  - trigger/unauthenticated
+  - fix/input-validation
 substate: "not-applicable"
 weakness: "Stack Overflow"
 enriched: true

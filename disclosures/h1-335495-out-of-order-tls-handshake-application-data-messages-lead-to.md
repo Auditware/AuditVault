@@ -6,6 +6,7 @@ tags:
   - cwe/heap-overflow
   - env/web
   - stack/node
+  - vuln/dos
 substate: "resolved"
 weakness: "Heap Overflow"
 enriched: true

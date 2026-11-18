@@ -4,6 +4,9 @@ tags:
   - platform/hackerone
   - severity/high
   - env/web
+  - vuln/xss
+  - trigger/file-upload
+  - fix/csp
 substate: "resolved"
 weakness: null
 enriched: true

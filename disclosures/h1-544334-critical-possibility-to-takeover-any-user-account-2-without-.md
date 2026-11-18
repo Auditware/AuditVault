@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/privilege-escalation
   - env/web
+  - impact/account-takeover
+  - impact/credential-theft
+  - trigger/low-priv-user
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

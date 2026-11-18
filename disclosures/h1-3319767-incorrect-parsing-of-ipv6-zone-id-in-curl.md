@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/authentication-bypass-by-primary-weakness
   - env/web
+  - vuln/ssrf
+  - vuln/broken-access-control
+  - vuln/open-redirect
 substate: "not-applicable"
 weakness: "Authentication Bypass by Primary Weakness"
 enriched: true

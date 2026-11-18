@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/privilege-escalation
   - env/web
+  - vuln/file-upload
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

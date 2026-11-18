@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/reliance-on-untrusted-inputs-in-a-security-decision
   - env/web
+  - vuln/subdomain-takeover
 substate: "resolved"
 weakness: "Reliance on Untrusted Inputs in a Security Decision"
 enriched: true

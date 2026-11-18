@@ -6,6 +6,7 @@ tags:
   - cwe/improper-authentication-generic
   - env/web
   - stack/java
+  - vuln/misconfiguration
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true

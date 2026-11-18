@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/sql-injection
   - env/web
+  - vuln/sql-injection
+  - vuln/code-injection
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true

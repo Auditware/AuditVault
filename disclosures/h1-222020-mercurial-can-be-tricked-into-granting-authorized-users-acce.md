@@ -6,6 +6,8 @@ tags:
   - cwe/code-injection
   - env/web
   - stack/python
+  - vuln/code-injection
+  - fix/input-validation
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

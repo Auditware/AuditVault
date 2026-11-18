@@ -5,6 +5,22 @@ tags:
   - severity/critical
   - cwe/cross-site-scripting-xss-stored
   - env/web
+  - vuln/xss-stored
+  - vuln/xss
+  - vuln/csrf
+  - vuln/code-injection
+  - vuln/idor
+  - vuln/info-disclosure
+  - impact/account-takeover
+  - impact/rce
+  - impact/credential-theft
+  - impact/sensitive-data
+  - impact/internal-network
+  - trigger/unauthenticated
+  - trigger/one-click
+  - trigger/social-engineering
+  - fix/input-validation
+  - fix/authentication-hardening
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true

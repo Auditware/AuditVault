@@ -6,6 +6,7 @@ tags:
   - cwe/http-response-splitting
   - env/web
   - stack/ruby
+  - vuln/xss
 substate: "resolved"
 weakness: "HTTP Response Splitting"
 enriched: true

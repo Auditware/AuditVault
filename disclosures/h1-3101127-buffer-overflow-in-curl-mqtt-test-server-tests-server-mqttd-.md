@@ -5,6 +5,12 @@ tags:
   - severity/critical
   - cwe/memory-corruption-generic
   - env/network
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
+  - impact/internal-network
+  - impact/dos-impact
+  - trigger/session-cookie
 substate: "not-applicable"
 weakness: "Memory Corruption - Generic"
 enriched: true

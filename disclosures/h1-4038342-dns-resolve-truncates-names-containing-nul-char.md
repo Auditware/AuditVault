@@ -6,6 +6,8 @@ tags:
   - cwe/improper-access-control-generic
   - env/network
   - stack/node
+  - vuln/ssrf
+  - fix/patch-upstream
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true

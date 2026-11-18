@@ -5,6 +5,10 @@ tags:
   - severity/critical
   - cwe/information-disclosure
   - env/web
+  - vuln/dos
+  - vuln/secrets-leak
+  - trigger/social-engineering
+  - fix/secrets-rotation
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

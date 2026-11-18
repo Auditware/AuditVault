@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/insecure-direct-object-reference-idor
   - env/web
+  - vuln/idor
+  - vuln/cors-misconfig
+  - vuln/jwt
+  - trigger/low-priv-user
+  - trigger/cors-origin
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true

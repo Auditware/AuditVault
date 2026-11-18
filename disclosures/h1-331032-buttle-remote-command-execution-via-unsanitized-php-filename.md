@@ -7,6 +7,9 @@ tags:
   - env/web
   - stack/node
   - stack/php
+  - vuln/command-injection
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

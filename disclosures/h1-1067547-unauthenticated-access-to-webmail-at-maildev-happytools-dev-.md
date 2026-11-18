@@ -6,6 +6,8 @@ tags:
   - cwe/information-disclosure
   - env/web
   - stack/wordpress
+  - impact/rce
+  - trigger/unauthenticated
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

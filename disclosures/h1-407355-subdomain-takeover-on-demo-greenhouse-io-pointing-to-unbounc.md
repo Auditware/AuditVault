@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/phishing
   - env/web
+  - vuln/code-injection
+  - vuln/subdomain-takeover
 substate: "resolved"
 weakness: "Phishing"
 enriched: true

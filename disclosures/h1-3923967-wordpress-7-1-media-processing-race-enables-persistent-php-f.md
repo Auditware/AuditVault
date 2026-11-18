@@ -7,6 +7,13 @@ tags:
   - env/web
   - stack/wordpress
   - stack/php
+  - vuln/code-injection
+  - vuln/race-condition
+  - impact/rce
+  - impact/internal-network
+  - trigger/unauthenticated
+  - trigger/auth-required
+  - trigger/race-window
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true

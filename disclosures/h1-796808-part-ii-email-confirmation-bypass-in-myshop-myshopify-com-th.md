@@ -4,6 +4,8 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/broken-access-control
+  - vuln/privilege-escalation
 substate: "resolved"
 weakness: null
 enriched: true

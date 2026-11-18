@@ -6,6 +6,10 @@ tags:
   - cwe/allocation-of-resources-without-limits-or-throttling
   - env/web
   - stack/node
+  - vuln/code-injection
+  - vuln/dos
+  - impact/rce
+  - impact/dos-impact
 substate: "resolved"
 weakness: "Allocation of Resources Without Limits or Throttling"
 enriched: true

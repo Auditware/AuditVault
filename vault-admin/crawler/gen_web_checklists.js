@@ -79,7 +79,7 @@ function cweLink(slug) {
 }
 
 function newAxis() {
-  return { cards: [], cwes: {}, programs: {} };
+  return { cards: [], cwes: {}, programs: {}, vuln: {}, trigger: {}, impact: {}, fix: {} };
 }
 
 function renderChecklist({ axis, value, blurb }, data) {
@@ -99,6 +99,17 @@ function renderChecklist({ axis, value, blurb }, data) {
   const examples = [...cards].sort((a, b) => b.votes - a.votes).slice(0, MAX_EXAMPLES)
     .map(c => `- [[disclosures/${c.file}|${esc(c.title)}]] - \`${c.severity}\`, ${money(c.bounty)}, ${c.votes} votes${c.programName ? `, [[programs/${c.program}|${esc(c.programName)}]]` : ''}`)
     .join('\n');
+
+  // Deep axes (from tag_web_bugs.js): what goes wrong / how / what to check.
+  const fmtAxis = (title, counts, limit = 10) => {
+    const entries = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, limit);
+    if (!entries.length) return '';
+    return `\n## ${title}\n\n` + entries.map(([v, n]) => `- \`${v}\` - ${n}`).join('\n') + '\n';
+  };
+  const vulnSection  = fmtAxis('⚠️ Top bug classes (vuln/)', data.vuln, 12);
+  const trigSection  = fmtAxis('🎯 Exploit triggers (trigger/)', data.trigger, 8);
+  const impactSection = fmtAxis('💥 Demonstrated impact (impact/)', data.impact, 8);
+  const fixSection   = fmtAxis('🛠️ Recommended fixes (fix/)', data.fix, 8);
 
   return `---
 tags:
@@ -126,7 +137,7 @@ Where this surface class shows up most: ${programs || 'N/A'}
 The highest-voted disclosures on this surface - their linked reports are the canonical writeups for how these bugs were found and exploited.
 
 ${examples}
-`;
+${vulnSection}${trigSection}${impactSection}${fixSection}`;
 }
 
 function renderIndex(entries, skipped) {
@@ -193,6 +204,8 @@ function main() {
     };
 
     let tagged = false;
+    const axesOnCard = { vuln: fmTags(fm, 'vuln'), trigger: fmTags(fm, 'trigger'),
+                         impact: fmTags(fm, 'impact'), fix: fmTags(fm, 'fix') };
     for (const { axis } of AXES) {
       for (const value of fmTags(fm, axis)) {
         const key = `${axis}/${value}`;
@@ -200,6 +213,9 @@ function main() {
         d.cards.push(card);
         for (const s of cwes) d.cwes[s] = (d.cwes[s] || 0) + 1;
         if (card.programName) d.programs[card.programName] = (d.programs[card.programName] || 0) + 1;
+        for (const ax of ['vuln', 'trigger', 'impact', 'fix']) {
+          for (const v of axesOnCard[ax]) d[ax][v] = (d[ax][v] || 0) + 1;
+        }
         tagged = true;
       }
     }

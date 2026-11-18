@@ -5,6 +5,11 @@ tags:
   - severity/critical
   - cwe/privilege-escalation
   - env/web
+  - vuln/xss
+  - vuln/path-traversal
+  - trigger/file-upload
+  - fix/input-validation
+  - fix/csp
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true

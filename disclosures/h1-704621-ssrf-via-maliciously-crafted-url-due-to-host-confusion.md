@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/server-side-request-forgery-ssrf
   - env/web
+  - vuln/ssrf
+  - vuln/open-redirect
 substate: "informative"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true

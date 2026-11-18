@@ -5,6 +5,7 @@ tags:
   - severity/critical
   - cwe/misconfiguration
   - env/web
+  - trigger/admin-required
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true

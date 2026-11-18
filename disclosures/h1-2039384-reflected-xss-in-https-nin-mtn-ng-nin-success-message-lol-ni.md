@@ -5,6 +5,8 @@ tags:
   - severity/critical
   - cwe/cross-site-scripting-xss-reflected
   - env/web
+  - vuln/xss-reflected
+  - vuln/xss
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true

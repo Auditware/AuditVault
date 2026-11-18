@@ -5,6 +5,13 @@ tags:
   - severity/critical
   - cwe/os-command-injection
   - env/web
+  - vuln/ssrf
+  - vuln/path-traversal
+  - vuln/command-injection
+  - vuln/deserialization
+  - vuln/rce-unsafe-deserialization
+  - vuln/xxe
+  - impact/rce
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

@@ -5,6 +5,8 @@ tags:
   - severity/high
   - cwe/uncontrolled-resource-consumption
   - env/web
+  - vuln/ssrf
+  - vuln/dos
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true

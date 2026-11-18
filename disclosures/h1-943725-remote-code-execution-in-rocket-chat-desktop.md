@@ -4,6 +4,9 @@ tags:
   - platform/hackerone
   - severity/critical
   - env/web
+  - vuln/code-injection
+  - impact/rce
+  - trigger/auth-required
 substate: "resolved"
 weakness: null
 enriched: true

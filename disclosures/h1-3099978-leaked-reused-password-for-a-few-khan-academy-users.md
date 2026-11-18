@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/cleartext-storage-of-sensitive-information
   - env/web
+  - impact/account-takeover
+  - impact/data-exposure
+  - trigger/social-engineering
 substate: "resolved"
 weakness: "Cleartext Storage of Sensitive Information"
 enriched: true

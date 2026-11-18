@@ -5,6 +5,7 @@ tags:
   - severity/high
   - cwe/information-disclosure
   - env/web
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true

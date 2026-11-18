@@ -5,6 +5,11 @@ tags:
   - severity/high
   - cwe/improper-authorization
   - env/web
+  - vuln/path-traversal
+  - impact/account-takeover
+  - trigger/auth-required
+  - trigger/one-click
+  - trigger/victim-interaction
 substate: "resolved"
 weakness: "Improper Authorization"
 enriched: true

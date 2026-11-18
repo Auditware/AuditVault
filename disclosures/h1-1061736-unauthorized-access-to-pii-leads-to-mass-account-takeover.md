@@ -5,6 +5,9 @@ tags:
   - severity/critical
   - cwe/business-logic-errors
   - env/web
+  - vuln/info-disclosure
+  - impact/account-takeover
+  - impact/sensitive-data
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true

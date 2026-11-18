@@ -37,3 +37,16 @@ The highest-voted disclosures on this surface - their linked reports are the can
 - [[disclosures/h1-2312609-full-access-to-sonarqube-and-docker|"Full Access to sonarQube and Docker"]] - `critical`, undisclosed, 21 votes, [[programs/deptofdefense|U.S. Dept Of Defense]]
 - [[disclosures/h1-720306-docker-image-with-fpm-is-vulnerable-to-cve-2019-11043|"Docker image with FPM is vulnerable to CVE-2019-11043"]] - `critical`, $100, 16 votes, [[programs/nextcloud|Nextcloud]]
 - [[disclosures/h1-924487-exposed-docker-registry-at-https|"Exposed Docker Registry at https://████"]] - `high`, undisclosed, 15 votes, [[programs/deptofdefense|U.S. Dept Of Defense]]
+
+## ⚠️ Top bug classes (vuln/)
+
+- `command-injection` - 1
+- `authentication-bypass` - 1
+
+## 🎯 Exploit triggers (trigger/)
+
+- `unauthenticated` - 2
+
+## 💥 Demonstrated impact (impact/)
+
+- `rce` - 3

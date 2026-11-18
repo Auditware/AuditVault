@@ -6,6 +6,9 @@ tags:
   - cwe/os-command-injection
   - env/web
   - stack/node
+  - vuln/command-injection
+  - vuln/code-injection
+  - impact/rce
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true

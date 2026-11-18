@@ -5,6 +5,9 @@ tags:
   - severity/high
   - cwe/path-traversal
   - env/web
+  - vuln/file-upload
+  - impact/rce
+  - impact/unauthorized-write
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true
