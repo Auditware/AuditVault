@@ -1,12 +1,12 @@
 <h1 align="center">AuditVault</h1>
 
 <p align="center">
-  <b>The smart contract security knowledge base.</b><br/>
-  <em>Every HIGH/CRITICAL finding. Every major hack. All linked, classified, and queryable.</em>
+  <b>The security audit knowledge base.</b><br/>
+  <em>Every HIGH/CRITICAL finding. Every major hack. Every disclosed report. All linked, classified, and queryable.</em>
 </p>
 
 <p align="center">
-  <img src="static/hero.svg" alt="AuditVault - smart contract security knowledge base" width="100%"/>
+  <img src="static/hero.svg" alt="AuditVault - security audit knowledge base" width="100%"/>
 </p>
 
 
@@ -29,9 +29,10 @@
 <h2 align="center">What's inside</h2>
 
 <p align="center">
-AuditVault is an <a href="https://obsidian.md/">Obsidian</a> knowledge base for smart contract security research.<br/>
-It aggregates audit findings and DeFi hack post-mortems, enriches them with a deep classification<br/>
-taxonomy, and links everything together - protocols to auditors, findings to bug patterns, hacks to attack vectors.<br/><br/>
+AuditVault is an <a href="https://obsidian.md/">Obsidian</a> knowledge base for security research.<br/>
+It aggregates smart contract audit findings, DeFi hack post-mortems, and web bug bounty disclosures, enriches them with a deep<br/>
+classification taxonomy, and links everything together - protocols to auditors, findings to bug patterns, hacks to attack vectors,<br/>
+programs to disclosures, CWEs to surfaces.<br/><br/>
 Think of it as <em>searchable institutional memory</em> for security researchers.
 </p>
 

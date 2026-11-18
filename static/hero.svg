@@ -46,7 +46,7 @@
   font-size="27" font-weight="700" fill="#e6edf3" letter-spacing="-0.5">AuditVault</text>
 <text x="600" y="64" text-anchor="middle"
   font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif"
-  font-size="12" fill="#8b949e">Smart contract security knowledge base · sourced · classified · linked</text>
+  font-size="12" fill="#8b949e">Security audit knowledge base · sourced · classified · linked</text>
 
 <!-- ─── STATS BADGES ─── -->
 <!-- findings -->
