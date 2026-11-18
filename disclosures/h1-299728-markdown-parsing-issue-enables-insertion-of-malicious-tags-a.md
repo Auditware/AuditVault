@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2018-01-29
 submitted: 2017-12-20T22:09:47.391Z
 bounty_usd: 5000
@@ -25,6 +26,29 @@ title: "Markdown parsing issue enables insertion of malicious tags and event han
 - Report: [https://hackerone.com/reports/299728](https://hackerone.com/reports/299728)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2017-12-20T22:09:47.391Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+When markdown is being presented as HTML, there seems to be a strange interaction between _ and @ that lets an attacker insert malicious tags.
+
+# Proof of Concept :
+```
+</http:<marquee>hello
+```
+
+is rendered converted to the following HTML:
+
+```
+<p><a title="/http:<marquee" href="/http:%3Cmarquee" target="_blank">/http:<marquee>hello</p>
+</marquee></a></p>
+```
+As you can see, the output includes a </http:<marquee tag that I can add arbitrary attributes (including event handlers).
+
+## Impact
+
+When markdown is being presented as HTML, there seems to be a strange interaction between _ and @ that lets an attacker insert malicious tags.
 
 ## Timeline
 

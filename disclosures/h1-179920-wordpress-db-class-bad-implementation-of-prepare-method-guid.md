@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: true
 date: 2017-11-13
 submitted: 2016-11-03T13:32:17.535Z
 bounty_usd: null
@@ -26,6 +27,21 @@ title: "WordPress DB Class, bad implementation of prepare method guides to sqli 
 - Report: [https://hackerone.com/reports/179920](https://hackerone.com/reports/179920)
 - CWE: SQL Injection
 - Submitted: 2016-11-03T13:32:17.535Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Issue 1: Method checks if first argument is an array and if it is, it avoids the rest of the arguments and uses the first argument array values as input.
+
+Issue 2: When input query has %s in it, then it quote and this guides to sql injection in case query that need to be prepared have quoted user controlled input in it.  
+
+This leaves all wordpress plugins/ themes potentially vulnerable on this two types of attack. As PoC sqli in bbpress wp plugin and core wp function is shown.
+
+PoC: 
+1. There is SQLi in bbpress in case anonymous posting is allowed. ( check  bbpress-sqli.png)
+2.  Demo for the Issue 1 and Issue 2 for the prepare method
+3. Wordpress core function delete_metadata is vulnerable to sqli in case delete all e.g. last argument is true and meta value has value e.g. is user supplied / controlled.
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Out-of-bounds Read"
 enriched: true
+body: true
 date: 2021-06-18
 submitted: 2021-06-04T17:42:52.280Z
 bounty_usd: null
@@ -25,6 +26,25 @@ title: "Adam and the  Deadly  Injections"
 - Report: [https://hackerone.com/reports/1217702](https://hackerone.com/reports/1217702)
 - CWE: Out-of-bounds Read
 - Submitted: 2021-06-04T17:42:52.280Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi team adding the  flag here 
+```
+███
+```
+
+████
+
+I will do the writeup in the below comments before the deadline itself
+Thanks 
+Akshansh
+
+## Impact
+
+....
 
 ## Timeline
 

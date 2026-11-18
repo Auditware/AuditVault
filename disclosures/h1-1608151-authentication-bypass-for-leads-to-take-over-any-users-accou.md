@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Missing Authentication for Critical Function"
 enriched: true
+body: none
 date: 2022-10-31
 submitted: 2022-06-21T08:08:00.308Z
 bounty_usd: null

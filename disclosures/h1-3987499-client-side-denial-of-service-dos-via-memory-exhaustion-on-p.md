@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2026-10-05
 submitted: 2026-09-01T16:04:18.310Z
 bounty_usd: null
@@ -25,6 +26,36 @@ title: "Client-Side Denial of Service (DoS) via Memory Exhaustion on Password Re
 - Report: [https://hackerone.com/reports/3987499](https://hackerone.com/reports/3987499)
 - CWE: Uncontrolled Resource Consumption
 - Submitted: 2026-09-01T16:04:18.310Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Visiting ```/pwreset?action=reset ```endpoint while logged in causes the browser to automatically send thousands of requests (observable via Burp Suite or DevTools), leading to memory exhaustion and browser crash within few minutes.
+
+##Steps to Reproduce
+1. Log in to Khan Academy
+
+2.  Open Burp Suite (or browser DevTools → Network tab) to monitor requests
+
+3.Visit: 
+```https://www.khanacademy.org/pwreset?action=reset```
+
+4.  Observe Burp Suite shows thousands of requests being automatically generated without any user interaction
+
+5.Monitor browser memory usage — it continuously increases
+
+6. Within few minutes, the browser becomes unresponsive and eventually crashes or is suspended by the system
+
+## Impact
+
+1.Denial of Service for any logged‑in user who visits the link
+
+2.Browser memory exhaustion leading to crash or system suspend
+
+3.No user interaction required beyond visiting the link
+
+4.Can be used in phishing campaigns to disrupt users
 
 ## Timeline
 

@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Information Exposure Through an Error Message"
 enriched: true
+body: none
 date: 2019-06-13
 submitted: 2018-12-11T17:52:43.628Z
 bounty_usd: 3500

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Forced Browsing"
 enriched: true
+body: none
 date: 2022-05-04
 submitted: 2022-03-04T12:17:08.979Z
 bounty_usd: null

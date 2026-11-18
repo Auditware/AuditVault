@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2021-03-11
 submitted: 2020-05-27T14:45:20.010Z
 bounty_usd: null
@@ -29,6 +30,34 @@ title: "Information Disclosure(PHPINFO/Credentials) on DoD Asset"
 ## Report summary
 
 A Department of Defense(DoD) asset leaked the systems' PHPInfo page which contained sensitive information such as Active Directory credentials. This may have led to System Compromise. The DoD Representatives were responsive and thorough when handling my report.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+A DoD leaks credentials on a phpinfo() page.
+
+**Description:**
+https://███ publicly displays a phpinfo() page that leaks system information and credentials.
+
+## Impact
+The impact is medium not only due to information leakage of numerous different details such as system information but also the leakage of domain credentials.
+USERDOMAIN	███████
+USERNAME	██████
+█████████PASSWORD']	████████
+
+## Step-by-step Reproduction Instructions
+
+1. Visit: https://████/████
+2. Information Disclosed
+
+## Suggested Mitigation/Remediation Actions
+████████ BAT  suggests removing the ███ page or requiring authentication before making it accessible.
+
+## Impact
+
+The impact is medium not only due to information leakage of numerous different details such as system information but also the leakage of domain credentials.
 
 ## Timeline
 

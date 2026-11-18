@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2020-11-18
 submitted: 2020-09-03T18:53:46.589Z
 bounty_usd: null
@@ -32,6 +33,40 @@ If you want to follow me, here is my linkedin & twitter accounts:
 https://twitter.com/alicanact60
 https://tr.linkedin.com/in/alicanact60
 
+@mygf
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello there,
+I hope all is well!
+
+I found a stored xss on https://app.crowdsignal.com/
+
+Steps:
+* Go to `https://app.crowdsignal.com/dashboard`
+* Create a survey.
+* Go to `https://app.crowdsignal.com/quizzes/{survey-id}/question`
+* Add `Multiple Choice`
+* Click `Add media` button.
+* Select `Embed Media`
+* Paste this: `[dailymotion id=x8oma9]`
+* Insert it.
+* Open Burp Suite and click `Save` button.
+* Return to burp suite and paste xss payload to `media[11111111]` parameter: `[dailymotion id=x8oma9"><svg/onload=prompt(document.domain)>]`
+* Forward the request and refresh the page. You will see xss alert.
+
+This isn't self xss because I saw users who Team plan can invite other users to their dashboards. So attacker can steal victim's cookies.
+
+Also I recorded a poc video for you:   
+{F975177}
+
+## Impact
+
+Stealing cookies.
+
+Best Regards,
 @mygf
 
 ## Timeline

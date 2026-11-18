@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2020-04-19
 submitted: 2020-03-15T21:55:05.955Z
 bounty_usd: 500
@@ -25,6 +26,29 @@ title: "Missing ownership check on remote wipe endpoint"
 - Report: [https://hackerone.com/reports/819807](https://hackerone.com/reports/819807)
 - CWE: Insecure Direct Object Reference (IDOR) | CVE: CVE-2020-8154
 - Submitted: 2020-03-15T21:55:05.955Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+On settings/user/security
+
+You can mark a device for wipe out that does not belong to you.
+
+Steps:
+
+1. Create 2 accounts one for the hacker and one for the victim
+2. On both accounts add devices with different names
+3.  On the hacker account, while intercepting with burpsuite, select the option to wipe out a device
+4.  Forward with burpsuite and in the url that looks like settings/personal/authtokens/wipe/{data-id}, change the data-id to the id of the device of the victim
+5. Stop intercepting or forward again and the device of the victim will be marked for wipe out. 
+
+Here is a video demo 
+{F748890}
+
+## Impact
+
+Attacker can wipe out the device of another user by using the device ID
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insufficiently Protected Credentials"
 enriched: true
+body: true
 date: 2022-09-03
 submitted: 2020-03-12T05:33:51.742Z
 bounty_usd: null
@@ -30,6 +31,27 @@ title: "Weak/Auto Fill Password"
 
 Pure luck!!!  - admin/admin
 All login page ==MUST== be tested with admin/admin & root/root.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+https://mtnc-selfservice.mtncameroon.net
+
+The following url has admin/admin as user name and password 
+
+## Steps To Reproduce:
+  1. open the url in any browser of your choice
+  1. enter admin as user name and password
+  1. booom .... full asset to super admin full panel 
+
+## Supporting Material/References:
+See attached screenshots
+
+## Impact
+
+Attacker can make major configuration changes to the services.
 
 ## Timeline
 

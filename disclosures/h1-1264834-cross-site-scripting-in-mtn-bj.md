@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2022-08-06
 submitted: 2021-07-16T00:56:05.571Z
 bounty_usd: null
@@ -25,6 +26,31 @@ title: "cross site scripting in : mtn.bj"
 - Report: [https://hackerone.com/reports/1264834](https://hackerone.com/reports/1264834)
 - CWE: Cross-site Scripting (XSS) - Reflected
 - Submitted: 2021-07-16T00:56:05.571Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Xss vulnerability in mtn.bj  in file name 
+
+## Steps To Reproduce:
+
+
+  1.Go to : 
+https://www.mtn.bj/business/ressources/formulaires/plan-de-localisation-de-compte/?next=https://www.mtn.bj/business/ressources/formulaires/formulaire-de-souscription/
+  2 - fill all inputs with any data 
+3 - in file upload upload a file with payload file name such as : "><img src=x onerror=alert(document.cookie);.jpg
+
+4-the payload will executed in the page .
+
+## Supporting Material/References:
+1 - video showing poc 
+2 - screen shot
+
+## Impact
+
+execute malicious java script in user browser
 
 ## Timeline
 

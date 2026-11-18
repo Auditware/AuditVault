@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Unrestricted Upload of File with Dangerous Type"
 enriched: true
+body: none
 date: 2020-07-30
 submitted: 2020-06-18T15:44:12.179Z
 bounty_usd: null

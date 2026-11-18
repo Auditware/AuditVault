@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Use of a Broken or Risky Cryptographic Algorithm"
 enriched: true
+body: none
 date: 2024-07-11
 submitted: 2023-09-09T12:25:02.703Z
 bounty_usd: null

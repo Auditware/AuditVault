@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Man-in-the-Middle"
 enriched: true
+body: none
 date: 2019-08-22
 submitted: 2019-04-01T15:52:59.307Z
 bounty_usd: null

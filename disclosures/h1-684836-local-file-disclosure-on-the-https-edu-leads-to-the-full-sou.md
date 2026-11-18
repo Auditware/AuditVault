@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true
+body: true
 date: 2024-06-27
 submitted: 2019-08-30T04:27:15.076Z
 bounty_usd: null
@@ -25,6 +26,29 @@ title: "Local File Disclosure on the █████ (https://██████
 - Report: [https://hackerone.com/reports/684836](https://hackerone.com/reports/684836)
 - CWE: Insecure Storage of Sensitive Information
 - Submitted: 2019-08-30T04:27:15.076Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Description
+During poking around `██████.00/24` range -  ██████████ looking for the Cisco devices, I came across `███` which resolved to the https://███████.edu/
+While it's a not `.mil` host, it's likely related to the DoD since it hosted in the DoD-controlled ASN.
+
+I discovered few critical vulnerabilities here, one of them is LFD (local file disclosure).
+
+##POC
+https://██████.edu/file.ashx?path=web.config
+will download the website configuration file.
+It exposes the DB credentials:
+███
+
+Similarly, attacker able to get content of any server-side resource, such as source code of application:
+https://███.edu/file.ashx?path=UserAccountJSON.aspx.cs
+
+## Impact
+
+Source code & DB credentials leakage. Attacker can use it to compromise the resource.
 
 ## Timeline
 

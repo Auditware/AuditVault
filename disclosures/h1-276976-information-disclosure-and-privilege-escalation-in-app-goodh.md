@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: none
 date: 2018-01-18
 submitted: 2017-10-13T16:12:33.312Z
 bounty_usd: null

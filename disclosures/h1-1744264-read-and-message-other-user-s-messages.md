@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2023-05-18
 submitted: 2022-10-20T13:16:16.899Z
 bounty_usd: null
@@ -25,6 +26,21 @@ title: " read and message other user's messages"
 - Report: [https://hackerone.com/reports/1744264](https://hackerone.com/reports/1744264)
 - CWE: Insecure Direct Object Reference (IDOR)
 - Submitted: 2022-10-20T13:16:16.899Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+go to your account's chat page, stop the request and change the reddit session parameter, now leave the request and you will be able to access the test account's chat screen
+
+send the request to the repeater change the reddit session parameter and send it then you will see the return result is 200
+
+show reply in browser and copy and paste the address into your browser you will access the chat page of your test account
+
+## Impact
+
+other users' chat screen can be accessed
+and message can be sent
 
 ## Timeline
 

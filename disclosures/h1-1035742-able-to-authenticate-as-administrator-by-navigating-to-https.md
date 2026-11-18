@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2021-01-12
 submitted: 2020-11-16T19:20:12.578Z
 bounty_usd: null
@@ -25,6 +26,34 @@ title: "Able to authenticate as administrator by navigating to https://███
 - Report: [https://hackerone.com/reports/1035742](https://hackerone.com/reports/1035742)
 - CWE: Improper Authentication - Generic
 - Submitted: 2020-11-16T19:20:12.578Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+The endpoint at https://███████/admin/ authenticates the user  to the administrator user.
+
+## Step-by-step Reproduction Instructions
+
+1. Navigate to https://███/ and youll notice you will need to log in.
+2. Navigating to https://██████████/admin/ will show you admin malformed page, with the ability to "log out"
+
+As for now as we can see by the picture no data is present at the administrator panel, sure this might change at the future exposing sensitive ifnormation
+
+████████
+
+
+## Suggested Mitigation/Remediation Actions
+
+Issuing 403 response when trying to access the /admin endpoint.
+
+##Best regards
+nagli
+
+## Impact
+
+Admin authentication bypass
 
 ## Timeline
 

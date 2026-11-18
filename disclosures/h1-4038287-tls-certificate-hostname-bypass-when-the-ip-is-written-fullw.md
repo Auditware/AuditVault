@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Certificate Validation"
 enriched: true
+body: none
 date: 2026-10-23
 submitted: 2026-09-17T19:59:19.184Z
 bounty_usd: null

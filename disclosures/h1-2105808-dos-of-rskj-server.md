@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2025-06-13
 submitted: 2023-08-10T20:59:30.691Z
 bounty_usd: 5000
@@ -25,6 +26,42 @@ title: "DOS of RSKJ server"
 - Report: [https://hackerone.com/reports/2105808](https://hackerone.com/reports/2105808)
 - CWE: Uncontrolled Resource Consumption
 - Submitted: 2023-08-10T20:59:30.691Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Due of closing of report (ID #2102315) I will summarize total reproducible report here
+
+## Summary:
+DOS of RSKJ server
+
+## Steps To Reproduce:
+
+  1. download https://github.com/rsksmart/rskj/releases/download/FINGERROOT-5.0.0/rskj-core-5.0.0-FINGERROOT-all.jar
+  2. at server side run
+```
+ java -classpath rskj-core-5.0.0-FINGERROOT-all.jar -Drpc.providers.web.cors=* -Drpc.providers.web.ws.enabled=true co.rsk.Start
+```
+it opens `UDPv6` port `5050`
+
+  3. at client side install python3 and library `pip install pysha3`, download  {F2591198},  modify `HOST` inside and run it against server.
+  4.the `UDPServer` is going to process *only* one UDP packet forever and it prevents to process other packages received from different nodes. In a while (some minutes left) the application crashes.
+
+## Supporting Material/References:
+The root cause:
+bytesToLength returns -5 and length becomes 0
+https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/java/org/ethereum/util/RLP.java#L432
+this is legal
+https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/java/org/ethereum/util/RLP.java#L440
+and position is unchangeable
+https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/java/org/ethereum/util/RLP.java#L405
+https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/java/org/ethereum/util/RLP.java#L403
+
+## Impact
+
+Server stops to process the incoming traffic at `UDPv6` port `5050`. In a while the application crashes as Out of memory.
+due of everywhere usage of vulnerable function `decode2` there may be affected another entry points of service.
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "informative"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2025-05-01
 submitted: 2025-05-01T00:05:53.247Z
 bounty_usd: null
@@ -25,6 +26,49 @@ title: "Session Replay Attack Allows Authentication Bypass via Captured Login Re
 - Report: [https://hackerone.com/reports/3120790](https://hackerone.com/reports/3120790)
 - CWE: Improper Authentication - Generic
 - Submitted: 2025-05-01T00:05:53.247Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+#Summary
+An attacker can bypass authentication by capturing a valid login response (including session cookies/tokens) and replaying it during a failed login attempt with incorrect credentials. The server fails to invalidate or validate session tokens properly, allowing unauthorized access even after logout.
+
+#Steps to Reproduce
+1. Legitimate Login:
+Send a valid login request (correct email/password).
+Capture the response using Burp Suite and copy it.
+
+2. Invalid Login:
+Log out the user.
+Send a new login request with an incorrect password.
+Replace the 400 Bad Request response with the previously captured legitimate login response (including the valid session cookie).
+
+3. Result:
+The server grants access to the account despite the wrong password.
+The attacker can now interact with the account as the legitimate user.
+
+#Recommendations
+Server-Side Session Invalidation:
+Maintain a database of active sessions and revoke old tokens on logout or failed login attempts.
+
+Token Binding:
+Bind session tokens to user context (e.g., IP address, user agent hash).
+
+Short-Lived Tokens:
+Use JWT with short expiration times (e.g., 15 minutes) and refresh tokens.
+
+Replay Attack Mitigation:
+Add a unique nonce or timestamp to each login request.
+
+Secure Cookie Attributes:
+Ensure cookies include Secure, HttpOnly, SameSite=Strict, and Max-Age
+
+## Impact
+
+Unauthorized Account Access: Attackers can compromise any account by replaying captured session tokens.
+Persistence: Old tokens remain valid indefinitely.
+Data Theft/Abuse: Sensitive user data (coding activity, API keys, etc.) can be stolen or modified.
 
 ## Timeline
 

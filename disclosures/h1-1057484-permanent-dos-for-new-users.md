@@ -8,6 +8,7 @@ tags:
 substate: "informative"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: none
 date: 2020-12-21
 submitted: 2020-12-12T15:28:51.665Z
 bounty_usd: null

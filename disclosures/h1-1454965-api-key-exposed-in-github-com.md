@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cleartext Storage of Sensitive Information"
 enriched: true
+body: none
 date: 2022-02-22
 submitted: 2022-01-20T06:48:59.562Z
 bounty_usd: null

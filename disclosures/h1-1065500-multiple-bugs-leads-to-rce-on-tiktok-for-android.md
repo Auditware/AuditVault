@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Export of Android Application Components"
 enriched: true
+body: none
 date: 2021-03-17
 submitted: 2020-12-23T21:47:45.015Z
 bounty_usd: null

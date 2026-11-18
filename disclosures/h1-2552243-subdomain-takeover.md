@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true
+body: true
 date: 2024-07-26
 submitted: 2024-06-14T10:58:46.768Z
 bounty_usd: null
@@ -25,6 +26,36 @@ title: "Subdomain takeover ██████"
 - Report: [https://hackerone.com/reports/2552243](https://hackerone.com/reports/2552243)
 - CWE: Violation of Secure Design Principles
 - Submitted: 2024-06-14T10:58:46.768Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The subdomain `█████` is pointing to `open-elb-prod-277276106.us-east-1.elb-amazonaws.com.`, the domain `elb-amazonaws.com` was available for registration
+
+## Impact
+
+Using this vulnerability an attacker can:
+- host unwanted/malicious content under your domain
+- receive email on subdomains mentioned above
+- effectively execute cross-site scripting attacks
+- in some cases, steal cookie data
+- in some cases, trick password managers into filling in passwords
+
+## System Host(s)
+█████████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Visit http://████████/proof.e7437329-ab61-4f22-a049-df5b3685313a.txt
+
+## Suggested Mitigation/Remediation Actions
+Remove CNAME record █████
 
 ## Timeline
 

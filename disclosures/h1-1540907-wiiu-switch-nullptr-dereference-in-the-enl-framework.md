@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "NULL Pointer Dereference"
 enriched: true
+body: none
 date: 2023-08-22
 submitted: 2022-04-14T04:02:18.702Z
 bounty_usd: null

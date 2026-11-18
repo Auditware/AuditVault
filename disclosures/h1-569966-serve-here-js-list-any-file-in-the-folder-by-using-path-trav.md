@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true
+body: true
 date: 2019-06-24
 submitted: 2019-05-07T08:29:07.633Z
 bounty_usd: null
@@ -26,6 +27,65 @@ title: "[serve-here.js] List any file in the folder by using path traversal."
 - Report: [https://hackerone.com/reports/569966](https://hackerone.com/reports/569966)
 - CWE: Path Traversal | CVE: CVE-2019-5444
 - Submitted: 2019-05-07T08:29:07.633Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I would like to report Path Traversal in **serve-here.js**. It allows to list any file in another folder of web root.
+
+# Module
+
+**module name:** serve-here.js
+**version:** 1.1.3
+**npm page:** `https://www.npmjs.com/package/serve-here.js`
+
+## Module Description
+
+Serve static files over HTTP
+
+# Vulnerability
+
+## Vulnerability Description
+
+serve-here.js is simply get the path name of url and add it to the web root. it means if you input ../, it will happy add it to web root and you can list the folder you choose. But the trick is web browser or curl are also to try rebuild the url containing ../. I used the burp to make a raw url and send it to server.
+
+## Steps To Reproduce:
+
+install `serve-here.js`
+`$ npm install serve-here.js -g`
+
+start program
+`$ serve-here
+
+start burpsuite and enter the url contain ../. you should see the files in the folder.
+{F485810}
+
+## Patch
+
+filter .. in the path name.
+
+## Supporting Material/References:
+
+Configuration I've used to find this vulnerability:
+
+- kali linux 4.15.0
+- nodejs v8.9.3
+- npm 6.4.1
+- Burpsuite
+
+# Wrap up
+
+- I contacted the maintainer to let them know: N
+- I opened an issue in the related repository: N
+
+
+
+**Note:** This is the module `serve-here.js` not the module `serve-here`
+
+## Impact
+
+This vulnerability allows malicious user to list file in the folder. This might expose vectors to attack system with Remote Code Execution, reveals files with usernames and passwords and many other possibilities.
 
 ## Timeline
 

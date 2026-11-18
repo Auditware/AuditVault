@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Deserialization of Untrusted Data"
 enriched: true
+body: none
 date: 2019-01-23
 submitted: 2018-03-24T21:52:15.177Z
 bounty_usd: null

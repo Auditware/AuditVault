@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true
+body: true
 date: 2022-08-25
 submitted: 2022-08-12T17:34:36.518Z
 bounty_usd: 4000
@@ -49,6 +50,16 @@ This vulnerability is detailed in full in the whitepaper: https://portswigger.ne
 We've also published a vulnerable lab based on the finding: https://portswigger.net/web-security/request-smuggling/browser/pause-based-desync
 
 The bounty will be donated to charity.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Apache was vulnerable to a pause-based desync. This vulnerability is described in detail in my whitepaper here: https://portswigger.net/research/browser-powered-desync-attacks#pause
+
+## Impact
+
+This enables server-side HTTP Request Smuggling when Apache is deployed as a back-end server, and it also enables MITM attackers to inject arbitrary JavaScript in spite of TLS.
 
 ## Timeline
 

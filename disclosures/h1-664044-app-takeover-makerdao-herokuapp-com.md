@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Privilege Escalation"
 enriched: true
+body: none
 date: 2020-01-15
 submitted: 2019-07-31T00:06:54.304Z
 bounty_usd: null

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true
+body: true
 date: 2023-04-26
 submitted: 2023-04-24T21:33:47.872Z
 bounty_usd: 6000
@@ -31,6 +32,37 @@ title: "Blind SSRF to internal services in matrix preview_link API"
 Matrix endpoint at https://matrix.redditspace.com/_matrix/media/r0/preview_url/?url= allowed Partially Blind SSRF which allows attacker to send GET requests and exfiltrate data about internal services
 
 Matrix Chat endpoint at https://matrix.redditspace.com/_matrix/media/r0/preview_url/?url=* allowed partially blind SSRF to internal services. The data that could be exfiltrated was limited only to the service names and their IPs before a fix was implemented. This endpoint should not be able to query internal services, but external IPs, domains and services are fine for this to query.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Reddit' new chat is based on Matrix software which has preview_link functionality which doesn't filter the URL before sending the request
+
+## Impact:
+Attacker can enumerate services by grabbing og:title and port scanning, also possible RCE escalation (Asking for permission on this one)
+
+## Steps To Reproduce:
+
+
+  1. Visit the https://matrix.redditspace.com/_matrix/media/r0/preview_url/?url=*
+  2. Replace * with http://██████ to get og:title ███████
+  3. Replace * with http://█████████ to get og:title ███████
+ 4. Replace * with http://██████████to get og:title ██████
+ 5. Replace * with ████████ to get og:title █████████
+
+Note: If the request is stuck and not responding in 2 seconds reload the page until it does
+
+## Permit for escalation attempt? 
+Since the ███ URL is accessible it may be possible to run ███:
+GET █████████
+
+There are also possibilities to test ██████, but I thought that it would be incorrect to do such activity without permission and as such report vulnerability in this state. I also therefore request a permission to try to escalate this to Critical
+
+## Impact
+
+Attacker can enumerate services and launch attacks against them
 
 ## Timeline
 

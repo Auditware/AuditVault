@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2017-11-01
 submitted: 2017-10-27T15:57:21.110Z
 bounty_usd: null
@@ -25,6 +26,23 @@ title: "XSS on infogram.com"
 - Report: [https://hackerone.com/reports/283565](https://hackerone.com/reports/283565)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2017-10-27T15:57:21.110Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello,
+
+There is a XSS on Report templates.
+
+Free templates : Report Classic 
+
+When we modify the values of table we can put XSS Payload.
+
+Payload used : 
+
+"><img src=x onerror=prompt(0);>
+"/><svg/onload=alert(0);>
 
 ## Timeline
 

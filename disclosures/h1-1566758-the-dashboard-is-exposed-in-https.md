@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2022-09-06
 submitted: 2022-05-12T12:20:50.786Z
 bounty_usd: null
@@ -25,6 +26,47 @@ title: "The dashboard is exposed in https://███"
 - Report: [https://hackerone.com/reports/1566758](https://hackerone.com/reports/1566758)
 - CWE: Information Disclosure | CVE: CVE-2020-7130
 - Submitted: 2022-05-12T12:20:50.786Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+At first, hello, after searching in sub-domains, the dashboard was accessed by Google Dorking Which is supposed to be protected
+https://█████████l/arsys/forms/arpcp/ARPC%3AWeb%3AHier%3ADashboard/Default+Admin+View/?F536871388=1&mode=Submit&cacheid=c66791da
+
+## References
+https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure
+
+## Impact
+
+CWE-200
+https://cwe.mitre.org/data/definitions/200.html
+
+## System Host(s)
+█████████l
+
+## Affected Product(s) and Version(s)
+website
+
+## CVE Numbers
+CVE-2020-7130
+
+## Steps to Reproduce
+After searching in Google dorking on a file extension or endpoint jspDashboard found in the URL
+https://████████l/arsys/forms/arpcp/ARPC%3AWeb%3AHier%3ADashboard/Default+Admin+View/?F536871388=1&mode=Submit&cacheid=c66791da 
+██████
+
+==Note==
+ that it is leaked, you can log out and bypass it by typing anything in the ```username``` box
+
+## Suggested Mitigation/Remediation Actions
+Collect sensitive information on a local server and protect endpoints
+
+
+---------------------------------------
+With best regards and love
+Toni...
 
 ## Timeline
 

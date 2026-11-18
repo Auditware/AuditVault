@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Use of Hard-coded Credentials"
 enriched: true
+body: none
 date: 2022-04-29
 submitted: 2021-10-12T21:15:37.207Z
 bounty_usd: null

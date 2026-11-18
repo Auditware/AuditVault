@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Buffer Over-read"
 enriched: true
+body: true
 date: 2020-11-09
 submitted: 2019-08-01T05:45:21.955Z
 bounty_usd: 1500
@@ -25,6 +26,21 @@ title: "Out of Bounds Memory Read in php_jpg_get16"
 - Report: [https://hackerone.com/reports/665330](https://hackerone.com/reports/665330)
 - CWE: Buffer Over-read | CVE: CVE-2019-11040
 - Submitted: 2019-08-01T05:45:21.955Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I have found and reported an out of bounds memory read in PHP [php_jpg_get16]
+When PHP EXIF extension is parsing EXIF information from an image, e.g. via exif_read_data() function, in PHP versions 7.1.x below 7.1.30, 7.2.x below 7.2.19 and 7.3.x below 7.3.6 it is possible to supply it with data what will cause it to read past the allocated buffer.
+This has been fixed and assigned CVE-2019-11040
+The bug report is here: https://bugs.php.net/bug.php?id=77988
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11040
+https://nvd.nist.gov/vuln/detail/CVE-2019-11040
+
+## Impact
+
+This may lead to information disclosure or crash.
 
 ## Timeline
 

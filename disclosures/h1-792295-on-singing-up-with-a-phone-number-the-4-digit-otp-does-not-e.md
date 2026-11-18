@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true
+body: true
 date: 2020-11-25
 submitted: 2020-02-10T18:35:08.910Z
 bounty_usd: null
@@ -25,6 +26,26 @@ title: "On Singing up with a Phone number , The 4 digit OTP does not expires for
 - Report: [https://hackerone.com/reports/792295](https://hackerone.com/reports/792295)
 - CWE: Violation of Secure Design Principles
 - Submitted: 2020-02-10T18:35:08.910Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello there how are you doing ?
+Go to sign up page and enter a new phone number and you will be redirected to https://bumble.com/registration/confirm-phone .
+You will receive a easy breakable 4 digit OTP Code .
+I waited for about 4 hours and the OTP did not expired , This shows that the OTP can be easily bruteforced even having the rate limiting , assuming rate limiting is implemented as this is an old program .
+The OTP can be bruteforced , by changing IP via VPN and as the OTP does not expires for a long time it gives sufficient time , to get the actual OTP Code also the OTP is only of 4 digits , So it only requires 10,000 requests .
+
+
+For Solving of this issue , Captcha Implementation is recommended .
+POC - Please check screenshots
+
+## Impact
+
+Impact
+Registering with a different person mobile number without actual verification .
+Impersonating other's identity .
 
 ## Timeline
 

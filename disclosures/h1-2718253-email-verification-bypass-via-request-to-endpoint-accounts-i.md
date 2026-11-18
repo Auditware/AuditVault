@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authorization"
 enriched: true
+body: true
 date: 2025-08-18
 submitted: 2024-09-15T00:06:39.294Z
 bounty_usd: null
@@ -25,6 +26,31 @@ title: "Email verification bypass via request  to endpoint 'accounts.insightly.c
 - Report: [https://hackerone.com/reports/2718253](https://hackerone.com/reports/2718253)
 - CWE: Improper Authorization
 - Submitted: 2024-09-15T00:06:39.294Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+# Summary:
+The vulnerability occurs in the "EmailAddress" parameter in the member creation area and affects all users.
+
+##Steps To Reproduce:
+Before proceeding with the steps of the vulnerability, have a previously created account or open it now to scenario the attack against existing accounts.
+
+  1-to become a member 
+First, go to the address below and type a different e-mail address, then go to the link and fill in the name, surname and password fields. 
+*https://accounts.insightly.com/signup*
+2. And before you sign up, catch the outgoing requests on burp and change the "EmailAddress" parameter in the request, which I will leave below as image poc.
+3.If we are trying to open a new membership to an existing account, we need to write that email in the "EmailAddress" parameter or write the e-mail address of your test account as any other e-mail address.Leave the request and you will be automatically redirected to the account
+
+## Supporting Material/References:
+[list any additional material (e.g. screenshots, logs, etc.)]
+
+  * [attachment / reference]
+
+## Impact
+
+The vulnerability concerns all users on Insightly, so even if no account has been opened or an account has been created before, it creates that account again.We can also take over the account.Additionally, when we open a membership to an existing account, we open a new instance and the trial version starts again for 15 days, which causes such a security vulnerability.
 
 ## Timeline
 

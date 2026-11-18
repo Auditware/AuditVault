@@ -9,6 +9,7 @@ tags:
 substate: "not-applicable"
 weakness: "Array Index Underflow"
 enriched: true
+body: none
 date: 2018-07-15
 submitted: 2018-06-14T16:01:35.622Z
 bounty_usd: null

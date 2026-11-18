@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2017-08-13
 submitted: 2017-07-12T12:46:57.897Z
 bounty_usd: null
@@ -25,6 +26,40 @@ title: "Git repository found"
 - Report: [https://hackerone.com/reports/248693](https://hackerone.com/reports/248693)
 - CWE: Information Disclosure
 - Submitted: 2017-07-12T12:46:57.897Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Git metadata directory (.git) was found in this folder. An attacker can extract sensitive information by requesting the hidden metadata directory that version control tool Git creates. The metadata directories are used for development purposes to keep track of development changes to a set of source code before it is committed back to a central repository (and vice-versa). When code is rolled to a live server from a repository, it is supposed to be done as an export rather than as a local working copy, and hence this problem.
+
+Repository files/directories: 
+.gitignore
+README.md
+ansible/Vagrantfile
+ansible/development
+ansible/host_vars/development
+ansible/host_vars/production
+ansible/production
+ansible/provision.yml
+ansible/roles/common/files/id_rsa
+ansible/roles/common/tasks/main.yml
+
+GET /wp-content/themes/.git/config HTTP/1.1
+Host: 54.255.134.3:443
+Connection: Keep-alive
+Accept-Encoding: gzip,deflate
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.21 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.21
+Accept: */*
+
+These files may expose sensitive information that may help an malicious user to prepare more advanced attacks.
+
+
+Remove these files from production systems or restrict access to the .git directory. To deny access to all the .git folders you need to add the following lines in the appropriate context (either global config, or vhost/directory, or from .htaccess):
+<Directory ~ "\.git">
+Order allow,deny
+Deny from all
+</Directory>
 
 ## Timeline
 
@@ -96,31 +131,7 @@ http://54.255.134.3:443/wp-content/themes/ansible/roles/common/files/id_rsa
 
 
 -----BEGIN RSA PRIVATE KEY-----
-█████+4wfMps2+OGjs
-lO9QijlVf+duROmWInH+███
-wuMLK0QtKHBcNn2BhTVfkYKv802jo8w+vtJ4LFFWaHp8XdMnvxeVUowDPQc3RAXs
-RvgIGEDmQNv40zJHtU8ywcqTIJxPfNKeDLbkQmvTJr6xUpwRk9e1dujA16gcFBli
-BnORTfydCnPS50pLJfjLn+tzN4TNyYw12+8IdfMAaZr7vvbeZDLYQjcpOgU0imTa
-████/UC8zY3
-jDEY9zizOseeOC648LOVWgSb61w96mWngrp6Xb5O/2KOrL+JwjHYpARmzooEoyD7
-XaGYPnvd4i5blkN85kdLIhKfwtmSKrl2l2urB/m1QGQsWBRjAdSPzL7he/NmSUfj
-X5XA/YX6/RRTiGr9Qi+4Yiv0pqMb+T7Ev6AXgbdqvBNZm3iaQVmhMnXt77TAgo3f
-MPBu0Z3EHzAfw31oRzZZfpPeyULNf2cGHZP+HQWZ8ZmxHBN7pJiX+0ULYcP9BLct
-S2zFJZ8ZeH4hu3tZESO9/SPUxK/qfEIkWS+ZYjhJc4VgnBpJPAJlFSyLpz4DbWr9
-8kmFR/UCgYEA+gX/a5tra1fnsKmgDSbdXcInwWUL2lcccryk4aJCS8ld6mkQl2i+
-dmulnOFt+ktAJA9aJ5qKHfOPZ4jdfpasZ/ocA4A/bVSX4UgeCEs6lSKX35P6z6X8
-CFoPWzfIIPpAvJO/FOYeXpscOg37JZINMWM9jUhLA3MrJRIl29bMq/sCgYEA2/nl
-ZzJ089ghNC+efnAS1E2RNkIeQcX80QN4E8QAv/fVZBNQjfs11dybwC1hjg5jB58d
-suz/█████████
-XOyQBKeSqnv0yflrdE4xbsy0qbxQdpTt6P0F3L8CgYEA5WZJY48XcUcXctU/37FQ
-HK1+0ogG5w9UL8X8NnYtA+I/hEtgCLv3PSopqxZ/VM5kjHF1k67MmQyXADTonTRb
-/Y7S0zeBeqvKKs6Dl7KGjr1NwbrBvnIaHAOd4WD+A5v5d8zL3r4BEWaZ8H5Rd7hY
-2H6oxA+████/ei3K+54fhd5l8QMMa92UWQfI2qG
-tfF0WRDWvnarZihGtCInDKCevgeb/NjLx+Mgy2wzjfEjeYbmNfM5tHXul5LdbwyL
-lfYNU1JJ3q6SfZAFds20JFPNw+UMY42A/eQNRcTnN5Rw7+eM/WFNP6NsFt5n43kK
-UipBiQKBgA76/9mO9P+rjdRzI0QS4VjuTC+Nh/cBoEyoBZ3gOTqWQXADavo7H+AL
-nEjtBYZRoEdPx2RyDX0laC2xHvZvXa6xqxoBu0eUSHwYmL6wB+Ecy2p/u7wy7zPO
-8Pbv2bUz7yevVjf9x9/9xVGdsulAV/█████████
+[REDACTED KEY BODY - see source report]
 -----END RSA PRIVATE KEY-----
 - **Report Severity Updated**
 - **Report Severity Updated**

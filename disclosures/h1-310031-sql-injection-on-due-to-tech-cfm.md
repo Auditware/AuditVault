@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: true
 date: 2019-10-08
 submitted: 2018-01-28T20:20:51.983Z
 bounty_usd: null
@@ -29,6 +30,32 @@ title: "SQL injection on █████ due to tech.cfm "
 ## Report summary
 
 The website had an end point like website.mil/xxx/xxx.cfm?sort=grade&type=2.  I probed using an apostrophe which resulted in an error. I proceeded to exploit by using a time based query as a proof of concept.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+The website appears to be vulnerable to SQL injection due to inducing an sql error using a single '
+**Description:**
+The following url, https://█████/hro/html/tech.cfm?Sort=Grade&ThisType=2 contains the parameter sort= which is vulnerable to SQLI. We know this due to the error disclosing the SQL query being used. 
+```SELECT *, tbl_JobInfo.id as TJobID,tbl_JobDocs.id as DocID FROM dbo.tbl_JobInfo left outer join dbo.tbl_JobType on JobTypeID = tbl_JobType.id left outer join tbl_JobDocs on tbl_JobInfo.id = tbl_JobDocs.JobID WHERE JobTypeID = 3 AND JobTypeID > 1 AND Display = 'Y' Order by 'INJECTION' ASC1```  We can then demonstrate vulnerability by using time based queries and I opted to instead keep my queries low impact as to not violate the rules.
+## Impact
+High
+## Step-by-step Reproduction Instructions
+
+https://███/hro/html/tech.cfm?Sort=SLEEP(25)&ThisType=3
+This will cause the page hang to hang momentarily 
+This won't cause the website to hang, https://█████████/hro/html/tech.cfm?Sort=SLEEP()&ThisType=3
+Additionally included timing screen shots showing the time  between the pages
+## Product, Version, and Configuration (If applicable)
+N/a
+## Suggested Mitigation/Remediation Actions
+Sanitize user input and prepare statements
+
+## Impact
+
+An attacker could access the Database and harvest potentially sensitive data from the website or even take over the entire website through using certain SQL commands.
 
 ## Timeline
 

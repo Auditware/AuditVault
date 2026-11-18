@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2022-12-14
 submitted: 2022-12-14T10:10:23.563Z
 bounty_usd: 4000
@@ -44,6 +45,22 @@ The maintainers have evaluated this as High Severity 7.5 (CVSS 3.1).
 
 - [CWE - CWE-1333: Inefficient Regular Expression Complexity (4.9)](https://cwe.mitre.org/data/definitions/1333.html)
 - [https://hackerone.com/reports/1684163](https://cwe.mitre.org/data/definitions/1333.html)
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I reported at  https://hackerone.com/reports/1684163
+
+https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-5x79-w82f-gw8w
+
+> Certain configurations of rails-html-sanitizer < 1.4.4 use an inefficient regular expression that is susceptible to excessive backtracking when attempting to sanitize certain SVG attributes. This may lead to a denial of service through CPU resource consumption.
+
+It seems that the same problem existed on the Loofah side, so it was fixed as well. That has been fixed as CVE-2022-23514(https://github.com/flavorjones/loofah/security/advisories/GHSA-486f-hjj9-9vhh)
+
+## Impact
+
+ReDoS may occur if scrub is executed in Rails::Html::PermitScrubber.
 
 ## Timeline
 

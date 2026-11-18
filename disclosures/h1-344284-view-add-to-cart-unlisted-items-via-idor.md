@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: none
 date: 2018-05-25
 submitted: 2018-04-28T20:34:35.578Z
 bounty_usd: null

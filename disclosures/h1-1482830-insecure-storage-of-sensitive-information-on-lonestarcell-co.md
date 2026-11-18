@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true
+body: true
 date: 2022-04-09
 submitted: 2022-02-16T22:46:45.247Z
 bounty_usd: null
@@ -25,6 +26,23 @@ title: "Insecure Storage of Sensitive Information on lonestarcell.com server"
 - Report: [https://hackerone.com/reports/1482830](https://hackerone.com/reports/1482830)
 - CWE: Insecure Storage of Sensitive Information
 - Submitted: 2022-02-16T22:46:45.247Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello , i hope your doing well 
+
+i found some sensitive information disclosure at those endpoint
+it is disclosure server status and some other stuff 
+
+https://simregistration.lonestarcell.com//monitoring/DB02/DB02.html#System
+https://simregistration.lonestarcell.com//monitoring/DB01/index.html
+https://simregistration.lonestarcell.com//monitoring
+
+## Impact
+
+Sensitive Information disclosure on lonestarcell server
 
 ## Timeline
 

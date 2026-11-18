@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2026-01-12
 submitted: 2025-07-18T11:01:16.307Z
 bounty_usd: null
@@ -25,6 +26,65 @@ title: "Unauthenticated Users Can Access Other Users’ Bug Report Attachments v
 - Report: [https://hackerone.com/reports/3259610](https://hackerone.com/reports/3259610)
 - CWE: Insecure Direct Object Reference (IDOR)
 - Submitted: 2025-07-18T11:01:16.307Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The `/BugReport/Admin/Attachment/{id}` endpoint exposes attachments linked to private bug reports.
+By manipulating the numeric ID in the URL, it’s possible to access attachments belonging to other users, including sensitive bug reports, without proper authorization checks.
+
+This vulnerability works **even when unauthenticated**, meaning anyone who knows or guesses valid IDs can retrieve attachments.
+This is a classic **Insecure Direct Object Reference (IDOR)**, where the application fails to enforce access control on a direct object reference (the ID).
+
+## References
+- [OWASP Top Ten 2021 – A01:2021 Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
+- [CWE-639: Authorization Bypass Through User-Controlled Key](https://cwe.mitre.org/data/definitions/639.html)
+- [OWASP IDOR Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html)
+
+## Impact
+
+This vulnerability allows an attacker to access attachments from private bug reports submitted by other users by simply manipulating the ID parameter in the request. Since the endpoint lacks proper authorization checks and even responds when unauthenticated, sensitive internal information, such as unpatched security issues, confidential business data, or personally identifiable information, could be fully exposed. This significantly increases the risk of targeted attacks, information leaks, and reputational damage to the organization.
+
+## System Host(s)
+███████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+1. Log in with any valid user account.
+2. Capture the request when viewing a bug report attachment:
+```
+GET /BugReport/Admin/Attachment/1568600 HTTP/1.1
+
+Host: █████████
+
+Cookie: ████
+```
+
+
+3. Remove the entire `Cookie` header from the above request, so it looks like:
+```
+GET /BugReport/Admin/Attachment/1568600 HTTP/1.1
+
+Host: █████████
+```
+4. Send the modified request without any authentication cookies.  
+5. Observe that the server responds with the file contents of the bug report attachment.
+
+**Result:** Any unauthenticated user can view attachments of any bug report by enumerating or guessing valid IDs.
+
+## Suggested Mitigation/Remediation Actions
+- Implement strict authorization checks on the `/BugReport/Admin/Attachment/{id}` endpoint to verify that the requesting user has permission to access the specified attachment.  
+- Ensure that unauthenticated requests cannot retrieve any sensitive resources by enforcing authentication at this endpoint.  
+- Use indirect references (e.g., random UUIDs or tokens) instead of sequential numeric IDs to reduce the risk of enumeration.  
+- Apply the principle of least privilege: users should only be able to access resources they are explicitly authorized to view.  
+- Add proper logging and monitoring for unauthorized access attempts to detect potential exploitation early.  
+- Consider rate limiting to prevent mass enumeration of IDs.
 
 ## Timeline
 

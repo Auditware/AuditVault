@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2023-02-24
 submitted: 2022-07-09T08:25:15.908Z
 bounty_usd: null
@@ -25,6 +26,28 @@ title: "Sensitive information disclosure [HtUS]"
 - Report: [https://hackerone.com/reports/1632104](https://hackerone.com/reports/1632104)
 - CWE: Information Disclosure
 - Submitted: 2022-07-09T08:25:15.908Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hi Team :)
+I found that the server status directory on your system is open, it displays server status and sensitive information by server
+
+## Steps To Reproduce:
+[add details for how we can reproduce the issue]
+
+  1. visit: https://█████████/server-status/
+
+## Supporting Material/References:
+███
+
+  * [attachment / reference]
+
+## Impact
+
+sensitive information is clearly displayed, that is, server status, attackers can find sensitive information from the server (server logs)
 
 ## Timeline
 

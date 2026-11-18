@@ -9,6 +9,7 @@ tags:
 substate: "informative"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2022-07-21
 submitted: 2022-07-16T11:32:37.799Z
 bounty_usd: 100
@@ -26,6 +27,22 @@ title: "fix(cmd-socketio-server): mitigate cross site scripting attack #2068"
 - Report: [https://hackerone.com/reports/1638984](https://hackerone.com/reports/1638984)
 - CWE: Cross-site Scripting (XSS) - Reflected
 - Submitted: 2022-07-16T11:32:37.799Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Please refer this fix and approve Bounty.
+
+See this In Github [Security Fix](https://github.com/hyperledger/cactus/pull/2068)
+
+@ryjones
+
+(https://github.com/hyperledger/cactus/pull/2068#issuecomment-1186157206)
+
+## Impact
+
+fix(cmd-socketio-server): mitigate cross site scripting attack
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "User Interface (UI) Misrepresentation of Critical Information"
 enriched: true
+body: true
 date: 2019-09-19
 submitted: 2017-12-05T11:38:04.408Z
 bounty_usd: null
@@ -25,6 +26,22 @@ title: "Mailsploit: a sender spoofing bug in over 30 email clients"
 - Report: [https://hackerone.com/reports/295339](https://hackerone.com/reports/295339)
 - CWE: User Interface (UI) Misrepresentation of Critical Information
 - Submitted: 2017-12-05T11:38:04.408Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Mailsploit is a collection of bugs in email clients that allow effective sender spoofing and code injection attacks. The spoofing is not detected by Mail Transfer Agents (MTA) aka email servers, therefore circumventing spoofing protection mechanisms such as DMARC (DKIM/SPF) or spam filters.
+
+Bugs were found in over 30 applications, including prominent ones like Apple Mail (macOS, iOS and watchOS), Mozilla Thunderbird, various Microsoft email clients, Yahoo! Mail, ProtonMail and others.
+
+In addition to the spoofing vulnerability, some of the tested applications also proved to be vulnerable to XSS and code injection attacks.
+
+More informations are available on mailsploit.com
+
+## Impact
+
+It allows the attacker to display an arbitrary sender email address to the email recipient while bypassing spoofing protection mechanisms such as DMARC (DKIM/SPF) or spam filters.
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Use of Hard-coded Credentials"
 enriched: true
+body: true
 date: 2019-12-30
 submitted: 2019-10-17T11:14:33.624Z
 bounty_usd: null
@@ -31,6 +32,42 @@ title: "JumpCloud API Key leaked via Open Github Repository."
 vinothkumar discovered a publicly available Github repository containing a Starbucks JumpCloud API Key which provided access to internal system information.
 
 @vinothkumar — thank you for reporting this vulnerability and confirming the resolution.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:** Open Github Repo Leaking Starbucks JumbCloud API Key
+
+**Description:** 
+Team,
+
+While going through Github search I discovered a public repository which contains Jumbcloud API Key of Starbucks. 
+
+Repo:  [https://github.com/██████████/Project](https://github.com/██████████/Project).
+File: [https://github.com/████/Project/blob/0d56bb910923da2fbee95971778923f734a25f68/getSystemUsers.go](https://github.com/████/Project/blob/0d56bb910923da2fbee95971778923f734a25f68/getSystemUsers.go)
+
+```
+req.Header.Add("x-api-key", "████████")
+```
+
+**POC**
+* List systems ```
+curl -H "x-api-key: ████████" "https://console.jumpcloud.com/api/systems"
+``` There are multiple AWS instances present
+
+* ```
+curl -H "x-api-key: █████" "https://console.jumpcloud.com/api/systemusers"
+```
+* SSO Applications ```curl -H "x-api-key: ██████" "https://console.jumpcloud.com/api/applications"
+``` AWS login SAM config is presents. This would leads to AWS account takeover
+
+## Impact
+
+This issue impact is critical as through this API anyone could 
+* Execute commands on systems [https://docs.jumpcloud.com/1.0/commands/create-a-command](https://docs.jumpcloud.com/1.0/commands/create-a-command)
+* Add/Remove users which has access to internal systems
+* AWS Account Takeover
 
 ## Timeline
 

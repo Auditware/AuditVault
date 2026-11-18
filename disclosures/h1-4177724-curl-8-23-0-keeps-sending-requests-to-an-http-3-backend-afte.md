@@ -8,6 +8,7 @@ tags:
 substate: "informative"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2026-11-07
 submitted: 2026-11-06T10:51:03.682Z
 bounty_usd: null
@@ -25,6 +26,20 @@ title: "curl 8.23.0 keeps sending requests to an HTTP/3 backend after Alt-Svc: c
 - Report: [https://hackerone.com/reports/4177724](https://hackerone.com/reports/4177724)
 - CWE: Improper Access Control - Generic
 - Submitted: 2026-11-06T10:51:03.682Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+In an owned local test of curl 8.23.0 with HTTP/3 and persistent `--alt-svc`, an HTTPS origin advertised an H3 alternative; after its operator stopped advertising H3, the trusted edge returned `Alt-Svc: clear` on the H3 route.
+Curl retained the HTTP/2-to-HTTP/3 cache entry and sent a later request to the separate H3 backend, whereas a matching HTTP/2-to-HTTP/2 control cleared its entry and sent the request to the origin.
+A signed Keycloak token issued after withdrawal went to that H3 backend and was replayed through the normal HTTPS origin to retrieve one synthetic customer record from a protected local API.
+The unmodified Nordstjernen Sol 1.0.44 Linux application reproduced the stale H3 route with a synthetic session cookie under its `NS_FORCE_HTTP3=1` setting and a locally substituted curl 8.23.0 shared library; its HTTP/2 control used the origin.
+
+## Impact
+
+Nordstjernen uses HTTP/2 by default, and although its macOS package bundles curl 8.23.0, we have not run that package.
+A live attacker controlling an H3 backend that the trusted edge continues forwarding to after withdrawal could capture and use valid later credentials; no such live deployment has been identified.
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Incorrect Authorization"
 enriched: true
+body: none
 date: 2020-03-24
 submitted: 2019-12-23T10:14:16.843Z
 bounty_usd: null

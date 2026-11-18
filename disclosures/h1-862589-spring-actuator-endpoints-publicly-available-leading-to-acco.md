@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true
+body: none
 date: 2020-08-04
 submitted: 2020-04-29T17:29:53.025Z
 bounty_usd: 5000

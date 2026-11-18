@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true
+body: none
 date: 2024-07-30
 submitted: 2020-08-01T18:43:11.613Z
 bounty_usd: null

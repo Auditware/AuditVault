@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2021-02-18
 submitted: 2020-06-22T21:00:02.410Z
 bounty_usd: null
@@ -25,6 +26,27 @@ title: "PII Leak via /████████"
 - Report: [https://hackerone.com/reports/905679](https://hackerone.com/reports/905679)
 - CWE: Information Disclosure
 - Submitted: 2020-06-22T21:00:02.410Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+An attacker is able to view PII (Full name/address/e-mail/phone) of all website users via █████████/████████
+
+## Step-by-step Reproduction Instructions
+
+1. Browse to ████ and login or create an account.
+2. Browse to ████/███████
+3. Begin typing a name in the `Select User` field, and click the `(i)` icon on the right side of the field to view the users data.
+██████
+
+## Suggested Mitigation/Remediation Actions
+Restrict access to this endpoint to administrative roles.
+
+## Impact
+
+An adversary can gather PII of all `█████████` users via this endpoint.
 
 ## Timeline
 

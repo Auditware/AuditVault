@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Use of Hard-coded Credentials"
 enriched: true
+body: true
 date: 2019-08-22
 submitted: 2019-07-18T15:45:59.893Z
 bounty_usd: null
@@ -25,6 +26,32 @@ title: "Important information leaked on Github"
 - Report: [https://hackerone.com/reports/649322](https://hackerone.com/reports/649322)
 - CWE: Use of Hard-coded Credentials
 - Submitted: 2019-07-18T15:45:59.893Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+While searchin on Github about Equifax i found some juicy information like a username and password of this subdomain (https://transport5.ec.equifax.com/), internal ip of the database and its username & password 
+ In the following link (https://github.com/ajiththorali/Testing/blob/49025b364451fb2076f85ad009a0dc50a941c5ce/target/classes/API_Equifax/propertiesHandle.properties) you could find this info 
+*******
+XML_URL = https://transport5.ec.equifax.com/ists/stspost?require_security= HTTP/1.1
+Username = 50404
+Password = ny5b2MuswjrFq3J2P9
+service_name = acroxmltest
+Content_Type = application/xml
+*******
+jdbc_driver = com.mysql.jdbc.Driver
+db_url = jdbc:mysql://192.168.84.225:3700/EquiFax
+db_username = root
+db_password = redhat
+*********
+
+You should change passwords of the leaked account and remove this info from github
+
+## Impact
+
+any attacker can login to this sub domain and do unauthorized actions
+If any one was able to be inside the network he would connect to the leaked database ip and steal important information
 
 ## Timeline
 

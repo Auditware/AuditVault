@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Allocation of Resources Without Limits or Throttling"
 enriched: true
+body: true
 date: 2020-04-27
 submitted: 2019-10-11T12:06:20.745Z
 bounty_usd: null
@@ -26,6 +27,41 @@ title: "Prototype pollution attack (lodash)"
 - Report: [https://hackerone.com/reports/712065](https://hackerone.com/reports/712065)
 - CWE: Allocation of Resources Without Limits or Throttling | CVE: CVE-2020-8203
 - Submitted: 2019-10-11T12:06:20.745Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I would like to report a prototype pollution vulnerability in lodash.
+It allows an attacker to inject properties on Object.prototype
+
+Module
+module name: lodash
+version: 4.17.15
+npm page: https://www.npmjs.com/package/lodash
+
+Module Description
+The Lodash library exported as Node.js modules.
+
+Module Stats
+25,228,177 downloads in the last week
+
+Vulnerability
+Vulnerability Description
+This is a similar with this vulnerability: https://hackerone.com/reports/380873
+
+The functions merge, mergeWith, and defaultsDeep can be tricked into adding or modifying properties of the Object prototype. These properties will be present on all objects.
+
+Steps To Reproduce:
+Craft an object by "zipObjectDeep" function of lodash
+
+const _ = require('lodash');
+_.zipObjectDeep(['__proto__.z'],[123])
+console.log(z) // 123
+
+## Impact
+
+Variable. Server crash or the server becoming unable to respond to all request is garanteed, but more significant impact like remote code execution can be achieved in some cases.
 
 ## Timeline
 

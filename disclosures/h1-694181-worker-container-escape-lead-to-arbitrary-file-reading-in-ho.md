@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2019-10-16
 submitted: 2019-09-13T02:39:39.780Z
 bounty_usd: 2000
@@ -25,6 +26,32 @@ title: "Worker container escape lead to arbitrary file reading in host machine"
 - Report: [https://hackerone.com/reports/694181](https://hackerone.com/reports/694181)
 - CWE: Privilege Escalation
 - Submitted: 2019-09-13T02:39:39.780Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Because lack of security, attacker will be able to remove original log file and replace it will a symlink to other file, 
+After finishing job, host machine copy file from docker container.
+Because the original log file has been removed, the host machine will copy the symlink file.
+But the problem is it doesn't copy the linked file in container, it copys the linked file in the HOST MACHINE.
+
+## Steps To Reproduce:
+The attack is very simple, just remove the original build.log file and replace with a symlink file,
+I used this configuration to read the ``/etc/passwd``:
+```extraction:
+  cpp:
+    after_prepare:
+      - rm -rf /opt/out/snapshot/log/build.log && ln -s /etc/passwd /opt/out/snapshot/log/build.log
+```
+
+## PoC
+Content of ``/etc/passwd`` is attached below
+
+## Impact
+
+Give attacker ability to explore the host machine, expose more sensitive informations from it.
 
 ## Timeline
 

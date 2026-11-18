@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Use After Free"
 enriched: true
+body: none
 date: 2026-11-12
 submitted: 2026-10-13T11:31:06.304Z
 bounty_usd: null

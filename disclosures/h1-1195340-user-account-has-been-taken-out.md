@@ -8,6 +8,7 @@ tags:
 substate: "duplicate"
 weakness: "Weak Cryptography for Passwords"
 enriched: true
+body: true
 date: 2021-10-21
 submitted: 2021-05-13T06:21:10.382Z
 bounty_usd: null
@@ -25,6 +26,16 @@ title: "User Account has been taken out"
 - Report: [https://hackerone.com/reports/1195340](https://hackerone.com/reports/1195340)
 - CWE: Weak Cryptography for Passwords
 - Submitted: 2021-05-13T06:21:10.382Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+By using BruteForce with random passwords, we have succedded the account
+
+## Impact
+
+Account can be taken out
 
 ## Timeline
 

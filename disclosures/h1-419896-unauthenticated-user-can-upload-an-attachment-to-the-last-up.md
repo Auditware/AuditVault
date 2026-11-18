@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Null Termination"
 enriched: true
+body: none
 date: 2018-10-09
 submitted: 2018-10-06T01:09:10.501Z
 bounty_usd: null

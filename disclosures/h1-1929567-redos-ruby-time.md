@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2023-04-26
 submitted: 2023-04-01T23:52:39.352Z
 bounty_usd: 4000
@@ -56,6 +57,23 @@ Credits
 Thanks to ooooooo_q for discovering this issue.
 
 Security Advisory: https://www.ruby-lang.org/en/news/2023/03/30/redos-in-time-cve-2023-28756/
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I reported at https://hackerone.com/reports/1485501
+
+https://www.ruby-lang.org/en/news/2023/03/30/redos-in-time-cve-2023-28756/
+> The Time parser mishandles invalid strings that have specific characters. It causes an increase in execution time for parsing strings to Time objects.
+> A ReDoS issue was discovered in the Time gem 0.1.0 and 0.2.1 and Time library of Ruby 2.7.7.
+
+## Impact
+
+ReDoS occurs when `Time.rfc2822` accepts user input.
+
+In `Rack::ConditionalGet`, the header value is parsed by `Time.rfc2822`,  it is possible to attack from the request.
+Rails uses `::Rack::ConditionalGet` by default, it can be attacked by a request from the client.
 
 ## Timeline
 

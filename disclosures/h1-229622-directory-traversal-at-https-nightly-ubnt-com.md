@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true
+body: true
 date: 2017-10-10
 submitted: 2017-05-18T13:43:30.530Z
 bounty_usd: null
@@ -25,6 +26,26 @@ title: "Directory traversal at https://nightly.ubnt.com"
 - Report: [https://hackerone.com/reports/229622](https://hackerone.com/reports/229622)
 - CWE: Path Traversal
 - Submitted: 2017-05-18T13:43:30.530Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+From within the http request function of the Acunetix and IronWasp programs I was able to view the passwd and hosts files at https://nightly.ubnt.com.  
+
+Please see the attached screenshots for proof.
+
+I have tried to reproduce from within firefox and internet explorer without much luck however if you need it I will try to come up with a work around.
+
+For reference the response header is as follows:
+HTTP/1.1 200 OK
+Date: Thu, 18 May 2017 13:35:08 GMT
+Content-Type: application/octet-stream
+Content-Length: 1339
+Connection: keep-alive
+X-Powered-By: Express
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Last-Modified: Wed, 25 May 2016 20:30:37 GMT
 
 ## Timeline
 

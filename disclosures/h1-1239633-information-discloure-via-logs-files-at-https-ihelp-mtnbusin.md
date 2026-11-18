@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2021-08-20
 submitted: 2021-06-21T10:33:10.427Z
 bounty_usd: null
@@ -25,6 +26,23 @@ title: "information discloure via logs files at ==> https://ihelp.mtnbusiness.co
 - Report: [https://hackerone.com/reports/1239633](https://hackerone.com/reports/1239633)
 - CWE: Information Disclosure
 - Submitted: 2021-06-21T10:33:10.427Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi MTN team ,
+
+i got a 500 error show the full path of the windows server containing the log file of today 
+i navigate to it ==> https://ihelp.mtnbusiness.com/logfiles/Log_21-06-2021.txt
+i saw all logins i made with user administrator 
+
+as u see the logs files is a date `Log_21-06-2021.txt`
+you can read every day logs via manipulate the file name :)
+
+## Impact
+
+Ability to see login logs
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2025-01-31
 submitted: 2024-02-01T12:00:29.598Z
 bounty_usd: null
@@ -25,6 +26,36 @@ title: "Improper Access Controls(Admin Path)"
 - Report: [https://hackerone.com/reports/2342461](https://hackerone.com/reports/2342461)
 - CWE: Improper Access Control - Generic
 - Submitted: 2024-02-01T12:00:29.598Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Go to https://nin.mtn.ng/ then click on "Check your NIN Link Status" then right click and click on "Inpect" and admin path is display at  web browser ../wp-admin/admin-ajax.html
+
+## Steps To Reproduce:
+STEP 1:
+Go to https://nin.mtn.ng/
+{F3021640}
+
+STEP 2:
+Click on "Check your NIN Link Status" 
+{F3021641}
+
+STEP 3:
+Right click at the top of the page(On MTN Yellow Bar) and  then click on "Inspect"
+{F3021642}
+../wp-admin/admin-ajax.html
+Admin Path
+
+## Impact
+
+1.) View Sensitive Information
+2.) Steal Customers details
+3.) Install backdoor
+4.) Access different Components
+5.) Alter System
 
 ## Timeline
 

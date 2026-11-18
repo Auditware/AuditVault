@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true
+body: none
 date: 2023-07-10
 submitted: 2020-12-03T03:17:04.880Z
 bounty_usd: null

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2022-10-14
 submitted: 2022-07-04T14:10:27.202Z
 bounty_usd: null
@@ -25,6 +26,28 @@ title: "Broken access discloses users and PII at https://███████ [
 - Report: [https://hackerone.com/reports/1624374](https://hackerone.com/reports/1624374)
 - CWE: Improper Access Control - Generic
 - Submitted: 2022-07-04T14:10:27.202Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Good morning,
+
+I was able to register at https://████/ and get the list of users.
+1- Go to https://██████████/OA_HTML/ibeCAcpSSOReg.jsp and register.
+2- Go to https://███/OA_HTML/AppsLocalLogin.jsp with the created user and login.
+3- On the homepage, click on vacations rules, create, and search users.
+4- User are disclosed.
+
+██████
+
+Regards,
+
+G4MB4
+
+## Impact
+
+An attacker is able to access users information.
 
 ## Timeline
 

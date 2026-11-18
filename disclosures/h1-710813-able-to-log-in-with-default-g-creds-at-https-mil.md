@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Exposure Through an Error Message"
 enriched: true
+body: true
 date: 2021-01-12
 submitted: 2019-10-10T01:34:54.464Z
 bounty_usd: null
@@ -25,6 +26,37 @@ title: "Able to log in with default ██████g creds at  https███
 - Report: [https://hackerone.com/reports/710813](https://hackerone.com/reports/710813)
 - CWE: Information Exposure Through an Error Message
 - Submitted: 2019-10-10T01:34:54.464Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary████**
+was able to use ████████████████████████ to log into this instance of Adobe Experience Manager, though it does not seem to be in used at the moment 
+**Description███████**
+while navigating to https█████████████████████████.mil, I performed some fuzzing and found that `/repository` was available which asked for authentication using `███████████████████` worked and I could then access another path found by fuzing `lc` [link](https█████████████.mil/lc) which then showed me the ██████ panel. 
+
+## Impact
+Medium since it is not being used
+## Step-by-step Reproduction Instructions
+
+1. Navigate to  https████████████████.mil/repository 
+2. use ████████████████ (username██████████password)
+3. navigate to  https██████████████████████.mil/lc 
+
+## Product, Version, and Configuration (If applicable)
+
+Adobe Experience Manager
+
+## Suggested Mitigation/Remediation Actions
+
+Remove this application if it is not being used
+
+## Impact
+
+Medium - I was able to use █████████████ to log in 
+
+Thanks
 
 ## Timeline
 

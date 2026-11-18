@@ -10,6 +10,7 @@ tags:
 substate: "not-applicable"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2017-08-06
 submitted: 2017-08-06T18:53:50.656Z
 bounty_usd: null
@@ -27,6 +28,20 @@ title: "Open aws s3 bucket s3://rubyci"
 - Report: [https://hackerone.com/reports/257276](https://hackerone.com/reports/257276)
 - CWE: Information Disclosure
 - Submitted: 2017-08-06T18:53:50.656Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello team,
+
+### Description:
+
+Ruby amazon aws bucket `https://rubyci.s3.amazonaws.com` is open with read only privilege which allows any authenticated aws user to read private files.
+PFA screenshot.
+
+Thanks,
+Sandeep
 
 ## Timeline
 

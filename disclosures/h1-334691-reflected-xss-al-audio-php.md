@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: none
 date: 2018-05-22
 submitted: 2018-04-08T14:49:15.359Z
 bounty_usd: 700

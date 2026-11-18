@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2021-10-13
 submitted: 2021-09-16T07:36:39.522Z
 bounty_usd: null
@@ -25,6 +26,56 @@ title: "Subdomain takeover [​████████]"
 - Report: [https://hackerone.com/reports/1341133](https://hackerone.com/reports/1341133)
 - CWE: Privilege Escalation
 - Submitted: 2021-09-16T07:36:39.522Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The subdomain `███████` was pointing to an Azure Cloud App domain (araz-sp.centralus.cloudapp.azure.com), but that endpoint was not registered.
+
+## Impact
+
+It's extremely vulnerable to attacks as a malicious user could create any web page with any content and host it on the vulnerable domain. This would allow them to post malicious content which would be mistaken for a valid site. 
+
+They could perform several attacks like:
+ - Cookie Stealing
+ - Phishing campaigns. 
+ - Bypass Content-Security Policies and CORS.
+
+ 
+## Recommendations for fix
+
+* Remove the affected DNS record if not used 
+ 
+
+### Supporting Material/References:
+
+ - https://0xpatrik.com/subdomain-takeover/
+ - https://hackerone.com/reports/661751
+
+## System Host(s)
+███████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Just go to 
+
+http://████████ 
+
+You will see a blank page, but checking the source code you will see proof of the take over. 
+
+```
+<html>  
+<!-- poc by deleite --> 
+ </html>
+```
+
+## Suggested Mitigation/Remediation Actions
 
 ## Timeline
 

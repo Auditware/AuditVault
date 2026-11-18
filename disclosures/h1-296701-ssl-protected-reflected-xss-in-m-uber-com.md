@@ -8,6 +8,7 @@ tags:
 substate: "duplicate"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2017-12-26
 submitted: 2017-12-10T18:06:43.055Z
 bounty_usd: null
@@ -25,6 +26,30 @@ title: "SSL-protected Reflected XSS in m.uber.com"
 - Report: [https://hackerone.com/reports/296701](https://hackerone.com/reports/296701)
 - CWE: Cross-site Scripting (XSS) - Reflected
 - Submitted: 2017-12-10T18:06:43.055Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary
+m.uber.com is susceptible to reflected XSS
+
+## Security Impact
+A malformed URL can be used to render arbitrary SSL-protected web pages from m.uber.com
+
+## Reproduction Steps
+https://m.uber.com/?bjbxm%3c%2fscript%3e%3cscript%3ealert(1)%3c%2fscript%3exrii5=1
+
+## Specifics
+From the rendered web page:
+```
+{"enabled":true,"sid":"bbc661585c424072","url":"www.cdn-net.com","cf":1022963},"queryParams":{"bjbxm</script><script>alert(1)</script>xrii5":"1"}
+```
+No further efforts were made to render a more believable webpage as the vulnerability and reflected code above is sufficient to trigger Chromium Browser's XSS _Auditor protections.
+
+## Impact
+
+An attacker could render arbitrary SSL-protected web pages from m.uber.com, to capture user login credentials and passwords, credit card numbers and related payment information, etc.
 
 ## Timeline
 

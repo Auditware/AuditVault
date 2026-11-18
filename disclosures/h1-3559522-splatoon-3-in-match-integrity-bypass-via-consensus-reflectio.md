@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Client-Side Enforcement of Server-Side Security"
 enriched: true
+body: none
 date: 2026-07-02
 submitted: 2026-02-17T20:01:19.972Z
 bounty_usd: null

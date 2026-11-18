@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2022-06-03
 submitted: 2022-03-31T21:52:52.035Z
 bounty_usd: null
@@ -24,6 +25,31 @@ title: "8ybhy85kld9zp9xf84x6.imgur.com Subdomain Takeover"
 - Report: [https://hackerone.com/reports/1527405](https://hackerone.com/reports/1527405)
 - CWE: N/A
 - Submitted: 2022-03-31T21:52:52.035Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello Gents,
++ While testing ** Imgur ** I found an unclaimed subdomain which is; “8ybhy85kld9zp9xf84x6.imgur.com”, and I was able to claim it!
++ But actually I didn't upload or host a simple file like `mr_baka.html`, because I need to upgrade the account to be able to use this custom domain!
++ Anyway, you can verify that I was able to claim this subdomain by visiting https://8ybhy85kld9zp9xf84x6.imgur.com and clicking [Manage domain settings here.](https://mrbaka.squarespace.com/config#/settings/domains), which should lead you to my account; https://mrbaka.squarespace.com" .
+
+### Before claiming:
++ {F1675230}
+
+### After:
++ {F1675231}
+
+## Impact
+
+Subdomain Takeover may lead to below consequences:
+
+- Phishing / Spear Phishing
+- Malware distribution
+- XSS
+- Authentication bypass and more
+- Credential stealing
 
 ## Timeline
 

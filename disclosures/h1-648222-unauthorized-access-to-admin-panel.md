@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2020-05-14
 submitted: 2019-07-17T18:15:38.779Z
 bounty_usd: null
@@ -25,6 +26,48 @@ title: "[██████████] Unauthorized access to admin panel"
 - Report: [https://hackerone.com/reports/648222](https://hackerone.com/reports/648222)
 - CWE: Improper Access Control - Generic
 - Submitted: 2019-07-17T18:15:38.779Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+In previous reports, I described vulnerabilities in a panel to which I had access. 
+
+ #512269
+ #512693
+ #512695
+
+I could log in to this site and then perform some attacks, such as SQL injection\XSS or other bugs. But before the above vulnerabilities were considered by you, the possibility to bypass authorization on the site was disabled. And after that, the vulnerabilities could not be reproduced and I was forced to close my reports.
+
+Recently, I began to explore this site again. And I found that the developers have poorly implemented the restriction of authorization on the site. 
+
+I can still get the contents of an authorized site. How? When I visit some pages of the site, I get a redirect to the authorization form. But in addition to the redirect, the response body also contains HTML code of auth site.
+
+Look this pages:
+> https://███████/mission.php
+> https://██████████/personnel.php
+> https://███████/index.php
+
+### Steps to reproduce
+1) Turn on Live Interception in burp (Proxy-Intercept)
+2) Intercept request. Press right mouse button-> Do intercept -> Response this request
+█████████
+3) Delete this redirection
+████
+
+Here I can see a lot of private information
+
+> https://█████████/personnel.php
+
+█████
+
+> https://███/index.php
+
+███████
+
+## Impact
+
+Incorrect access restriction to the authorized interface of the site leads to information leakage.
 
 ## Timeline
 

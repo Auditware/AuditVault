@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2020-04-01
 submitted: 2020-02-14T17:37:31.543Z
 bounty_usd: null
@@ -30,6 +31,31 @@ title: "[Part II] Email Confirmation Bypass in myshop.myshopify.com that Leads t
 On February 14th, while verifying the fix for https://hackerone.com/reports/791775, @ngalog identified another bug allowing someone to verify an email address they did not own. The bug could have given access to a small subset of Shopify user accounts the user did not own. 
 
 Our team immediately disabled the impacted functionality and deployed a permanent fix two hours later.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary 
+In #791775, I submitted a bug at Sunday 5pm Canada time, it was triaged two hours later, and I got the **temp** fix message at around 3am the next day in Canada time. Truly awesome, the next day I retested after the first fix, and found that I
+
+- Cannot receive the email confirmation in the email used to sign up
+- Cannot integrate across stores/partner even they share the same email address after confirming them
+
+And the report was later resolved after I verified the fix.
+
+For some reason, I decided to test again to see what's something new that I can find.
+
+Then I found user can change their email prior to receiving the verification message on their original email. i.e. the same technique, I don't know what went wrong in my first retest, but Shopify security and engineering team again showed their professionalism, quickly resolving the second comments I left in ~3.5 hrs.
+
+And when I thought this is the end of story, I later received a comment asking me to open a new report about the second retest, and here I am writing this report.
+
+Thanks,
+Ron
+
+## Impact
+
+.
 
 ## Timeline
 

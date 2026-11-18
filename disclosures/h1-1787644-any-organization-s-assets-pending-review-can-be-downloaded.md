@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2022-11-29
 submitted: 2022-11-29T02:20:24.239Z
 bounty_usd: null
@@ -25,6 +26,18 @@ title: "Any organization's assets pending review can be downloaded"
 - Report: [https://hackerone.com/reports/1787644](https://hackerone.com/reports/1787644)
 - CWE: Information Disclosure
 - Submitted: 2022-11-29T02:20:24.239Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+# Steps to reproduce
+- sign in as any user
+- visit https://hackerone.com/organizations/:handle/assets/download_pending_reviews.csv, where `:handle` is the organization you want to download the assets for
+
+## Impact
+
+This may leak sensitive data about an organization's attack surface.
 
 ## Timeline
 

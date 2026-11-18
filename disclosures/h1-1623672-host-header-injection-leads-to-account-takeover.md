@@ -8,6 +8,7 @@ tags:
 substate: "duplicate"
 weakness: "Improper Neutralization of HTTP Headers for Scripting Syntax"
 enriched: true
+body: none
 date: 2024-10-15
 submitted: 2022-07-04T05:31:10.719Z
 bounty_usd: null

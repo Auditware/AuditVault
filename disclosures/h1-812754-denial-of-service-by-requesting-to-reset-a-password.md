@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2021-01-25
 submitted: 2020-03-07T13:51:40.910Z
 bounty_usd: null
@@ -25,6 +26,24 @@ title: "Denial of Service by requesting to reset a password"
 - Report: [https://hackerone.com/reports/812754](https://hackerone.com/reports/812754)
 - CWE: Uncontrolled Resource Consumption | CVE: CVE-2020-8295
 - Submitted: 2020-03-07T13:51:40.910Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Description:
+I believe that this is posible due to the brute force protection that makes all request last for 30 seconds which in this case is using all the PHP workers avalible in the pool, so the only way to defend yourself is setting up a limit or having a lot of resources.
+
+### How to reproduce:
+* In the Nextcloud login screen click the "Forgot password?" button and then type something in the textbox (can be anything)
+* Then open the developers tools and go to the network tab
+* Hold the "enter" key after pressing the reset password button and in the network tab you will see a lot of request being made
+* With just 1000 request I managed to make the demo server "https://demo2.nextcloud.com/" not respond for 1 hour
+
+## Impact
+
+The attacker could make an entire nextcloud installation or even the entire server where it is hosted not respond for a very long time
+Also, this attack can be made by almost anyone
 
 ## Timeline
 

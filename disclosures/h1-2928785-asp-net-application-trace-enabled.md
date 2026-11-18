@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Exposure Through Debug Information"
 enriched: true
+body: true
 date: 2026-01-12
 submitted: 2025-01-09T07:55:32.675Z
 bounty_usd: null
@@ -25,6 +26,43 @@ title: "ASP.NET Application Trace Enabled"
 - Report: [https://hackerone.com/reports/2928785](https://hackerone.com/reports/2928785)
 - CWE: Information Exposure Through Debug Information
 - Submitted: 2025-01-09T07:55:32.675Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+The ASP.NET application trace feature is enabled on the public-facing URL: ██████████. This exposes sensitive internal information, including Session ID values and the physical file paths of server-side resources. An attacker could leverage this data to gain unauthorized insights into the server environment or session management mechanisms, increasing the risk of further exploitation.
+
+PoC: ██████
+
+## References
+
+███████
+███
+
+## Impact
+
+Information Disclosure: Reveals internal application structure and configuration.
+Session Hijacking Risk: Exposed Session ID values could potentially allow unauthorized access to active user sessions.
+Attack Surface Expansion: Exposed file paths and server-side request details can aid in reconnaissance for further exploitation attempts.
+
+## System Host(s)
+██████████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Open the link.
+
+## Suggested Mitigation/Remediation Actions
+Remove this file from your website or change its permissions to remove access.
+
+More information: https://www.acunetix.com/vulnerabilities/web/trace-axd-detected/
 
 ## Timeline
 

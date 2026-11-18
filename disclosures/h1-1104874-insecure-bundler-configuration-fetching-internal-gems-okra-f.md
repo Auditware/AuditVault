@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true
+body: true
 date: 2021-08-10
 submitted: 2021-02-16T17:13:18.507Z
 bounty_usd: 5000
@@ -33,6 +34,28 @@ I found an internal gem (Ruby library) in use by Basecamp that was not registere
 Although this attack was not successful against any production machines or automated builds, as Basecamp had successfully mitigated against the attack in those places, my library was installed on a developer machine when a member of Basecamp attempted to install the gem by hand using "gem install" rather than running a "bundle install".
 
 This vulnerability was resolved by using configuration management software to set the default package repository on developer machines to one controlled by Basecamp, where they can control which packages come from which repositories and can prevent internal packages being pulled from Rubygems.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I believe (most likely) that one of your projects is not set up correctly to only pull internal gems from your internal gem server, and instead will pull gems from Rubygems.org if the version number there is higher.
+
+Specifically, the "okra" gem.
+
+At around 15:21 today (UTC) the okra gem that I wrote – https://rubygems.org/gems/okra – was installed on the machine with hostname "oscillatinghost" under the username "fernando" on your network.
+
+This would be possible if the Gemfile either installs gems from global sources (thus allowing the version on Rubygems to 'trump' the internal version) or if the okra gem is depended on by another internal gem, and your version of Bundler is less than 2.2.10 – see here for details on that: https://bundler.io/blog/2021/02/15/a-more-secure-bundler-we-fixed-our-source-priorities.html
+
+It is possible this is not correct, and instead, someone typed "gem install okra" without specifying where to fetch the Gem from. This would potentially also have fetched it from Rubygems.
+
+Please note that the Gem I wrote does not do anything malicious, and only fetches the minimum information I need to filter out false positives and correctly identify organisations. You can verify this yourself by looking at the code for the gem "okra-90002.0" in your gems folder. I will delete all information relating to your organisation as soon as it is no longer needed.
+
+## Impact
+
+The impact is that an attacker could achieve arbitrary Remote Code Execution on any machines that will fetch the gem from the Rubygems repository.
+
+Note that to achieve code execution, merely installing the Gem is enough, it does not have to be require'd or run.
 
 ## Timeline
 

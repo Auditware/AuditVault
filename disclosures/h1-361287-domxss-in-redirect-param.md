@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - DOM"
 enriched: true
+body: true
 date: 2019-03-20
 submitted: 2018-06-03T10:03:13.734Z
 bounty_usd: null
@@ -25,6 +26,23 @@ title: "DOMXSS in redirect param"
 - Report: [https://hackerone.com/reports/361287](https://hackerone.com/reports/361287)
 - CWE: Cross-site Scripting (XSS) - DOM
 - Submitted: 2018-06-03T10:03:13.734Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+#Summary
+The **redirect** param can consist of a ``javascript:`` url, which results in XSS. If a victim visits a malicious URL and logs in, the attacker can perform actions on behalf of the victim.
+
+#Steps to reproduce
+1) Logout
+2) Visit `` https://lgtm-com.pentesting.semmle.net/?redirect=javascript:prompt(document.domain)%2f%2f
+ ``
+3) Log in through email
+
+## Impact
+
+If a victim visits a malicious URL and logs in, the attacker can perform actions on behalf of the victim.
 
 ## Timeline
 

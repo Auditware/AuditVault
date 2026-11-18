@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2026-06-11
 submitted: 2026-03-21T04:20:37.363Z
 bounty_usd: null
@@ -24,6 +25,45 @@ title: "RCE + PAT Exfiltration via pull_request_target in privacy-configuration/
 - Report: [https://hackerone.com/reports/3619288](https://hackerone.com/reports/3619288)
 - CWE: N/A
 - Submitted: 2026-03-21T04:20:37.363Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary
+
+The `duckduckgo/privacy-configuration` repository's `.github/workflows/auto-respond-pr.yml` GitHub Actions workflow uses `pull_request_target` trigger, checks out **the fork's repository as both "base" and "PR" branches** (attacker controls both), then executes `npm ci` + `node index.js` on the attacker-controlled code. The `PRIVACY_CONFIG_PAT` secret — a Personal Access Token used for PR auto-approval — is exposed in subsequent workflow steps. Additionally, the `sync_asana_on_close` job unconditionally exposes `ASANA_ACCESS_TOKEN` and `GH_RO_PAT` when any PR (including fork PRs) is closed.
+
+**This is a separate vulnerability from the previously reported `content-scope-scripts/semver-label.yml` finding.** Different repository, different secrets, different attack path, and a shorter supply chain — `privacy-configuration` is consumed via a floating `main` branch dependency with no tag or SHA pinning.
+
+---
+
+## Vulnerability Details
+
+### Root Cause
+
+The workflow uses `pull_request_target` (privileged context with secrets) and contains two critical flaws:
+
+1. **Fork checkout as "base"**: The base branch checkout uses `repository: ${{ github.event.pull_request.head.repo.full_name }}` — this checks out the **fork's** repo, not the actual base. The attacker controls BOTH checkouts.
+2. **Arbitrary code execution**: `npm ci` and `node index.js` run on fork code with `PRIVACY_CONFIG_PAT` available in subsequent steps.
+
+### Vulnerable Workflow (auto-respond-pr.yml)
+
+---
+
+**Cross-reference:** This vulnerability is separate from report #3619287 (content-scope-scripts/semver-label.yml). Different repository, different secrets, different attack path, and a shorter supply chain.
+
+## Impact
+
+1. **RCE + PRIVACY_CONFIG_PAT Theft**: Any GitHub user can execute arbitrary code on the Actions runner by opening a fork PR. The PRIVACY_CONFIG_PAT — used for PR auto-approval — is exfiltrable. This PAT likely has repo scope, enabling the attacker to approve their own PRs, push to branches, and access private repository contents.
+
+2. **Base Branch Impersonation**: The "base" checkout retrieves the fork's code, not the real base. Any diff-based validation is defeated. The attacker controls 100% of the code the workflow operates on.
+
+3. **Direct Supply Chain — All DuckDuckGo Browsers**: privacy-configuration controls tracker blocking, fingerprint protection, and privacy features for ALL DDG browsers. The duckduckgo-privacy-extension uses a floating main dependency with no tag or SHA pin. An attacker who steals PRIVACY_CONFIG_PAT can approve and merge a malicious PR to main, and the poisoned configuration propagates directly into the next build of every DuckDuckGo product — Android, iOS, macOS, Chrome extension, Firefox extension.
+
+4. **Silent Privacy Degradation**: Unlike code injection (which may crash or behave visibly), a poisoned privacy configuration can silently disable tracker blocking or fingerprint protections for all users without any visible indicator. Users would believe they are protected while their privacy protections are disabled.
+
+5. **Additional Secrets**: ASANA_ACCESS_TOKEN and GH_RO_PAT are unconditionally exposed when any fork PR is closed, enabling access to DuckDuckGo's Asana project management and GitHub read access.
 
 ## Timeline
 

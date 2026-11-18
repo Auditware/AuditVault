@@ -7,6 +7,7 @@ tags:
 substate: "not-applicable"
 weakness: null
 enriched: true
+body: true
 date: 2022-07-01
 submitted: 2022-06-20T16:03:43.388Z
 bounty_usd: null
@@ -24,6 +25,28 @@ title: "Unauthorized Access - downgraded admin roles to none can still edit proj
 - Report: [https://hackerone.com/reports/1607756](https://hackerone.com/reports/1607756)
 - CWE: N/A
 - Submitted: 2022-06-20T16:03:43.388Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+hi team,
+I found that your site is vulnerable to Unauthorized Access lead to  privilege escalation, where when the owner invites a user with admin roles, the user can still edit anything with admin access, via brupsuite, it should get an error message because the admin role has been removed.
+
+
+production step:
+1. The `owner `invites `user` with admin roles at https://dashboard.omise.co/team
+2. Then the `user`, intercept any request using brupsuite, for example edit/add link at https://dashboard.omise.co/v2/links
+3. then the `owner` lowers the role to `none`
+4. then you will see, the user does not see the create link feature because the role is lost
+5. but when the `user` repeats the request step#2 via brupstuite. then it will be valid.
+
+PoC :
+██████
+
+## Impact
+
+Unauthorized Access lead to  privilege escalation, downgraded admin roles to none can still edit projects through brupsuite
 
 ## Timeline
 

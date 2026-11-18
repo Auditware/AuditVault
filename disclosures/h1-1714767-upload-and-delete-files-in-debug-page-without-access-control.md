@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2023-02-24
 submitted: 2022-09-28T02:10:27.921Z
 bounty_usd: null
@@ -25,6 +26,49 @@ title: "Upload and delete files in debug page without access control."
 - Report: [https://hackerone.com/reports/1714767](https://hackerone.com/reports/1714767)
 - CWE: Improper Access Control - Generic
 - Submitted: 2022-09-28T02:10:27.921Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I found a debug page with no access control that allows:
+- Uploading files.
+- Reading files if they are in JSON format.
+- Delete files.
+
+## Impact
+
+- Insufficient access control.
+- An attacker can delete files exposed by the application.
+
+## System Host(s)
+████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+## For upload file:
+1. Use a browser to navigate to: https://█████/debug. 
+2. Click on choose file button.
+3. Set the file path in the location field
+4. Click on the upload files button.
+5.See the file uploaded on the list.
+
+## For Read File
+1. Select the file.
+2. Click and Read File Content.
+3. See the content file.
+
+## For delete file:
+1. Select the file.
+2. Click on the Delete ENC Files button.
+
+## Suggested Mitigation/Remediation Actions
+- Implement access control on the page.
 
 ## Timeline
 

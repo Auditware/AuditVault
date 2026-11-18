@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')"
 enriched: true
+body: none
 date: 2024-04-04
 submitted: 2023-08-14T23:14:09.768Z
 bounty_usd: 3000

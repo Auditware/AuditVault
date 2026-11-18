@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2019-04-05
 submitted: 2018-08-14T19:53:38.495Z
 bounty_usd: null
@@ -25,6 +26,29 @@ title: "███████ Site Exposes █████████ forms"
 - Report: [https://hackerone.com/reports/395246](https://hackerone.com/reports/395246)
 - CWE: Insecure Direct Object Reference (IDOR)
 - Submitted: 2018-08-14T19:53:38.495Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary
+
+The █████ site (https://██████.mil/) allows authenticated users to submit ██████ e-forms. Due to a vulnerability in this system, any authenticated user can access the full █████████ e-form of any other user.
+
+## Steps to reproduce
+
+1. Intercept an authenticated request on █████████ containing an Authorization header.
+2. Replace the url with `█████████`. Observe that the id in the url can be incremented/decremented to view recently generated OMPFs.
+3. Upon submitting the request, the user's full ███████ form JSON response will be sent.
+
+## Impact
+
+Access to ████ is possible through either a Department of Defense Self-Service logon, CAC card, or █████████password. Thus, a compromise of a single account on any of these systems would allow for unrestricted access to all ████ forms.
+
+The ████ form includes the following
+- PII such as SSN, DoB, addresses, etc
+- Personal remarks
+- Other fields related to security clearances, education, maritial status, etc
 
 ## Timeline
 

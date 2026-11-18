@@ -8,6 +8,7 @@ tags:
 substate: "informative"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2020-09-29
 submitted: 2020-09-20T07:25:16.648Z
 bounty_usd: null
@@ -25,6 +26,21 @@ title: "Recently change email but still login with old email"
 - Report: [https://hackerone.com/reports/986459](https://hackerone.com/reports/986459)
 - CWE: Improper Authentication - Generic
 - Submitted: 2020-09-20T07:25:16.648Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi team, 
+I have been found vulnerability on email verification which can be account takeover (Authentication bypass)
+Recently I have been change my email ████ but still login with old email ██████
+--https://efss.qloud.my/index.php/settings/user
+
+## Impact
+
+Impact
+If victim's email account is still logged into his/her old gmail account . Then any external attacker can use the unused same email for account takeover
+https://efss.qloud.my/index.php/settings/user
 
 ## Timeline
 

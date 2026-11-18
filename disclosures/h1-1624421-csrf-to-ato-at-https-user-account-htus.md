@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true
+body: true
 date: 2023-01-06
 submitted: 2022-07-04T14:14:29.195Z
 bounty_usd: 500
@@ -25,6 +26,27 @@ title: "CSRF to ATO at https://█████/user/account [HtUS]"
 - Report: [https://hackerone.com/reports/1624421](https://hackerone.com/reports/1624421)
 - CWE: Cross-Site Request Forgery (CSRF)
 - Submitted: 2022-07-04T14:14:29.195Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+hello dod security team today while i was doing pentest on your scope
+i came across
+https://████████/user/account
+so i register and after that tried to edit my data and the data was in json request
+so i simple change content-type to
+content-type application/x-www-form-urlencoded
+and the data was change
+and in the next step i create html file 
+to edit users data with 
+0 click 
+which allow me to change victim email and leads to account takeover
+check my html poc file and video
+
+## Impact
+
+account takeover
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "XML External Entities (XXE)"
 enriched: true
+body: true
 date: 2021-06-21
 submitted: 2021-06-06T21:14:40.722Z
 bounty_usd: null
@@ -25,6 +26,21 @@ title: "HackerOne’s 100K CTF Writeup"
 - Report: [https://hackerone.com/reports/1218708](https://hackerone.com/reports/1218708)
 - CWE: XML External Entities (XXE)
 - Submitted: 2021-06-06T21:14:40.722Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Greetings team
+It has been a great challenge, thank you very much for the fun moments and also for the annoying ones :)
+
+██████████
+
+P.S. I will put my writeup in my next comment.
+
+## Impact
+
+---
 
 ## Timeline
 

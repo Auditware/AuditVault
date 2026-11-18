@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "External Control of Critical State Data"
 enriched: true
+body: none
 date: 2026-09-02
 submitted: 2026-07-12T08:37:34.396Z
 bounty_usd: 1337

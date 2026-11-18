@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2022-11-12
 submitted: 2022-09-30T16:15:02.344Z
 bounty_usd: null
@@ -25,6 +26,32 @@ title: "Subdomain takeover at http://test.www.midigator.com"
 - Report: [https://hackerone.com/reports/1718371](https://hackerone.com/reports/1718371)
 - CWE: Privilege Escalation
 - Submitted: 2022-09-30T16:15:02.344Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Vulnerability
+Subdomain test.www.midigator.com points to an AWS S3 bucket that no longer exists. I was able to take control of this bucket and serve my own content on it.
+
+## Proof Of Concept
+```code
+$ dig test.www.midigator.com
+[snipped]
+;; ANSWER SECTION:
+test.www.midigator.com.	60	IN	CNAME	test.www.midigator.com.s3-website-us-west-1.amazonaws.com.
+test.www.midigator.com.s3-website-us-west-1.amazonaws.com. 59 IN CNAME s3-website-us-west-1.amazonaws.com.
+s3-website-us-west-1.amazonaws.com. 4 IN A	52.219.193.3
+```
+
+{F1963195}
+
+## Remediation
+Remove the CNAME entry for the `test.www.midigator.com`
+
+## Impact
+
+Subdomain Takeover
 
 ## Timeline
 

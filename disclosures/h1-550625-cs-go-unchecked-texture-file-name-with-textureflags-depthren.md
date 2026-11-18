@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Stack Overflow"
 enriched: true
+body: none
 date: 2021-05-06
 submitted: 2019-04-29T17:52:46.161Z
 bounty_usd: 2500

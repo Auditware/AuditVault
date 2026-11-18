@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2019-01-07
 submitted: 2018-09-14T17:20:41.901Z
 bounty_usd: 7500
@@ -215,6 +216,18 @@ Because this link form isn't a `javascript://` link, it's still honoured by Stea
 
 # 4. Conclusion
 This was fun as all hell and I learned a lot. I always look for bugs where a set of simple mistakes of low severity cascade into one huge bug with critical severity and this is the perfect example of that.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The Steam chat client both sends and receives bbcode format chat messages. These map to HTML elements, and notably the [url] bbcode tag is supported for arbitrary URLs. React has strong XSS mitigations but does not mitigate `javascript:` URI based XSS.
+
+This is rather difficult to exploit as the client transmits sanitised messages and receives over a binary WebSocket. I've attached a video of executing this XSS, which is persistent.
+
+## Impact
+
+I strongly believe an attacker could get remote code execution in Steam via this method. The Steam chat client uses the same codebase as the steam web chat client, and, I imagine does so using electron or some other webview system. These systems all expose functions which allow arbitrary calls to system to allow them to be competitive with e.g. windows forms.
 
 ## Timeline
 

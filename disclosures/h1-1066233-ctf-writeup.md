@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: true
 date: 2021-01-14
 submitted: 2020-12-25T11:31:58.554Z
 bounty_usd: null
@@ -1007,6 +1008,22 @@ The Final Flag:
 ---------------------
 
 {F1129602}
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi,
+First of all, thanks for this amazing CTF!. 
+
+I will post my writeup soon, it is time to sleep now :)
+{F1129602}
+
+By the way, the creator of challenge 11 is crazy.
+
+## Impact
+
+Grinch Network is finally down
 
 ## Timeline
 

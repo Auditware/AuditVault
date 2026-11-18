@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2020-05-12
 submitted: 2020-05-05T22:12:43.388Z
 bounty_usd: null
@@ -25,6 +26,25 @@ title: "Stored XSS on https://apps.topcoder.com/wiki/plugins/socialbookmarking/u
 - Report: [https://hackerone.com/reports/866815](https://hackerone.com/reports/866815)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2020-05-05T22:12:43.388Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hi :) Adding javascript url causes to stored XSS when creating bookmark.
+
+## Steps To Reproduce:
+
+Go to https://apps.topcoder.com/wiki/plugins/socialbookmarking/updatebookmark.action . Write `javascript:alert(document.domain)` on url input and fill other areas. After create, go `https://apps.topcoder.com/wiki/display/tcwiki/<TITLE>` and when you click the title on this page, XSS will execute.
+
+PoC:
+https://apps.topcoder.com/wiki/display/tcwiki/powerpuff_hackerone_test
+{F816754}
+
+## Impact
+
+XSS can use to steal cookies or to run arbitrary code on victim's browser.
 
 ## Timeline
 

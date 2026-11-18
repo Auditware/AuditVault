@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2025-09-10
 submitted: 2025-07-14T08:17:42.260Z
 bounty_usd: null
@@ -25,6 +26,31 @@ title: "337k users and 1 employee leaked credentials"
 - Report: [https://hackerone.com/reports/3250691](https://hackerone.com/reports/3250691)
 - CWE: Information Disclosure
 - Submitted: 2025-07-14T08:17:42.260Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hey Khan Academy,
+
+So there's this website called "https://leakradar.io" while surfing this site i came across your website "https://www.khanacademy.org/" i found out there was huge amount of accounts were leaked there, one of them was a employee account which is valid.
+
+url: https://www.khanacademy.org/login
+mail: ███████
+pass: ███
+
+These are the credentials you can try, other than this there was 337.7k users account and some were added today to that website.
+
+Also we can request the website for removal so if you want i can request for you to that site to remove all Khan Academy credentials.
+
+I would like to suggest a feature "New device/location otp" so even if there's a leaked credentials an attacker would need a additional otp it will safe customers from being hacked and they will know someone is trying to login into their account so they will immediately change their passwords.
+
+Kind regards
+███
+
+## Impact
+
+Users account are being leaked which can leak Khan Academy's customers sensitive information
 
 ## Timeline
 

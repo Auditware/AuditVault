@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2025-10-08
 submitted: 2025-08-18T08:31:05.878Z
 bounty_usd: null
@@ -25,6 +26,39 @@ title: "Pending invites remain valid even after the inviter is removed."
 - Report: [https://hackerone.com/reports/3303136](https://hackerone.com/reports/3303136)
 - CWE: Privilege Escalation
 - Submitted: 2025-08-18T08:31:05.878Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+When an admin (A) invites another user (B) with admin privileges, removing the inviter (A) does not invalidate the pending invite for B. Furthermore, if B has already accepted the invite, B remains in the team with admin privileges. This could allow unauthorized admin access even after the original inviter is removed.
+
+##  Steps to Reproduce
+1. Invite a user (A) to the team with **admin privileges**.  
+2. A accepts the invitation and becomes an admin.  
+3. A invites another user (B) to the team with **admin privileges**.  
+4. Remove user A from the team.  
+5. Observe:  
+   - If B has not accepted the invite, the invite **remains valid**.  
+   - If B has already accepted the invite, B **remains in the team** with admin privileges.
+
+# # Expected Behavior
+- Pending invites created by a removed admin should **become invalid**.  
+- Members already added by the removed admin should either be **reviewed or removed** automatically, depending on platform policy.
+
+# #Actual Behavior
+- Pending invites remain valid and can be accepted.  
+- Accepted members remain in the team with admin privileges.
+
+##POC
+{F4688873}
+
+## Impact
+
+- Unauthorized users may gain admin access after the inviter has been removed.  
+- Violation of least privilege principles and potential for **privilege escalation**.  
+- Security audit and compliance issues, as removed admins cannot fully revoke their influence.
 
 ## Timeline
 

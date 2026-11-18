@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true
+body: true
 date: 2024-10-04
 submitted: 2024-09-20T05:42:18.682Z
 bounty_usd: null
@@ -34,6 +35,20 @@ Thank you for bringing this issue to our attention. Upon review, we identified t
 While the finding is outside the scope of the program (not related to AWS Software or Services), we appreciate the report and will proceed to close the report as resolved.
 
 Thanks again for your report and for helping us protect our customers! Please feel free to reach out if you have any further questions or concerns.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+There is External service interaction ( DNS and HTTP ) vulnerability in
+url :  ████ in this video 
+██████████
+
+## Impact
+
+The External Service Interaction arise when it is possible for a attacker to induce application to interact with the arbitrary external service such as DNS HTTP etc.
+The External Service Interaction can is not limited to HTTP,HTTPS or DNS, you can lead to FTP, SMTP etc. Such weakness can lead to DDoS attack.
+The External Service Interaction can lead to OS Command Injection, DOS Attack, DDOS Attack or Code Manipulation
 
 ## Timeline
 

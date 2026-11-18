@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2018-07-09
 submitted: 2018-04-04T18:48:34.636Z
 bounty_usd: 256
@@ -25,6 +26,32 @@ title: "Stored XSS in 'post last edited' option"
 - Report: [https://hackerone.com/reports/333507](https://hackerone.com/reports/333507)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2018-04-04T18:48:34.636Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+1. There are two users: **Attacker** and **Victim**.
+2. **Attacker** starts a private talk via private message with the **Victim**.
+3. **Attacker** send a message to **Victim**, then he edits it or deletes it.
+4. **Victim** sees the *yellow pencil*, symbol of the edit.
+5. **Victim** clicks on *yellow pencil* to see the edit and the XSS runs.
+
+Other info: the XSS also runs on topic (video PoC #2). You can find my XSS message on this URL:
+https://try.discourse.org/t/recommended-reading-for-community-and-foss-enthusiasts/278
+It is very dangerous because it can hit many users at the same time.
+
+## Impact
+
+XSS can use to steal cookies, password or to run arbitrary code on victim's browser
+
+The hacker selected the **Cross-site Scripting (XSS) - Stored** weakness. This vulnerability type requires contextual information from the hacker. They provided the following answers:
+
+**URL**
+https://try.discourse.org/t/recommended-reading-for-community-and-foss-enthusiasts/278
+
+**Verified**
+Yes
 
 ## Timeline
 

@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true
+body: true
 date: 2020-08-30
 submitted: 2020-02-07T16:34:25.707Z
 bounty_usd: null
@@ -26,6 +27,51 @@ title: "[sirloin] Web Server Directory Traversal via Crafted GET Request"
 - Report: [https://hackerone.com/reports/790623](https://hackerone.com/reports/790623)
 - CWE: Path Traversal
 - Submitted: 2020-02-07T16:34:25.707Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I would like to report path traversal in Sirloin module.
+It allows an attacker to read system files via path traversal local/remote
+
+# Module
+
+**module name:** Sirloin
+**version:** 0.15.0 (latest release build)
+**npm page:** `https://www.npmjs.com/package/sirloin`
+
+## Module Description
+
+This high performance, extremely easy to use web server.
+
+## Module Stats
+
+downloads in the last year 4,129
+
+# Vulnerability
+
+## Vulnerability Description
+
+Directory traversal through the url which doesn't verify the file is from the root directory path.
+
+## Steps To Reproduce:
+
+1 npm install sirloin
+2 start the local server by typing `nodejs node_modules/sirloin/bin/sirloin.js`
+3 `curl "http://localhost:3006/%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2f%2e%2e%2fetc%2fpasswd"`
+
+it will list the content of /etc/passwd
+
+# Wrap up
+
+- I contacted the maintainer to let them know: [N] 
+- I opened an issue in the related repository: [N]
+
+## Impact
+
+An attacker can leverage this vulnerability to request arbitrary files from the target host, which may include application source code or system files.
+The package by default listen to 0.0.0.0 enabling external access.
 
 ## Timeline
 

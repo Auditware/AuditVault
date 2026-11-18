@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2020-06-18
 submitted: 2020-05-31T08:37:40.446Z
 bounty_usd: null
@@ -24,6 +25,18 @@ title: "[H1-2006 2020] I made the CEO's bounty payment!"
 - Report: [https://hackerone.com/reports/887816](https://hackerone.com/reports/887816)
 - CWE: N/A
 - Submitted: 2020-05-31T08:37:40.446Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG$
+
+I will write the details in comment.
+
+## Impact
+
+I have headache now.
 
 ## Timeline
 

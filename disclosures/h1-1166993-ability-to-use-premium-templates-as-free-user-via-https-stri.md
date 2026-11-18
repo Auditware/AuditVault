@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true
+body: true
 date: 2022-03-30
 submitted: 2021-04-16T23:45:25.162Z
 bounty_usd: null
@@ -25,6 +26,27 @@ title: "Ability to use premium templates as free user via https://stripo.email/t
 - Report: [https://hackerone.com/reports/1166993](https://hackerone.com/reports/1166993)
 - CWE: Business Logic Errors
 - Submitted: 2021-04-16T23:45:25.162Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hello, I found security vulnerability in your web application, another business logic.
+
+## Steps To Reproduce
+  1. Go to https://stripo.email/templates/?utm_source=viewstripo&utm_medium=referral
+  2. Choose any premium template and click ```use in editor```
+  3. Then sign in to save and it is in your templates
+
+## Supporting Material/References:
+Down there is video showing everything
+
+  * [attachment / reference]
+
+## Impact
+
+Lose of business
 
 ## Timeline
 

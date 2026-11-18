@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2017-05-26
 submitted: 2017-04-07T02:08:19.154Z
 bounty_usd: null
@@ -24,6 +25,23 @@ title: "[██████████.gnip.com] .htpasswd disclosure"
 - Report: [https://hackerone.com/reports/219197](https://hackerone.com/reports/219197)
 - CWE: N/A
 - Submitted: 2017-04-07T02:08:19.154Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Greetings,
+
+There is a .htpasswd disclosure on your subdomain :
+
+- Go to : http://█████████.gnip.com/.htpasswd
+- previewgnip:██████
+
+{F173925}
+
+Fix : 
+
+Protect the htpasswd file
 
 ## Timeline
 

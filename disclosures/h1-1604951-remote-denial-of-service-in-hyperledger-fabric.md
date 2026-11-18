@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: none
 date: 2022-07-07
 submitted: 2022-06-17T08:51:18.499Z
 bounty_usd: null

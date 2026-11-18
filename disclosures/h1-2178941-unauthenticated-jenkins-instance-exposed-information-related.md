@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2024-01-26
 submitted: 2023-09-24T14:11:49.014Z
 bounty_usd: null
@@ -30,6 +31,39 @@ title: "Unauthenticated Jenkins instance exposed information related to ██�
 ## Report summary
 
 An unauthenticated Jenkins instance hosted in AWS GovCloud exposed some information regarding US Department of Defense. The DOD team promptly acknowledged and fixed this issue.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Affected URLs - ██████████blue/organizations/jenkins/pipelines
+████████
+
+
+██████████
+
+████
+
+Also notice that the information is transmitted in clear text as the server is running on HTTP.
+
+## Impact
+
+An attacker can read or edit sensitive information belonging to █████ by abusing this vulnerability.
+
+## System Host(s)
+███████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Navigate to ███████ , and other sections. It is exposing information related to ███
+
+## Suggested Mitigation/Remediation Actions
+It is recommended to Implement authentication on this Jenkins instance
 
 ## Timeline
 

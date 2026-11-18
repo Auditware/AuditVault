@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Classic Buffer Overflow"
 enriched: true
+body: true
 date: 2018-07-19
 submitted: 2018-05-13T00:57:18.088Z
 bounty_usd: null
@@ -25,6 +26,16 @@ title: "Malformed .BSP Access Violation in CS:GO can lead to Remote Code Executi
 - Report: [https://hackerone.com/reports/351014](https://hackerone.com/reports/351014)
 - CWE: Classic Buffer Overflow
 - Submitted: 2018-05-13T00:57:18.088Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+A malformed .BSP can trigger an Access Violation on CS:GO that can lead to arbitrary code execution on a remote computer. I have attached a copy of the malformed .BSP which reliably triggers an Access Violation on CS:GO.
+
+## Impact
+
+An attacker hosting a malicious server could compromise a remote client by having them download a custom map, triggering remote code execution on the victim's computer.
 
 ## Timeline
 

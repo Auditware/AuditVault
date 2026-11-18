@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2020-06-19
 submitted: 2020-06-09T00:02:41.080Z
 bounty_usd: null
@@ -25,6 +26,50 @@ title: "[h1-2006 CTF] Payments for May have been processed!"
 - Report: [https://hackerone.com/reports/894165](https://hackerone.com/reports/894165)
 - CWE: Information Disclosure
 - Submitted: 2020-06-09T00:02:41.080Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi :)
+
+First off thanks for a great CTF!  It had its ups and downs (mainly due to my mistakes) but here is the final flag: `^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/critical
+  - cwe/information-disclosure
+  - env/web
+substate: "resolved"
+weakness: "Information Disclosure"
+enriched: true
+date: 2020-06-19
+submitted: 2020-06-09T00:02:41.080Z
+bounty_usd: null
+votes: 4
+cve: []
+program: "[[programs/h1-ctf|h1-ctf]]"
+reporter: "vakzz"
+source: "https://hackerone.com/reports/894165"
+title: "[h1-2006 CTF] Payments for May have been processed!"
+---
+# [h1-2006 CTF] Payments for May have been processed!
+
+> **Severity:** Critical | **Bounty:** undisclosed | **Votes:** 4 | **Program:** h1-ctf | **Disclosed:** 2020-06-19
+
+- Report: [https://hackerone.com/reports/894165](https://hackerone.com/reports/894165)
+- CWE: Information Disclosure
+- Submitted: 2020-06-09T00:02:41.080Z
+
+
+My write up can be found at https://devcraft.io/bountypay-h1-2006-ctf.html (unpublished) detailing the process, tools, and mistakes I made along the way.
+
+Cheers,
+Will
+
+## Impact
+
+* Password disclosure and multiple 2FA bypasses allowing an attacker to process payments
 
 ## Timeline
 

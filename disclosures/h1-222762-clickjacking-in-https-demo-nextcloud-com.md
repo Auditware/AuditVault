@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "UI Redressing (Clickjacking)"
 enriched: true
+body: true
 date: 2017-05-20
 submitted: 2017-04-21T13:27:41.146Z
 bounty_usd: null
@@ -25,6 +26,34 @@ title: "Clickjacking In https://demo.nextcloud.com"
 - Report: [https://hackerone.com/reports/222762](https://hackerone.com/reports/222762)
 - CWE: UI Redressing (Clickjacking)
 - Submitted: 2017-04-21T13:27:41.146Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi Nextcloud,
+
+Clickjacking In https://demo.nextcloud.com
+
+This Is Zeeshan,An Ethical Hacker, I Have Found A Security Issue In Your Site
+
+Clickjacking In nextcloud https://demo.nextcloud.com Page
+
+<html>
+<head>
+
+<body>
+<p>Website is vulnerable to clickjacking!</p>
+<iframe src="https://demo.nextcloud.com" width="500" height="500"></iframe>
+
+</body>
+</html>
+
+Please Fix It As Soon As Possible
+
+Best Regards,
+Zeeshan Waheed
+xsszeeshan@gmail.com
 
 ## Timeline
 

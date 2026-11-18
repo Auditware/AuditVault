@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2024-10-21
 submitted: 2022-11-20T10:23:27.636Z
 bounty_usd: null
@@ -31,6 +32,27 @@ title: "Reflected - XSS"
 POC Video :- https://youtu.be/HLshcsX1GwU?si=BM0VLLNjbM8ZwBbi
 
 * https://youtu.be/gT-0RwW0mRM?si=yUhC-N1Hk33pcBwj
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hi, Team I'm Found Reflected XSS
+
+## Steps To Reproduce:
+
+1.Nave to https://www.mtn.bj/
+2.Go to Messages 
+3. Enter XSS Payload :
+
+    * <h1 onauxclick=confirm(document.domain)>RIGHT CLICK HERE
+
+4. Reflected the popup
+
+## Impact
+
+Cross site scripting attacks can have devastating consequences. Code injected into a vulnerable application can exfiltrate data or install malware on the user's machine. Attackers can masquerade as authorized users via session cookies, allowing them to perform any action allowed by the user account.
 
 ## Timeline
 

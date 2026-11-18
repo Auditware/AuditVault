@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true
+body: none
 date: 2021-08-27
 submitted: 2021-05-28T12:23:12.301Z
 bounty_usd: 7500

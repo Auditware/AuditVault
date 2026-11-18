@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2026-01-12
 submitted: 2025-03-01T03:38:34.833Z
 bounty_usd: null
@@ -25,6 +26,53 @@ title: "Exposure of Sensitive Debug File Containing database dump with passwords
 - Report: [https://hackerone.com/reports/3019290](https://hackerone.com/reports/3019290)
 - CWE: Information Disclosure
 - Submitted: 2025-03-01T03:38:34.833Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+A publicly accessible debug file (debug.txt) was discovered on the target web application, exposing sensitive database credentials, including usernames and passwords. This issue poses a severe security risk as it allows unauthorized access to the database, potentially leading to data breaches, privilege escalation, or further exploitation of the system.
+
+Link: ████████
+
+## References
+
+███
+
+## Impact
+
+Data Breach: Confidential data could be extracted or modified.
+Privilege Escalation: If the credentials belong to a privileged account, attackers may gain further control over the system.
+
+## System Host(s)
+██████████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Open a web browser or use curl/wget to access the following URL:
+
+████
+
+The file contains plaintext user credentials, such as:
+
+```
+                    [user] => orgpri
+                    [passwd] => 12!@QWasz
+                    [dbname] => org_priority
+                    [dbtype] => mysql
+                    [server] => mysql
+```
+
+These credentials could allow an attacker to directly connect to the database and manipulate sensitive data.
+
+## Suggested Mitigation/Remediation Actions
+Remove the debug.txt file.
 
 ## Timeline
 

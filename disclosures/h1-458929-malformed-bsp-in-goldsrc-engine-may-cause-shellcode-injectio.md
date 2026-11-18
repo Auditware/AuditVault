@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Classic Buffer Overflow"
 enriched: true
+body: none
 date: 2020-03-25
 submitted: 2018-12-07T22:20:44.175Z
 bounty_usd: null

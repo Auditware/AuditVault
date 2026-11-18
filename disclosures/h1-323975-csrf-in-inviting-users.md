@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true
+body: true
 date: 2019-03-26
 submitted: 2018-03-09T19:33:21.827Z
 bounty_usd: null
@@ -25,6 +26,48 @@ title: "CSRF in Inviting users"
 - Report: [https://hackerone.com/reports/323975](https://hackerone.com/reports/323975)
 - CWE: Cross-Site Request Forgery (CSRF)
 - Submitted: 2018-03-09T19:33:21.827Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+> NOTE! Thanks for submitting a report! Please replace *all* the [square] sections below with the pertinent details. Remember, the more detail you provide, the easier it is for us to triage and respond quickly, so be sure to take your time filling out the report!
+
+**Summary:** [add summary of the vulnerability]
+When a user is invited, a GET request is made. This can be used with a CSRF attack. 
+
+**Description:** [add more details about this vulnerability]
+User invitations usually should be done through a POST request. In this case the app uses a GET request. For example: https://ort-admin.pingone.com/web-portal/ajax/user/directory/inviteuser/?alternate_email=rojan@netsecurity.tech&email=rojan@securifyinc.com
+Which allows inviting another user easily. 
+
+## Steps To Reproduce:
+
+(Add details for how we can reproduce the issue)
+
+  1. Download the attached html. 
+  2. Open it in a logged in browser. 
+  3. It should invite my email to the website. 
+## Supporting Material/References:
+
+  * List any additional material (e.g. screenshots, logs, etc.)
+
+## Impact
+
+Adding other users easily. Gives internal access.
+
+The hacker selected the **Cross-Site Request Forgery (CSRF)** weakness. This vulnerability type requires contextual information from the hacker. They provided the following answers:
+
+**URL**
+https://ort-admin.pingone.com/web-portal/usermanagement#/
+
+**Verified**
+Yes
+
+**Can a victim be forced to perform a sensitive state-change operation unknowningly?**
+Yes
+
+**What state-change operation can be performed?**
+Adding users.
 
 ## Timeline
 

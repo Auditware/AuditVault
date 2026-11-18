@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Initialization"
 enriched: true
+body: none
 date: 2026-02-12
 submitted: 2025-10-30T13:39:56.819Z
 bounty_usd: null

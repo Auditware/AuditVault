@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2018-08-14
 submitted: 2018-08-07T17:31:29.764Z
 bounty_usd: 2000
@@ -25,6 +26,34 @@ title: "Stored XSS on activity"
 - Report: [https://hackerone.com/reports/391390](https://hackerone.com/reports/391390)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2018-08-07T17:31:29.764Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi security team members,
+
+#Description
+I found a store xss on the activity which allows an attacker to steal admin account cookies.
+
+#Step to reproduce
+1-Create store
+2- Add a member in a store
+3- Member can choose any name 
+4- So change the any member name with hunter"><svg/onload=alert(2)>
+5- Now on admain account make changes 
+6- That will create activity with attacker malicious payload
+
+#POC
+Please see the below image
+{F329469}
+Let me know if more information is needed to my end.
+Best Regards,
+Shahzad
+
+## Impact
+
+An attacker(staff member) can takeover admin account.
 
 ## Timeline
 

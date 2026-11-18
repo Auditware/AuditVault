@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2021-02-14
 submitted: 2020-11-20T17:01:25.283Z
 bounty_usd: null
@@ -25,6 +26,52 @@ title: "Stored XSS in Intense Debate comment system"
 - Report: [https://hackerone.com/reports/1039750](https://hackerone.com/reports/1039750)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2020-11-20T17:01:25.283Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi Team,
+
+## _Summary:_
+The  Intense Debate comment system is vulnerable to stored xss by users , this would allow for atacking admins/users on the blog ,
+
+## Platform(s) Affected:
+*  Intense Debate comment system
+
+
+
+________________________________________________________________________________________
+________________________________________________________________________________________
+
+## _Steps To Reproduce:_
+
+
+  1. Go to **intensedebate.com/moderate/{{-ID-}}**
+  2. Go to comments > allow images in comments
+  3. Now go to your blog and add this payload as comment :
+
+```html
+<img src="https://intensedebate.com/images/a-addblog.png" onload="alert()">
+```
+  4. You'll notice the alert will pop as result for the "onload" attribute ,
+  
+
+________________________________________________________________________________________
+________________________________________________________________________________________
+
+
+A helpful video :
+{F1087899}
+
+## Impact
+
+* Stealing cookie and secter tokens 
+* Editing html/css/js content for phishing attacks
+
+
+
+Thanks for taking your valuable time to read and validate this report
 
 ## Timeline
 

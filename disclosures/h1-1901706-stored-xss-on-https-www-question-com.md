@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2024-09-20
 submitted: 2023-03-12T00:36:18.041Z
 bounty_usd: null
@@ -29,6 +30,32 @@ title: "Stored Xss On 'https://www.question.com/'"
 ## Report summary
 
 POC Video :- https://youtu.be/HLshcsX1GwU?si=BM0VLLNjbM8ZwBbi
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi Team I'm Find the Stored Xss On your Site
+
+Stored XSS, also known as persistent XSS, is the more damaging than non-persistent XSS. It occurs when a malicious script is injected directly into a vulnerable web application.
+
+Steps To Reproduce:
+
+1.  Go To Your Site https://www.question.com/
+2. Nave https://www.question.com/ask/
+5. Ask a Question Enter the Payload ```<iframe onload=alert(document.domail)>```
+3.  Click to Sumit Question & Redirect to https://www.question.com/iframe-onload-alert-9-1631390.html
+4. XSS was Tigred you See the Popup
+
+POC
+
+████
+
+Tested on Firefox and chrome.
+
+## Impact
+
+The attacker can steal data from whoever checks the report.
 
 ## Timeline
 

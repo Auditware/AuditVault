@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Memory Corruption - Generic"
 enriched: true
+body: true
 date: 2019-09-12
 submitted: 2019-01-09T12:16:04.570Z
 bounty_usd: null
@@ -25,6 +26,30 @@ title: "ZeroMQ libzmq remote code execution"
 - Report: [https://hackerone.com/reports/477073](https://hackerone.com/reports/477073)
 - CWE: Memory Corruption - Generic | CVE: CVE-2019-6250
 - Submitted: 2019-01-09T12:16:04.570Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Bug report and exploit: https://github.com/zeromq/libzmq/issues/3351
+Fix by me: https://github.com/zeromq/libzmq/pull/3353
+
+My motive for full disclosure is as follows:
+
+```
+Is it true that it is not safe to use ZeroMQ over the internet because it will crash?
+
+Earlier versions of the ZeroMQ library (before 2.1) were not very resilient against "fuzzing" attacks. A malformed packet or garbage data could cause an old version of the library to assert and exit. Since the release of 2.1, all reported cases of assertions caused by bad data have been fixed. If your testing uncovers a problem in this area, please file a bug report.
+```
+Source: http://zeromq.org/area:faq
+
+The issue reporting page (http://zeromq.org/docs:issue-tracking) instructs to open a Github issue, with no special procedure for security issues, so I went ahead and did just that.
+
+libzmq appears to be widely used and has wrapper implementations for Go, Python, Java, Node.js, etc.
+
+## Impact
+
+Running arbitrary code on the victim's system.
 
 ## Timeline
 

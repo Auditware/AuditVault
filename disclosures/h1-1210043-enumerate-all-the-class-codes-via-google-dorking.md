@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2021-07-22
 submitted: 2021-05-26T16:19:43.401Z
 bounty_usd: null
@@ -25,6 +26,23 @@ title: "Enumerate all the class codes via google dorking "
 - Report: [https://hackerone.com/reports/1210043](https://hackerone.com/reports/1210043)
 - CWE: Improper Access Control - Generic
 - Submitted: 2021-05-26T16:19:43.401Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I used this particular google dork `site:khanacademy.org/join/*` to enumerate all the links of joining classes. 
+
+1. Go to google and use the above query to enumerate all of them. 
+2. Create the student account by filling all the required details 
+3. Now you're in the class without being actually invited by the teacher 
+
+Attached POC:
+████████
+
+## Impact
+
+An attacker can enumerate all the classes and join in them and make chaos there are chances of IDOR too... a class code can look like `a57d5d5548f302ef4a` instead of `A45JST`
 
 ## Timeline
 

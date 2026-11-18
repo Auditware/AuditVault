@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2020-06-20
 submitted: 2020-06-19T02:03:18.493Z
 bounty_usd: null
@@ -25,6 +26,25 @@ title: "Source code disclosure at ███"
 - Report: [https://hackerone.com/reports/902322](https://hackerone.com/reports/902322)
 - CWE: Information Disclosure
 - Submitted: 2020-06-19T02:03:18.493Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Source code disclosure at ███████
+
+## Steps To Reproduce:
+POC: link download source code: ███████
+
+## Supporting Material/References:
+█████
+███████
+
+## Impact
+
+Source Code Disclosure
+Sensitive Information Disclosure
 
 ## Timeline
 

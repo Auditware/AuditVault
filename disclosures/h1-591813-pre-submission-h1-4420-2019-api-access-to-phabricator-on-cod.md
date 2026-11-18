@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true
+body: none
 date: 2021-02-25
 submitted: 2019-05-28T22:10:23.316Z
 bounty_usd: 39999

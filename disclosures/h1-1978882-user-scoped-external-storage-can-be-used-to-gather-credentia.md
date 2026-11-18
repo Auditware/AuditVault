@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true
+body: none
 date: 2023-06-27
 submitted: 2023-05-09T09:31:04.427Z
 bounty_usd: null

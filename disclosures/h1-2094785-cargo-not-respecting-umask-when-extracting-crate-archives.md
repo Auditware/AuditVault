@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2023-08-15
 submitted: 2023-08-03T15:30:18.564Z
 bounty_usd: 4660
@@ -45,6 +46,22 @@ Acknowledgments
 We want to thank Addison Crump for responsibly disclosing this to us according to the Rust security policy.
 
 Full GHSA link: https://github.com/rust-lang/cargo/security/advisories/GHSA-j3xp-wfr4-hx87
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Cargo did not properly protect files in the cargo registry. When an archive contained files which were marked as globally writeable, they would be unpacked as-is and retain their global writeability. This is CWE-278 (not available in HackerOne).
+
+This was discovered as part of a (personal) routine file permissions check:
+
+```sh
+find / ! -type l -perm -002 -exec ls -alhd {} \;
+```
+
+## Impact
+
+A local attacker may inject arbitrary code into the cached files present in the cargo registry. This, in turn, allows for a local attacker to act as the targeted user (when the user compiles the modified code) or to poison prebuilt binaries built by that user and thus have arbitrary code execution against downstream users (supply chain attack).
 
 ## Timeline
 

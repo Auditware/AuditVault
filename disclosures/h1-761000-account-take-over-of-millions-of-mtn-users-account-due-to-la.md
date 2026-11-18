@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2020-04-13
 submitted: 2019-12-18T15:39:15.136Z
 bounty_usd: null
@@ -25,6 +26,16 @@ title: "Account Take over of millions of  MTN users account due to lack of Rate 
 - Report: [https://hackerone.com/reports/761000](https://hackerone.com/reports/761000)
 - CWE: Improper Authentication - Generic
 - Submitted: 2019-12-18T15:39:15.136Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I attached a PDF document to this report which explained the vulnerability in full details and I also attached a link to the POC video in the document.
+
+## Impact
+
+Account take over of about any MTN user account.
 
 ## Timeline
 

@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2021-07-26
 submitted: 2021-01-26T13:03:40.914Z
 bounty_usd: 50000
@@ -31,6 +32,17 @@ I was reviewing an Electron app made by one of Shopify employees (at the time I 
 That `.env` contained a `GH_TOKEN` variable, which is (as you can probably guess) a GitHub token, I tried using it to authenticate against GitHub REST API using `curl -H "Authorization: token $GH_TOKEN" -H "Accept: application/vnd.github.v3+json" https://api.github.com/user`, I saw that the token was indeed valid so I decided to hit the `/user/orgs` API endpoint and I got back (among others) the Shopify organization, then I hit the `/orgs/Shopify/repos` endpoint to confirm the GitHub token scope and I successfully got back a list containing both Shopify public and private repos with `"permissions": {"admin": false, "push": true, "pull": true}` so at that point I knew that the token was enabling me to perform arbitrary push and pulls to Shopify repos so potentially permitting me to place backdoors and such.
 
 On January 26, @augustozanellato reported that while reviewing a public MacOS app, they found a valid GitHub Access Token belonging to a Shopify employee. This token had read and write access to Shopify-owned GitHub repositories. Upon validating the report, we immediately revoked the token and performed an audit of access logs to confirm no unauthorized activity had occurred.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+While dissecting an application made by one of your employees I found his GitHub Personal Access Token (PAT), he's a member of the org with pull and push access to all of your repositories. 
+As a proof I can tell you that on the repo github.com/Shopify/shopify at commit hash `cea9c273391d` the sha512 of the README.md is `69750574bec56c1f1052db3471252b1daacdc9dda9f6d5332a3400a847fa413ec1caf19ef0b5501f18a5a76c232e7210d5f3b91c24c9439f4e0f64c02d6db824`.
+
+## Impact
+
+Read and write access to all your private github repositories.
 
 ## Timeline
 

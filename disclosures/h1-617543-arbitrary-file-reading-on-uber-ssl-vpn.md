@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Plaintext Storage of a Password"
 enriched: true
+body: none
 date: 2021-02-25
 submitted: 2019-06-17T18:51:03.105Z
 bounty_usd: 6500

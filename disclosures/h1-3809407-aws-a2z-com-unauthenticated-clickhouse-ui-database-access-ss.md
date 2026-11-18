@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Authentication Bypass"
 enriched: true
+body: none
 date: 2026-07-22
 submitted: 2026-06-17T21:35:37.626Z
 bounty_usd: null

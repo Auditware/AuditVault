@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true
+body: none
 date: 2020-11-02
 submitted: 2020-09-02T08:58:17.800Z
 bounty_usd: null

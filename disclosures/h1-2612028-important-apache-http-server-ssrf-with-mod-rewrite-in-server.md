@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2024-08-27
 submitted: 2024-07-19T03:02:55.252Z
 bounty_usd: 4263
@@ -40,6 +41,17 @@ finder: Smi1e (DBAPPSecurity Ltd.)
 finder: xiaojunjie (DBAPPSecurity Ltd.)
 
 Security Advisory: https://httpd.apache.org/security/vulnerabilities_24.html
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I reported this vulnerability through the official Apache HTTP Server security email on 2024-07-12, and received a CVE number on 2024-07-17. You can check detailed information from here:
+https://httpd.apache.org/security/vulnerabilities_24.html
+
+## Impact
+
+SSRF in Apache HTTP Server on Windows with mod_rewrite in server/vhost context, allows to potentially leak NTLM hashes to a malicious server via SSRF and malicious requests.
 
 ## Timeline
 

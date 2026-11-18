@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insufficiently Protected Credentials"
 enriched: true
+body: true
 date: 2019-12-03
 submitted: 2019-11-24T13:08:59.542Z
 bounty_usd: 20000
@@ -35,6 +36,23 @@ title: "Account takeover via leaked session cookie"
 On November 24, 2019 at 13:08 UTC, HackerOne was notified through the HackerOne Bug Bounty Program by a HackerOne community member (“hacker”) that they had accessed a HackerOne Security Analyst’s HackerOne account. A session cookie was disclosed due to a human error, which led to the hacker being able to access the account. The session cookie was revoked at 15:11 UTC, blocking all unauthorized access to the account.
 
 The technical investigation finished at 21:27 UTC, concluding that there was no malicious intent and that all copies of potentially sensitive information were deleted.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+You are disclose for me you session
+**Description:**
+you are gevi me your session on last report
+I am can use your session(sorry)
+███
+████████
+█████████
+
+## Impact
+
+HackerOneStaff Access, i can read all reports @security and more program
 
 ## Timeline
 

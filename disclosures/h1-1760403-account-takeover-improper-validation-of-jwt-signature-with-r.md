@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authorization"
 enriched: true
+body: none
 date: 2022-12-26
 submitted: 2022-11-03T05:28:08.679Z
 bounty_usd: null

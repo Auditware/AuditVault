@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true
+body: none
 date: 2026-02-12
 submitted: 2025-11-09T16:08:37.303Z
 bounty_usd: null

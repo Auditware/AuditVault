@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true
+body: none
 date: 2017-06-14
 submitted: 2017-05-25T19:51:48.891Z
 bounty_usd: null

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2023-06-22
 submitted: 2023-01-01T08:55:37.266Z
 bounty_usd: null
@@ -25,6 +26,35 @@ title: "Brave News feeds can open arbitrary chrome: URLs"
 - Report: [https://hackerone.com/reports/1819668](https://hackerone.com/reports/1819668)
 - CWE: Privilege Escalation
 - Submitted: 2023-01-01T08:55:37.266Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+URL link in Brave News feeds can open arbitrary chrome: URLs.
+This behavior can be exploited as a way to bypass SOP and gain access to privileged URLs.
+
+## Products affected: 
+
+ * 1.46.144 Chromium: 108.0.5359.128 (Official Build) （x86_64）
+
+## Steps To Reproduce:
+
+ * Open new tab and click customize button
+ * Follow https://csrf.jp/brave/rss_chrome.php as a RSS feed of Brave News
+ * Reload the tab
+ * RSS feeed that name is "Access chrome: URLs" is shown on Brave News
+ * Click the feed
+ * `chrome://settings/resetProfileSettings?origin=userclick` is opened on the tab
+
+## Supporting Material/References:
+
+  * See the demonstration movie I attached
+
+## Impact
+
+Bypass SOP and gain access to privileged URLs.
 
 ## Timeline
 

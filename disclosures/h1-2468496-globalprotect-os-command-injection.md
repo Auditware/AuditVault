@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true
+body: true
 date: 2026-01-12
 submitted: 2024-04-18T01:02:47.138Z
 bounty_usd: null
@@ -25,6 +26,54 @@ title: "GlobalProtect - OS Command Injection #█████████"
 - Report: [https://hackerone.com/reports/2468496](https://hackerone.com/reports/2468496)
 - CWE: OS Command Injection | CVE: CVE-2024-3400
 - Submitted: 2024-04-18T01:02:47.138Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+A command injection vulnerability in the GlobalProtect feature of Palo Alto Networks PAN-OS software for specific PAN-OS versions and distinct feature configurations may enable an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.Cloud NGFW, Panorama appliances, and Prisma Access are not impacted by this vulnerability.
+
+
+
+## References
+    - https://labs.watchtowr.com/palo-alto-putting-the-protecc-in-globalprotect-CVE-2024-3400/
+    - https://attackerkb.com/topics/SSTk336Tmf/cve-2024-3400/rapid7-analysis
+    - https://nvd.nist.gov/vuln/detail/CVE-2024-3400
+
+## Impact
+
+GlobalProtect - OS Command Injection
+
+## System Host(s)
+██████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+#poc
+
+
+CVE-2024-3400 Palo Alto OS Command Injection
+
+send this HTTP request:
+
+
+██████
+
+you will create hellome1337.txt file on the server with root access
+
+now if you try to access the files you should receive 403 insted of 404
+
+███
+
+More Info :
+https://github.com/h4x0r-dz/CVE-2024-3400?tab=readme-ov-file
+ https://attackerkb.com/topics/SSTk336Tmf/cve-2024-3400/rapid7-analysis https://labs.watchtowr.com/palo-alto-putting-the-protecc-in-globalprotect-cve-2024-3400/
 
 ## Timeline
 

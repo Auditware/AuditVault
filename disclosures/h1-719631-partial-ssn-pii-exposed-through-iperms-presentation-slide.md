@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2019-12-02
 submitted: 2019-10-22T03:15:50.117Z
 bounty_usd: null
@@ -25,6 +26,26 @@ title: "[Partial] SSN & [PII] exposed through iPERMs Presentation Slide."
 - Report: [https://hackerone.com/reports/719631](https://hackerone.com/reports/719631)
 - CWE: Information Disclosure
 - Submitted: 2019-10-22T03:15:50.117Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello @deptofdefense, when performing reconnaissance, I came across a presentation slide that displayed live data since the data is blocked out & is formatted with `XXX-XX` with the last 4 digits.
+
+The exposed data contains the following: `UPC, Division/Brigade, Rank, Soldier Name, Last 4 digits of SSN, FRR (Financial Record Reviews), PRR (Personal Record Reviews).`
+
+Here are a few exposed users:
+████████, XXX-XX-█████████
+████████, XXX-XX-█████
+
+The link that is hosting the Presentation Slide: `https://████████/wp-content/uploads/2017/12/Introduction-to-iPERMS-Slides.pptx` & on Slide 25, there is the exposed data.
+
+The remediation/mitigation for this security flaw is the removal of the data/file & I have set the severity to `Critical` as it is exposing sensitive [PII] which could lead to a data breach.
+
+## Impact
+
+The sensitive information can be used to authenticate through various web-portals especially with the last 4 digits & full name with rank.
 
 ## Timeline
 

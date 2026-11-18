@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2021-01-25
 submitted: 2020-11-17T16:35:52.709Z
 bounty_usd: null
@@ -25,6 +26,29 @@ title: "Blind stored XSS due to insecure contact form at https://█████
 - Report: [https://hackerone.com/reports/1036877](https://hackerone.com/reports/1036877)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2020-11-17T16:35:52.709Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Summary:
+I have discovered a blind stored cross site scripting vulnerability due to an insecure Contact form available here  https://███████.mil/  This form does not properly sanitize user input allowing for the insertion and submission of dangerous characters such as angle brackets. I was able to submit a blind xss payload through the form which was triggered in backend /admin panel.
+##Steps To Reproduce:
+1-Browse to the page at https://██████.mil/and fill out the contact form submitting your blind XSS payload in First name , Last name, Company and description field.
+2-Submit the form and have and admin access the information.
+3-This will trigger XSS in the admin panel and a notification to the XSS hunter service with details of the event.
+
+##Supporting Material/References:
+(the screenshot )[██████████]
+
+The IP address that triggered the XSS payload is  ████████ 
+
+Xss hunter Report █████████
+
+## Impact
+
+An attacker is able to access critical information from the admin panel. The XSS reveals the administrator’s IP address, backend application service, titles of mail chimp customer and internal subscription emails, admin session cookies.
+An attacker can exploit the above cookies to access the admin panel.
 
 ## Timeline
 

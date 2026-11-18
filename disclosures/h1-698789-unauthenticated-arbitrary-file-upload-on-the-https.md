@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Violation of Secure Design Principles"
 enriched: true
+body: true
 date: 2024-08-16
 submitted: 2019-09-20T12:33:21.405Z
 bounty_usd: null
@@ -25,6 +26,26 @@ title: "Unauthenticated arbitrary file upload on the https://█████/ (�
 - Report: [https://hackerone.com/reports/698789](https://hackerone.com/reports/698789)
 - CWE: Violation of Secure Design Principles
 - Submitted: 2019-09-20T12:33:21.405Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Description
+I was able to identify unsafe upload endpoint on the https://█████/upload.php
+
+##POC
+1) Go to the https://█████████/upload.php
+2) Upload some test file.
+You will see success message:
+████
+3) Visit `https://███/delete.me` and you will see your uploaded file there
+I uploaded example test file with string `test file`
+█████████
+
+## Impact
+
+Arbitrary file upload, may lead to the Stored XSS, hosting attacker's content and code execution.
 
 ## Timeline
 

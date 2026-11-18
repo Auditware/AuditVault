@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2022-03-10
 submitted: 2022-03-09T00:56:21.837Z
 bounty_usd: null
@@ -25,6 +26,28 @@ title: "XSS via Mod Log Removed Posts"
 - Report: [https://hackerone.com/reports/1504410](https://hackerone.com/reports/1504410)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2022-03-09T00:56:21.837Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+I have discovered an XSS vulnerability regarding the mod notes feature. Specifically, the XSS payload executes when the victim removes a post in a subreddit and opens up the mod notes of the attacker.
+
+## Steps To Reproduce:
+
+1. The attacker creates a new post with the title containing the XSS payload.
+2. The victim (mods of the subreddit) then must remove your post.
+3. The payload executes when a victim (subreddit mod) opens up your mod notes. Sometimes, the mod notes are displayed when the victim hovers on your profile (this is true when a recent mod action has been taken on the user). 
+
+## Supporting Material/References:
+
+█████
+█████
+
+## Impact
+
+Impact Below:
 
 ## Timeline
 

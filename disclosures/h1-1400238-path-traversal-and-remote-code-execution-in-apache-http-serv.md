@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true
+body: true
 date: 2021-11-19
 submitted: 2021-11-14T23:54:06.729Z
 bounty_usd: 1000
@@ -48,6 +49,21 @@ Update 2.4.51 released: 2021-10-07
 Affects: 2.4.50, 2.4.49
 
 https://httpd.apache.org/security/vulnerabilities_24.html
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+It was found that the fix for CVE-2021-41773 in Apache HTTP Server 2.4.50 was insufficient. An attacker could use a path traversal attack to map URLs to files outside the directories configured by Alias-like directives.
+
+This issue only affects Apache 2.4.49 and Apache 2.4.50 and not earlier versions.
+
+-
+My friend Juan Escobar @itsecurityco and me (Fernando Munoz) reported this internally to Apache HTTPd project and worked with them to test the new patch before the new version was released.
+
+## Impact
+
+If files outside of these directories are not protected by the usual default configuration "require all denied", these requests can succeed. If CGI scripts are also enabled for these aliased pathes, this could allow for remote code execution.
 
 ## Timeline
 

@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2018-10-30
 submitted: 2018-07-19T17:49:43.530Z
 bounty_usd: null
@@ -30,6 +31,38 @@ title: "Stored XSS on Issue details page"
 ## Report summary
 
 The detail page of Issue (the page that provides the content of an Issue) is vulnerable to Stored XSS.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+The detail page of Issue (the page that provides the content of an Issue) is vulnerable to Stored XSS.
+
+**Description:**
+The two exploits are via the function of submittin an issue or the function of editing an issue.
+This vulnerability is reproduced in `Firefox` and`Chrome`. `IE11` and`Edge` are not. I did not test the reproduction on other browsers.
+
+## Steps To Reproduce:
+1. Sign in to GitLab.
+2. Click the "[+]" icon.
+3. Click "New Project".
+4. Fill out "Project name" form with "PoC".
+5. Check the check box of "Public".
+6. Click "Issues"
+7. Click "New issue" button.
+8. Fill out the each form as follows:
+    * Title: PoC
+    * Description: `![xss" onload=alert(1);//](a)`
+9. Click "Submit issue".
+
+Furthermore, when editing an already existing issue, you can also reproduce by entering A in the "Description" form and saving it.
+
+## Impact
+
+The security impact is the same as any typical Stored XSS.
+
+Thank you!
 
 ## Timeline
 

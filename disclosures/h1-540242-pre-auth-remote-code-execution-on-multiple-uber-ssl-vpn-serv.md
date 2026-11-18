@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true
+body: none
 date: 2021-02-24
 submitted: 2019-04-16T15:45:28.406Z
 bounty_usd: 2000

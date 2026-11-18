@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2022-09-27
 submitted: 2020-12-05T21:47:05.097Z
 bounty_usd: null
@@ -25,6 +26,24 @@ title: "XSS Reflected on reddit.com via url path"
 - Report: [https://hackerone.com/reports/1051373](https://hackerone.com/reports/1051373)
 - CWE: Cross-site Scripting (XSS) - Reflected
 - Submitted: 2020-12-05T21:47:05.097Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi I found a XSS-R
+
+To reproduce the issue please click the poc link and then press the "verify email" button
+
+PoC:
+
+https://www.reddit.com/verification/asd',%20alert(document.location),%20%27
+
+## Impact
+
+With the help of XSS an attacker can steal your cookies, in many cases steal sessions, download malware onto your system and send a custom request.
+Users can be socially engineered by the attacker by redirecting them from the real website to a fake one and there are many more attack scenarios that an expert attacker can perform with XSS.
+It is also possible to inject html thus modifying the original page
 
 ## Timeline
 

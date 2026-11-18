@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true
+body: none
 date: 2021-02-11
 submitted: 2021-01-11T00:36:55.190Z
 bounty_usd: null

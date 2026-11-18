@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true
+body: true
 date: 2022-10-27
 submitted: 2022-09-26T00:49:59.598Z
 bounty_usd: null
@@ -25,6 +26,37 @@ title: "Subdomain takeover on 'de-headless.staging.gymshark.com'"
 - Report: [https://hackerone.com/reports/1711890](https://hackerone.com/reports/1711890)
 - CWE: Misconfiguration
 - Submitted: 2022-09-26T00:49:59.598Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The Gymshark subdomain https://de-headless.staging.gymshark.com/ was pointing to an unclaimed Shopify site. Because of this an attacker could claim this subdomain, via Shopify, and serve their own content.
+
+This is extremely dangerous as an attacker could serve any malicious content on this domain such as malware, domain defacement, phishing campaigns etc. 
+
+Also, phishing victims wouldn't be able to identify the maliciousness of a potential phishing campaign because it would be from a valid Gymshark subdomain.
+
+**Note:** *I have temporarily claimed this domain for PoC and have password protected the site to reduce unnecessary impact to others. I am happy to remove this protection if you require further takeover evidence*.
+
+## Remediation
+- Remove the CNAME record for Shopify on 'de-headless.staging.gymshark.com'.
+- I can release 'de-headless.staging.gymshark.com' for reclaim if needed.
+
+## PoC Link
+https://de-headless.staging.gymshark.com/
+
+## PoC Evidence
+{F1954064}
+{F1954066}
+{F1954069}
+{F1954070}
+
+Thanks, A-p0c
+
+## Impact
+
+If an attacker controlled https://de-headless.staging.gymshark.com/ they could host any malicious content they wanted, such as malware, defacement, a convincing phishing campaign
 
 ## Timeline
 

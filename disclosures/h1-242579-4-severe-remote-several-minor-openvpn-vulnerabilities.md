@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2019-10-14
 submitted: 2017-06-23T10:58:19.459Z
 bounty_usd: null
@@ -24,6 +25,21 @@ title: "4 severe remote + several minor OpenVPN vulnerabilities"
 - Report: [https://hackerone.com/reports/242579](https://hackerone.com/reports/242579)
 - CWE: N/A | CVE: CVE-2017-7521, CVE-2017-7520, CVE-2017-7508, CVE-2017-7522
 - Submitted: 2017-06-23T10:58:19.459Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+CVE-2017-7521 Remote server crashes/double-free/memory leaks in certificate processing
+CVE-2017-7520 Remote (including MITM) client crash, data leak
+CVE-2017-7508 Remote server crash (forced assertion failure)
+CVE-2017-7522 Crash mbed TLS/PolarSSL-based server
+(no cve) Remote/mitm Null-pointer dereference in establish_http_proxy_passthru()
+(no cve) Stack buffer overflow if long –tls-cipher is given
+(no cve) Remote (including MITM) client stack buffer corruption
+
+https://community.openvpn.net/openvpn/wiki/VulnerabilitiesFixedInOpenVPN243
+https://guidovranken.wordpress.com/2017/06/21/the-openvpn-post-audit-bug-bonanza/
 
 ## Timeline
 

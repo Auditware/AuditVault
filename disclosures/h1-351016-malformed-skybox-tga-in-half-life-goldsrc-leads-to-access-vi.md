@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Classic Buffer Overflow"
 enriched: true
+body: true
 date: 2018-08-28
 submitted: 2018-05-13T01:14:32.363Z
 bounty_usd: null
@@ -25,6 +26,26 @@ title: "Malformed Skybox .TGA in Half-Life (GoldSRC) leads to Access Violation"
 - Report: [https://hackerone.com/reports/351016](https://hackerone.com/reports/351016)
 - CWE: Classic Buffer Overflow
 - Submitted: 2018-05-13T01:14:32.363Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+A malformed .TGA when loaded as a Skybox on a map in a GoldSRC engine game (Half-Life) can lead to arbitrary code execution on a remote client.
+
+###Reproduction Steps
+
+Load the attached map + resources on a local Half-Life listen server. The game will crash with an Access Violation as soon as the map with the malicious skybox is loaded.
+
+###Exploitability
+
+Since anyone can host a map with custom assets, and the custom assets are loaded onto a remote clients computer, a malicious server can distribute malformed skybox assets (.TGA's) that could cause remote code execution on clients. The inclusion of .DLL's on Steam without ASLR make exploitablility of this bug via ROP quite trivial.
+
+## Impact
+
+###Impact
+
+A malicious server could infect hundreds or perhaps thousands of clients with this bug. This bug could also be used in targeted attacks for the theft / compromise of high-value Steam accounts by attacking their Half-Life client.
 
 ## Timeline
 

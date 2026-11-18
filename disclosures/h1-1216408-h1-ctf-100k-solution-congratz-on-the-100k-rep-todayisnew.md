@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: true
 date: 2021-06-17
 submitted: 2021-06-03T13:51:39.449Z
 bounty_usd: null
@@ -25,6 +26,19 @@ title: "H1-CTF 100k Solution - Congratz on the 100k Rep todayisnew"
 - Report: [https://hackerone.com/reports/1216408](https://hackerone.com/reports/1216408)
 - CWE: SQL Injection
 - Submitted: 2021-06-03T13:51:39.449Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Sharing the final flag for now. Writeup will come soon 
+`██████`
+
+██████████
+
+## Impact
+
+Takeover of admin account :)
 
 ## Timeline
 

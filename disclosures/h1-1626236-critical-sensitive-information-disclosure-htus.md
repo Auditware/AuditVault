@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2023-01-13
 submitted: 2022-07-05T14:04:33.153Z
 bounty_usd: 500
@@ -25,6 +26,28 @@ title: "Critical sensitive information Disclosure. [HtUS]"
 - Report: [https://hackerone.com/reports/1626236](https://hackerone.com/reports/1626236)
 - CWE: Information Disclosure
 - Submitted: 2022-07-05T14:04:33.153Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+(Database user,Database password,Database name) 
+on https://██████.edu/
+
+I got sensitive information:
+view-source:https://██████████.edu/database.php.orig
+
+
+Database information (Database user,Database password,Database name)
+$hostname     = '████████.edu';
+$db         = '█████████';
+$username     = '████_user';
+$password     = '████';
+
+## Impact
+
+Bug impact:
+Sensitive information disclosed and possible for an attacker can access into the system.
 
 ## Timeline
 

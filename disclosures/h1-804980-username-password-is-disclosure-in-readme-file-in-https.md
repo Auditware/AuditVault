@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2020-05-14
 submitted: 2020-02-26T03:09:50.335Z
 bounty_usd: null
@@ -25,6 +26,19 @@ title: "Username&password is Disclosure in readme file in [https://████�
 - Report: [https://hackerone.com/reports/804980](https://hackerone.com/reports/804980)
 - CWE: Information Disclosure
 - Submitted: 2020-02-26T03:09:50.335Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+Username&password is Disclosure for login into dashboard in readme file in [https://███]
+**Description:**
+* open [this](https://██████████/README.md) and u will see the username and password in the file
+
+## Impact
+
+* Disclosure Sensitive Information "username&password"
 
 ## Timeline
 

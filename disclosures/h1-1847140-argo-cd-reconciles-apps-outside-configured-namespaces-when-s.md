@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2023-03-05
 submitted: 2023-01-25T19:04:04.357Z
 bounty_usd: 2000
@@ -42,6 +43,22 @@ Credits
 Thanks to ChangZhuo Chen (@czchen) for finding the issue and for contributing the fix!
 
 Full GHSA: https://github.com/argoproj/argo-cd/security/advisories/GHSA-6p4m-hw2h-6gmw
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The Application CRD outside configured namespace in Argo CD will be reconciled.
+
+The following is how to reproduce the vulnerability:
+
+* Enable `apps-in-any-namespace` and `sharding` features.
+* Create an Application CRD in namespace not configured in Argo CD.
+* Update the Application CRD, and Argo CD will reconcile the Application CRD, despite not in configured namespace.
+
+## Impact
+
+Attacker can use Argo CD permission to deploy resources in Kubernetes.
 
 ## Timeline
 

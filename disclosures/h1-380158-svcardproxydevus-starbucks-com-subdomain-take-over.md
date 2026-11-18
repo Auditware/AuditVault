@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2018-07-23
 submitted: 2018-07-10T13:14:17.255Z
 bounty_usd: null
@@ -31,6 +32,29 @@ title: "svcardproxydevus.starbucks.com Subdomain take over"
 I was monitoring starbucks.com with https://takeover.cyberint.com/ and noticed it flagged up 2 subdomains with issues.
 
 After using subfinder and tko-subs i was able to determine the subdomains which were dead and take over.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+You have left a dns record pointing to a dead cloudapp vm.
+
+```
+svcardproxydevus.starbucks.com -> s00307ntmp0svcardproxydev0.trafficmanager.net -> s00307dpipsvcardproxy00.eastus.cloudapp.azure.com = Dead
+```
+
+## Impact
+
+```
+1) Attacker takes over subdomain and then puts something like porn or something that shouldn't be on the domain.
+2) hacker then contacts support pretending to be a concerned user.
+3) support click on it to check what is going on
+4) attacker has put responder on the page via a image file using a UNC path (https://github.com/SpiderLabs/Responder)
+5) attacker is then sent supports hash for their windows login.
+6) attacker then cracks hash and uses the VPN to pivot 
+```
+
+They can also use it to phish and other bad activitys
 
 ## Timeline
 

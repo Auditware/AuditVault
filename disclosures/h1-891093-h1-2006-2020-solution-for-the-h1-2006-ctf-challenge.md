@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2020-06-18
 submitted: 2020-06-04T16:41:49.316Z
 bounty_usd: null
@@ -25,6 +26,48 @@ title: "[H1-2006 2020] Solution for the h1-2006 CTF challenge"
 - Report: [https://hackerone.com/reports/891093](https://hackerone.com/reports/891093)
 - CWE: Privilege Escalation
 - Submitted: 2020-06-04T16:41:49.316Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi,
+The flag is `^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/high
+  - cwe/privilege-escalation
+  - env/web
+substate: "resolved"
+weakness: "Privilege Escalation"
+enriched: true
+date: 2020-06-18
+submitted: 2020-06-04T16:41:49.316Z
+bounty_usd: null
+votes: 3
+cve: []
+program: "[[programs/h1-ctf|h1-ctf]]"
+reporter: "thehackerish"
+source: "https://hackerone.com/reports/891093"
+title: "[H1-2006 2020] Solution for the h1-2006 CTF challenge"
+---
+# [H1-2006 2020] Solution for the h1-2006 CTF challenge
+
+> **Severity:** High | **Bounty:** undisclosed | **Votes:** 3 | **Program:** h1-ctf | **Disclosed:** 2020-06-18
+
+- Report: [https://hackerone.com/reports/891093](https://hackerone.com/reports/891093)
+- CWE: Privilege Escalation
+- Submitted: 2020-06-04T16:41:49.316Z
+. I didn't know I can send it prior to the report until I saw some disclosed solutions from the previous challenges.
+The report will follow later today.
+
+Regards
+@thehackerish
+
+## Impact
+
+Multiple vulnerabilities on `*.bountypay.h1ctf.com` allow an unauthenticated remote attacker to access the BountyPay  customer application as `Marten Mickos` and pay May's bounties.
 
 ## Timeline
 

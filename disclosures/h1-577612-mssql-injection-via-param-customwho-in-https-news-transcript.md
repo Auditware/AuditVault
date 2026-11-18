@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: true
 date: 2019-10-10
 submitted: 2019-05-11T22:00:06.207Z
 bounty_usd: null
@@ -25,6 +26,42 @@ title: "MSSQL injection via param Customwho in https://█████/News/Tran
 - Report: [https://hackerone.com/reports/577612](https://hackerone.com/reports/577612)
 - CWE: SQL Injection
 - Submitted: 2019-05-11T22:00:06.207Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+
+MSSQL injection via param `Customwho` in https://███████/News/Transcripts/Search/Sort/
+
+**Description:**
+
+MSSQL injection via param `Customwho` in https://██████████/News/Transcripts/Search/Sort/
+
+There is WAF, but we can make bypass and via global variable `@@LANGID` we can know that the base is used here - MSSQL
+
+## Impact
+
+Critical
+
+## Step-by-step Reproduction Instructions
+
+Via global variable `@@LANGID` we can find out that here is MSSQL database. ████
+
+https://█████/News/Transcripts/Search/Sort/?Customwho=31002/**/|/**/@@LANGID
+
+And if use a non-existing global variable, then we get an error. ██████
+
+https://██████████/News/Transcripts/Search/Sort/?Customwho=31002/**/|/**/@@nonexisting
+
+## Suggested Mitigation/Remediation Actions
+
+Using prepared statement
+
+## Impact
+
+We can read and do other manipulations in the database. We can also try to make RCE
 
 ## Timeline
 

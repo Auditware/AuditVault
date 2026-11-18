@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Authentication Bypass Using an Alternate Path or Channel"
 enriched: true
+body: none
 date: 2020-01-15
 submitted: 2019-10-05T18:52:26.323Z
 bounty_usd: null

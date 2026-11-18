@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Input Validation"
 enriched: true
+body: none
 date: 2020-08-05
 submitted: 2020-04-05T18:07:46.849Z
 bounty_usd: null

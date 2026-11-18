@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Missing Authorization"
 enriched: true
+body: none
 date: 2026-07-13
 submitted: 2026-06-03T20:54:07.908Z
 bounty_usd: null

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true
+body: true
 date: 2023-12-08
 submitted: 2023-11-23T12:52:16.197Z
 bounty_usd: 25000
@@ -104,6 +105,23 @@ We have rated this vulnerability CVSSv3 10 (Critical) based on the potential imp
 CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N/CR:H/IR:H/AR:H. 
 
 We want to thank @mega7 for sending in their report; reports like this one are invaluable for us to continue enhancing our security posture. We also appreciate them for stopping at the right point in testing, demonstrating a responsible and ethical approach.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello Gents, I would like to report an issue where attackers are able to read internal files via an SSRF vulnerability.
+
+
+## Proof of concept
+
++ ███
+
+## Impact
+
+SSRF.
+
+Thanks and have a nice day!
 
 ## Timeline
 

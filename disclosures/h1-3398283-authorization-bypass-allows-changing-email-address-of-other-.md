@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2025-11-19
 submitted: 2025-10-24T15:14:32.308Z
 bounty_usd: null
@@ -25,6 +26,35 @@ title: "Authorization bypass allows changing email address of other users"
 - Report: [https://hackerone.com/reports/3398283](https://hackerone.com/reports/3398283)
 - CWE: Improper Access Control - Generic | CVE: CVE-2025-48986
 - Submitted: 2025-10-24T15:14:32.308Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+==Version: Revive Adserver 6.0.0==
+
+##Summary:
+The Change E-mail UI requires the current password, but the admin panel endpoint /admin/agency-user.php accepts a POST that updates a user’s email (including admin) without requiring the account password. The application does not require re-authentication before updating email addresses.
+
+##Step to reproduce:
+1. Log in page
+2. Go to Preferences → Change E-mail, observe that changing the email normally requires the current password.
+
+██████
+3. Navigate to Inventory → User Access, select the admin user, and click Save changes while intercepting the request.
+4. Modify and send the following request:
+`submit=1&login=admin&token=ba6ff2f70a69a509d5bcc84cb2225517&userid=1&email_address=another-mail@example.com&agencyid=1`
+
+{F4929064}
+5. Observe that the admin user’s email is successfully updated without password confirmation.
+
+███████
+
+## Impact
+
+- An authenticated attacker (with access to the User Access page) can change the administrator’s email address without authorization, potentially leading to account takeover or loss of access control integrity.
+
+VIdeo PoC: ██████
 
 ## Timeline
 

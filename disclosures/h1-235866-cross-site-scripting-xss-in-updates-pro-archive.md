@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true
+body: true
 date: 2017-07-02
 submitted: 2017-06-02T16:44:21.806Z
 bounty_usd: null
@@ -25,6 +26,21 @@ title: "Cross-site Scripting (XSS) in /updates-pro/archive/"
 - Report: [https://hackerone.com/reports/235866](https://hackerone.com/reports/235866)
 - CWE: Cross-site Scripting (XSS) - Generic
 - Submitted: 2017-06-02T16:44:21.806Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hey guys.
+The dir parameter on /updates-pro/archive/ seems to be vulnerable to Cross-site Scripting.
+
+Steps to reproduce:
+1- Navigate to: https://www.mapsmarker.com/updates-pro/archive/?dir=v3.0.1
+2- Add this to the url: <svG onLoad=prompt(9)>
+3- Result in attached printsceen.
+
+Or quite simple visit:
+https://www.mapsmarker.com/updates-pro/archive/?dir=v3.0.1%3CsvG%20onLoad=prompt(1)%3E
 
 ## Timeline
 

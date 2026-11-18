@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "CRLF Injection"
 enriched: true
+body: true
 date: 2025-12-25
 submitted: 2025-12-24T00:25:06.263Z
 bounty_usd: null
@@ -25,6 +26,44 @@ title: "Protocol Smuggling / CRLF Injection via Gopher Protocol allows Arbitrary
 - Report: [https://hackerone.com/reports/3477023](https://hackerone.com/reports/3477023)
 - CWE: CRLF Injection
 - Submitted: 2025-12-24T00:25:06.263Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Summary:
+I have discovered that the Gopher protocol implementation in curl fails to properly sanitize newline characters (%0d%0) in the selector path. This allows an attacker to inject arbitrary TCP commands when curl connects to a target server via gopher://. This vulnerability enables Protocol Smuggling attacks, turning a curl request into a weapon to interact with internal services like Redis, Memcached, or SMTP.
+
+Affected version:
+Master branch (Compiled from source on Dec 24, 2025).
+
+
+Steps To Reproduce:
+
+1. Setup a dummy listener (simulating a victim service like Redis or SMTP):
+   $ nc -lvnp 11211
+
+2. Execute the attack using a crafted Gopher URL containing URL-encoded CRLF characters:
+   $ ./src/curl "gopher://127.0.0.1:11211/_Dummy%0d%0aHELLO_SERVER%0d%0"
+
+3. Observe the output on the listener side.
+   Instead of receiving a single line (safe behavior), the server receives three distinct lines (vulnerable behavior):
+
+   [Listener Output]
+   Dummy
+   HELLO_SERVER
+   QUIT
+
+   This confirms that the %0d%0 sequence was decoded and transmitted as raw bytes, breaking the protocol structure.
+
+## Impact
+
+This vulnerability allows Protocol Smuggling. By exploiting this CRLF injection, an attacker can:
+
+1. Interact with internal text-based protocols (Redis, Memcached, SMTP) that assume commands are separated by newlines.
+2. Achieve Remote Code Execution (RCE) on internal networks by injecting Redis commands (e.g., writing a webshell via 'CONFIG SET' / 'SAVE' or overwriting 'authorized_keys').
+3. Perform SMTP Injection to send forged emails from trusted internal IPs.
+4. Bypass SSRF protections that rely on protocol allow-listing, as Gopher is often allowed but can simulate other protocols.
 
 ## Timeline
 

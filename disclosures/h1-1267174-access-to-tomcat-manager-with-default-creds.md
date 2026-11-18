@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2023-02-05
 submitted: 2021-07-17T23:24:05.276Z
 bounty_usd: null
@@ -26,6 +27,35 @@ title: "Access to tomcat-manager with default creds"
 - Report: [https://hackerone.com/reports/1267174](https://hackerone.com/reports/1267174)
 - CWE: Improper Authentication - Generic
 - Submitted: 2021-07-17T23:24:05.276Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hi jetblue Security Team.
+
+I Found that this domain `█████████` using Apache Tomcat/6.0.35 , And i was able to login to https://██████████/manager/html With default credentials `tomcat:tomcat`
+See the following Screenshots:-
+
+██████████
+
+███
+
+## Steps To Reproduce:
+1. Go To https://███████/manager/html
+2. Login with default creds `tomcat:tomcat`
+
+## Supporting Material/References:
+- https://book.hacktricks.xyz/pentesting/pentesting-web/tomcat
+
+## Impact
+
+Improper Authentication
+Default Credentials lead to access admin manager.
+
+##Fix:-
+- Change default creds.
 
 ## Timeline
 

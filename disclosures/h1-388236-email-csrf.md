@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-Site Request Forgery (CSRF)"
 enriched: true
+body: none
 date: 2019-01-28
 submitted: 2018-07-29T10:57:16.512Z
 bounty_usd: 300

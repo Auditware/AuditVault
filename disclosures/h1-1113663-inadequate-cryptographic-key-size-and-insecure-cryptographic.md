@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Use of a Broken or Risky Cryptographic Algorithm"
 enriched: true
+body: true
 date: 2021-03-08
 submitted: 2021-03-01T09:37:07.101Z
 bounty_usd: null
@@ -25,6 +26,20 @@ title: "Inadequate Cryptographic Key Size and Insecure Cryptographic Mode.  File
 - Report: [https://hackerone.com/reports/1113663](https://hackerone.com/reports/1113663)
 - CWE: Use of a Broken or Risky Cryptographic Algorithm
 - Submitted: 2021-03-01T09:37:07.101Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The application is generating cryptographic keys or key pairs using a short and inadequate length.
+This application is using the ECB (Electronic Codebook) mode of operation to perform encryption, which is considered semantically insecure.
+
+Vulnerable File name :- curl_ntlm_core.c
+Vulnerable line no. 274 :- err = CCCrypt(kCCEncrypt, kCCAlgorithmDES, kCCOptionECBMode, key,
+
+## Impact
+
+If a message with identical blocks is encrypted, an attacker get a certain advantage to have information on plaintext, by only observing CipherText.
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2021-04-02
 submitted: 2020-09-28T01:31:08.713Z
 bounty_usd: null
@@ -32,6 +33,23 @@ Title : Uncontrolled access to a sensitive U.S. Department of Defense dashboard.
 Weakness : Improper Access Control - Generic
 Severity : High
 Reported at : September 28, 2020 3:31am +0200
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Greetings, I found on one of your sub-domains some tickets that are not supposed to be readable by everyone, we even have the possibility to delete the tickets.
+Link : 
+https://███/█████/latest
+https://█████/███████/all
+https://█████/███████ (DELETE HEADER METHOD)
+
+Best regards,
+frenchvlad
+
+## Impact
+
+a malicious person can delete tickets and see the progress of tickets in progress
 
 ## Timeline
 

@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2024-10-18
 submitted: 2024-03-04T19:25:36.853Z
 bounty_usd: null
@@ -32,6 +33,36 @@ title: "two aws access key and secret key and database username and password exp
 A security vulnerability is identified in a Docker image hosted on Docker Hub. The image, associated with Mozilla's Common Voice project, is found to contain exposed AWS access keys, AWS secret keys, and database credentials. These sensitive credentials are discovered within the file /code/scripts/test/config.json of the Docker image and allowed unauthorized access to AWS resources associated with the project.  The images were deleted from docker hub, the credentials were rotated and the AWS users associated with them were removed.
 
 Note that Common Voice is out of scope of our program but we accepted and rewarded this report since it is critical.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+hello mozilla security team i found two aws access key and secret key and database username and password exposed  in dockerhub image 
+
+## Steps To Reproduce:
+go to https://hub.docker.com/r/mozilla/commonvoice
+and do pull for this image
+you will find them in 
+/code/scripts/test/config.json
+███████
+poc of  the asw keys 
+████
+and also 
+████
+reference 
+{F3097699}
+and the enum for it 
+████████
+## Supporting Material/References
+  *https://hackerone.com/reports/1720278
+  * https://hackerone.com/reports/1580567
+
+## Impact
+
+## Summary:
+exposure of sensitive data lead to many serious attacks and access
 
 ## Timeline
 

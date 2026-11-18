@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2022-03-22
 submitted: 2022-03-21T20:57:04.184Z
 bounty_usd: 4000
@@ -54,6 +55,28 @@ We want to thank Addison Crump for responsibly disclosing this to us according t
 We also want to thank Andrew Gallant for developing the fix, and Pietro Albini for coordinating the disclosure and writing this advisory.
 
 https://blog.rust-lang.org/2022/03/08/cve-2022-24713.html
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Rust's regex crate guarantees a linear time complexity with regex length for compilation of untrusted regexes. However, existing mitigations for known malicious regexes are based on memory usage and, as such, do not mitigate repetitions of empty sub-expressions. For example, the following payload triggers such an issue:
+
+```re
+(?:){4294967295}
+```
+
+This will cause the regex compiler to attempt to create 4294967295 instances of an empty sub-expression, which will ultimately allocate zero bytes and therefore bypass existing memory-based mitigations. This can be further weaponised to create an exponential time complexity with regex length by using repetitions of repetitions, e.g.:
+
+```re
+(?:){64}{64}{64}{64}{64}{64}
+```
+
+This payload would cause the regex compiler to attempt to create 64^6 instances of an empty sub-expression.
+
+## Impact
+
+An attacker can induce a CPU time-based denial of service with effectively infinite CPU time, which would cause the service to become entirely unavailable.
 
 ## Timeline
 

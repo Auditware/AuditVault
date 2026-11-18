@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2024-08-17
 submitted: 2024-06-08T14:23:10.555Z
 bounty_usd: null
@@ -24,6 +25,23 @@ title: "FULL ACCOUNT TAKEOVER"
 - Report: [https://hackerone.com/reports/2542372](https://hackerone.com/reports/2542372)
 - CWE: N/A
 - Submitted: 2024-06-08T14:23:10.555Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Using the selfservice portal @ https://mymtn.com.ng/ an attacker can easily takeover any nigerian mtn phone number, and get access to some information, like date of birth, full name, etc. The attacker can also make use of any airtime found on the account.
+
+## Steps To Reproduce:
+I have made a detailed video showing the process.
+
+## Impact
+
+Full Access to the Account
+Access to some private information, like date of birth, nin, etc
+Access to use up all credits and airtime on the account,
+Access to modify the data on the account
 
 ## Timeline
 

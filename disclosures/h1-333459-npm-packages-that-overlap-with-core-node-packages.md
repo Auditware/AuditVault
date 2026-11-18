@@ -9,6 +9,7 @@ tags:
 substate: "informative"
 weakness: "Phishing"
 enriched: true
+body: true
 date: 2018-06-16
 submitted: 2018-04-04T16:09:43.640Z
 bounty_usd: null
@@ -26,6 +27,25 @@ title: "npm packages that overlap with core node packages"
 - Report: [https://hackerone.com/reports/333459](https://hackerone.com/reports/333459)
 - CWE: Phishing
 - Submitted: 2018-04-04T16:09:43.640Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi,
+  
+
+I have [posted here](https://github.com/npm/registry/issues/306), but I wanted to make you aware of this easy social engineering trick. I do not want to claim any of these are currently malicious, but it they easily could be.
+
+  
+
+Thanks,
+
+Marc
+
+## Impact
+
+The attacker could do anything...use the postinstall as the user, work the same as steal data, etc.
 
 ## Timeline
 

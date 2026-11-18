@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Use of Default Credentials"
 enriched: true
+body: true
 date: 2023-05-15
 submitted: 2023-04-07T19:31:53.668Z
 bounty_usd: null
@@ -25,6 +26,41 @@ title: "Default Credentials on Kinetic Core System Console - https://███�
 - Report: [https://hackerone.com/reports/1938693](https://hackerone.com/reports/1938693)
 - CWE: Use of Default Credentials
 - Submitted: 2023-04-07T19:31:53.668Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+The Kinetic Core System Console application has weak credentials of **admin/admin**.
+
+## References
+[https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/02-Testing_for_Default_Credentials](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/02-Testing_for_Default_Credentials)
+
+## Impact
+
+Potential attackers could identify technologies being used underneath. This would allow for them to find potential exploits.
+In addition, the application is disclosing server logs, users in the database with their emails and names, system activity, and much more.
+Check the uploaded image for additional information.
+This information should not be available. 
+With addition of sensitive data being shown, this is a serious issue.
+
+## System Host(s)
+█████
+
+## Affected Product(s) and Version(s)
+Kinetic Core System Console - 2.1.0-SNAPSHOT
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+1. Browse to the [Login page](https://████/kinetic/app/).
+2. Login using credentials of **admin/admin**.
+3. You should now be logged into an admin account.
+
+## Suggested Mitigation/Remediation Actions
+Change admin's password to something more secure.
 
 ## Timeline
 

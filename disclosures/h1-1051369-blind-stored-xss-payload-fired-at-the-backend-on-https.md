@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2021-03-24
 submitted: 2020-12-05T21:27:52.228Z
 bounty_usd: null
@@ -25,6 +26,49 @@ title: "Blind Stored XSS Payload fired at the backend on https://█████
 - Report: [https://hackerone.com/reports/1051369](https://hackerone.com/reports/1051369)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2020-12-05T21:27:52.228Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+I have just gotten an email notification from my XSSHunter payload that my blind stored XSS has been triggered by an administrator on the █████████ site, in the following URL:
+
+```javascript
+https://█████/████
+```
+
+Admin IP address: 
+████████
+
+User-Agent:
+█████████
+
+Cookies:
+```javascript
+██████
+```
+Injection Image:
+
+███████
+
+DB Creds exposed:
+
+██████████.█████\█████a
+
+## Suggested Mitigation/Remediation Actions
+
+Sanitizing the input on the back-end as well
+
+##Best Regards
+nagli
+
+## Impact
+
+Ability to capture administrator action when preforming activities on the back-end.
+Extractions of DB credentials.
+Access to private information.
+Stealing the cookies of the administrator.
 
 ## Timeline
 

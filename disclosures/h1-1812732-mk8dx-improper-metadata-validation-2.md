@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Array Index Underflow"
 enriched: true
+body: none
 date: 2023-08-17
 submitted: 2022-12-20T16:17:53.885Z
 bounty_usd: null

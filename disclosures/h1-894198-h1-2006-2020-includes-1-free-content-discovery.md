@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true
+body: true
 date: 2020-06-18
 submitted: 2020-06-09T02:54:25.512Z
 bounty_usd: null
@@ -25,6 +26,22 @@ title: "[H1-2006 2020]  Includes 1 free content discovery"
 - Report: [https://hackerone.com/reports/894198](https://hackerone.com/reports/894198)
 - CWE: Improper Restriction of Authentication Attempts
 - Submitted: 2020-06-09T02:54:25.512Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary
+
+Got it! Thanks guys for going through the trouble to make these. Best regards @nahamsec @adamtlangley @B3nac for hosting and @hackingfish @zonkism and @clos for peer support to make it.
+
+Writeup to follow, but let's have the flag first!
+
+{F859962}
+
+## Impact
+
+Participating in CTFs can cause sleepless nights, severe addiction and vastly great learning experiences. Handle with care. For remediation, it's advisable to host more CTFs in the near future. Remember to check out the writeups afterwards!
 
 ## Timeline
 

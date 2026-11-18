@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2019-10-08
 submitted: 2018-03-09T20:29:06.164Z
 bounty_usd: null
@@ -25,6 +26,29 @@ title: "Publicly accessible Order confirmations leaking User Emails on ███
 - Report: [https://hackerone.com/reports/323992](https://hackerone.com/reports/323992)
 - CWE: Information Disclosure
 - Submitted: 2018-03-09T20:29:06.164Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+I noticed that a user's order confirmation was publicly accessible leaking email information
+**Description:**
+An attacker can gleam sensitive information that is stored in the order confirmation file
+## Impact
+Medium
+## Step-by-step Reproduction Instructions
+
+https://██████████/BinaryHandler.ashx?RecordID=MZtO1v39KiFWXykCvQEcOw%3D%3D
+
+## Product, Version, and Configuration (If applicable)
+N/A
+## Suggested Mitigation/Remediation Actions
+Scrub user data
+
+## Impact
+
+Attackers can steal PII
 
 ## Timeline
 

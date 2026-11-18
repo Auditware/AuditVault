@@ -7,6 +7,7 @@ tags:
 substate: "not-applicable"
 weakness: null
 enriched: true
+body: true
 date: 2022-03-26
 submitted: 2021-08-24T17:10:12.801Z
 bounty_usd: null
@@ -24,6 +25,26 @@ title: "OTP reflecting in response sensitive data exposure leads to account take
 - Report: [https://hackerone.com/reports/1318087](https://hackerone.com/reports/1318087)
 - CWE: N/A
 - Submitted: 2021-08-24T17:10:12.801Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Sensitive data that is otp is reflecting in the response of phone number otp verification in https://app.upchieve.org 
+
+## Steps To Reproduce:
+
+
+  1. Signin with a account
+  2.After signin it will ask for phone number for otp verification.
+3.Capture the request using burpsuite and see the response 
+4.Now otp is exposing in the response.
+5.Account take over is happening.
+
+## Impact
+
+Any attacker can login into user account with his/her otp verification which is a high impact of this website.sensitive data is exposing here
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Authentication Bypass Using an Alternate Path or Channel"
 enriched: true
+body: true
 date: 2021-11-13
 submitted: 2020-12-21T09:30:04.359Z
 bounty_usd: null
@@ -25,6 +26,41 @@ title: "Unauthorized access to employee panel with default credentials."
 - Report: [https://hackerone.com/reports/1063298](https://hackerone.com/reports/1063298)
 - CWE: Authentication Bypass Using an Alternate Path or Channel
 - Submitted: 2020-12-21T09:30:04.359Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hello, 
+When hunting for your web application.
+
+I have managed to go https://cars.fas.gsa.gov/cars/cars and get displayed with a form.
+I have already tried to login to Cars and without success.
+However i've noticed the loginChk() function and change the value of the form hence bypassing it and logging in succesfuly.
+
+## Steps To Reproduce:
+
+
+  1. go to https://cars.fas.gsa.gov/cars/cars
+  2. type loginChk()  function in console. 
+  3. It would return false. 
+  4. Now  type in console ( can be opened using F12). 
+       document.forms[0].scSelCen.value = "admin"
+  5. Now try to login by clicking on CARS button.
+
+## Supporting Material/References:
+Navigator used : google chrome.
+
+If you need any additional information. feel free to ask me.
+
+PS :  I think the website went for a maintenance right now.
+Even though i didn't use anything of that panel.
+
+## Impact
+
+Any attacker would have the access to admin panel and do whatever he wants.
+As i can see , it's a platform for reporting accidents.
 
 ## Timeline
 

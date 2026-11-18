@@ -8,6 +8,7 @@ tags:
 substate: "informative"
 weakness: "Business Logic Errors"
 enriched: true
+body: true
 date: 2020-10-05
 submitted: 2020-05-04T14:12:42.165Z
 bounty_usd: null
@@ -25,6 +26,35 @@ title: "Bypass hide download Nextcloud Share"
 - Report: [https://hackerone.com/reports/865777](https://hackerone.com/reports/865777)
 - CWE: Business Logic Errors
 - Submitted: 2020-05-04T14:12:42.165Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary
+Hello everyone, accidentally browsing through nextcloud, I have found a small vulnerability on nextcloud server. This vulnerability allow download the file when the download function has been hidden
+Here is the error details.
+If anything is wrong please respond to me. Thanks you.
+## Description
+I sharing folder for another ( download not hide)
+{F814529}
+{F814531}
+Of course, the download function is still enabled, I will have the download request as below
+{F814536}
+I then disabled download on the entire file folder  
+{F814542}
+{F814546}
+But the download link created on the server does not change or change the permissions, I can completely download the file to continue
+{F814548}
+{F814549}
+{F814552}
+
+## Platform(s) Affected:
+Nextcloud Server
+
+## Impact
+
+Sensitive documents after sharing that do not allow downloading will be reloaded even if disabled, for anyone
 
 ## Timeline
 

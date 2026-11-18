@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Deserialization of Untrusted Data"
 enriched: true
+body: true
 date: 2019-04-23
 submitted: 2019-04-19T14:38:45.548Z
 bounty_usd: null
@@ -26,6 +27,16 @@ title: "Deserialization of Untrusted Data in www/delivery/dxmlrpc.php"
 - Report: [https://hackerone.com/reports/542670](https://hackerone.com/reports/542670)
 - CWE: Deserialization of Untrusted Data
 - Submitted: 2019-04-19T14:38:45.548Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+An attacker could send a specifically crafted payload to the XML-RPC invocation script and trigger the unserialize() call on the first parameter in the "pluginExecute" RPC method.
+
+## Impact
+
+Such vulnerability could be used to perform various types of attacks, e.g. exploit serialize-related PHP vulnerabilities or PHP object injection.
 
 ## Timeline
 

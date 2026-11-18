@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authorization"
 enriched: true
+body: none
 date: 2021-12-31
 submitted: 2021-08-21T06:13:10.408Z
 bounty_usd: 2000

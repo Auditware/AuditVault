@@ -11,6 +11,7 @@ tags:
 substate: "resolved"
 weakness: "Cleartext Transmission of Sensitive Information"
 enriched: true
+body: none
 date: 2023-08-03
 submitted: 2023-04-11T05:27:30.527Z
 bounty_usd: null

@@ -9,6 +9,7 @@ tags:
 substate: "informative"
 weakness: "Information Exposure Through Directory Listing"
 enriched: true
+body: true
 date: 2024-10-22
 submitted: 2024-10-16T14:44:33.783Z
 bounty_usd: null
@@ -26,6 +27,28 @@ title: "Information Disclosure Due To exposed .env file (Directory Listing) at �
 - Report: [https://hackerone.com/reports/2784712](https://hackerone.com/reports/2784712)
 - CWE: Information Exposure Through Directory Listing
 - Submitted: 2024-10-16T14:44:33.783Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+A .env file was discovered on the server at ████, exposing sensitive application configurations, including database credentials, email settings, and more. This information could allow an attacker to gain unauthorized access to critical systems and services.
+
+**Steps to Reproduce:**
+
+1. Open a web browser.
+2. Navigate to ████████.
+3. The .env file content is displayed, revealing sensitive information.
+
+**PoC Video Link:** ██████
+
+## Impact
+
+The exposed .env file could lead to multiple security threats, including but not limited to:
+
+Unauthorized database access using DB_HOST, DB_USERNAME, and DB_PASSWORD.
+Compromise of email services via MAIL_USERNAME and MAIL_PASSWORD.
+Ability to access or manipulate other connected services.
 
 ## Timeline
 

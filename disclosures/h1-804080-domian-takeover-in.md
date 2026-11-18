@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Phishing"
 enriched: true
+body: true
 date: 2020-05-14
 submitted: 2020-02-25T03:42:45.030Z
 bounty_usd: null
@@ -25,6 +26,17 @@ title: "Domian Takeover in [███████]"
 - Report: [https://hackerone.com/reports/804080](https://hackerone.com/reports/804080)
 - CWE: Phishing
 - Submitted: 2020-02-25T03:42:45.030Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+* subscription of ████ is expired so any attacker can takeover it
+
+## Impact
+
+* phishing attacks if any attacker takeovr the domain
 
 ## Timeline
 

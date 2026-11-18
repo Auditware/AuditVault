@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Authentication Bypass Using an Alternate Path or Channel"
 enriched: true
+body: none
 date: 2021-01-04
 submitted: 2020-11-20T03:00:40.202Z
 bounty_usd: null

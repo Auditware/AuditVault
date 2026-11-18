@@ -8,6 +8,7 @@ tags:
 substate: "spam"
 weakness: null
 enriched: true
+body: true
 date: 2017-12-15
 submitted: 2017-10-24T19:09:57.400Z
 bounty_usd: null
@@ -25,6 +26,12 @@ title: "Take back my all data from limfuimay@gmail.com"
 - Report: [https://hackerone.com/reports/282588](https://hackerone.com/reports/282588)
 - CWE: N/A
 - Submitted: 2017-10-24T19:09:57.400Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Attack
 
 ## Timeline
 

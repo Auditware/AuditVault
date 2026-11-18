@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2022-05-14
 submitted: 2022-03-19T14:54:17.726Z
 bounty_usd: null
@@ -24,6 +25,27 @@ title: "Download full backup  [Mtn.co.rw]"
 - Report: [https://hackerone.com/reports/1516520](https://hackerone.com/reports/1516520)
 - CWE: N/A
 - Submitted: 2022-03-19T14:54:17.726Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+I discovered few critical vulnerabilities here, one of them is exposed backup files via directory listing.
+
+
+## Steps To Reproduce:
+
+go to https://mtn.co.rw/mtn.zip and download the file
+extract the file and open
+you will see the full backup of the website
+
+## Similar report:
+https://hackerone.com/reports/684838
+
+## Impact
+
+Source code & DB credentials leakage. Attacker can use it to compromise the resource.
 
 ## Timeline
 

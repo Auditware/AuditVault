@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2020-11-18
 submitted: 2020-09-03T17:41:58.243Z
 bounty_usd: null
@@ -32,6 +33,34 @@ If you want to follow me, here is my linkedin & twitter accounts:
 https://twitter.com/alicanact60
 https://tr.linkedin.com/in/alicanact60
 
+@mygf
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello there,
+I hope all is well!
+
+Steps:
+1. Go to `https://intensedebate.com/signup` and create 2 accounts.
+2. Login as victim and go to `https://www.intensedebate.com/edit-user-profile`
+3. Click `Add Blog / Website` text and fill the form > click `Save Settings` button
+4. Go to `https://www.intensedebate.com/edit-user-profile`, again and search `radMainSite` text in page source and copy value.   
+{F975085}
+5. Then login as attacker.
+6. Go to `https://www.intensedebate.com/edit-user-profile` > click `Add Blog / Website` text and fill the form > click `Save Settings` button
+7. Go to `https://www.intensedebate.com/edit-user-profile`, again and click `Save Settings` button > open burp suite and change `hidBlogID` parameter with victim's `hidBlogID`.
+8. Forward the request and go to victim's account. Check your website informations. You will see it's changed.
+
+PoC:   
+{F975096}
+
+## Impact
+
+Changing victim's website/blog informations.
+
+Best Regards,
 @mygf
 
 ## Timeline

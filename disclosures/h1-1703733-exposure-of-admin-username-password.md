@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true
+body: true
 date: 2022-12-25
 submitted: 2022-09-18T10:24:40.552Z
 bounty_usd: null
@@ -25,6 +26,61 @@ title: "Exposure Of Admin Username & Password"
 - Report: [https://hackerone.com/reports/1703733](https://hackerone.com/reports/1703733)
 - CWE: Insecure Storage of Sensitive Information
 - Submitted: 2022-09-18T10:24:40.552Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello Team, 
+Ther an exposure of your username and password on this    subdomain █████
+
+    uid: "mtnng",
+        passwd: "██████████",
+
+
+
+Steps To Reproduce:
+
+Visit ███ 
+
+Now, press CTRL+U to view the source code of this page,
+
+
+Look for this code
+
+
+
+
+       console.log(message);
+    }
+}
+
+    (function (){
+    const plid = 73;
+
+    const mtnContainer = document.getElementById("mtn20238");
+    const mtnUri = mtnContainer.childNodes[0].getAttribute("href");
+    mtnContainer.addEventListener("click", ()=>fetch(mtnUri).catch(()=>{}));
+
+    window.mobucksApi.placeAd({
+        containerElementId: "mtn20238",
+        uid: "mtnng",
+        passwd: "███████",
+        plid:plid,
+        }, () => { 
+            typeof mtnNoBanner == "function" && mtnNoBanner(plid,mtnContainer);
+
+## Impact
+
+The exposed password is in md5 which I was able to decrypt easily
+
+uid: mtnng
+hash = bd31568138edbfc0552a1ecc6886ea
+plain password: ███
+
+And as an attacker, this can be abused in lots of ways such as exposing some client's info
+
+████
 
 ## Timeline
 

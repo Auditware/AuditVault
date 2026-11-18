@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "XML External Entities (XXE)"
 enriched: true
+body: true
 date: 2019-10-04
 submitted: 2017-05-12T10:41:43.936Z
 bounty_usd: null
@@ -25,6 +26,30 @@ title: "XXE in DoD website that may lead to RCE"
 - Report: [https://hackerone.com/reports/227880](https://hackerone.com/reports/227880)
 - CWE: XML External Entities (XXE)
 - Submitted: 2017-05-12T10:41:43.936Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+XXE in https://█████
+
+**Description:**
+A malicious user can modify an XML-based request to include XML content that is then parsed locally.
+
+## Impact
+An attacker can use an XML external entity vulnerability to send specially crafted unauthorized XML requests, which will be processed by the XML parser. The attacker can use an XML external entity vulnerability for getting unauthorised access to the OS file system.
+
+## PoC
+
+```
+POST /PSIGW/PeopleSoftServiceListeningConnector HTTP/1.1
+Host: https://███
+Content-type: text/xml
+Content-Length: 50
+
+<!DOCTYPE a PUBLIC "-//B/A/EN" "HELLO_XXE"><a></a>
+```
 
 ## Timeline
 

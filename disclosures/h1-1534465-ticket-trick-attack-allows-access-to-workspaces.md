@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2026-09-01
 submitted: 2022-04-07T19:37:11.643Z
 bounty_usd: null
@@ -25,6 +26,29 @@ title: "Ticket Trick Attack allows access to ████████' workspace
 - Report: [https://hackerone.com/reports/1534465](https://hackerone.com/reports/1534465)
 - CWE: Improper Access Control - Generic
 - Submitted: 2022-04-07T19:37:11.643Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+████████ does not validate the ownership of an email before allowing access on its support portal . This leads to "ticket trick attack". An attacker can login, signup, and interact as "████████" .
+Steps to reproduce :
+1. Lets say Rockstar games has an account on website "organisation.com" with email "████████".
+2. the website "organisation.com" sends a login link when an email is entered on the login page.
+3. The login link is sent from email address "████████"
+4. An attacker creates an account on ████████ with email "████████"
+5. Attacker logs into ████████ support portal.
+6. Attacker goes to "organisation.com" and requests a login link for " ████████" .
+7. An email containing login link is sent to "████████" from "████████"
+8.This creates a support ticket for "████████".
+9. Since the attacker is logged in as "████████" on "████████' support portal he/she can see the contents of the email in "Dashboard" on support portal .
+10. The attacker opens the login link and logs in as " ████████" on "organisation.com". 
+
+To demonstrate impact, I have created an account on workspace management site "████████" , the login is done through a link sent on the email but I was able to login as ████████ without owning that email address through exploitation of this vulnerability.
+
+## Impact
+
+An attacker can login/reset passwords for accounts belonging to ████████ on various site leading to unauthorised access and sensitive information disclosure.
 
 ## Timeline
 

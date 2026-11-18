@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2020-07-29
 submitted: 2020-07-28T22:03:33.958Z
 bounty_usd: null
@@ -31,6 +32,22 @@ title: "Stored XSS in my staff name fired in another your internal panel"
 Several years ago, @cyber__sec placed a cross-site scripting payload in the name of a staff member on his test shop. This payload recently executed in our internal administration panel, alerting us to a cross-site scripting bug. Because @cyber__sec's payload triggered the bug, we asked him to submit a report.
 
 We awarded the maximum bounty under our Cross-site scripting category because the payload executed in our internal administrator panel, resulting in a high security impact.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi all,
+
+I had lots of tests for bug bounty in my test store "trstore-3.myshopify.com" (created about 4 years ago) and then one of your developers noticed that a stored cross-site scripting payload in my staff name fired in another your internal panel. 
+
+I have attached the email sent to me by your collegue  and I'd like to get a award and I am very happy.
+
+Thanks alot.
+
+## Impact
+
+Stored XSS
 
 ## Timeline
 

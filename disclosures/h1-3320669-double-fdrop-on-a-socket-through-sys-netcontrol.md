@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Double Free"
 enriched: true
+body: none
 date: 2026-05-01
 submitted: 2025-08-30T02:49:16.150Z
 bounty_usd: 10000

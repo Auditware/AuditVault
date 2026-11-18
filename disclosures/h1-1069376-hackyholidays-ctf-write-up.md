@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2021-01-12
 submitted: 2020-12-31T17:32:21.839Z
 bounty_usd: null
@@ -24,6 +25,19 @@ title: "[hackyholidays] CTF write-up"
 - Report: [https://hackerone.com/reports/1069376](https://hackerone.com/reports/1069376)
 - CWE: N/A
 - Submitted: 2020-12-31T17:32:21.839Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+hi, this is my write-up for hackyholidays CTF.
+I attached the write-up in PDF format.
+thanks, REND
+
+## Impact
+
+saving the Christmas...
+fix this otherwise people would be happy.
 
 ## Timeline
 

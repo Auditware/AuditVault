@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2020-08-26
 submitted: 2019-07-17T06:17:40.240Z
 bounty_usd: 2500
@@ -26,6 +27,29 @@ title: "Stored XSS in 'Create Groups'"
 - Report: [https://hackerone.com/reports/647130](https://hackerone.com/reports/647130)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2019-07-17T06:17:40.240Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+> NOTE! Thanks for submitting a report! Please replace *all* the (parenthesized) sections below with the pertinent details. Remember, the more detail you provide, the easier it is for us to triage and respond quickly, so be sure to take your time filling out the report!
+
+### Summary
+
+Stored attacks are those where the injected script is permanently stored on the target servers, such as in a database, in a message forum, visitor log, comment field, etc. The victim then retrieves the malicious script from the server when it requests the stored information. Stored XSS is also sometimes referred to as Persistent or Type-I XSS. 
+
+### Steps to reproduce
+
+1. Login to [Gitlab](https://gitlab.com)
+2. Create a new group with xss payload
+payload i use = "><img src=x onerror=prompt(123)>
+3. Open Group
+4. To trigger XSS you can click "NEW PROJECT"
+5. XSS Trigger
+
+## Impact
+
+Can steal Cookie, Can run javascript code, etc
 
 ## Timeline
 

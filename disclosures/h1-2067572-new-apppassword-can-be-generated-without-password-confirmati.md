@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2023-08-10
 submitted: 2023-07-12T19:28:03.088Z
 bounty_usd: 250
@@ -29,6 +30,19 @@ title: "New AppPassword can be generated without password confirmation"
 ## Report summary
 
 Security advisory at https://github.com/nextcloud/security-advisories/security/advisories/GHSA-j4qm-5q5x-54m5
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+There is protection on https://github.com/nextcloud/server/blob/master/apps/settings/lib/Controller/AuthSettingsController.php#L122 that you must have recently entered your password to be able to generate a new AppPassword. However if an attacker would obtain access to your system (say you forgot to lock it when taking a quick bathroom break).
+
+They can abuse a route to just obtain this. ```https://SERVER/ocs/v2.php/core/getapppassword```
+Probably without you ever noticing.
+
+## Impact
+
+The password confirmation to generate an app password is effectively useless as it is trivial to bypass.
 
 ## Timeline
 

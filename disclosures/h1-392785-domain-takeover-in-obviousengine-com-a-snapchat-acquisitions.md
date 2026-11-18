@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2018-10-07
 submitted: 2018-08-10T15:15:07.563Z
 bounty_usd: null
@@ -25,6 +26,37 @@ title: "Domain Takeover in [obviousengine.com] a snapchat acquisitions"
 - Report: [https://hackerone.com/reports/392785](https://hackerone.com/reports/392785)
 - CWE: Privilege Escalation
 - Submitted: 2018-08-10T15:15:07.563Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello,
+
+##Summary
+while searching in snapchat acquisitions i found  ` obviousengine ` moe information here https://www.crunchbase.com/organization/obvious-engineering#section-overview
+and i found that it's pointing to Github page so i claimed it 
+
+##POC
+- when i visit it was look like 
+
+{F331040}
+
+- i successfully takeover it 
+
+{F331041}
+
+## Impact
+
+Domain takeover is abused for several purposes:
+
+* Malware distribution
+* Phishing / Spear phishing
+* XSS
+* Authentication bypass
+* ...
+
+Thanks
 
 ## Timeline
 

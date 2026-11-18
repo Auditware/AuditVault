@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2021-01-12
 submitted: 2019-08-29T01:13:11.963Z
 bounty_usd: null
@@ -25,6 +26,32 @@ title: "Authentication bypass and RCE on the https://████ due to exposed
 - Report: [https://hackerone.com/reports/684070](https://hackerone.com/reports/684070)
 - CWE: Improper Authentication - Generic
 - Submitted: 2019-08-29T01:13:11.963Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Description
+Hello. I was able to identify Cisco TelePresence SX80 device located on the https://█████
+According to the IP Info: https://ipinfo.io/████████it belongs to ASN with ID 
+```
+███████
+```
+so it's likely in scope of the program.
+The mentioned instance has default credentials `████`
+
+##POC
+https://███████
+Login with `█████████`
+████
+Since we are logged in as ███, we can completely control the device and all connections, and add our startup scripts via https://██████████/web/scripts
+
+##Suggested fix
+Change the credentials and likely you will need to reset the device
+
+## Impact
+
+Potential device compromise and code execution. This devices are used mainly for trainings, briefings, and demonstration rooms, as well as auditoriums, so attacker with full control of the device potentially can intercept the data (RCE potential is interesting, but ability to silently compromise the device and use it as backdoor can be much more harmful).
 
 ## Timeline
 

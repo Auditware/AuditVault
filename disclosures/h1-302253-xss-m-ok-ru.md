@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2018-06-30
 submitted: 2018-01-03T22:22:26.486Z
 bounty_usd: null
@@ -25,6 +26,33 @@ title: "Очень жесткая XSS в личных сообщениях m.ok.
 - Report: [https://hackerone.com/reports/302253](https://hackerone.com/reports/302253)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2018-01-03T22:22:26.486Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Приветствую.
+
+Нашел багу в личных сообщениях в мобильной версии
+{F251208}
+
+Что нужно, чтоб заюзать:
+
+1. Переходим в группу https://m.ok.ru/group/54904397693159/market
+2. Ищем товар единственный на страничке
+{F251213}
+3. Переходим на него и нажимаем на кнопку "Связаться с продавцом" (https://m.ok.ru/group/54904397693159/market)
+{F251215}
+4. Видим алерт.
+{F251216}
+
+
+Нет фильтрации служебных символов тут -
+<div class="discus_dialogs_topic emphased tx-ellip">"&gt;<img src="x" onerror="alert()"></div>
+
+## Impact
+
+XSS.
 
 ## Timeline
 

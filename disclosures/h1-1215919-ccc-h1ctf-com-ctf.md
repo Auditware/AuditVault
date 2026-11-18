@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: true
 date: 2021-06-18
 submitted: 2021-06-03T00:44:27.110Z
 bounty_usd: null
@@ -25,6 +26,19 @@ title: "ccc.h1ctf.com CTF"
 - Report: [https://hackerone.com/reports/1215919](https://hackerone.com/reports/1215919)
 - CWE: SQL Injection
 - Submitted: 2021-06-03T00:44:27.110Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Claiming the flag, writeup to follow.
+██████████
+██████
+
+## Impact
+
+.
 
 ## Timeline
 

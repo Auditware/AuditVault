@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2021-03-11
 submitted: 2021-02-17T22:01:23.445Z
 bounty_usd: null
@@ -25,6 +26,40 @@ title: "critical information disclosure"
 - Report: [https://hackerone.com/reports/1106009](https://hackerone.com/reports/1106009)
 - CWE: Information Disclosure
 - Submitted: 2021-02-17T22:01:23.445Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Description:
+
+hey all ,
+
+I have found critical information through this endpoint /██████;
+
+this endpoint contains all env vars used in a  www.██████ such as server credentials, db ,mail , twitter client_id and client_secret , facebook client_id and client_secret, etc...
+
+## Impact
+
+full access control on  every services on website
+
+## System Host(s)
+www.█████████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Go to
+
+https://www.█████████/████████; 
+
+you need to put ; to bypass 401 error
+
+## Suggested Mitigation/Remediation Actions
 
 ## Timeline
 

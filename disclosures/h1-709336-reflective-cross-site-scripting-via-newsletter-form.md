@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2019-10-11
 submitted: 2019-10-08T02:36:01.197Z
 bounty_usd: 2000
@@ -33,6 +34,25 @@ This is a reflective cross-site scripting in the newsletter signup feature of *.
 This allows escaping the value attribute on an input tag to add an onfocus attribute which contains javascript and finishing it off with an autofocus to trigger the event on page load.
 
 Extra spaces and square brackets "[]" were causing the payload to fail which made it difficult to retrieve sensitive data from requests to the admin panel. This was circumvented by using "split", "slice", "pop" and "shift" to move around the response data to grab administrative API keys from the /admin/apps endpoint.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+*.myshopify.com is vulnerable to a reflective cross-site scripting attack in the newsletter form. This can be crafted to trigger on a page load without any further user interaction.
+
+The following example url shows this vulnerability:
+```
+https://testbuguser.myshopify.com/?contact[email]%20onfocus%3djavascript:alert(%27xss%27)%20autofocus%20a=a&form_type[a]aaa
+```
+
+This was tested on a newly registered store "testbuguser.myshopify.com"
+
+If you require any additional details, please do not hesitate to bump.
+
+## Impact
+
+This attack could be leveraged to compromise administrative sessions or perform actions on behalf of users with the same level of privilege as the user.
 
 ## Timeline
 

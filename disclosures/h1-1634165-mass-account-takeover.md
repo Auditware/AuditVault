@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Misconfiguration"
 enriched: true
+body: none
 date: 2022-12-21
 submitted: 2022-07-12T07:31:58.207Z
 bounty_usd: null

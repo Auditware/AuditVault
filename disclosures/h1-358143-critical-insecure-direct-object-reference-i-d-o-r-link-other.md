@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privacy Violation"
 enriched: true
+body: none
 date: 2020-08-19
 submitted: 2018-05-27T19:03:57.485Z
 bounty_usd: null

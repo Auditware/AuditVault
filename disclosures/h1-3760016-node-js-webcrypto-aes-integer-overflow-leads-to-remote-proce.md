@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Integer Overflow"
 enriched: true
+body: none
 date: 2026-06-25
 submitted: 2026-05-25T08:37:33.766Z
 bounty_usd: null

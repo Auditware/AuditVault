@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2024-11-13
 submitted: 2024-06-03T17:42:45.253Z
 bounty_usd: null
@@ -29,6 +30,29 @@ title: "Can see phone numbers of others by providing mail address"
 ## Report summary
 
 The issue reported was about exposure of LinkedIn member's phone number due to the logical flaw in reset password functionality. The issue has been resolved on priority. Thanks @sevada797 for the report.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+It is possible for an attacker to see anyone's phone numbers abusing bug in reset password functionality. Bug allows to see anyone's phone number via email address. I will provide video POC a bit later.
+
+Steps to reproduce.
+1) Go to `Forget password` page ███
+2) Type your email press enter
+3) After verification code is sent to your mail, Press can't access this email
+4) You will see half of the phone number with that account,  select the checkbox with phone number and press `Send code`
+5) You will be surprised seeing the phone number in the input tag visible to eye even without inspecting the page further
+Saying  `Your phone is not set up for password recovery. Please use one of the confirmed emails or eligible phone linked to your account.`
+
+## Impact
+
+The exposure of users' phone numbers presents several security and privacy risks:
+
+Privacy Violation: Users' private information is exposed without their consent.
+Phishing Attacks: Attackers can use the obtained phone numbers to launch targeted phishing attacks.
+Social Engineering: Attackers may exploit the information to impersonate users or gather more personal details through social engineering tactics.
+Further Compromise: Knowledge of the phone number could potentially aid in other forms of attacks, such as SIM swapping or bypassing two-factor authentication (2FA).
 
 ## Timeline
 

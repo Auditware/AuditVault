@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true
+body: true
 date: 2019-10-10
 submitted: 2019-07-16T12:00:00.066Z
 bounty_usd: null
@@ -29,6 +30,28 @@ title: "PII leakage-Full SSN on ███"
 ## Report summary
 
 This was a simple Google dork search as well as checking other search engines to discover sensitive documents.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+I discovered a pdf file on ████████ that outlines various information corresponding to military members. It reveals information on date of birth, where they were born, marriage status, race, children/dependents, etc
+**Description:**
+I discovered what looks to be an internal file that outlines sensitive information on various service member and looks to be publicly accessible
+## Impact
+High
+## Step-by-step Reproduction Instructions
+Visit: https://█████/wp-content/uploads/2018/12/██████████
+
+## Product, Version, and Configuration (If applicable)
+N/A
+## Suggested Mitigation/Remediation Actions
+Remove immedietly
+
+## Impact
+
+An attacker can gleam highly personal information on military members.
 
 ## Timeline
 

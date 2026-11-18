@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cryptographic Issues - Generic"
 enriched: true
+body: true
 date: 2020-07-30
 submitted: 2020-05-15T10:01:24.258Z
 bounty_usd: null
@@ -25,6 +26,29 @@ title: "RCE (Remote code execution) in one of DoD's websites "
 - Report: [https://hackerone.com/reports/874924](https://hackerone.com/reports/874924)
 - CWE: Cryptographic Issues - Generic | CVE: CVE-2017-1000486
 - Submitted: 2020-05-15T10:01:24.258Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+The targeted website is vulnerable to CVE-2017-1000486, by only running command was (whoami) to prove that the RCE exist has been run successfully on the target
+**Description:**
+The target uses a vulnerable version of primefaces : Primetek Primefaces 5.x, that is vulnerable to a weak encryption flaw resulting in remote code execution
+## Impact
+Critical
+## Step-by-step Reproduction Instructions
+Using the following exploit : https://github.com/pimps/CVE-2017-1000486
+1. python primefaces.py████████/
+
+## Product, Version, and Configuration (If applicable)
+Primefaces 5.3.6
+## Suggested Mitigation/Remediation Actions
+Primefaces has to be updated to a newer version
+
+## Impact
+
+An attacker could execute remote codes on the target system, that could impact all of the CIA triad
 
 ## Timeline
 

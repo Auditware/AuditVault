@@ -9,6 +9,7 @@ tags:
 substate: "not-applicable"
 weakness: "Path Traversal"
 enriched: true
+body: true
 date: 2022-08-11
 submitted: 2022-08-09T17:07:15.249Z
 bounty_usd: null
@@ -26,6 +27,18 @@ title: "fix(security):Path Traversal Bug"
 - Report: [https://hackerone.com/reports/1664244](https://hackerone.com/reports/1664244)
 - CWE: Path Traversal
 - Submitted: 2022-08-09T17:07:15.249Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Unsanitized input from CLI argument flows into `io.ioutil.ReadFile`, where it is used as a path. This may result in a Path Traversal vulnerability and allow an attacker to read arbitrary files.
+
+See this fix : https://github.com/hyperledger/fabric/pull/3573
+
+## Impact
+
+There is a path traversal vulnerability in the source code of fabric
 
 ## Timeline
 

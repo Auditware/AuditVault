@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true
+body: true
 date: 2020-05-14
 submitted: 2019-09-12T20:05:50.579Z
 bounty_usd: null
@@ -25,6 +26,32 @@ title: "SSN leak due to editable slides"
 - Report: [https://hackerone.com/reports/693943](https://hackerone.com/reports/693943)
 - CWE: Insecure Storage of Sensitive Information
 - Submitted: 2019-09-12T20:05:50.579Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+A presentation slide contains a screenshot of a records brief which contains an SSN
+**Description:**
+The slides try to redact the PII of the records with a blue block but we can remove it by editing the slides to remove the offending blue block
+## Impact
+Critical 
+## Step-by-step Reproduction Instructions
+We can see an officer record brief, but the area with the SSN is blocked. We can make a copy of the file and edit it to remove the blue block thus allowing us to see the SSN
+https://█████████/wp-content/uploads/2018/03/███████
+Slide 84
+███████
+█████████
+## Product, Version, and Configuration (If applicable)
+N/A
+## Suggested Mitigation/Remediation Actions
+
+Purge Doc
+
+## Impact
+
+Identity theft
 
 ## Timeline
 

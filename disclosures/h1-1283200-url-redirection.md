@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Open Redirect"
 enriched: true
+body: true
 date: 2021-07-30
 submitted: 2021-07-29T14:12:20.695Z
 bounty_usd: null
@@ -25,6 +26,23 @@ title: "url redirection"
 - Report: [https://hackerone.com/reports/1283200](https://hackerone.com/reports/1283200)
 - CWE: Open Redirect
 - Submitted: 2021-07-29T14:12:20.695Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+[the following url is vulnerable to redirect]
+
+https://app.upchieve.org
+
+## Steps To Reproduce:
+when you add @evil.com the user will be directed to evil.com
+https://app.upchieve.org@evil.com
+
+## Impact
+
+Users could get redirected to malicious domain
 
 ## Timeline
 

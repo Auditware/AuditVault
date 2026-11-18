@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2023-05-15
 submitted: 2023-03-20T00:36:50.155Z
 bounty_usd: null
@@ -26,6 +27,39 @@ title: "Sensitive Data Exposure via wp-config.php file"
 - Report: [https://hackerone.com/reports/1912671](https://hackerone.com/reports/1912671)
 - CWE: Information Disclosure
 - Submitted: 2023-03-20T00:36:50.155Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+
+Hi team,
+A copy of the WordPress config file wp-config.php has been found at  █████████ endpoint. It contains sensitive information, such as MySQL and AWS credentials, and various keys.
+
+## References
+
+https://codex.wordpress.org/WordPress_Files
+
+## Impact
+
+The page provides information to users who do not need it.
+
+## System Host(s)
+████████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+1. Go to: ███/wp-config.php_
+2. See the information.
+
+## Suggested Mitigation/Remediation Actions
+Implement access control.
 
 ## Timeline
 

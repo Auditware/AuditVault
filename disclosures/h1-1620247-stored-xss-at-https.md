@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2022-09-06
 submitted: 2022-06-30T11:47:10.088Z
 bounty_usd: null
@@ -25,6 +26,44 @@ title: "Stored XSS at https://█████"
 - Report: [https://hackerone.com/reports/1620247](https://hackerone.com/reports/1620247)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2022-06-30T11:47:10.088Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+In registeration page ( https://████ ) , first name and last name field are vulnerable to Stored Cross Site Scripting.
+
+## Proof of concept
+For the fastly test, use this credentials to login (my test account)
+> email: █████████
+password: ██████
+
+After login , alert document.cookie will triggered
+
+## Impact
+
+Stored Cross Site Scripting which attacker can execute malicious javascript payload.
+
+## System Host(s)
+████████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+1. Go to registration page ( https://████ ), insert `<svg/onload=confirm(document.cookie)>` payload in firstname and lastname fields and create account.
+2. Verified your account.
+3. Go to login page and login your account.
+4. And XSS will triggered ( XSS also triggered in `My Profile` page) .
+
+## Suggested Mitigation/Remediation Actions
+1. Filter input on arrival.
+2. Encode data on output.
+3. Content Security Policy
 
 ## Timeline
 

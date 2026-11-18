@@ -8,6 +8,7 @@ tags:
 substate: "duplicate"
 weakness: "SQL Injection"
 enriched: true
+body: none
 date: 2021-12-29
 submitted: 2020-10-08T15:36:30.857Z
 bounty_usd: null

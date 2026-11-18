@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2026-01-12
 submitted: 2025-09-05T14:16:29.163Z
 bounty_usd: null
@@ -26,6 +27,45 @@ title: "Exposed wp-config.php file in ███ National Guard website"
 - Report: [https://hackerone.com/reports/3328408](https://hackerone.com/reports/3328408)
 - CWE: Information Disclosure
 - Submitted: 2025-09-05T14:16:29.163Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+
+Hi, team! 
+I found a ██████████ National Guard website with the subdomain/domain `████████`. I know, it is strange they use the azurewebsites.us domain, but apparently it's an official website.
+I noticed that some official websites from Department of Defense have versions with the exact same website in azurewebsites.us, however I didn't find the original website with the original domain, but I really think this finding is valid.
+
+████
+███████
+█████████
+
+A copy of the WordPress config file wp-config.php has been found at `█████████` endpoint. It contains sensitive information, such as MySQL  and various keys.
+
+## Impact
+
+The page provides sensitive information, for example, the database password in plain text.
+
+## System Host(s)
+████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Open the link: ██████████
+
+████
+
+Note this detail: 'DB_HOST', '████████'
+
+## Suggested Mitigation/Remediation Actions
+Implement access control.
 
 ## Timeline
 

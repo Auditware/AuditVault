@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2022-05-01
 submitted: 2022-03-16T23:30:59.147Z
 bounty_usd: null
@@ -25,6 +26,31 @@ title: "Enumerate class codes via yahoo dork - Can access any course under teach
 - Report: [https://hackerone.com/reports/1514356](https://hackerone.com/reports/1514356)
 - CWE: Information Disclosure
 - Submitted: 2022-03-16T23:30:59.147Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello Team,
+I am quality researcher and I found some links using yahoo dorking techniques
+I used yahoo dork `site:pl.khanacademy.org/join` 
+I used Firefox browser.
+
+Steps to reproduce:
+1.Go to yahoo search page and use above query to enumerate.
+2.Create student account by filling all the required details
+3.Now you are in the class without actually invited by teacher.
+4.You can pick any course from item and start you course.
+
+I can also able to see teacher Full name- This is sensitive information 
+
+Attached POC:
+
+## Impact
+
+Any black hacker can enumerate all the classes and join in them and can make chaos.
+Some chances of IDOR too.
+If you can encrypt this class details which some hashing technique and this will not showed up with dorking queries.
 
 ## Timeline
 

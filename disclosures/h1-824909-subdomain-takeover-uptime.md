@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2020-05-05
 submitted: 2020-03-19T21:29:44.357Z
 bounty_usd: 100
@@ -25,6 +26,30 @@ title: "Subdomain Takeover uptime"
 - Report: [https://hackerone.com/reports/824909](https://hackerone.com/reports/824909)
 - CWE: Privilege Escalation
 - Submitted: 2020-03-19T21:29:44.357Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello Team:
+
+i can't report it to the company so i hope to accept it as a valid bug , i found subdomain takeover in your subdomain ```uptime.btfs.io``` , i found this subdomain pointed to uptimerobot and not claimed so i signedup in uptimerobot and claimed it.
+
+POC:
+------
+
+1 - open https://uptime.btfs.io/
+2 - you need a password to login ```A123456789```
+3 - {F753695}
+
+## Impact
+
+- Subdomain takeover can be abused to do several things like :
+Malware distribution
+Phishing / Spear phishing
+XSS
+Authentication bypass
+Legitimate mail sending and receiving on behalf of ford subdomain
 
 ## Timeline
 

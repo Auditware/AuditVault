@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2021-06-30
 submitted: 2021-05-14T04:39:24.572Z
 bounty_usd: null
@@ -25,6 +26,42 @@ title: "IDOR while uploading ████ attachments at [███████�
 - Report: [https://hackerone.com/reports/1196976](https://hackerone.com/reports/1196976)
 - CWE: Insecure Direct Object Reference (IDOR)
 - Submitted: 2021-05-14T04:39:24.572Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+There is an IDOR vulnerability in uploading attachments to the ████ section where an attacker can upload attachments in other user's █████████ if there is no attachment uploaded by a user. If this vulnerability will be used with a Race condition, it can allow an attacker to upload attachments in all-new █████████ created by users.
+
+## Impact
+
+A user can upload attachments to other users ███.
+
+## System Host(s)
+██████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+1. Go to ██████
+2. Login
+3. Go to https://███/█████
+4. Add a new █████████ and upload an attachment with that and submit it.
+5. Send the request to the repeater.
+
+████
+6. Change the `███Id` parameter value to the victim user's ██████████ id.
+
+█████████
+7. Click on the send button and you will see `success` in response.
+8. It will be uploaded in the victim user █████ section.
+
+## Suggested Mitigation/Remediation Actions
 
 ## Timeline
 

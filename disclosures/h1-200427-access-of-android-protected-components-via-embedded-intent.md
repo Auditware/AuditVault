@@ -10,6 +10,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: none
 date: 2017-07-17
 submitted: 2017-01-22T22:34:07.420Z
 bounty_usd: null

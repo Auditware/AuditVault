@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cleartext Storage of Sensitive Information"
 enriched: true
+body: true
 date: 2025-07-12
 submitted: 2025-04-18T16:11:09.376Z
 bounty_usd: null
@@ -25,6 +26,33 @@ title: "Leaked reused password for a few Khan Academy users"
 - Report: [https://hackerone.com/reports/3099978](https://hackerone.com/reports/3099978)
 - CWE: Cleartext Storage of Sensitive Information
 - Submitted: 2025-04-18T16:11:09.376Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I found A lot of credentials for your domain
+on the Telegram bot: ███
+While the exact sources of the leaked data are unknown, the volume of exposed information is substantial. This report is submitted for your review to assess and mitigate the exposure of user credentials, including emails and passwords.
+Steps To Reproduce:
+1-access this chatbot ===> ██████
+2-start the chatbot
+3 - add  www.khanacademy.org/login
+4-u will get the passwords and emails just download them ███████
+try
+(username or email : password)
+ ██████ : ███
+████ : ██████
+███ : ████████
+
+## Impact
+
+Impact
+Exposure of user emails and passwords, leading to credential compromise.
+Increased risk of account takeover (ATO) if users reuse passwords across platforms.
+Potential for phishing and social engineering attacks targeting affected users.
+Reputational damage due to leaked user data.
+Regulatory and compliance risks, depending on applicable data protection laws.
 
 ## Timeline
 

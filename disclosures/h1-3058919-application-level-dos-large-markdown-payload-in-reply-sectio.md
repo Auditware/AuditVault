@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2025-10-18
 submitted: 2025-03-25T15:57:43.111Z
 bounty_usd: null
@@ -25,6 +26,57 @@ title: "Application Level DoS - Large Markdown Payload in Reply Section Leading 
 - Report: [https://hackerone.com/reports/3058919](https://hackerone.com/reports/3058919)
 - CWE: Uncontrolled Resource Consumption
 - Submitted: 2025-03-25T15:57:43.111Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+
+An application level Denial of Service (DoS) vulnerability was identified in the reply section on https://try.discourse.org
+
+By submitting an excessively large markup payload (~800,000 characters), the server takes 30 seconds to respond before returning an HTTP/2 502 Bad Gateway error. This indicates potential resource exhaustion or backend service failure, which could be exploited to degrade or disrupt website availability.
+
+## Attack Scenario:
+
+If an attacker automates this request using multiple parallel requests (e.g., via Burp Intruder, Python scripts, or a botnet), it can cause severe resource exhaustion.
+
+The backend service will be overwhelmed, leading to widespread downtime, preventing legitimate users from accessing the forum.
+
+## Steps To Reproduce:
+1. Login with valid credentials on `https://try.discourse.org`
+
+2. Navigate to the default discobot grettings message.
+{F4182648}
+
+3. Reply the message with the following paylod while intercepting the request: `https://github.com/theteatoast/theteatoast.github.io/blob/main/payload.txt`
+{F4182646}
+
+4. Repeat the request and observe that the server takes ~30 seconds before responding with 502.
+{F4182647}
+
+##Video POC:
+{F4182629}
+
+##Suggested Mitigation:
+
+1. Implement input length restrictions on replies to prevent excessive payload sizes.
+
+2. Introduce rate-limiting and request throttling to mitigate automated abuse.
+
+3. Optimize backend request handling to reject large payloads early before processing.
+
+##Note:
+
+This Proof of Concept (PoC) was performed solely for demonstration purposes, with no intent to harm the system. I ensured minimal impact while testing.
+
+## Impact
+
+1. Attackers can exploit this to cause severe delays and temporary or prolonged service disruption.
+
+2. The lack of input validation allows attackers to send multiple large requests in parallel, leading to backend resource exhaustion.
+
+3. If automated, this attack could render the forum completely inaccessible.
 
 ## Timeline
 

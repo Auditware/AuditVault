@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2022-10-21
 submitted: 2022-09-15T01:23:29.457Z
 bounty_usd: null
@@ -25,6 +26,37 @@ title: "access nagios dashboard using default credentials in ** omon1.fpki.gov, 
 - Report: [https://hackerone.com/reports/1700896](https://hackerone.com/reports/1700896)
 - CWE: Improper Access Control - Generic
 - Submitted: 2022-09-15T01:23:29.457Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+when i performing recon on fpki.gov i found nagios dashboard in ** omon1.fpki.gov, 3.220.248.203**  and i accessed it using default credentials
+
+username:  ** nagiosadmin **
+password :  ** nagiosadmin **
+
+## Steps To Reproduce:
+
+
+  1. visit these urls : 
+        **  https://omon1.fpki.gov/nagios/side.php **
+        ** https://3.220.248.203/nagios/side.php **
+  2. he will ask to put your credentials in basic authentication enter these credentials 
+       
+         username:  ** nagiosadmin **
+         password :  ** nagiosadmin **
+
+##POC:
+
+look at poc pic
+
+## Impact
+
+attacker can make any action like an admin he has full control on your panal.
+
+thanks , have a nice day :)
 
 ## Timeline
 

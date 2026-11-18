@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true
+body: true
 date: 2020-03-07
 submitted: 2019-11-12T01:11:47.717Z
 bounty_usd: null
@@ -26,6 +27,16 @@ title: "HTTP request smuggling using malformed Transfer-Encoding header"
 - Report: [https://hackerone.com/reports/735748](https://hackerone.com/reports/735748)
 - CWE: HTTP Request Smuggling | CVE: CVE-2019-15605
 - Submitted: 2019-11-12T01:11:47.717Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Please see the attached PDF for a writeup of this vulnerability.
+
+## Impact
+
+Please see the attached PDF for a writeup of this vulnerability.
 
 ## Timeline
 

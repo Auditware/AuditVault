@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Heap Overflow"
 enriched: true
+body: true
 date: 2025-06-30
 submitted: 2025-06-29T17:33:41.745Z
 bounty_usd: null
@@ -78,6 +79,55 @@ Trust code that enforces bounds, even when nobody’s watching.
 
 Stay glitchy,
 @geeknik
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+#Summary
+A heap buffer overflow vulnerability exists in libcurl's `curl_slist_append()` function in `lib/slist.c:94`. When the function is called with a non-null-terminated string, the internal `strdup()` call triggers `strlen()` to read beyond allocated buffer boundaries, leading to a heap buffer overflow. This vulnerability can be triggered through various libcurl APIs that process user-controlled string data without proper null termination validation.
+
+
+#Steps to Reproduce (STR/POC):
+  1. Allocate a buffer of any size (e.g., 256 bytes)
+  2. Fill the buffer completely with non-null bytes (no null terminator)
+  3. Call curl_slist_append(NULL, buffer)
+  4. The strlen() call within strdup() will read past the buffer boundary
+  5. AddressSanitizer detects heap buffer overflow
+
+  Minimal reproducer:
+```c
+  char *buffer = malloc(256);
+  memset(buffer, 'A', 256); // No null termination
+  curl_slist_append(NULL, buffer); // Triggers overflow
+```
+
+{F4507009}
+
+Built and tested with libcurl, git commit `a487a4e4bddb301e44360c09a8167adc52c31e71`.
+
+## Impact
+
+Impact:
+  - Confidentiality: High - Out-of-bounds read can leak sensitive heap memory contents
+  - Integrity: Low - Limited write capability
+  - Availability: Medium - Potential denial of service via crash
+
+  The vulnerability allows attackers to:
+  1. Read arbitrary heap memory beyond allocated boundaries
+  2. Potentially crash applications using libcurl
+  3. In some scenarios, may lead to information disclosure of sensitive data from adjacent heap allocations
+
+  Attack Vectors:
+  - HTTP header processing
+  - URL parsing with malformed components
+  - Cookie handling
+  - Custom request methods
+  - Any libcurl API accepting string parameters
+
+  CVSS Score: 7.3 (High)
+
+  CVSS Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Inclusion of Sensitive Information in an Include File"
 enriched: true
+body: none
 date: 2025-09-17
 submitted: 2025-06-27T21:16:49.887Z
 bounty_usd: null

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2021-06-15
 submitted: 2021-05-13T05:39:02.825Z
 bounty_usd: null
@@ -25,6 +26,56 @@ title: "Default Admin Username and Password on █████ Server at ██�
 - Report: [https://hackerone.com/reports/1195325](https://hackerone.com/reports/1195325)
 - CWE: Improper Access Control - Generic
 - Submitted: 2021-05-13T05:39:02.825Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+A ██████ Server is running at https://███mil you can access the login at https://████mil/█████████ the application is using the default "Administrator for the default organization" credentials 
+
+#POC 
+Go to  https://███mil/████████ and login with *█████*
+
+██████████
+
+████
+
+████
+
+## How to remediate the vulnerability
+
+Change the password of the user or disable the account 
+
+## References
+█████
+https://cwe.mitre.org/data/definitions/521.html
+
+
+##EXTRA
+
+If you have any questions or concerns regarding the above let me know!
+
+Cheers,
+
+## Impact
+
+A Department of Defense website was misconfigured in a manner that may have allowed a malicious user to login with administrator for the default organization account credentials.
+
+## System Host(s)
+████mil
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Read the POC
+
+## Suggested Mitigation/Remediation Actions
+Change the password of the user or disable the account
 
 ## Timeline
 

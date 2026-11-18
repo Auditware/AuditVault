@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2019-10-08
 submitted: 2018-03-15T03:41:47.205Z
 bounty_usd: null
@@ -31,6 +32,43 @@ title: "SSRF on █████████ Allowing internal server data access
 I discovered that due to an outdated atlassian software instance, I was able to exploit an SSRF vulnerability in confluence and was able to perform several actions such as bypass any firewall/protection solutions, was able to perform XSPA through assessing the response times for ports, access Internal DoD Servers and internal services.
 
 I discuss the vulnerabilities exploited in my write which you can find here, https://medium.com/bugbountywriteup/piercing-the-veil-server-side-request-forgery-to-niprnet-access-c358fd5e249a
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+An end point on ██████ allows an internal access to the network thus revealing sensitive data and allowing internal tunneling 
+**Description:**
+OAuth Plugin allows you to provide a url that gives a snap shot of the web page. We can pass internal URLS and conduct SSRF.
+## Impact
+Critical
+## Step-by-step Reproduction Instructions
+https://███████/plugins/servlet/oauth/users/icon-uri?consumerUri=http://169.254.169.254/latest/meta-data/hostname
+We can see the follow data 
+ip-172-31-12-254.█████████.compute.internal
+https://████████/plugins/servlet/oauth/users/icon-uri?consumerUri=http://169.254.169.254/latest/meta-data/public-ipv4
+███████
+
+## Product, Version, and Configuration (If applicable)
+Jira 
+## Suggested Mitigation/Remediation Actions
+Update to recent version
+
+## Impact
+
+An attacker can tunnel into internal networks and access sensitive internal data such as AWS meta data information.
+
+The hacker selected the **Server-Side Request Forgery (SSRF)** weakness. This vulnerability type requires contextual information from the hacker. They provided the following answers:
+
+**Can internal services be reached bypassing network access control?**
+Yes
+
+**What internal services were accessible?**
+AWS Bucket  Meta data
+
+**Security Impact**
+CVE-2017-9506 - The IconUriServlet of the Atlassian OAuth Plugin from version 1.3.0 before version 1.9.12 and from version 2.0.0 before version 2.0.4 allows remote attackers to access the content of internal network resources and/or perform an XSS attack via Server Side Request Forgery (SSRF).
 
 ## Timeline
 

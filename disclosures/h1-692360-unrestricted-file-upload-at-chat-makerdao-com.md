@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Insecure Temporary File"
 enriched: true
+body: none
 date: 2020-01-15
 submitted: 2019-09-11T15:14:08.618Z
 bounty_usd: null

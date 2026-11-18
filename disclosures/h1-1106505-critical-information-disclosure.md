@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2021-03-11
 submitted: 2021-02-18T14:15:41.745Z
 bounty_usd: null
@@ -25,6 +26,40 @@ title: "critical information disclosure"
 - Report: [https://hackerone.com/reports/1106505](https://hackerone.com/reports/1106505)
 - CWE: Information Disclosure
 - Submitted: 2021-02-18T14:15:41.745Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Description:
+
+hey all ,
+
+I have found critical information through this endpoint ████
+
+on ███████  DB credentials such as DB_NAME,DB_USER,DB_PASSWORD,DB_HOST, etc..
+
+## Impact
+
+full access control on DB service on website
+
+## System Host(s)
+███
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Go to 
+
+██████/████████?aam-media=1
+
+you nedd to put ?aam-media=1  to bypass blank page
+
+## Suggested Mitigation/Remediation Actions
 
 ## Timeline
 

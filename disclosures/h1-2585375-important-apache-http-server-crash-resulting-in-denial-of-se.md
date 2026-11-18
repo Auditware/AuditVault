@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "NULL Pointer Dereference"
 enriched: true
+body: true
 date: 2024-07-13
 submitted: 2024-07-03T07:09:44.828Z
 bounty_usd: 4920
@@ -41,6 +42,19 @@ Reported: 2024-04-01
 fixed by r1918607 in 2.4.x: 2024-07-01
 Update 2.4.60 released: 2024-07-01
 Affects: 2.4.0 through 2.4.59
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I reported this vulnerability through the official Apache HTTP Server security email on April 1, 2024, and received a fix along with a CVE number on July 1, 2024. You can check detailed information from there:
+> https://httpd.apache.org/security/vulnerabilities_24.html
+
+## Impact
+
+null pointer dereference in mod_proxy in Apache HTTP Server 2.4.59 and earlier allows an attacker to crash the server via a malicious request.
+
+Users are recommended to upgrade to version 2.4.60, which fixes this issue.
 
 ## Timeline
 

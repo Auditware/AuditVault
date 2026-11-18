@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Command Injection - Generic"
 enriched: true
+body: true
 date: 2019-11-08
 submitted: 2019-04-22T00:58:17.010Z
 bounty_usd: null
@@ -25,6 +26,17 @@ title: "Privilege Escalation From user to SYSTEM via unauthenticated command exe
 - Report: [https://hackerone.com/reports/544928](https://hackerone.com/reports/544928)
 - CWE: Command Injection - Generic | CVE: CVE-2019-15595
 - Submitted: 2019-04-22T00:58:17.010Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+The vulnerability, or feature depending how you look at it, is the ability to execute commands using the 
+evostream API interface that is exposed on localhost:7440. Since the evostream service is running as SYSTEM a user can use the launchprocess command,  http://docs.evostream.com/2.0/launchProcess.html, to execute any binary with supplied arguments. The only thing that is keeping this "feature" from allowing remote code execution is the fact that it listens on localhost only. However, if it were couple with an SSRF, an attacker could achieve full remote code execution.
+
+## Impact
+
+The ability to run arbitrary commands as SYSTEM from any user.
 
 ## Timeline
 

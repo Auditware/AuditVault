@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2021-02-17
 submitted: 2020-12-09T02:09:07.615Z
 bounty_usd: null
@@ -26,6 +27,44 @@ title: "Stored XSS in wordpress.com"
 - Report: [https://hackerone.com/reports/1054526](https://hackerone.com/reports/1054526)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2020-12-09T02:09:07.615Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hello Team,
+I found the Stored XSS vulnerability in the Custom Style section, this vulnerability can result in an attacker to execute arbitrary JavaScript in the context of the attacked website and the attacked user. This can be abused to steal session cookies, performing requests in the name of the victim or for phishing attacks, by inviting the victim to become part of the manager or administrator.
+
+## Platform(s) Affected:
+wordpress.com
+
+## Steps To Reproduce:
+1. As an attacker, go to the feedback section, then go to the Polling section.
+2. Add a new post or edit an existing post.
+3. Scroll down, click All Styles.
+4. Add a new Style.
+5. Named the temporary style, click Save Style.
+6. Change the Style Name with <noscript><p title= "</noscript><img src=x onerror=alert(document.cookie)>">, check the checkbox next to Save Style, click Save Style.
+7. Script will be run.
+8. Invite the victim in a way, go to manage then users.
+9. Click invite, enter username or email, and send.
+10. As a Victim, accept the attacker's invitation.
+11. Go to the Feedback section.
+12. Then go to the Polling section.
+13. Add a new post or edit an existing post.
+14. Scroll down, click All Styles.
+15. Enter the Style that has been created by the previous Attacker.
+16. Script will be run.
+
+## Supporting Material/References:
+F1109567
+F1109568
+F1109569
+
+## Impact
+
+this vulnerability can result in an attacker to execute arbitrary JavaScript in the context of the attacked website and the attacked user. This can be abused to steal session cookies, performing requests in the name of the victim or for phishing attacks, by inviting the victim to become part of the manager or administrator.
 
 ## Timeline
 

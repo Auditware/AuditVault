@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insufficiently Protected Credentials"
 enriched: true
+body: none
 date: 2025-11-14
 submitted: 2025-11-11T16:15:13.385Z
 bounty_usd: null

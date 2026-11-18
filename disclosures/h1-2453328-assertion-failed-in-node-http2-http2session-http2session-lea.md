@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2024-04-29
 submitted: 2024-04-08T20:41:07.954Z
 bounty_usd: 3645
@@ -38,6 +39,19 @@ This vulnerability affects all users in all active release lines: 18.x, 20.x and
 Thank you, to bart for reporting this vulnerability and Anna Henningsen for fixing it.
 
 Full Security Advisory: https://nodejs.org/en/blog/vulnerability/april-2024-security-releases
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+An attacker can make the Node.js HTTP/2 server completely unavailable by sending a small amount of HTTP/2 frames packets with a few HTTP/2 frames inside. It is possible to leave some data in nghttp2 memory after reset when headers with HTTP/2 CONTINUATION frame are sent to the server and then a TCP connection is abruptly closed by the client triggering the Http2Session destructor while header frames are still being processed (and stored in memory) causing a race condition.
+
+* Advisory: https://nodejs.org/en/blog/vulnerability/april-2024-security-releases
+* HackerOne report: 2319584
+
+## Impact
+
+Server crashes instantly after sending a few HTTP/2 frames.
 
 ## Timeline
 

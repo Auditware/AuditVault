@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true
+body: true
 date: 2017-09-09
 submitted: 2017-04-08T13:09:13.224Z
 bounty_usd: null
@@ -25,6 +26,37 @@ title: "Store XSS on Informatica University via transcript (informatica.csod.com
 - Report: [https://hackerone.com/reports/219509](https://hackerone.com/reports/219509)
 - CWE: Cross-site Scripting (XSS) - Generic
 - Submitted: 2017-04-08T13:09:13.224Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi,
+
+Vulnerable field: Training Description
+
+Steps to reproduce:
+1. Login to your account and go Informatica University.
+2. You can either click on "My Training" or "Universal Profile" at the upper right hand corner of the page.
+3. You will then be redirected to the Universal profile bio page, click on the "Transcript tab"
+4. Select options on the upper right side then select "Add external training: on the drop down option.
+5. Fill out the needed information but for the Training Description use the following payload:
+'"><img src=x onerror=alert(document.cookie);>
+6. Complete the rest of the form and click on Submit.
+7. You will then be redirected to your training transcript.
+8. On the right side of the transcript which has a label withdraw, select from the drop down "View training details"
+9. The page will be redirected and you will then get the xss pop-up.
+
+Would be best to sanitize all input on this form to avoid xss. 
+
+Works on latest versions of chrome, and firefox.
+
+
+Please let me know if you need further information. Thanks!
+
+Cheers,
+
+@ninjakatz__
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2025-07-07
 submitted: 2024-12-27T15:10:29.925Z
 bounty_usd: null
@@ -25,6 +26,25 @@ title: "Git repository found"
 - Report: [https://hackerone.com/reports/2915426](https://hackerone.com/reports/2915426)
 - CWE: Information Disclosure
 - Submitted: 2024-12-27T15:10:29.925Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hello team , 
+When i research I found domain vuln to downliad git repository and i will explain that.
+
+## Steps To Reproduce:
+
+1. Add DotGit extention on your browser
+2. Now try to access to that domain https://curl.dev/
+3. You will show that extention is alert and can download that bucket.
+
+## Impact
+
+## Summary:
+The exposure of the /.git directory can lead to unauthorized access to sensitive information, such as source code, configuration files, and potentially secrets or credentials stored in the repository.
 
 ## Timeline
 

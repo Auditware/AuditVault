@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true
+body: true
 date: 2022-08-06
 submitted: 2018-09-19T07:34:01.745Z
 bounty_usd: null
@@ -26,6 +27,20 @@ title: "Brute Force of fabric-ca server admin account"
 - Report: [https://hackerone.com/reports/411364](https://hackerone.com/reports/411364)
 - CWE: Improper Restriction of Authentication Attempts
 - Submitted: 2018-09-19T07:34:01.745Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## fabric-ca server
+- Default configuration maxenrollments value -1(enable outside enrollment)
+- Listening 0.0.0.0:7054(easily discoved and can be reached)
+- No limit to wrong password try
+Above conditions result in brute force to CA server admin account
+
+## Impact
+
+## Attack gain a high-level permissioned account to permissioned network and can add\delete\update\query
 
 ## Timeline
 

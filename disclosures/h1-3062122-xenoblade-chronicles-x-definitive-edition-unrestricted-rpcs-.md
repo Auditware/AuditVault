@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Resource Injection"
 enriched: true
+body: none
 date: 2025-05-15
 submitted: 2025-03-31T01:31:01.670Z
 bounty_usd: null

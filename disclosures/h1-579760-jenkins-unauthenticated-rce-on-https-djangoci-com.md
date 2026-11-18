@@ -10,6 +10,7 @@ tags:
 substate: "informative"
 weakness: "OS Command Injection"
 enriched: true
+body: none
 date: 2019-05-16
 submitted: 2019-05-14T07:48:49.760Z
 bounty_usd: null

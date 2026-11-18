@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Handling of Unicode Encoding"
 enriched: true
+body: none
 date: 2026-06-25
 submitted: 2026-04-21T22:11:41.410Z
 bounty_usd: null

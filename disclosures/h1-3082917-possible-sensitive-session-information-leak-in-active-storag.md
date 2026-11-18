@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2025-04-27
 submitted: 2025-04-08T13:37:49.305Z
 bounty_usd: 4323
@@ -40,6 +41,19 @@ This vulnerability has been assigned the CVE identifier CVE-2024-26144.
 Versions Affected: >= 5.2.0, < 7.1.0
 Not affected: < 5.2.0, > 7.1.0
 Fixed Versions: 7.0.8.1, 6.1.7.7
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Original report: https://hackerone.com/reports/2140554
+Advisory: https://github.com/rails/rails/security/advisories/GHSA-8h22-8cf7-hq6g
+
+## Impact
+
+Active Storage, when serving files (blobs), incorrectly sends the Set-Cookie header containing the user's session cookie along with a Cache-Control: public header.
+Some certain caching proxies may cache this response, including the Set-Cookie header.
+This allows unrelated users accessing the cached content to obtain the original user's session cookie.
 
 ## Timeline
 

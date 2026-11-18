@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Reliance on Cookies without Validation and Integrity Checking in a Security Decision"
 enriched: true
+body: none
 date: 2020-12-20
 submitted: 2020-09-28T23:38:26.468Z
 bounty_usd: null

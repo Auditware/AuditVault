@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: none
 date: 2021-12-27
 submitted: 2021-07-03T07:52:27.822Z
 bounty_usd: null

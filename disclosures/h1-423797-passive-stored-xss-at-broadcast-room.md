@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: none
 date: 2018-11-06
 submitted: 2018-10-14T19:44:18.147Z
 bounty_usd: null

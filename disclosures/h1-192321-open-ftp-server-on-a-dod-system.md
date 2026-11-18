@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "File and Directory Information Exposure"
 enriched: true
+body: true
 date: 2019-10-08
 submitted: 2016-12-19T02:56:31.487Z
 bounty_usd: null
@@ -29,6 +30,14 @@ title: "Open FTP server on a DoD system"
 ## Report summary
 
 An open FTP panel was discovered which allowed any attackers to connect and upload their files. Initial probing discovered it was still being used by multiple people confirming this was still in use.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+I don't know if this qualifies but during my search I discovered an open FTP panel that I was able to successfully log into.   
+Using any FTP program,  I used File zilla and then entered ████  as my host then connected. Then I was able to look through any of the files. I noticed the last modified file was  quite recent leading me to believe it's still in us
 
 ## Timeline
 

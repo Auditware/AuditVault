@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2018-06-25
 submitted: 2018-03-13T02:01:15.805Z
 bounty_usd: null
@@ -31,6 +32,54 @@ title: "Subdomain takeover on svcgatewayus.starbucks.com"
 Subdomain takeover possible on one of Starbucks's subdomain. The subdomain pointed to Microsoft Azure Cloud App which was no longer registered under Azure.
 
 Detailed write-up: https://0xpatrik.com/subdomain-takeover-starbucks/
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello,
+
+this is pretty serious security issue in some context, so please act as fast as possible.
+
+### Overview:
+
+One of the starbucks.com subdomains is pointing to Azure, which has unclaimed CNAME record. ANYONE is able to own starbucks.com subdomain at the moment.
+
+This vulnerability is called subdomain takeover. You can read more about it here:
+
+* https://blog.sweepatic.com/subdomain-takeover-principles/
+* https://hackerone.com/reports/32825
+* https://hackerone.com/reports/175070
+* https://hackerone.com/reports/172137
+
+### Details:
+
+svcgatewayus.starbucks.com has CNAME to s00197tmp0crdfulprod0.trafficmanager.net which has CNAME to 1fd05821-7501-40de-9e44-17235e7ab48b.cloudapp.net. However, 1fd05821-7501-40de-9e44-17235e7ab48b.cloudapp.net is not registered in Azure cloud anymore and thus can be registered by anyone. After registering the Cloud App in Azure portal, the person doing so has full control over content on svcgatewayus.starbucks.com.
+
+### PoC:
+
+http://svcgatewayus.starbucks.com
+
+### Mitigation:
+
+* Remove the CNAME record from starbucks.com DNS zone completely.
+* Claim it back in Azure portal after I release it
+
+Regards,
+
+Patrik Hudak
+
+## Impact
+
+Subdomain takeover is abused for several purposes:
+
+* Malware distribution
+* Phishing / Spear phishing
+* XSS
+* Authentication bypass
+* ...
+
+List goes on and on. Since some certificate authorities (Let's Encrypt) require only domain verification, SSL certificate can be easily generated.
 
 ## Timeline
 

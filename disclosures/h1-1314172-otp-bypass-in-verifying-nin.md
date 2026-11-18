@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2022-10-17
 submitted: 2021-08-21T06:46:42.331Z
 bounty_usd: null
@@ -25,6 +26,35 @@ title: "Otp  bypass in verifying nin"
 - Report: [https://hackerone.com/reports/1314172](https://hackerone.com/reports/1314172)
 - CWE: Improper Authentication - Generic
 - Submitted: 2021-08-21T06:46:42.331Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+
+while conducting my research in your website I found that while verifying NIN number it send the otp to the enterd mobile number that can be bypassed.
+
+## Steps To Reproduce:
+
+1) Go to https://nin.mtnonline.com/nin/
+2) click submit nin.Now it will redirect to another page https://nin.mtnonline.com/nin/
+3) It asks for mobile number and National Identity Number [NIN].
+4) Enter the mobile and NIN number and click Next.It will send the otp to the mobile number.
+5) Enter any 6 digit code and click verify and capture the request in bupsuite and click action and select "Do intercept and response to the request"
+6) Now change the response status to success.
+------>Now successfully verified mobile number.
+
+## Impact
+
+The attacker can able to verify NIN with any number.
+
+
+Note: I had attached the poc video below please take a look.
+
+
+Regards,
+@aaruthra.
 
 ## Timeline
 

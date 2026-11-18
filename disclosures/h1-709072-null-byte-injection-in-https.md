@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Null Termination"
 enriched: true
+body: true
 date: 2020-05-14
 submitted: 2019-10-07T15:36:44.075Z
 bounty_usd: null
@@ -25,6 +26,31 @@ title: "Null byte Injection in https://████/"
 - Report: [https://hackerone.com/reports/709072](https://hackerone.com/reports/709072)
 - CWE: Improper Null Termination
 - Submitted: 2019-10-07T15:36:44.075Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+#Description:
+Microsoft .NET Framework is prone to multiple NULL-byte injection vulnerabilities because it fails to adequately sanitize user-supplied data.
+
+#Vulnerable URL: https://████/%2F%20This%20website%20is%20vulnerable%20to%20NULL%20BYTE%20INJECTION/
+
+#Steps to Reproduce:
+1) An attacker can exploit this issue via a browser.
+
+The following example URI request is available:
+https://███████/%2F%20This%20website%20is%20vulnerable%20to%20NULL%20BYTE%20INJECTION%00
+
+#Mitigation: https://www.securityfocus.com/bid/24791/solution
+
+#See Also: https://www.exploit-db.com/exploits/30281
+
+#Proof of Concept: Screenshots attached.
+
+## Impact
+
+An attacker can exploit these issues to access sensitive information that may aid in further attacks; other attacks are also possible.
 
 ## Timeline
 

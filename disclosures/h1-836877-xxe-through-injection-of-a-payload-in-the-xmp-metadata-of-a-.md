@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "XML External Entities (XXE)"
 enriched: true
+body: true
 date: 2020-04-21
 submitted: 2020-04-02T05:09:42.965Z
 bounty_usd: null
@@ -31,6 +32,47 @@ title: "XXE through injection of a payload in the XMP metadata of a JPEG file"
 Researcher identified an XXE issue via a JPEG file upload. Researcher worked with us to validate the vulnerability, managed to escalate to return the contents of /etc/passwd and confirmed the issue was then fixed. Informatica responded by initially disabling the feature and then further blocking access to the vulnerable endpoint. Our thanks to moebius for the report, and the detailed writeup associated with it. Some technical details have been redacted in the below. 
 
 Should there be any queries, please contact us via security@informatica.com
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Users are able to change their avatar picture. The avatar picture upload functionality is prone to a XXE attack when parsing the image file. Specifically, the XXE attack is executed through the injection of a payload in the "XMP metadata" of the uploaded JPEG file.
+
+Proof of concept (note the "Burp Collaborator Payload pointing to an External DTD"):
+```
+POST /edit-profile-avatar!uploadImage.jspa HTTP/1.1
+Host: ███████informatica.com
+
+  [...REDACTED...PLEASE.SEE.SCREENSHOTS.FOR.FULL.PAYLOAD]
+```
+
+And I received the following calls (note the User-Agent "Java██████" confirming the vulnerability):
+
+```
+Interaction 0 
+Type: HTTP 
+Client IP: ███████ 
+Timestamp: 2020-Apr-02 01:44:27 UTC  
+Protocol: HTTP  
+
+RAW HTTP request: 
+
+GET /x.dtd HTTP/1.1 
+Cache-Control: no-cache 
+Pragma: no-cache 
+User-Agent: Java██████ 
+Host: N.syuj65rfsb27o1u78jcinsinnet6ky8n.burpcollaborator.net 
+Accept: text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2 Connection: keep-alive
+```
+
+Similar calls were received from another IP address: 146.112.138.73
+
+Furthermore, the affected host should not be allowed to start a new connection to the Internet.
+
+## Impact
+
+This issue can be abused to read arbitrary files and list directory contents from the filesystem of the XML processor application. I didn't try any reading, but JAVA (JSPA is a JAVA Servlet File) is calling my external service, so the vulnerability is confirmed.
 
 ## Timeline
 

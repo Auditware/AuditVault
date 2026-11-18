@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2021-02-01
 submitted: 2020-12-28T17:39:22.701Z
 bounty_usd: null
@@ -26,6 +27,41 @@ title: "Unauthenticated access to webmail at maildev.happytools.dev leading to c
 - Report: [https://hackerone.com/reports/1067547](https://hackerone.com/reports/1067547)
 - CWE: Information Disclosure
 - Submitted: 2020-12-28T17:39:22.701Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Dear Team,
+
+Today when I trying to find bugs on happy tools I have found 2 domains below for staging environment
+- https://maildev.happytools.dev
+- https:// api.happytools.dev
+
+Two websites above ssl certificate was expired. But you can adjust your date-time to 02/02/2020 or before that time to access those sites normally
+
+## Platform(s) Affected:
+https:// api.happytools.dev
+
+## Steps To Reproduce:
+
+  1. https://api.happytools.dev/wp-login.php?action=lostpassword and forgot password for user `api`
+  1. Go to https://maildev.happytools.dev to get reset password link and set new password for user `api` (I did not try to do that)
+  1. After changing password for user `api`, we can control wordpress cms and may upload plugins/themes contain backdoor or harmful scripts to this server
+
+## Supporting Material/References:
+Some screen shots PoC
+
+{F1132811}
+
+{F1132810}
+
+████████
+
+## Impact
+
+Takeover wordpress site api.happytools.dev
 
 ## Timeline
 

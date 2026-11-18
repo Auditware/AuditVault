@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Heap Overflow"
 enriched: true
+body: none
 date: 2022-05-11
 submitted: 2021-09-24T18:00:21.219Z
 bounty_usd: null

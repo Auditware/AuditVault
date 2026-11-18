@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2018-11-13
 submitted: 2018-10-11T19:25:34.947Z
 bounty_usd: 1500
@@ -25,6 +26,23 @@ title: "Reflected XSS on $Any$.myshopify.com/admin"
 - Report: [https://hackerone.com/reports/422707](https://hackerone.com/reports/422707)
 - CWE: Cross-site Scripting (XSS) - Reflected
 - Submitted: 2018-10-11T19:25:34.947Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+# Description :
+Hi,
+I have found a reflected cross site scripting vulnerability in <any>.myshopify.com/admin through return_url parameter .
+
+# Step to reproduce :
+1-Go to https://<Any>.myshopify.com/admin/authenticate?return_url=javascript:alert(100)//
+2-Click on reload this page
+3-Xss alert message
+
+## Impact
+
+Xss attack in <Any>.myshopify.com/admin
 
 ## Timeline
 

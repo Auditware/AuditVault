@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Code Injection"
 enriched: true
+body: true
 date: 2020-06-27
 submitted: 2020-06-19T10:29:37.243Z
 bounty_usd: null
@@ -26,6 +27,62 @@ title: "bunyan - RCE via insecure command formatting"
 - Report: [https://hackerone.com/reports/902739](https://hackerone.com/reports/902739)
 - CWE: Code Injection
 - Submitted: 2020-06-19T10:29:37.243Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I would like to report RCE in bunyan
+It allows arbitrary commands remotely inside the victim's PC
+
+# Module
+
+**module name:** bunyan
+**version:** 1.8.12
+**npm page:** `https://www.npmjs.com/package/bunyan`
+
+## Module Description
+
+> Bunyan is a simple and fast JSON logging library for node.js services:
+
+## Module Stats
+
+[920,196] weekly downloads
+
+# Vulnerability
+
+## Vulnerability Description
+
+> The issue occurs because a user input is formatted inside a command that will be executed without any check. https://github.com/trentm/node-bunyan/blob/master/bin/bunyan#L1224
+
+## Steps To Reproduce:
+
+> Run the following command
+npm install bunyan
+./node_modules/bunyan/bin/bunyan -p "S'11;touch hacked ;'"
+> Recheck the files: now hacked has been created
+## Patch
+
+> Check input before command
+
+## Supporting Material/References:
+
+> State all technical information about the stack where the vulnerability was found
+
+- [OPERATING SYSTEM VERSION]: Ubuntu 18.04
+- [NODEJS VERSION]: v8.10.0
+- [NPM VERSION]: 3.5.2
+
+# Wrap up
+
+> Select Y or N for the following statements:
+
+- I contacted the maintainer to let them know: [Y/N] N 
+- I opened an issue in the related repository: [Y/N] N
+
+## Impact
+
+RCE on bunyan.
 
 ## Timeline
 

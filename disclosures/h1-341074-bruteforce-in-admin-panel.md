@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Restriction of Authentication Attempts"
 enriched: true
+body: true
 date: 2020-01-31
 submitted: 2018-04-20T12:29:20.072Z
 bounty_usd: null
@@ -25,6 +26,18 @@ title: "Bruteforce in admin panel"
 - Report: [https://hackerone.com/reports/341074](https://hackerone.com/reports/341074)
 - CWE: Improper Restriction of Authentication Attempts
 - Submitted: 2018-04-20T12:29:20.072Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello there,
+Admin panel of your website (https://nextcloud.com/wp-login.php) is vulnerable to bruteforce attacks as their is no rate-limiting.
+
+## Impact
+
+Can gain access to admin panel.
+To fix this, Just add rate limiting.
 
 ## Timeline
 

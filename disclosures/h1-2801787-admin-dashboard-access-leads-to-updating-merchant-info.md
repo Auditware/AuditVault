@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2025-03-02
 submitted: 2024-10-24T16:17:34.689Z
 bounty_usd: null
@@ -29,6 +30,47 @@ title: "Admin Dashboard Access Leads to Updating Merchant Info"
 ## Report summary
 
 A hidden registration endpoint allowed an attacker to sign up for an admin portal, granting access to all registered merchant information. With administrative control over this data, the attack possibilities were endless. The MTN team quickly responded and restricted access to internal users only.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+The ███████ application provides access to 3(Merchant, Supervisor, Admin) classes of users. Looking at the Admin side, its clear only permitted admins can login to the portal since nothing on the UI indicates a register feature. However I was able to find a registration endpoint to sign up. Now I have access to the Admin dashboard. Based on the functionalities there, it's evident an outsider shouldn't have access to this.
+
+## Steps To Reproduce:
+[add details for how we can reproduce the issue]
+
+  1. Visit ████████ and signup
+  2. Login at ██████ and you will be redirected to the admin dashboard where you can approve or decline transactions.
+██████   
+  3. At ███████, you can see a list of registered Merchant accounts in the application.    
+███████  
+
+  You can edit their data, 
+`Change their account credentials`
+`change their account number to an attacker's: thereby 
+  receiving payments made to them`,  
+`disable` or `delete` their account, etc.  
+██████    
+█████████
+
+##!EDIT
+
+Initially my report focused on the merchants, however it affects, Cashiers, Stations and Supervisors also. You can edit and delete their data also by navigating the the URLs below:  
+
+███████
+█████████
+█████████   
+
+#IMPORTANT
+You can see the passcode for various supervisor accounts at
+███   
+█████████
+
+## Impact
+
+Direct access to admin functionalities, where an attacker can modify merchant financial account information, disable and delete account of MTN clients. An outsider like myself shouldn't have access to this.
 
 ## Timeline
 

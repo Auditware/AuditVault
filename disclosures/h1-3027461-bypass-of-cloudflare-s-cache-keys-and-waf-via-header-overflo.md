@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: none
 date: 2025-11-18
 submitted: 2025-03-12T09:03:39.767Z
 bounty_usd: null

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2023-12-21
 submitted: 2023-11-23T12:30:00.545Z
 bounty_usd: null
@@ -25,6 +26,35 @@ title: "Default Admin Username and Password on ███"
 - Report: [https://hackerone.com/reports/2262365](https://hackerone.com/reports/2262365)
 - CWE: Improper Access Control - Generic
 - Submitted: 2023-11-23T12:30:00.545Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+It is possible to access the application is using the default username and password 
+Steps To Reproduce:
+1-Go to https://███/geoportal/ and login with credentials:
+user and password: admin
+user and password: gptadmin
+Poc video attached
+
+## Impact
+
+A Department of Defense website was misconfigured in a manner that may have allowed a malicious user to login with administrator for the default organization account credentials and delete posts , edit website
+
+## System Host(s)
+███
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+POC video
+
+## Suggested Mitigation/Remediation Actions
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Stack Overflow"
 enriched: true
+body: true
 date: 2019-09-17
 submitted: 2019-03-04T22:02:57.059Z
 bounty_usd: 1000
@@ -25,6 +26,22 @@ title: "Malformed playlist.txt in GoldSrc games leads to Access Violation & arbi
 - Report: [https://hackerone.com/reports/504951](https://hackerone.com/reports/504951)
 - CWE: Stack Overflow
 - Submitted: 2019-03-04T22:02:57.059Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+A crafted `playlist.txt` can be used to exploit a stack overflow vulnerability in `GameUI.dll` that can lead to arbitrary code execution.
+
+# Reproduction
+Place attached `playlist.txt` in game directory (`valve`, `cstrike`, etc.). The game will crash when it tries to play `Splash` track.
+
+# Exploitability
+The file can be sent from server with `precache_generic` function (custom `mp.dll`, amxx plugins, etc.). I don't know ant way to force reload the playlist, so for the exploit to trigger, the client must be restarted. In my opinion, it's still dangerous. And this method won't work if the client already had `playlist.txt` in the game directory.
+
+## Impact
+
+The attacker can use this to do many things, from crashing the client to stealing important data.
 
 ## Timeline
 

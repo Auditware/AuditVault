@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2020-06-18
 submitted: 2020-05-31T08:44:50.216Z
 bounty_usd: null
@@ -28,6 +29,50 @@ title: "[H1-2006 2020] I successfully solved it!"
 ## Report summary
 
 Update: After recent markdown changes on HackerOne, attachments/images were broken. So I had to comment the writeup, you can read it down below.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello,
+I'll get post there the write-up soon. Here is flag: `^FLAG^736c635d8842751b8aafa556154eb9f3$FLAG---
+tags:
+  - type/disclosure
+  - platform/hackerone
+  - severity/critical
+  - env/web
+substate: "resolved"
+weakness: null
+enriched: true
+date: 2020-06-18
+submitted: 2020-05-31T08:44:50.216Z
+bounty_usd: null
+votes: 64
+cve: []
+program: "[[programs/h1-ctf|h1-ctf]]"
+reporter: "zeroxyele"
+source: "https://hackerone.com/reports/887818"
+title: "[H1-2006 2020] I successfully solved it!"
+---
+# [H1-2006 2020] I successfully solved it!
+
+> **Severity:** Critical | **Bounty:** undisclosed | **Votes:** 64 | **Program:** h1-ctf | **Disclosed:** 2020-06-18
+
+- Report: [https://hackerone.com/reports/887818](https://hackerone.com/reports/887818)
+- CWE: N/A
+- Submitted: 2020-05-31T08:44:50.216Z
+
+## Report summary
+
+Update: After recent markdown changes on HackerOne, attachments/images were broken. So I had to comment the writeup, you can read it down below.
+
+
+Sincerely,
+@zeroxyele
+
+## Impact
+
+null
 
 ## Timeline
 

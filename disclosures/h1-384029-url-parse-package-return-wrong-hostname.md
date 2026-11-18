@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Open Redirect"
 enriched: true
+body: none
 date: 2018-07-30
 submitted: 2018-07-19T09:49:12.041Z
 bounty_usd: null

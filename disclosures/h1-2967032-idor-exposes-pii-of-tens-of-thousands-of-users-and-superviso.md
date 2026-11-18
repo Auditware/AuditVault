@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2026-01-12
 submitted: 2025-01-30T16:28:18.711Z
 bounty_usd: null
@@ -25,6 +26,49 @@ title: "IDOR Exposes PII of Tens of Thousands of Users and Supervisors"
 - Report: [https://hackerone.com/reports/2967032](https://hackerone.com/reports/2967032)
 - CWE: Insecure Direct Object Reference (IDOR)
 - Submitted: 2025-01-30T16:28:18.711Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+While using the system as intended (submitting a SAAR), I noticed there is an insure direct object Reference vulnerability in the application. Users can modify the URL parameter `saarnId` to view and possibly edit other user's SAARs.
+**CAC Required**
+
+## References
+https://cwe.mitre.org/data/definitions/639.html
+https://cwe.mitre.org/data/definitions/284.html
+
+## Impact
+
+This vulnerability leaks the following information on tens of thousands of users:
+* Address
+* Full Name
+* Email
+* Phone Number
+* DoB
+* Supervisor
+* DODID Number
+* Controlled Unclassified Information
+* Clearance Level
+* User ID
+
+## System Host(s)
+███████
+
+## Affected Product(s) and Version(s)
+N/A
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+1. Navigate to the following endpoint: █████
+2. Change the parameter value: saarnid to a lower number. 
+3. View the information associated with the SAAR another user's SAAR.
+
+## Suggested Mitigation/Remediation Actions
+You can prevent Insecure Direct Object References (IDOR) by using secure identifiers (e.g., UUIDs) and verifying permissions.
 
 ## Timeline
 

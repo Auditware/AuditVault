@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Buffer Over-read"
 enriched: true
+body: true
 date: 2020-10-10
 submitted: 2019-03-15T08:45:38.365Z
 bounty_usd: null
@@ -25,6 +26,21 @@ title: "Invalid Read on exif_process_SOFn"
 - Report: [https://hackerone.com/reports/510025](https://hackerone.com/reports/510025)
 - CWE: Buffer Over-read | CVE: CVE-2019-9640
 - Submitted: 2019-03-15T08:45:38.365Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+This  bug is present in exif_scan_thumbnail method of ext/exif/exif.c file.
+
+Detailed description and steps to reproduce for this bug is present in bug report submitted to php.net.
+Bug Report : https://bugs.php.net/bug.php?id=77540
+PHP version : 7.1.26
+CVE-ID : 2019-9640
+
+## Impact
+
+This bug may allow an attacker to read unintended data from memory.
 
 ## Timeline
 

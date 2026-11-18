@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Deserialization of Untrusted Data"
 enriched: true
+body: true
 date: 2018-11-21
 submitted: 2018-09-27T12:54:36.166Z
 bounty_usd: null
@@ -25,6 +26,20 @@ title: "CTF Writeup flag{cha1n1ng_bugs_f0r_fun_4nd_pr0f1t?_or_rep0rt_an_LF1}"
 - Report: [https://hackerone.com/reports/415275](https://hackerone.com/reports/415275)
 - CWE: Deserialization of Untrusted Data
 - Submitted: 2018-09-27T12:54:36.166Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+We have attached the writeup, the CTF was solved by me and Chapuka.
+
+We would like to publish our writeup for the CTF in our blog, when can we do that?
+
+It was a great CTF, it's a shame we are not @Buenos Aires right now :/
+
+## Impact
+
+.
 
 ## Timeline
 

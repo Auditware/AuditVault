@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2025-02-24
 submitted: 2025-01-30T22:59:04.378Z
 bounty_usd: 7500
@@ -25,6 +26,31 @@ title: "Exposed proxy allows to access internal reddit domains"
 - Report: [https://hackerone.com/reports/2967634](https://hackerone.com/reports/2967634)
 - CWE: Improper Access Control - Generic
 - Submitted: 2025-01-30T22:59:04.378Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Proxy at https://52.90.28.77:30920 allows to access internal domains
+
+## Steps To Reproduce:
+To reproduce, simply use this curl command
+  ```
+curl --insecure https://52.90.28.77:30920/reddit --header "Host: █████████"
+```
+
+
+## Supporting Material 
+snoo.dev is obviously an internal domains used by employees:
+https://search.censys.io/search?resource=certificates&q=snoo.dev
+
+It is also references in the GitHub a few times:
+https://github.com/search?q=org%3Areddit%20snoo.dev&type=code
+
+## Impact
+
+Attacker can access internal domains
 
 ## Timeline
 

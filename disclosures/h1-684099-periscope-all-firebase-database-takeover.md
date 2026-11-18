@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2019-09-25
 submitted: 2019-08-29T03:22:26.687Z
 bounty_usd: null
@@ -26,6 +27,29 @@ title: "Periscope-all Firebase database takeover"
 - Report: [https://hackerone.com/reports/684099](https://hackerone.com/reports/684099)
 - CWE: Improper Access Control - Generic
 - Submitted: 2019-08-29T03:22:26.687Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello,
+
+I found one public Firebase database of periscope.tv and I can able to insert data to this database and i only used it once for the testing purposes, so other database queries also possible.
+
+Please follow the below link to check the inserted test data.
+
+###Periscope-all Firebase URL :- 
+
+https://█████████/.json
+
+## Impact
+
+This is quite serious because by using this database attacker can use this for malicious purposes and also an attacker can track this database if periscope uses it for future perspective and at that time it will be much easier for the attacker to steal the data from this repository and later it will harm the reputation of the Periscope.
+
+So please immediately change the rule of the database to private so that nobody can able to access it outside.
+
+Thanks
+Deeptiman Pattnaik
 
 ## Timeline
 

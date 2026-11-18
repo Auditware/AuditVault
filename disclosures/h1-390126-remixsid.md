@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insufficient Session Expiration"
 enriched: true
+body: none
 date: 2019-05-10
 submitted: 2018-08-03T10:44:38.923Z
 bounty_usd: 300

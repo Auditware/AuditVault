@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Classic Buffer Overflow"
 enriched: true
+body: true
 date: 2020-10-10
 submitted: 2019-03-15T14:21:28.872Z
 bounty_usd: null
@@ -25,6 +26,22 @@ title: "Uninitialized read in exif_process_IFD_in_TIFF"
 - Report: [https://hackerone.com/reports/510336](https://hackerone.com/reports/510336)
 - CWE: Classic Buffer Overflow | CVE: CVE-2019-9641
 - Submitted: 2019-03-15T14:21:28.872Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+This bug can be reproduced only in 32 bit PHP builds.
+This bug is present in exif_process_IFD_in_TIFF method of ext/exif/exif.c file.
+
+Detailed description and steps to reproduce for this bug is present in bug report submitted to php.net.
+Bug Report : https://bugs.php.net/bug.php?id=77509
+PHP version : 7.1.26
+CVE-ID : 2019-9641
+
+## Impact
+
+Uninitialized variables may leak data from memory.
 
 ## Timeline
 

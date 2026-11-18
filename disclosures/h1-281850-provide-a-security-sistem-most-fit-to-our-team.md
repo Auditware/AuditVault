@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: null
 enriched: true
+body: true
 date: 2017-12-15
 submitted: 2017-10-23T01:17:56.015Z
 bounty_usd: null
@@ -25,6 +26,12 @@ title: "Provide a security sistem most fit to our team"
 - Report: [https://hackerone.com/reports/281850](https://hackerone.com/reports/281850)
 - CWE: N/A
 - Submitted: 2017-10-23T01:17:56.015Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Now we want to proof that our security sistem is most fit in this year
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Storage of Sensitive Information"
 enriched: true
+body: true
 date: 2021-01-12
 submitted: 2019-08-30T04:33:53.534Z
 bounty_usd: null
@@ -25,6 +26,34 @@ title: "Directory Indexing on the ████ (https://████/) leads to 
 - Report: [https://hackerone.com/reports/684838](https://hackerone.com/reports/684838)
 - CWE: Insecure Storage of Sensitive Information
 - Submitted: 2019-08-30T04:33:53.534Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Description
+During poking around `█████████/24` range -  █████ looking for the Cisco devices, I came across `█████` which resolved to the https://██████/
+While it's a not `.mil` host, it's likely related to the DoD since it hosted in the DoD-controlled ASN.
+
+I discovered few critical vulnerabilities here, one of them is exposed backup files via directory listing.
+
+##POC
+https://███/obj/Debug/
+█████
+The source code can be found here:
+https://█████████/obj/Debug/Package/GLOSS2.zip
+It's zipped backup.
+
+The DB credentials exposed here:
+https://█████/obj/Debug/Package/GLOSS2.SetParameters.xml
+███
+
+##Suggested fix
+Disable directory indexing, restrict access to the sensitive files, and change credentials as defense-in-depth measure.
+
+## Impact
+
+Source code & DB credentials leakage. Attacker can use it to compromise the resource.
 
 ## Timeline
 

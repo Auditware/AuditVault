@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Privilege Escalation"
 enriched: true
+body: true
 date: 2019-10-04
 submitted: 2019-04-20T18:59:34.866Z
 bounty_usd: null
@@ -25,6 +26,47 @@ title: "[Critical] Possibility to takeover any user account #2 without interacti
 - Report: [https://hackerone.com/reports/544334](https://hackerone.com/reports/544334)
 - CWE: Privilege Escalation
 - Submitted: 2019-04-20T18:59:34.866Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Description
+Hello. This time I discovered a way to tekeover any user's account via unsafe password reset.
+This time it's much easier than #1 way in the #543678 report.
+When users requests the password reset, the next link is come to the email:
+```
+https://█████/resetpassword.aspx?ru=[user_id]&op=[token]
+```
+The [user_id] is numeric, always same for same emaill, and incremental for every new user.
+The [token] parameter is random and used to protect the link from hijacking.
+But, I discovered that Reset password endpoint accepts empty token!
+
+So all the attacker needs, it's to initiate password reset for the victim's email, and request the
+```
+https://██████████/resetpassword.aspx?ru=[user_id]&op=
+```
+Since `[user_id]` is numeric and static for same account, it can be easily guessed by the attacker.
+
+##POC
+1) Go to the https://█████/ForgotPassword.aspx
+2) Initiate reset password for the `██████` (it's my test account)
+3) Use this link:
+```
+https://███/resetpassword.aspx?ru=7655&op=
+```
+where 7655 - it's my user numeric ID (as we know, it's incremental, and be easily guessed for other accounts).
+██████████
+4) Set the new password and confirm it. You can set something as `111111111aA!!!!` to pass the password requirements.
+5) You will be logged into my organization as admin.
+
+##Suggested fix
+Fix the `op` tooken validation - it should be checked properly.
+
+## Impact
+
+Severity: Critical
+Immediate account Individual/Cprporate account takeover via password reset. Attacker needs to know only email.
 
 ## Timeline
 

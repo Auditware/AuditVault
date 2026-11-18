@@ -9,6 +9,7 @@ tags:
 substate: "duplicate"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2021-01-07
 submitted: 2020-10-07T11:24:29.199Z
 bounty_usd: null
@@ -26,6 +27,22 @@ title: "Unsecured Grafana instance on https://monitoring.prow-canary.k8s.io/dash
 - Report: [https://hackerone.com/reports/1000922](https://hackerone.com/reports/1000922)
 - CWE: Improper Authentication - Generic
 - Submitted: 2020-10-07T11:24:29.199Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi,
+I was looking at  https://monitoring.prow-canary.k8s.io Grafana webapp. I'm not sure if it is for demo purposes, but I can access the main dashboard and view all graphs. 
+`https://monitoring.prow-canary.k8s.io/dashboards`
+
+If indeed it is for demo purposes, please let me close the report myself.
+looking forward to hearing from you
+Thank you
+
+## Impact
+
+access charts on various server resource usage.
 
 ## Timeline
 

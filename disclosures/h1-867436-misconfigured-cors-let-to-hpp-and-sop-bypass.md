@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Misconfiguration"
 enriched: true
+body: true
 date: 2020-05-07
 submitted: 2020-05-06T21:37:56.670Z
 bounty_usd: null
@@ -25,6 +26,22 @@ title: "misconfigured CORS let to HPP and SOP bypass"
 - Report: [https://hackerone.com/reports/867436](https://hackerone.com/reports/867436)
 - CWE: Misconfiguration
 - Submitted: 2020-05-06T21:37:56.670Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello team,
+I found a bug on your website that let me bypass the SOP policy.
+Hope you fix it, everything is in the video
+
+
+https://www.youtube.com/watch?v=PYsU350S-s4
+
+## Impact
+
+The attacker my direct a victim to a phishing page of www.bitterrent.com/login and he/she will be convince to enter their email and password or even hijack csrf-token and sending him a password or email reset link.
+I also found a link that expose the csrf-token on the URL and you should check this link in the black.svg host header URL
 
 ## Timeline
 

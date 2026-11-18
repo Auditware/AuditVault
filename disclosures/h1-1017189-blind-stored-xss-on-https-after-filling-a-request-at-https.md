@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2021-03-11
 submitted: 2020-10-23T17:05:28.639Z
 bounty_usd: null
@@ -25,6 +26,39 @@ title: "Blind Stored XSS on https://█████████ after filling a 
 - Report: [https://hackerone.com/reports/1017189](https://hackerone.com/reports/1017189)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2020-10-23T17:05:28.639Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description:**
+
+When you submit a request at https://██████████, the content is being sent to the administrators of the application, and you will be presented with your request status at https://████
+
+The Description field at the request status page is prone to stored xss and blind stored XSS injection, because there is no sanitization on the input being inserted.
+
+As for now this is self (because the link is for the account), i'm 100% sure that when an administrator will check the request his details will get sent to my email, and i have a xss payload stored on my user.
+
+████████
+
+## Step-by-step Reproduction Instructions
+
+1. Register to https://██████████ / login to my account (████)
+2. Navigate to https://███
+3. Craft your XSS payload on the description window
+4. Submit your request
+5. Navigate to https://█████████
+6. The javascript will execute.
+
+## Suggested Mitigation/Remediation Actions
+Sanitizing the input being inserted into the description window field.
+
+##Best regards
+nagli
+
+## Impact
+
+Stored blind XSS  on the pac.whs.mil website which could lead to administrator credentials being leaked.
 
 ## Timeline
 

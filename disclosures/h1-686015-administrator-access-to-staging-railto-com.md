@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2019-10-03
 submitted: 2019-09-01T16:13:57.433Z
 bounty_usd: null
@@ -24,6 +25,25 @@ title: "Administrator access to staging.railto.com"
 - Report: [https://hackerone.com/reports/686015](https://hackerone.com/reports/686015)
 - CWE: N/A
 - Submitted: 2019-09-01T16:13:57.433Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hey team,
+
+While doing some recon for railto sub-domains. i came across a most critical bug which lets me complete access of https://staging.railto.com. i can add anything and removing anythings as i got the ADMIN level privilege. 
+
+##Steps
+  1. Go to https://staging.railto.com/admin  url.
+  2. Set username as admin and password as password to login the admin page. Since password is too easy to guess, i was like what... after finding this bug.
+  3. If unauthorized people has got this bug then he could use it in a bad way.
+I didn't want to move forward because i am not an admin of this page and i dont want you guys in trouble.  If it is not enough then i will provide a detail poc
+
+## Impact
+
+Admin of the page is simple enough.
 
 ## Timeline
 

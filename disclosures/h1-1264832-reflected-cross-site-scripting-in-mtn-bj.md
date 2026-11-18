@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Reflected"
 enriched: true
+body: true
 date: 2021-09-26
 submitted: 2021-07-16T00:42:21.351Z
 bounty_usd: null
@@ -30,6 +31,34 @@ title: "Reflected Cross-Site scripting in : mtn.bj"
 
 Writeup : 
 ██████████
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hello Team 
+I have found a Reflected XSS vulnerability in mtn.jb by file name 
+
+
+## Steps To Reproduce:
+[add details for how we can reproduce the issue]
+
+  1. go to : 
+████
+  2. enter any email and press  Suivant
+  3. fill all the inputs by any data .
+  4. in file upload upload any photo with payload file name : "><img src=x onerror=alert(document.cookie);.jpg
+
+  5 . the payload executed in the page  
+
+
+Supporting Material/References:
+1 - video showing poc 
+2 - screenshot
+
+## Impact
+
+An attacker can use XSS to send a malicious script to an unsuspecting user. The end user’s browser has no way to know that the script should not be trusted, and will execute the script. Because it thinks the script came from a trusted source, the malicious script can access any cookies, session tokens, or other sensitive information retained by the browser and used with that site. These scripts can even rewrite the content of the HTML page
 
 ## Timeline
 

@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2024-06-27
 submitted: 2022-07-05T14:44:29.678Z
 bounty_usd: 500
@@ -25,6 +26,24 @@ title: "IDOR leading unauthenticated attacker to download documents discloses PI
 - Report: [https://hackerone.com/reports/1626508](https://hackerone.com/reports/1626508)
 - CWE: Insecure Direct Object Reference (IDOR)
 - Submitted: 2022-07-05T14:44:29.678Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+Hey team, I have found this API endpoint leads to leaking attachments and documents of users. The attachments leaked are banks taxes, contracts, PII such as full address and mobile number, emails, etc. The vulnerable URL is at [https://www.████████/Download.aspx?id=4675]
+
+##Steps To Reproduce:
+[add details for how we can reproduce the issue]
+
+  1. Go to this URL [https://www.█████████/Download.aspx?id=4675]
+  2. Add any desired id 
+  3. then you will see a variety of sensitive files and contracts which contain PIIs and other classified documents
+
+## Impact
+
+An unauthenticated attacker is able to obtain PII of users and soldiers also an attacker is able to leak classified documents
 
 ## Timeline
 

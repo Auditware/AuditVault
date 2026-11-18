@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Access Control - Generic"
 enriched: true
+body: true
 date: 2020-05-11
 submitted: 2019-08-27T14:51:39.563Z
 bounty_usd: null
@@ -25,6 +26,37 @@ title: "Unrestricted File Upload"
 - Report: [https://hackerone.com/reports/683024](https://hackerone.com/reports/683024)
 - CWE: Improper Access Control - Generic
 - Submitted: 2019-08-27T14:51:39.563Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+The endpoint at https://███████/ui/core/index.html required authentication, but navigating to https://█████/ui/core/index.html?mode=public#expl-tabl./SHARED/rpchllmd/CSAT allow for read/write access.
+
+**Description:**
+The endpoint at https://████/ui/core/index.html?mode=public#expl-tabl./SHARED/rpchllmd/CSAT allowed for read as well as write access. It was possible to create directories and upload images as well as .exe files such as putty.exe. 
+
+## Impact
+An attacker can attempt to use the site to host malware, or perform social engineering attacks since the domain URL will be a .mil address.
+
+## Step-by-step Reproduction Instructions
+
+1. Navigate to:
+https://████/ui/core/index.html?mode=public#expl-tabl./SHARED/rpchllmd/CSAT
+2. Create sub-directory 
+3. Upload test files
+4. Files are then uploaded and hosted on a .mil website without authenticating to the application.
+
+## Product, Version, and Configuration (If applicable)
+FileCloud software
+https://www.getfilecloud.com/
+## Suggested Mitigation/Remediation Actions
+Enforce authentication on endpoints of the application, restrict file uploads to only necessary business requirements. If possible restrict uploads to .jpg .pfd .docx. Don't allowed upload of executable files
+
+## Impact
+
+An attacker can attempt to use the site to host malware, or perform social engineering attacks since the domain URL will be a .mil address.
 
 ## Timeline
 

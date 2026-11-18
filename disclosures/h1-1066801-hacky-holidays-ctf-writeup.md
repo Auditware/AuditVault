@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true
+body: true
 date: 2021-01-11
 submitted: 2020-12-26T22:19:55.072Z
 bounty_usd: null
@@ -25,6 +26,22 @@ title: "Hacky Holidays CTF Writeup"
 - Report: [https://hackerone.com/reports/1066801](https://hackerone.com/reports/1066801)
 - CWE: Server-Side Request Forgery (SSRF)
 - Submitted: 2020-12-26T22:19:55.072Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Greetings team
+Yay! Finally I made it to the end, thank you very much for launching this fantastic event, I had to review topics that I thought I knew, learned a lot and I am sure that I will continue learning with the community :)
+
+{F1130889}
+
+Hacky Holidays!
+P.S. I will put my writeup in my next comment.
+
+## Impact
+
+---
 
 ## Timeline
 

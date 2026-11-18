@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Use of Insufficiently Random Values"
 enriched: true
+body: none
 date: 2024-10-01
 submitted: 2024-06-11T13:30:37.675Z
 bounty_usd: null

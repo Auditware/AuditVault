@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2020-12-03
 submitted: 2019-12-19T16:19:47.238Z
 bounty_usd: null
@@ -25,6 +26,38 @@ title: "Leaked DB credentials on https://██████████.mil/█�
 - Report: [https://hackerone.com/reports/761790](https://hackerone.com/reports/761790)
 - CWE: Information Disclosure
 - Submitted: 2019-12-19T16:19:47.238Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Summary:**
+Information disclosure with login credentials for ms-sql database exposed. 
+
+**Description:**
+I've found a PHP info file disclosed on https://█████.mil/██████ containing login credentials for a database cloud server (███████) as well as information on the host system such as hostname, username and full paths. The database server is up, but I have not tried connecting to it with the credentials, as I feel that would be going too far. 
+
+## Impact
+Possible access to database as well as disclosure of sensitive host information. 
+
+## Step-by-step Reproduction Instructions
+
+1. Go to https://██████████.mil/████████
+2. Search for 'password', you should see this: 
+    `Data Source=tcp:███,█████████;Initial Catalog=██████████;User  Id=████@██████████;Password=███████ `
+3. Run `nc -vvv █████████ █████` to confirm database is running and service ms-sql-s is accepting connections: 
+`(UNKNOWN) [███████] ████████ (ms-sql-s) open
+^C sent 0, rcvd 0
+`
+
+## Product, Version, and Configuration (If applicable)
+
+## Suggested Mitigation/Remediation Actions
+███████ should not be available on the server.
+
+## Impact
+
+Possible access to database as well as disclosure of sensitive host information.
 
 ## Timeline
 

@@ -10,6 +10,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2019-07-29
 submitted: 2017-09-14T15:44:38.882Z
 bounty_usd: null
@@ -27,6 +28,13 @@ title: "Nginx misconfiguration leading to direct PHP source code download"
 - Report: [https://hackerone.com/reports/268382](https://hackerone.com/reports/268382)
 - CWE: Information Disclosure
 - Submitted: 2017-09-14T15:44:38.882Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Poc:
+https://www.data.gov/app/plugins/saml-20-single-sign-on/saml/config/config.php
 
 ## Timeline
 

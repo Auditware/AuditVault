@@ -9,6 +9,7 @@ tags:
 substate: "resolved"
 weakness: "Client-Side Enforcement of Server-Side Security"
 enriched: true
+body: none
 date: 2022-11-16
 submitted: 2022-07-13T13:16:06.086Z
 bounty_usd: 1000

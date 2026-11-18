@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "XML External Entities (XXE)"
 enriched: true
+body: none
 date: 2020-07-22
 submitted: 2019-12-20T10:25:48.262Z
 bounty_usd: null

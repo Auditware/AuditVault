@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Externally Controlled Reference to a Resource in Another Sphere"
 enriched: true
+body: none
 date: 2019-05-22
 submitted: 2019-05-07T21:44:56.702Z
 bounty_usd: null

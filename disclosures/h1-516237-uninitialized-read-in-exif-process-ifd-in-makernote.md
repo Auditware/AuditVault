@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2020-10-10
 submitted: 2019-03-27T03:18:50.881Z
 bounty_usd: null
@@ -25,6 +26,21 @@ title: "Uninitialized read in exif_process_IFD_in_MAKERNOTE"
 - Report: [https://hackerone.com/reports/516237](https://hackerone.com/reports/516237)
 - CWE: Information Disclosure | CVE: CVE-2019-9638
 - Submitted: 2019-03-27T03:18:50.881Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+This bug is present in exif_process_IFD_in_MAKERNOTE method of ext/exif/exif.c file.
+
+Detailed description and steps to reproduce for this bug is present in bug report submitted to php.net.
+Bug Report : https://bugs.php.net/bug.php?id=77563
+PHP version : 7.1.26
+CVE-ID : 2019-9638
+
+## Impact
+
+Uninitialized data may leak data from memory.
 
 ## Timeline
 

@@ -9,6 +9,7 @@ tags:
 substate: "not-applicable"
 weakness: "Insecure Direct Object Reference (IDOR)"
 enriched: true
+body: true
 date: 2020-09-14
 submitted: 2020-09-10T22:21:21.836Z
 bounty_usd: null
@@ -26,6 +27,38 @@ title: "Adding everyone to the repo due to the lack of rate limit"
 - Report: [https://hackerone.com/reports/978768](https://hackerone.com/reports/978768)
 - CWE: Insecure Direct Object Reference (IDOR)
 - Submitted: 2020-09-10T22:21:21.836Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+### Summary
+
+Since there is no rate limit in the inviting users to the repository section, it is possible to add all users on gitlab to a repository.
+
+### Steps to reproduce
+
+(Step-by-step guide to reproduce the issue, including:)
+
+1. Create a repository
+2. go to the project members section
+3. choose a random user
+4. before clicking the invite button, we need to capture the request with the burp suite..
+5. ███████
+6. Send it to the Intruder module, specify the █████ field here between 1 and 7006996 and send the request.
+
+### Impact
+
+It is possible to collect all users on Gitlab in a single repository, so users' mailboxes will be filled with notifications.
+
+
+### Note
+
+Because the rate limit is out of scope, I tested it and I could not stop the python script, and there were users affected.
+
+## Impact
+
+It is possible to collect all users on Gitlab in a single repository, so users' mailboxes will be filled with notifications.
 
 ## Timeline
 

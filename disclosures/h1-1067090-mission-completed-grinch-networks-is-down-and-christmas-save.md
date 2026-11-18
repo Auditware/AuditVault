@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2021-01-12
 submitted: 2020-12-27T17:48:22.151Z
 bounty_usd: null
@@ -25,6 +26,22 @@ title: "Mission completed. Grinch Networks is down and Christmas saved."
 - Report: [https://hackerone.com/reports/1067090](https://hackerone.com/reports/1067090)
 - CWE: Uncontrolled Resource Consumption
 - Submitted: 2020-12-27T17:48:22.151Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi, I decided to create a good writeup, but for that I'd need some time, that's why I am submitting this pre-report now, and the actual report I ll submit before the deadline in this thread, right under this one.
+
+Here is some proof that Grinch Networks is down:
+hackyholidays.h1ctf.com/attack-box/challenge-completed-a3c589ba2709
+flag{ba6586b0-e482-41e6-9a68-caf9941b48a0}
+
+Stay tuned!
+
+## Impact
+
+Critical
 
 ## Timeline
 

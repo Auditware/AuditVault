@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Information Disclosure"
 enriched: true
+body: true
 date: 2021-01-12
 submitted: 2019-08-31T01:46:36.296Z
 bounty_usd: null
@@ -25,6 +26,26 @@ title: "Local File Disclosure on the ████████ (https://███
 - Report: [https://hackerone.com/reports/685344](https://hackerone.com/reports/685344)
 - CWE: Information Disclosure
 - Submitted: 2019-08-31T01:46:36.296Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Description
+I discovered another LFD on the https://████/ (virtual host on the █████ IP)
+
+##POC
+https://█████/file.ashx?path=web.config
+will download the website configuration file.
+It exposes different DB credentials than in previous reports:
+███
+
+Similarly, attacker able to get content of any server-side file, such as source code of application:
+https://███/file.ashx?path=index.aspx
+
+## Impact
+
+Source code & sensitive configuration data leakage. Attacker can use it to compromise the resource.
 
 ## Timeline
 

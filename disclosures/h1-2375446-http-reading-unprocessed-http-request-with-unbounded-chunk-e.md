@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Uncontrolled Resource Consumption"
 enriched: true
+body: true
 date: 2024-03-05
 submitted: 2024-02-15T18:19:30.150Z
 bounty_usd: 3495
@@ -41,6 +42,18 @@ This vulnerability affects all users in all active release lines: 18.x, 20.x, an
 Thank you, to Bartek Nowotarski for reporting this vulnerability and thank you Paolo Insogna for fixing it.
 
 Full Security Advisory: https://nodejs.org/en/blog/vulnerability/february-2024-security-releases
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+I'd like to report Node.js vulnerability (CVE-2024-22019) that was recently fixed:
+- HackerOne report: https://hackerone.com/reports/2233486
+- Release notes: https://nodejs.org/en/blog/vulnerability/february-2024-security-releases
+
+## Impact
+
+This is a major issue because it allows unbounded resource (CPU, network bandwidth) consumption of the standard Node.js http server. The standard methods which could help blocking a malicious requests like timeouts and limiting request body size do not seem to work.
 
 ## Timeline
 

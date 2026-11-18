@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Business Logic Errors"
 enriched: true
+body: true
 date: 2021-01-07
 submitted: 2021-01-05T21:03:32.486Z
 bounty_usd: null
@@ -25,6 +26,37 @@ title: "Host Header injection in oslo.io (using X-Forwarded-For header) leading 
 - Report: [https://hackerone.com/reports/1072277](https://hackerone.com/reports/1072277)
 - CWE: Business Logic Errors
 - Submitted: 2021-01-05T21:03:32.486Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+#Hello team
+##I hope it will be a happy year for you and for me 😇 
+## Summary:
+
+I found Host Header injection in oslo.io  
+I tried to use it to show the security effect on users And I found this
+
+## Steps To Reproduce:
+
+ 1. Well, first of all, enter your project 
+2.Make an invitation by email 
+3.Now through the burpsuite 
+If we try to change the host, 403 will appear
+  {F1145857}
+
+So we will use  ```X-Forwarded-Host:  example.com```
+ 
+PoC : 
+{F1145858}
+
+## Impact
+
+Many things can be done, including deceiving the user and referring to something else or a login page and stealing their account
+>>There is a lot of information about it here : 
+
+ https://portswigger.net/web-security/host-header
 
 ## Timeline
 

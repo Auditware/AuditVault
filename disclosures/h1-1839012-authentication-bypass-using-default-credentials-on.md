@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Improper Authentication - Generic"
 enriched: true
+body: true
 date: 2023-02-24
 submitted: 2023-01-19T13:49:58.385Z
 bounty_usd: null
@@ -25,6 +26,34 @@ title: "Authentication Bypass Using Default Credentials on █████"
 - Report: [https://hackerone.com/reports/1839012](https://hackerone.com/reports/1839012)
 - CWE: Improper Authentication - Generic
 - Submitted: 2023-01-19T13:49:58.385Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Summary:
+I have found a vulnerability name authentication Bypass Using Default Credentials on admin console of █████████.
+
+## Impact
+
+Access to the portal and the data in the portal like emails links data etc
+
+## System Host(s)
+██████
+
+## Affected Product(s) and Version(s)
+
+
+## CVE Numbers
+
+
+## Steps to Reproduce
+Steps:
+1. Go to ████████
+2. Then login with credentials username admin and password admin.
+
+## Suggested Mitigation/Remediation Actions
+Change the credentials
 
 ## Timeline
 

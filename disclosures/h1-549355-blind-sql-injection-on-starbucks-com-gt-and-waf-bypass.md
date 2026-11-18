@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "SQL Injection"
 enriched: true
+body: none
 date: 2019-06-19
 submitted: 2019-04-27T15:23:27.281Z
 bounty_usd: null

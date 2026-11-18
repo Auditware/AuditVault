@@ -8,6 +8,7 @@ tags:
 substate: "informative"
 weakness: "Server-Side Request Forgery (SSRF)"
 enriched: true
+body: true
 date: 2025-10-19
 submitted: 2025-10-14T16:25:30.902Z
 bounty_usd: null
@@ -25,6 +26,30 @@ title: "DNS Rebinding Attack"
 - Report: [https://hackerone.com/reports/3383095](https://hackerone.com/reports/3383095)
 - CWE: Server-Side Request Forgery (SSRF)
 - Submitted: 2025-10-14T16:25:30.902Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+Hi, there is a  DNS rebinding vulnerability in your SSRF filter. 
+
+{F4891755}
+
+You validate the hostname's IP address, but then pass the hostname to Net::HTTP.start(), which does its own DNS lookup. An attacker can control a DNS server that returns a safe public IP during validation, then returns 127.0.0.1 when Net::HTTP resolves it shortly later...
+
+```
+::Net::HTTP.start(uri.hostname, uri.port, **http_options) do |http| # Currently using uri.hostname which triggers a new dns lookup!
+```
+Example POC: 
+Attacker sets up evil.com DNS to alternate responses. First query (your validation) returns 8.8.8.8. Second query (Net::HTTP's internal lookup) returns 127.0.0.1. As a result: SsrfFilter.get('http://evil.com:6379') bypasses all protection and hits some internal service on localhost..
+
+Suggested fix: 
+Connect directly to the validated IP instead of the hostname. Change Net::HTTP.start(uri.hostname, ...) to Net::HTTP.start(validated_ip, ...) and set the Host header manually: headers['Host'] = uri.hostname. 
+Also use ssl_hostname: uri.hostname for proper TLS certificate validation. This eliminates the race window entirely since DNS only resolves once during validation.
+
+## Impact
+
+The library validates DNS resolution but passes the hostname (not the validated IP) to Net::HTTP, which performs a second DNS lookup. Attacker's DNS server returns different IPs for each query
 
 ## Timeline
 

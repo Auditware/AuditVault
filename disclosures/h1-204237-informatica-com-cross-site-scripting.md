@@ -8,6 +8,7 @@ tags:
 substate: "resolved"
 weakness: "Cross-site Scripting (XSS) - Generic"
 enriched: true
+body: none
 date: 2017-10-30
 submitted: 2017-02-07T15:08:33.061Z
 bounty_usd: null

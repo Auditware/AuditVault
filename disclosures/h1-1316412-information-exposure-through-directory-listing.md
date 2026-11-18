@@ -8,6 +8,7 @@ tags:
 substate: "not-applicable"
 weakness: "Information Exposure Through Directory Listing"
 enriched: true
+body: true
 date: 2021-08-27
 submitted: 2021-08-23T13:28:52.083Z
 bounty_usd: null
@@ -25,6 +26,32 @@ title: "Information Exposure Through Directory Listing"
 - Report: [https://hackerone.com/reports/1316412](https://hackerone.com/reports/1316412)
 - CWE: Information Exposure Through Directory Listing
 - Submitted: 2021-08-23T13:28:52.083Z
+
+## Report body
+
+Public report body - fetched from `https://hackerone.com/reports/<id>.json` (the site's own disclosed-report data route).
+
+##Vulnerability description
+The web server is configured to display the list of files contained in this directory. This is not recommended because the directory may contain files that are not normally exposed through links on the web site.
+
+##Link as POC:
+
+https://www.torproject.org/static/
+https://www.torproject.org/static/css/
+https://www.torproject.org/static/findoc/
+https://www.torproject.org/static/fonts/
+https://www.torproject.org/static/js/
+https://www.torproject.org/static/images/
+https://www.torproject.org/static/keys/
+
+For obvious reasons, I can not check whether this service is in scope, thats why i haven't searched for any critical informations and haven't check tokens and other stuff
+Please let me know if you need some extra information.
+Sorry for out of scope report, i thought it could be informative for you!
+Thanks in advance!
+
+## Impact
+
+Exposing the contents of a directory can lead to an attacker gaining access to source code or providing useful information for the attacker to devise exploits, such as creation times of files or any information that may be encoded in file names. The directory listing may also compromise private or confidential data.
 
 ## Timeline
 
