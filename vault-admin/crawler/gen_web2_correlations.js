@@ -19,7 +19,7 @@ const path = require('path');
 
 const VAULT_ROOT = path.resolve(__dirname, '../..');
 const DISC_DIR    = path.join(VAULT_ROOT, 'disclosures');
-const OUT_FILE    = path.join(VAULT_ROOT, 'Web2 Correlations.md');
+const OUT_FILE    = path.join(VAULT_ROOT, 'checklists', 'web', 'Web2 Correlations.md');
 
 const TOP_CWES   = 12;
 const TOP_TREND  = 8;
